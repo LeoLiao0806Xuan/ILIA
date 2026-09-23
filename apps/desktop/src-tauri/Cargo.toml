@@ -1,0 +1,28 @@
+[package]
+name = "ilia-desktop"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "ilia_desktop"
+# ILIA v0.1 is a Windows desktop target. Building the mobile cdylib with the
+# GNU linker exports every symbol in this dependency-heavy crate and exceeds
+# PE's export ordinal range; the desktop binary only needs the Rust library.
+crate-type = ["rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.6.3", features = [] }
+
+[dependencies]
+ilia-core = { path = "../../../crates/ilia-core" }
+ilia-database = { path = "../../../crates/ilia-database" }
+ilia-embedding = { path = "../../../crates/ilia-embedding" }
+ilia-inference = { path = "../../../crates/ilia-inference" }
+ilia-retrieval = { path = "../../../crates/ilia-retrieval" }
+ilia-updater = { path = "../../../crates/ilia-updater" }
+serde.workspace = true
+serde_json.workspace = true
+tauri = { version = "2.11.6", features = [] }
+tauri-plugin-opener = "2.5.4"
+uuid.workspace = true

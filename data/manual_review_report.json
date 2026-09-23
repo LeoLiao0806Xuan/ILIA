@@ -1,0 +1,295 @@
+{
+  "reviewed_pages": 28,
+  "blank_pages": 6,
+  "map_pages": 5,
+  "recovered_text_pages": 17,
+  "ocr_engines": [
+    "Tesseract 5.5.3 eng",
+    "RapidOCR 1.4.4",
+    "Windows.Media.Ocr"
+  ],
+  "render_dpi": 300,
+  "status": "approved",
+  "pages": [
+    {
+      "document_id": "gc-iv-1949",
+      "pdf_page": 218,
+      "category": "blank",
+      "method": "visual_review_blank",
+      "render_sha256": "46de5615020db64e8e259474d24df8dd49b2eb5b06585394836f05cae34907a3",
+      "text_characters": 0,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; no substantive visual content."
+    },
+    {
+      "document_id": "gc-iv-1949",
+      "pdf_page": 222,
+      "category": "blank",
+      "method": "visual_review_blank",
+      "render_sha256": "46de5615020db64e8e259474d24df8dd49b2eb5b06585394836f05cae34907a3",
+      "text_characters": 0,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; no substantive visual content."
+    },
+    {
+      "document_id": "icj-arrest-warrant-2002",
+      "pdf_page": 5,
+      "category": "text",
+      "method": "tesseract_ocr_visual_review",
+      "render_sha256": "9faaa88bce705b6d6f1421a340af3efc28eb16b5fccef11e56e3e2dcee57ad16",
+      "text_characters": 2517,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; Tesseract and RapidOCR compared; text visually reviewed."
+    },
+    {
+      "document_id": "icj-arrest-warrant-2002",
+      "pdf_page": 14,
+      "category": "text",
+      "method": "tesseract_ocr_visual_review",
+      "render_sha256": "75bd6de04605c99c0482f0c033e41a9df0d34b7eba530ba8669cc2643950746f",
+      "text_characters": 2975,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; Tesseract and RapidOCR compared; text visually reviewed."
+    },
+    {
+      "document_id": "icj-asylum-1950",
+      "pdf_page": 3,
+      "category": "text",
+      "method": "tesseract_ocr_visual_review",
+      "render_sha256": "ac8682a12a159238ced1f79c12baf88e4322615ac72b4207c69a7dcc7fe61db0",
+      "text_characters": 1800,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; Tesseract and RapidOCR compared; text visually reviewed."
+    },
+    {
+      "document_id": "icj-barcelona-traction-1970",
+      "pdf_page": 40,
+      "category": "text",
+      "method": "tesseract_ocr_visual_review",
+      "render_sha256": "90fffb0edbf123bfa323704f01b5d0701119fdc2d7a436eb8d15e94f26b2f9f3",
+      "text_characters": 2700,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; Tesseract and RapidOCR compared; text visually reviewed."
+    },
+    {
+      "document_id": "icj-bosnian-genocide-preliminary-1996",
+      "pdf_page": 1,
+      "category": "blank",
+      "method": "visual_review_blank",
+      "render_sha256": "4478b616bd8928b9287e3b7406a0750f0af9f7b8a8a8e5e4d4c227261b45c51f",
+      "text_characters": 0,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; no substantive visual content."
+    },
+    {
+      "document_id": "icj-continental-shelf-tunisia-libya-1982",
+      "pdf_page": 21,
+      "category": "map",
+      "method": "visual_review_nontext_map",
+      "render_sha256": "e965ded7f7ae5d2ec07d8d4d2ec8a88eeee37c3d5afca6d8268e737e4db877b4",
+      "text_characters": 0,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; map or sketch-map only, no prose body."
+    },
+    {
+      "document_id": "icj-continental-shelf-tunisia-libya-1982",
+      "pdf_page": 22,
+      "category": "text",
+      "method": "tesseract_ocr_visual_review",
+      "render_sha256": "1acc116e77cd7e6529eb3039f444626c7d0da0baed1c87ee89091ad6c45ad4f5",
+      "text_characters": 3137,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; Tesseract and RapidOCR compared; text visually reviewed."
+    },
+    {
+      "document_id": "icj-frontier-dispute-1986",
+      "pdf_page": 32,
+      "category": "text",
+      "method": "tesseract_ocr_visual_review",
+      "render_sha256": "dff2875dfc2081891494317984586d4f866287c2afd9fdc10ccc1216a9d1dd7a",
+      "text_characters": 3003,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; Tesseract and RapidOCR compared; text visually reviewed."
+    },
+    {
+      "document_id": "icj-frontier-dispute-1986",
+      "pdf_page": 49,
+      "category": "map",
+      "method": "visual_review_nontext_map",
+      "render_sha256": "48d6adf838e9f9d3f089c781104b088372b560225c4a276d8ccdb1d80a6582b9",
+      "text_characters": 0,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; map or sketch-map only, no prose body."
+    },
+    {
+      "document_id": "icj-frontier-dispute-1986",
+      "pdf_page": 62,
+      "category": "map",
+      "method": "visual_review_nontext_map",
+      "render_sha256": "7aa5efe63b616cf330e3895210285ff4f951cf49419ee0030140fd339f7294fb",
+      "text_characters": 0,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; map or sketch-map only, no prose body."
+    },
+    {
+      "document_id": "icj-frontier-dispute-1986",
+      "pdf_page": 86,
+      "category": "text",
+      "method": "tesseract_ocr_visual_review",
+      "render_sha256": "bb770eef7c916b7b96db53fe090f934d3b117b2b64e76ba0cf1d384e55938dee",
+      "text_characters": 3212,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; Tesseract and RapidOCR compared; text visually reviewed."
+    },
+    {
+      "document_id": "icj-gabcikovo-1997",
+      "pdf_page": 16,
+      "category": "map",
+      "method": "visual_review_nontext_map",
+      "render_sha256": "3aab9946afa737a62b8a20fb7a5e5f1c851a6caab9fdc7142136143b0d2b0aed",
+      "text_characters": 0,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; map or sketch-map only, no prose body."
+    },
+    {
+      "document_id": "icj-gabcikovo-1997",
+      "pdf_page": 23,
+      "category": "map",
+      "method": "visual_review_nontext_map",
+      "render_sha256": "db5d6ad56e2477491dbfbabd1d008a48c37c6ccd316232219e8669f3fb3ce591",
+      "text_characters": 0,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; map or sketch-map only, no prose body."
+    },
+    {
+      "document_id": "icj-gabcikovo-1997",
+      "pdf_page": 77,
+      "category": "text",
+      "method": "tesseract_ocr_visual_review",
+      "render_sha256": "e6f87e2f12d4b5a8eab2df870978ffd82133a1d61fe2555ac6eac5ab6c6e5171",
+      "text_characters": 2805,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; Tesseract and RapidOCR compared; text visually reviewed."
+    },
+    {
+      "document_id": "icj-lagrand-2001",
+      "pdf_page": 8,
+      "category": "text",
+      "method": "tesseract_ocr_visual_review",
+      "render_sha256": "af31cc117fec4745c32107c3131f4d9cea6b6490adf704e406042ae8d508f94c",
+      "text_characters": 2990,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; Tesseract and RapidOCR compared; text visually reviewed."
+    },
+    {
+      "document_id": "icj-nicaragua-1986-merits",
+      "pdf_page": 36,
+      "category": "text",
+      "method": "manual_transcription_visual_second_review",
+      "render_sha256": "70a3381c56e46ca6fdfc5c6383417243a9211bf8f17e43699612d791b06ffe72",
+      "text_characters": 2706,
+      "review_status": "approved",
+      "note": "Existing manual transcription compared with 300 DPI render and two OCR engines."
+    },
+    {
+      "document_id": "icj-nicaragua-1986-merits",
+      "pdf_page": 49,
+      "category": "text",
+      "method": "manual_transcription_visual_second_review",
+      "render_sha256": "36fbaf2d1d051788a2703c7f45b5f1a14c2d3a506036e096363e444eb5ac44ea",
+      "text_characters": 2637,
+      "review_status": "approved",
+      "note": "Existing manual transcription compared with 300 DPI render and two OCR engines."
+    },
+    {
+      "document_id": "icj-north-sea-1969",
+      "pdf_page": 42,
+      "category": "text",
+      "method": "tesseract_ocr_visual_review",
+      "render_sha256": "82f53472882a73b71d1e2230703217ee487bd941ce5fae35d268be187175a5b7",
+      "text_characters": 2914,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; Tesseract and RapidOCR compared; text visually reviewed."
+    },
+    {
+      "document_id": "icj-nuclear-weapons-1996",
+      "pdf_page": 1,
+      "category": "blank",
+      "method": "visual_review_blank",
+      "render_sha256": "4478b616bd8928b9287e3b7406a0750f0af9f7b8a8a8e5e4d4c227261b45c51f",
+      "text_characters": 0,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; no substantive visual content."
+    },
+    {
+      "document_id": "icj-reparation-injuries-1949",
+      "pdf_page": 8,
+      "category": "text",
+      "method": "tesseract_ocr_visual_review",
+      "render_sha256": "f2ea85308897169fcb525a1450aba3846331c36bd0d6b59dd0a0247f72719812",
+      "text_characters": 3100,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; Tesseract and RapidOCR compared; text visually reviewed."
+    },
+    {
+      "document_id": "icj-statute-1945",
+      "pdf_page": 34,
+      "category": "blank",
+      "method": "visual_review_blank",
+      "render_sha256": "4478b616bd8928b9287e3b7406a0750f0af9f7b8a8a8e5e4d4c227261b45c51f",
+      "text_characters": 0,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; no substantive visual content."
+    },
+    {
+      "document_id": "icj-wall-2004",
+      "pdf_page": 23,
+      "category": "text",
+      "method": "tesseract_ocr_visual_review",
+      "render_sha256": "ac9076a86ed8759e37fd6163d710666e36ee0626bfaa132d1a57c402b2c95cb4",
+      "text_characters": 2936,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; Tesseract and RapidOCR compared; text visually reviewed."
+    },
+    {
+      "document_id": "icj-wall-2004",
+      "pdf_page": 50,
+      "category": "text",
+      "method": "tesseract_ocr_visual_review",
+      "render_sha256": "6bbce56cc4c092c1f6bf53612aac62fb705056e2f49ade69cc1957d3bff22af4",
+      "text_characters": 2592,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; Tesseract and RapidOCR compared; text visually reviewed."
+    },
+    {
+      "document_id": "icj-western-sahara-1975",
+      "pdf_page": 9,
+      "category": "text",
+      "method": "tesseract_ocr_visual_review",
+      "render_sha256": "12aa4879d733defebf7e77fb33c57d9e2c54f9895299b6aaeca602f1b2f346f7",
+      "text_characters": 2857,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; Tesseract and RapidOCR compared; text visually reviewed."
+    },
+    {
+      "document_id": "icj-western-sahara-1975",
+      "pdf_page": 36,
+      "category": "text",
+      "method": "tesseract_ocr_visual_review",
+      "render_sha256": "94f5a4710157a210890704f4e924f18aa7bf4b0b5aa69fc2ecaa0af0ba0a8d0d",
+      "text_characters": 2963,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; Tesseract and RapidOCR compared; text visually reviewed."
+    },
+    {
+      "document_id": "un-charter-1945",
+      "pdf_page": 4,
+      "category": "blank",
+      "method": "visual_review_blank",
+      "render_sha256": "4478b616bd8928b9287e3b7406a0750f0af9f7b8a8a8e5e4d4c227261b45c51f",
+      "text_characters": 0,
+      "review_status": "approved",
+      "note": "Rendered at 300 DPI; no substantive visual content."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+[package]
+name = "ilia-corpus-embedder"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+ilia-database = { path = "../../crates/ilia-database" }
+ilia-embedding = { path = "../../crates/ilia-embedding" }

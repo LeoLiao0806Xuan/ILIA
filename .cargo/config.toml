@@ -1,0 +1,13 @@
+[build]
+target = "x86_64-pc-windows-gnu"
+
+[target.x86_64-pc-windows-gnu]
+linker = "D:/msys/ucrt64/bin/gcc.exe"
+ar = "D:/msys/ucrt64/bin/ar.exe"
+
+[env]
+CC_x86_64_pc_windows_gnu = "D:/msys/ucrt64/bin/gcc.exe"
+AR_x86_64_pc_windows_gnu = "D:/msys/ucrt64/bin/ar.exe"
+SQLITE3_LIB_DIR = "D:/msys/ucrt64/lib"
+SQLITE3_INCLUDE_DIR = "D:/msys/ucrt64/include"
+SQLITE3_STATIC = "1"

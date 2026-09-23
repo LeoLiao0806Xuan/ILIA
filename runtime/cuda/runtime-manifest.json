@@ -1,0 +1,17 @@
+{
+  "component": "llama.cpp CUDA runtime",
+  "version": "0.4.1-dev",
+  "build": 10964,
+  "commit": "b29c606e2",
+  "target": "Windows x86_64 CUDA 13.3",
+  "binary_archive": {
+    "source": "https://github.com/ggml-org/llama.cpp/releases/download/b10964/llama-b10964-bin-win-cuda-13.3-x64.zip",
+    "size_bytes": 149703589,
+    "sha256": "cd63ae76ad78a1540aa0f30f6c6284bab14c146d99a58f70c3f0a38cb9c62351"
+  },
+  "cuda_archive": {
+    "source": "https://github.com/ggml-org/llama.cpp/releases/download/b10964/cudart-llama-bin-win-cuda-13.3-x64.zip",
+    "size_bytes": 390970417,
+    "sha256": "1462a050eb4c684921ba51dcc4cc488a036674c3e73e9945ee705b854808d03e"
+  }
+}

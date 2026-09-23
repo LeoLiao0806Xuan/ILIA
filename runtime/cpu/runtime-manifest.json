@@ -1,0 +1,12 @@
+{
+  "component": "llama.cpp CPU runtime",
+  "version": "0.4.1-dev",
+  "build": 10964,
+  "commit": "b29c606e2",
+  "target": "Windows x86_64 CPU",
+  "archive": {
+    "source": "https://github.com/ggml-org/llama.cpp/releases/download/b10964/llama-b10964-bin-win-cpu-x64.zip",
+    "size_bytes": 18427629,
+    "sha256": "917f39c076402c421224824607397af20f53625a60defc20e8dd22446bf4c5d7"
+  }
+}

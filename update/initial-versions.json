@@ -1,0 +1,12 @@
+{
+  "components": {
+    "application": "0.1.0",
+    "corpus": "public-international-law-v1-2026.09.22",
+    "model-bge-m3": "gpahal-bge-m3-onnx-int8",
+    "model-qwen3-4b": "bc640142c66e1fdd12af0bd68f40445458f3869b-q4_k_m",
+    "runtime-cuda": "llama.cpp-b10964-cuda13.3",
+    "runtime-vulkan": "llama.cpp-b10964-vulkan",
+    "runtime-cpu": "llama.cpp-b10964-cpu",
+    "runtime-onnx": "1.22.0"
+  }
+}

@@ -1,0 +1,17 @@
+[package]
+name = "ilia-eval-runner"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+ilia-core = { path = "../../crates/ilia-core" }
+ilia-database = { path = "../../crates/ilia-database" }
+ilia-embedding = { path = "../../crates/ilia-embedding" }
+ilia-retrieval = { path = "../../crates/ilia-retrieval" }
+serde.workspace = true
+serde_json.workspace = true
+
+[[bin]]
+name = "ilia-eval"
+path = "src/main.rs"

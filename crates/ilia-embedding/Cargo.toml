@@ -1,0 +1,10 @@
+[package]
+name = "ilia-embedding"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+fastembed.workspace = true
+ort.workspace = true
+thiserror.workspace = true

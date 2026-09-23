@@ -1,0 +1,200 @@
+{"id":"vclt-en-27","query":"VCLT Article 27","expected_document_id":"vclt-1969","expected_citation_label":"VCLT, Article 27","expected_document_type":"treaty","tags":["exact","en","article"]}
+{"id":"vclt-zh-31","query":"维也纳条约法公约第31条","expected_document_id":"vclt-1969","expected_citation_label":"VCLT, Article 31","tags":["exact","zh","article"]}
+{"id":"vclt-en-26","query":"Vienna Convention on the Law of Treaties Article 26","expected_document_id":"vclt-1969","expected_citation_label":"VCLT, Article 26","tags":["exact","en","alias"]}
+{"id":"vclt-zh-46","query":"维也纳条约法公约第46条","expected_document_id":"vclt-1969","expected_citation_label":"VCLT, Article 46","tags":["exact","zh","article"]}
+{"id":"vclt-en-2","query":"VCLT art. 2","expected_document_id":"vclt-1969","expected_citation_label":"VCLT, Article 2","tags":["exact","en","abbreviation"]}
+{"id":"arsiwa-en-1","query":"ARSIWA Article 1","expected_document_id":"arsiwa-2001","expected_citation_label":"ARSIWA, Article 1","expected_document_type":"draft_articles","tags":["exact","classification"]}
+{"id":"arsiwa-zh-2","query":"国家对国际不法行为的责任条款第2条","expected_document_id":"arsiwa-2001","expected_citation_label":"ARSIWA, Article 2","tags":["exact","zh"]}
+{"id":"arsiwa-en-8","query":"ARSIWA Article 8","expected_document_id":"arsiwa-2001","expected_citation_label":"ARSIWA, Article 8","tags":["exact","attribution"]}
+{"id":"arsiwa-zh-25","query":"国家对国际不法行为的责任条款第25条","expected_document_id":"arsiwa-2001","expected_citation_label":"ARSIWA, Article 25","tags":["exact","necessity"]}
+{"id":"arsiwa-en-31","query":"ARSIWA art 31","expected_document_id":"arsiwa-2001","expected_citation_label":"ARSIWA, Article 31","tags":["exact","reparation"]}
+{"id":"charter-en-1","query":"UN Charter Article 1","expected_document_id":"un-charter-1945","expected_citation_label":"UN Charter, Article 1","tags":["exact","en"]}
+{"id":"charter-zh-2","query":"联合国宪章第2条","expected_document_id":"un-charter-1945","expected_citation_label":"UN Charter, Article 2","tags":["exact","zh"]}
+{"id":"charter-en-51","query":"Charter of the United Nations Article 51","expected_document_id":"un-charter-1945","expected_citation_label":"UN Charter, Article 51","tags":["exact","self_defence"]}
+{"id":"charter-zh-103","query":"《联合国宪章》第103条","expected_document_id":"un-charter-1945","expected_citation_label":"UN Charter, Article 103","tags":["exact","zh"]}
+{"id":"charter-en-111","query":"UN Charter art. 111","expected_document_id":"un-charter-1945","expected_citation_label":"UN Charter, Article 111","tags":["exact","last_article"]}
+{"id":"udhr-en-1","query":"UDHR Article 1","expected_document_id":"udhr-1948","expected_citation_label":"UDHR, Article 1","expected_document_type":"declaration","tags":["exact","classification"]}
+{"id":"udhr-zh-3","query":"世界人权宣言第3条","expected_document_id":"udhr-1948","expected_citation_label":"UDHR, Article 3","tags":["exact","zh"]}
+{"id":"udhr-en-19","query":"Universal Declaration of Human Rights Article 19","expected_document_id":"udhr-1948","expected_citation_label":"UDHR, Article 19","tags":["exact","expression"]}
+{"id":"udhr-zh-26","query":"世界人权宣言第26条","expected_document_id":"udhr-1948","expected_citation_label":"UDHR, Article 26","tags":["exact","education"]}
+{"id":"udhr-en-30","query":"UDHR Article 30","expected_document_id":"udhr-1948","expected_citation_label":"UDHR, Article 30","tags":["exact","last_article"]}
+{"id":"iccpr-en-1","query":"ICCPR Article 1","expected_document_id":"iccpr-1966","expected_citation_label":"ICCPR, Article 1","tags":["exact","en"]}
+{"id":"iccpr-zh-6","query":"公民权利和政治权利国际公约第6条","expected_document_id":"iccpr-1966","expected_citation_label":"ICCPR, Article 6","tags":["exact","zh","life"]}
+{"id":"iccpr-en-9","query":"ICCPR art. 9","expected_document_id":"iccpr-1966","expected_citation_label":"ICCPR, Article 9","tags":["exact","liberty"]}
+{"id":"iccpr-zh-14","query":"公民权利和政治权利国际公约第14条","expected_document_id":"iccpr-1966","expected_citation_label":"ICCPR, Article 14","tags":["exact","fair_trial"]}
+{"id":"iccpr-en-27","query":"ICCPR Article 27","expected_document_id":"iccpr-1966","expected_citation_label":"ICCPR, Article 27","tags":["exact","minorities"]}
+{"id":"icescr-en-1","query":"ICESCR Article 1","expected_document_id":"icescr-1966","expected_citation_label":"ICESCR, Article 1","tags":["exact","en"]}
+{"id":"icescr-zh-6","query":"经济社会及文化权利国际公约第6条","expected_document_id":"icescr-1966","expected_citation_label":"ICESCR, Article 6","tags":["exact","zh","work"]}
+{"id":"icescr-en-12","query":"ICESCR art 12","expected_document_id":"icescr-1966","expected_citation_label":"ICESCR, Article 12","tags":["exact","health"]}
+{"id":"icescr-zh-15","query":"经济社会及文化权利国际公约第15条","expected_document_id":"icescr-1966","expected_citation_label":"ICESCR, Article 15","tags":["exact","culture"]}
+{"id":"icescr-en-31","query":"ICESCR Article 31","expected_document_id":"icescr-1966","expected_citation_label":"ICESCR, Article 31","tags":["exact","last_article"]}
+{"id":"unclos-en-2","query":"UNCLOS Article 2","expected_document_id":"unclos-1982","expected_citation_label":"UNCLOS, Article 2","tags":["exact","territorial_sea"]}
+{"id":"unclos-zh-3","query":"联合国海洋法公约第3条","expected_document_id":"unclos-1982","expected_citation_label":"UNCLOS, Article 3","tags":["exact","zh"]}
+{"id":"unclos-en-17","query":"United Nations Convention on the Law of the Sea Article 17","expected_document_id":"unclos-1982","expected_citation_label":"UNCLOS, Article 17","tags":["exact","innocent_passage"]}
+{"id":"unclos-zh-87","query":"联合国海洋法公约第87条","expected_document_id":"unclos-1982","expected_citation_label":"UNCLOS, Article 87","tags":["exact","high_seas"]}
+{"id":"unclos-en-121","query":"UNCLOS art. 121","expected_document_id":"unclos-1982","expected_citation_label":"UNCLOS, Article 121","tags":["exact","islands"]}
+{"id":"nicaragua-en-191","query":"Nicaragua paragraph 191","expected_document_id":"icj-nicaragua-1986-merits","expected_citation_label":"Nicaragua v. United States (Merits), para. 191","expected_document_type":"judgment","tags":["exact","case"]}
+{"id":"nicaragua-zh-195","query":"尼加拉瓜境内和针对尼加拉瓜的军事与准军事活动案（尼加拉瓜诉美国），实体判决第195段","expected_document_id":"icj-nicaragua-1986-merits","expected_citation_label":"Nicaragua v. United States (Merits), para. 195","tags":["exact","case","zh"]}
+{"id":"nicaragua-en-202","query":"Nicaragua Merits para. 202","expected_document_id":"icj-nicaragua-1986-merits","expected_citation_label":"Nicaragua v. United States (Merits), para. 202","tags":["exact","case"]}
+{"id":"fts-arsiwa-control","query":"ARSIWA directed or controlled","expected_document_id":"arsiwa-2001","expected_citation_label":"ARSIWA, Article 8","expected_document_type":"draft_articles","tags":["fts","classification"]}
+{"id":"fts-vclt-internal-law","query":"VCLT internal law","expected_document_id":"vclt-1969","expected_citation_label":"VCLT, Article 27","tags":["fts","natural_language"]}
+{"id":"document-name-zh","query":"维也纳条约法公约","expected_document_id":"vclt-1969","expected_document_type":"treaty","tags":["exact","document_name","zh"]}
+{"id":"document-name-en","query":"United Nations Convention on the Law of the Sea","expected_document_id":"unclos-1982","expected_document_type":"treaty","tags":["exact","document_name","en"]}
+{"id":"negative-invented-treaty","query":"zzzxqv imaginary treaty provision","expect_no_results":true,"tags":["negative","no_answer"]}
+{"id":"negative-impossible-article","query":"VCLT Article 999","expect_no_results":true,"tags":["negative","out_of_range"]}
+{"id":"vclt-extra-4","query":"VCLT Article 4","expected_document_id":"vclt-1969","expected_citation_label":"VCLT, Article 4","tags":["exact","expanded"]}
+{"id":"vclt-extra-7","query":"VCLT Article 7","expected_document_id":"vclt-1969","expected_citation_label":"VCLT, Article 7","tags":["exact","expanded"]}
+{"id":"vclt-extra-18","query":"VCLT Article 18","expected_document_id":"vclt-1969","expected_citation_label":"VCLT, Article 18","tags":["exact","expanded"]}
+{"id":"vclt-extra-53","query":"维也纳条约法公约第53条","expected_document_id":"vclt-1969","expected_citation_label":"VCLT, Article 53","tags":["exact","expanded","zh"]}
+{"id":"vclt-extra-62","query":"VCLT Article 62","expected_document_id":"vclt-1969","expected_citation_label":"VCLT, Article 62","tags":["exact","expanded"]}
+{"id":"arsiwa-extra-4","query":"ARSIWA Article 4","expected_document_id":"arsiwa-2001","expected_citation_label":"ARSIWA, Article 4","tags":["exact","expanded"]}
+{"id":"arsiwa-extra-5","query":"ARSIWA Article 5","expected_document_id":"arsiwa-2001","expected_citation_label":"ARSIWA, Article 5","tags":["exact","expanded"]}
+{"id":"arsiwa-extra-11","query":"国家对国际不法行为的责任条款第11条","expected_document_id":"arsiwa-2001","expected_citation_label":"ARSIWA, Article 11","tags":["exact","expanded","zh"]}
+{"id":"arsiwa-extra-16","query":"ARSIWA Article 16","expected_document_id":"arsiwa-2001","expected_citation_label":"ARSIWA, Article 16","tags":["exact","expanded"]}
+{"id":"arsiwa-extra-34","query":"ARSIWA Article 34","expected_document_id":"arsiwa-2001","expected_citation_label":"ARSIWA, Article 34","tags":["exact","expanded"]}
+{"id":"charter-extra-24","query":"UN Charter Article 24","expected_document_id":"un-charter-1945","expected_citation_label":"UN Charter, Article 24","tags":["exact","expanded"]}
+{"id":"charter-extra-25","query":"联合国宪章第25条","expected_document_id":"un-charter-1945","expected_citation_label":"UN Charter, Article 25","tags":["exact","expanded","zh"]}
+{"id":"charter-extra-39","query":"UN Charter Article 39","expected_document_id":"un-charter-1945","expected_citation_label":"UN Charter, Article 39","tags":["exact","expanded"]}
+{"id":"charter-extra-41","query":"UN Charter Article 41","expected_document_id":"un-charter-1945","expected_citation_label":"UN Charter, Article 41","tags":["exact","expanded"]}
+{"id":"charter-extra-94","query":"联合国宪章第94条","expected_document_id":"un-charter-1945","expected_citation_label":"UN Charter, Article 94","tags":["exact","expanded","zh"]}
+{"id":"udhr-extra-5","query":"UDHR Article 5","expected_document_id":"udhr-1948","expected_citation_label":"UDHR, Article 5","tags":["exact","expanded"]}
+{"id":"udhr-extra-12","query":"世界人权宣言第12条","expected_document_id":"udhr-1948","expected_citation_label":"UDHR, Article 12","tags":["exact","expanded","zh"]}
+{"id":"udhr-extra-18","query":"UDHR Article 18","expected_document_id":"udhr-1948","expected_citation_label":"UDHR, Article 18","tags":["exact","expanded"]}
+{"id":"udhr-extra-23","query":"UDHR Article 23","expected_document_id":"udhr-1948","expected_citation_label":"UDHR, Article 23","tags":["exact","expanded"]}
+{"id":"iccpr-extra-2","query":"ICCPR Article 2","expected_document_id":"iccpr-1966","expected_citation_label":"ICCPR, Article 2","tags":["exact","expanded"]}
+{"id":"iccpr-extra-7","query":"公民权利和政治权利国际公约第7条","expected_document_id":"iccpr-1966","expected_citation_label":"ICCPR, Article 7","tags":["exact","expanded","zh"]}
+{"id":"iccpr-extra-17","query":"ICCPR Article 17","expected_document_id":"iccpr-1966","expected_citation_label":"ICCPR, Article 17","tags":["exact","expanded"]}
+{"id":"iccpr-extra-18","query":"ICCPR Article 18","expected_document_id":"iccpr-1966","expected_citation_label":"ICCPR, Article 18","tags":["exact","expanded"]}
+{"id":"iccpr-extra-19","query":"ICCPR Article 19","expected_document_id":"iccpr-1966","expected_citation_label":"ICCPR, Article 19","tags":["exact","expanded"]}
+{"id":"icescr-extra-2","query":"ICESCR Article 2","expected_document_id":"icescr-1966","expected_citation_label":"ICESCR, Article 2","tags":["exact","expanded"]}
+{"id":"icescr-extra-7","query":"经济社会及文化权利国际公约第7条","expected_document_id":"icescr-1966","expected_citation_label":"ICESCR, Article 7","tags":["exact","expanded","zh"]}
+{"id":"icescr-extra-11","query":"ICESCR Article 11","expected_document_id":"icescr-1966","expected_citation_label":"ICESCR, Article 11","tags":["exact","expanded"]}
+{"id":"icescr-extra-13","query":"ICESCR Article 13","expected_document_id":"icescr-1966","expected_citation_label":"ICESCR, Article 13","tags":["exact","expanded"]}
+{"id":"unclos-extra-33","query":"UNCLOS Article 33","expected_document_id":"unclos-1982","expected_citation_label":"UNCLOS, Article 33","tags":["exact","expanded"]}
+{"id":"unclos-extra-56","query":"联合国海洋法公约第56条","expected_document_id":"unclos-1982","expected_citation_label":"UNCLOS, Article 56","tags":["exact","expanded","zh"]}
+{"id":"unclos-extra-57","query":"UNCLOS Article 57","expected_document_id":"unclos-1982","expected_citation_label":"UNCLOS, Article 57","tags":["exact","expanded"]}
+{"id":"unclos-extra-74","query":"UNCLOS Article 74","expected_document_id":"unclos-1982","expected_citation_label":"UNCLOS, Article 74","tags":["exact","expanded"]}
+{"id":"unclos-extra-76","query":"联合国海洋法公约第76条","expected_document_id":"unclos-1982","expected_citation_label":"UNCLOS, Article 76","tags":["exact","expanded","zh"]}
+{"id":"nicaragua-extra-176","query":"Nicaragua Merits paragraph 176","expected_document_id":"icj-nicaragua-1986-merits","expected_citation_label":"Nicaragua v. United States (Merits), para. 176","tags":["exact","expanded","case"]}
+{"id":"nicaragua-extra-190","query":"尼加拉瓜境内和针对尼加拉瓜的军事与准军事活动案（尼加拉瓜诉美国），实体判决第190段","expected_document_id":"icj-nicaragua-1986-merits","expected_citation_label":"Nicaragua v. United States (Merits), para. 190","tags":["exact","expanded","case","zh"]}
+{"id":"nicaragua-extra-264","query":"Nicaragua Merits para. 264","expected_document_id":"icj-nicaragua-1986-merits","expected_citation_label":"Nicaragua v. United States (Merits), para. 264","tags":["exact","expanded","case"]}
+{"id":"semantic-vclt-good-faith","query":"VCLT treaties must be performed in good faith","expected_document_id":"vclt-1969","expected_citation_label":"VCLT, Article 26","tags":["semantic","hybrid","en"]}
+{"id":"semantic-vclt-interpretation","query":"VCLT ordinary meaning context object and purpose of a treaty","expected_document_id":"vclt-1969","expected_citation_label":"VCLT, Article 31","tags":["semantic","hybrid","en"]}
+{"id":"semantic-vclt-jus-cogens","query":"VCLT treaty conflicting with a peremptory norm of general international law","expected_document_id":"vclt-1969","expected_citation_label":"VCLT, Article 53","tags":["semantic","hybrid","en"]}
+{"id":"semantic-vclt-zh-good-faith","query":"《维也纳条约法公约》善意履行条约","expected_document_id":"vclt-1969","expected_citation_label":"VCLT, Article 26","tags":["semantic","hybrid","cross_lingual","zh"]}
+{"id":"semantic-arsiwa-organ","query":"ARSIWA conduct of a state organ attributable to the state","expected_document_id":"arsiwa-2001","expected_citation_label":"ARSIWA, Article 4","tags":["semantic","hybrid","en"]}
+{"id":"semantic-arsiwa-control","query":"ARSIWA conduct directed or controlled by a state","expected_document_id":"arsiwa-2001","expected_citation_label":"ARSIWA, Article 8","tags":["semantic","hybrid","en"]}
+{"id":"semantic-arsiwa-reparation","query":"ARSIWA full reparation for injury caused by the wrongful act","expected_document_id":"arsiwa-2001","expected_citation_label":"ARSIWA, Article 31","tags":["semantic","hybrid","en"]}
+{"id":"semantic-charter-force","query":"UN Charter prohibition of the threat or use of force against territorial integrity","expected_document_id":"un-charter-1945","expected_citation_label":"UN Charter, Article 2","tags":["semantic","hybrid","en"]}
+{"id":"semantic-charter-self-defence-zh","query":"《联合国宪章》遭受武力攻击时的单独或集体自卫权","expected_document_id":"un-charter-1945","expected_citation_label":"UN Charter, Article 51","tags":["semantic","hybrid","cross_lingual","zh"]}
+{"id":"semantic-charter-peace","query":"UN Charter Security Council determines a threat to peace breach of peace or act of aggression","expected_document_id":"un-charter-1945","expected_citation_label":"UN Charter, Article 39","tags":["semantic","hybrid","en"]}
+{"id":"semantic-udhr-expression","query":"UDHR freedom to seek receive and impart information and ideas","expected_document_id":"udhr-1948","expected_citation_label":"UDHR, Article 19","tags":["semantic","hybrid","en"]}
+{"id":"semantic-udhr-education","query":"UDHR elementary education shall be free and compulsory","expected_document_id":"udhr-1948","expected_citation_label":"UDHR, Article 26","tags":["semantic","hybrid","en"]}
+{"id":"semantic-iccpr-detention-zh","query":"《公民权利和政治权利国际公约》不得任意逮捕或拘禁","expected_document_id":"iccpr-1966","expected_citation_label":"ICCPR, Article 9","tags":["semantic","hybrid","cross_lingual","zh"]}
+{"id":"semantic-iccpr-hearing","query":"ICCPR fair public hearing by an independent impartial tribunal","expected_document_id":"iccpr-1966","expected_citation_label":"ICCPR, Article 14","tags":["semantic","hybrid","en"]}
+{"id":"semantic-iccpr-minorities","query":"ICCPR minorities enjoy their culture religion and language","expected_document_id":"iccpr-1966","expected_citation_label":"ICCPR, Article 27","tags":["semantic","hybrid","en"]}
+{"id":"semantic-icescr-health","query":"ICESCR highest attainable standard of physical and mental health","expected_document_id":"icescr-1966","expected_citation_label":"ICESCR, Article 12","tags":["semantic","hybrid","en"]}
+{"id":"semantic-unclos-territorial-zh","query":"《联合国海洋法公约》领海宽度不得超过十二海里","expected_document_id":"unclos-1982","expected_citation_label":"UNCLOS, Article 3","tags":["semantic","hybrid","cross_lingual","zh"]}
+{"id":"semantic-unclos-eez","query":"UNCLOS exclusive economic zone shall not extend beyond 200 nautical miles","expected_document_id":"unclos-1982","expected_citation_label":"UNCLOS, Article 57","tags":["semantic","hybrid","en"]}
+{"id":"semantic-unclos-artificial-islands","query":"UNCLOS artificial islands do not possess the status of islands","expected_document_id":"unclos-1982","expected_citation_label":"UNCLOS, Article 60","tags":["semantic","hybrid","en"]}
+{"id":"semantic-nicaragua-armed-attack","query":"Nicaragua judgment most grave forms of the use of force constituting an armed attack","expected_document_id":"icj-nicaragua-1986-merits","expected_citation_label":"Nicaragua v. United States (Merits), para. 191","tags":["semantic","hybrid","case","en"]}
+{"id":"doc-en-icj-statute-1945","query":"Statute of the International Court of Justice","expected_document_id":"icj-statute-1945","expected_document_type":"statute","tags":["exact","document_name","expanded","en"]}
+{"id":"doc-zh-icj-statute-1945","query":"国际法院规约","expected_document_id":"icj-statute-1945","tags":["exact","document_name","expanded","zh"]}
+{"id":"doc-en-rome-statute-1998","query":"Rome Statute of the International Criminal Court","expected_document_id":"rome-statute-1998","expected_document_type":"treaty","tags":["exact","document_name","expanded","en"]}
+{"id":"doc-zh-rome-statute-1998","query":"国际刑事法院罗马规约","expected_document_id":"rome-statute-1998","tags":["exact","document_name","expanded","zh"]}
+{"id":"doc-en-cat-1984","query":"Convention against Torture and Other Cruel Inhuman or Degrading Treatment or Punishment","expected_document_id":"cat-1984","expected_document_type":"treaty","tags":["exact","document_name","expanded","en"]}
+{"id":"doc-zh-cat-1984","query":"禁止酷刑和其他残忍不人道或有辱人格的待遇或处罚公约","expected_document_id":"cat-1984","tags":["exact","document_name","expanded","zh"]}
+{"id":"doc-en-icerd-1965","query":"International Convention on the Elimination of All Forms of Racial Discrimination","expected_document_id":"icerd-1965","expected_document_type":"treaty","tags":["exact","document_name","expanded","en"]}
+{"id":"doc-zh-icerd-1965","query":"消除一切形式种族歧视国际公约","expected_document_id":"icerd-1965","tags":["exact","document_name","expanded","zh"]}
+{"id":"doc-en-cedaw-1979","query":"Convention on the Elimination of All Forms of Discrimination against Women","expected_document_id":"cedaw-1979","expected_document_type":"treaty","tags":["exact","document_name","expanded","en"]}
+{"id":"doc-zh-cedaw-1979","query":"消除对妇女一切形式歧视公约","expected_document_id":"cedaw-1979","tags":["exact","document_name","expanded","zh"]}
+{"id":"doc-en-crc-1989","query":"Convention on the Rights of the Child","expected_document_id":"crc-1989","expected_document_type":"treaty","tags":["exact","document_name","expanded","en"]}
+{"id":"doc-zh-crc-1989","query":"儿童权利公约","expected_document_id":"crc-1989","tags":["exact","document_name","expanded","zh"]}
+{"id":"doc-en-gc-i-1949","query":"Geneva Convention I of 12 August 1949","expected_document_id":"gc-i-1949","expected_document_type":"treaty","tags":["exact","document_name","expanded","en"]}
+{"id":"doc-zh-gc-i-1949","query":"1949年日内瓦第一公约","expected_document_id":"gc-i-1949","tags":["exact","document_name","expanded","zh"]}
+{"id":"doc-en-gc-ii-1949","query":"Geneva Convention II of 12 August 1949","expected_document_id":"gc-ii-1949","expected_document_type":"treaty","tags":["exact","document_name","expanded","en"]}
+{"id":"doc-zh-gc-ii-1949","query":"1949年日内瓦第二公约","expected_document_id":"gc-ii-1949","tags":["exact","document_name","expanded","zh"]}
+{"id":"doc-en-gc-iii-1949","query":"Geneva Convention III of 12 August 1949","expected_document_id":"gc-iii-1949","expected_document_type":"treaty","tags":["exact","document_name","expanded","en"]}
+{"id":"doc-zh-gc-iii-1949","query":"1949年日内瓦第三公约","expected_document_id":"gc-iii-1949","tags":["exact","document_name","expanded","zh"]}
+{"id":"doc-en-gc-iv-1949","query":"Geneva Convention IV of 12 August 1949","expected_document_id":"gc-iv-1949","expected_document_type":"treaty","tags":["exact","document_name","expanded","en"]}
+{"id":"doc-zh-gc-iv-1949","query":"1949年日内瓦第四公约","expected_document_id":"gc-iv-1949","tags":["exact","document_name","expanded","zh"]}
+{"id":"doc-en-ap-i-1977","query":"Protocol Additional I to the Geneva Conventions of 12 August 1949","expected_document_id":"ap-i-1977","expected_document_type":"treaty","tags":["exact","document_name","expanded","en"]}
+{"id":"doc-zh-ap-i-1977","query":"1949年日内瓦公约第一附加议定书","expected_document_id":"ap-i-1977","tags":["exact","document_name","expanded","zh"]}
+{"id":"doc-en-ap-ii-1977","query":"Protocol Additional II to the Geneva Conventions of 12 August 1949","expected_document_id":"ap-ii-1977","expected_document_type":"treaty","tags":["exact","document_name","expanded","en"]}
+{"id":"doc-zh-ap-ii-1977","query":"1949年日内瓦公约第二附加议定书","expected_document_id":"ap-ii-1977","tags":["exact","document_name","expanded","zh"]}
+{"id":"doc-en-icrc-cihl-rules","query":"ICRC Customary International Humanitarian Law Rules","expected_document_id":"icrc-cihl-rules","expected_document_type":"customary_rule","tags":["exact","document_name","expanded","en"]}
+{"id":"doc-zh-icrc-cihl-rules","query":"红十字国际委员会习惯国际人道法规则","expected_document_id":"icrc-cihl-rules","tags":["exact","document_name","expanded","zh"]}
+{"id":"doc-en-icj-corfu-channel-1949-merits","query":"Corfu Channel United Kingdom v Albania Merits Judgment","expected_document_id":"icj-corfu-channel-1949-merits","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-corfu-channel-1949-merits","query":"科孚海峡案实体判决","expected_document_id":"icj-corfu-channel-1949-merits","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-reparation-injuries-1949","query":"Reparation for Injuries Suffered in the Service of the United Nations Advisory Opinion","expected_document_id":"icj-reparation-injuries-1949","expected_document_type":"advisory_opinion","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-reparation-injuries-1949","query":"为联合国服务而遭受损害的赔偿咨询意见","expected_document_id":"icj-reparation-injuries-1949","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-asylum-1950","query":"Asylum Colombia v Peru Judgment","expected_document_id":"icj-asylum-1950","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-asylum-1950","query":"庇护案判决","expected_document_id":"icj-asylum-1950","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-genocide-reservations-1951","query":"Reservations to the Genocide Convention Advisory Opinion","expected_document_id":"icj-genocide-reservations-1951","expected_document_type":"advisory_opinion","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-genocide-reservations-1951","query":"灭绝种族罪公约保留咨询意见","expected_document_id":"icj-genocide-reservations-1951","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-nottebohm-1955","query":"Nottebohm Liechtenstein v Guatemala Second Phase Judgment","expected_document_id":"icj-nottebohm-1955","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-nottebohm-1955","query":"诺特博姆案第二阶段判决","expected_document_id":"icj-nottebohm-1955","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-right-passage-1960","query":"Right of Passage over Indian Territory Merits Judgment","expected_document_id":"icj-right-passage-1960","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-right-passage-1960","query":"印度领土通行权案实体判决","expected_document_id":"icj-right-passage-1960","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-temple-preah-vihear-1962","query":"Temple of Preah Vihear Merits Judgment","expected_document_id":"icj-temple-preah-vihear-1962","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-temple-preah-vihear-1962","query":"柏威夏寺案实体判决","expected_document_id":"icj-temple-preah-vihear-1962","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-north-sea-1969","query":"North Sea Continental Shelf Judgment","expected_document_id":"icj-north-sea-1969","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-north-sea-1969","query":"北海大陆架案判决","expected_document_id":"icj-north-sea-1969","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-barcelona-traction-1970","query":"Barcelona Traction Light and Power Company Limited Second Phase Judgment","expected_document_id":"icj-barcelona-traction-1970","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-barcelona-traction-1970","query":"巴塞罗那电车公司案第二阶段判决","expected_document_id":"icj-barcelona-traction-1970","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-namibia-1971","query":"Legal Consequences for States of the Continued Presence of South Africa in Namibia Advisory Opinion","expected_document_id":"icj-namibia-1971","expected_document_type":"advisory_opinion","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-namibia-1971","query":"纳米比亚咨询意见","expected_document_id":"icj-namibia-1971","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-nuclear-tests-1974","query":"Nuclear Tests Australia v France Judgment","expected_document_id":"icj-nuclear-tests-1974","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-nuclear-tests-1974","query":"核试验案判决","expected_document_id":"icj-nuclear-tests-1974","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-western-sahara-1975","query":"Western Sahara Advisory Opinion","expected_document_id":"icj-western-sahara-1975","expected_document_type":"advisory_opinion","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-western-sahara-1975","query":"西撒哈拉咨询意见","expected_document_id":"icj-western-sahara-1975","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-continental-shelf-tunisia-libya-1982","query":"Continental Shelf Tunisia v Libyan Arab Jamahiriya Judgment","expected_document_id":"icj-continental-shelf-tunisia-libya-1982","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-continental-shelf-tunisia-libya-1982","query":"突尼斯利比亚大陆架案判决","expected_document_id":"icj-continental-shelf-tunisia-libya-1982","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-frontier-dispute-1986","query":"Frontier Dispute Burkina Faso v Mali Judgment","expected_document_id":"icj-frontier-dispute-1986","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-frontier-dispute-1986","query":"布基纳法索马里边界争端案判决","expected_document_id":"icj-frontier-dispute-1986","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-elsi-1989","query":"Elettronica Sicula United States v Italy Judgment","expected_document_id":"icj-elsi-1989","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-elsi-1989","query":"西西里电子公司案判决","expected_document_id":"icj-elsi-1989","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-nauru-preliminary-1992","query":"Certain Phosphate Lands in Nauru Preliminary Objections Judgment","expected_document_id":"icj-nauru-preliminary-1992","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-nauru-preliminary-1992","query":"瑙鲁某些磷酸盐地案初步反对判决","expected_document_id":"icj-nauru-preliminary-1992","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-bosnian-genocide-preliminary-1996","query":"Application of the Genocide Convention Preliminary Objections Judgment","expected_document_id":"icj-bosnian-genocide-preliminary-1996","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-bosnian-genocide-preliminary-1996","query":"适用灭绝种族罪公约案初步反对判决","expected_document_id":"icj-bosnian-genocide-preliminary-1996","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-nuclear-weapons-1996","query":"Legality of the Threat or Use of Nuclear Weapons Advisory Opinion","expected_document_id":"icj-nuclear-weapons-1996","expected_document_type":"advisory_opinion","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-nuclear-weapons-1996","query":"以核武器相威胁或使用核武器的合法性咨询意见","expected_document_id":"icj-nuclear-weapons-1996","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-gabcikovo-1997","query":"Gabcikovo Nagymaros Project Hungary v Slovakia Judgment","expected_document_id":"icj-gabcikovo-1997","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-gabcikovo-1997","query":"盖博奇科沃大毛罗斯项目案判决","expected_document_id":"icj-gabcikovo-1997","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-lagrand-2001","query":"LaGrand Germany v United States of America Judgment","expected_document_id":"icj-lagrand-2001","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-lagrand-2001","query":"拉格朗案判决","expected_document_id":"icj-lagrand-2001","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-arrest-warrant-2002","query":"Arrest Warrant of 11 April 2000 Judgment","expected_document_id":"icj-arrest-warrant-2002","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-arrest-warrant-2002","query":"2000年4月11日逮捕令案判决","expected_document_id":"icj-arrest-warrant-2002","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-wall-2004","query":"Legal Consequences of the Construction of a Wall in the Occupied Palestinian Territory Advisory Opinion","expected_document_id":"icj-wall-2004","expected_document_type":"advisory_opinion","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-wall-2004","query":"在被占巴勒斯坦领土修建隔离墙的法律后果咨询意见","expected_document_id":"icj-wall-2004","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-armed-activities-2005","query":"Armed Activities on the Territory of the Congo DRC v Uganda Judgment","expected_document_id":"icj-armed-activities-2005","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-armed-activities-2005","query":"刚果领土上的武装活动案判决","expected_document_id":"icj-armed-activities-2005","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-bosnian-genocide-2007","query":"Application of the Genocide Convention Bosnia and Herzegovina v Serbia and Montenegro Judgment","expected_document_id":"icj-bosnian-genocide-2007","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-bosnian-genocide-2007","query":"适用灭绝种族罪公约案实体判决","expected_document_id":"icj-bosnian-genocide-2007","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-kosovo-2010","query":"Accordance with International Law of the Unilateral Declaration of Independence in Respect of Kosovo Advisory Opinion","expected_document_id":"icj-kosovo-2010","expected_document_type":"advisory_opinion","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-kosovo-2010","query":"科索沃单方面宣布独立是否符合国际法咨询意见","expected_document_id":"icj-kosovo-2010","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-jurisdictional-immunities-2012","query":"Jurisdictional Immunities of the State Germany v Italy Judgment","expected_document_id":"icj-jurisdictional-immunities-2012","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-jurisdictional-immunities-2012","query":"国家管辖豁免案判决","expected_document_id":"icj-jurisdictional-immunities-2012","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-whaling-2014","query":"Whaling in the Antarctic Australia v Japan Judgment","expected_document_id":"icj-whaling-2014","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-whaling-2014","query":"南极捕鲸案判决","expected_document_id":"icj-whaling-2014","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-chagos-2019","query":"Legal Consequences of the Separation of the Chagos Archipelago from Mauritius in 1965 Advisory Opinion","expected_document_id":"icj-chagos-2019","expected_document_type":"advisory_opinion","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-chagos-2019","query":"1965年查戈斯群岛从毛里求斯分离的法律后果咨询意见","expected_document_id":"icj-chagos-2019","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"doc-en-icj-gambia-myanmar-preliminary-2022","query":"Application of the Genocide Convention The Gambia v Myanmar Preliminary Objections Judgment","expected_document_id":"icj-gambia-myanmar-preliminary-2022","expected_document_type":"judgment","tags":["exact","document_name","expanded","case","en"]}
+{"id":"doc-zh-icj-gambia-myanmar-preliminary-2022","query":"适用灭绝种族罪公约案冈比亚诉缅甸初步反对判决","expected_document_id":"icj-gambia-myanmar-preliminary-2022","tags":["exact","document_name","expanded","case","zh"]}
+{"id":"semantic-rome-complementarity","query":"international criminal court complementary to national criminal jurisdictions","expected_document_id":"rome-statute-1998","tags":["semantic","hybrid","expanded","en"]}
+{"id":"semantic-cat-non-refoulement","query":"torture convention no expulsion return or extradition where substantial grounds of torture","expected_document_id":"cat-1984","tags":["semantic","hybrid","expanded","en"]}
+{"id":"semantic-crc-best-interests","query":"children convention best interests of the child shall be a primary consideration","expected_document_id":"crc-1989","tags":["semantic","hybrid","expanded","en"]}
+{"id":"semantic-icrc-distinction","query":"customary humanitarian law parties must distinguish civilians from combatants","expected_document_id":"icrc-cihl-rules","tags":["semantic","hybrid","expanded","en"]}
+{"id":"semantic-corfu-knowledge","query":"ICJ case exclusive territorial control allows a more liberal recourse to inferences of fact","expected_document_id":"icj-corfu-channel-1949-merits","tags":["semantic","hybrid","expanded","case","en"]}
+{"id":"semantic-reparation-legal-personality","query":"ICJ advisory opinion United Nations has capacity to bring an international claim for injury to its agent","expected_document_id":"icj-reparation-injuries-1949","tags":["semantic","hybrid","expanded","case","en"]}
+{"id":"semantic-nottebohm-genuine-link","query":"ICJ nationality genuine connection of existence interests and sentiments","expected_document_id":"icj-nottebohm-1955","tags":["semantic","hybrid","expanded","case","en"]}
+{"id":"semantic-north-sea-equitable-principles","query":"ICJ continental shelf delimitation equitable principles relevant circumstances","expected_document_id":"icj-north-sea-1969","tags":["semantic","hybrid","expanded","case","en"]}
+{"id":"semantic-barcelona-erga-omnes","query":"ICJ obligations toward the international community as a whole erga omnes","expected_document_id":"icj-barcelona-traction-1970","tags":["semantic","hybrid","expanded","case","en"]}
+{"id":"semantic-nuclear-tests-unilateral","query":"ICJ unilateral declarations may create legal obligations when made publicly with intent to be bound","expected_document_id":"icj-nuclear-tests-1974","tags":["semantic","hybrid","expanded","case","en"]}
+{"id":"semantic-nuclear-weapons-ihl","query":"ICJ nuclear weapons threat or use must comply with international humanitarian law","expected_document_id":"icj-nuclear-weapons-1996","tags":["semantic","hybrid","expanded","case","en"]}
+{"id":"semantic-gabcikovo-necessity","query":"ICJ state of necessity grave and imminent peril essential interest","expected_document_id":"icj-gabcikovo-1997","tags":["semantic","hybrid","expanded","case","en"]}
+{"id":"semantic-lagrand-provisional-measures","query":"LaGrand Germany United States ICJ judgment provisional measures are legally binding","expected_document_id":"icj-lagrand-2001","tags":["semantic","hybrid","expanded","case","en"]}
+{"id":"semantic-wall-self-determination","query":"ICJ wall occupied Palestinian territory right of peoples to self determination","expected_document_id":"icj-wall-2004","tags":["semantic","hybrid","expanded","case","en"]}
+{"id":"semantic-kosovo-declaration","query":"ICJ whether international law prohibited Kosovo declaration of independence","expected_document_id":"icj-kosovo-2010","tags":["semantic","hybrid","expanded","case","en"]}
+{"id":"semantic-chagos-decolonization","query":"ICJ Chagos separation Mauritius decolonization self determination","expected_document_id":"icj-chagos-2019","tags":["semantic","hybrid","expanded","case","en"]}

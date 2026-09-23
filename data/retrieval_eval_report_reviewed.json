@@ -1,0 +1,1780 @@
+{
+  "total": 100,
+  "passed": 100,
+  "failed": 0,
+  "pass_rate": 1.0,
+  "recall_at_1": 0.9791666666666666,
+  "recall_at_5": 1.0,
+  "recall_at_10": 1.0,
+  "mean_reciprocal_rank": 0.9864583333333333,
+  "by_tag": {
+    "abbreviation": {
+      "total": 1,
+      "passed": 1
+    },
+    "alias": {
+      "total": 1,
+      "passed": 1
+    },
+    "article": {
+      "total": 3,
+      "passed": 3
+    },
+    "attribution": {
+      "total": 1,
+      "passed": 1
+    },
+    "case": {
+      "total": 7,
+      "passed": 7
+    },
+    "classification": {
+      "total": 3,
+      "passed": 3
+    },
+    "cross_lingual": {
+      "total": 4,
+      "passed": 4
+    },
+    "culture": {
+      "total": 1,
+      "passed": 1
+    },
+    "document_name": {
+      "total": 2,
+      "passed": 2
+    },
+    "education": {
+      "total": 1,
+      "passed": 1
+    },
+    "en": {
+      "total": 23,
+      "passed": 23
+    },
+    "exact": {
+      "total": 76,
+      "passed": 76
+    },
+    "expanded": {
+      "total": 36,
+      "passed": 36
+    },
+    "expression": {
+      "total": 1,
+      "passed": 1
+    },
+    "fair_trial": {
+      "total": 1,
+      "passed": 1
+    },
+    "fts": {
+      "total": 2,
+      "passed": 2
+    },
+    "health": {
+      "total": 1,
+      "passed": 1
+    },
+    "high_seas": {
+      "total": 1,
+      "passed": 1
+    },
+    "hybrid": {
+      "total": 20,
+      "passed": 20
+    },
+    "innocent_passage": {
+      "total": 1,
+      "passed": 1
+    },
+    "islands": {
+      "total": 1,
+      "passed": 1
+    },
+    "last_article": {
+      "total": 3,
+      "passed": 3
+    },
+    "liberty": {
+      "total": 1,
+      "passed": 1
+    },
+    "life": {
+      "total": 1,
+      "passed": 1
+    },
+    "minorities": {
+      "total": 1,
+      "passed": 1
+    },
+    "natural_language": {
+      "total": 1,
+      "passed": 1
+    },
+    "necessity": {
+      "total": 1,
+      "passed": 1
+    },
+    "negative": {
+      "total": 2,
+      "passed": 2
+    },
+    "no_answer": {
+      "total": 1,
+      "passed": 1
+    },
+    "out_of_range": {
+      "total": 1,
+      "passed": 1
+    },
+    "reparation": {
+      "total": 1,
+      "passed": 1
+    },
+    "self_defence": {
+      "total": 1,
+      "passed": 1
+    },
+    "semantic": {
+      "total": 20,
+      "passed": 20
+    },
+    "territorial_sea": {
+      "total": 1,
+      "passed": 1
+    },
+    "work": {
+      "total": 1,
+      "passed": 1
+    },
+    "zh": {
+      "total": 25,
+      "passed": 25
+    }
+  },
+  "cases": [
+    {
+      "id": "vclt-en-27",
+      "query": "VCLT Article 27",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 27"
+      ],
+      "tags": [
+        "exact",
+        "en",
+        "article"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "vclt-zh-31",
+      "query": "维也纳条约法公约第31条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 31"
+      ],
+      "tags": [
+        "exact",
+        "zh",
+        "article"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "vclt-en-26",
+      "query": "Vienna Convention on the Law of Treaties Article 26",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 26"
+      ],
+      "tags": [
+        "exact",
+        "en",
+        "alias"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "vclt-zh-46",
+      "query": "维也纳条约法公约第46条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 46"
+      ],
+      "tags": [
+        "exact",
+        "zh",
+        "article"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "vclt-en-2",
+      "query": "VCLT art. 2",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 2"
+      ],
+      "tags": [
+        "exact",
+        "en",
+        "abbreviation"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "arsiwa-en-1",
+      "query": "ARSIWA Article 1",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 1"
+      ],
+      "tags": [
+        "exact",
+        "classification"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "arsiwa-zh-2",
+      "query": "国家对国际不法行为的责任条款第2条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 2"
+      ],
+      "tags": [
+        "exact",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "arsiwa-en-8",
+      "query": "ARSIWA Article 8",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 8"
+      ],
+      "tags": [
+        "exact",
+        "attribution"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "arsiwa-zh-25",
+      "query": "国家对国际不法行为的责任条款第25条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 25"
+      ],
+      "tags": [
+        "exact",
+        "necessity"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "arsiwa-en-31",
+      "query": "ARSIWA art 31",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 31"
+      ],
+      "tags": [
+        "exact",
+        "reparation"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "charter-en-1",
+      "query": "UN Charter Article 1",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 1"
+      ],
+      "tags": [
+        "exact",
+        "en"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "charter-zh-2",
+      "query": "联合国宪章第2条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 2"
+      ],
+      "tags": [
+        "exact",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "charter-en-51",
+      "query": "Charter of the United Nations Article 51",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 51"
+      ],
+      "tags": [
+        "exact",
+        "self_defence"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "charter-zh-103",
+      "query": "《联合国宪章》第103条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 103"
+      ],
+      "tags": [
+        "exact",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "charter-en-111",
+      "query": "UN Charter art. 111",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 111"
+      ],
+      "tags": [
+        "exact",
+        "last_article"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "udhr-en-1",
+      "query": "UDHR Article 1",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 1"
+      ],
+      "tags": [
+        "exact",
+        "classification"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "udhr-zh-3",
+      "query": "世界人权宣言第3条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 3"
+      ],
+      "tags": [
+        "exact",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "udhr-en-19",
+      "query": "Universal Declaration of Human Rights Article 19",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 19"
+      ],
+      "tags": [
+        "exact",
+        "expression"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "udhr-zh-26",
+      "query": "世界人权宣言第26条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 26"
+      ],
+      "tags": [
+        "exact",
+        "education"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "udhr-en-30",
+      "query": "UDHR Article 30",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 30"
+      ],
+      "tags": [
+        "exact",
+        "last_article"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "iccpr-en-1",
+      "query": "ICCPR Article 1",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 1"
+      ],
+      "tags": [
+        "exact",
+        "en"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "iccpr-zh-6",
+      "query": "公民权利和政治权利国际公约第6条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 6"
+      ],
+      "tags": [
+        "exact",
+        "zh",
+        "life"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "iccpr-en-9",
+      "query": "ICCPR art. 9",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 9"
+      ],
+      "tags": [
+        "exact",
+        "liberty"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "iccpr-zh-14",
+      "query": "公民权利和政治权利国际公约第14条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 14"
+      ],
+      "tags": [
+        "exact",
+        "fair_trial"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "iccpr-en-27",
+      "query": "ICCPR Article 27",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 27"
+      ],
+      "tags": [
+        "exact",
+        "minorities"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "icescr-en-1",
+      "query": "ICESCR Article 1",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 1"
+      ],
+      "tags": [
+        "exact",
+        "en"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "icescr-zh-6",
+      "query": "经济社会及文化权利国际公约第6条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 6"
+      ],
+      "tags": [
+        "exact",
+        "zh",
+        "work"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "icescr-en-12",
+      "query": "ICESCR art 12",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 12"
+      ],
+      "tags": [
+        "exact",
+        "health"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "icescr-zh-15",
+      "query": "经济社会及文化权利国际公约第15条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 15"
+      ],
+      "tags": [
+        "exact",
+        "culture"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "icescr-en-31",
+      "query": "ICESCR Article 31",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 31"
+      ],
+      "tags": [
+        "exact",
+        "last_article"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "unclos-en-2",
+      "query": "UNCLOS Article 2",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 2"
+      ],
+      "tags": [
+        "exact",
+        "territorial_sea"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "unclos-zh-3",
+      "query": "联合国海洋法公约第3条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 3"
+      ],
+      "tags": [
+        "exact",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "unclos-en-17",
+      "query": "United Nations Convention on the Law of the Sea Article 17",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 17"
+      ],
+      "tags": [
+        "exact",
+        "innocent_passage"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "unclos-zh-87",
+      "query": "联合国海洋法公约第87条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 87"
+      ],
+      "tags": [
+        "exact",
+        "high_seas"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "unclos-en-121",
+      "query": "UNCLOS art. 121",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 121"
+      ],
+      "tags": [
+        "exact",
+        "islands"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "nicaragua-en-191",
+      "query": "Nicaragua paragraph 191",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Nicaragua v. United States (Merits), para. 191"
+      ],
+      "tags": [
+        "exact",
+        "case"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "nicaragua-zh-195",
+      "query": "尼加拉瓜境内和针对尼加拉瓜的军事与准军事活动案（尼加拉瓜诉美国），实体判决第195段",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Nicaragua v. United States (Merits), para. 195"
+      ],
+      "tags": [
+        "exact",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "nicaragua-en-202",
+      "query": "Nicaragua Merits para. 202",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Nicaragua v. United States (Merits), para. 202"
+      ],
+      "tags": [
+        "exact",
+        "case"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "fts-arsiwa-control",
+      "query": "ARSIWA directed or controlled",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 8"
+      ],
+      "tags": [
+        "fts",
+        "classification"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "fts-vclt-internal-law",
+      "query": "VCLT internal law",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 46",
+        "VCLT, Article 27",
+        "VCLT, Article 2"
+      ],
+      "tags": [
+        "fts",
+        "natural_language"
+      ],
+      "relevant_rank": 2
+    },
+    {
+      "id": "document-name-zh",
+      "query": "维也纳条约法公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "zh"
+      ],
+      "relevant_rank": null
+    },
+    {
+      "id": "document-name-en",
+      "query": "United Nations Convention on the Law of the Sea",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "en"
+      ],
+      "relevant_rank": null
+    },
+    {
+      "id": "negative-invented-treaty",
+      "query": "zzzxqv imaginary treaty provision",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "negative",
+        "no_answer"
+      ],
+      "relevant_rank": null
+    },
+    {
+      "id": "negative-impossible-article",
+      "query": "VCLT Article 999",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "negative",
+        "out_of_range"
+      ],
+      "relevant_rank": null
+    },
+    {
+      "id": "vclt-extra-4",
+      "query": "VCLT Article 4",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 4"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "vclt-extra-7",
+      "query": "VCLT Article 7",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 7"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "vclt-extra-18",
+      "query": "VCLT Article 18",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 18"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "vclt-extra-53",
+      "query": "维也纳条约法公约第53条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 53"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "vclt-extra-62",
+      "query": "VCLT Article 62",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 62"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "arsiwa-extra-4",
+      "query": "ARSIWA Article 4",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 4"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "arsiwa-extra-5",
+      "query": "ARSIWA Article 5",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 5"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "arsiwa-extra-11",
+      "query": "国家对国际不法行为的责任条款第11条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 11"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "arsiwa-extra-16",
+      "query": "ARSIWA Article 16",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 16"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "arsiwa-extra-34",
+      "query": "ARSIWA Article 34",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 34"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "charter-extra-24",
+      "query": "UN Charter Article 24",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 24"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "charter-extra-25",
+      "query": "联合国宪章第25条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 25"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "charter-extra-39",
+      "query": "UN Charter Article 39",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 39"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "charter-extra-41",
+      "query": "UN Charter Article 41",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 41"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "charter-extra-94",
+      "query": "联合国宪章第94条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 94"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "udhr-extra-5",
+      "query": "UDHR Article 5",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 5"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "udhr-extra-12",
+      "query": "世界人权宣言第12条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 12"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "udhr-extra-18",
+      "query": "UDHR Article 18",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 18"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "udhr-extra-23",
+      "query": "UDHR Article 23",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 23"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "iccpr-extra-2",
+      "query": "ICCPR Article 2",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 2"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "iccpr-extra-7",
+      "query": "公民权利和政治权利国际公约第7条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 7"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "iccpr-extra-17",
+      "query": "ICCPR Article 17",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 17"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "iccpr-extra-18",
+      "query": "ICCPR Article 18",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 18"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "iccpr-extra-19",
+      "query": "ICCPR Article 19",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 19"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "icescr-extra-2",
+      "query": "ICESCR Article 2",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 2"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "icescr-extra-7",
+      "query": "经济社会及文化权利国际公约第7条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 7"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "icescr-extra-11",
+      "query": "ICESCR Article 11",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 11"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "icescr-extra-13",
+      "query": "ICESCR Article 13",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 13"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "unclos-extra-33",
+      "query": "UNCLOS Article 33",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 33"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "unclos-extra-56",
+      "query": "联合国海洋法公约第56条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 56"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "unclos-extra-57",
+      "query": "UNCLOS Article 57",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 57"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "unclos-extra-74",
+      "query": "UNCLOS Article 74",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 74"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "unclos-extra-76",
+      "query": "联合国海洋法公约第76条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 76"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "nicaragua-extra-176",
+      "query": "Nicaragua Merits paragraph 176",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Nicaragua v. United States (Merits), para. 176"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "case"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "nicaragua-extra-190",
+      "query": "尼加拉瓜境内和针对尼加拉瓜的军事与准军事活动案（尼加拉瓜诉美国），实体判决第190段",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Nicaragua v. United States (Merits), para. 190"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "nicaragua-extra-264",
+      "query": "Nicaragua Merits para. 264",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Nicaragua v. United States (Merits), para. 264"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "case"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-vclt-good-faith",
+      "query": "VCLT treaties must be performed in good faith",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 26",
+        "VCLT, Article 31",
+        "VCLT, Article 33",
+        "VCLT, Article 51",
+        "VCLT, Article 35",
+        "VCLT, Article 8",
+        "VCLT, Article 10",
+        "VCLT, Article 34",
+        "VCLT, Article 12",
+        "VCLT, Article 29"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-vclt-interpretation",
+      "query": "VCLT ordinary meaning context object and purpose of a treaty",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 31",
+        "VCLT, Article 5",
+        "VCLT, Article 2",
+        "VCLT, Article 29",
+        "VCLT, Article 1",
+        "VCLT, Article 35",
+        "VCLT, Article 33",
+        "VCLT, Article 59",
+        "VCLT, Article 18",
+        "VCLT, Article 30"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-vclt-jus-cogens",
+      "query": "VCLT treaty conflicting with a peremptory norm of general international law",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 53",
+        "VCLT, Article 64",
+        "VCLT, Article 71",
+        "VCLT, Article 52",
+        "VCLT, Article 48",
+        "VCLT, Article 44",
+        "VCLT, Article 46",
+        "VCLT, Article 60",
+        "VCLT, Article 30",
+        "VCLT, Article 31"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-vclt-zh-good-faith",
+      "query": "《维也纳条约法公约》善意履行条约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 26",
+        "VCLT, Article 35",
+        "VCLT, Article 77",
+        "VCLT, Article 75",
+        "VCLT, Article 11",
+        "VCLT, Article 31",
+        "VCLT, Article 36",
+        "VCLT, Article 82",
+        "VCLT, Article 5",
+        "VCLT, Article 13"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "cross_lingual",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-arsiwa-organ",
+      "query": "ARSIWA conduct of a state organ attributable to the state",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 4",
+        "ARSIWA, Article 6",
+        "ARSIWA, Article 11",
+        "ARSIWA, Article 5",
+        "ARSIWA, Article 7",
+        "ARSIWA, Article 2",
+        "ARSIWA, Article 8",
+        "ARSIWA, Article 10",
+        "ARSIWA, Article 9",
+        "ARSIWA, Article 3"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-arsiwa-control",
+      "query": "ARSIWA conduct directed or controlled by a state",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 8",
+        "ARSIWA, Article 9",
+        "ARSIWA, Article 5",
+        "ARSIWA, Article 4",
+        "ARSIWA, Article 17",
+        "ARSIWA, Article 18",
+        "ARSIWA, Article 6",
+        "ARSIWA, Article 7",
+        "ARSIWA, Article 10",
+        "ARSIWA, Article 20"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-arsiwa-reparation",
+      "query": "ARSIWA full reparation for injury caused by the wrongful act",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 31",
+        "ARSIWA, Article 34",
+        "ARSIWA, Article 36",
+        "ARSIWA, Article 39",
+        "ARSIWA, Article 37",
+        "ARSIWA, Article 43",
+        "ARSIWA, Article 51",
+        "ARSIWA, Article 54",
+        "ARSIWA, Article 46",
+        "ARSIWA, Article 48"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-charter-force",
+      "query": "UN Charter prohibition of the threat or use of force against territorial integrity",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 41",
+        "UN Charter, Article 44",
+        "UN Charter, Article 39",
+        "UN Charter, Article 46",
+        "UN Charter, Article 2",
+        "UN Charter, Article 53",
+        "UN Charter, Article 51",
+        "UN Charter, Article 84",
+        "UN Charter, Article 73",
+        "UN Charter, Article 1"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 5
+    },
+    {
+      "id": "semantic-charter-self-defence-zh",
+      "query": "《联合国宪章》遭受武力攻击时的单独或集体自卫权",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 51",
+        "UN Charter, Article 42",
+        "UN Charter, Article 35",
+        "UN Charter, Article 5",
+        "UN Charter, Article 45",
+        "UN Charter, Article 41",
+        "UN Charter, Article 53",
+        "UN Charter, Article 44",
+        "UN Charter, Article 107",
+        "UN Charter, Article 50"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "cross_lingual",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-charter-peace",
+      "query": "UN Charter Security Council determines a threat to peace breach of peace or act of aggression",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 39",
+        "UN Charter, Article 24",
+        "UN Charter, Article 38",
+        "UN Charter, Article 34",
+        "UN Charter, Article 48",
+        "UN Charter, Article 51",
+        "UN Charter, Article 42",
+        "UN Charter, Article 37",
+        "UN Charter, Article 12",
+        "UN Charter, Article 43"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-udhr-expression",
+      "query": "UDHR freedom to seek receive and impart information and ideas",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 19",
+        "UDHR, Article 27",
+        "UDHR, Article 18",
+        "UDHR, Article 10",
+        "UDHR, Article 29",
+        "UDHR, Article 26",
+        "UDHR, Article 28",
+        "UDHR, Article 21",
+        "UDHR, Article 30",
+        "UDHR, Article 12"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-udhr-education",
+      "query": "UDHR elementary education shall be free and compulsory",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 26",
+        "UDHR, Article 4",
+        "UDHR, Article 21",
+        "UDHR, Article 28",
+        "UDHR, Article 1",
+        "UDHR, Article 25",
+        "UDHR, Article 5",
+        "UDHR, Article 10",
+        "UDHR, Article 29",
+        "UDHR, Article 23"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-iccpr-detention-zh",
+      "query": "《公民权利和政治权利国际公约》不得任意逮捕或拘禁",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 9",
+        "ICCPR, Article 15",
+        "ICCPR, Article 8",
+        "ICCPR, Article 11",
+        "ICCPR, Article 5",
+        "ICCPR, Article 7",
+        "ICCPR, Article 17",
+        "ICCPR, Article 12",
+        "ICCPR, Article 22",
+        "ICCPR, Article 21"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "cross_lingual",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-iccpr-hearing",
+      "query": "ICCPR fair public hearing by an independent impartial tribunal",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 14",
+        "ICCPR, Article 38",
+        "ICCPR, Article 19",
+        "ICCPR, Article 13",
+        "ICCPR, Article 21",
+        "ICCPR, Article 1",
+        "ICCPR, Article 16",
+        "ICCPR, Article 26",
+        "ICCPR, Article 31",
+        "ICCPR, Article 41"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-iccpr-minorities",
+      "query": "ICCPR minorities enjoy their culture religion and language",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 27",
+        "ICCPR, Article 24",
+        "ICCPR, Article 47",
+        "ICCPR, Article 18",
+        "ICCPR, Article 26",
+        "ICCPR, Article 1",
+        "ICCPR, Article 19",
+        "ICCPR, Article 2",
+        "ICCPR, Article 3",
+        "ICCPR, Article 43"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-icescr-health",
+      "query": "ICESCR highest attainable standard of physical and mental health",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 12",
+        "ICESCR, Article 11",
+        "ICESCR, Article 7",
+        "ICESCR, Article 10",
+        "ICESCR, Article 3",
+        "ICESCR, Article 2",
+        "ICESCR, Article 6",
+        "ICESCR, Article 13",
+        "ICESCR, Article 18",
+        "ICESCR, Article 22"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-unclos-territorial-zh",
+      "query": "《联合国海洋法公约》领海宽度不得超过十二海里",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 3",
+        "UNCLOS, Article 57",
+        "UNCLOS, Article 15",
+        "UNCLOS, Article 5",
+        "UNCLOS, Article 16",
+        "UNCLOS, Article 6",
+        "UNCLOS, Article 4",
+        "UNCLOS, Article 260",
+        "UNCLOS, Article 33",
+        "UNCLOS, Article 10"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "cross_lingual",
+        "zh"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-unclos-eez",
+      "query": "UNCLOS exclusive economic zone shall not extend beyond 200 nautical miles",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 57",
+        "UNCLOS, Article 260",
+        "UNCLOS, Article 55",
+        "UNCLOS, Article 60",
+        "UNCLOS, Article 257",
+        "UNCLOS, Article 58",
+        "UNCLOS, Article 74",
+        "UNCLOS, Article 63",
+        "UNCLOS, Article 246",
+        "UNCLOS, Article 48"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-unclos-artificial-islands",
+      "query": "UNCLOS artificial islands do not possess the status of islands",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 60",
+        "UNCLOS, Article 259",
+        "UNCLOS, Article 80",
+        "UNCLOS, Article 121",
+        "UNCLOS, Article 11",
+        "UNCLOS, Article 89",
+        "UNCLOS, Article 137",
+        "UNCLOS, Article 241",
+        "UNCLOS, Article 46",
+        "UNCLOS, Article 34"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1
+    },
+    {
+      "id": "semantic-nicaragua-armed-attack",
+      "query": "Nicaragua judgment most grave forms of the use of force constituting an armed attack",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Nicaragua v. United States (Merits), para. 191",
+        "Nicaragua v. United States (Merits), para. 227",
+        "Nicaragua v. United States (Merits), para. 247",
+        "Nicaragua v. United States (Merits), para. 195",
+        "Nicaragua v. United States (Merits), para. 249",
+        "Nicaragua v. United States (Merits), para. 210",
+        "Nicaragua v. United States (Merits), para. 238",
+        "Nicaragua v. United States (Merits), para. 133",
+        "Nicaragua v. United States (Merits), para. 229",
+        "Nicaragua v. United States (Merits), para. 15"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "application",
+    "kind": "application",
+    "version": "0.2.0",
+    "from_version": "0.1.0",
+    "target": "ilia-desktop.exe",
+    "payload_path": "target/x86_64-pc-windows-gnu/release/ilia-desktop.exe",
+    "payload_format": "raw_file"
+  },
+  {
+    "id": "corpus",
+    "kind": "corpus",
+    "version": "public-international-law-v1.1",
+    "from_version": "public-international-law-v1-2026.09.22",
+    "target": "data/ilia_prototype.sqlite3",
+    "payload_path": "update/payloads/corpus-v1.1.patch.json",
+    "payload_format": "sqlite_patch"
+  }
+]

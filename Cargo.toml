@@ -1,0 +1,33 @@
+[workspace]
+members = [
+    "apps/desktop/src-tauri",
+    "crates/ilia-core",
+    "crates/ilia-database",
+    "crates/ilia-embedding",
+    "crates/ilia-inference",
+    "crates/ilia-retrieval",
+    "crates/ilia-updater",
+    "tools/corpus-embedder",
+    "tools/eval-runner",
+]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+
+[workspace.dependencies]
+regex = "1.11"
+rusqlite = "0.37"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2.0"
+fastembed = { version = "7.0.1", default-features = false, features = ["hf-hub-native-tls", "ort-load-dynamic", "directml"] }
+ort = { version = "=2.0.0-rc.13", default-features = false, features = ["load-dynamic", "directml", "std", "ndarray", "api-24"] }
+ureq = { version = "3.1", features = ["json"] }
+url = "2.5"
+uuid = { version = "1.18", features = ["v4"] }
+base64 = "0.22"
+ring = "0.17"
+sha2 = "0.10"

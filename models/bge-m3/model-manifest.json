@@ -1,0 +1,12 @@
+{
+  "model_id": "gpahal/bge-m3-onnx-int8",
+  "upstream_model": "BAAI/bge-m3",
+  "source_url": "https://huggingface.co/gpahal/bge-m3-onnx-int8/resolve/main/model_quantized.onnx",
+  "local_file": "model.onnx",
+  "format": "onnx-int8",
+  "dimension": 1024,
+  "byte_length": 569958496,
+  "sha256": "16de7ea1146ca427e14938ec3e9abfdcaff0e6ac76434cd693ac35d761250bcb",
+  "downloaded_at": "2026-09-21",
+  "license_review": "pending"
+}

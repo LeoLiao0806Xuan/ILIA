@@ -1,0 +1,20 @@
+{
+  "name": "ilia-desktop",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 1420",
+    "build": "tsc && vite build",
+    "tauri": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/tauri.ps1"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "2.11.1",
+    "@tauri-apps/plugin-opener": "2.5.4"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.11.5",
+    "typescript": "7.0.2",
+    "vite": "8.3.0"
+  }
+}

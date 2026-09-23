@@ -1,0 +1,25 @@
+[package]
+name = "ilia-inference"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+ilia-core = { path = "../ilia-core" }
+ilia-database = { path = "../ilia-database" }
+ilia-embedding = { path = "../ilia-embedding" }
+ilia-retrieval = { path = "../ilia-retrieval" }
+regex.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+ureq.workspace = true
+uuid.workspace = true
+
+[[bin]]
+name = "ilia-ask"
+path = "src/bin/ilia-ask.rs"
+
+[[bin]]
+name = "ilia-runtime"
+path = "src/bin/ilia-runtime.rs"

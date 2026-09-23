@@ -1,0 +1,1276 @@
+{
+  "validated_at": "2026-09-23T03:15:06+00:00",
+  "database": "D:\\Users\\11373\\Personal\\YAOY\\ILIA\\data\\ilia_v1_reviewed.sqlite3",
+  "status": "passed",
+  "error_count": 0,
+  "warning_count": 1,
+  "checks": [
+    {
+      "name": "vclt-1969:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=f01906ba0581d7329f685d49656e9a7cb3c5d0a8790219e1600c1edb30893d08 actual=f01906ba0581d7329f685d49656e9a7cb3c5d0a8790219e1600c1edb30893d08"
+    },
+    {
+      "name": "vclt-1969:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "vclt-1969:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "vclt-1969:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..85 actual_count=85 missing=[]"
+    },
+    {
+      "name": "arsiwa-2001:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1052e509f6b9c501c4cd758f4408afe2e4ccd9302b57a096db87612baa4d03be actual=1052e509f6b9c501c4cd758f4408afe2e4ccd9302b57a096db87612baa4d03be"
+    },
+    {
+      "name": "arsiwa-2001:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "arsiwa-2001:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=draft_articles legal_status=ilc_articles_not_treaty"
+    },
+    {
+      "name": "arsiwa-2001:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..59 actual_count=59 missing=[]"
+    },
+    {
+      "name": "icj-nicaragua-1986-merits:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=d6ec713fd229187ecf607dea5239ef0a4fe2b645b68072a24fc10c0f67fb18fd actual=d6ec713fd229187ecf607dea5239ef0a4fe2b645b68072a24fc10c0f67fb18fd"
+    },
+    {
+      "name": "icj-nicaragua-1986-merits:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-nicaragua-1986-merits:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-nicaragua-1986-merits:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..292 actual_count=292 missing=[]"
+    },
+    {
+      "name": "un-charter-1945:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=6519622f4921751d567904f3493f5c279bbec66ce2e02ff85dee6ac8204cc81b actual=6519622f4921751d567904f3493f5c279bbec66ce2e02ff85dee6ac8204cc81b"
+    },
+    {
+      "name": "un-charter-1945:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "un-charter-1945:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=treaty legal_status=in_force_constitutive_treaty"
+    },
+    {
+      "name": "un-charter-1945:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..111 actual_count=111 missing=[]"
+    },
+    {
+      "name": "udhr-1948:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=e75f479c5cc632e88dcf3da247bbef96b093462610c0eee53d281f1fe379661c actual=e75f479c5cc632e88dcf3da247bbef96b093462610c0eee53d281f1fe379661c"
+    },
+    {
+      "name": "udhr-1948:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "udhr-1948:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=declaration legal_status=general_assembly_declaration"
+    },
+    {
+      "name": "udhr-1948:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..30 actual_count=30 missing=[]"
+    },
+    {
+      "name": "iccpr-1966:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=c63fbe7781e8ecd7cdaf50344199995841037911f3cef8a0964c4b4c8909a6a2 actual=c63fbe7781e8ecd7cdaf50344199995841037911f3cef8a0964c4b4c8909a6a2"
+    },
+    {
+      "name": "iccpr-1966:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "iccpr-1966:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "iccpr-1966:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..53 actual_count=53 missing=[]"
+    },
+    {
+      "name": "icescr-1966:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=0abe16ff21a9562309d493e1d171fef031996cf65d91891099b3715606f3ce7c actual=0abe16ff21a9562309d493e1d171fef031996cf65d91891099b3715606f3ce7c"
+    },
+    {
+      "name": "icescr-1966:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icescr-1966:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "icescr-1966:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..31 actual_count=31 missing=[]"
+    },
+    {
+      "name": "unclos-1982:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=b7e16c2d2140cca5f391b108d652690b1ff4d00b5f959effc060f8b15ffaf336 actual=b7e16c2d2140cca5f391b108d652690b1ff4d00b5f959effc060f8b15ffaf336"
+    },
+    {
+      "name": "unclos-1982:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "unclos-1982:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "unclos-1982:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..320 actual_count=320 missing=[]"
+    },
+    {
+      "name": "icj-statute-1945:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=6519622f4921751d567904f3493f5c279bbec66ce2e02ff85dee6ac8204cc81b actual=6519622f4921751d567904f3493f5c279bbec66ce2e02ff85dee6ac8204cc81b"
+    },
+    {
+      "name": "icj-statute-1945:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-statute-1945:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=statute legal_status=constitutive_statute_in_force"
+    },
+    {
+      "name": "icj-statute-1945:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..70 actual_count=70 missing=[]"
+    },
+    {
+      "name": "rome-statute-1998:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=a0694e77542b404ef518311432a4fec3234b2c20908985cfbf7e1c03827cd13d actual=a0694e77542b404ef518311432a4fec3234b2c20908985cfbf7e1c03827cd13d"
+    },
+    {
+      "name": "rome-statute-1998:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "rome-statute-1998:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "rome-statute-1998:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..128 actual_count=128 missing=[]"
+    },
+    {
+      "name": "cat-1984:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=436e14d030d022bf798bfbe671eccda329bd4940098afeab516c166fb2f7476c actual=436e14d030d022bf798bfbe671eccda329bd4940098afeab516c166fb2f7476c"
+    },
+    {
+      "name": "cat-1984:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "cat-1984:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "cat-1984:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..33 actual_count=33 missing=[]"
+    },
+    {
+      "name": "icerd-1965:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=8b45a64077d80af66754eec10d4d56cfe654bc6f1b6435dde46000c8398573c5 actual=8b45a64077d80af66754eec10d4d56cfe654bc6f1b6435dde46000c8398573c5"
+    },
+    {
+      "name": "icerd-1965:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icerd-1965:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "icerd-1965:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..25 actual_count=25 missing=[]"
+    },
+    {
+      "name": "cedaw-1979:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=35ca8dd24ab0c7f6b59ecf74e03ab30dc1f69ddb0235374ed840965970b6c163 actual=35ca8dd24ab0c7f6b59ecf74e03ab30dc1f69ddb0235374ed840965970b6c163"
+    },
+    {
+      "name": "cedaw-1979:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "cedaw-1979:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "cedaw-1979:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..30 actual_count=30 missing=[]"
+    },
+    {
+      "name": "crc-1989:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=10b90d8fd7cefcdd749e0a5943cc6127c48618b29c4f5cf6d293569f26c4e9fa actual=10b90d8fd7cefcdd749e0a5943cc6127c48618b29c4f5cf6d293569f26c4e9fa"
+    },
+    {
+      "name": "crc-1989:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "crc-1989:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "crc-1989:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..54 actual_count=54 missing=[]"
+    },
+    {
+      "name": "gc-i-1949:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=8fe4fbfeb8b2cc5145f50cd348eaf13b068b0dc001486101102aaf0d5c10f638 actual=8fe4fbfeb8b2cc5145f50cd348eaf13b068b0dc001486101102aaf0d5c10f638"
+    },
+    {
+      "name": "gc-i-1949:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "gc-i-1949:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "gc-i-1949:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..64 actual_count=64 missing=[]"
+    },
+    {
+      "name": "gc-ii-1949:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=8fe4fbfeb8b2cc5145f50cd348eaf13b068b0dc001486101102aaf0d5c10f638 actual=8fe4fbfeb8b2cc5145f50cd348eaf13b068b0dc001486101102aaf0d5c10f638"
+    },
+    {
+      "name": "gc-ii-1949:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "gc-ii-1949:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "gc-ii-1949:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..63 actual_count=63 missing=[]"
+    },
+    {
+      "name": "gc-iii-1949:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=8fe4fbfeb8b2cc5145f50cd348eaf13b068b0dc001486101102aaf0d5c10f638 actual=8fe4fbfeb8b2cc5145f50cd348eaf13b068b0dc001486101102aaf0d5c10f638"
+    },
+    {
+      "name": "gc-iii-1949:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "gc-iii-1949:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "gc-iii-1949:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..143 actual_count=143 missing=[]"
+    },
+    {
+      "name": "gc-iv-1949:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=8fe4fbfeb8b2cc5145f50cd348eaf13b068b0dc001486101102aaf0d5c10f638 actual=8fe4fbfeb8b2cc5145f50cd348eaf13b068b0dc001486101102aaf0d5c10f638"
+    },
+    {
+      "name": "gc-iv-1949:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "gc-iv-1949:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "gc-iv-1949:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..159 actual_count=159 missing=[]"
+    },
+    {
+      "name": "ap-i-1977:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=c354158e0702abbc6c52e87994856634287fc7eb4e423a80a7cfdcd804a3d7b7 actual=c354158e0702abbc6c52e87994856634287fc7eb4e423a80a7cfdcd804a3d7b7"
+    },
+    {
+      "name": "ap-i-1977:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "ap-i-1977:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "ap-i-1977:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..102 actual_count=102 missing=[]"
+    },
+    {
+      "name": "ap-ii-1977:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=c354158e0702abbc6c52e87994856634287fc7eb4e423a80a7cfdcd804a3d7b7 actual=c354158e0702abbc6c52e87994856634287fc7eb4e423a80a7cfdcd804a3d7b7"
+    },
+    {
+      "name": "ap-ii-1977:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "ap-ii-1977:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "ap-ii-1977:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..28 actual_count=28 missing=[]"
+    },
+    {
+      "name": "icrc-cihl-rules:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=635a073194a9437aad5f03ebf6e64910c38a28c9d89cab2375cce579bcc37733 actual=635a073194a9437aad5f03ebf6e64910c38a28c9d89cab2375cce579bcc37733"
+    },
+    {
+      "name": "icrc-cihl-rules:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icrc-cihl-rules:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=customary_rule legal_status=icrc_customary_law_study"
+    },
+    {
+      "name": "icrc-cihl-rules:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..161 actual_count=161 missing=[]"
+    },
+    {
+      "name": "icj-corfu-channel-1949-merits:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=55a3a9ab01f474ec322ff08390e4a1a7810fe478a655de4beff3d0eb4c1c201d actual=55a3a9ab01f474ec322ff08390e4a1a7810fe478a655de4beff3d0eb4c1c201d"
+    },
+    {
+      "name": "icj-corfu-channel-1949-merits:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-corfu-channel-1949-merits:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-corfu-channel-1949-merits:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..75 actual_count=75 missing=[]"
+    },
+    {
+      "name": "icj-reparation-injuries-1949:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=0ab562a6b2b3ed3a1bed55c17ea04905b6ea0b96abfb61540ec37fda24051f6c actual=0ab562a6b2b3ed3a1bed55c17ea04905b6ea0b96abfb61540ec37fda24051f6c"
+    },
+    {
+      "name": "icj-reparation-injuries-1949:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-reparation-injuries-1949:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=advisory_opinion legal_status=authoritative_advisory_opinion"
+    },
+    {
+      "name": "icj-reparation-injuries-1949:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..19 actual_count=19 missing=[]"
+    },
+    {
+      "name": "icj-asylum-1950:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=a1e1d33a84d4520b696b1951516d18f4710a1462e61475b83e9cbee95df1e885 actual=a1e1d33a84d4520b696b1951516d18f4710a1462e61475b83e9cbee95df1e885"
+    },
+    {
+      "name": "icj-asylum-1950:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-asylum-1950:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-asylum-1950:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..34 actual_count=34 missing=[]"
+    },
+    {
+      "name": "icj-genocide-reservations-1951:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=ec501991559f4d238eb6ffa03835a1e6d6619eb7b931ea74f1291e67841b9a83 actual=ec501991559f4d238eb6ffa03835a1e6d6619eb7b931ea74f1291e67841b9a83"
+    },
+    {
+      "name": "icj-genocide-reservations-1951:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-genocide-reservations-1951:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=advisory_opinion legal_status=authoritative_advisory_opinion"
+    },
+    {
+      "name": "icj-genocide-reservations-1951:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..32 actual_count=32 missing=[]"
+    },
+    {
+      "name": "icj-nottebohm-1955:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=b905ebdd63ee0a28a5802fd7905ec735a0afb5d4cc0067bca251f3ef7a5584b5 actual=b905ebdd63ee0a28a5802fd7905ec735a0afb5d4cc0067bca251f3ef7a5584b5"
+    },
+    {
+      "name": "icj-nottebohm-1955:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-nottebohm-1955:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-nottebohm-1955:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..26 actual_count=26 missing=[]"
+    },
+    {
+      "name": "icj-right-passage-1960:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=161f7eceaaba8ec8dc001c8e96635d14fbe5e05585a6b04687a705f9e71ca8bc actual=161f7eceaaba8ec8dc001c8e96635d14fbe5e05585a6b04687a705f9e71ca8bc"
+    },
+    {
+      "name": "icj-right-passage-1960:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-right-passage-1960:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-right-passage-1960:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..43 actual_count=43 missing=[]"
+    },
+    {
+      "name": "icj-temple-preah-vihear-1962:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=d75fb774bc7bb989383a5cb8487d2e1d7ec81c5ab6f459c76bd39077a7543c02 actual=d75fb774bc7bb989383a5cb8487d2e1d7ec81c5ab6f459c76bd39077a7543c02"
+    },
+    {
+      "name": "icj-temple-preah-vihear-1962:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-temple-preah-vihear-1962:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-temple-preah-vihear-1962:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..35 actual_count=35 missing=[]"
+    },
+    {
+      "name": "icj-north-sea-1969:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=42f10238be4bb2af6b4625eb08af8c9d4b2d9e49840247e5821243de6dd7547b actual=42f10238be4bb2af6b4625eb08af8c9d4b2d9e49840247e5821243de6dd7547b"
+    },
+    {
+      "name": "icj-north-sea-1969:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-north-sea-1969:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-north-sea-1969:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..101 actual_count=101 missing=[]"
+    },
+    {
+      "name": "icj-barcelona-traction-1970:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=e59270b7e896c2bea63aa17d27a357ada1f33c326fafe3cf63b7a790e7dc60c2 actual=e59270b7e896c2bea63aa17d27a357ada1f33c326fafe3cf63b7a790e7dc60c2"
+    },
+    {
+      "name": "icj-barcelona-traction-1970:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-barcelona-traction-1970:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-barcelona-traction-1970:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..103 actual_count=103 missing=[]"
+    },
+    {
+      "name": "icj-namibia-1971:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=7f5be3eca66ed806a890a4ae8b74d443fd101099364afac13f60e6f1d81bc6bc actual=7f5be3eca66ed806a890a4ae8b74d443fd101099364afac13f60e6f1d81bc6bc"
+    },
+    {
+      "name": "icj-namibia-1971:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-namibia-1971:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=advisory_opinion legal_status=authoritative_advisory_opinion"
+    },
+    {
+      "name": "icj-namibia-1971:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..129 actual_count=129 missing=[]"
+    },
+    {
+      "name": "icj-nuclear-tests-1974:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=0bc8e99f3f46de0e348c7462b591516268bb50ba0c57f3106cac7a9407c076c4 actual=0bc8e99f3f46de0e348c7462b591516268bb50ba0c57f3106cac7a9407c076c4"
+    },
+    {
+      "name": "icj-nuclear-tests-1974:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-nuclear-tests-1974:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-nuclear-tests-1974:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..62 actual_count=62 missing=[]"
+    },
+    {
+      "name": "icj-western-sahara-1975:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=e25109a5e9f2d2b52f4c8a70d7b2c6269ca8abe7df5b8bb89367d4c3f2c2dfae actual=e25109a5e9f2d2b52f4c8a70d7b2c6269ca8abe7df5b8bb89367d4c3f2c2dfae"
+    },
+    {
+      "name": "icj-western-sahara-1975:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-western-sahara-1975:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=advisory_opinion legal_status=authoritative_advisory_opinion"
+    },
+    {
+      "name": "icj-western-sahara-1975:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..163 actual_count=163 missing=[]"
+    },
+    {
+      "name": "icj-continental-shelf-tunisia-libya-1982:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=0b7751acd1668c28a553af45fd3ec373c0e8baed242e448f6147ab58f0079672 actual=0b7751acd1668c28a553af45fd3ec373c0e8baed242e448f6147ab58f0079672"
+    },
+    {
+      "name": "icj-continental-shelf-tunisia-libya-1982:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-continental-shelf-tunisia-libya-1982:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-continental-shelf-tunisia-libya-1982:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..133 actual_count=133 missing=[]"
+    },
+    {
+      "name": "icj-frontier-dispute-1986:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=88b3f6b5e46da31bbdc89bd0ed96dabb8df53c834fa6db90f4ea9649b03449cb actual=88b3f6b5e46da31bbdc89bd0ed96dabb8df53c834fa6db90f4ea9649b03449cb"
+    },
+    {
+      "name": "icj-frontier-dispute-1986:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-frontier-dispute-1986:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-frontier-dispute-1986:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..179 actual_count=179 missing=[]"
+    },
+    {
+      "name": "icj-elsi-1989:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=91edb2dad23ea5c7a7c34dbb050014cf9f835aff7e7ca39366f9848446acd027 actual=91edb2dad23ea5c7a7c34dbb050014cf9f835aff7e7ca39366f9848446acd027"
+    },
+    {
+      "name": "icj-elsi-1989:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-elsi-1989:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-elsi-1989:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..70 actual_count=70 missing=[]"
+    },
+    {
+      "name": "icj-nauru-preliminary-1992:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=48311b941beaabb908c837a0d11d605a75cdf9f2af4e67a416bc1f117e991115 actual=48311b941beaabb908c837a0d11d605a75cdf9f2af4e67a416bc1f117e991115"
+    },
+    {
+      "name": "icj-nauru-preliminary-1992:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-nauru-preliminary-1992:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-nauru-preliminary-1992:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..72 actual_count=72 missing=[]"
+    },
+    {
+      "name": "icj-bosnian-genocide-preliminary-1996:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=76dc24497f5dcfccbd0fee13f9335f9d88d320983e6c9badc4a31e5a49e2f782 actual=76dc24497f5dcfccbd0fee13f9335f9d88d320983e6c9badc4a31e5a49e2f782"
+    },
+    {
+      "name": "icj-bosnian-genocide-preliminary-1996:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-bosnian-genocide-preliminary-1996:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-bosnian-genocide-preliminary-1996:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..32 actual_count=32 missing=[]"
+    },
+    {
+      "name": "icj-nuclear-weapons-1996:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=3d05a382a216c58eb4720eeb32881740c090928431d21dcf74d775a86bab7db9 actual=3d05a382a216c58eb4720eeb32881740c090928431d21dcf74d775a86bab7db9"
+    },
+    {
+      "name": "icj-nuclear-weapons-1996:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-nuclear-weapons-1996:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=advisory_opinion legal_status=authoritative_advisory_opinion"
+    },
+    {
+      "name": "icj-nuclear-weapons-1996:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..105 actual_count=105 missing=[]"
+    },
+    {
+      "name": "icj-gabcikovo-1997:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=27baba1551c74f66f5d36144583d94ba7e25c0b13e8d736428d6ac8407bdc8cc actual=27baba1551c74f66f5d36144583d94ba7e25c0b13e8d736428d6ac8407bdc8cc"
+    },
+    {
+      "name": "icj-gabcikovo-1997:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-gabcikovo-1997:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-gabcikovo-1997:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..78 actual_count=78 missing=[]"
+    },
+    {
+      "name": "icj-lagrand-2001:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=9c5c37cb623c2fb1c9d406fc8bf5c0a2dfe68cf8e5cfbd358bf609d694617ac5 actual=9c5c37cb623c2fb1c9d406fc8bf5c0a2dfe68cf8e5cfbd358bf609d694617ac5"
+    },
+    {
+      "name": "icj-lagrand-2001:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-lagrand-2001:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-lagrand-2001:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..128 actual_count=128 missing=[]"
+    },
+    {
+      "name": "icj-arrest-warrant-2002:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=0ac6a4274db991c8d1463fc89d4419c64c0a0a966878ee8878de77aadb8b713c actual=0ac6a4274db991c8d1463fc89d4419c64c0a0a966878ee8878de77aadb8b713c"
+    },
+    {
+      "name": "icj-arrest-warrant-2002:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-arrest-warrant-2002:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-arrest-warrant-2002:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..78 actual_count=78 missing=[]"
+    },
+    {
+      "name": "icj-wall-2004:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=bc26e7acc0986cec7d6c3b4580fbef59071c8fff8e43e64173467002da7fff5a actual=bc26e7acc0986cec7d6c3b4580fbef59071c8fff8e43e64173467002da7fff5a"
+    },
+    {
+      "name": "icj-wall-2004:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-wall-2004:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=advisory_opinion legal_status=authoritative_advisory_opinion"
+    },
+    {
+      "name": "icj-wall-2004:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..163 actual_count=163 missing=[]"
+    },
+    {
+      "name": "icj-armed-activities-2005:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=8e9636f3d79896627e0bad03e89b40aa02f13ac3628f2f67f503b2edd2a8554f actual=8e9636f3d79896627e0bad03e89b40aa02f13ac3628f2f67f503b2edd2a8554f"
+    },
+    {
+      "name": "icj-armed-activities-2005:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-armed-activities-2005:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-armed-activities-2005:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..345 actual_count=345 missing=[]"
+    },
+    {
+      "name": "icj-bosnian-genocide-2007:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=9eba112b85a88d9e8d130971b6786d5d6c8f262438d8455a2fd7cf1627ab92c6 actual=9eba112b85a88d9e8d130971b6786d5d6c8f262438d8455a2fd7cf1627ab92c6"
+    },
+    {
+      "name": "icj-bosnian-genocide-2007:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-bosnian-genocide-2007:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-bosnian-genocide-2007:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..201 actual_count=201 missing=[]"
+    },
+    {
+      "name": "icj-kosovo-2010:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=25e8513cc4cecdceffda5fae140d87924e48ee636d9a46c2bc964a2ff09a7f61 actual=25e8513cc4cecdceffda5fae140d87924e48ee636d9a46c2bc964a2ff09a7f61"
+    },
+    {
+      "name": "icj-kosovo-2010:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-kosovo-2010:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=advisory_opinion legal_status=authoritative_advisory_opinion"
+    },
+    {
+      "name": "icj-kosovo-2010:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..123 actual_count=123 missing=[]"
+    },
+    {
+      "name": "icj-jurisdictional-immunities-2012:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=118f61ee55ba5623c1429bd02aa152703495ca520747dc675632c4248f2ca191 actual=118f61ee55ba5623c1429bd02aa152703495ca520747dc675632c4248f2ca191"
+    },
+    {
+      "name": "icj-jurisdictional-immunities-2012:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-jurisdictional-immunities-2012:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-jurisdictional-immunities-2012:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..139 actual_count=139 missing=[]"
+    },
+    {
+      "name": "icj-whaling-2014:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=3e8f8725afe73300a29b19bce777810f03cd1295e414d4324231c2e1a03df356 actual=3e8f8725afe73300a29b19bce777810f03cd1295e414d4324231c2e1a03df356"
+    },
+    {
+      "name": "icj-whaling-2014:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-whaling-2014:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-whaling-2014:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..247 actual_count=247 missing=[]"
+    },
+    {
+      "name": "icj-chagos-2019:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=acaae178ae5b8351f893fd9d3ce86bec09363b5373a3399a3f9ff7f77957f4cd actual=acaae178ae5b8351f893fd9d3ce86bec09363b5373a3399a3f9ff7f77957f4cd"
+    },
+    {
+      "name": "icj-chagos-2019:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-chagos-2019:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=advisory_opinion legal_status=authoritative_advisory_opinion"
+    },
+    {
+      "name": "icj-chagos-2019:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..183 actual_count=183 missing=[]"
+    },
+    {
+      "name": "icj-gambia-myanmar-preliminary-2022:sha256",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=91bb0203c362fbfc5160a24e3776a3d4a1a1cf034fc96e3341341fb96dc50db4 actual=91bb0203c362fbfc5160a24e3776a3d4a1a1cf034fc96e3341341fb96dc50db4"
+    },
+    {
+      "name": "icj-gambia-myanmar-preliminary-2022:document_row",
+      "passed": true,
+      "severity": "error",
+      "detail": "document metadata exists"
+    },
+    {
+      "name": "icj-gambia-myanmar-preliminary-2022:legal_type",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-gambia-myanmar-preliminary-2022:unit_sequence",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected=1..115 actual_count=115 missing=[]"
+    },
+    {
+      "name": "chunks:nonempty",
+      "passed": true,
+      "severity": "error",
+      "detail": "empty_chunks=0"
+    },
+    {
+      "name": "chunks:page_ranges",
+      "passed": true,
+      "severity": "error",
+      "detail": "invalid_page_ranges=0"
+    },
+    {
+      "name": "chunks:unique_citations",
+      "passed": true,
+      "severity": "error",
+      "detail": "duplicates=0"
+    },
+    {
+      "name": "embeddings:bge_m3_coverage",
+      "passed": true,
+      "severity": "error",
+      "detail": "embedded=5254 chunks=5254 dimension=1024"
+    },
+    {
+      "name": "embeddings:bge_m3_blob_size",
+      "passed": true,
+      "severity": "error",
+      "detail": "malformed_vectors=0 expected_bytes=4096"
+    },
+    {
+      "name": "fts:vclt-1969:VCLT, Article 27",
+      "passed": true,
+      "severity": "error",
+      "detail": "query=\"internal law\" hits=['VCLT, Article 2', 'VCLT, Article 27', 'VCLT, Article 46']"
+    },
+    {
+      "name": "fts:arsiwa-2001:ARSIWA, Article 8",
+      "passed": true,
+      "severity": "error",
+      "detail": "query=\"directed or controlled\" hits=['ARSIWA, Article 8']"
+    },
+    {
+      "name": "fts:icj-nicaragua-1986-merits:Nicaragua v. United States (Merits), para. 191",
+      "passed": true,
+      "severity": "error",
+      "detail": "query=\"armed attack\" hits=['Nicaragua v. United States (Merits), para. 35', 'Nicaragua v. United States (Merits), para. 48', 'Nicaragua v. United States (Merits), para. 51', 'Nicaragua v. United States (Merits), para. 127', 'Nicaragua v. United States (Merits), para. 132', 'Nicaragua v. United States (Merits), para. 133', 'Nicaragua v. United States (Merits), para. 176', 'Nicaragua v. United States (Merits), para. 191', 'Nicaragua v. United States (Merits), para. 193', 'Nicaragua v. United States (Merits), para. 194']"
+    },
+    {
+      "name": "legal_classification:arsiwa_not_treaty",
+      "passed": true,
+      "severity": "error",
+      "detail": "document_type=draft_articles"
+    },
+    {
+      "name": "pages:review_queue_declared",
+      "passed": true,
+      "severity": "warning",
+      "detail": "review_queue=[]"
+    },
+    {
+      "name": "sqlite:integrity",
+      "passed": true,
+      "severity": "error",
+      "detail": "integrity_check=ok"
+    }
+  ],
+  "manual_review_queue": []
+}
