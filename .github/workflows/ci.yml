@@ -27,6 +27,17 @@ jobs:
         run: cargo fmt --all -- --check
       - name: Clippy
         run: cargo clippy --workspace --all-targets -- -D warnings
+      - name: Verify retrieval database
+        shell: pwsh
+        run: |
+          $database = "data/ilia_prototype.sqlite3"
+          if (-not (Test-Path -LiteralPath $database)) {
+            throw "Required retrieval database is missing: $database"
+          }
+          $size = (Get-Item -LiteralPath $database).Length
+          if ($size -lt 1MB) {
+            throw "Retrieval database is unexpectedly small: $size bytes"
+          }
       - name: Rust tests
         run: cargo test --workspace
       - name: Frontend build
