@@ -22,6 +22,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File installer/build-installer.ps
 
 ## 新电脑验收
 
+当前开发机仅完成静默安装、桌面进程启动和卸载冒烟测试。以下流程是正式发布前仍需在干净 Windows VM 以及 CUDA、Vulkan-only、CPU-only 环境执行的端到端验收，不应把本机冒烟测试表述为新电脑问答验收已经通过。
+
 1. 在未安装 Rust、Node.js、Python、MSYS2 的 Windows 10 1809+ 或 Windows 11 x64 机器上安装。
 2. 断开网络并启动 ILIA，确认界面正常显示。
 3. 分别执行一次检索和本地问答，确认数据库、BGE-M3、Qwen3-4B 均从安装目录加载。

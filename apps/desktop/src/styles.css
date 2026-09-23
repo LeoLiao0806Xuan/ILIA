@@ -51,6 +51,7 @@ h2 { margin: 8px 0 0; font-family: "Noto Serif SC", "Songti SC", SimSun, serif; 
 .loader { width: 34px; height: 34px; border: 2px solid #d3d7d2; border-top-color: #2d735a; border-radius: 50%; animation: spin 1s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 .answer-card { padding: 27px 0 22px; border-bottom: 1px solid #d8d9d1; }
+.answer-warning { margin-bottom: 16px; padding: 11px 13px; border: 1px solid #d8b96f; border-radius: 4px; background: #fff4d8; color: #735817; font-size: 11px; line-height: 1.55; }
 .answer-copy { color: #243a32; font-family: "Noto Serif SC", "Songti SC", SimSun, serif; font-size: 17px; line-height: 2; }
 .citation-token { display: inline; margin: 0 2px; padding: 2px 5px; border: 0; border-radius: 3px; background: #dcece4; color: #145840; font: 600 10px "Segoe UI", sans-serif; vertical-align: 2px; }
 .answer-meta { margin-top: 16px; color: #8a918e; font-size: 10px; }

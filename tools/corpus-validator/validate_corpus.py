@@ -89,7 +89,13 @@ def main() -> None:
                     (document_id,),
                 )
             ]
-        expected_count = document.get("expected_units") or len(numbers)
+        expected_count = document.get("expected_units")
+        record(
+            f"{document_id}:unit_count_frozen",
+            expected_count is not None,
+            f"expected_units={expected_count}",
+        )
+        expected_count = expected_count or len(numbers)
         expected = list(range(1, int(expected_count) + 1))
         record(
             f"{document_id}:unit_sequence",
@@ -185,12 +191,25 @@ def main() -> None:
         severity="warning",
     )
 
+    unfrozen_counts = connection.execute(
+        "SELECT COUNT(*) FROM qa_findings WHERE check_code = 'AUTO_UNIT_COUNT_NOT_FROZEN'"
+    ).fetchone()[0]
+    record(
+        "qa:unit_counts_frozen",
+        unfrozen_counts == 0,
+        f"AUTO_UNIT_COUNT_NOT_FROZEN={unfrozen_counts}",
+    )
+
     integrity = connection.execute("PRAGMA integrity_check").fetchone()[0]
     record("sqlite:integrity", integrity == "ok", f"integrity_check={integrity}")
     connection.close()
 
     errors = [check for check in checks if not check["passed"] and check["severity"] == "error"]
-    warnings = [check for check in checks if check["severity"] == "warning"]
+    warnings = [
+        check
+        for check in checks
+        if not check["passed"] and check["severity"] == "warning"
+    ]
     report = {
         "validated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "database": str(DB_PATH),

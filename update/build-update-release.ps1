@@ -53,7 +53,8 @@ $signaturePath = Join-Path $releaseRoot "update-manifest.sig"
 $manifestJson = $manifest | ConvertTo-Json -Depth 8
 [System.IO.File]::WriteAllText($manifestPath, $manifestJson, [System.Text.UTF8Encoding]::new($false))
 
-$env:PATH = "D:\msys\ucrt64\bin;$env:PATH"
+. (Join-Path $projectRoot "tools\windows-toolchain.ps1")
+Set-IliaGnuEnvironment
 & cargo +stable-x86_64-pc-windows-gnu run --offline -p ilia-updater --bin ilia-update-sign -- sign $privateKeyPath $manifestPath $signaturePath
 if ($LASTEXITCODE -ne 0) { throw "Manifest signing failed with exit code $LASTEXITCODE" }
 

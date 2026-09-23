@@ -491,9 +491,12 @@ pub fn citations_from_answer(
 
 pub fn uncited_sentences(answer: &str) -> Vec<String> {
     let citation = Regex::new(r"【\d{1,3}】").expect("valid citation regex");
+    let trailing_citation = Regex::new(r"([。！？!?\.])\s*((?:【\d{1,3}】\s*)+)")
+        .expect("valid trailing citation regex");
     let sentence = Regex::new(r"[^。！？!?\n.]+[。！？!?.]?").expect("valid sentence regex");
+    let normalized = trailing_citation.replace_all(answer, "$2$1");
     sentence
-        .find_iter(answer)
+        .find_iter(&normalized)
         .map(|part| part.as_str().trim())
         .filter(|part| !part.is_empty() && *part != NO_EVIDENCE_ANSWER)
         .filter(|part| !citation.is_match(part))
@@ -555,6 +558,13 @@ mod tests {
             vec!["第二句没有引证。"]
         );
         assert!(uncited_sentences(NO_EVIDENCE_ANSWER).is_empty());
+    }
+
+    #[test]
+    fn accepts_citations_before_or_after_sentence_punctuation() {
+        assert!(uncited_sentences("结论【1】。").is_empty());
+        assert!(uncited_sentences("结论。【1】").is_empty());
+        assert!(uncited_sentences("第一句。【1】第二句！【2】").is_empty());
     }
 
     #[test]

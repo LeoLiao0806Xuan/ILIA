@@ -274,6 +274,7 @@ impl UpdateEngine {
                 install_root.display().to_string(),
             ));
         }
+        let install_root = fs::canonicalize(install_root)?;
         Ok(Self {
             work_root: install_root.join(".ilia-update"),
             install_root,
@@ -450,6 +451,7 @@ impl UpdateEngine {
                 if let Some(parent) = target.parent() {
                     fs::create_dir_all(parent)?;
                 }
+                let target = self.target_path(&component.target)?;
                 fs::rename(payload, &target)?;
             }
             PayloadFormat::SqlitePatch => {
@@ -528,7 +530,9 @@ impl UpdateEngine {
 
     fn target_path(&self, relative: &str) -> Result<PathBuf, UpdateError> {
         validate_relative_path(relative)?;
-        Ok(self.install_root.join(relative))
+        let target = self.install_root.join(relative);
+        ensure_no_reparse_points(&self.install_root, &target)?;
+        Ok(target)
     }
 
     fn write_installed_versions(&self, versions: &InstalledVersions) -> Result<(), UpdateError> {
@@ -679,6 +683,38 @@ fn validate_relative_path(path: &str) -> Result<(), UpdateError> {
         return Err(UpdateError::UnsafeTarget(path.display().to_string()));
     }
     Ok(())
+}
+
+fn ensure_no_reparse_points(root: &Path, target: &Path) -> Result<(), UpdateError> {
+    let relative = target
+        .strip_prefix(root)
+        .map_err(|_| UpdateError::UnsafeTarget(target.display().to_string()))?;
+    let mut current = root.to_path_buf();
+    for component in relative.components() {
+        current.push(component.as_os_str());
+        match fs::symlink_metadata(&current) {
+            Ok(metadata) if metadata_is_reparse_or_symlink(&metadata) => {
+                return Err(UpdateError::UnsafeTarget(current.display().to_string()));
+            }
+            Ok(_) => {}
+            Err(error) if error.kind() == io::ErrorKind::NotFound => break,
+            Err(error) => return Err(error.into()),
+        }
+    }
+    Ok(())
+}
+
+#[cfg(windows)]
+fn metadata_is_reparse_or_symlink(metadata: &fs::Metadata) -> bool {
+    use std::os::windows::fs::MetadataExt;
+
+    const FILE_ATTRIBUTE_REPARSE_POINT: u32 = 0x400;
+    metadata.file_attributes() & FILE_ATTRIBUTE_REPARSE_POINT != 0
+}
+
+#[cfg(not(windows))]
+fn metadata_is_reparse_or_symlink(metadata: &fs::Metadata) -> bool {
+    metadata.file_type().is_symlink()
 }
 
 fn safe_segment(value: &str) -> Result<&str, UpdateError> {
@@ -942,8 +978,36 @@ mod tests {
     }
 
     #[test]
+    fn rejects_reparse_or_symlink_target_parent() {
+        let root = temp_root("reparse");
+        let real = root.join("real-models");
+        let linked = root.join("models");
+        fs::create_dir_all(&real).unwrap();
+        if create_directory_symlink(&real, &linked).is_err() {
+            fs::remove_dir_all(root).unwrap();
+            return;
+        }
+        let engine = UpdateEngine::new(root.clone()).unwrap();
+        assert!(matches!(
+            engine.target_path("models/model.gguf"),
+            Err(UpdateError::UnsafeTarget(_))
+        ));
+        fs::remove_dir_all(root).unwrap();
+    }
+
+    #[test]
     fn rejects_path_traversal() {
         assert!(validate_relative_path("../outside").is_err());
         assert!(validate_relative_path("C:\\outside").is_err());
+    }
+
+    #[cfg(windows)]
+    fn create_directory_symlink(original: &Path, link: &Path) -> io::Result<()> {
+        std::os::windows::fs::symlink_dir(original, link)
+    }
+
+    #[cfg(unix)]
+    fn create_directory_symlink(original: &Path, link: &Path) -> io::Result<()> {
+        std::os::unix::fs::symlink(original, link)
     }
 }

@@ -50,8 +50,8 @@ if (-not $SkipBuild) {
     } finally {
         Pop-Location
     }
-    $msysRoot = if ($env:ILIA_MSYS_ROOT) { $env:ILIA_MSYS_ROOT } else { "D:\msys" }
-    $env:PATH = "$(Join-Path $msysRoot 'ucrt64\bin');$env:PATH"
+    . (Join-Path $projectRoot "tools\windows-toolchain.ps1")
+    Set-IliaGnuEnvironment
     & cargo +stable-x86_64-pc-windows-gnu build --offline --release -p ilia-updater
     if ($LASTEXITCODE -ne 0) { throw "Update helper build failed with exit code $LASTEXITCODE" }
 }

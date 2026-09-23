@@ -1,9 +1,9 @@
 {
-  "validated_at": "2026-09-23T03:17:20+00:00",
+  "validated_at": "2026-09-23T13:33:40+00:00",
   "database": "D:\\Users\\11373\\Personal\\YAOY\\ILIA\\data\\ilia_prototype.sqlite3",
   "status": "passed",
   "error_count": 0,
-  "warning_count": 1,
+  "warning_count": 0,
   "checks": [
     {
       "name": "vclt-1969:sha256",
@@ -22,6 +22,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "vclt-1969:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=85"
     },
     {
       "name": "vclt-1969:unit_sequence",
@@ -48,6 +54,12 @@
       "detail": "document_type=draft_articles legal_status=ilc_articles_not_treaty"
     },
     {
+      "name": "arsiwa-2001:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=59"
+    },
+    {
       "name": "arsiwa-2001:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -70,6 +82,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-nicaragua-1986-merits:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=292"
     },
     {
       "name": "icj-nicaragua-1986-merits:unit_sequence",
@@ -96,6 +114,12 @@
       "detail": "document_type=treaty legal_status=in_force_constitutive_treaty"
     },
     {
+      "name": "un-charter-1945:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=111"
+    },
+    {
       "name": "un-charter-1945:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -118,6 +142,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=declaration legal_status=general_assembly_declaration"
+    },
+    {
+      "name": "udhr-1948:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=30"
     },
     {
       "name": "udhr-1948:unit_sequence",
@@ -144,6 +174,12 @@
       "detail": "document_type=treaty legal_status=in_force_treaty"
     },
     {
+      "name": "iccpr-1966:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=53"
+    },
+    {
       "name": "iccpr-1966:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -166,6 +202,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "icescr-1966:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=31"
     },
     {
       "name": "icescr-1966:unit_sequence",
@@ -192,6 +234,12 @@
       "detail": "document_type=treaty legal_status=in_force_treaty"
     },
     {
+      "name": "unclos-1982:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=320"
+    },
+    {
       "name": "unclos-1982:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -214,6 +262,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=statute legal_status=constitutive_statute_in_force"
+    },
+    {
+      "name": "icj-statute-1945:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=70"
     },
     {
       "name": "icj-statute-1945:unit_sequence",
@@ -240,6 +294,12 @@
       "detail": "document_type=treaty legal_status=in_force_treaty"
     },
     {
+      "name": "rome-statute-1998:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=128"
+    },
+    {
       "name": "rome-statute-1998:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -262,6 +322,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "cat-1984:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=33"
     },
     {
       "name": "cat-1984:unit_sequence",
@@ -288,6 +354,12 @@
       "detail": "document_type=treaty legal_status=in_force_treaty"
     },
     {
+      "name": "icerd-1965:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=25"
+    },
+    {
       "name": "icerd-1965:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -310,6 +382,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "cedaw-1979:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=30"
     },
     {
       "name": "cedaw-1979:unit_sequence",
@@ -336,6 +414,12 @@
       "detail": "document_type=treaty legal_status=in_force_treaty"
     },
     {
+      "name": "crc-1989:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=54"
+    },
+    {
       "name": "crc-1989:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -358,6 +442,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "gc-i-1949:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=64"
     },
     {
       "name": "gc-i-1949:unit_sequence",
@@ -384,6 +474,12 @@
       "detail": "document_type=treaty legal_status=in_force_treaty"
     },
     {
+      "name": "gc-ii-1949:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=63"
+    },
+    {
       "name": "gc-ii-1949:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -406,6 +502,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "gc-iii-1949:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=143"
     },
     {
       "name": "gc-iii-1949:unit_sequence",
@@ -432,6 +534,12 @@
       "detail": "document_type=treaty legal_status=in_force_treaty"
     },
     {
+      "name": "gc-iv-1949:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=159"
+    },
+    {
       "name": "gc-iv-1949:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -454,6 +562,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=treaty legal_status=in_force_treaty"
+    },
+    {
+      "name": "ap-i-1977:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=102"
     },
     {
       "name": "ap-i-1977:unit_sequence",
@@ -480,6 +594,12 @@
       "detail": "document_type=treaty legal_status=in_force_treaty"
     },
     {
+      "name": "ap-ii-1977:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=28"
+    },
+    {
       "name": "ap-ii-1977:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -502,6 +622,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=customary_rule legal_status=icrc_customary_law_study"
+    },
+    {
+      "name": "icrc-cihl-rules:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=161"
     },
     {
       "name": "icrc-cihl-rules:unit_sequence",
@@ -528,6 +654,12 @@
       "detail": "document_type=judgment legal_status=binding_between_parties"
     },
     {
+      "name": "icj-corfu-channel-1949-merits:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=75"
+    },
+    {
       "name": "icj-corfu-channel-1949-merits:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -550,6 +682,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=advisory_opinion legal_status=authoritative_advisory_opinion"
+    },
+    {
+      "name": "icj-reparation-injuries-1949:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=19"
     },
     {
       "name": "icj-reparation-injuries-1949:unit_sequence",
@@ -576,6 +714,12 @@
       "detail": "document_type=judgment legal_status=binding_between_parties"
     },
     {
+      "name": "icj-asylum-1950:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=34"
+    },
+    {
       "name": "icj-asylum-1950:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -598,6 +742,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=advisory_opinion legal_status=authoritative_advisory_opinion"
+    },
+    {
+      "name": "icj-genocide-reservations-1951:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=32"
     },
     {
       "name": "icj-genocide-reservations-1951:unit_sequence",
@@ -624,6 +774,12 @@
       "detail": "document_type=judgment legal_status=binding_between_parties"
     },
     {
+      "name": "icj-nottebohm-1955:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=26"
+    },
+    {
       "name": "icj-nottebohm-1955:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -646,6 +802,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-right-passage-1960:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=43"
     },
     {
       "name": "icj-right-passage-1960:unit_sequence",
@@ -672,6 +834,12 @@
       "detail": "document_type=judgment legal_status=binding_between_parties"
     },
     {
+      "name": "icj-temple-preah-vihear-1962:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=35"
+    },
+    {
       "name": "icj-temple-preah-vihear-1962:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -694,6 +862,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-north-sea-1969:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=101"
     },
     {
       "name": "icj-north-sea-1969:unit_sequence",
@@ -720,6 +894,12 @@
       "detail": "document_type=judgment legal_status=binding_between_parties"
     },
     {
+      "name": "icj-barcelona-traction-1970:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=103"
+    },
+    {
       "name": "icj-barcelona-traction-1970:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -742,6 +922,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=advisory_opinion legal_status=authoritative_advisory_opinion"
+    },
+    {
+      "name": "icj-namibia-1971:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=129"
     },
     {
       "name": "icj-namibia-1971:unit_sequence",
@@ -768,6 +954,12 @@
       "detail": "document_type=judgment legal_status=binding_between_parties"
     },
     {
+      "name": "icj-nuclear-tests-1974:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=62"
+    },
+    {
       "name": "icj-nuclear-tests-1974:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -790,6 +982,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=advisory_opinion legal_status=authoritative_advisory_opinion"
+    },
+    {
+      "name": "icj-western-sahara-1975:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=163"
     },
     {
       "name": "icj-western-sahara-1975:unit_sequence",
@@ -816,6 +1014,12 @@
       "detail": "document_type=judgment legal_status=binding_between_parties"
     },
     {
+      "name": "icj-continental-shelf-tunisia-libya-1982:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=133"
+    },
+    {
       "name": "icj-continental-shelf-tunisia-libya-1982:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -838,6 +1042,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-frontier-dispute-1986:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=179"
     },
     {
       "name": "icj-frontier-dispute-1986:unit_sequence",
@@ -864,6 +1074,12 @@
       "detail": "document_type=judgment legal_status=binding_between_parties"
     },
     {
+      "name": "icj-elsi-1989:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=70"
+    },
+    {
       "name": "icj-elsi-1989:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -886,6 +1102,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-nauru-preliminary-1992:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=72"
     },
     {
       "name": "icj-nauru-preliminary-1992:unit_sequence",
@@ -912,6 +1134,12 @@
       "detail": "document_type=judgment legal_status=binding_between_parties"
     },
     {
+      "name": "icj-bosnian-genocide-preliminary-1996:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=32"
+    },
+    {
       "name": "icj-bosnian-genocide-preliminary-1996:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -934,6 +1162,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=advisory_opinion legal_status=authoritative_advisory_opinion"
+    },
+    {
+      "name": "icj-nuclear-weapons-1996:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=105"
     },
     {
       "name": "icj-nuclear-weapons-1996:unit_sequence",
@@ -960,6 +1194,12 @@
       "detail": "document_type=judgment legal_status=binding_between_parties"
     },
     {
+      "name": "icj-gabcikovo-1997:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=78"
+    },
+    {
       "name": "icj-gabcikovo-1997:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -982,6 +1222,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-lagrand-2001:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=128"
     },
     {
       "name": "icj-lagrand-2001:unit_sequence",
@@ -1008,6 +1254,12 @@
       "detail": "document_type=judgment legal_status=binding_between_parties"
     },
     {
+      "name": "icj-arrest-warrant-2002:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=78"
+    },
+    {
       "name": "icj-arrest-warrant-2002:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -1030,6 +1282,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=advisory_opinion legal_status=authoritative_advisory_opinion"
+    },
+    {
+      "name": "icj-wall-2004:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=163"
     },
     {
       "name": "icj-wall-2004:unit_sequence",
@@ -1056,6 +1314,12 @@
       "detail": "document_type=judgment legal_status=binding_between_parties"
     },
     {
+      "name": "icj-armed-activities-2005:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=345"
+    },
+    {
       "name": "icj-armed-activities-2005:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -1078,6 +1342,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-bosnian-genocide-2007:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=201"
     },
     {
       "name": "icj-bosnian-genocide-2007:unit_sequence",
@@ -1104,6 +1374,12 @@
       "detail": "document_type=advisory_opinion legal_status=authoritative_advisory_opinion"
     },
     {
+      "name": "icj-kosovo-2010:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=123"
+    },
+    {
       "name": "icj-kosovo-2010:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -1126,6 +1402,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-jurisdictional-immunities-2012:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=139"
     },
     {
       "name": "icj-jurisdictional-immunities-2012:unit_sequence",
@@ -1152,6 +1434,12 @@
       "detail": "document_type=judgment legal_status=binding_between_parties"
     },
     {
+      "name": "icj-whaling-2014:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=247"
+    },
+    {
       "name": "icj-whaling-2014:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -1176,6 +1464,12 @@
       "detail": "document_type=advisory_opinion legal_status=authoritative_advisory_opinion"
     },
     {
+      "name": "icj-chagos-2019:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=183"
+    },
+    {
       "name": "icj-chagos-2019:unit_sequence",
       "passed": true,
       "severity": "error",
@@ -1198,6 +1492,12 @@
       "passed": true,
       "severity": "error",
       "detail": "document_type=judgment legal_status=binding_between_parties"
+    },
+    {
+      "name": "icj-gambia-myanmar-preliminary-2022:unit_count_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "expected_units=115"
     },
     {
       "name": "icj-gambia-myanmar-preliminary-2022:unit_sequence",
@@ -1264,6 +1564,12 @@
       "passed": true,
       "severity": "warning",
       "detail": "review_queue=[]"
+    },
+    {
+      "name": "qa:unit_counts_frozen",
+      "passed": true,
+      "severity": "error",
+      "detail": "AUTO_UNIT_COUNT_NOT_FROZEN=0"
     },
     {
       "name": "sqlite:integrity",

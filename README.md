@@ -13,24 +13,30 @@
 - Qwen3-4B Q4_K_M + llama.cpp 本地问答；CUDA/Vulkan/CPU 自动探测与降级、托管子进程、无证据拒答和 `【n】` 引证校验。
 - Tauri 2 桌面界面：研究问题、混合检索、本地问答、可点击引证、原文证据、页码、法律性质和受限官方来源链接已接通。
 - 200 项检索基线评测，覆盖全部 50 份资料，当前 200/200 通过；Recall@5/10 为 1.0。
-- Windows x64 离线安装包：随包部署数据库、BGE-M3、Qwen3-4B、CUDA/Vulkan/CPU、ONNX Runtime、MSVC DLL 与 WebView2 离线运行时，新电脑不需要开发环境。
+- Windows x64 离线安装包：随包部署数据库、BGE-M3、Qwen3-4B、CUDA/Vulkan/CPU、ONNX Runtime、MSVC DLL 与 WebView2 离线运行时，安装介质已包含脱离开发环境运行所需文件。
 - Ed25519 签名更新系统：分别支持应用、SQLite 资料增量、模型和运行时更新，并提供逐负载 SHA-256、更新日志、备份和失败自动回滚。
-- 资料完整性校验通过，人工复核队列已清零。
+- 资料完整性校验通过：50 份资料的解析单元数量已冻结，当前 0 错误、0 警告，人工复核队列已清零。
 
 当前库共含 50 份文件、5,254 个可引用内容单元，覆盖基础国际法文件、人权法、国际人道法和代表性 ICJ 判例。
+
+## 0.1.0 边界
+
+- `treaty_parties`、`treaty_statements` 和 `protocol_relations` 在 0.1.0 中仅预留结构、尚无动态状态数据；本版不能可靠回答缔约国、批准日期、保留效力或议定书关系问题。
+- 资料、模型和随包二进制的再分发许可仍在审查；安装介质已制作并验证，但完成第三方许可清单前不作为公开发行版发布。
+- 当前安装验收是在开发机完成安装、进程启动和卸载冒烟测试；干净 Windows VM 及 CUDA、Vulkan-only、CPU-only 机器的安装后端到端问答仍属于发布验收项。
 
 ## 复现
 
 ```powershell
 python tools/corpus-importer/import_corpus.py
 python tools/corpus-validator/validate_corpus.py
-cargo test --workspace
+powershell -NoProfile -ExecutionPolicy Bypass -File tools/cargo.ps1 test --workspace
 $env:ORT_DYLIB_PATH = (Resolve-Path runtime/onnx/onnxruntime.dll)
-cargo run --release -p ilia-corpus-embedder -- --db data/ilia_prototype.sqlite3 --cache-dir models/bge-m3
-cargo run --release -p ilia-eval-runner -- --db data/ilia_prototype.sqlite3 --cases tests/eval/retrieval_baseline.jsonl --model-cache models/bge-m3 --output data/retrieval_eval_report.json
-cargo run --release -p ilia-retrieval --bin ilia-search -- --db data/ilia_prototype.sqlite3 --model-cache models/bge-m3 --query "《联合国海洋法公约》领海宽度不得超过十二海里"
-cargo run --release -p ilia-inference --bin ilia-runtime -- --runtime-root runtime --backend auto
-cargo run --release -p ilia-inference --bin ilia-ask -- --db data/ilia_prototype.sqlite3 --bge-cache models/bge-m3 --runtime-root runtime --backend auto --qwen-model models/qwen3-4b/Qwen3-4B-Q4_K_M.gguf --question "《联合国海洋法公约》规定领海宽度不得超过多少海里？"
+powershell -NoProfile -ExecutionPolicy Bypass -File tools/cargo.ps1 run --release -p ilia-corpus-embedder --- --db data/ilia_prototype.sqlite3 --cache-dir models/bge-m3
+powershell -NoProfile -ExecutionPolicy Bypass -File tools/cargo.ps1 run --release -p ilia-eval-runner --- --db data/ilia_prototype.sqlite3 --cases tests/eval/retrieval_baseline.jsonl --model-cache models/bge-m3 --output data/retrieval_eval_report.json
+powershell -NoProfile -ExecutionPolicy Bypass -File tools/cargo.ps1 run --release -p ilia-retrieval --bin ilia-search --- --db data/ilia_prototype.sqlite3 --model-cache models/bge-m3 --query "《联合国海洋法公约》领海宽度不得超过十二海里"
+powershell -NoProfile -ExecutionPolicy Bypass -File tools/cargo.ps1 run --release -p ilia-inference --bin ilia-runtime --- --runtime-root runtime --backend auto
+powershell -NoProfile -ExecutionPolicy Bypass -File tools/cargo.ps1 run --release -p ilia-inference --bin ilia-ask --- --db data/ilia_prototype.sqlite3 --bge-cache models/bge-m3 --runtime-root runtime --backend auto --qwen-model models/qwen3-4b/Qwen3-4B-Q4_K_M.gguf --question "《联合国海洋法公约》规定领海宽度不得超过多少海里？"
 cd apps/desktop
 npm install
 npm run tauri -- dev

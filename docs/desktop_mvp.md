@@ -18,7 +18,7 @@ npm install
 npm run tauri -- dev
 ```
 
-`scripts/tauri.ps1` 会为 Tauri 子进程选择 `stable-x86_64-pc-windows-gnu`，并将同一套 MSYS2 UCRT64 DLL 放到 `PATH` 最前面。这可避免 Anaconda 附带的 MinGW DLL 被 `cc1.exe` 错误加载。默认 MSYS2 根目录是 `D:\msys`，其他位置可通过 `ILIA_MSYS_ROOT` 指定。
+`scripts/tauri.ps1` 会为 Tauri 子进程选择 `stable-x86_64-pc-windows-gnu`，并将同一套 MSYS2 UCRT64 DLL 放到 `PATH` 最前面。这可避免 Anaconda 附带的 MinGW DLL 被 `cc1.exe` 错误加载。脚本从 `PATH` 自动发现 `ucrt64/bin`；未加入 `PATH` 时可通过 `ILIA_MSYS_ROOT` 指定安装根目录。仓库不保存任何本机编译器绝对路径，GitHub CI 继续使用云端 Windows MSVC 工具链。
 
 开发时默认从仓库根目录读取：
 

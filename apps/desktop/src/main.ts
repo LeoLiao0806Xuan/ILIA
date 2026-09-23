@@ -194,7 +194,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
           <div class="empty-glyph">§</div><h3>等待研究问题</h3><p>可以生成回答，也可以先查看检索到的法律资料。</p>
         </div>
         <div class="loading-state hidden" id="loading-state"><div class="loader"></div><h3 id="loading-title">正在检索本地资料</h3><p id="loading-copy">正在运行 FTS5 与 BGE-M3 混合检索。</p></div>
-        <article class="answer-card hidden" id="answer-card"><div class="answer-copy" id="answer-copy"></div><div class="answer-meta" id="answer-meta"></div></article>
+        <article class="answer-card hidden" id="answer-card"><div class="answer-warning hidden" id="answer-warning" role="status"></div><div class="answer-copy" id="answer-copy"></div><div class="answer-meta" id="answer-meta"></div></article>
         <div class="evidence-section hidden" id="evidence-section"><div class="section-row"><h3>检索证据</h3><span id="evidence-count"></span></div><div class="evidence-list" id="evidence-list"></div></div>
       </section>
 
@@ -227,6 +227,7 @@ function setBusy(busy: boolean, title = "正在检索本地资料", copy = "正�
   document.querySelector("#answer-card")?.classList.add("hidden");
   document.querySelector("#evidence-section")?.classList.add("hidden");
   document.querySelector("#grounded-badge")?.classList.add("hidden");
+  document.querySelector("#answer-warning")?.classList.add("hidden");
   document.querySelector("#loading-state")?.classList.toggle("hidden", !busy);
   document.querySelector("#source-detail")?.classList.toggle("muted", busy);
   document.querySelector<HTMLElement>("#loading-title")!.textContent = title;
@@ -272,6 +273,9 @@ function renderSearch(response: SearchResponse, answer?: AnswerResponse, runtime
     const meta = document.querySelector<HTMLElement>("#answer-meta")!;
     meta.textContent = `${(answer.generation_ms / 1000).toFixed(1)} 秒 · ${runtime?.selected_backend.toUpperCase() ?? "LOCAL"} · ${answer.evidence.length} 条证据`;
     document.querySelector("#grounded-badge")?.classList.toggle("hidden", !answer.grounded);
+    const warning = document.querySelector<HTMLElement>("#answer-warning")!;
+    warning.textContent = "⚠ 回答未通过完整引证校验，请以右侧原文证据为准。";
+    warning.classList.toggle("hidden", answer.grounded);
   } else {
     title.textContent = "检索结果"; answerCard.classList.add("hidden");
   }
