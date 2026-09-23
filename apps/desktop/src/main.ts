@@ -186,6 +186,10 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
           <button class="example">《联合国宪章》第51条规定了什么？</button>
         </div>
         <div class="privacy-note"><span>●</span><div><strong>完全本地运行</strong><br/>问题、资料和回答不会发送到外部服务。</div></div>
+        <div class="legal-notice" role="note">
+          <strong>法律免责声明 · 1.0.0-rc.1</strong>
+          <p>ILIA 提供国际法资料检索与辅助解释，不构成法律意见，不替代执业律师或相关主管机构的专业判断。条约状态、保留、声明及最新法律发展应以官方来源为准。</p>
+        </div>
       </aside>
 
       <section class="answer-column">

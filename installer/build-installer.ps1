@@ -1,5 +1,5 @@
 param(
-    [string]$Version = "0.1.0",
+    [string]$Version = "1.0.0-rc.1",
     [string]$InnoSetupCompiler = "",
     [switch]$SkipBuild,
     [switch]$SkipWebView2
@@ -71,6 +71,11 @@ Copy-Item -LiteralPath (Join-Path $releaseRoot "ilia-desktop.exe") -Destination 
 Copy-Item -LiteralPath (Join-Path $releaseRoot "WebView2Loader.dll") -Destination $stageRoot
 Copy-Item -LiteralPath (Join-Path $releaseRoot "ilia-updater.exe") -Destination $stageRoot
 Copy-Item -LiteralPath (Join-Path $desktopRoot "src-tauri\icons\icon.ico") -Destination $stageRoot
+Copy-Item -LiteralPath (Join-Path $projectRoot "THIRD_PARTY_NOTICES.md") -Destination $stageRoot
+New-Item -ItemType Directory -Path (Join-Path $stageRoot "licenses") -Force | Out-Null
+Copy-Item -LiteralPath (Join-Path $projectRoot "LICENSE") -Destination (Join-Path $stageRoot "licenses\ILIA-Apache-2.0.txt")
+Copy-Item -LiteralPath (Join-Path $projectRoot "THIRD_PARTY_NOTICES.md") -Destination (Join-Path $stageRoot "licenses\THIRD_PARTY_NOTICES.md")
+Copy-Tree (Join-Path $projectRoot "licenses") (Join-Path $stageRoot "licenses")
 New-Item -ItemType Directory -Path (Join-Path $stageRoot "update") -Force | Out-Null
 Copy-Item -LiteralPath $trustedUpdateKey -Destination (Join-Path $stageRoot "update\trusted-key.json")
 New-Item -ItemType Directory -Path (Join-Path $stageRoot ".ilia-update") -Force | Out-Null
@@ -123,6 +128,7 @@ New-Item -ItemType Directory -Path $outputRoot -Force | Out-Null
 
 $innoArgs = @(
     "/DAppVersion=$Version",
+    "/DAppFileVersion=1.0.0.1",
     "/DSourceDir=$stageRoot",
     "/DOutputDir=$outputRoot"
 )

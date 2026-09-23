@@ -11,6 +11,10 @@ $required = @(
     "WebView2Loader.dll",
     "ilia-updater.exe",
     "icon.ico",
+    "THIRD_PARTY_NOTICES.md",
+    "licenses\ILIA-Apache-2.0.txt",
+    "licenses\THIRD_PARTY_NOTICES.md",
+    "licenses\README.md",
     "data\ilia_prototype.sqlite3",
     "models\bge-m3\model.onnx",
     "models\qwen3-4b\Qwen3-4B-Q4_K_M.gguf",
@@ -47,14 +51,31 @@ if ($RequireWebView2) {
     if (-not (Test-Path -LiteralPath $webView2 -PathType Leaf)) { throw "WebView2 offline installer is missing" }
 }
 
+$installerFiles = @(Get-ChildItem -LiteralPath $InstallerRoot -Filter "$baseName*" -File | Sort-Object Name)
+$installerHashes = @($installerFiles | ForEach-Object {
+    [ordered]@{
+        name = $_.Name
+        size = $_.Length
+        generated_at = $_.LastWriteTimeUtc.ToString("o")
+        sha256 = (Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+        authenticode_status = (Get-AuthenticodeSignature -LiteralPath $_.FullName).Status.ToString()
+    }
+})
+$installerHashes | ForEach-Object { "$($_.sha256)  $($_.name)" } |
+    Set-Content -LiteralPath (Join-Path $InstallerRoot "SHA256SUMS.txt") -Encoding utf8
+
 $summary = [ordered]@{
     status = "passed"
     version = $Version
+    verified_at = (Get-Date).ToUniversalTime().ToString("o")
+    package_generated_at = $manifest.generated_at
     staged_files = @($manifest.files).Count + 1
     staged_bytes = (Get-ChildItem -LiteralPath $StageRoot -Recurse -File | Measure-Object Length -Sum).Sum
-    installer_launcher = $setup
-    installer_slices = @($slices.FullName)
+    installer_launcher = (Split-Path $setup -Leaf)
+    installer_slices = @($slices.Name)
     installer_bytes = ((Get-Item -LiteralPath $setup).Length + ($slices | Measure-Object Length -Sum).Sum)
+    installer_files = $installerHashes
+    desktop_authenticode_status = (Get-AuthenticodeSignature -LiteralPath (Join-Path $StageRoot "ilia-desktop.exe")).Status.ToString()
 }
 $summary | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath (Join-Path $InstallerRoot "installer-verification.json") -Encoding utf8
 $summary | ConvertTo-Json -Depth 4

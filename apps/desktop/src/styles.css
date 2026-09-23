@@ -41,6 +41,9 @@ button:disabled { opacity: .55; cursor: wait; }
 .privacy-note { display: flex; gap: 10px; margin-top: 28px; padding: 13px; border: 1px solid #d5d5cb; background: rgba(255,255,255,.36); color: #78817d; font-size: 10px; line-height: 1.6; }
 .privacy-note > span { color: #3f9470; font-size: 8px; }
 .privacy-note strong { color: #46544f; font-size: 11px; }
+.legal-notice { margin-top: 12px; padding: 13px; border-left: 3px solid #a98b4d; background: #f4efe1; color: #6f6756; font-size: 10px; line-height: 1.6; }
+.legal-notice strong { display: block; color: #5d4a22; font-size: 10px; letter-spacing: .04em; }
+.legal-notice p { margin: 5px 0 0; }
 .answer-header { display: flex; align-items: flex-start; justify-content: space-between; padding-bottom: 23px; border-bottom: 1px solid #d8d9d1; }
 h2 { margin: 8px 0 0; font-family: "Noto Serif SC", "Songti SC", SimSun, serif; color: #1b342c; font-size: 22px; }
 .grounded-badge { padding: 7px 10px; border: 1px solid #9fc7b4; border-radius: 20px; color: #27654f; background: #e9f4ed; font-size: 10px; font-weight: 600; }

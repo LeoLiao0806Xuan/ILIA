@@ -3,7 +3,7 @@
     "id": "application",
     "kind": "application",
     "version": "0.2.0",
-    "from_version": "0.1.0",
+    "from_version": "1.0.0-rc.1",
     "target": "ilia-desktop.exe",
     "payload_path": "target/x86_64-pc-windows-gnu/release/ilia-desktop.exe",
     "payload_format": "raw_file"

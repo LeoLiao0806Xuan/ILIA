@@ -1,6 +1,6 @@
 # ILIA 本地国际法资料与检索原型
 
-当前版本已经从资料原型推进到可安装、可更新的本地国际法智能助手。
+当前版本为 `1.0.0-rc.1`，已经从资料原型推进到可安装、可更新的本地国际法智能助手。候选版发布说明见 [`docs/release_notes_1.0.0-rc.1.md`](docs/release_notes_1.0.0-rc.1.md)。
 
 ## 已实现
 
@@ -19,11 +19,14 @@
 
 当前库共含 50 份文件、5,254 个可引用内容单元，覆盖基础国际法文件、人权法、国际人道法和代表性 ICJ 判例。
 
-## 0.1.0 边界
+## 1.0.0-rc.1 边界
 
-- `treaty_parties`、`treaty_statements` 和 `protocol_relations` 在 0.1.0 中仅预留结构、尚无动态状态数据；本版不能可靠回答缔约国、批准日期、保留效力或议定书关系问题。
-- 资料、模型和随包二进制的再分发许可仍在审查；安装介质已制作并验证，但完成第三方许可清单前不作为公开发行版发布。
-- 当前安装验收是在开发机完成安装、进程启动和卸载冒烟测试；干净 Windows VM 及 CUDA、Vulkan-only、CPU-only 机器的安装后端到端问答仍属于发布验收项。
+- `treaty_parties`、`treaty_statements` 和 `protocol_relations` 在 1.0.0-rc.1 中仅预留结构、尚无动态状态数据；本版不能可靠回答缔约国、批准日期、保留效力或议定书关系问题。动态状态能力计划在 1.1.0 或以后提供。
+- 资料、模型和随包二进制的再分发许可仍在审查；候选介质已包含 `THIRD_PARTY_NOTICES.md` 草案和许可证目录，但其中所有 pending 项解决前不作为公开发行版发布。
+- 当前最终介质已在构建机完成安装、桌面启动、使用安装负载的真实混合检索、CPU 本地问答和卸载测试；干净 Windows VM 及 CUDA、Vulkan-only、CPU-only 机器的端到端问答仍属于正式版发布验收项。
+- Windows 安装器和桌面 EXE 尚未进行 Authenticode 代码签名。候选版仅通过项目 GitHub Release 分发，并同时提供 SHA-256 清单供下载后核验。
+
+> **法律免责声明：** ILIA 提供国际法资料检索与辅助解释，不构成法律意见，不替代执业律师或相关主管机构的专业判断。条约状态、保留、声明及最新法律发展应以官方来源为准。
 
 ## 复现
 
@@ -46,7 +49,10 @@ npm run tauri -- dev
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File installer/build-installer.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File installer/smoke-test.ps1
 ```
+
+安装器构建会生成 `SHA256SUMS.txt`；冒烟测试会对最终介质执行安装、桌面启动、使用安装负载的真实混合检索与本地问答以及卸载，并将可审计报告写入 `release/evidence/1.0.0-rc.1/`。
 
 `corpus/sources/` 保存不可变原始资料，`data/` 保存可重建数据库和校验报告。目录职责和实现状态见 `docs/repository_structure.md`。
 检索融合和证据选择细节见 `docs/retrieval_mvp.md`。

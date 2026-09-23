@@ -1,6 +1,9 @@
 #define AppName "ILIA"
 #ifndef AppVersion
-  #define AppVersion "0.1.0"
+  #define AppVersion "1.0.0-rc.1"
+#endif
+#ifndef AppFileVersion
+  #define AppFileVersion "1.0.0.1"
 #endif
 #ifndef SourceDir
   #error SourceDir must point to the staged ILIA application directory
@@ -38,7 +41,7 @@ WizardStyle=modern
 CloseApplications=yes
 RestartApplications=no
 MinVersion=10.0.17763
-VersionInfoVersion={#AppVersion}.0
+VersionInfoVersion={#AppFileVersion}
 VersionInfoProductName={#AppName}
 
 [Languages]

@@ -8,5 +8,7 @@
   "byte_length": 569958496,
   "sha256": "16de7ea1146ca427e14938ec3e9abfdcaff0e6ac76434cd693ac35d761250bcb",
   "downloaded_at": "2026-09-21",
-  "license_review": "pending"
+  "license": "MIT",
+  "license_source": "https://huggingface.co/gpahal/bge-m3-onnx-int8",
+  "license_review": "metadata_verified_legal_review_pending"
 }

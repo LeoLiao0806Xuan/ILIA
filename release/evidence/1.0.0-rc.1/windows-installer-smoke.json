@@ -1,0 +1,76 @@
+﻿{
+    "schema_version":  2,
+    "status":  "passed",
+    "version":  "1.0.0-rc.1",
+    "tested_at":  "2026-09-23T15:01:49.9073079Z",
+    "test_started_at":  "2026-09-23T15:00:26.7844238Z",
+    "environment":  {
+                        "os":  "Microsoft Windows NT 10.0.26200.0",
+                        "architecture":  "X64",
+                        "backend_requested":  "cpu",
+                        "scope":  "build-machine release-candidate smoke test; not a clean-VM certification"
+                    },
+    "installer_files":  [
+                            {
+                                "name":  "ILIA-1.0.0-rc.1-windows-x64-offline-setup.exe",
+                                "size":  2071639,
+                                "generated_at":  "2026-09-23T14:59:51.1695135Z",
+                                "sha256":  "d13a29a905211e4316fab91659d868d4583886aec1a5d89607b1de8d95f33231",
+                                "authenticode_status":  "NotSigned"
+                            },
+                            {
+                                "name":  "ILIA-1.0.0-rc.1-windows-x64-offline-setup-1.bin",
+                                "size":  1897927936,
+                                "generated_at":  "2026-09-23T14:59:12.6568956Z",
+                                "sha256":  "52274c9748321b503e77c3fdcb92592f1107e88c2c53872fd1f736a89c853214",
+                                "authenticode_status":  "UnknownError"
+                            },
+                            {
+                                "name":  "ILIA-1.0.0-rc.1-windows-x64-offline-setup-2.bin",
+                                "size":  1900000000,
+                                "generated_at":  "2026-09-23T14:59:42.6979597Z",
+                                "sha256":  "48d2cdefd74cde1771dae91f08d1edc9ec2ab930f803b607cbba1c463e957767",
+                                "authenticode_status":  "UnknownError"
+                            },
+                            {
+                                "name":  "ILIA-1.0.0-rc.1-windows-x64-offline-setup-3.bin",
+                                "size":  491247997,
+                                "generated_at":  "2026-09-23T14:59:51.0668213Z",
+                                "sha256":  "92ea37481cb5336cf0e160ebfa45802bf80399b2d58d1930c2b7707726768bba",
+                                "authenticode_status":  "UnknownError"
+                            }
+                        ],
+    "installation":  {
+                         "started_at":  "2026-09-23T15:00:38.3443170Z",
+                         "exit_code":  0,
+                         "desktop_started":  true
+                     },
+    "retrieval":  {
+                      "passed":  true,
+                      "query":  "Under UNCLOS Article 3, what is the maximum breadth of the territorial sea?",
+                      "duration_ms":  3093,
+                      "hit_count":  1,
+                      "evidence_count":  1,
+                      "top_document":  "United Nations Convention on the Law of the Sea",
+                      "top_citation":  "UNCLOS, Article 3"
+                  },
+    "local_answer":  {
+                         "passed":  true,
+                         "question":  "Under UNCLOS Article 3, what is the maximum breadth of the territorial sea?",
+                         "duration_ms":  21485,
+                         "backend":  "cpu",
+                         "grounded":  true,
+                         "evidence_count":  1,
+                         "citations":  [
+                                           "UNCLOS, Article 3"
+                                       ],
+                         "answer":  "The maximum breadth of the territorial sea under UNCLOS Article 3 is 12 nautical miles 【1】."
+                     },
+    "uninstall":  {
+                      "exit_code":  0,
+                      "temporary_install_removed":  true
+                  },
+    "errors":  [
+
+               ]
+}
