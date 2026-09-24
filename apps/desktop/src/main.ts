@@ -85,6 +85,25 @@ interface AskResponse {
   answer: AnswerResponse;
 }
 
+interface TranslationResponse {
+  runtime: RuntimeStartupReport;
+  translation: {
+    translated_text: string;
+    model_id: string;
+    generation_ms: number;
+  };
+}
+
+interface DocumentSummary {
+  document_id: string;
+  canonical_title: string;
+  title_zh: string | null;
+  short_title: string | null;
+  document_type: string;
+  legal_status: string;
+  official_source_url: string;
+}
+
 interface UpdateComponent {
   id: string;
   kind: "application" | "corpus" | "model" | "runtime";
@@ -133,6 +152,16 @@ const demoRuntime: RuntimeProbeReport = {
   ],
 };
 
+const demoDocuments: DocumentSummary[] = [{
+  document_id: "unclos-1982",
+  canonical_title: "United Nations Convention on the Law of the Sea",
+  title_zh: "联合国海洋法公约",
+  short_title: "UNCLOS",
+  document_type: "treaty",
+  legal_status: "in_force_treaty",
+  official_source_url: demoHit.official_source_url,
+}];
+
 const isTauri = () => "__TAURI_INTERNALS__" in window;
 
 async function call<T>(command: string, args: Record<string, unknown> = {}): Promise<T> {
@@ -141,8 +170,14 @@ async function call<T>(command: string, args: Record<string, unknown> = {}): Pro
   if (command === "get_runtime_status" || command === "set_runtime_preference") return demoRuntime as T;
   if (command === "check_updates") return { manifest: { release_id: "demo", components: [] }, installed_versions: { components: {} } } as T;
   if (command === "install_update") return undefined as T;
+  if (command === "list_documents") return demoDocuments as T;
+  if (command === "open_document_pdf") return undefined as T;
   const search: SearchResponse = { query: String(args.query ?? ""), hits: [demoHit], evidence: [{ rank: 1, chunk_id: demoHit.chunk_id, citation_label: demoHit.citation_label, selection_reason: "RRF fusion of FTS5 and BGE-M3", text: demoHit.text }] };
   if (command === "search_documents") return search as T;
+  if (command === "translate_source") return {
+    runtime: { detection: demoRuntime, selected_backend: "cuda", selected_profile: { context_size: 16384, device: "CUDA0" }, attempts: [{ backend: "cuda", started: true, error: null }] },
+    translation: { translated_text: "第三条\n领海的宽度\n每一国家有权确定其领海宽度，直至从按照本公约确定的基线量起不超过十二海里的界限。", model_id: "Qwen3-4B", generation_ms: 438 },
+  } as T;
   return {
     runtime: { detection: demoRuntime, selected_backend: "cuda", selected_profile: { context_size: 16384, device: "CUDA0" }, attempts: [{ backend: "cuda", started: true, error: null }] },
     search,
@@ -158,6 +193,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         <div><div class="brand">ILIA</div><div class="brand-subtitle">International Law Intelligence Assistant</div></div>
       </div>
       <div class="top-actions">
+        <button class="library-button" id="library-button">资料库</button>
         <button class="update-button" id="update-button">检查更新</button>
         <div class="runtime-pill" id="runtime-pill"><span class="pulse"></span><span id="runtime-text">正在探测运行环境</span></div>
         <label class="backend-control">运行方式
@@ -185,9 +221,8 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
           <button class="example">尼加拉瓜案第191段如何说明法律确信？</button>
           <button class="example">《联合国宪章》第51条规定了什么？</button>
         </div>
-        <div class="privacy-note"><span>●</span><div><strong>完全本地运行</strong><br/>问题、资料和回答不会发送到外部服务。</div></div>
         <div class="legal-notice" role="note">
-          <strong>法律免责声明 · 1.0.0-rc.1</strong>
+          <strong>法律免责声明 · 1.0.0</strong>
           <p>ILIA 提供国际法资料检索与辅助解释，不构成法律意见，不替代执业律师或相关主管机构的专业判断。条约状态、保留、声明及最新法律发展应以官方来源为准。</p>
         </div>
       </aside>
@@ -208,22 +243,50 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
           <div class="section-kicker">原文证据</div><div class="source-index" id="source-index">证据 1</div>
           <h2 id="source-title"></h2><div class="source-chips" id="source-chips"></div>
           <div class="citation-box"><div>规范引用</div><strong id="source-citation"></strong></div>
-          <div class="original-heading"><span>原文</span><span id="source-language"></span></div>
+          <div class="original-heading">
+            <span>文献内容</span>
+            <div id="language-switch" class="language-switch hidden" aria-label="文献语言切换">
+              <button id="original-button" class="active">英文原文</button>
+              <button id="translate-button">中文译文</button>
+            </div>
+            <span id="source-language"></span>
+          </div>
+          <div id="translation-note" class="translation-note hidden">本地机器翻译 · 以英文原文为准</div>
           <pre id="source-text"></pre>
           <a id="source-link" class="source-link" target="_blank" rel="noreferrer">查看官方来源 ↗</a>
         </div>
       </aside>
     </main>
+    <div id="library-modal" class="library-modal hidden" role="dialog" aria-modal="true" aria-labelledby="library-title">
+      <div class="library-dialog">
+        <div class="library-header"><div><div class="section-kicker">本地资料库</div><h2 id="library-title">浏览原始文献</h2></div><button id="library-close" class="library-close" aria-label="关闭资料库">×</button></div>
+        <p>共 50 份国际法资料。选择文献后将用本机默认 PDF 阅读器打开原始文件。</p>
+        <input id="library-filter" class="library-filter" type="search" placeholder="按中文名、英文名或缩写筛选" />
+        <div id="library-count" class="library-count"></div>
+        <div id="library-list" class="library-list"></div>
+      </div>
+    </div>
   </div>`;
 
 const question = document.querySelector<HTMLTextAreaElement>("#question")!;
 const askButton = document.querySelector<HTMLButtonElement>("#ask-button")!;
 const searchButton = document.querySelector<HTMLButtonElement>("#search-button")!;
 const updateButton = document.querySelector<HTMLButtonElement>("#update-button")!;
+const libraryButton = document.querySelector<HTMLButtonElement>("#library-button")!;
+const libraryModal = document.querySelector<HTMLElement>("#library-modal")!;
+const libraryClose = document.querySelector<HTMLButtonElement>("#library-close")!;
+const libraryFilter = document.querySelector<HTMLInputElement>("#library-filter")!;
+const libraryList = document.querySelector<HTMLElement>("#library-list")!;
 const backendSelect = document.querySelector<HTMLSelectElement>("#backend-select")!;
 const sourceLink = document.querySelector<HTMLAnchorElement>("#source-link")!;
+const translateButton = document.querySelector<HTMLButtonElement>("#translate-button")!;
+const originalButton = document.querySelector<HTMLButtonElement>("#original-button")!;
 let currentHits: SearchHit[] = [];
 let currentEvidence: EvidenceItem[] = [];
+let currentSourceIndex = -1;
+const translationCache = new Map<string, TranslationResponse["translation"]>();
+let preferredSourceLanguage: "original" | "chinese" = "original";
+let libraryDocuments: DocumentSummary[] = [];
 
 function setBusy(busy: boolean, title = "正在检索本地资料", copy = "正在运行 FTS5 与 BGE-M3 混合检索。") {
   askButton.disabled = busy; searchButton.disabled = busy;
@@ -305,6 +368,7 @@ function showSource(index: number) {
   const evidence = currentEvidence[index];
   const hit = evidence ? currentHits.find((item) => item.chunk_id === evidence.chunk_id) : undefined;
   if (!hit) return;
+  currentSourceIndex = index;
   document.querySelector("#source-placeholder")?.classList.add("hidden"); document.querySelector("#source-detail")?.classList.remove("hidden");
   document.querySelector<HTMLElement>("#source-index")!.textContent = `证据 ${index + 1}`;
   document.querySelector<HTMLElement>("#source-title")!.textContent = hit.title_zh ?? hit.canonical_title;
@@ -312,8 +376,111 @@ function showSource(index: number) {
   [hit.document_type, hit.legal_status, `第 ${hit.page_start} 页`].forEach((value) => { const chip = document.createElement("span"); chip.textContent = value; chips.append(chip); });
   document.querySelector<HTMLElement>("#source-citation")!.textContent = hit.citation_label;
   document.querySelector<HTMLElement>("#source-language")!.textContent = hit.language.toUpperCase();
-  document.querySelector<HTMLElement>("#source-text")!.textContent = hit.text;
+  const isEnglish = hit.language.toLowerCase().startsWith("en");
+  document.querySelector("#language-switch")?.classList.toggle("hidden", !isEnglish);
+  if (isEnglish && preferredSourceLanguage === "chinese") {
+    void translateCurrentSource(false);
+  } else {
+    showOriginalSource(hit);
+  }
   const link = document.querySelector<HTMLAnchorElement>("#source-link")!; link.href = hit.official_source_url;
+}
+
+function showOriginalSource(hit: SearchHit) {
+  document.querySelector<HTMLElement>("#source-text")!.textContent = hit.text;
+  document.querySelector("#translation-note")?.classList.add("hidden");
+  originalButton.classList.add("active");
+  translateButton.classList.remove("active");
+  translateButton.disabled = false;
+  translateButton.textContent = "中文译文";
+}
+
+function showChineseTranslation(translation: TranslationResponse["translation"]) {
+  document.querySelector<HTMLElement>("#source-text")!.textContent = translation.translated_text;
+  const note = document.querySelector<HTMLElement>("#translation-note")!;
+  note.textContent = `本地机器翻译 · 以英文原文为准 · ${(translation.generation_ms / 1000).toFixed(1)} 秒`;
+  note.classList.remove("hidden");
+  originalButton.classList.remove("active");
+  translateButton.classList.add("active");
+  translateButton.disabled = false;
+  translateButton.textContent = "中文译文";
+  document.querySelector<HTMLElement>("#source-language")!.textContent = "ZH-CN";
+}
+
+async function translateCurrentSource(rememberPreference = true) {
+  const evidence = currentEvidence[currentSourceIndex];
+  const hit = evidence ? currentHits.find((item) => item.chunk_id === evidence.chunk_id) : undefined;
+  if (!hit) return;
+  if (rememberPreference) preferredSourceLanguage = "chinese";
+  const cached = translationCache.get(hit.chunk_id);
+  if (cached) {
+    showChineseTranslation(cached);
+    return;
+  }
+  translateButton.disabled = true;
+  translateButton.textContent = "翻译中…";
+  document.querySelector<HTMLElement>("#source-text")!.textContent = "正在生成本地中文译文…";
+  document.querySelector<HTMLElement>("#translation-note")!.textContent = "本地机器翻译 · 以英文原文为准";
+  document.querySelector("#translation-note")?.classList.remove("hidden");
+  try {
+    const response = await call<TranslationResponse>("translate_source", {
+      sourceText: hit.text,
+      citationLabel: hit.citation_label,
+    });
+    translationCache.set(hit.chunk_id, response.translation);
+    updateRuntime(response.runtime.detection, response.runtime);
+    const currentEvidenceItem = currentEvidence[currentSourceIndex];
+    if (currentEvidenceItem?.chunk_id === hit.chunk_id) showChineseTranslation(response.translation);
+  } catch (error) {
+    translateButton.disabled = false;
+    translateButton.textContent = "重试翻译";
+    window.alert(`本地翻译失败：${String(error)}`);
+  }
+}
+
+function renderLibrary() {
+  const query = libraryFilter.value.trim().toLowerCase();
+  const visible = libraryDocuments.filter((document) => [
+    document.title_zh,
+    document.canonical_title,
+    document.short_title,
+    document.document_type,
+  ].filter(Boolean).join(" ").toLowerCase().includes(query));
+  document.querySelector<HTMLElement>("#library-count")!.textContent = `显示 ${visible.length} / ${libraryDocuments.length} 份文献`;
+  libraryList.replaceChildren();
+  for (const document of visible) {
+    const item = window.document.createElement("article");
+    item.className = "library-item";
+    const title = window.document.createElement("strong");
+    title.textContent = document.title_zh ?? document.canonical_title;
+    const english = window.document.createElement("span");
+    english.textContent = document.canonical_title;
+    const meta = window.document.createElement("small");
+    meta.textContent = `${document.document_type} · ${document.legal_status} · 本地 PDF`;
+    const open = window.document.createElement("button");
+    open.textContent = "打开 PDF ↗";
+    open.addEventListener("click", async () => {
+      open.disabled = true;
+      try { await call<void>("open_document_pdf", { documentId: document.document_id }); }
+      catch (error) { window.alert(`无法打开本地 PDF：${String(error)}`); }
+      finally { open.disabled = false; }
+    });
+    item.append(title, english, meta, open);
+    libraryList.append(item);
+  }
+}
+
+async function openLibrary() {
+  libraryModal.classList.remove("hidden");
+  libraryFilter.focus();
+  if (libraryDocuments.length) return;
+  libraryList.textContent = "正在载入资料目录…";
+  try {
+    libraryDocuments = await call<DocumentSummary[]>("list_documents");
+    renderLibrary();
+  } catch (error) {
+    libraryList.textContent = `资料库载入失败：${String(error)}`;
+  }
 }
 
 async function runSearch() {
@@ -370,6 +537,10 @@ function showError(error: unknown) {
 
 askButton.addEventListener("click", runAsk); searchButton.addEventListener("click", runSearch);
 updateButton.addEventListener("click", checkForUpdates);
+libraryButton.addEventListener("click", openLibrary);
+libraryClose.addEventListener("click", () => libraryModal.classList.add("hidden"));
+libraryModal.addEventListener("click", (event) => { if (event.target === libraryModal) libraryModal.classList.add("hidden"); });
+libraryFilter.addEventListener("input", renderLibrary);
 question.addEventListener("keydown", (event) => { if ((event.ctrlKey || event.metaKey) && event.key === "Enter") runAsk(); });
 document.querySelectorAll<HTMLButtonElement>(".example").forEach((button) => button.addEventListener("click", () => { question.value = button.textContent ?? ""; question.focus(); }));
 backendSelect.addEventListener("change", async () => { try { updateRuntime(await call<RuntimeProbeReport>("set_runtime_preference", { preference: backendSelect.value })); } catch (error) { showError(error); } });
@@ -377,6 +548,16 @@ sourceLink.addEventListener("click", async (event) => {
   if (!isTauri()) return;
   event.preventDefault();
   try { await openUrl(sourceLink.href); } catch (error) { showError(error); }
+});
+translateButton.addEventListener("click", () => { void translateCurrentSource(); });
+originalButton.addEventListener("click", () => {
+  const evidence = currentEvidence[currentSourceIndex];
+  const hit = evidence ? currentHits.find((item) => item.chunk_id === evidence.chunk_id) : undefined;
+  if (hit) {
+    preferredSourceLanguage = "original";
+    document.querySelector<HTMLElement>("#source-language")!.textContent = hit.language.toUpperCase();
+    showOriginalSource(hit);
+  }
 });
 
 call<RuntimeProbeReport>("get_runtime_status").then(updateRuntime).catch(showError);

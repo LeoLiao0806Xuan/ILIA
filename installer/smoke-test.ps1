@@ -1,5 +1,5 @@
 param(
-    [string]$Version = "1.0.0-rc.1",
+    [string]$Version = "1.0.0",
     [ValidateSet("auto", "cuda", "vulkan", "cpu")][string]$Backend = "cpu",
     [switch]$SkipCliBuild
 )
@@ -15,7 +15,7 @@ $reportPath = Join-Path $installerRoot "installer-smoke-test.json"
 $evidencePath = Join-Path $evidenceRoot "windows-installer-smoke.json"
 $baseName = "ILIA-$Version-windows-x64-offline-setup"
 $setupPath = Join-Path $installerRoot "$baseName.exe"
-$releaseRoot = Join-Path $projectRoot "target\x86_64-pc-windows-gnu\release"
+$releaseRoot = Join-Path $projectRoot "target\release"
 $searchExe = Join-Path $releaseRoot "ilia-search.exe"
 $askExe = Join-Path $releaseRoot "ilia-ask.exe"
 $question = "Under UNCLOS Article 3, what is the maximum breadth of the territorial sea?"

@@ -1,44 +1,44 @@
 ﻿{
     "status":  "passed",
     "version":  "1.0.0-rc.1",
-    "verified_at":  "2026-09-23T15:00:06.5585100Z",
-    "package_generated_at":  "2026-09-23T14:58:57.2195159Z",
+    "verified_at":  "2026-09-24T02:31:22.9262580Z",
+    "package_generated_at":  "2026-09-24T02:30:07.1725960Z",
     "staged_files":  196,
-    "staged_bytes":  4076121449,
+    "staged_bytes":  4077601559,
     "installer_launcher":  "ILIA-1.0.0-rc.1-windows-x64-offline-setup.exe",
     "installer_slices":  [
                              "ILIA-1.0.0-rc.1-windows-x64-offline-setup-1.bin",
                              "ILIA-1.0.0-rc.1-windows-x64-offline-setup-2.bin",
                              "ILIA-1.0.0-rc.1-windows-x64-offline-setup-3.bin"
                          ],
-    "installer_bytes":  4291247572,
+    "installer_bytes":  4292728225,
     "installer_files":  [
                             {
                                 "name":  "ILIA-1.0.0-rc.1-windows-x64-offline-setup.exe",
-                                "size":  2071639,
-                                "generated_at":  "2026-09-23T14:59:51.1695135Z",
-                                "sha256":  "d13a29a905211e4316fab91659d868d4583886aec1a5d89607b1de8d95f33231",
+                                "size":  2072182,
+                                "generated_at":  "2026-09-24T02:31:06.9454684Z",
+                                "sha256":  "c99ea325ff03cdc6b6d4dcec55de447e5abfa664c8a4cd730988dbf3407ebdd7",
                                 "authenticode_status":  "NotSigned"
                             },
                             {
                                 "name":  "ILIA-1.0.0-rc.1-windows-x64-offline-setup-1.bin",
-                                "size":  1897927936,
-                                "generated_at":  "2026-09-23T14:59:12.6568956Z",
-                                "sha256":  "52274c9748321b503e77c3fdcb92592f1107e88c2c53872fd1f736a89c853214",
+                                "size":  1897927424,
+                                "generated_at":  "2026-09-24T02:30:26.0457944Z",
+                                "sha256":  "bb695a284b4eee6c4ae3c2b4b56564598aa6bd9c7635913180f097d921edd4ab",
                                 "authenticode_status":  "UnknownError"
                             },
                             {
                                 "name":  "ILIA-1.0.0-rc.1-windows-x64-offline-setup-2.bin",
                                 "size":  1900000000,
-                                "generated_at":  "2026-09-23T14:59:42.6979597Z",
-                                "sha256":  "48d2cdefd74cde1771dae91f08d1edc9ec2ab930f803b607cbba1c463e957767",
+                                "generated_at":  "2026-09-24T02:30:53.2998954Z",
+                                "sha256":  "2d5da416d388d5ca1104ad0e6281d3e8f482db38ffc5deff1f2bbf38415dbf29",
                                 "authenticode_status":  "UnknownError"
                             },
                             {
                                 "name":  "ILIA-1.0.0-rc.1-windows-x64-offline-setup-3.bin",
-                                "size":  491247997,
-                                "generated_at":  "2026-09-23T14:59:51.0668213Z",
-                                "sha256":  "92ea37481cb5336cf0e160ebfa45802bf80399b2d58d1930c2b7707726768bba",
+                                "size":  492728619,
+                                "generated_at":  "2026-09-24T02:31:06.9374705Z",
+                                "sha256":  "43229fd1d98d08d542afa18fc8bdf994a91707b116a061644167005cb4fc0951",
                                 "authenticode_status":  "UnknownError"
                             }
                         ],

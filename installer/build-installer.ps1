@@ -1,5 +1,5 @@
 param(
-    [string]$Version = "1.0.0-rc.1",
+    [string]$Version = "1.0.0",
     [string]$InnoSetupCompiler = "",
     [switch]$SkipBuild,
     [switch]$SkipWebView2
@@ -10,7 +10,10 @@ $projectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 $stageRoot = Join-Path $projectRoot "dist\installer-stage\ILIA"
 $outputRoot = Join-Path $projectRoot "dist\installer"
 $desktopRoot = Join-Path $projectRoot "apps\desktop"
-$releaseRoot = Join-Path $projectRoot "target\x86_64-pc-windows-gnu\release"
+# The portable GNU toolchain is selected through RUSTUP_TOOLCHAIN, so Cargo and
+# Tauri emit current release artifacts into target\release. Do not package the
+# stale explicit-target directory left by older builds.
+$releaseRoot = Join-Path $projectRoot "target\release"
 $webView2 = Join-Path $projectRoot "installer\prerequisites\MicrosoftEdgeWebView2RuntimeInstallerX64.exe"
 $trustedUpdateKey = Join-Path $projectRoot "update\trusted-key.json"
 
@@ -85,6 +88,7 @@ New-Item -ItemType Directory -Path (Join-Path $stageRoot "data") -Force | Out-Nu
 Copy-Item -LiteralPath (Join-Path $projectRoot "data\ilia_prototype.sqlite3") -Destination (Join-Path $stageRoot "data")
 Copy-Tree (Join-Path $projectRoot "models\bge-m3") (Join-Path $stageRoot "models\bge-m3")
 Copy-Tree (Join-Path $projectRoot "models\qwen3-4b") (Join-Path $stageRoot "models\qwen3-4b")
+Copy-Tree (Join-Path $projectRoot "corpus\sources") (Join-Path $stageRoot "corpus\sources")
 foreach ($runtimeName in @("cuda", "vulkan", "cpu", "onnx")) {
     Copy-Tree (Join-Path $projectRoot "runtime\$runtimeName") (Join-Path $stageRoot "runtime\$runtimeName")
 }
@@ -128,7 +132,7 @@ New-Item -ItemType Directory -Path $outputRoot -Force | Out-Null
 
 $innoArgs = @(
     "/DAppVersion=$Version",
-    "/DAppFileVersion=1.0.0.1",
+    "/DAppFileVersion=1.0.0.0",
     "/DSourceDir=$stageRoot",
     "/DOutputDir=$outputRoot"
 )

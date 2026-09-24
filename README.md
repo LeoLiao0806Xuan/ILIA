@@ -1,63 +1,91 @@
-# ILIA 本地国际法资料与检索原型
+# ILIA — 本地国际法智能助手
 
-当前版本为 `1.0.0-rc.1`，已经从资料原型推进到可安装、可更新的本地国际法智能助手。候选版发布说明见 [`docs/release_notes_1.0.0-rc.1.md`](docs/release_notes_1.0.0-rc.1.md)。
+ILIA（International Law Intelligence Assistant）是一款面向国际法学习、研究与实务检索的 Windows 桌面应用。它把法律资料检索、英文原文翻译、有据问答和原始文献阅览放在同一个工作台中，让每项结论都能回到具体条款、判例段落和官方来源。
 
-## 已实现
+当前版本：`1.0.0`
 
-- 第一版 50 项资料范围和清单，50 份正式资料均已入库。
-- SQLite 001 schema、FTS5、来源哈希、版本、法律性质、条款和判例段落结构。
-- Rust workspace：`ilia-core`、`ilia-database`、`ilia-embedding`、`ilia-retrieval`、`ilia-inference`、`ilia-updater`、`ilia-corpus-embedder` 和 `ilia-eval-runner`。
-- 中英文文书名、条款号和 ICJ 段落号精确检索。
-- BGE-M3 INT8 ONNX 本地嵌入；5,254/5,254 个内容单元已生成 1024 维向量并写入 SQLite。
-- FTS5 + BGE-M3 的 RRF 混合排序，以及带字符预算的证据选择。
-- Qwen3-4B Q4_K_M + llama.cpp 本地问答；CUDA/Vulkan/CPU 自动探测与降级、托管子进程、无证据拒答和 `【n】` 引证校验。
-- Tauri 2 桌面界面：研究问题、混合检索、本地问答、可点击引证、原文证据、页码、法律性质和受限官方来源链接已接通。
-- 200 项检索基线评测，覆盖全部 50 份资料，当前 200/200 通过；Recall@5/10 为 1.0。
-- Windows x64 离线安装包：随包部署数据库、BGE-M3、Qwen3-4B、CUDA/Vulkan/CPU、ONNX Runtime、MSVC DLL 与 WebView2 离线运行时，安装介质已包含脱离开发环境运行所需文件。
-- Ed25519 签名更新系统：分别支持应用、SQLite 资料增量、模型和运行时更新，并提供逐负载 SHA-256、更新日志、备份和失败自动回滚。
-- 资料完整性校验通过：50 份资料的解析单元数量已冻结，当前 0 错误、0 警告，人工复核队列已清零。
+## 为什么使用 ILIA
 
-当前库共含 50 份文件、5,254 个可引用内容单元，覆盖基础国际法文件、人权法、国际人道法和代表性 ICJ 判例。
+- **从原文出发**：同时使用文书名、条款号、全文关键词和语义检索定位资料。
+- **回答可以核验**：本地模型生成的每项实质结论均链接至入选证据，点击 `【n】` 即可查看原文。
+- **英文文献中文阅读**：对英文条款和判例段落进行本地简体中文翻译，原文与译文并列展示，不覆盖原始资料。
+- **适配不同电脑**：自动探测 NVIDIA CUDA、Vulkan 和 CPU，并在不可用时依次降级。
 
-## 1.0.0-rc.1 边界
+## 已收录资料
 
-- `treaty_parties`、`treaty_statements` 和 `protocol_relations` 在 1.0.0-rc.1 中仅预留结构、尚无动态状态数据；本版不能可靠回答缔约国、批准日期、保留效力或议定书关系问题。动态状态能力计划在 1.1.0 或以后提供。
-- 资料、模型和随包二进制的再分发许可仍在审查；候选介质已包含 `THIRD_PARTY_NOTICES.md` 草案和许可证目录，但其中所有 pending 项解决前不作为公开发行版发布。
-- 当前最终介质已在构建机完成安装、桌面启动、使用安装负载的真实混合检索、CPU 本地问答和卸载测试；干净 Windows VM 及 CUDA、Vulkan-only、CPU-only 机器的端到端问答仍属于正式版发布验收项。
-- Windows 安装器和桌面 EXE 尚未进行 Authenticode 代码签名。候选版仅通过项目 GitHub Release 分发，并同时提供 SHA-256 清单供下载后核验。
+首版资料库包含 50 份国际法核心文献、5,254 个可引用内容单元，并随安装包提供对应的原始 PDF；可从应用的“资料库”按标题浏览并打开阅读。资料覆盖：
 
-> **法律免责声明：** ILIA 提供国际法资料检索与辅助解释，不构成法律意见，不替代执业律师或相关主管机构的专业判断。条约状态、保留、声明及最新法律发展应以官方来源为准。
+- 《联合国宪章》《国际法院规约》《维也纳条约法公约》等基础文件；
+- 核心国际人权公约；
+- 日内瓦公约及国际人道法资料；
+- 具有代表性的国际法院判决与咨询意见。
 
-## 复现
+检索评测集包含 200 个问题，覆盖全部 50 份资料；当前基线测试为 200/200，Recall@5 与 Recall@10 均为 1.0。
+
+## 核心功能
+
+### 混合检索
+
+FTS5 全文检索与 BGE-M3 语义向量检索协同工作，并支持中英文文书名称、条款号及 ICJ 段落号的精确定位。
+
+### 本地有据问答
+
+Qwen3-4B 通过 llama.cpp 在本机运行，只依据检索到的资料组织答案。系统会检查 `【n】` 引证；未通过完整引证校验的内容会显示醒目提示。
+
+### 英文原文翻译
+
+在右侧选择英文证据后，点击“翻译为中文”即可生成简体中文译文。翻译保留标题、条款号、段落号、专有名称、数字、日期和原有分段，并始终与英文原文并列展示。译文属于本地机器翻译，正式引用时应以原文为准。
+
+### 原文与官方来源
+
+每条证据展示规范引用、页码、法律性质、英文原文及官方来源链接；“资料库”则提供完整原始 PDF 的浏览入口，便于连续阅读、核验和引用。
+
+## 安装与运行
+
+Windows x64 离线安装介质位于 `dist/installer/`。安装时必须把以下四个文件放在同一目录：
+
+```text
+ILIA-1.0.0-windows-x64-offline-setup.exe
+ILIA-1.0.0-windows-x64-offline-setup-1.bin
+ILIA-1.0.0-windows-x64-offline-setup-2.bin
+ILIA-1.0.0-windows-x64-offline-setup-3.bin
+```
+
+双击 `...setup.exe` 并按提示安装。离线介质已经包含桌面程序、资料库、Qwen3-4B、BGE-M3、CUDA/Vulkan/CPU 运行时、ONNX Runtime 及 WebView2 离线运行时，无需安装 Rust、Node.js 或 Python。
+
+下载后可使用同目录的 `SHA256SUMS.txt` 核验文件完整性。当前候选安装器尚未进行 Windows Authenticode 代码签名，Windows 可能显示“未知发布者”。
+
+## 使用边界
+
+- 当前版本不包含实时的缔约国、批准日期、保留、声明和退出状态；相关信息请以联合国等主管机构的最新官方记录为准。
+- ILIA 提供资料检索、机器翻译与辅助解释，不构成法律意见，也不替代执业律师或相关主管机构的专业判断。
+
+## 技术组成
+
+ILIA 使用 Tauri 2、Rust、SQLite/FTS5、BGE-M3、Qwen3-4B、llama.cpp 和 ONNX Runtime 构建。应用、资料库、模型与运行时可分别进行签名更新，并具有负载哈希校验、备份和失败回滚能力。
+
+项目结构、开发与验证说明见 [`docs/repository_structure.md`](docs/repository_structure.md)，版本变更见 [`docs/release_notes_1.0.0.md`](docs/release_notes_1.0.0.md)。第三方组件及资料许可状态见 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)。
+
+## 从源码运行
+
+环境准备完成后：
 
 ```powershell
-python tools/corpus-importer/import_corpus.py
-python tools/corpus-validator/validate_corpus.py
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/cargo.ps1 test --workspace
-$env:ORT_DYLIB_PATH = (Resolve-Path runtime/onnx/onnxruntime.dll)
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/cargo.ps1 run --release -p ilia-corpus-embedder --- --db data/ilia_prototype.sqlite3 --cache-dir models/bge-m3
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/cargo.ps1 run --release -p ilia-eval-runner --- --db data/ilia_prototype.sqlite3 --cases tests/eval/retrieval_baseline.jsonl --model-cache models/bge-m3 --output data/retrieval_eval_report.json
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/cargo.ps1 run --release -p ilia-retrieval --bin ilia-search --- --db data/ilia_prototype.sqlite3 --model-cache models/bge-m3 --query "《联合国海洋法公约》领海宽度不得超过十二海里"
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/cargo.ps1 run --release -p ilia-inference --bin ilia-runtime --- --runtime-root runtime --backend auto
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/cargo.ps1 run --release -p ilia-inference --bin ilia-ask --- --db data/ilia_prototype.sqlite3 --bge-cache models/bge-m3 --runtime-root runtime --backend auto --qwen-model models/qwen3-4b/Qwen3-4B-Q4_K_M.gguf --question "《联合国海洋法公约》规定领海宽度不得超过多少海里？"
 cd apps/desktop
 npm install
 npm run tauri -- dev
 ```
 
-生成完整 Windows 离线安装包：
+运行全部 Rust 检查与前端生产构建：
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File installer/build-installer.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File installer/smoke-test.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File tools/cargo.ps1 fmt --all -- --check
+powershell -NoProfile -ExecutionPolicy Bypass -File tools/cargo.ps1 clippy --workspace --all-targets -- -D warnings
+powershell -NoProfile -ExecutionPolicy Bypass -File tools/cargo.ps1 test --workspace
+cd apps/desktop
+npm run build
 ```
 
-安装器构建会生成 `SHA256SUMS.txt`；冒烟测试会对最终介质执行安装、桌面启动、使用安装负载的真实混合检索与本地问答以及卸载，并将可审计报告写入 `release/evidence/1.0.0-rc.1/`。
+## 许可证
 
-`corpus/sources/` 保存不可变原始资料，`data/` 保存可重建数据库和校验报告。目录职责和实现状态见 `docs/repository_structure.md`。
-检索融合和证据选择细节见 `docs/retrieval_mvp.md`。
-本地问答层的安全边界、版本和运行方式见 `docs/local_qa.md`。
-三档运行时的探测、选择和降级契约见 `docs/runtime_selection.md`。
-安装包结构、构建和新电脑验收流程见 `docs/windows_installer.md`。
-签名更新协议、发布制作和回滚流程见 `docs/update_system.md`。
-桌面端命令、界面和构建方式见 `docs/desktop_mvp.md`。
+项目源代码采用 Apache-2.0 许可证。随包资料、模型和第三方运行组件可能适用各自的使用与再分发条件，请在分发构建产物前核对第三方声明和对应许可。

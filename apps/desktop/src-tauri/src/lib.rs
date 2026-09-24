@@ -5,12 +5,12 @@ use std::{
     time::Duration,
 };
 
-use ilia_core::{AnswerResponse, SearchOptions, SearchResponse};
+use ilia_core::{AnswerResponse, DocumentSummary, SearchOptions, SearchResponse};
 use ilia_database::Database;
 use ilia_embedding::{BGE_M3_MODEL_ID, BgeM3Embedder};
 use ilia_inference::{
     AnswerService, AutoManagedLlamaServer, RuntimeManager, RuntimeManagerConfig, RuntimePreference,
-    RuntimeProbeReport, RuntimeStartupReport,
+    RuntimeProbeReport, RuntimeStartupReport, TranslationResponse,
 };
 use ilia_retrieval::RetrievalService;
 use ilia_updater::{
@@ -30,6 +30,7 @@ struct AppPaths {
     log_dir: PathBuf,
     updater: PathBuf,
     trusted_update_key: PathBuf,
+    corpus_sources: PathBuf,
 }
 
 impl AppPaths {
@@ -58,6 +59,7 @@ impl AppPaths {
                 .map(|root| root.join("target/x86_64-pc-windows-gnu/release/ilia-updater.exe"))
                 .unwrap_or_else(|| root.join("ilia-updater.exe")),
             trusted_update_key: root.join("update/trusted-key.json"),
+            corpus_sources: root.join("corpus/sources"),
         };
         for (label, path) in [
             ("database", &paths.database),
@@ -66,6 +68,7 @@ impl AppPaths {
             ("llama.cpp runtimes", &paths.runtime_root),
             ("ONNX Runtime", &paths.onnx_runtime),
             ("trusted update key", &paths.trusted_update_key),
+            ("original PDF library", &paths.corpus_sources),
         ] {
             if !path.exists() {
                 return Err(format!("{label} is missing: {}", path.display()));
@@ -98,6 +101,12 @@ struct DesktopAskResponse {
 struct DesktopUpdateStatus {
     manifest: UpdateManifest,
     installed_versions: InstalledVersions,
+}
+
+#[derive(Serialize)]
+struct DesktopTranslationResponse {
+    runtime: RuntimeStartupReport,
+    translation: TranslationResponse,
 }
 
 impl DesktopServices {
@@ -196,6 +205,78 @@ impl DesktopServices {
             answer,
         })
     }
+
+    fn translate(
+        &self,
+        source_text: &str,
+        citation_label: &str,
+    ) -> Result<DesktopTranslationResponse, String> {
+        let preference = *self
+            .preference
+            .lock()
+            .map_err(|_| "runtime preference lock is poisoned".to_owned())?;
+        let mut runtime_guard = self
+            .runtime
+            .lock()
+            .map_err(|_| "runtime state lock is poisoned".to_owned())?;
+        if runtime_guard.is_none() {
+            let api_key = uuid::Uuid::new_v4().simple().to_string();
+            let server = RuntimeManager::start(&RuntimeManagerConfig {
+                runtime_root: self.paths.runtime_root.clone(),
+                model: self.paths.qwen_model.clone(),
+                preference,
+                host: "127.0.0.1".to_owned(),
+                port: available_loopback_port().map_err(|error| error.to_string())?,
+                startup_timeout: Duration::from_secs(120),
+                log_dir: self.paths.log_dir.clone(),
+                api_key: Some(api_key.clone()),
+            })
+            .map_err(|error| error.to_string())?;
+            *runtime_guard = Some(RunningRuntime { server, api_key });
+        }
+        let running = runtime_guard.as_ref().expect("runtime was initialized");
+        let runtime_report = running.server.report().clone();
+        let translation = AnswerService::new(running.server.base_url())
+            .with_api_key(&running.api_key)
+            .translate_to_simplified_chinese(source_text, citation_label)
+            .map_err(|error| error.to_string())?;
+        Ok(DesktopTranslationResponse {
+            runtime: runtime_report,
+            translation,
+        })
+    }
+
+    fn documents(&self) -> Result<Vec<DocumentSummary>, String> {
+        Database::open_read_only(&self.paths.database)
+            .map_err(|error| error.to_string())?
+            .documents()
+            .map_err(|error| error.to_string())
+    }
+
+    fn open_document_pdf(&self, document_id: &str) -> Result<(), String> {
+        if document_id.is_empty() || document_id.contains(['/', '\\']) || document_id.contains("..")
+        {
+            return Err("invalid document identifier".to_owned());
+        }
+        let database =
+            Database::open_read_only(&self.paths.database).map_err(|error| error.to_string())?;
+        if database
+            .document(document_id)
+            .map_err(|error| error.to_string())?
+            .is_none()
+        {
+            return Err("document does not exist in the local library".to_owned());
+        }
+        let pdf = self
+            .paths
+            .corpus_sources
+            .join(document_id)
+            .join("source.pdf");
+        if !pdf.is_file() {
+            return Err(format!("local PDF is missing: {}", pdf.display()));
+        }
+        tauri_plugin_opener::open_path(&pdf, None::<&str>).map_err(|error| error.to_string())
+    }
 }
 
 fn available_loopback_port() -> std::io::Result<u16> {
@@ -243,6 +324,39 @@ async fn ask_question(
 ) -> Result<DesktopAskResponse, String> {
     let services = state.inner().clone();
     tauri::async_runtime::spawn_blocking(move || services.ask(&query))
+        .await
+        .map_err(|error| error.to_string())?
+}
+
+#[tauri::command]
+async fn translate_source(
+    state: State<'_, Arc<DesktopServices>>,
+    source_text: String,
+    citation_label: String,
+) -> Result<DesktopTranslationResponse, String> {
+    let services = state.inner().clone();
+    tauri::async_runtime::spawn_blocking(move || services.translate(&source_text, &citation_label))
+        .await
+        .map_err(|error| error.to_string())?
+}
+
+#[tauri::command]
+async fn list_documents(
+    state: State<'_, Arc<DesktopServices>>,
+) -> Result<Vec<DocumentSummary>, String> {
+    let services = state.inner().clone();
+    tauri::async_runtime::spawn_blocking(move || services.documents())
+        .await
+        .map_err(|error| error.to_string())?
+}
+
+#[tauri::command]
+async fn open_document_pdf(
+    state: State<'_, Arc<DesktopServices>>,
+    document_id: String,
+) -> Result<(), String> {
+    let services = state.inner().clone();
+    tauri::async_runtime::spawn_blocking(move || services.open_document_pdf(&document_id))
         .await
         .map_err(|error| error.to_string())?
 }
@@ -301,22 +415,26 @@ async fn install_update(
     .await
     .map_err(|error| error.to_string())??;
 
-    std::process::Command::new(&paths.updater)
-        .args([
-            "apply",
-            "--root",
-            &paths.install_root.to_string_lossy(),
-            "--manifest-url",
-            &manifest_url,
-            "--signature-url",
-            &signature_url,
-            "--public-key",
-            &paths.trusted_update_key.to_string_lossy(),
-            "--wait-pid",
-            &std::process::id().to_string(),
-        ])
-        .spawn()
-        .map_err(|error| error.to_string())?;
+    let mut command = std::process::Command::new(&paths.updater);
+    command.args([
+        "apply",
+        "--root",
+        &paths.install_root.to_string_lossy(),
+        "--manifest-url",
+        &manifest_url,
+        "--signature-url",
+        &signature_url,
+        "--public-key",
+        &paths.trusted_update_key.to_string_lossy(),
+        "--wait-pid",
+        &std::process::id().to_string(),
+    ]);
+    #[cfg(windows)]
+    {
+        use std::os::windows::process::CommandExt;
+        command.creation_flags(0x0800_0000);
+    }
+    command.spawn().map_err(|error| error.to_string())?;
     std::thread::spawn(move || {
         std::thread::sleep(Duration::from_millis(350));
         app.exit(0);
@@ -340,6 +458,9 @@ pub fn run() {
             set_runtime_preference,
             search_documents,
             ask_question,
+            translate_source,
+            list_documents,
+            open_document_pdf,
             check_updates,
             install_update
         ])

@@ -1,9 +1,9 @@
 #define AppName "ILIA"
 #ifndef AppVersion
-  #define AppVersion "1.0.0-rc.1"
+  #define AppVersion "1.0.0"
 #endif
 #ifndef AppFileVersion
-  #define AppFileVersion "1.0.0.1"
+  #define AppFileVersion "1.0.0.0"
 #endif
 #ifndef SourceDir
   #error SourceDir must point to the staged ILIA application directory
@@ -67,6 +67,41 @@ Filename: "{tmp}\MicrosoftEdgeWebView2RuntimeInstallerX64.exe"; Parameters: "/si
 Filename: "{app}\ilia-desktop.exe"; Description: "启动 ILIA"; Flags: nowait postinstall skipifsilent
 
 [Code]
+procedure StopIliaProcesses;
+var
+  ResultCode: Integer;
+  Command: String;
+begin
+  { llama-server is a child process of the desktop app.  If Windows closes the
+    desktop process before its shutdown handler runs, the child can survive and
+    keep CUDA/Vulkan DLLs locked.  Restrict termination to executables below
+    this installation directory so other llama.cpp installations are untouched. }
+  Command :=
+    '-NoProfile -NonInteractive -WindowStyle Hidden -Command ' +
+    '"& { $app = ''' + ExpandConstant('{app}') + '''; ' +
+    '$names = @(''ilia-desktop.exe'', ''llama-server.exe'', ''ilia-updater.exe''); ' +
+    'Get-CimInstance Win32_Process -ErrorAction SilentlyContinue | ' +
+    'Where-Object { $_.ExecutablePath -and ' +
+    '$_.ExecutablePath.StartsWith($app, [System.StringComparison]::OrdinalIgnoreCase) -and ' +
+    '$_.Name -in $names } | ' +
+    'ForEach-Object { Invoke-CimMethod -InputObject $_ -MethodName Terminate | Out-Null } }"';
+  Exec(ExpandConstant('{sys}\WindowsPowerShell\v1.0\powershell.exe'), Command,
+    '', SW_HIDE, ewWaitUntilTerminated, ResultCode);
+  Sleep(500);
+end;
+
+procedure CurUninstallStepChanged(CurUninstallStep: TUninstallStep);
+begin
+  if CurUninstallStep = usUninstall then begin
+    StopIliaProcesses;
+  end;
+  if CurUninstallStep = usPostUninstall then begin
+    { Remove an otherwise-empty installation directory after unlocked files have
+      been processed by the normal uninstaller. }
+    DelTree(ExpandConstant('{app}'), True, True, True);
+  end;
+end;
+
 function HasWebView2Version(RootKey: Integer; SubKey: String): Boolean;
 var
   Version: String;

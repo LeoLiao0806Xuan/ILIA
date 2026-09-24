@@ -165,6 +165,27 @@ impl Database {
             .map_err(DatabaseError::from)
     }
 
+    pub fn documents(&self) -> Result<Vec<DocumentSummary>, DatabaseError> {
+        let mut statement = self.connection.prepare(
+            r#"SELECT id, canonical_title, title_zh, short_title, document_type,
+                legal_status, official_source_url
+                FROM documents
+                ORDER BY COALESCE(title_zh, canonical_title), canonical_title"#,
+        )?;
+        let rows = statement.query_map([], |row| {
+            Ok(DocumentSummary {
+                document_id: row.get(0)?,
+                canonical_title: row.get(1)?,
+                title_zh: row.get(2)?,
+                short_title: row.get(3)?,
+                document_type: row.get(4)?,
+                legal_status: row.get(5)?,
+                official_source_url: row.get(6)?,
+            })
+        })?;
+        Ok(rows.collect::<Result<Vec<_>, _>>()?)
+    }
+
     pub fn article(
         &self,
         document_id: Option<&str>,

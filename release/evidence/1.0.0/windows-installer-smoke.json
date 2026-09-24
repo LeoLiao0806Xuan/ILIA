@@ -1,9 +1,9 @@
 ﻿{
     "schema_version":  2,
     "status":  "passed",
-    "version":  "1.0.0-rc.1",
-    "tested_at":  "2026-09-24T02:33:09.1613721Z",
-    "test_started_at":  "2026-09-24T02:31:41.8536412Z",
+    "version":  "1.0.0",
+    "tested_at":  "2026-09-24T03:04:15.9883534Z",
+    "test_started_at":  "2026-09-24T03:02:46.1022384Z",
     "environment":  {
                         "os":  "Microsoft Windows NT 10.0.26200.0",
                         "architecture":  "X64",
@@ -12,43 +12,43 @@
                     },
     "installer_files":  [
                             {
-                                "name":  "ILIA-1.0.0-rc.1-windows-x64-offline-setup.exe",
-                                "size":  2072182,
-                                "generated_at":  "2026-09-24T02:31:06.9454684Z",
-                                "sha256":  "c99ea325ff03cdc6b6d4dcec55de447e5abfa664c8a4cd730988dbf3407ebdd7",
+                                "name":  "ILIA-1.0.0-windows-x64-offline-setup.exe",
+                                "size":  2079369,
+                                "generated_at":  "2026-09-24T03:02:09.4858062Z",
+                                "sha256":  "acf605cc08e39882ed02df57397f22c655019cfad739de4bf94bf1caac74fb99",
                                 "authenticode_status":  "NotSigned"
                             },
                             {
-                                "name":  "ILIA-1.0.0-rc.1-windows-x64-offline-setup-1.bin",
-                                "size":  1897927424,
-                                "generated_at":  "2026-09-24T02:30:26.0457944Z",
-                                "sha256":  "bb695a284b4eee6c4ae3c2b4b56564598aa6bd9c7635913180f097d921edd4ab",
+                                "name":  "ILIA-1.0.0-windows-x64-offline-setup-1.bin",
+                                "size":  1897920256,
+                                "generated_at":  "2026-09-24T03:01:33.2833620Z",
+                                "sha256":  "cdf523d5118ff1abbf25f87a10e528e83575eefc155a46dd3dd55ffacd1e65e3",
                                 "authenticode_status":  "UnknownError"
                             },
                             {
-                                "name":  "ILIA-1.0.0-rc.1-windows-x64-offline-setup-2.bin",
+                                "name":  "ILIA-1.0.0-windows-x64-offline-setup-2.bin",
                                 "size":  1900000000,
-                                "generated_at":  "2026-09-24T02:30:53.2998954Z",
-                                "sha256":  "2d5da416d388d5ca1104ad0e6281d3e8f482db38ffc5deff1f2bbf38415dbf29",
+                                "generated_at":  "2026-09-24T03:02:00.9229458Z",
+                                "sha256":  "252992090da6d5b94cc3055a6b4e814e1262de4a14a4dde40e7c79a1d94dc0d9",
                                 "authenticode_status":  "UnknownError"
                             },
                             {
-                                "name":  "ILIA-1.0.0-rc.1-windows-x64-offline-setup-3.bin",
-                                "size":  492728619,
-                                "generated_at":  "2026-09-24T02:31:06.9374705Z",
-                                "sha256":  "43229fd1d98d08d542afa18fc8bdf994a91707b116a061644167005cb4fc0951",
+                                "name":  "ILIA-1.0.0-windows-x64-offline-setup-3.bin",
+                                "size":  623236445,
+                                "generated_at":  "2026-09-24T03:02:09.4758873Z",
+                                "sha256":  "fb6fb274a9c61a26edd54db59d6d6ee842f8d3f9caf6ac30b7cfc8b5b48ce22e",
                                 "authenticode_status":  "UnknownError"
                             }
                         ],
     "installation":  {
-                         "started_at":  "2026-09-24T02:31:54.1623790Z",
+                         "started_at":  "2026-09-24T03:03:00.1470688Z",
                          "exit_code":  0,
                          "desktop_started":  true
                      },
     "retrieval":  {
                       "passed":  true,
                       "query":  "Under UNCLOS Article 3, what is the maximum breadth of the territorial sea?",
-                      "duration_ms":  2789,
+                      "duration_ms":  2566,
                       "hit_count":  1,
                       "evidence_count":  1,
                       "top_document":  "United Nations Convention on the Law of the Sea",
@@ -57,7 +57,7 @@
     "local_answer":  {
                          "passed":  true,
                          "question":  "Under UNCLOS Article 3, what is the maximum breadth of the territorial sea?",
-                         "duration_ms":  20308,
+                         "duration_ms":  20137,
                          "backend":  "cpu",
                          "grounded":  true,
                          "evidence_count":  1,

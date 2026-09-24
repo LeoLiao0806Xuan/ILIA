@@ -53,9 +53,9 @@ ilia-updater rollback --root <安装目录> --manifest-url <清单URL> --signatu
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File update/build-update-release.ps1 `
-  -ReleaseId v0.2.0 `
+  -ReleaseId v1.0.0 `
   -BaseUrl https://github.com/LeoLiao0806Xuan/ILIA/releases/download `
-  -ComponentsFile update/components.v0.2.0.json
+  -ComponentsFile update/components.v1.0.0.json
 ```
 
 脚本计算负载大小和 SHA-256、生成 `update-manifest.json`，并用本地私钥产生 `update-manifest.sig`。将清单、签名和所有 `.payload` 文件作为同一个 GitHub Release 的资产上传。

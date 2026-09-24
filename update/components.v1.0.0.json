@@ -1,0 +1,11 @@
+[
+  {
+    "id": "application",
+    "kind": "application",
+    "version": "1.0.0",
+    "from_version": "1.0.0",
+    "target": "ilia-desktop.exe",
+    "payload_path": "target/release/ilia-desktop.exe",
+    "payload_format": "raw_file"
+  }
+]

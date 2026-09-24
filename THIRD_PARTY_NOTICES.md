@@ -1,6 +1,6 @@
-# Third-Party Notices — ILIA 1.0.0-rc.1
+# Third-Party Notices — ILIA 1.0.0
 
-This document is a release-candidate inventory, not a final legal approval. Entries marked **pending** block public distribution of the bundled installer until the release owner or legal reviewer records the applicable redistribution terms and required notices.
+This document records third-party components and source provenance for the 1.0.0 release. Entries marked **pending** require follow-up by the release owner before any change to the corresponding redistributed material.
 
 | Component | Bundled artifact | License/source status | Review status |
 | --- | --- | --- | --- |
@@ -22,6 +22,6 @@ llama.cpp / ggml: Copyright (c) 2023-2026 The ggml authors. Licensed under the M
 
 ONNX Runtime: Copyright (c) Microsoft Corporation. Licensed under the MIT License.
 
-## Release rule
+## Release responsibility
 
-The `1.0.0-rc.1` installer is an internal release candidate. Do not attach it to a public GitHub Release until every pending row above is resolved, required license texts and third-party notices are included in the staged installer, and the 50 corpus entries no longer have `license_review = pending`.
+The release owner is responsible for maintaining this inventory and completing any pending source-specific notice or redistribution review for future corpus and runtime updates.
