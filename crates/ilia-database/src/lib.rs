@@ -186,6 +186,20 @@ impl Database {
         Ok(rows.collect::<Result<Vec<_>, _>>()?)
     }
 
+    pub fn normalized_document_text(
+        &self,
+        document_id: &str,
+    ) -> Result<Option<String>, DatabaseError> {
+        self.connection
+            .query_row(
+                "SELECT text FROM normalized_document_texts WHERE document_id = ?1",
+                [document_id],
+                |row| row.get(0),
+            )
+            .optional()
+            .map_err(DatabaseError::from)
+    }
+
     pub fn article(
         &self,
         document_id: Option<&str>,

@@ -9,7 +9,7 @@ fn service() -> RetrievalService {
         .join("..")
         .join("..")
         .join("data")
-        .join("ilia_prototype.sqlite3");
+        .join("ilia.sqlite3");
     RetrievalService::new(Database::open_read_only(database).unwrap())
 }
 

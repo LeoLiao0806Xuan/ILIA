@@ -8,6 +8,7 @@
 /installer/prerequisites/
 /data/*.sqlite3
 !/data/ilia_prototype.sqlite3
+!/data/ilia.sqlite3
 /data/*.sqlite3-*
 /data/*.log
 /corpus/sources/**/source.pdf

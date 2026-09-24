@@ -1,0 +1,10 @@
+{
+  "vc_redist_x64": {
+    "source": "https://aka.ms/vc14/vc_redist.x64.exe",
+    "version": "14.51.36247.0",
+    "byte_length": 18731856,
+    "sha256": "843068991daaa1f73ad9f6239bce4d0f6a07a51f18c37ea2a867e9beca71295c",
+    "authenticode_subject": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "downloaded_at": "2026-09-24"
+  }
+}

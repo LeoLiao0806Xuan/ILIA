@@ -40,7 +40,7 @@ chunk_id + citation_label
 ```powershell
 $env:ORT_DYLIB_PATH = (Resolve-Path runtime/onnx/onnxruntime.dll)
 cargo run --release -p ilia-inference --bin ilia-ask -- `
-  --db data/ilia_prototype.sqlite3 `
+  --db data/ilia.sqlite3 `
   --bge-cache models/bge-m3 `
   --runtime-root runtime `
   --backend auto `

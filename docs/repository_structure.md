@@ -21,6 +21,7 @@ ILIA/
 ├─ corpus/
 │  ├─ manifests/            # 范围清单、来源、哈希与解析配置
 │  ├─ schemas/              # SQLite schema/migration
+│  ├─ normalized/           # 下一版随包的 49 份 ILIA 规范化正文及清单
 │  └─ sources/              # 不可变原始资料及来源审计附件
 ├─ data/                    # 可重建数据库和验证/评测报告
 ├─ runtime/
@@ -58,4 +59,4 @@ manifest + official PDFs + SQL schema
                     signed updater + atomic rollback
 ```
 
-`data/` 与 `corpus/sources/` 分离：前者是可重建产物，后者是需要长期保留哈希与来源链的输入证据。
+`data/`、`corpus/normalized/` 与 `corpus/sources/` 分离：数据库和规范化正文是可重建发布产物，`sources/` 是需要长期保留哈希与来源链、但不进入下一版安装包的输入证据。

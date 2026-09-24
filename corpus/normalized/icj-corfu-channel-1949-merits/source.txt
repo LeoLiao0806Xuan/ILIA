@@ -1,0 +1,3227 @@
+ILIA NORMALIZED LEGAL TEXT
+
+Document ID: icj-corfu-channel-1949-merits
+Title: Corfu Channel (United Kingdom v. Albania) Merits Judgment
+Chinese title: 科孚海峡案实体判决
+Issuing body: International Court of Justice
+Official source: https://www.icj-cij.org/sites/default/files/case-related/1/001-19490409-JUD-01-00-EN.pdf
+Database version: public-international-law-v1.0.1-normalized-2026.09.24
+
+NOTICE
+This is an ILIA-generated normalized text for offline legal research.
+It is not an official edition. Source-edition page markers are retained
+only as factual verification locators. Verify quotations against the
+official source linked above.
+
+========================================================================
+
+[Source edition page 1]
+
+COUR INTERNATIONALE DE JUSTICE
+RECUEIL
+DES ARRÊTS, AVIS CONSULTATIFS ET ORDONNANCES
+AFFAIRE D U DETROIT
+DE C O R F O U
+(FOND)
+ARRET DU 9 AVRIL 1949
+INTERNATIONAL COURT OF JUSTICE
+REPORTS
+OF
+JUDGMENTS, ADVISORY OPINIONS AND ORDERS
+T H E CORFU
+CHANNEL CASE
+(MERITS)
+jttbGlMENT OF APRIL 9th, 1949
+LEYDE Il LEY DEN
+SOCIÉTÉ D'ÉDITIONS A. W. SIJTHOFF'S
+A. W. SIJTHOFF PUBLISHING COMPANY
+
+[Source edition page 2]
+
+Le présent arrêt doit être cité comme suit :
+« A$aire du Dklroit & CorJou, Arrêt dzl g avril 1949 :
+C. I. J. Rec~cez~ZI H~, p . 4.
+))
+This Judgment should be cited as foiiows :
+"Corfic ChanneZ case, Judgment of April gth, 1949 :
+I.C.J . Reports 1949, P. 4."
+
+[Source edition page 3]
+
+INTERNATIONAL COUI2T OF JUSTICE
+YEAR 1949. 1949.
+April 9th.
+General List
+April 9tb, 1949. No. 1.
+THE CORFU
+CHANNEL CASE
+(MERITS)
+International responsibility for explosion of mines in territorial
+waters.--Connivance with another State ; 'midence.-Minelaying by
+persons unknown.-Knowledge of minelaying by State party.to proceedings : control of territory as ground for responsibility ;i ts influence on
+the choice of means of proof; indirect midence, concordant inferences
+of tact.-Breach of obligations resulting from knowledge of minelaying,
+gvounds for responsibi1ity.-Court's jurisdiction to assess amount of
+compensation ;i nterpretation of Special Agreement ;s ubsequent attitude
+of Parties.
+Right of passage of warships in time of peace through Straits connecting two parts of the high seas.-International custom.-Straits in which
+right of passage exists.-North Corfu Channel.-Innocent passage ;
+purpose of passage and manner of its execution.-Production of documents at Court's request ;r efusa1 to produce ; Article 49 of Statute of
+Court and Article 54 of Rules.-Minesweeping undertaken in territorial waters contrary to wish of territorial State ;j ustification derived
+from theory of intervention and notion of self-he1p.-Violation of territorial sovereignty ; international responsibility ; satisfaction in form
+of a declaration by the Court of violation of right.
+JUDGMENT
+Present : Acting President GUERRER;O President BASDEVAN;T
+Judges ALVAREZF, ABELA,H ACKWORTHW, INIARSKI,
+ZORIEIC,D E VISSCHERS,i r Arnold MCNAIRK, LAESTAD,
+BADAWIP ASHA,K RYLOVR, EAD,H SU MO, AZEVED;O
+M. EEER, Judge ad hoc.
+
+[Source edition page 4]
+
+In the Corfu Channel case,
+between
+the Government of the United Kingdom of Great Britain and
+Northern Ireland, represented by :
+Sir Eric Beckett, K.C.M.G., K.C., Legal Adviser to the Foreign
+Office, as Agent and Counsel, assisted by
+The Right Honourable Sir Hartley Shawcross, K.C., M.P.,
+Attorney-General, replaced on November I jtfi, 1948, by
+Sir Frank Soskice, K.C., M.P., Solicitor-General ;
+Mr. C. H. M. Waldock, Professor of international law in the
+University of Oxford,
+Mr. R. O. Wilberforce,
+Mr. J. Mervyn Jones, and
+Mr. M. E. Reed (of the Attorney-General's Office), members
+of the English Bar, as Counsel,
+the Government of the People's Republic of Albania, represented by :
+M. Kahreman Ylli, Envoy Extraordinary and Minister
+Plenipotentiary of Albania in Paris, as Agent, replaced on
+February 14th, 1949, by
+M. Behar Shtylla, Envoy Extraordinary and Minister Plenipotentiary of Albania in Paris, assisted by
+M. Pierre Cot, Profssseur agrégé of the Faculties of Law of
+France, and
+Maître Joe Nordmann, of the Paris Bar, as Counsel; and
+Slaitre Marc Jacquier, of the Paris Bar, and
+Maître Paul Villard, of the Paris Bar, as Advocates.
+composed as above,
+delivers the following judgment :
+By a Judgment delivered on March 25th, 1948 (I.C. J. Reports 1947-
+1948, p. 15), in the Corfu Channel case, in proceedings instituted on
+May zznd, 1947, by an application of the Government of the United
+Kingdom of Great Britain and Northern Ireland against the Government of the People's Republic of Albania, the Court gave its decision
+5
+
+[Source edition page 5]
+
+THE COR^ CHANNEL CASE (MERITS). 6
+on the Preliminary Objection filed on December gth, 1947, by the
+latter Government. The Court rejected the Objection and decided
+that proceedings on the merits should continue, and fixed the
+time-limits for the filing of subsequent pleadings as follows : for
+the Counter-Memorial of Albania : June qth, 1948 ; for the Reply
+of the United Kingdom : August znd, 1948 ; for the Rejoinder of
+Albania : September zoth, 1948.
+Immediately after the delivery of the judgment, the Court was
+notified by the Agents of the Parties of a Special Agreement,
+which is as follows :
+"The Government of the People's Republic of Albania, represented by their Agent Mr. Kahreman YUi, Envoy Extraordinary
+and Minister Plenipotentiary of Albania at Paris ;
+and
+the Government of the United Kingdom of Great Britain and
+Northern Ireland, represented by their Agent, Mr. W. E. Beckett,
+C.M.G., K.C., Legal Adviser to the Foreign Office ;
+Have accepted the present Special Agreement, which has been
+drawn up as a result of the Resolution of the Security Council of
+the 9th April, 1947, for the purpose of subrnitting to thi: International Court of Justice for decision the following questions :-
+(1) 1s Albania responsible under international law for the
+explosions which occurred on the zznd October 1946 in Albanian
+waters and for the damage and loss of human life which resulted
+from them and is there any duty to pay compensation ?
+(2) Has the United Kingdom under international law violated
+the sovereignty of the Albanian People's Republic by reason
+of the acts of the Royal Navy in Albanian waters on the
+~2ndO ctober and on the 12th and 13th November 1946 and is
+there any duty to give satisfaction ?
+The Parties agree that the present Special Agreement shall be
+notified to the International Court of Justice immediately after
+the delivery on the 25th March of its judgment on the question of
+j urisdiction.
+The Parties request the Court, having regard to the present
+Special Agreement, to make such orders with regard to procedure,
+in conformity wlth the Statute and the Rules of the Court, as the
+Court may deem fit, after having consulted the Agents of the
+Parties.
+In witness whereof the above-mentioned Agents, being duly
+authorized by their Governments to this effect, have signed the
+present Special Agreement.
+Done this 25th day of March, 1948, at midday, at The Hague,
+in English and French. both texts being equally authentic, in a
+single copy which shall be deposited with the International Court
+of Justice."
+On March 26th, 1948 (I.C. J. Reports 1947-1948, p. j3), the
+Court made an Order in which it placed on record that the Special
+6
+
+[Source edition page 6]
+
+Agreement now formed the basis of further proceedings before the
+Court, and stated the questions submitted to it for decision. The
+Court noted that the United Kingdom Government on October ~ s t ,
+1947, that is within the time-limit fixed by the Court, had
+filed a Meinorial with statements and submissions relating to the
+incident that occured on October zznd 1946. It further noted
+that the Agents, having been consulted, declared that they agreed
+in requesting that the order and time-limits for the filing of the
+subsequent pleadings as fixed by the Judgment of hlarch qth,
+1948, be maintained. The Court confirmed this order and these
+time-limits.
+The Counter-Memorial, Iieply and Rejoinder were filed within
+these limits. The case was thus ready for heanng on September zoth,
+1948, and the commencement of the oral proceedings was then
+fised for November 5th, 1948.
+As the Court did not include upon the Bench a judge of Albanian
+nationality, the Albanian Government availed itself during the
+proceedings on the Preliminary Objection of the right provided
+by Article 31, paragraph 2, of the Statute, and chose hf. Igor Daxner,
+Doctor of Lam, President of a Chamber of the Supreme Court of
+Czechoslovakia, as Judge ad hoc. On October z8th, 1948, the
+Registrar was informed that Judge Daxner was prevented byreasons
+of health from sitting or1 the date fixed. The Court decided on
+November znd, 1948, to fix a time-limit expiring on November 7th,
+within which the Albanian Government might notify the name of
+the. person whom it wished to choose as Judge ad hoc in place
+of Dr. Daxner, and to postpone the opening of the hearing until
+November 9th. Within the time fixed the Albanian Government
+designated 11. Bohuslav EEer, Doctor of Law and Professor in the
+Faculty of Law at Brno, and delegate of the Czechoslovak Government to the International Military Tribunal at Nuremberg.
+Public sittings were held by the Court on the following dates :
+November, 1948, 9th to ~zth1,5 th to rgth, zznd to 26th, 28th and
+29th ; December, 1948,1st to 4th, 6th to t th, 13th, 14th and 17th ;
+January, 1949, 17th to zznd. In the course of the sittings from
+November 9th to ~gth1,9 48, and from January 17th to zznd, 1949,
+the Court heard arguments by Sir Hartley Shawcross, K.C., Counsel,
+Sir Eric Beckett, K.C., Agent and Counsel, and Sir Frank Soskice,
+I<.C., Counsel, on behalf of the United Kingdom ; and by
+M. Kahreman Ylli, Agent, and MM. J. Nordmann and Pierre Cot,
+Counsel, on behalf of Albania. In the course of the sittings from
+November zznd to December 14th, 1948, the Court heard the
+evidence of the witnesses and experts called by each of the Parties
+in reply to questions put to them in examination and cross-examination on behalf of the Parties, and by the President on behalf of
+the Court or by a Member of the Court. The following perçons
+gave evidence :
+
+[Source edition page 7]
+
+Ca-lled by the United Kingdom :
+Commander E. R. D. Sworder, O.B.E., D.S.C., Royal Naval
+Volunteer Reserve, as witness and expert ;
+Karel Kovacic, former Lieutenant-Commander in the Yugoslav
+Navy, as witness ;
+Captain IV. H. Selby, D.S.C., Royal Navy, as witness ;
+Commander R. T. Paul, C.B.E., Royal Navy, as witness;
+Lieutenant-Commander P. K. Lankester, Royal Navy, as witness
+and expert ;
+Commander R. Mestre, French Navy, as-witness ;
+Commander Q. P. Whitford, O.B.E., Royal Navy, as witness
+and expert ;
+Called by Albania :
+Captain Ali Shtino, Albanian Army, as witness ;
+First Captain Aquile Pdena, Albanian Army, as witness ;
+Xhavit Muço, former Vice-President of the Executive Cornmittee
+of Saranda, as witness ;
+Captain B. 1. Ormanov, Bulgarian Navy, as expert ;
+Rear-Admira1 Raymond Moullec, French Navy, as expert.
+Documents, including maps, photographs and sketches, were
+?Xed by both Parties, and on one occasion by the Parties jointly,
+both as annelIes to the pleadings, and after the close of the written
+proceedings. On one occasion during the sittings when a photostat
+of an extract 'from a document was submitted, the Court, on November qth, 1948, made a decision in which it reminded both
+Parties of the provisions of Article 48 and Article 43, paragraph I,
+of the Rules of Court ; held that the document in question could be
+received only if it were presented in an original and complete form ;
+ordered that al1 documents which the Parties intended to use should
+previously be filed in the Registry ; and reserved the right to
+inform the Parties later which of these documents should be
+presented in an original, and which in certified true copy, form.
+Another decision as to the production of a senes of new documents was given by the Court on December xoth, 1948. This
+decision noted that the Parties were agreed as to the production
+of certain of these documents and that certain others were
+withdrawn ; authonzed the production of certain other documents ;
+lastly, in the case of one of these documents, the examination
+8
+
+[Source edition page 8]
+
+THE CORFD CHt\NPIEI, CASE (IIERITS) 9
+of which had been subjected to certain conditions, the Court's
+decision placed on record the consent of the other Party to its
+production and, in view of that consent, permitted its production,
+having regard to the special circumstances ; but the Court expressly
+stated that this permission could not form a precedent for the
+future l.
+By an Order of December 17th, 1948, the Court, having regard
+to the fact that certain points had been contested between the
+Parties which made it necessary to obtain an expert opinion,
+defined these points, and entrusted the duty of giving the expert
+opinion to a Committee composed of Commodore J. Bull of the
+Royal Korwegian Navy, Commodore S. A. Forshell of the Royal
+Swedish Kavy, and, Lieutenant-Commander S. J. Elfferich
+of the Royal Netherlands Navy. These Experts elected Commodore Bull as their chairman, and filed their Report on
+January Sth, 1949, within the prescribed time-limit. By a decision
+read at a public sitting on January 17th, the Court requested
+the Experts to proceed to Sibenik in Yugoslavia and Saranda in
+Albania and to make on the land and in the waters adjacent to
+these places any investigations and experiments that they might
+consider useful with a view to verifying, completing, and, if
+necessary, modifying the answers given in their report of January 8th. The Experts' second report-in which Commodore
+Bull did not join, having been unable to niake the journey for
+reasons of health-was filed on February 8th, 1949. On February ~otht,h ree members of the Court put questions to the Experts,
+to which the Experts replied on February 12th.
+At sittings held from January 17th to mnd, 1949, the representatives of the Parties had an opportunity of commenting orally
+on the Experts' report of January 8th. They also filed written
+observations concerning the further statements contained in the
+Report of February 8th and the replies of February ~zth,a s
+provided in the Court's decision of January 17th.
+The Parties' submissions, as formulated by their Agents or
+Counsel at the end of the hearings on the 18th, ~gth~, 1 satn d 22nd
+Januaiy, 1949, are as follows :
+Question (1) of the Special Agreement.
+On behalf of the United Kingdom :
+"The Governnient of the United Kingdom asks the Court in this case
+to adjudge and declare as follows :
+The list of documents in support produced by the Parties and accepted by
+the Court will be found in Xnnex I to this Judginent.
+2 See Annex 2 for the Experts' Report of Jariuarp Sth, the Court's decision of
+January i;th, the Experts' second Report of February Xth, the qiiestions put by
+three members of the Court, and the Experts' replies of February i2th.
+
+[Source edition page 9]
+
+That, on October aand, 1946, damage was caused to His
+Majesty's ships Saumarez and Volage, which resulted in the
+death and injuries of 44, and persona1 injuries to 42, British
+officers and men by a minefield of anchored automatic mines
+in the international highway of the Corfu Strait in an area
+south-west of the Bay of Saranda ;
+That the aforesaid minefield was laid between May 15th and
+October zznd, 1946, by or with the connivance or knowledge
+of the Albanian Government ;
+That (alternatively to 2) the Albanian Government knew that
+the said minefield was lying in a part of its territorial waters ;
+That the Albanian Government did not notify the existence of
+these mines as required by the Hague Convention VI11 of 1907
+in accordance with the general principles of international law
+and humanity ;
+That in addition, and as an aggravation of the conduct of
+Albania as set forth in Conclusions (3) and (4). the Albanian
+Government, or Cts agents, knowing that His Majesty's ships
+were going to make the passage through the North Corfu swept
+channel, and being in a position to observe their approach, and
+having omitted, as alleged in paragraph 4 of these conclusions,
+to riotify the existence of the said mines, failed to warn His
+Majesty's ships of the danger of the said mines of which the
+Albanian Government or its agents were well aware ;
+That in addition, and as a further aggravation of the conduct
+of Albania as set forth in Conclusions (3), (4), and (5), the permission of the existence without notification of the minefield
+in the North Corfu Channel, being an international highway,
+was a violation of the right of innocent passage which exists
+in favour of foreign vessels (whether warships or merchant
+ships) through such an international highway ;
+That the passage of His Majesty's ships through the North
+Corfu Channel on October zznd, 1946, was an exercise of the
+right of innocent passage, according to the law and practice of
+civilized nations ;
+That even if, for any reason, it is held that conclusion (7) is
+not established, nevertheless, the Albanian Government is not
+thereby relieved of its international responsibility for the damage
+caused to the ships by reason of the existence of an unnotified
+minefield of which it had knowledge ;
+That in the circumstances set forth in the Memorial as summarized in the preceding paragraphç of these Conclusions, the
+Albanian Government has committed a breach of its obligations
+under international law, and is internationally responsible to
+His Majesty's Government in the United Kingdom for the deaths,
+injuries and àainage caused to His Majesty's ships and personnel, as set out more particularly in paragraph 18 of the Memorial
+and the Annexes thereto ;
+
+[Source edition page 10]
+
+(IO) That the Albanian Government is under an obligation to the
+Government of the United Kingdom to make reparation in
+respect of the breach of its international obligations as aforesaid ;
+That His Majesty's Government in the United Kingdom has.
+(II)
+as a result of the breach by the Albanian Government of its
+obligations under international law, sustained the foiiobving
+damage :
+. . . . . .
+Damage to H.M.S. Saurmrez L~~O,OOO
+. . . . . .
+Damage to H.M.S. Volage. 75,000
+Compensation for the pensions and other
+expenses incurred by the Government of
+the United Kingdom in respect of the
+.
+deaths and injuries of naval personnel. 50,000
+~875,000"
+On behalf of the Albanian Government :
+[Translation.]
+Under the terms of the Special Agreement of March 25th, 1948,
+"(1)
+the following question has been submitted to the International
+Court of .,T ustice :
+*'IsA lbania responsible under international law for the explosions which occurred on the 22nd October 1946 in Albanian
+waters and for the damage and loss of human life which resulted
+£rom them and is there any duty to pay compensation ?'
+The Court would not have jurisdiction, in virtue of this Special
+.4greement, to decide, if the case arose, on the claim for the
+assessment of the compensation set out in the submissions
+of the United Kingdom Government.
+It has not been proved that the mines which caused the acci-
+(2)
+dents of October zznd, 1946, were laid by Albania.
+(3) It has not been proved that these mines were laid by a third
+Power on behalf of Albania.
+(4) It has not been proved that these mines were laid with the help
+or acquiescence of Albania.
+(5) It has not been proved that Albania knew, befote the incidents
+of October zznd, 1946, that theçe mines were in her territorial
+waters.
+(6) Consequently, Albania cannot be declared responsible, under
+international law, for the explosions which occurred on
+October zznd, 1946, in Albanian waters, and for the damage
+and loss of human life which resulted £rom them. Albania
+owes no compensation to the United Kingdoin Government."
+Question (2) of the Special Agreement.
+On behalf of the Albanian Governrnent :
+[Translation.]
+"(1) Under the terms of the Special Agreement concluded on
+March 25th, 1948, the International Court of Justice has before
+it the following question :
+II
+
+[Source edition page 11]
+
+'Has the United Kingdom under international law violated
+the sovereignty of the Albanian People's Kepublic by reason
+of the acts of the Royal Navy in Aibanian waters on the
+22nd October and on the 12th and 13th November 1946, and is
+there any duty to give satisfaction ?'
+(2) The coastal State is entitled, in exceptional circumstances, to
+regulate the passage of foreign warships through its territorial
+waters.
+(3) This rule is applicable to the North Corfu Channel.
+(4) In October and November, 1946, there existed, in this area,
+exceptional circumstances which gave the Albanian Government the right to require that foreign warships should obtain
+previous authorization before passing through its territorial
+waters.
+(5) The passage of several British warships through Albanian territorial waters on October zznd, 1946, without prcvious authorization, constituted a breach of international law.
+(6) In any case that passage was not of an innocent character.
+(7) The British naval authorities were not entitled to proceed, on
+November 12th and 13th, 1946, to sweep mines in A!banian
+territorial waters without the previous consent of the Albanian
+authorities.
+(8) The Court should find that, on both these occasions, the Government of the United Kingdom of Great Britain and Northern
+Ireland committed a breach of the rules of international law
+and that the Albanian Government has a right to (Icmand that
+it should give satisfaction therefor."
+On hehcrlf of the United Kingdom Govcrnmcint :
+"1 ask the Court to decide that on neither heatl of tlic, counterclaim has Albania made out her case, and that there is rio ground
+for the Court to award nominal damages of one farthing or one
+franc."
+*
+* *
+By the first part of the Special Agreement, the following question
+is submitted to the Court :
+1s Albania responsible under international law for the
+"(1)
+cxplosions which occurred on the 22nd October 1946 in Albanian
+waters and for the tlamage and loss of human life which resulted
+from them and is there any duty to pay compensation ?"
+On October zznd, 1946, a squadron of British warships, the
+cruisers Mauritius and Leander and the destroyers Saumarez and
+I'olage, left the port of Corfu and proceeded northward through
+a channel previously suftpt for mines in the North Corfu Strait.
+The cruiser Mauritius was leading, followed by the destroyer
+Saumarez; at a certain distance therealter came the cruiser Leander
+followed by the ciestroyclr Volage. Outside thc Bay of Saranda,
+Saumarez btruck ;L rninc and was hcavily damaged. Volnga was
+
+[Source edition page 12]
+
+ordered to give her assistance and to take her in tow. Whilst
+towing the damaged ship, Volage struck a mine and was much
+damaged. Nevertheless, she succeeded in towing the other ship
+back to Corfu.
+Three weeks later, on November 13th, the North Corfu Channel
+was swept by British minesweepers and twenty-two moored mines
+were cut. Two mines were taken to Malta for expert examination.
+During the minesweeping operation it was thought that the mines
+were of the German GR type, but it was subsequently established
+that they were of the German GY type..
+The Court will consider first whether the two explosions that
+occurred on October zznd, 1946, were caused by mines belonging
+to the minefield discovered on Novemter 13th.
+It was pointed out on behalf of the United Kingdom Government
+that this minefield had been recently laid. This was disputed in
+the Albanian pleadings but was no longer disputed during the
+liearing. One of the Albanian Counsel expressly recognized that
+the minefield had been recently laid, and the other Counsel subsequently made a similar declaration. It was further asserted on
+behalf of the Albanian Government that the minefield must have
+been laid after October 22nd ; this would make it impossible at
+the same time to mainiain that the minefield was old. The
+documents produced by the United Kingdom Governmerit and
+the statements made by the Court's Experts and based on these
+documents show that the minefield had been recerttlv laid. This is
+- -
+now established.
+The United Kingdom Government contended that the mines
+which struck the two ships on October zznd were part of this
+minefield.
+This was contested by the Albanian Government, which
+argued that these mines may have been floating mines, coming
+from old minefields in the vicinity, or magnetic ground mines,
+magnetic moored mines, or German GR mines. It was also contested by them that the explosions occurred in the previously
+swept channel at the place where the minefield was dircovered.
+The Albanian Government also contended that the minefield
+was laid after Octcber 2211d, between that date and the minesweeping operation on 12-13th November.
+On -the evidence produced, the Court finds that the following
+facts are established :
+In October, IW, the North Corfu Channel was swept by the
+British Navy and no mines were found in the channel thus swept,
+whereupon -the existence of a safe route through the Channe!
+was announced in November 1944. In January and February,
+
+[Source edition page 13]
+
+THE COKFU CHANNEL CASE (BIERITS) I4
+1945, the Channel was check-swept by the British Navy \vitil negative
+results. That the British Admiralty must have considered the
+Channel to be a safe route for navigation is sho~nby the fact
+that on May ~jth,1 946, it sent two British cruisers and on
+October zznd a squadron through the C.hanne1 without any
+special measlires of precaution against danger from nloored
+mines. It was in this swept channel that the minefield was
+discovered on November 13th, 1946.
+It is further proved by evidence produced by the United
+Kingdom Govemment that the mining of Snzrnrarez and 1,'olage
+occurred in Albanian territorial n~ters,ju st at the place in the
+swept channel where the minefield was found, as indicated on
+the chart forming Annex g to the United Kingdom hlemorial.
+This is confirmed by the Court's Experts, ~ h coon sider it to be
+free from any doubt that the two ships were mined in approxinlately the position indicated on this chart.
+It is established by the evidence of witnesses that the minefield
+consisted of moored contact mines of the German GY type. It
+is further shown by the nature of the damage sustained hy the
+two ships, and confirmed by witnesses and experts, that it could
+not have been caused by floating mines, magnetic ground mines,
+magnetic moored mines, or German GR mines. The experts of
+the Court have stated that the nature of the damage excludes
+the faintest possibility of its cause being a floating mine ; nor
+could it have been caused by a ground mine. They also expressed
+the view that the damage must have been caused by the explosion
+of moored contact mines, each having a charge of approximately
+600 lbs. of explosives, and that the two ships struck mines of
+the same type as those which were swept on November 13th, 1946.
+The Albanian Government put forward a suggestion that the
+minefield discovered on November 13th may have been laid after
+October zznd, so that the explosions that occurred on this latter
+date would not have been caused by mines from the field in
+question. But it brought no evidence in support of this supposition. As it has been established that the explosions could
+only have been due to moored mines having an explosive charge
+similar to that contained in GY mines, there would, if the Albanian
+contention were true, have been at least two mines of this nature
+in the channel outside the Bay of Saranda, in spite of the sweep in
+October 1941 and the check-sweeps in January and February 1945 ;
+and these mines would have been struck by the two vessels at
+poi~itsf airly close to one another on October 2211d, 1946. Such
+a supposition is too improbable to be accepted.
+14
+
+[Source edition page 14]
+
+The Court consequenrly finds that the following facts are
+established. The two ships were mined in Albanian territorial
+waters in a previously swept and check-swept channel just at
+the place where a newly laid minefield consisting of moored
+contact German GY mines was discovered three weeks later.
+The damage sustained by the ships was inconsistent with damage
+which could have been caused by floating mines, magnetic ground
+mines, magnetic moored mines, or German GR mines, but its
+nature and extent were such as would be caused by mines of
+the type found in the minefield. In such circumstances the
+Court arrives at the conclusion that the explosions were due to
+mines belonging to that minefield.
+Such are the facts upon which the Court nust, in order to reply
+to the first question of the Special Agreement, give judgment as to
+Albania's responsibility for the explosions on October zznd, 1946,
+and for the damage and loss of human life which resulted, and for
+the compensation, if any, due in respect of such damage and loss.
+To begin with, the foundation for Albania's responsibility, as
+alleged by the United Kingdom, must be considered. On this
+subject, the mzin position of the United Kingdom is to be found
+in its submission No. 2 : that the minefield which caused the explosions was laid between May 15th, 1946, and October zznd, 1946,
+by or with the connivance or knowledge of the Albânian Government.
+The Court considered first the various groundç for responsibility
+alleged in this submission.
+In fact, although the United Kingdom Govemment never abandoned its contention that Albania herself laid the mines, very little
+attempt was made by t5e Government to demonstrate this point.
+In the written Reply, the United Kingdom Govemment takes note
+of the Albanian Government's forma1 statement that it did not lay
+the mines, and was not in a position to do so, as Albania possessed
+no navy ; and that, on the whole Albanian littoral, the Albanian
+authorities only had a few launches and motor boats. In the light
+of these statenlents, the Albanian Government was called upon,
+in the Reply, to disclose the circumstances in which two Yugoslav
+war vessels, the Mljet and the Meljine, carrying contact mines of
+the GY type, sailed routhward from the port of Sibenik on or about
+October 18th, and proceeded to the Corfu Channel The United
+Kingdom Government, having thus indicated the argument upon
+15
+
+[Source edition page 15]
+
+which it was thenceforth to concentrate, stated that it proposed
+to show that the said warships, with the knowledge and connivance
+of the Albanian Government, laid mines in the Corfu Channel just
+before October zznd, 1946. The facts were presented in the same
+light and in the same language in the oral reply by ~ounseflo r the
+United Kingdom Government at the sittings on January 17th
+and 18th, 1949.
+Although the suggestion that the minefield was laid by Albania
+was repeated in the United Kingdom statement in Court on
+January 18tii, 1949, and in thé final submissions read in Court on
+the same day, this suggestion was in fact hardly put forward at
+that time except pro memoria, and no evidence in support was
+furnished.
+In these circumstances, the Court need pay no further attention
+to this matter.
+The Court now comes to the second alternative argument of the
+United Kingdom Govemment, namely, that the minefield was laid
+with the connivance of the Albanian Government. According to
+this argument, the minelaying operation was carried out by tw70
+Yugoslav warships at a date prior to October zznd, but very near
+that date. This would imply collasion between the Albanian and
+the Yugoslav Governments, consisting either of a request by the
+Albanian Govemment to the Yugoslav Government for assistance,
+or of acquiescence by the Albanian authoritieo in the laying of the
+mines.
+In proof of this collusion, the United Kingdom Government
+relied on the evidence of Lieutenant-Commander Kovacic; as shown
+in his affidavit of October 4th, 1948, and in his statements in Court
+at the public sittings on November 24th, 25th, 26th and 27th, 1948
+The Court gave much attention to this evidence and to the documentary information supplied by the Parties. It supplemented
+and checked al1 this information by sending two experts appointed
+by it to Sibenik : Commodore S. A. Forshell and Lieutenant-
+Commander S. J. W. Elfferich.
+Without deciding as to the persona1 sincerity oi the witness
+Kovacic, or the truth of what he said, the Court finds that the facts
+stated by the witness from his persona1 knowledge are not sufficient
+to prove what the United Kingdom Government considered them
+to prove. His ayegations that he saw mines being loaded upon
+two Yugoslav minesweepers at Sibenik and that these two vessels
+departed from Sibenik about October 18th and returned a few
+days after the occurrence of the explosions do not suffice to constitute decisive legal proof that the mines were laid by these two
+vessels in Albanian waters off Saranda. The statements attributed
+16
+
+[Source edition page 16]
+
+by the witness Kovacic to third parties, of which the Court has
+received no persona1 and direct confirmation, can be regarded only
+as allegations falling short of conclusive evidence. A charge of
+such exceptional gravity against a State would require a degree of
+certainty that has not been reached here.
+Apart from Kovacic's evideqce, the United Kingdom Government endeavoured to prove coliusion between Albania and Yugoslavia by certain presumptions of fact, or circumstantial evidence,
+such as the possession, at that time, by Yugoslavia, and by no
+other neighbouring State, of GY mines, and by the bond of close
+political and military alliance between Albania and Yugoslavia,
+resulting from the Treaty of friendship and mutual assistance
+signed by those two States on July gth, 1946.
+The Court considers that, even in so far as these facts are established, they lead to no firm conclusion. It has not been legaliy
+established that Yugoslavia possessed any GY mines, and the
+origin of the mines laid in Albanian territorial waters remains a
+mat ter for conjecture. It is' clear that the existence of a treaty,
+such as that of July gth, 1946, however close may be the bonds
+uniting its signatories, in no way leads to the conclusion that
+they participated in a criminai act.
+On its side, the Yugoslav Government, although not a party
+to the proceedings, authorized the Albanian Govemment to
+produce certain Yugoslav documents, for the purpose of refuting
+the United Kingdom contention that the mines had been laid
+by two ships of the Yugoslav Navy. As the Court was anxious
+for fuli light to be thrown on the facts alleged, it did not refuse
+to receive these documents. But Yugoslavia's absence from the
+proceedings meant that these documents could only be admitted
+as evidence subject to reserves, and the Court finds it unnecessary
+to express an opinion upon their probative value.
+The Court need not dwell on the assertion of one of the Counsel
+for the Albanian Govemment that the minefield might have been
+laid by the Greek Govemment. It is enough to Say that this
+was a mere conjecture which, as Counsel himself admitted, was
+based on no proof.
+In the light of the information now available to the Court, the
+authors of the minelaying remain unknown. In any case, the task
+of the Court, as defined by the Special Agreement, is to decide
+whether Albania is responsible, under international law, for the
+explosions which occurred on October zznd, 1946, and to give
+judgment as to the compensation, if any.
+Finally, the United Kingdom Govemment put forward the
+argument that, whoever the authors of the minelaying were, it
+could not have been done without the Albanian Government's
+knowledge.
+
+[Source edition page 17]
+
+It is clear that knou-leoge of the mineIaying cannot be imputed
+to the Albanian Government by reason merely of the fact that
+a minefield discovered in Albanian temtorial waters caused the
+explosions of which the British warships were the victims. It
+is true, as international practice shows, that a State on whose
+territory or in whose waters an act contrary to international
+law has occurred, may be called upon to give an explanation.
+It is also true that that State cannot evade such a request by
+limiting itself to a reply that it is ignorant of the circumstances
+of the act and of its authors. The State may, up to a certain
+point, be bound to supply particulars of the use made by it of
+the means of information and inquiry at its disposal. But it
+cannot be concluded from the mere fact of the control exercised
+by a State over its territory and waters that that State necessarily
+knew, or ought to have known, of any unlawful act perpetrated
+therein, nor yet that it necessarily knew, or should have known,
+the authors. This fact, by itself and apart from.other circumstances, neither involves prima facie resp~nsibility nor shifts
+the burden of proof.
+On the other hand, the fact of this exclusive temtorial control
+exercised by a State within its frontiers has a bearing upon the
+methods of proof available to establish the knowledge of that
+State as to such events. By reason of this exclusive control,
+the other State, the. victim of a breach of international law, is
+often unable to furnish direct proof of facts giving rise to
+responsibility. Such a State should be dowed a more liberal
+recourse to inferences of fact and circumstantial evidence. This
+indirect evidence is admitted in al1 systems of law, and its use
+is recognized by international decisions. It must be regarded
+as of special weight when it is based on a series of facts linked
+together and leading logically to a single conclusion.
+The Court must examine therefore whether it has ken established
+by means of indirect evidence that Albania has knowledge of minelaying in her territorial waters independently of any connivance
+on her part in this operation. The proof may be drawn from
+inferences of fact, provided that they leave no room for reasonable
+doubt. The elements of fact on which these inferences can be
+based may differ from those which are relevant to the question of
+connivance.
+In the present case, two series of facts, which corroborate one
+another, have to be considered : the first relates to Albania's
+attitude before and after the disaster of October zznd, 1946 ; the
+other concerns the feasibility of observing minelaying from the
+Xlbanian coast.
+I. It is clearly estabilshed that the Albanian Government
+constantly kept a close watch over the waters of the North Corfu
+Charinel, at any rate after May 1946. This vigilance is proved
+18
+
+[Source edition page 18]
+
+THE CORFU CHANNEL CASE (MERITS) 19
+by the declaration of the Albanian Delegate in the Security
+Council on February ~gth,1 947 (Oficial Records of the Security
+Council, Second Year, No. 16, p. 328), and especially by the
+diplomatic notes of the Albanian Government concerning the
+passage of foreign ships through its territorial waters. This
+vigilance sometimes went so far as to involve the use of force :
+for esample the gunfire in the direction of the British cruisers
+Orion and Sztperb on May ~gth1, 946, and the shots fired at the
+U.N.R.R.A. tug and barges on October 29th, 1946, as established
+by the affidavit of Enrico Bargellini, which was not seriously
+contested.
+The Albanian Government's notes are al1 evidence of its intention
+to keep a jealous watch on its temtorial waters. The note verbale
+addressed to the United Kingdom on May z~st1,9 46, reveals the
+existence of a "General Order", in execution of which the Coastal
+Commander gave the order to fire in the direction of the British
+cruisers. This same note formulates a demand that "permission"
+shall be given, by the Albanian authorities, for passage through
+territorial waters. The insistence on "formalities" and "permission" by Albania is repeated in the Albanian note of June 19th.
+As the Parties agree that the minefield had been recently laid,
+it must be concluded that the operation was carried out during
+the period of close watch by the Albanian authorities in this sector.
+This conclusion renders the Albanian Govemment's assertion of
+ignorance a priori somewhat improbable.
+The Court also noted the reply of Captain Ali Shtino to a
+question put by it ; this reply shows that the witness, who had
+been called on to replace the Coastal Defence Commander for a
+period of thirteen to fifteen days, immediately before the events
+of October zznd, had received the following order: "That the
+look-out posts must inform me of every movement [in the Corfu
+Channel], and that no action would be taken on our part."
+The telegrams sent by the Albanian Government on November 13th and November 27th, 1946, to the Secretary-General of the
+United Nations, at a time when that Government was fully aware
+of the discovery of the minefield in Albanian territorial waters,
+are especially significant of the measures taken by the Albanian
+Government. In the first telegram, that Government raised the
+strongest protest against the movements and activity of British
+naval units in its territorial waters on November 12th and 13th,
+1946, without even mentioning the existence of a minefield in
+these waters. In the second, it repeats its accusations against
+the United Kingdom, without in any way protesting against the
+laying of this minefield which, if effected without Albania's consent,
+constituted a very serious violation of her sovereignty.
+Another indication of the Albanian Govemment's knowledge
+consists in the fact that that Govemment did not notify the
+
+[Source edition page 19]
+
+presence of mines in its waters, at the moment when it must have
+known this, at the latest after the sweep on November 13th, and
+further, whereas the Greek Government immediately appointed
+a Commission to inquire into the events of October zznd, the
+Albanian Govemment took no decision of such a nature, nor did
+it proceed to the judicial investigation incumbent, in such a case,
+on the territorial sovereign.
+This attitude does not seem reconcilabIe with the alieged ignorance
+of the Albanian authorities that the minefield had been laid in
+Albanian territorial waters. It could be explained if the Albanian
+Government, while knowing of the minelaying, desired the circumstances of the operation to remain secret.
+2. As regards the possibility of observing minelaying from the
+Albanian coast, the Court regards the following facts, relating to
+the technical conditions of a secret minelaying and to the Albanian
+surveillance, as particularly important.
+The Bay of Saranda and the channel used by shipping through
+the Strait are, from their geographical configuration, easily
+watched ; the entrance of the bay is dominated by heights offenng
+excellent observation points, both over the bay and over the
+Strait ; whilst the channel throughout is close to the Albanian coast.
+The laying of a minefield in these waters could hardly fail to have
+been observed by the Albanian coastal defences.
+On this subject, it must first be said that the minelaying operation itself must have required a certain time. The method adopted
+required, according to the Experts of the Court, the methodical and
+well thought-out laying of two rows of mines that had clearly a
+combined offensive and defensive purpose : offensive, to prevent the
+passage, through the Channel, of vessels drawing ten feet of water
+or more ; defensive, to prevent vessels of the same draught frorn
+entering the Bay of Saranda. The report of. the Experts reckons
+the time that the minelayers would have been in the waters,
+between Cape Kiephali and St. George's Monastery, at between
+two and two and a haif hours. This is sufficient time to attract
+the attention of the observation posts, placed, as the Albanian
+Government stated, at Cape Kiephali and St. George's Monastery.
+The facilities for observation from the coast are confirmed
+by the two following circumstances : the distance of the nearest
+mine from the coast was only 500 metres ; the minelayers must
+have passed at not more than about 500 metres from the coast
+between Denta Point and St. George's Monastery.
+Being anxious to obtain any technical information that might
+guide it in its search for the truth, the Court submitted the
+following question to the Experts appointed by it :
+
+[Source edition page 20]
+
+"On the assumption that the mines discovered on November 13th, 1946, were laid at some date within the few preceàing
+months, whoever may have laid them, you are requested to examine
+the information availabie regarding (a) the number and the nature of
+the mines, (b) the means for laying them, and (c) the time required
+to do so, having regard to the different states of the sea, the conditions of the locality, and the different weather conditions, and to
+ascertain whether it is possible in that way to draw any concl~~sions,
+and. if so, what conclusions, in regard to :
+(1) the means employed for laying the minefield discovered
+on November 13th, 1946, and
+(2) the possibility of mooring those mines with those means
+without the Albanian authorities being aware of it, having
+regard to the extent of the measures of vigilance existing in the
+Saranda region."
+As the first Report submitted by the Experts did not seen
+entirely coaclusive, the Court, by a decision of January 17th, 1949,
+asked the Experts to go to Saranda and to venfy, complete and,
+if necessary, modify their answers. In this way, observations
+were made and various expenments carned out on the spot,
+in the presence of the experts of the Parties and of Albanian
+officials, with a view to estimating the possibility of the minelaying having been observed by the Albanian look-mit posts.
+On this subject reference must be made to a test of visibility
+by night, carried out on the evening of January 28th, 1949, at
+St. George's Monastery. A motor ship, 27 metres long, and
+with no bridge, wheel-house, or funnel, and very low on the
+water, was used. The ship was completely blacked out, and on
+a moonlcss night, i.e., under the moçt favourable conditions for
+avoiding discovery, it was clearly seen and heard from St. George's
+Monastery. The noise of the motor was heard at a distance
+of 1,800 metres, and the ship itself was sighted at 570 metres
+and remained visible up éo about 1,900 metres.
+The Experts' Report on this visit stated that :
+"The Experts consider it to be indisputable that if a normal
+look-out was kept at Cape Kiephali, Denta Point, and St. George's
+Monastery, and if the look-oiits were equipped with binoculars as
+has been stated, under normal weather conditions for this area,
+the minelaying operations shown in Annex g to the United Kingdom Memorial must have been noticed by these coastguards."
+The Court canriot fail to give great weight to the opinion of
+the Experts who examined the locality in a manner giving every
+guarantee of correct and impartial information. Apart from the
+existence of a look-out post at Cape Denta, which hâs not been
+proved, the Court, basing itself on the declarations of the Albanian
+Government that look-out posts were stationed at Cape Kiephali
+and St. George's Monastery, refers to the following conclusions
+2 1
+
+[Source edition page 21]
+
+in the Experts' Report : (1) that in the case of minelaying from
+the North towards the South, the minelayers would have been
+seen from Cape Kiephali ; (2) in the case of minelaying from
+the South, the minelayers would have been seen from Cape
+Kiephali and St. George's Monastery.
+From al1 the facts and observations mentioned above, the
+Court draws the conclusion that the laying of the minefield which
+caused the explosions on October zznd, 1946, could not have been
+accomplished without the knowledge of the Albanian Government.
+The obligations resulting for Albania from this knowledge are
+not disputed between the Parties. Counsel for the Albanian
+Government expressly recognized that [t[tvnnslatio?z"]i f Albania had
+been informed of theuperation before the incidents of October zznd,
+and in tirne to warn the British vessels and shipping in general
+of the existence of mines in the Corfu Channel, her responsibility
+would be involved.. . .".
+The obligations incumbent upon the Albanian authorit ies
+consisted in notifying, for the benefit of shipping in general, the
+existence of a minefield in Albanian territorial waters and in
+warning the approaching British warships of the imminent danger
+to which the minefield exposed them. Such obligations are based,
+not on the Hague Convention of 1907, No. VTII, which is applicable in time of war, but on certain general and well-recognized
+principles, namely : elementary considerations of humanity, even
+more exacting in peace than in war ; the principle of the freedom
+of maritime communication ; and every State's obligation not to
+allow knowingly its territory to be used for acts contrary to the
+rights of other States.
+In fact, Albania neither notified the existence of the minefield,
+nor warned the British warships of the danger they were
+approaching.
+But Albania's obligation to notify shipping of the existence of
+mines in her waters depends on her having obtained knowledge
+of that fact in sufficient time before October zznd ; and the duty
+of the Albanjan coastal authorities to warn the British ships depends
+on the time' that elapsed between the moment that these ships
+were reported and the moment of the first explosion.
+On this subject, the Court makes the following observations.
+As has already been stated, the Parties agree that the mines were
+recently laid. It must be concluded that the minelaying, whatever
+may have been its exact date, was done at a time when there
+was a close Albanian surveillance over the Strait. If it be supposed that it took place at the last possible moment, i.e., in the
+night of October zrst-zznd, the only conclusion to be drawn would
+
+[Source edition page 22]
+
+be that a general notification to the shipping of al1 States before
+the time of the explosions would have been difficult, perhap-a even
+impossible. But this would certainly not have prevented the
+.Ilbanian authorities from taking, as they should have done, al1
+necessary steps immediately to warn ships near the danger zone,
+more especially thcse that were approaching that zone. X'hen
+on October zznd about 13.00 hours the British warships were
+reported by the look-out post at St. George's hlonastery to the
+Commander of the Coastal Defences as approaching 'Cape Long,
+it nas perfectly possible for the Albanian authorities to use the
+interval of almost two hours that elapsed before the explosion
+affecting Sairnznvez (14.53 hours or 14.55 hours) to warn the vessels
+of the danger into which they were running.
+In fact, nothing was attempted by the Albanian authorities to
+prevent the disaster. These grave omissions in\-olve the international responsibility of Albania.
+The Court therefore reaches the conclusion that Albania is
+responsible under international law for the explosions which
+occurred on October zznd, 1946, in Albanian waters, and for
+the damage and loss of human life which resulted from them,
+and that there is a duty iipon Albania to pay compensation to
+the United Kingdom.
+*
+* *
+In the final submissions contained in its oral reply, the United
+Kingdom Government asked the Court to give judgment that,
+as a result of the breach by the Albanian Govemment of its
+obligations under international law, it had sustained damages
+amounting to £87 5,000.
+In the last oral statement submitted in its name, the Albanian
+Government, for the first time, asserted that the Court would
+ilot have jurisdiction, in virtue of the Special Agreement, to
+assess the amount of compensation. No reason was given in
+support of this new assertioc, and the United Kingdom Agent
+did not açk leave to reply. The question of the Court's jurisdiction
+was not argued between the Parties.
+In the first question of the Special Agreement the Court is
+asked :
+(i) 1s Albania under international law responsible for the
+explosions and for the darnage and loss of human life which
+resulted from them, and
+(ii) is there any duty to pay compensation ?
+This text gives rise to certain doubts. If point (i) is answered
+in the affirmative, it follows from the establishment of respons-
+
+[Source edition page 23]
+
+ibility that compensation is due, and it wodd be superfiuous
+to add point (ii) unless the Parties had something else in mind
+than a mere declaration by the Court that compensation is due.
+It would indeed be incompatible with the generally accepted
+rules of interpretation to admit that a provision of this sort
+occurring in a special agreement should be devoid of purport
+or effect. In this connexion, the Court refers to the views expressed
+by the Permanent Court of International Justice with regard
+to similar questions of interpretation. In Advisory Opinion
+No. 13 of July 23rd, 1926, that Court said (Series B., No. 13,
+p. 19) : "But, so far as concerns the specific question of competence now pending, it rnay suffice to observe that the Court,
+in determining the nature and scope of a measure, must look to
+its practical effect rather than to the predominant motive that
+may be conjectured to have inspired it." In its Order of
+August ~gth1,9 29, in the Free Zones case, the Court said (Series A.,
+No. 22, p. 13) : "in case of doubt, the clauses of a special agreement
+by which a dispute is referred to the Court must, if it does not
+involve doing violence to their terms, be construed in a manner
+enabling the clauses themselves to have appropriate effects"
+The Court thinks it necessary to reier to the different stages
+of the procedure. In its Resolution of April gth, 1947, the
+Security Council recommended that the two Governments should
+immediately refer "the dispute" to the Court. This Resolution
+had without doubt for its aim the final adjustment of the whole
+dispute. In pursuance of the Resolution, the Government of the
+United Kingdom filed an Application in which the Court was
+asked, iwter dia, to "determine the reparation or compensation",
+and in its Memorial that Government stated the various sums
+claimed. The Albanian Govemment thereupon submitted a
+Preliminary Objection, which was rejected by the Court by its
+Judgment of March 25th, 1948. Immediately after this judgment
+nas delivered, the Agents of the Parties notified the Court of the
+conclusion of a Special Agreement. Commenting upon this step
+taken by the Parties, the Agent of the Albanian Government
+said that in the circumstances of the present case a special
+agreement on which "the whole procedure" should be based was
+essential. He further said [translation] : "As 1 have stated on
+several occasions, it has always been the intention of the Albanian
+Govemment to respect the decision taken by the Security Council
+on April gth, 1947, in virtue of \\-hich the present Special Agreement is submitted to the International Court of Justice."
+Neither the Albanian nor the Cnited Kingdom Agent suggested
+in any way that the Special Agreement had limited the competence
+of the Court in this matter to a decision merely upon the pnnciple
+of compensation or that the United Kingdom Government had
+abandoned an important part of its original claim. The main
+24
+
+[Source edition page 24]
+
+object both Parties had in mind when they concluded the Special
+Agreement Ras to establish a complete equality between them by
+replacing the original procedure based on a unilateral Application
+by a procedure based on a Special Agreement. There is no suggestion that this change as to procedure was intended to involve any
+change with regard to the merits of the British claim as originally
+presented in the Application and Memorial. Accordingly, the
+Court, after consulting the Parties, in its Order of Iiarch 26th, 1948,
+maintained the United Kingdom's BZemonal, filed previously,
+"with statements and submissions". These submissions included
+the claim for a fixed sum of compensation.
+The subsequent attitude of the Parties shows that it \vas not
+their intention, by entering into the Special Agreement, to preclude
+the Court from fixing the amount of the compensation. In its
+Reply (paragraph 71) the United Kingdom Government maintained
+the submissions contained in paragraph 96 of its hiemorial, including
+the claim for a fixed amount of reparation. This claim \vas
+expressly repeated in the final United Kingdom submissions. In
+paragraph 52 of its Counter-Memorial, the Albanian Governrnent
+stated that it had no knowledge of the loss of human life and
+damage to ships, but it did not contest the Coart's competence to
+decide this question. In the Rejoinder, paragraph 96, that Government declared that, owing to its claim for the dismissal of the case,
+it was unnecessary for it to examine the United Kingdom's claim
+for reparation. [T~.an.slafio~z".]I t reserves the right if need be,
+to discuss this point which should obviously form the subject
+of an expert opinion." Having regard to what is said above as
+to the previous attitude of that Government, this statement must
+be considered as an implied acceptance of the Court's jurisdiction
+to decide this question.
+It may be asked why the Parties, when drafting the Special
+Agreement, did not expressly ask the Court to assess the amount
+of the damage, but used the words : "and is there any duty to pay
+compensation ?" It seems probable that the explanation is to
+be found in the similarity betn-een this clause and the corresponding
+clause in the second part of the Special Agreement : "and is there
+axiy duty to give satisfaction ?"
+The Albanian Government has not disputed the competence of
+the Court to decide what kind of sntisfactio~zi s due under this part
+of the Agreement. The case \vas argued on behalf of both Parties
+on the basis that this question should be decided by the Court.
+In the witten plendings, the Xlbanian Government contended
+that it \vas entitled to apologies. During the oral proceèdings,
+25
+
+[Source edition page 25]
+
+Counsel for Albania discussed the question whethes ê pecuniary
+satisfaction \vas due. As no damage was caused, he did not claim
+an57 sun~of money. He concluded [t~atzslntion:] " What we desire
+is the declaration of the Court from a legal point of view ...."
+If, hon-ever, the Court is competent to decide what kind of
+satisfaction is due to Albania under the second part of the Speêia!
+Agreement, it is difficult to see why it should lack competence to
+decide the amount of compensation which is due to the United
+Kingdom under the first part. The clauses used in the Special
+Agreement are parallel. It cannot be supposed that the Parties,
+while drafting these clauses in the same form, intended to give
+them opposite meanings-the one as giving the Court jurisdiction,
+the other as denying such jurisdiction.
+As has been said above, the Security Cmncil, in its Resolution
+of April gth, 1947, undoubtedly intended that the whole dispute
+should be decided by the Court. If, however, the Court should
+limit itself to saying that there is a duty to pay compensation
+without deciding what amount of compensation is due, the dispute
+would not be finally decided. An important part of it would
+remain unsettled. As both Parties have repeatedly declared that
+they accept the Resolution of the Security Council, such a result
+mould not conform with their declarations. It would not give full
+effect to the Resolution, but would leave open the possibility of a
+further dispute.
+For the foregoing reasons, the Court has arrived at the conclusion
+that it has jurisdiction to assess the amount of the compensation.
+This cannot, however, be done in the present Judgment. The
+Albanian Government has not yet stated which items, if any, of
+the various sums claimed it contests, and the United Kingdom
+Government has not submitted its evidence with regard to them.
+The Court therefore considers that further proceedings on this
+subject are necessary ; the order and time-limits of these proceedings will be fixed by the Order of this date.
+' In the second part of the Special Agreement, the following
+question is submitted to the Court :
+"(2) Has the United Kingdom under international law violated
+the sovereignty of the Albanian People's Republic by reason of the
+acts of the Royal Navy in Albanian waters on the 22nd October
+and on the 12th and 13th November 1946 and is there any duty
+to give satisfaction ?"
+The Court will first consider whether the sovereignty of Albania
+was violated by reason of the acts of the British Navy in Albanian
+waters on October zznd, 1946.
+26
+
+[Source edition page 26]
+
+On May rgth, 1946, the British cruisers Oviolt and Szrpevb,
+while passing southward through the North Corfu Channel, were
+fired at by an Albanian battery in the vicinity of Saranda. It
+appears from the report of the commanding naval officer dated
+May zgth, 1946, that the firing started when the ships had already
+passed the battery and were mo~ingaw ay from it ; that from 12 to
+20 rounds were fired ; that the finng lasted 12 minutes and ceased
+only when the ships were out of range ; but that the ships were not
+hit although there were a number of "shorts" and of "overs".
+An Albanian note of May zrst states that the Coastal Commander
+ordered a few shots to be fired in the direction of the ships "in
+accordance with a General Order founded on international law".
+The United Kingdom Government at once protested to the
+Albanian Government, stating that innocent passage through
+straits is a right recognized by international law. There ensued
+a diplomatic correspondence in which the Albanian Government
+asserted that foreign warships and merchant vessels had no right
+to pass through Albanian territorial waters without pnor notification to, and the permission of, the Albanian authorities. This
+view was put into effect by a communication of the Albanian
+Chief of Staff, dated Jlay 17th, 1946, which purported to subject
+the passage of foreign warships and merchant vessels in -4lbanian
+territorial. waters to previous notification to and authorization by the
+Albanian Government. The diplomatic correspondence continued,
+and culminated in a United Kingdom note of August znd, 1946,
+in which the United Kingdom Government maintained its view
+with regard to the right of innocent passage through straits forming
+routes for international maritime traffic between two parts of the
+high seas. The note ended with the warning that if Albanian
+coastal batteries in the future opened fire on any British warship
+passing through the Corfu Channel, the fire would be returned.
+The contents of this note were, on August ~ s tc,o mmunicated
+by the British Admiralty to the Commander-in-Chief, Mediterranean, with the instruction that he should refrain from using the
+Channel until the note had been presented to the Albanian Government. On Aiigust ~oth,h e received from the Admiralty the
+following telegram : "The Albanians have now received the note.
+North Corfu Strait may now be used by ships of your fleet, but
+only when essential and with armament in fore and aft position.
+Jf coastal guns fire at ships passing through the Strait, ships
+should fire back." On September zrst, the following telegram
+
+[Source edition page 27]
+
+was sent by the Admiralty to the Commander-in-Chief, hiediterranean : "Establishment of diplomatic relations wvith Albania is
+again under consideration by His Riajesty's Government who wish
+to know whether the Albanian Government have learnt to behave
+themselves. Information is requested whether any ships under
+your command have passed through the North Corfu Strait since
+August and, if not, whether you intend them to do so shortly."
+The Commander-in-Chief answered the next day that his ships
+had not done so yet, but that it ww7as his intention that Jfazlritius
+and Lennder and twvo destroyers should do so when they departed
+from Corfu on October zznd.
+It wvas in such circumstances that these two cruisers together
+with the destroyers Saz~inareza nd T701age were sent through the
+North Corfu Strait on that date.
+The Court will now consider the Albanian contention that the
+United Kingdom Government violated Albanian sovereignty by
+sending the warships through this Strait without the previous
+authorization of the Albanian Government.
+It is, in the opinion of the Court, generally recognized and in
+accordance with international custom that States in time of peace
+have a right to send their warships through straits used for international navigation be'nveen two parts of the high seas without the
+previous authorization of a co'astal State, provided that the passage
+is innocent. Unless othenvise prescribed in an international
+convention, there is no right for a coastal State to prohibit such
+passage through straits in time of peace.
+The Albanian Government does not dispute that the liorth
+Corfu Channel is a strait in the geographical sense ; but it denies
+that this Channel belongs to the class of international highn-ays
+through wvhich a right of passage exists, on the grounds that it is
+only of secondas. importance and not el-en a neceçsary route
+between twvo parts of the high seas, and that it is used almost
+exclusively for local traffic to and from the ports of Corfu and
+Saranda.
+It may be asked whether the test is to be found in the \lolume of
+traffic passing through the Strait or in its greater or lesser importance
+for international navigation. But in the opiiiion of the Court the
+decisive criterion is rather its geographical situation as connecting
+two parts of the high seas and the fact of its being used for international navigation. Sor can it be decisire that this Strait is not
+a necessary route bettveen tn-O parts of the high aeas, but only
+an alternative passage betwveen the Egean and the Adriatic Seas.
+It has nevertheless been a useful route for international maritime
+traffic. In this respect, the -\gent of the Vnited Kingdom Government gave the Court tlie foilowing information relating to the
+28
+
+[Source edition page 28]
+
+period from April ~st1,9 36, to December 31st, 1937 : "The following is the total number of ships putting in at the Port of Corfu
+after passing through or just before passing through the Channel.
+During the period of one year nine months, the total number of
+ships was 2,884. The flags of the ships are Greek, Italian, Roumanian, Yugoslav, French, Albanian and British. Clearly, very
+small vessels are included, as the entries for Albanian vessels are
+high, and of course one vesse1 may make several journeys, but
+2,884 ships for a period of one year nine months is quite a large
+figure. These figures relate to vessels visited by the Customs at
+Corfu and so do not include the large number. of vessels which went
+through the Strait without calling at Corfu at all." There were
+also regular sailings through the Strait by Greek vessels three times
+weekly, by a British ship fortnightly, and by two Yugoslav vessels
+weekly and by two others fortnightly. The Court is further
+informed that the British Navy has regularly used this Channel
+for eighty years or more, and that it has also been used by the
+navies of other States.
+One fact of particular importance is that the North Corfu
+Channel constitutes a frontier between Albania and Greece, that
+a part of it is wholly within the territorial waters of these States,
+and that the Strait is of special importance to Greece by reason of
+the traffic to and from the port of Corfu.
+Having regard to these various considerations, the Court has
+arrived at the conclusion that the North Corfu Channel should
+be considered as belonging to the class of international highways
+through which passage cannot be prohibited by a coastal State
+in time of peace.
+On the other hand, it is a fact that the two coastal States did
+not maintain normal relations, that Greece had made territorial
+claims precisely with regard to a part of Albanian territory bordering on the Channel, that Greece had declared that she considered
+herself technically in a state of war with Albania, and that Albania,
+invoking the danger of Greek incursions, had considered it necessary to take certain measures of vigilance in this region. The
+Court is of opinion that Albania, in view of tliese exceptional
+circumstdnces, would have been justified in issuing regulations
+in respect of the passage of warships through the Strait, but not
+in prohibiting such passage or in subjecting it to the requirement
+of special authorization.
+For these reasons the Court is unable to accept the Albanian
+contention that the Government of the United Kingdom has
+violated Albanian sovereignty by sënding the warships through
+
+[Source edition page 29]
+
+the Strait without having obtained the previous authorization of
+the Albanian Government.
+In these circumstances, it is unnecessary to consider the more
+general question, much debated by the Parties, n-hether States
+under international law have a right to send warships in time of
+peace through territorial waters not included in a strait.
+The Albanian Government has further contended that the
+sovereignty of Albania was violated because the passage of the
+British warships on October zznd, 1946, was not an i?z.izocejzt
+passage. The reasons advanced in support of this contention
+may be summed up as foilows : The passage was not an ordinary
+passage, but a political mission ; the ships were manoeuvring
+and sailing in diamond combat formation with soldiers on board ;
+the position of the guns was not consistent with innocent passage ;
+the vessels passed with crews at action stations ; the number of
+the ships and their armament surpassed what \vas necessa- in order
+to attain their object and showed an intention to intimidate and
+not merely to pass ; the ships had received orders to obsen-e and
+report upon the coastal defences and this order was carried out.
+It is shown by the Adniiralty telegram of September z~stc,i ted
+above, and admitted by the United Kingdom Agent, that the
+object of sending the warships through the Strait \vas not only
+to cany out a passage for purposes of navigation, but also to
+test Albania's attitude. As mentioned above, the Albanian
+Government, on May 15th, 1946, tried to impose by means of
+gunfire its view with regard to the passage. As the exchange
+of dipIomatic notes did not lead to any clarification, the Government of the United Kingdom wanted to ascertain by other ineans
+whether the Albanian Govemment would maintain its illegal
+attitude and again impose its view by firing at passing ships.
+The legality of this measure taken-by the Goveniment of the
+United Kingdom cannot be disputed, provided that it \vas carried
+out in a manner consistent with the requirements of international
+law. The "mission" was designed to affirm a right which had
+been unjustly denied. The Government of the United Kingdom
+was not bound to abstain from exercising its right of passage,
+which the Albanian Government had illegally denied.
+It remains, therefore, to consider whether the mnnner in which
+the passage was carried out was consistent with the principle of
+innocent passage and to examine the various contentions of the
+Albanian Government in so far as they appear to be relevant.
+When the Albanian coastguards at St. George's Monastery
+reported that the British warships were sailing in combat formation and were manoeuvring, they must have been under a misapprehension. it is shown by the evidence that the ships were not
+proceeding in combat forrnatior,, but in line, one after the other,
+
+[Source edition page 30]
+
+THE CORFU CHANNEL CASE (MERITS) 3I
+and that they were not manoeuvnng until after the first explosion.
+Their movements thereafter were due to the explosions and were
+made necessary in order to Save human life and the mined ships. It
+is showvn by the evidence of wvitnesses that the contention that
+soldiers were on board must be due to a misunderstanding probably
+ansing from the fact that the two cruisers carried their usual detachment of marines.
+It is knowvn from the above-mentioned order issued by the British
+-1dmiralty on -4ugust ~oth1,9 46, that ships, when using the North
+Corfu Strait, must pass with armament in fore and aft position.
+That this order was carried out during the passage on October ~2nd
+is stated by the Commander-in-Chief, Mediterranean, in a telegram
+of October 26th to the Admiralty. The guns were, he reported,
+"trained fore and aft, which is their normal position at sea in peae
+time, and n-ere not loaded". It is confirmed by the commanders
+of Sazinzarez and Volage that the guns were-in this position before
+the explosions. The navigating officer on board Jfauritius
+explained that al1 guns on that cruiser were in their normal stowage
+position. The main guns u-ere in the line of the ship, and the antiaircraft guns were pointing outwards and up into the air, which
+is the normal position of these guns on a cruiser both in harbour
+and at sea. In the light of this evidence, the Court cannot accept
+the Albanian contention that the position of the guns was inconsistent with the rules of innocent passage.
+In the above-mentioned teleg~amo f October 26th, the Commander-in-Chief reported that the passage "was made with ships at
+action stations in order that they might be able to retaliate quickly
+if fired upon again". In view of the firing from the Albanian
+battery on May Ij th, this measure of precaution cannot, in itself,
+he regarded as unreasonable. But four warships-t~vo cruisers
+and t~vod estroyers-passed in this manner, with crews at action
+stations, ready to retaliate quickly if fired upon. They passed
+one after another through this narrow channel, close to the Albanian
+Coast, at a time of political tension in this region. The intention
+must have been, not only to test Albania's attitude, but at the same
+time to demonstrate such force that she wvould abstain from firing
+again on passing ships. Having regard, however, to al1 the circumstances of the case, as described above, the Court is unable to
+characterize these measures taken by the United Kingdom authorities as a violation of Albania's sovereignty.
+The Admiralty Chart, Annex 21 to the Memorial, shows that
+coastal defences in the Saranda region had been observed and
+reported. In a report of the commander of Volage, dated Octo-
+
+[Source edition page 31]
+
+ber z3rd, 1~46-a report relating to the passage on the zznd-it
+is stated : "The most was made of the opportunities to study
+Albanian defences at close range. These included, with reference
+to XCU ...."- and he then gives a description of some coastal
+defences.
+In accordance with Article 49 of the Statute of the Court and
+Article 54 of its Rules, the Court requested the United Kingdom
+Agent to produce the documents referred to as XCU for the use
+of the Court. Those documents were not produced, the Agent
+pleading naval secrecy ; and the United Kingdom witnesses declined
+to answer questions relating to them. It is not the~eforep ossible
+to know the real content of these naval orders. The Court cannot,
+however, draw from this refusa1 to prodaice the orders any conclusions differing from those to which the actual events gave rise.
+The United Kingdom Agent stated that the instructions in these
+orders related solely to the contingency of shots being fired from
+the coast-which did not happen. . If it is tme, as iAe commander
+of Volage said in evidence, that the orders contained information
+concerning certain positions from which the British warships might
+have been fired at, it cannot be deduced therefrom that the vessels
+had received orders io reconnoitre Albanian coastal defences.
+Lastly, as the Court has to judge of the innocent nature of the
+passage, it cannot remain indifferent to the fact that, though two
+warships struck mines, there was no reaction, either on their
+part or on that of the cruisers that accompanied them.
+With regard to the observations of coastal defences made after
+the explosions, these were justified by the fact that two ships had
+just been blown up and that, in this critical situation, their commander~m ight fear that they would be fired on from the coast, as
+on May 15th.
+Having thus examined the various contentions of the Albanian
+Govemment in so far as they appear to be relevant, the Court has
+arrived at the conclusion that the United Kingdom did not violate
+the sovereignty of Albania by reason of the acts of the British Navy
+in Albanian waters on October zznd, 1946.
+In addition to the passage of the United Kingdom warships on
+October zznd, 1946, the second question in the Çpecial Agreement
+relates to the acts of the Royal Navy in Albanian waters on
+November 12th and qth, 1946. This is the minesweeping operation called "Operation Retail" by the Parties during the proceedings. This name will be used in the present Judgment.
+
+[Source edition page 32]
+
+After the explosions of October zznd, the United Kingdom
+Govemment sent a note to the Albanian Government, in which
+it announced its intention to sweep the Corfu Channel shortly.
+The Albanian reply, which was received in London on October pst,
+stated that the Albanian Govemment would not give its consent
+to this unless the operation in question took place outside Albanian
+tem'torial waters. Meanwhile, at the United Kingdom Government's request, the International Central Mine Clearance Board
+decided, in a resolution of November ~st1,9 46, that there should
+be a further sweep of the Channel, subject to Albania's consent.
+The United Kingdom Govemment having infonned the Albanian
+Government, in a communication of November ~oth,t hat the
+proposed sweep would take place on November ~ztht,h e Albanian
+Government replied the nth, protesting against this "unilateral
+0x1
+decision of His Majesty's Government". It said it did not consider it inconvenient that the British fleet should undertake the
+sweeping of the channel of navigation, but added that, before
+sweeping was camed out, it considered it indispensable to decide
+what area of the sea should be deemed to constitute this channel,
+and proposed the establishment of a Mixed Commission for the
+purpose. It ended by saying that any sweeping undertaken
+without the consent of the Albanian Government outside the channe1 thus constituted, i.e., inside Albanian temtorial waters where
+foreign warships have no reason to sail, could only be considered
+as a deliberate violation of Albanian territory and sovereignty.
+After this exchange of notes, "Oyeration Retail" took place
+on November 12th and 13th. Commander Mestre, of the French
+Navy, was asked to attend as observer, and was present at the
+sweep on November 13th. The operation was camed out under
+the protection of an important covering force composed of an
+aircraft carrier, cruisers and other war vessels. This covering
+force remained throughout the operation at a certain distance
+to the west of the Channel, except for the frigate St. Bride's Bay,
+which was stationed in the Channel south-east of Cape Kiephali.
+The sweep began in the morning of November 13th, at about
+g o'clock, and ended in the afternoon near nightfall. The area
+swept was in Albanian territorial waters, and within the limits
+of the channel previously swept.
+The United Kingdom Govemment does not dispute that "Operation Retail" was carried out against the clearly expressed wish of
+the Albanian Govemment. It recognizes that the operation had not
+the consent of the international mine clearance organizations, that
+it could not be justifie& as the exercise of a right of innocent
+passage, and lastIy that, in principle, international law does not
+allow a State to assemble a large number of warships in the
+
+[Source edition page 33]
+
+territorial waters of another State and to carry out minesweeping
+in those waters. The United Kingdom Government states that
+the operation was one of extreme urgency, and that it considered
+itself entitled to carry it out without anybody's consent.
+The United Kingdom Government put forward two reasons
+in justification. First, the Agreement of November zznd, 1945,
+signed by the Govemments of the United Kingdom, France,
+the Soviet Union and the United States of America, authorizing
+regional mine clearance organizations, such as the Mediterranean
+Zone Board, to divide the sectors in their respective zones amongst
+the States concerned for siveeping. Relying on the circumstance
+that the Corfu Channel was in the sector allotted to Greece by
+the Mediterranean Zone Board on November 5th, i.e., before
+the signing of the above-mentioned Agreement, .the United
+Kingdom Government put forward a permission given by the
+Hellenic Govemment to resweep the navigable channel.
+The Court does not consider this argument convincing.
+It must be noted that, as the United Kingdom Govemment
+admits, the need for resweeping the Channel was not under
+consideration in November 1945 ; for previous sweeps in 1944
+and 1945 were considered as having effected complete safety.
+As a consequence, the allocation of the sector in question to
+Greece, and, therefore, the permission of the Hellenic Govemment
+which is relied on, were both of them merely nominal. It is
+also to be remarked that Albania was not consulted regarding
+the allocation to Greece of the sector in question, despite the
+fact that the Channel passed through Albanian territorial waters.
+But, in fact, the explosions of October 22nd, 1946,i n a channel
+declared safe for navigation, and one which the United Kingdom
+Government, more than any other govemment, had reason to
+consider safe, raised quite a different problem from that of a routine
+sweep carried out under the orders of the mineclearance organizations. These explosions were suspicious ; they raised a question
+of responsibility.
+Accordingly, this was the ground on which the United Kingdom
+Govemment chose to establish its main line of defence. According
+to that Government, the corpora delicti must be secured as quickly
+as possible, for fear they should be taken away, without leaving
+traces, by the authors of the minelaying or by the Albanian
+authorities. This justification took two distinct forms in the
+United Kingdom Government's arguments. It was presented
+first as a new and special application of the theory of intervention,
+by means of which the State intervening would secure possession
+of evidence in the territory of another State, in order to submit
+it to an international tribunal and thus facilitate its task.
+
+[Source edition page 34]
+
+The Court cannot accept such a line of defence. The Court
+can only regard the alleged right of intervention as the manifestation of a policy of force, such .as has, in the past, given rise
+to most serious abuses and such as cannot, whatever be the
+present defects in international organization, find a place in
+international law. Intervention is perhaps still less admissible
+in the particular form it would take here ; for, from the nature
+of things, it would be reserved for the most powerful States,
+and might easily lead to perverting the administration of international justice itself.
+The United Kingdom Agent, in his speech in reply, has further
+classified "Operation Retail" among methods of self-protection or
+self-help. The Court cannot accept this defence either. Between
+independent States, respect for territorial sovereignty is an essential
+foundation of intemational relations. The Court recognizes that
+the Albanian Govemment's complete failure to cany out its duties
+after the explosions, and the dilatory nature of its diplornatic notes,
+are extenuating circumstances for the action of the United
+Kingdom Government. But to ensure respect for international
+law, of which it is the organ, the Court must declare that the
+action of the British Navy CO stituted a violation of Albanian
+.
+sovereignty
+This declaration is in accordance with the request made by
+Albania through her Counsel, and is in itself appropriate satisfaction.
+The method of carnina out "O~erationR etail" has also been
+"
+criticized by the Alban4 ian Govemment, the main ground of complaint being that the United Kingdom, on that occasion, made use
+of an unnecessarily large display of force, out of proportion to the
+requirements of the sweep. The Court thinks that this criticism
+is not justified. It does not consider that the action of the British
+Navy was a de~nonstrationo f force for the purpose of exercising
+political pressure on Albania. The responsible naval commander,
+who kept his ships at a distance from the coast, cannot be reproached
+for having employed an important covering force in a region where
+twice within a few months his ships had been the object of serious
+outrages.
+
+[Source edition page 35]
+
+on the first question put by the Special Agreement of
+March zjth, 1948,
+by eleveil votes to five,
+Gives judgment that the People's Republic of Albania is responsible under international law for the explosions which occurred on
+October zznd, 1946, in Albanian waters, and for the damage and
+loss of human life that resulted therefrom ; and
+by ten votes to six,
+Reserves for further consideration the assessment of the amount
+of compensation and regulates the procedure on this subject by
+an Order dated this day ;
+on the second question put by the Special Agreement of
+Jiarch zjth, 1948,
+by fourteen votes to two,
+Gives judgment that the United Kingdom did not violate the
+sovereignty of the People's Republic of Albania by reason of the
+acts of the British Navy in Albanian waters on October zznd,
+1946 ; and
+unanimously,
+Gives judgment that by reason of the acts of the British Navy in
+=Ilbanian waters in the course of the Operation of November 12th
+and 13th, 1946, the United Kingdom violated the sovereignty of
+the People's Republic of Albania, and that this declaration by
+the Court constitutes in itself appropriate satisfaction.
+
+[Source edition page 36]
+
+Done in French and English, the French text being authoritative, at the Peace Palace, The Hague, this ninth day of April,
+one thousand nine hundred and forty-nine, in three copies, one
+of which will be placed in the archives of the Court and the others
+transrnitted to the Government of the United Kingdom of Great
+Britain and Northern Ireland and of the People's Republic of
+Albania respectively.
+(Signed) J. G. GUERRERO,
+Acting. President.
+(Signed) E. HAXIBRO,
+Registrar.
+Judge BASDEVANTP,r esident of the Court, whilst accepting
+the whole of the operative part of the Judgment, feels bound
+to state that he cannot accept the reasons given by the Court
+in support of its jurisdiction to assess the amount of compensation,
+other. reasons being in his opinion more decisive.
+Judge ZORIEId~e clares that he is unable to agree either with the
+operative clause or with the reasons for the Judgment in the part
+relating to Albania's responsibility ; the arguments submitted, and
+the facts established are not such as to convince him that the
+Albanian Govemment was, or ought to have been, aware, before
+Noveinber 13th, 1946, of the existence of the minefield discovered
+on that date. On the one hand, the attitude adopted by a government when confronted by certain facts varies according to the
+circumstances, to its mentality, to the means at its disposal and to
+its experience in the conduct of public affairs. But it has not been
+contested that, in 1946, Albania had a new Government possessing
+no experience in international practice. It is therefore difficult
+to draw any inferences whatever from its attitude. Again, the
+conclusion of tlie Experts that the operation of laying the mines
+must have been seen is subject to an express reservation : it would
+be necessary to assume the realization of several conditions, in
+particular the maintenance of normal look-out posts at Cape
+
+[Source edition page 37]
+
+Kiephali, Denta Point and San Giorgio Monastery, and the existence
+of normal weather conditions at the date. But the Court knows
+neither the date on which the mines were laid nor the weather
+conditions prevailing on that date. Furthermore, no proof has
+been fumished of the presence of a look-out post on Denta Point,
+though that, according to the Experts, would have been the only
+post which would necessarily have observed the minelaying. On
+the other hand, the remaining posts would merely have been able
+to obsen~eth e passage of the ships, and there is no evidence to show
+that they ought to have concluded that the ships were going to
+lay mines. According to the Experts, these posts could neither
+have seen nor heard the minelaying, because the San Giorgio
+Monastery was 2,000 m. from the nearest mine and Cape Kiephali
+was several kilometres away from it. As a result, the Court is
+confronted with suspicions, conjectures and presilmptions, the
+foundations for which, in Judge Zori-iCiC's view, are too uncertain
+to justify him in imputing to a State the responsibility for a grave
+delinquency in international law.
+Judge ALVAREZw, hilst concurring in the Judgment of the
+Court, has availed himself of the right conferred on him by
+Article 57 of the Statute and appended to the Judgrnent a
+statement of his individual opinion.
+Judges \~'INIARÇIBIIA, DAWPIA SHAK, RYLOVan d ~EVEDOan,d
+Judge ad hoc EGER, declaring that they are unable to concur
+in the Judgment of the Court, have availed themselves of the
+right conferred on them by Article 57 of the Statute and appended
+to the Judgment statements of their dissenting opinions.
+
+[Source edition page 38]
+
+LIST OF DOCUMENTS SUBhlITTED TO THE COURT.
+A.-During the written proceedzngs .
+Admiralty Chart No. 206 showing the Corfu Strait.
+Section of German Mine Information Chart.
+(This is a chart which was captured by the Allies, showing tlie
+North Corfu Channel and the position of mines laid by the Axis
+there ; the original chart has been filed with the Registry.)
+International Agreement between the Govemments of the United
+Kingdom, France, .U.S.S.R. and the United States, setting up
+the Mine Clearance Boards and dated November 22nd, 1945.
+Affidavit by despatch clerk at the Admiralty proving despatch
+of Medri Charts to Albania (August zoth, 1947).
+Section of Medri Index Chart showing North Corfu swept channel
+and the international highway established therein together with
+Medri pamphlets for use with the Index Chart.
+(Single copy of the entire Chart and of the complete pamphlets
+numbered 5, 9 and 12 have been filed with Registry.)
+Diplomatic correspondence between the Government of the
+United Kingdom and Albania regarding the nght of navigation
+in the Strait of Corfu.
+Admiralty tracings showing the North Corfu swept channel and
+the position and tracks of H.M.S. Orion, Superb, Leander,
+Sarcmavez and Mauritizbs, passing through the North Corfu
+Channel on May 15th, 1946, and on October aznd, 1946.
+Photographs of H.M.S. Saumarez (below water line) and Volage
+(bows blown off) taken shortly after the explosion on October 22nd,
+1946.
+Admiralty tracing showing position of H.M. ships at the time
+of the explosion.
+IO. Report on damage to H.M.S. Saumarez (December 8th, 1946).
+II. Report on damage to H.M.S. Volage (November 3oth, 1946).
+12. List. of sailors killed, with statement of pensions, etc., payable
+to dependants.
+List of sailors injured, with statement of expenses, pensions, etc.
+Statement of cost of repairs to the Volage and cost of replacement
+of the Saumare:.
+Ij. Minutes of Mine Clearance Boards.
+16. Reports of Capitaine Mestre (November 16th and 23rd, 1946).
+(There were two reports, both in French. The reason why
+there were two reports was that Capitaine Mestre wished to
+make certain corrections in his second report of certain statements
+which he had made in his first report.)
+Reports on Operation Retail by Rear-Admira1 Kinahan and
+Commander Whitford. (The minesweeping operation of November ~jth,1 946.)
+132
+
+[Source edition page 39]
+
+Chart showing position in which mines were found on
+November 13th, 1946.
+Photographs of the mines.
+Report on mines examined at Admiralty Mining Establishment,
+Leigh Park House, Hants.
+Chart showing the defences of Saranda.
+Affidavit of Skipper Bargellini regarding the incident of
+U.N.R.R.A. barges on October qth, 1946 (December 31st, 1946).
+Documents and records of the Security Council, etc., relative to
+the dispute.
+Third Interim Report of the Central Mine Clearance Board in
+European Waters after the war (October ~st1,9 46-June 3oth,
+1947).
+Mine Information Chart No. 2711.
+Two signals relating to the sweeping in October .1g44 of the
+Corfu Channel.
+Extracts from Hansard (Parliamentary Debates), containing
+Statements by the Secretary of State for Foreign Affairs regarding
+Albania.
+Telegram from Flag Officer Commanding 15th Cruiser Squadron,
+describing the incident of May ~jth,1 946.
+Photostat copies of extracts from Political Report of July zgth,
+1945, portions of which appear in Annex II of the Albanian
+Counter-Memorial.
+Text of Admira1 Willis's statement of October 26th, 1946.
+Photograph of Saumarez omitted from Annex 8 of United Kingdom
+Memorial.
+Extract from Third Interim Report of Central Mine Clearance
+Board in European waters after the war.
+Affidavit by Commanding Officer of Skipjack identifying mines
+brought to Malta with those found at Corfu (September 5th, 1947).
+Chartlet showing areas swept on November ~zth1,9 46.
+Minutes of the Central Mine Clearance Board in European waters
+after the war (May 25th, 1945-May 19th, 1948).
+Minutes of the Mediterranean Zone Mine Clearance Board (November jth, 1945-May th, 1948).
+Extracts from the Minutes of the First Meeting of the Mediterranean Zone Mine Clearance Board (November 5th, 1945). and of
+the Fourth Meeting (Second Sitting-February 27th, 1946).
+B.- A!ter the clostcre of the written proceedings.
+(a) Before the Itearing :
+Affidavit sworn in London on October 4th, 1948, by Karel Kovacic,
+former Lieutenant-Commander in the Yugoslav Navy.
+Chart annexed to above affidavit, showing the route probably
+followed by the vessels in going from Sibenik to Boka Kotorska
+and to Corfu Channel.
+133
+
+[Source edition page 40]
+
+bis. Tracing made from sketch of Panikovac from the Yugoslav
+'
+Hydrographie Institute, November zoth, 1948 (filed by Albanian
+Government's Agent), showing the position of M-minesweepers in
+Panikovac Cove.
+Copy of a note from the Ministry for Foreign Affairs to the British
+Embassy, Athens, August 13th, 1948.
+Affidavit by Commander Sworder (October zznd, 1948) regarding
+minesweeping in the Corfu Channel in October 194.4, January and
+February, 1945.
+Estract from Admiralty Instructions on minesweeping in war time.
+Chart showing sectors swept in October 1944.
+Affidavit by D. G. Jacobs, First Lieutenant of BTMS zoo9 of
+the 153rd Minesweeping Flotilla, in October 1944 (October zznd,
+1948).
+Affidavit by Commander Sworder showing the manner in which
+Medri Charts were drawn up (October zznd, 1948).
+Log-books of the Volage, Mauritius and Leander.
+Affidavit by Lieutenant Godsall, Officer of the Watch on board
+the Saumarez on October z~nd1,9 46, from 14.00 hours to 14.53
+hours (October 22nd, 1948).
+Report of a Board of Enquiry set up on the arriva1 of the Saumare=
+at Corfu (October qth, 1946).
+Chart prepared bu the Members of the above-mentioned Board
+of Enquiry, showing the route followed by the Saumarez.
+Affidavit by Commander Paul, in command of the Volage on
+October zznd, 1946 (October 22nd, 1948).
+Track-chart of the Volage prepared by Commander Paul.
+Certified true copy of the letter of the Commander-in-Chief,
+Mediterranean, to the Admiralty of August 15th, 1946, transmitting the programme for the autumn criiise of his Fleet.
+Photostat copy of Report of Proceedings of Volage, by Commander Paul (October 23rd, 1946).
+Photostat copy of Report of Proceedings of Saumarez, by Captain Selby (October 23rd, 1946).
+Photostat copy of Report of Proceedings of Leander, b57 Captain Otway Ruthven (October 23rd, 1946).
+Photostat copy of Report of Proceedings of Ocean, by Captain John
+(October 24th, 1946).
+Certified true copy of Report of Rear-Admiral Kinahan, Commanding First Cruiser Squadron in H.M.S. Mnlcritizts, on the
+explosions caused on board the Saumarez and Volage by mines
+(October qrd, 1946).
+Original copy of a German chart captured by the Allies at the
+German Admiralty, Berlin (Ionian Sea and Gulf of Taranto,
+south-western Coast of Greece).
+Affidavit by Commander Whitford, Senior Officer of the 5th
+Minesweeping Flotilla from March to December, 1946, explainine
+the difference between mines recently laid and those that have
+been long in the water (October zznd, 1948).
+
+[Source edition page 41]
+
+CORFU CHANNEL CASE (MERITS) (ANNEX 1) 135
+Photographs M 1, 2 and 3 of a German mine that had been
+two years in the water, with a cerîificate by Colonel Golemis.
+Photographs M 4, 5, 6, 7 and 8 of a German mine that had
+been five years in the water, with a certificate by Commander
+Littleboy.
+Telegrams passing between the Commander-in-Chief, Mediterranean, and the Admiralty, prior to the incident of October aznd,
+1946, embodying the instructions of the Admiralty regarding
+the passage of H.M. ships through the Corfu Chamel.
+Telegrams passing between the Commander-in-Chief, Mediterranean, and the Admiralty, embodying the instructions of the
+Admiralty regarding Operation Retail.
+Affidavit by Professor J. E. Hams, Professor of Zoology in
+the University of Bristol, conceming the state of the mines
+swept in the Corfu Channel on November 13th, 1946 (October 27th,
+1948).
+Affidavit by Mr. N. 1. Hendey, of the Admiralty Central
+Metallurgical Laboratory, Emsworth, giving the reasons for the
+absence of fouling on mines in the Black Sea (October 25th,
+1948)-
+Affidavit by Commander Moloney, certifying that no dumps of
+German mines had been left in Greece (October zgth, 1948).
+(b) At the hearing :
+Photograph of Panikovac Cove.
+Copies of two telegrams from the British Admiralty dated
+November gth, 1948, relating to the Mljet and Meljine.
+Copy of two telegrams from the Air Ministry, United Kingdom,
+dated November 8th, 1948, and concerning weather conditions
+and the angle of the Sun at Sibenik on October 16th, 17th
+and 18th, 1946.
+Jane's Fightifig Ships 1946-1947.
+Photographs of mines found during the sweep on November 13th.
+1946. (These photographs had ben submitted to the Security
+Council in 1947 and were marked VI (b) and VI (c).)
+Treaty of Friendship and Mutual Assistance between Yugoslavia
+and Albania (July gth, 1946.-The date did not appear on the
+copy filed).
+Economic Agreement between Yugoslavia and Albania (November 27th, 1946.-The date did not appear on the copy filed).
+Marinkalender I 947.
+School and College Atlas (Londcn : G. W. Bacon & Co.).
+: H. P. Leopold).
+& London, IN).
+Rough copy of log of the Mauritiws.
+Document showing the differences between the entries in the
+log-book (fair copy) and the rough log of the Mauritius.
+Three fragments of the mine which struck Volage.
+Extract from Report dated May zgth, 1946, from Rear-Admiral
+Kinahan, addressed to the Commander-in-Chief of the Mediter-
+135
+
+[Source edition page 42]
+
+CORFU CHANNEL CASE (MERITS) (ANNEX 1) 136
+ranean, reporting the proceedings of the squadron under his
+command for the period April 29th to May 25th, 1946 (paragraph
+23, relating to the passage of the squadron through the Corfii
+Channel on May 15th, 1946).
+Warships of the World, Victory Edition, U.S.A.
+Two sketches made by Commander Kovacic at the hearing on
+November qth, 1948, morning, showing one of the Yugoslav
+ships with the rails and mifielaying mechanism.
+Xj. Photograph of Panikoc-ac Cove on which Commander Koc-acic
+drew an arrow showing the entrance to the tunnel used as a mine
+store (hearing on iu'ovember qth, 1948, morning).
+Sh. Two plans of the region of Sibenik on which Commander Kovacic
+had marked : (a) the course foliowed ip the launch and the place
+from which he could recognize the mines ; (b)t he jetty from which
+the photograph of Panikovac Cove was probably taken (hearing
+on November 24th, 1948, morning).
+Report of the 153rd Minesweeping Flotilla (October 8th, 1944)
+on the sweeping of the Korcula and Scedro Channels, with a
+tracing showing the minesweeping operations.
+File relating to mines laid by the Germans (German documents).
+German files relating to mine stocks.
+Original of the Report of Proceedings of the Leander, made by
+Captain Otway Ruthven (October 23rd, 1946) (a photocopy had
+already been filed), with signature certified by Captain Selby.
+Tracing showing course followed by the Leander on October 22nd,
+1946, dated October qrd, 1946, and attached to the Report
+of Captain Otway Ruthven (this tracing replaces the trackchart made on December 26th, 1946, and filed as Annex 7 to
+the United Kingdom Memorial).
+gr. Typeu~ittenc opy of the Report of the Volage made on October 23rd, 1946, by Commander Paul (a photocopy had already
+been filed), with certificate by Commander Paul.
+Original of Report sent by Rear-Admira1 Kinahan on May zgth,
+1946, to Commander-in-Chief, Mediterranean, on proceedings of
+his Squadron from April 29th to May 25th, 1946, with signature
+certified by Commander Whitford.
+Sketch made by Lieutenant-Commander Kovacic at the hearing
+on the morning of November 26th, 1948, showing the position
+of Mljet and Meljine as he saw them on the evening of
+October 17th or 18th, 1946, about 18.30 hours.
+Plan of environs of Sibenik, on which Commander Kovacic
+marked the site of the house from which he saw the Mljet and
+the Meljine on October 17th or 18th, 1946, about 18.30 hours
+(hearing on morning of November 26th, 1948).
+Sketch made by Lieutenant-Commander Kovacic at the hearing
+in the afternoon of November 25th, 1948, showing the position
+of Mljct and Meljine in relation to the mouth of the tunnel
+at Panikovac Cove, on October 17th or 18th, about 16.30 hours.
+136
+
+[Source edition page 43]
+
+97. Two sketches made by Lieutenant-Commander Kovacic at the
+heanng in the aftemoon of November 26th, 1948, showing the
+manoeuvre made by the MZjet and Meljine to facilitate the
+loading of the mines, and the position of the two vessels during
+the loadirig.
+98. Sketch showing a minesweeper with its cable cutting the moonng
+of a mine, and a mine already swept (sketch made by Commander Sworder and shown to the Court at the hearing in the
+morning of November ~2nd.1 948).
+99. Diagram showing sweeps of moored mines, 100% safe (made by
+Commander Sworder and shown to the Court at the hearing on
+the morning of Not-ember aznd, 198).
+IOO. Photograph showing Mazrritius and Saumarez after the esplosion
+(this photograph was -spbmitted to the Security Council in
+1947, and was number. II (a), A. 4).
+101. Two extracts from Yugoslav illustrated papers, showing two
+photographs of a minelayer with its demck.
+102. Map of Sibenik, from U.S. Army (scale 1/5o,ooo).
+103. Admiralty Chart No. 1581 : Approach to Sibenik harbour.
+Air photograph (No. 4025) of Sibenik and Panikovac Cove.
+Page of an illustrated paper, showing the view over the sea from
+a house situated near Keric's house.
+Tracing of Panikovac Cove, made bp Yugoslav Hydrographic
+Institute, November aoth, 1940 (original fded by Albania).
+Telegram received from Rome by United Kingdom Delegation,
+conceming weather reports published at Sibenik on October 17th
+and 18th, 1946 (November 24th, 1948).
+Reply by the United Kingdom experts to questions put 0€ the
+Mixed Committee of Experts by Judge EEer on November 3oth,
+1948 : (1) Was the light sufficient at 17.35 hours to enable
+Lieutenant-Commander Kovacic to see the vessels moored in
+Panikovac Cove ? (2) If the light was sufficient, would the view
+have been interrupted by the lie of the land ?
+Letter from Commander Sworder to Rear-Admiral Moullec, dated
+December 8th, 1948, forwarding a revision of the common reply
+to question 5 of the Questionnaire by the agents submitted on
+November 26th, 1948, to the experts of the two Parties.
+Affidavit by hl. Zivan Pavlov (December roth, 1948), certifying
+that between October ~3rda.n d 26th, 1946, in the Gulf of Kotor,
+he saw a Yugoslav minelayer of the Meljilte class, mo\.ing towards
+the fuel refdling points at Boka Kotorska (original in Serb-Croat,
+with English translation).
+III. Mernbership card of the Yugoslav Seamen's and Port-workers'
+Union, bearing name of Zivan Pavlov (in Serbo-Croat language,
+with English translation of pertinent passages).
+112. Instructions for rendering Safe Underwater II'eapons-German
+Buoyant Mines-1943.
+137
+
+[Source edition page 44]
+
+Air photograph of the environs of Saranda, showing certain
+paths and roads (1943).
+Map of Saranda District (I/~O,OOAOlb ania sheet 26-IV Saranda).
+Amendments submitted by the United Kingdom naval experts
+to the replies they had given to questions by Judge EZer.
+Six copies of photographs of H.M.S. Mauritius (photographs
+Nos. A 1, A 2, A 3 and A 4 are additional copies of photographs
+appearing in Supplement 6 to Minutes of the Security Council,
+and are bad reproductions).
+A.-During the written proceedings :
+Letter from the Greek Representatiw to the Secretary-General
+of the United Nations (March ~oth,1 947).
+Declaration by Captain Avdi Mati (October 4th, 1947).
+Letter from the Head of the United Kingdom Military Mission
+in Albania to the Albanian Amy General Staff (January 25th,
+1946).
+Minutes of the Meeting of the Mediterranean Zone Mine
+Clearance Board, held on July znd, 1946.
+Report on the incident of May 15th, 1946.
+Letter from the Albanian Representative to the Secretary-
+General of the United Nations, April ~zth,1 947.
+Report on the incident of October zznd, 1946.
+Reuter's communiqué of October 26th, 1946.
+Article 3 of the Albanian-Yugoslav Maritime Arrangement of
+September ~oth1,9 46.
+IO. Report on the occurrences on November 12th and 13th, 1946.
+II. Report by General Hodgson (July zgth, 1945) on Greek provocation.
+Chart showing passage of British war squadron on October zznd,
+1946.
+Map of Albanian coast ; Saranda and environs.
+Report of the Commander of the Yugoslav Navy on German
+minefields.
+List of cases of vessels that have struck mines, published by
+Lloyds.
+"Aggressive acts of the G~eekm onarcho-fascist Government
+against Albania."
+"War provocation by the Greek monarcho-fascist Government
+against Albania."
+Full text of the Albanian-Yugoslav Maritime Arrangement of
+September ~oth1,9 46.
+Message from General Maitlahd Wilson, Allied Commander-in-
+Chief, Mediterranean, to Colonel-General Enver Hoxha (November ~zth1,9 44).
+Message from Mr. Corde11 Hull (November zSth, 1943).
+Message from Mr. Edward Stettinius (May zznd, 1945).
+
+[Source edition page 45]
+
+Declaration by MI'. Winston Churchill (November 4th, 1943).
+Declaration by Mr. Cordell Hull (undated).
+Letter from General Hodgson congratulating General Enver
+Hoxha on the general elections (December 4th, 1945).
+Photocopies of parts of Medri Charts, M.6502 : NO. 3, December 17th, 1945 ; No. 8, May 6th, 1946 ; No. 12, August 26th, 1946,
+showing the route through the North Corfu Channel on those
+dates. The map of December 17th, 1945, gives to the route the
+number 18/54.
+Telegram from harbour-master of Saranda, October zznd, 1946.
+Letter from the Albanian Amy General Staff to the Foreign
+Ministry, Tirana, August 3oth, 1948.
+Summary of an article in the "Red Star", appearing in the
+Bashkimi newspaper, May 18th, 1947.
+Letters from two Greek sailors to the United Nations Commission
+of Enquiry in Greece (February 15th, 1947).
+Report on the possibility of secret minelaying.
+Tracing of track-chart of Mauritius, taken from British Chart
+Annex 7, and position of mines according to British Chart, Annes 9.
+B.- Afte~th e closure of the written proceedings :
+(a) Before the hearing :
+Note from the Yugoslav Legation at The Hague to the Agent
+for the Albanian Govemment, dated November 8th, 1948, and
+fonvarding a communiqué of the Yugoslav Govemrnent concerning Lieutenant-Commander Kovacic's evidence.
+Tracing of swept channel and normal route for shipping through
+the middle of the North Corfu Channel.
+Tracing of swept channel and of the North Corfu Channel Zone
+not deeper than 25 fathoms.
+Tracing of respective positions of German channel and swept
+channel.
+Tracing of position of the minefield and track of Mauritius,
+Leander, Superb and Orion.
+Minutes of the Secunty Council, First Year, Second Series,
+Supplement No. 4.
+(b) At the heczring :
+Report by M. Jacques Chapelon, Professor of Analysis at the
+École polytechnique, Paris, concerning the passage of Mauritius
+through a minefield.
+Extract from Order No. 892 of the Yugoslav Ministry of National
+Defence, dated November 17th, 1945, concerning minesweepers
+M I, M 2 and M 3 (in Serbo-Croat, with French translation
+certified correct by Yugoslav Legation at The Hague).
+Sworn statement, dated November 17th, 1948, relating to repair
+of ships of the M class and type in Sibenik dockyard, between
+September 27th and November gth, 1946 (in Serbo-Croat, with
+139
+
+[Source edition page 46]
+
+French translation certified correct by Yugoslav Legation at
+The Hague).
+Photocopy of a page of the Repairs Register of Sibenik dockyard (copy, with French translation of the entries conceming
+the M 1, M 2 and M 3 vessels, certified correct by Yugoslav
+Legation at The Hague).
+Calculation made by Captain Ormanov of height of sun at
+Sibenik on October ~Sth,1 946, at 15.15 hours.
+Sworn statement concerning the officer Drago Blazevic, dated
+November 17th, 1948 (in Serbo-Croat, with French translation
+certified correct by Yugoslav Legation at The Hague).
+Certificate concerning movements of ships of the ill.class and
+type in October 1946, dated No\-ember 17th, 1948 (in Serbo-Croat,
+with French translation certified correct by Yugoslav Legation
+at The Hague).
+British Admiralty Chart No. 1581 : Approach to Sibenik harbour.
+Sketch of Panikovac by Yugoslav Hydrographid Institute, dated
+November zoth, 1948.
+Cadastral plan of town of Sibenik.
+Photographs Nos. 1, II and III of Panikovac, taken from Cipad
+quay, or near hi.
+Photographs Nos. IV and V, looking towards Panikovac from
+the terrace on which Lieutenant-Commander Kovacic was.
+Italian map of Sibenik (No. 558).
+Report of the 1-ugoslav "Commission" concerning the nonarailability of the M 1, M 2 and BI 3 (three original documents
+dated Kovember th, 1946, with French translations certified
+correct by Yugoslav Legation at The Hague).
+Work dockets of Sibenik dockyard for Orders Nos. 920, 921
+and 922, relating to ships M 1, M 2 and M 3 (original documents
+in Serbo-Croat, with French translations certified correct by
+Yugoslav Legation at The Hague).
+1Vork docket concerning ship M 1, signed by Lieutenant-Cornmander Kovacic (original in Serbo-Croat, with French translation
+certified correct by the Yugoslav Legation at The Hague).
+''\York Orders" Nos. 923, 921 and 922, addressed to the Directorate of Sibenik Dockyard, dated September 26th, 19.46, and
+concerning repairs to be done to the boilers of the ships Ii.I r, AI 3
+and JI 3 (three original documents in Serbo-Croat, with French
+translations certified correct by Yugoslav Legation at The Hague).
+Affidavit by the Presidency of the Government of the People's
+Federal Republic of Yugoslavia, on the subject of legal time in
+Yugoslavia (in Serbo-Croat, dated November 27th, 1948, with
+French translation certified correct by Yugoslav Legation at
+The Hague).
+Reply by the experts of the Albanian Delegation (December 4th
+1948) to questions piit by Judge ECer to the Mixed Committee of
+Experts on November 3oth, 1948 : (1) 15:as there sufficient light
+140
+
+[Source edition page 47]
+
+at 17.35 hours to enable Lieutenant-Cornmander Kovacic to see
+the vessels moored in Panikovac.Co1-e ? (2) If the light was
+sufficiené, would the lie of the land have obstructed the \?ew ?
+57. Nautical instructions for the East Mediterranean (Imprimerie
+nationale, 194 5).
+5s. Sketch showing part of a vessel of the hl-class that might have
+been seen from the coast at night from an altitude of 15 feet,
+the vessel being : (1) 550 metres from the shore ; (2) I$ miles
+from the shore (sketch made by Captaiii Ormanov and shown
+to the Court at the hearing on the afternoon of December 8th, 1948).
+59. Register of the naval dockyard at Sibenik.
+60. Map of "Europe and North Africa", sheet 4, published by the
+French National Geographical Institute in 1941-showing
+shipping routes.
+61. Four photographs of the coast near Saranda.
+62. Sketch showing roughly the hills around Panikovac Cove towards
+Sibenik (sketch made by Rear-Admira1 Moullec).
+63. Observations by Rear-Admira1 Moullec on the Reports of Commander Sworder as to the position of the ships in Panikovac Bay.
+64. Original of Report of Commander of First lnfantry Regiment,
+dated May ~jth,1 946.
+65. Original of letter of May 16th, 1946, addressed to Tirana.
+66. Original of Captain Ali Shtino's Report, dated October 23rd,
+1946 (concerning events on October zznd, 1946).
+,4.-During the written proceedings :
+I. Special Agreement between Albania and the United Kingdom,
+dated llarch 25th 1948.
+B.-During the hearing :
+2. Questionnaire prepared bÿ M. Pierre Cot and Sir Eric Beckett,
+and submitted to the experts of the two Parties on November 26th,
+1948 : height of the sun at Sibenik on October 17th and 18th, 1946.
+3. Replies established jointly by the Parties to above Questionnaire
+(?\To\.ember 27th, 1948).
+4. Two diagrams showing the mornent when a shadow would have
+faIlen on the jetty where the mines were being loaded.
+5. Sketch of the environs of Sibenik showing nearest points from
+which the jetty would have been visible during the journey of
+the motor-boat that Lieutenant-Commander Kovacic was in.
+(Three possible routes are gi\-en in the Questionnaire.)
+6. Joint Sote of Cnited Kingdom and Albanian experts on the
+qiiestions put by Judge ECer to the Mixed Committee of Experts
+on Yo\wnber 3oth, 1948 : (1) \Vas there sufficient light at 17.35
+hours to enable Lieutenant-Commander Kovacic to see the vessels
+inoored in Paniko\-ac Co\-e ? (2) If the light was sufficient, wouid
+the lie of the land have obstructed the view ?
+
+[Source edition page 48]
+
+EXPERTS' REPORT OF JANUARY 8th, 1949.
+The Committee of Naval Experts appointed by the International
+Court' of Justice on December 17th, 1948, have the honour to submit
+,to the Court the following unanimous answers to the questions put
+to them :
+Question (1). You are requested to examine the situation in tlze North
+Corfu Strait immediately before October eond, 1946,
+' from the point of view of
+(a) the position of the swept channel.
+(1) (a) ANSWER:
+The German track shown in Annex 2 to the United Kingdom
+Memorial could not be the centre line of a one-mile swept channel
+because the western boundary would in this case intersect Minefield G 146 c.
+When the Royal Navy planned to sweep a channel through the
+North Corfu Strait in 1944, route 18/32 and 18/34 was established,
+which was, according to us, the only feasible way to make a passage
+through Corfu Channel without doing unnecessary sweeping of Minefield QBY 539. We consider therefore route 18/32 and 18/34 the quickest
+and safest way to open up a route through the North Corfu Channel.
+(b) the efjectiveness of the mineclearance prer~iolrsly
+carried out.
+(1) (6) ANSWER:
+In order to decide whether the sweeping operations which were
+carried out in October 1944 and January 1945 were effective, it is
+necessary to 'study the minesweeping reports. The latter, however,
+could not be produced. But bearing in mind :
+1st. That the Royal Navy had a great esperience in mineclearing ;
+2nd. That the sweeping .of a moored minefield is far easier than
+sweeping a ground minefield ;
+3rd. That the sweeping of a moored minefield, if carried out in the
+proper way, can be considered 100% safe ;
+Nok-Speaking strictly, a channel can only be declared safe
+at the time when it is cleared. One cannot guarantee that
+the channel in the future will remain so. Some evil person
+may lay mines-as in fact has been done in this case-and
+there is also the very remote possibility of a mine which went
+to the bottom when laid, rising to "correct" depth later on.
+
+[Source edition page 49]
+
+Eut if such eventualities were to be taken into account, it
+would mean that no waters could be declared safe, and mined
+areas could never be used any more ;
+4th. That this charnel was swept for troopships and supplies to
+pass through for the Italian front,
+we assume that the clearing was camed out with the greatest possible
+care.
+and (c) the risk of encountering floating mines in this chanfiel
+owing to the $roximity of the old minefields, and to
+study the German documents in order to obtain information from them concerning the ty$es of mines laid
+in those minefields.
+The presence of moored Italian minefields off Corfu explains the
+possibility of floating mines in this area. We cannot see, however,
+that the possible presence of floating mines could be connected with
+the mining of H.M.S. Saumarez and H.M.S. Volage, as the nature of
+the damage sustained by the above ships excludes the faintest possibility of its cause being a floating mine.
+It is often thought thatsfloating mines are a serious danger to shipping.
+This is entirely wrong.
+To Our knowledge, it has not been definitely proved that more than
+one single ship steaming on a straight course (as was the case with
+l,
+Saumarez and Volage), has been damaged by a floating mine, although
+thousands have been afloat during the two great wars.
+Admittedly, there are ten more cases of ships having been struck by
+alleged floating mines ; but these cases have not been proved.
+Apart from other obvious reasons, such as the very minute space of
+sea occupied by a mine, the ease with which it is seen in daylight and
+its normally harmless condition, there is the fact that the bow wave
+bnishes the mine clear of the ship.
+Extensive practical tests have proved that it is impossible to ram a
+floating mine, however hard one tries.
+Whatever the possibility may be of two mines from the old German
+minefield floating about, it is, as stated above, of no interest in this
+case, as the damage done to the two ships could not possibly be caused
+by floating mines.
+A close study of the German docunlents diows :
+I. That until October 23rd, I~Mo,n ly Italian mines were laid in the
+North Corfu Channel area ;
+l The Belty Hindley, October 1947.
+143
+
+[Source edition page 50]
+
+2. That GY types of mines were available at Trieste on April 25th,
+194.5 ;
+3. No manufacturer's numbers are shown in these documents.
+,Vote.-Each mine has a number stamped on the bottom plate. The
+Germans had a very elaborate spstem of tabulating al1 particulars of the
+mines on so-called Kennkarten. If those cards could be traced for the
+Adriatic Zone, one could compare the numbers on the bottom plates
+of the swept mines with these Kennkarten in order to find out the place
+of origin of the mines that were laid in North Corfu Channel.
+Q~lestion( 2). 1-ou are reqzresfed to examine the information and docniments available concerning tlze navigation of the Mauritius,
+the Saumarez and the Volage, in order to ascertain wltat
+conclusions, if any, may be drawn concerning the identify
+of the type of mines which strnick the two last-named
+z-essels with the type of mines discovered on Noaember 13flt,
+1946, and to state how fur, in yozcr opinion, these conclusions can be regarded as oalid.
+. .
+-1lthough the log-books of APatcritizds, Leander and 1701age show
+some inaccuracies in speed and course, we consider it beyond any
+doubt that Saumarez and Volage were mined in approsimately the
+positions indicated in Annex g to the United Kingdom Memorial.
+Even if both ships were mined nearer the northern edge of the
+channel, they would still have been victims of the two lines of mines
+shomn in Annes g.
+Our conclusion, therefore, is definite : that both ships were struck
+by the type of mine which was swept on November 13th, 1946.
+Qtrestion (3). 1-OU are requested to examine the information and documents aziailable relating to tlze danzage sugered by the
+Saumarez and tlze Volage, and fo the fragments of n
+mine found in tlze Volage, with a aiew to ascertaining
+wltat conclusions, if any, may be drawn regarding tlze
+type of mines which strzrck these aessels, and how fur
+these co~tcl~rsio~cazsn , in yozrr opinion, be regarded as valid.
+(3) AXSWER:
+-4s far as it is possible to estimate the damage sustained by Sazrmare:
+and I'olage, which were ships of modern construction, this damage
+must have been caused by the esplosion of a moored contact mine
+of approximately 600 lb. charge. The reasons for this are :
+
+[Source edition page 51]
+
+1st. A ground mine would not cause this type of damage, and
+certainly not at this depth of water ;
+2nd. A floating mine can be excluded altogether, as previously
+explained ;
+3rd. The only remaining possibility is a moored contact mine.
+Of the fragments found in Volage, the two small, slightly curved
+pieces are obviously not parts of a mine shell ; for they are of cast iron.
+The third piece, which is part of a horn adapter, fits closely to the homs
+and elements of a GY mine or of a GR mine, the adapters of these two
+types of mine being identical.
+Question (4). You are requested to examine tlze qwstims whether it is
+possible to draw (a) from the Positiolt of the mines swept on
+Noaember 13th, 1946 ; (b) from the fact that a complete
+mineclearafice of the Albanian waters in this area had not
+yet been carried out ut that time; and (c) from the passage of
+the Mauritius on the zznd October, 1946, without striking
+any mine, any conclusions, and, if so, what conclusions,
+regarding the existence of a methodicdly laid minefield and
+the object for which, in the light of tlze disposition of the
+mines, the9 appear to have been laid.
+The position of the mines swept on the 13th November, 1946, strongly
+indicates that the mines were methodically laid in two rows.
+Any previous minesweeping in the Medri Route Channel would
+necessarily have detected such mines, if they had been laid at that time.
+The minefield was skilfully placed, as if its combined object was :
+(1) offensive : to stop ships drawing some IO feet or more from passing
+through the channel; (2) defensive : to stop ships of the same draught
+from entering Saranda Bay.
+That Mauritius passed unmolested through the minefield only shows
+she had good luck. There is nothisg strange in a ship getting through
+a minefield with a densiiy of mines as indicated by the sweep.
+Question (5). From the state of the mines sze~epto n h70z~ember1 3th, 1946,
+can you draw any conclusions, and, if so, what conclusions,
+as to the date on which they were moored, and, in particular,
+on the question whether they ulere moored before or aftej
+the ~2ndO ctober, 1946 ?
+The condition of the mines swept during the sweeping operation on
+the 13th November, 1946, as shown in Supplement No. 6 of the Security
+Council Officia1 Records, leads to the conclusion that the mines should
+be considered as recently laid.
+145
+
+[Source edition page 52]
+
+1f7e are not in a position to give even an approximate date for the
+minelaying. The amount of barnacles, growth, rust, etc., is dependent
+on many factors which Vary considérably with prevailing conditions.
+Only actual tests at the same time of the year and in the same waters
+could give sufficient information to afford a rough estimate of the age
+of the minefield.
+1Vith nothing more than general information, al1 we are prepared
+to state with certainty is that the mines cannot possibly belong to a
+minefield laid during the war.
+The question whether the mines were laid before or after the
+22nd October, 1946, cannot possibly be answered. The state of the
+mines would certainly not alter noticeably from the 21st to the 23rd of
+October.
+Question (6). Having regard to the replies given, by agreement between
+the Parties, to the qz~estionsc oncerning the position of the
+sztn at Sibenik on October 17th and 18th, 1946, and on the
+basis 01 the docz~mentsi n the case, does the examination
+of the factztal circumstances concerning (a) the date, (b)
+the time of day, (c) the lie of the land, (d) the conditions
+of visibility, (e) the position of the objects (ships, mines,
+horns, rails), (f) their form, coloztr and dimensions, lead
+yozt to the conclusion that, in the circumstances in which
+the witness Kovacic wm sitztated, it was possible for him
+to see the loading and the presence of GY mines on board
+two ships of the "M"-class in Panikovac Cove and the
+rails on the ships ?
+(6) AKSWER:
+'The following could have been seen :
+1. At 16.15 hours:
+(a) The two ships of the "JI"-class, if moored at Panikovac Cove ;
+(b) the mine-bodies and sinkers on board these ships ;
+(c) the loading of the mines.
+These observations could easily have been made, whichever of the three courses indicated on map N.I.D. 14/32/48>
+Annex C in File E.1111172, was followed by the launch.
+Provided that the ships were moored on the northern side
+of the Cove, as stated by the witness Kovacic, also :
+(d) that the mines were newly painted (the gloss).
+If the launch had followed course (i), it would have passed
+within about 4jo metres of the Cove, and then
+(e) horns and rails could have been seen, although idintly.
+If either of courses (ii) or (iii) was followed, we think it
+must have been impossible to see horns or raiis.
+I4 6
+
+[Source edition page 53]
+
+II. At 17.35 h0~r.S:
+Given no obstacles in the line of sight :
+(f) It would perhaps be possible from Kenc's house to see the
+silhouettes of the ships loaded with mines.
+The above conclusions (a) to (f) are based upon tests made at
+"Naval Base A" (see Annex rl) which were carried out at a time corresponding to 17.28 hours in Sibenik, on October 18th, 1946, and
+under similar circumstances.
+Possible obstructions to the line of sight :
+Three different opinions have been given by the Parties as to the
+possible position of the ships at 17.35 hours.
+1. Ships moored along the south-western pier. In this case the
+configuration of the land woüld prevent the ships from being
+seen.
+2. Ships moored in the most westerly part of the north-eastern
+pier, where they also wodd have been hidden.
+3. Ships moored along the "built-up" extension of tlie north-eastern
+9UaY.
+From the documents tïled with the Court-espcial:y Annex 4 (V),
+File E.II/1/77 - we think that the statement made by the United Kingdom expert in Appendix z to Annex 1, File E.I1/1/89, as to the configuration of the land, appears to be the more correct. In that case
+the silhouettes of the ships may partly have been seen from Keric's
+house.
+A more definite statement cannot be made without inspection of
+the locality.
+Question (7). You are requested to state your opinion as to
+(a) the r~umber of GY mines which a minelayer of the
+"M"-class could load.
+(7) (a) ANSWER:
+We assume that the "W-class ships are of about 130 tons, in which
+case the dimensions given in the Swedish Marinkalender would be
+approximately correct.
+According to these dimensions, the number of GY mines these minelayers can take would be. twenty, if stability allowed for this top weight.
+(b) the time required by h o shifis of this clas, emh
+possessing a derrick and a steam winch, a d lying
+apfiroximately in the positions iftdicated by the m'tness
+Kovacic, to take their complete load of mines.
+(7) (b) ANSWER:
+Under normal conditions, it should be possible to load oce mine with
+one derrick in 14 minutes' time. This time is based upon a g~eantu mber
+Not reproduced.
+147
+
+[Source edition page 54]
+
+of actual reports from Our three navies, and the times are remarkably
+consistent.
+Under less favourable conditions, the time required should not be
+more than 3 minutes per mine per derrick.
+We assume that the full load of mines could have been taken on board
+within an hour.
+and (c) whether GI' mines are normally fitted with lzorns wherz
+they are loaded on ships, or wlzetlzer, on the contrary,
+they norntally have to be fitted with the horns at the
+time when they are moored.
+(7) (c) ANSWER:
+Guards to the horns are not fitted to GY mines.
+These mines are loaded with or without horns in place, according
+to the rules laid down by the authorities concerned. In Our opinion,
+the safest procedure would be to unscrew the bakelite covers and screw
+in the horns after the mines were on board.
+This requires approximately 5 minutes per mine per unskilled person
+and could be done at any time before the mines are laid.
+Question (8) (i). On the assumption that the mines discovered on November 13th, 1946, were laid at some date within the fm
+preceding months, whoever may have laid them, you
+are reqwsted to examine the information available
+regarding (a) the number and the naizcre of the mines,
+(b) the means for laying them, alzd (c)t he time required
+to do so, having regard to the dieerent states of the sea,
+the conditions of the locality, and the diflcrent weather
+conditions, and to ascertain whether it is possible in that
+way to draw any conclusions, and, if so, whd conclusions, in regard to-(i) the means employed for layingthe
+mine field discovered cm ATovember qth, 1946.
+(8) (i) ANSWER
+There is no doubt that the 24 or more GY mines which were laid
+at Saranda, were placed in their position by means of surface craft.
+The laying of GY mines is not done by submarine or by aircraft.
+The time necessary to lay those mines is approximately the same as
+the time taken to steam the distance between the points where the
+mine barrage is to be laid, plus the necessary time to approach and
+leave the area of vigilance and to take fixes.
+The total time that the minelayers would be in the waters between
+Cape Kiephali and San Giorgio Monastery amounts to about two and
+a half hours at a speed of six knots, if the ships are approaching from
+the North and leaving towards the North.
+
+[Source edition page 55]
+
+If they approached frorn the South the time would be about two
+hours from the neighbourhood of Barchetta Rock to the northern end
+of the minefield, provided they left towards the South.
+If the ships approached the area of vigilance from the North and
+left towards the South, the time necessary between Cape Kiephali
+and San Giorgio Monastery would be about two hours.
+If the ships approached from the South and left towards the North,
+the time would be about two hours.
+Questiota (8) (ii). and to (ii) the possibility of mooring those mines
+with those means zithout the Albanian authorities
+being aware of it, having regard to tlze extent of the
+measures of vigilance existing in the Saranda region.
+(8) (ii) AXSWER:
+The possibility of seeing the operation. The Corfu Channel can be
+navigated with no great difficulty, when it iç a question of simply
+passing through. But to place a minefield accurately, as was done,
+requires a reasonably good visibility so that definite cross-bearings on
+the coast can be taken, as there is only one lighthoiise in the 1-icinity.
+The necessary landmarks would probably be at a greater distance
+away than the distance from the fix (taken before starting the minelaying) to the shore : for instance, the Monastery and Limion Point
+might be selected. Incidentally, one row of mines does actually point
+to both of these landmarks. Another bearing might be taken on
+the north-west promontory of Denta Point. Of course, objects can
+be seen much more clearly when looking seawards than when looking
+landwards.
+The minelayer must have passed at about 500 metres off the coast
+between Denta Point (an obvious place for a look-out) and the
+San Giorgio Monastery.
+From this part of the coast the minelaying could easily have been
+observed by a look-out with ordinary hinoculars.
+The ships would probably have kept t~ the swept channel and
+might therefore also have been seen from Cape Kiephali and even
+more so from the San Giorgio hIonastery ; for if the eastern line of
+mines was laid frorn the South, the minelayer must probably have
+been within half a mile of the Monastery.
+If the minelaying was done in darkness, it is doubtful whether it
+could have been observed from Porto Edda.
+If done in daylight, it can unhesitatingly be said that the operation
+must have been noticed bÿ the Albanian authorities.
+The possibility of hearing. The most favourable conditions for
+liearing a minelaying operation would be :
+(a) dead quiet in the immediate vicinity of the observer ;
+149
+
+[Source edition page 56]
+
+(b) wind blowing off shore (no surf) ;
+wind force 3 or less (scale Beaufort) ;
+(c)
+(d) people ashore suspecting some action to be going on, and being
+on the alert ;
+(e) people on board minelayers not skilful (unnecessary lights
+and noises) ;
+(f) where echoes strengthen the sound.
+Tests which we have canied out at "Naval Base B" (see Annex 2 l)
+under similar conditions to those stated above show that rail noise
+could be heard faintly at a distance of about 1,200 metres, while a
+splash could be heard faintly only at about 650 metres.
+Additional noises quickly reduce the audibility.
+Accordingly, under favourable conditions it would be possible to
+hear the minelaying operation from Limion Point and from the coast
+b-e tweenDenta Point and San Giorgio Monastery, but not from Porto
+- -
+Edda.
+Under less favourable conditions it would, however, be impossible
+to hear the minelaying from any of the positions mentioned.
+We are not in the possession of sufficient information as to conditions when the mines were laid to give a more definite statement.
+This Report was drawn up in English in one copy, at the Peace
+Palace, The Hague, this eighth day of January, one thousand nine
+hundred and forty-nine.
+(Signed) S. ELFFERICH. J. BULL. AND. FORSHELL.
+(Signed) S. T. CROSS,
+Secretary of .the Cornmittee.
+'
+Not reproduced.
+
+[Source edition page 57]
+
+DECISION OF THE COURT, DATED JANUARY 17th, 1949,
+REGARDING AN ENQUIRY ON THE SPOT.
+The Court requests the Experts appointed by the Order of the,17th
+December, 1948, to proceed to Sibenik and Saranda, and to make, on
+the land and in the waters adjacent to these two places, any investigations and, so far as possible, any experiments which they may
+consider useful with a view to verifying, completing and, if necesary, modifying the answers given in their Report filed by them on
+-
+January 8th, Ï949.
+The Parties shall have the right to make suggestions to the Experts
+regarding the points to which their investigations and experiments
+should be directed.
+The Registrar, with the authority of the President, shall make the
+preparations required for the journey of the Experts and for ensuring
+that they will receive a11 the facilities essential to the due and prompt
+accomplishment of their mission.
+IVithin one week of the filing of the complementary Report of the
+Experts in the Registry, the Parties may file in the Registry their observations upon any new statements which it may contain.
+
+[Source edition page 58]
+
+EXPERTS' REPORT DATED FEBRUARY 8th, 1949, ON THE
+INVESTIGATIONS AND TESTS AT SIBENIK AND SARANDA.
+appointed by Order of Court of Decernber 17th, 1948, visited Sibenik
+and Saranda in pursuance of the Court's decision of January 17th, 1949.
+They have the honour to subrnit to the Court a report on the observations made and tests carried out by them.
+Investigations were made as to the following points :
+1. At Sibenik on January 24th and 25th, 1949
+(a) Length of the quays at Panikovac Cove ;
+(b) existence of a "built-up quay" ;
+(c) depth of water alongside the quays in Panikovac Cove ;
+(d) existence of a wreck or of obstructions alongside the southwestern quay ;
+(e) configuration of the land at Panikovac Cove ;
+(f) general lay-out of the tunnels at Panikovac Cove;
+(g) what could be seen of an "Mt'-class minelayer moored in
+Panikovac Cove, during the course of the journey by motor
+boat past the Cove, following :
+(1) route (i),
+(2) route (iii),
+as these routes are described in Annex C to the document
+filed in the Registry on November 27th, 1948, and headed :
+"Agreed answers to questions in connexion with state of Sun
+at Sibenik" ;
+(h) possibility of mooring a motor launch at Kulina Point ;
+(2) a general inspection of "M 2" ;
+(j) the line of sight from Keric's terrace, and what could be
+seen from the tenace in broad daylight, and at the end of
+civil twilight on January qth, 1949 (17.30 hours) ;
+(k) the time required for walking from Mo10 Krka, via Kovacic's
+house, to Keric's house ;
+II. At Saranda on Janzcary 28th and zgth, 1949 :
+(a) Survey of the Coast from Limion Hill to San Giorgio
+Monastery ;
+(b) \-kit to the Monastery by land ;
+(c) visit to Denta Point by land ;
+(d) possibility of observing, from the San Giorgio Monastery,
+the passage of a ship by night along the line on which the
+eastern row of mines was laid (as shown in Annex 9 of the
+United Kingdom Memorial) ;
+(e) a landing at Denta Point to check the accuracy of observations
+made of this area from the sea ;
+152
+
+[Source edition page 59]
+
+(f) survey of the coast from Saranda to Cape Kiephali ;
+(g) visit to Limion Hill ;
+(h) visit to Saranda lighthouse.
+The attached sketch (Annex 1 shows the situation as it was found
+l)
+to be at Panikovac Col-e.
+DETAILS OF INVESTIGATION MENTIONED UNDER 1.
+1 (a) The quays were measured and the dimensions found to be
+approximately as given by Admiral Moullec (dimensions are shown
+in Annex 1
+l).
+At the north-eastern quay, standard small-gauge rails and minetransport cars were observed ; the latter were evidently not of the
+type used to transport German GY mines.
+-
+1 (b) No "built-up quay" was observed, nor were any remnants
+seen such as would indicate the previous existence of such a quay.
+1 (c) Soundings of the depth of water alongside the quag s were
+taken at low tide, and are shown in Annes 1 Difference etween
+l.
+high and low water : approximately 60 cm.
+1 (d) There were no traces of any wrecks or obstructions alongside
+the south-western quay.
+1 (e) The configuiation of the land was such that, at 16.06 hours
+on January qth, 1919, a ship moored an'where in Panikovac Col-e
+would be in the shade. On this dai; and at this time, the altitude of
+the sun was 7" 6'.
+Note.-16.06 hours on Januarjr 24th, was 55 minutes before
+sunset ; 16.20 hours on October ~gth1,9 46, was also
+55 minutes before sunset.
+1 (f) The entrances to the tunnels were measured. The rails
+leading to them appeared to be in working order and had probably
+been used not long before. This was proved by the absence of mst,
+which was apparent on the rails mentioned under 1 (a).
+The fact that the floor of the tunnels was covered with iron sheeting
+prevented rails from being observed.
+The tunnel led to a widened excavation which the esperts did not
+insist on examining entirely. But they were able to see old ammunition
+and ground mines stored in the tunnel and modem German ground
+mines (oval) stored in the excavation.
+Electnc light was installed in the tunnels, but was not working at
+the time of Our visit. Observations were made with the aid of a single
+electric torch and details could not be seen \-ery distinctly.
+Not reproduced.
+
+[Source edition page 60]
+
+The following colzclusions can be drawn fiom the above obsewations ut
+Pa7tikaiac Coae :
+(i) An "M"-class minelayer could have been moored along the
+south-western or along the north-eastern quay. The best place
+for loading would be the south-western quay, which is closest
+to both tunnels. If loading were to be done simultaneously
+from both tunnels, the quickest way to load two "M"-class
+minelayers would be to moor them alongside the south-western
+quay, one astern of the other.
+As there is no "built-up quay", two ships could not be moored
+along the north-eastem quay, one behind the other.
+(ii) The gloss of newly painted mines codd not have been observed
+at any tirne after 16.15 hours on October ~gth,1 946; for at
+that time the ships were in the shade.
+(iii) The entrantes to the tunnels were wide enough to permit their
+being used to accommodate German GY mines. If both GY
+mines (moored mines) and ground mines were stored in the
+excavations, it would be feasible to stow the moored mines in
+the widened area and the others in the tunnel itself. If this
+were done and if the GY mines had to be loaded, the ground
+mines would have to be cleared from the tunnel and placed
+temporarily on the quay-side, in order to remove the GY mines.
+Note.-The Yugoslav representative said that it was impossible to carry out tests with GY mines (e.g., loading
+on board ship), since no such mines were available.
+1 (g) Observations were made as to visibility while passing Panikovac
+Cove in a launch, at various distances, as shown in Annex C to the
+document filed in the Registry on November 27th, 1948, and mentioned
+above.
+At 16.16 hours on January 24th, 1949, the first trip was made on
+route (i). The altitude of the Sun at the moment was 6" 1'.
+The "M 2" was moored with her stern towards the Sibenik Bay
+alongside the north-easter'h quay, and was completely in the shade
+of the hills
+When passing Panikovac Cove on route (i), the distance from the
+launch to the Cove was measured and found to be 520 metres.
+At 16.25 hours a second trip was made over the same route.
+During both trips it was possible to obsewe :
+(a) the "M 2" moored at any place in Panikovac Cove ;
+(b) people waiking on the deck of the "M 2".
+It would be fiossible to see :
+(c) mines being loaded on board the "M 2".
+It might be possible to see :
+(d) mine bodies and sinkers on board these ships.
+
+[Source edition page 61]
+
+It would have been impossible to see :
+(e) that the mines were newly painted ;
+(f) horns or rails (ships being in the shade).
+A third trip was made at 16.35 hours on January 24th, 1949, on
+route (iii).
+The altitude of the sun at this moment was 3' 2'.
+The "M 2" was moored in the same position and the distance
+measured from the launch to the "M 2" was found to be 840 metres.
+During this run 'it zeu.~ found possible to observe ships moored in
+Panikovac Cove.
+It would be possible to observe the actual loading of mines.
+No other observations could have been made while following this route.
+1 (h) During the preparation for the trips mentioned under 1 (g),
+the north-east coast of Mandalina Peninsula was observed. Several
+jetties were seen at which a launch could easily be moored. If the
+launch calIed at Kulina Point, it would, however, follow route (ii) from
+Kulina Point to Mo10 Krka.
+We can see no reason why route (i) should be followed. Route (iii)
+would be followed if the launch clid not cal1 at Kulina Point.
+The distance from route (ii) to Panikovac Cove would be 600 metres
+and the possibility of observation would be the same as mentioned
+for route (i).
+1 (i) The "M 2" was found to be fitted out as a minesweeper.
+Minesweeping gear consisted of Oropesa gear for moored mines ; the
+minesweeping winch was situated about one metre in front of the
+aft mast.
+This ship could, however, easily be converttd into a minelayer, and
+had for the purpose the following equipment :
+(a) a derrick to load mines.
+Length of derrick: 7.80 metres. Diameter of shackle: I inch;
+(b) props in the deck to fix the sleepers of the mine rails.
+These props were well greased, and easily removable ;
+(c) length of rails on starboard and port side : each 12.70 metres ;
+distance between props : 0.675 metres ;
+three joints on either rail ;
+no turntables.
+These rails are of a sufficient length to accommodate 18-20
+GY mines in all.
+Although the inside width of rails needed for GY mines is
+70 cm. and the distance between the props on "M 2" is 67.5 cm.,
+it should be borne in mind that the actual width of the rails
+dependr entirely on the construction of the sleepers and the
+attachment of the rails to the sleepers. There exist smallgauge rails of which the width can be regulated as required ;
+at Sibenik, however, the rails were not available for inspection ;
+(d) small wire winches were screwed into the deck, but were easily
+removable.
+155
+
+[Source edition page 62]
+
+CORFU CHANNEL CASE (MERITS) (ANXES 2) 156
+The abozle Zeads ILS to the conclzuio~t fhat GT- mines co~rld be zued
+o.ir board "11 2".
+1 (j) and (k) The experts visited Keric's house to observe the
+view of Panikovac Cove from the terrace. The- went by the same
+way as Kovacic said he followed from Mo10 Krka.
+Mo10 Krka was reached at 16.43 on January 24th, 1949.
+The walk to Kovacic's house took 12 minutes, and that from Kovacic's
+house to Keric's house 14 minutes.
+tt-entlzev co?ulitions 0% January 2$h, 1949 : cloudless-clear-good
+visibility-slight breeze.
+On October ~gth,1 946, sunset \vas at 17.15 ; civil twilight Ras
+at 17.41.
+On January 24th, 1949, sunset \vas 17.01 ; cilil twilight at 17.30.
+The follou-ing obserc-ations were made : at 17.30 on January qth,
+1949, "11 2" mas not visible from Keric's house ; "JI 2;' was in the
+same position as during the afternoon (moored alongside the northeastern qua)-).
+"hl 2" \vas then instructed by telephone to move eastmard and to
+moor in a position as if a "built-up quay" esisted.
+At 17.35, when "M 2" was moored in her nexv position, it \vas still
+impossible to observe her from Keric's terrace. This was solely due
+to the configuration of the land and not to the visibility conditions.
+So long as the ship was moored in the ColTe,o nly the smoke of the
+funnel could be seen from Keric's terrace. As a matter of fact, this
+was the only proof that the ship was shifting. "AI 2" \vas then instructed
+by telephone to leave Panikovac Cove, and at 17.40 her silhouette
+became clearly visible when she had left the Cove and reached a part
+of Sibenik Ba\- that was not shaded bj- the hills. (See Annes II
+l.)
+In this position it would have been possible to obserl-e whether the
+ship was loaded with mines or not.
+Assuming that the "hl"-class ships were at Panikovac Cove and left
+the Cove after sunset, the obserz~ationsm ade in Sibefzik lead te the /olloxing
+co~tclzcsioizs:
+A. "M"-class ships could be used for the minelaj-ing operation.
+The tunnels could accommodate GY mines.
+B. It is of no importance where and how the "JI"-class ships were
+moored in Panikovac Cove, for :
+(1) at 16.15 on October ~gth,1 946, it was possible on an? of
+the routes (i), (ii) or (iii) to observe the ships and the loading
+of mines ;
+'
+Not reproduced.
+156
+
+[Source edition page 63]
+
+(2) at 17.35 on tlie same day it was impossible for ivitness
+Kovacic to see anything of the ships wherever they might
+be moored in Panikovac Cove.
+The arguments concerning :
+the way the ships ivere moored ;
+wrecks or obstructions alongside tlie south-western qiiay ;
+the configuration of tlie land ;
+jetties at KuIina Point ;
+visibility at 17.3j hours while witness Kovacic ivas at Keric's
+liouse ;
+esistence of "built-up quay",
+are of no material importance.
+C. The only possibility of observing the "M"-class ships froni
+Keric's terrace rvould not be when they ivere in the COI-e, but
+when they had left it. Witness Kovacic stated that it became
+too dark to see the ships leave the Cove. On the contrary, it
+would only be after their departure, when they had left tlie
+portion of Sibenik Bay shaded by the hills around the Cove,
+that they could have been observed.
+II. -4T S.9R.4NDA OH JANUARY 28th AND 2gth, 1949.
+II (a) -4 trip along the coast by sea, from Saranda, past Liniion
+Hill to San Giorgio Jlonastery, was made on January 28th.
+The route followed is shown in Annex III l; and passed throiigli
+the positions A, B, C, D, and back to Saranda.
+The following were observed :
+I. battery at a position just west of Saranda ;
+2. fort Likiirski, a i-ery conspicuous landmark ;
+3. lighthouse south of Likurski ;
+4. houses at Denta Point ;
+5. a landing beach near Denta Point ;
+6. San Giorgio &lonasterj-, very conspicuous against the sky.
+Attention is drawn to the fact that the course followed coincicles
+with the direction of the eastern row of mines. This course was easily
+checked bj. heading for the Jfonastery and keeping Limion Hill right
+astern, or vice versa.
+II (b) After making a general survev of the coast from Saranda-
+Limion Hill-San Giorgio IIonasterj7, it was decided to examine
+furtlier the points coted. On January 28th, a trip \vas made from
+Saranda to San Giorgio 3Ionastery ; the foot of the liill, on which
+this is situated, can be reached by car in about 25 minutes. From
+there, a patli leads up to the llonastery. The walk to the top takes
+9 minutes. Mules use this track. 3n reaching the actual ItIonastery,
+the party- found the door closed. The Albanian authorities tried in
+l Not reproduced.
+
+[Source edition page 64]
+
+vain to get those inside to open the door. Permission was then
+requested and obtained to force the door and this was done. The
+Monastery was occiipied by six soldiers, but there was accommodation
+for many more ; it had telephone communication. A stable for mules
+was seen.
+During a general survey around the Monastery, the following were
+observed :
+(a) Infantry defences just outside the building.
+(b) If the look-out posts were stationed outside the Monastery,
+thev would be able to watch only part of the Bay of Saranda,
+as a number of trees partly obstructed the line of sight. It
+was therefore obvious that another place would be used to
+watch the sea traffic close to the Monastery. This place was
+a look-out tower inside the Monastery ; it was equipped with
+benches and this higher spot afforded a much clearer view over
+the Corfu Strait and Bay of Saranda, and was not obstructed
+by trees to the same extent.
+The Albanian authorities said that the men in the Monastery slept
+there during the night and only watched the seavduring the day-time.
+This statement, however, does not seem quite to coincide with the
+difficulties experienced in obtaining entrance at the door of the
+Monastery earlier in the day.
+II (c) and (e) On the way back from the Monastery, the experts
+desired to test the observation off the houses that had been noticed
+on Denta Point. As far as could be seen, no suitable path existed,
+leading to the houses observed from the sea.
+It was therefore decided to approach Denta Point from the sea
+side. On January 29th, a trip was made by motor ship with a rowingboat in tow. A landing was made near Denta Point on a small beach
+(see Annex III l). From here, two paths, which are used by mules,
+lead over the slopes of Denta Pomt to the houses. It only took a
+couple of minutes from the shore to the lowest situated house. Here
+were seen :
+(i) infantry defence line and machine-gun posts ;
+(ii) an old house with a roof, capable of accommodating men and
+mules ;
+(iii) places where a fire could be lighted ;
+(iv) a newspaper Bashkimi dated September t th, 1948, was found
+in the trenches.
+At this place one has a clear view over the whole of the Corfu Strait,
+as well as the Bay of Saranda.
+The above fmts point to the conclusion that guards or look-out posts
+were kept at Denta Point until September th, 1948.
+Attention is drawn to the fact that the Experts' Report of January 8th,
+1949, called this spot an "obvious place" to keep a look-out, as it
+commanded the Corfu Strait as weil as Saranda Bay.
+1 Not reproduced.
+158
+
+[Source edition page 65]
+
+-Vote.-X second house which was much bigger than the
+former and could be used as quarters, was situated
+higher up the slope. This house was not visited by
+the experts.
+II (d) In the evening of January 28th, a test of visibility by night
+from San Giorgio Monastery was carried out.
+Weathev conditions : cloudless ; slight breeze ; no moon.
+The ship mentioned above was again used. Al1 lights were extinguished. One of the experts, and the Parties' experts, went to San
+Giorgio Monastery to test the degree of visibility, while the other expert
+travelled on the ship along a line identical with that on which the
+eastern row of mines had been laid (see Annex g of the United Kingdom
+Memorial).
+The party for the Monastery left Saranda about three quarters of
+an hour before the ship sailed. On arriving at the ship in Saranda,
+the other party received a telephone message from the Monastery
+confirming that the first party had arrived.
+On their way up the hi11 to the Monastery, the first party was halted
+by two soldiers with rifles. This occurrence did not seem to taliy
+with the statement made' that afternoon that the men slept during
+the night.
+The course of the ship dong the eastem line of mines was easily
+checked with the aid of:
+the background of Limion Hill ;
+Saranda lighthouse ;
+Cape Kiephali ;
+San Giorgio Monastery ;
+Denta Point ;
+Tignoso lighthouse.
+The ship was completely blacked out.
+Note.-This is the most favourable condition for the avoidance
+of detection. For usually a minelayer, like al1 oiland coal-burning vessels, would emit some smoke from
+its funnels ; and, as a rule, some sort of light would
+be used on a small ship during the actual minelaying
+operation.
+While the ship was following a course towards the Monastery, the
+line of sight from that observation post was partly obstructed by trees
+(see Annex IV
+l).
+The noise of the motor was already heard from the Monastery at
+22.20 hours (distance 1,800 metres). The ship was sighted for a very
+short while at 22.26 hours (distance 670 metres). It was not possible
+on this occasion to observe the ship for long, as it disappeared behind
+the trees (see Annex IV
+l).
+After altering course, it was sighted clearly again from the Monastery
+at 22.30 hours (approximate distance 800 metres).
+A northerly course was then set and, at 22.47 hours, a signal was
+received on board from the Monastery, stating that the ship was out
+Not reproduced.
+159
+
+[Source edition page 66]
+
+of sight. The distance \vas then calculated from a cro~s~bearintga,k en
+at 22.50, from Saranda light and a promontory south of the Monastery,
+and the distance at 22.47 hours was found to be approximately 1,900
+metres.
+Noise of motor was heard at 1,800 metres distance ;
+Ship was obserl-ed for the first time at 670 ,metres distance ;
+Ship was again clearly seen at 800 metres distance ;
+Ship was followed for a distance of 1,900 metres.
+-Voir.-This motor ship was only So feet long, had no bridge,
+wvheelhouse or fu~inela, nd w\?as very lo\v on the wvater.
+II (1) On January 29th, a general survey \vas made of the coast
+between Saranda and Cape Kiephali. Xothing extraordinarp was
+observed. Here and there were look-out posts which seemed to be
+deserted. Pill-boxes were also noticed.
+At Cape Kiephali, a house was sighted which would be an ideal place
+for a look-out, commanding the whole Medri channel.
+II (g) On January ~gtha, w-isit was paid to Limion Hill, where an
+old Italian battery was situated.
+II (II) In the Experts' Report of January Sth, 1949, it was stated
+that only one light existed to guide navigation in Corfu Strait. In
+fact, onlr one light is indicated on the -1dniiralty chart.
+But Saranda lighthouse \vas found to be working on Jaiiuary ~Sth,
+1949 ; it could not, however, be used for a cross-bearing if the minelaying
+began from the South, owing to the configuration of the land at Denta
+Point.
+This lighthouse \vould Iiave been of service if the mines were laid
+from the Yorth.
+But as no log-book or other documentary information was available,
+according to the Albanian authorities, it \vas not possible to state
+whether the Saranda light \vas in working order in October 1946.
+1. -1 minelaying operation could be carried out in Corfu Channel,
+starting :
+(a) from the Xorth ;
+(b) from the South.
+B. On a clear night, on either course, tliere would lia\-e been
+sufficient landmarks to take a fis.
+C. Pro\-ided a look-out was kept at Cape Kiephali, Denta Point
+and San Giorgio Afonastery, and under normal weather conditions for this area, and if the mines were laid from the Xorth
+towards the South :
+(i) the operation might not be seen by the look-out post at
+the foot of San Giorgio lfonastery, because "position 22.47
+160
+
+[Source edition page 67]
+
+hours" coincides with the most southerly mine which was
+cut (see Annex III ;
+l)
+(ii) the minelayers would, however, be seen from Cape Kiephali ;
+and
+(iii) must have been noticed from Denta Point, as the distances
+while passing it are within the limits of visibility shown in
+summary under II (d).
+D. If the minelaying were done from the South (which is most
+feasible, as the ships would not have to cross their own minefields if returning to the North), the minelayers would have
+been observed from Cape Kiephali, Denta Point and San Giorgio
+Monastery. It must be borne in mind that in this case the
+ships would have passed the above-mentioned points twice.
+The experts consider it to be indisputable that if a normal look-out
+was kept at Cape Kiephali, Denta Point, and San Giorgio Monastery,
+and if the look-outs were equipped with bi~wcularsa s has been stated,
+under mrmal weather conditions for this area, the minelaying operations
+shown in Annex g to the United Kingdom Memorial must have been
+noticed by these coast-guards.
+On the occasion of the experts' visit to San Giorgio Monastery,
+the Albanian authorities stated that no binoculars were now available
+at that post.
+GENERAL.
+During the general survey of the coast from Limion Hill to San
+Giorgio Monastery on January 28th and from Limion Hill to Cape
+Kiephali on January zgth, the experts noticed that Barchetta Rock
+was not so easy a point to distinpish as Tignoso lighthouse. But
+it happens that in the Reports on Operation Retail (United Kingdom
+Memorial, p. 117)~th e positions of al1 the mines swept on November 13th,
+1946, are given by bearing and distance from Barchetta Rock. The
+experts therefore consulted the Reports on Operation Retail in order
+to check the positions in question.
+They reached the conclusion that :
+I. individual ships taking part in the Operation may have selected
+any obvious landmark in plotting the position of a swept mine ;
+2. these positions would then be plotted later on a chart of the
+whole area of the sweep ;
+3. Barchetta Rock, as being the closest landmark to the most
+westerly lap of the sweep, was then selected as a dahm dan
+(reference point) for tabulating al1 the positions shown on
+page 117 of the United Kingdom Memorial ;
+Not reproduced.
+161
+
+[Source edition page 68]
+
+CORFU CHANNEL CASE (MERITS) (ANNEX 2) 162
+4. but any other reference point could just as well have been
+used, e.g., Tignoso lighthouse or San Giorgio Monastery.
+This Report was drawn up in EngIish in one copy, at the Peace
+Palace, The Hague, this eighth day of Febmary, one thousanid nine
+hundred and forty-nine.
+(Signed) AND. FORSHELL.
+(Sig- S. ELFFERICH.
+
+[Source edition page 69]
+
+QUESTIONS PUT BY THREE MEMBERS OF THE COURT
+ON FEBRUARY roth, 1949.
+(a) By Judge ZoriZiC.
+1.-On page 15 of the French text (page 14 of the English text)
+the Report amves at certain conclusions. Under heading C it is
+stated that, subject to certain conditions:
+1. the @eration might not be seen by the look-out post at the
+foot of San Giorgio Monastery ;
+2. the minelayers would however be seen from Cape Kiephali ; and
+3. they must have been noticed from Denta Point.
+In paragraph D mention is also made of the mifielayers which would
+have been observed.
+From this text it would appear that what the guards might have,
+or should have, observed was the minelayers, i.e., the ships themselves,
+and it seems that the word "operation" in sub-paragraph I refers to
+the movements and manoeuvres of the ships.
+At the end of the page (and top of next page in English text) it is
+stated that if a normal look-out was kept at Cape Kiephali, Denta
+Point, and San Giorgio Monastery, and if certain other conditions
+were fulfilled : "the minelaying operations . ... must have been noticed
+by the coast-guards".
+These passages mention "minelaying operations", and it is therefore
+important to know what meaning the Experts attach to these words ;
+in other words :
+Does the conclusion mean that the minelaying ships themselves
+(1)
+must have been observed by the coast-guards, or
+(2) Do the words "minelaying operations" mean that the coastguards must have seen not only the ships and the manoeuvres which
+they carried out, but also the actual minelaying, Le., the launching of
+the mines into the sea ?
+II.-Does the view which is obtainable from Cape Denta enable
+one to see certain parts of the Strait, or of Saranda Bay, which would
+not be visible either from Cape Kiephali, or from Saranda, or again
+from the tower of the old Monastery of San Giorgio ? In other words,
+is it not possible to see, from these look-out posts, everything which
+would lx visible from Cape Denta ?
+(b) By Judge Krylov.
+I. Were the houses at Denta Point inhabited ? Why wai the big
+house not visited ? Had these houses been recently built ?
+'
+See pp 160-161.
+1 ,, p. 161.
+
+[Source edition page 70]
+
+Please give a fuller description of the old hoiise which was
+visited (page II l of the Report).
+2. \Vere the infantry line and the machine-gun posts at Denta
+Point of recent construction (page IO l, English text) ?
+3. \Vhat was the direction of the wind during the observations on
+January 28th ? Mention is made of a slight breeze (page II 2,
+English text).
+4. Had the house that was seen at Cape Kiephali been recently
+constructed ? Had it been used as a look-out post ? (Page 13 3,
+English text.)
+5. On page 14' (English text) the Experts twice make use of the
+term normal" with reference to weather conditions. What
+is the definition of "normal" conditions ?
+6. \Vhy did the Experts think it necessary to submit observations
+to the Court relating to the fixing of the positions of mines by
+bearing and distance from Barchetta Rock (page 15 =, English
+text) ?
+7. IVhy would the ships which laid the mines have had to pass
+the Albanian Coast talice (page 14 English text) ?
+5,
+What reply can the Experts give to M. Cot's objection to their
+Report of January 8th, 1949 (Distr. 491.9, as regards the audibility
+of the operation ? (Page 1111 of Distr. 435 ter.)
+1 See p. I 56.
+,, .a 139.
+,. ,, 160.
+4 ,, pp. 160 and 161.
+,, p. 161.
+
+[Source edition page 71]
+
+EXPERTS' REPLIES, DATED FEBRUAKY uth, 1949,
+TO QUESTIONS PUT BY THREE MEMBERS OF THE COURT.
+who were appointed by the Court's Order of December 17th, 1948,
+and who visited Sibenik and Saranda in pursuance of the Court's
+decision of January 17th, 1949, have the honour to reply as follows
+to the questions which were put to them in the Registrar's letter of
+February ~oth,1 949.
+1. Questions put by Judge Krylov.
+The houses at Denta Po&.
+(a)
+The experts did not see any advantage in visiting the bigger of these
+houses, or in asking if it was inhabited, or for what use it is intended.
+In truth, the facts they had ascertained in regard to the existence of
+the look-out post appeared to them sufficient for the purposes of their
+enquiry. The only reason why they referred, incidentally, to this house
+in their report was in order to confirm the fact that Denta Point is
+not inaccessible.
+@) Date of co?zstrz~ction.
+By the term "old house" (building situated at the look-out post)
+the experts meant that it was certainly built earIier than 1946. It
+seemed to them unnecessary to seek for greater accuracy.
+In regard to the bigger house, the experts thought it unnecessary
+to estimate or to make enquiries in regard to the date of its construction,
+for the reasons given above in paragraph (a). They are, however,
+able to state that, as seen from the sea, it seemed to be of more recent
+construction than the building situated at the look-out post.
+Description of the "old house".
+(c)
+The dimensions of the "old house" were approximately as follows :
+Length : IO m. ; width : 2.50 m. ; height : 2.50 m. It is used as a
+stable. In front of the door, which is situated in the narrow face
+of the house looking towards the South-West, there is a place used
+for fires.
+The experts considered it useless to spend time in examining the
+"old house" in closer detail.
+The infantry trenches and the machine-gun posts at Denta Point
+are in an excellent state, though that does not mean that they are
+of recent construction. In truth, the same poor vegetation which
+165
+
+[Source edition page 72]
+
+one finds everywhere on this rocky coast grows also on the parapet
+of the trench, made of the excavated soil.
+Moreover, the experts were informed that these defence lines had
+been constructed by the Italian troops.
+Ad 3.
+The very slight breeze was blowing from the N.-E.
+Ad 4.
+The experts saw no purpose in prolonging their investigations by
+asking to go on shore at Cape Kiephali. The observations the'; had
+made at Denta Point, together with the remarks given in their report
+under No. II (f),s eemed to them sufficient for the needs of their enquiry.
+Ad 5.
+According to the Mediterranean Pilot, Volume III, one can consider
+the following weather conditions as being normal.
+(a) Wind.
+During surnrner, north-westerly winds are most prevale,nt, but in
+winter those from the South-East. In settled summer weather, when
+the barometer is high, and often in winter, land and sea breezes prevail.
+The land wind is light and, near the Corfu Channel, it blows from
+North to North-East. It begins to blow two or three hours after
+sunset, and increases in force until after midnight, when it decreases,
+falls calm at sunrise, freshens again as the Sun gets higher, veering
+some points eastward until about g a.m., after which it dies away and
+is succeeded by the sea breeze.
+(b) Clouds.
+When land and sea breezes prevail, there is little cloud.
+South-east wind may be accompanied by rainfall, and an overcast
+sky may be expected, the average for October being 40 % covered
+with clouds.
+(c) Visibility.
+Visibility is usually good in the Adriatic, except when the Bora
+blows and causes rainfall. Ex,ceptionally good visibility often occurs
+on the Dalmatian coast.
+Note.-The Bora is a local wind which can blow very strongly
+from the North-East for about 15 or 20 hours, with
+heavy squalls. thunder, lightning and rain at intervals.
+It generally dispels any hovering clouds or fog, and
+when it blows with great force the weather is very
+clear.
+(d) Conclz4sions.
+The experts when mentioning "normal" weather conditions under
+paragraph D of their conclusions on page 15 l (English text) have
+'
+See p. 161.
+r 66
+
+[Source edition page 73]
+
+therefore in mind the following weather : clouds 3-4110th-visibility
+good (20 miles)-no fog or rainfall-slight easterly breeze.
+Ad 6.
+From the position of the mines indicated in the United Kingdom
+Memorial, Barchetta Rock is not sufficiently visible to be used for
+taking fixes. Why, then, it may be asked, does the Memorial calculate
+the positions of the mines with reference to that rock ?
+The experts thought they should seek an answer to that question.
+They found it, and gave it in their report, in order to fqrestall any
+question about it.
+Ad 7.
+As stated in the Experts' Report of January 8th, 1949, under (8) (i),
+there are four operational possibilities for laying mines in the Corfu
+Strait. They are :
+1. Approach from the North and leaving towards the North ;
+II. Approach from the North and leaving towards the South;
+III. Approach from the South and leaving towards the South ;
+IV. Approach from the South and leaving towards the North.
+In order to carry out the operations mentioned under 1 and III
+the ships would have had to pass the area of vigilance twice. If the
+operations under II and IV were carried out, the ships would pass
+the area of vigilance only once.
+If the area of operations is approached from either North or South
+and the ships carrying out the operations leave again either to the
+North or South, they can adopt two methods of laying the mines:
+(a) from the North ;
+(b) from the South.
+Operation 1 is discussed as regards method (a) and as regards method (b)
+in the Experts.' Report of February 8th, 1949, A to D of Section II.
+If operation III was carried out by method (a) or by method (b) the
+conclusions contained in the Experts' Report of February 8th would
+have been as follows :
+Conclusions A and B.-No change.
+Colzclusiort C.-Provided that a look-out was kept at Cape Kiephali,
+Denta Point and San Giorgio Monastery, and under normal weather
+conditions for this area, and if the mines were laid from the North
+towards the South
+(i) the operation might not be seen by the look-out post at the
+foot of San Giorgio Monastery ;
+(ii) the operation would not be seen from Cape Kiephali ;
+(iii) the minelayers must have been noticed from Denta Point.
+Co?iclzcsim D.-If minelaying was carried out from the South towards
+the North, the minelayers would have to take a fix and plot this fix
+south of a point at which the actual minelaying operation would start.
+167
+
+[Source edition page 74]
+
+CORFU CHANNEL CASE (MERITS) (ANNEX 2) 168
+As this fix was the reference point for this particular minelaying operation, it had to be in line with the row of mines and consequently
+much closer to the San Giorgio Monastery than the position of the
+most southerly mine, as indicated in Annex 9 of the United Kingdom
+Memorial.
+In this case
+(i) the ships must have been observed by look-out posts from San
+Giorgio Monastery and from Denta Point ;
+(ii) the operation would not be observed from Cape Kiephali.
+It must be borne in mind that in this case the ships would have
+passed the above-mentioned points twice, with the exception of Cape
+Kiephali.
+A comparison of operations I and III :
+Operation I. Operation III
+(a) Minelaying from the North : (a) Minelaying from the North :
+I. Operation rnight not be seen I. Operation might not be seen
+by the look-out at San Gior- by the look-out at San Giorgio Monastery. gio Monastery.
+2. Minelayers would be seen 2. Operation would not be seen
+from Cape Kiephali. from Cape Kiephali.
+3. Minelayer must have been 3. Minelayer must have been
+seen from Denta Point. seen from Denta Point.
+(b) Minelaying from the South : (b) Minelaying from the South :
+I. Minelayers would be seen by I. Minelayers must have been
+the look-out at San Giorgio seen by the look-out at San
+Monastery. Giorgio Monastery.
+2. Minelayer must have been 2. Minelayer must. have been
+seen from Denta Point. seen by the look-out from
+Denta Point.
+3. Minelayers would have been 3. Operation would not have
+seen from Cape Kiephali. been seen from Cape Kiephali.
+The difference between operation 1 and operation III is that when
+a ship approached the area from the South, she would not be observed
+by a look-out post situated at Cape Kiephali. In both cases, the
+look-out posts at Denta Point must have seen the minelayers ; in
+other words, the minelayers could not have escaped the notice of the
+look-out posts at Denta Point, and if the minelaying were started
+from the South, it must in both cases have been seen from the San
+Giorgio Monastery.
+168
+
+[Source edition page 75]
+
+II. Qpestions put by Judge ZoriEiO.
+Ad 1.
+Bv the term "the operation" in conclusion C (i) the experts meant
+the whole of the minelaying operation (i.e., both the manoeuvres of
+the ships and the actual launching of the mines).
+By employing the term "minelayers" in paragraphs C (ii) and C (iii),
+the experts intended to indicate that the ships which were used for
+the minelaying operation would in case C (ii), or must in case C (iii.)
+have drawn the attention of the look-out posts.
+From Cape Kiephali the view extends over the whole of the Strait,
+but not over Saranda Bay. From Saranda the view extends over the
+bay, but not over the whole of the Strait. From the San Giorgio
+Monastery the view extends over the whole of the Strait and over the
+greater part of the bay.
+But Denta Point, which projects further than the other promontories, commands both the whole of the Strait and the whole of the
+bay. The investigation has confirmed the conclusion which was
+derived from a study of the map : this spot is very suitable for a lookout post.
+III. Qpesdon put by Judge EEer.
+In their Report of January 8th, 1949, the experts concluded that,
+having regard to the insufficiency of the information available as to
+the conditions under which the mines were laid, it was not possible
+to give a precise opinion concerning the possibility of hearing the
+minelaying operations.
+After their visit to Saranda, the experts added nothing further on
+this subject. They confirm that they have nothing to add. The
+conclusions which they have drawn in regard to the possibility of
+seeing the operation appear to them to deprive the question whether
+the operation could be heard of any further importance.
+In these circumstances, they think it unnecessary to reply to the
+objections on this subject that have been made in regard to their
+report of January 8th, 1949 ; at the same time, thev do not for a moment
+admit that these objections are justified.
+Done in English, in one copy, at the Peace Palace, The Hague, this
+twelfth dav of February, one thousand nine hundred and forty-nine.

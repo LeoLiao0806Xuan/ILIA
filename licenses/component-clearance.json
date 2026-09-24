@@ -1,0 +1,33 @@
+{
+  "reviewed_at": "2026-09-24",
+  "components": {
+    "nvidia_cuda_runtime": {
+      "public_distribution": "conditional",
+      "condition": "Build verifies the three Attachment A DLL hashes, stages only application runtime files, installs the official EULA snapshot, and requires acceptance of component-specific installer terms. External legal review remains recommended."
+    },
+    "microsoft_vc_runtime": {
+      "public_distribution": "conditional",
+      "condition": "Build only from a validly licensed Visual Studio VC\\Redist source; enforced by build-installer.ps1."
+    },
+    "webview2_evergreen_offline_installer": {
+      "public_distribution": "cleared",
+      "condition": "Use the unmodified official Evergreen Standalone Installer in Microsoft's documented offline deployment workflow."
+    },
+    "qwen3_4b": {
+      "public_distribution": "cleared",
+      "condition": "Preserve the pinned Apache-2.0 license."
+    },
+    "bge_m3_onnx_int8": {
+      "public_distribution": "cleared_with_provenance_notice",
+      "condition": "Preserve model and conversion provenance, MIT declaration and FlagEmbedding copyright notice."
+    },
+    "llama_cpp": {
+      "public_distribution": "cleared",
+      "condition": "Preserve the pinned MIT license and bundled third-party notices such as LLVM OpenMP."
+    },
+    "onnx_runtime": {
+      "public_distribution": "cleared",
+      "condition": "Preserve the pinned MIT license and upstream ThirdPartyNotices.txt."
+    }
+  }
+}

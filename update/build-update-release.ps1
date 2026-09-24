@@ -20,7 +20,8 @@ if (Test-Path -LiteralPath $releaseRoot) {
 }
 New-Item -ItemType Directory -Path $releaseRoot -Force | Out-Null
 
-$sourceComponents = @(Get-Content -Raw -LiteralPath $componentsPath | ConvertFrom-Json)
+$parsedComponents = Get-Content -Raw -LiteralPath $componentsPath | ConvertFrom-Json
+$sourceComponents = @($parsedComponents | ForEach-Object { $_ })
 if ($sourceComponents.Count -eq 0) { throw "At least one update component is required" }
 $manifestComponents = @(foreach ($component in $sourceComponents) {
     $payload = (Resolve-Path $component.payload_path).Path

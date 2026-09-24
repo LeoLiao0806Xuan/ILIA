@@ -1,0 +1,9 @@
+{
+  "rust_packages": 589,
+  "rust_missing_declared_license": 0,
+  "rust_missing_local_notice": 41,
+  "npm_packages": 75,
+  "npm_missing_declared_license": 0,
+  "npm_missing_local_notice": 56,
+  "npm_missing_local_notice_for_present_package": 2
+}

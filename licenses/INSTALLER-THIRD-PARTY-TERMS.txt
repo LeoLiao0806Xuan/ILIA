@@ -1,0 +1,34 @@
+ILIA THIRD-PARTY COMPONENT AND CORPUS TERMS
+
+ILIA source code is licensed separately under Apache License 2.0. These terms
+do not reduce the rights granted in ILIA's own source code.
+
+The installer also contains third-party components and legal-text corpus
+materials that are not licensed under Apache-2.0. By installing ILIA, you
+acknowledge that those materials remain subject to their respective notices,
+licences, source terms and applicable law. Copies of the relevant notices are
+installed in the ILIA "licenses" directory.
+
+NVIDIA CUDA
+
+The CUDA runtime files in this installer are incorporated solely as components
+of ILIA's local model-inference functionality. They are not offered as a
+stand-alone CUDA SDK or runtime distribution. They may be accessed and used only
+as part of ILIA and only in accordance with the NVIDIA Software License
+Agreement and CUDA Supplement included as
+"licenses/NVIDIA-CUDA-EULA-2026-01-26.html". You must not remove proprietary
+notices, imply NVIDIA sponsorship, or use, transfer or redistribute the NVIDIA
+components except as permitted by that agreement and applicable export law.
+
+LEGAL-TEXT CORPUS
+
+ILIA's normalized legal texts are generated research copies and are not
+official editions. The Apache-2.0 licence does not grant rights in treaties,
+judicial decisions, official translations or source-institution material.
+Official source links are included for verification. Downstream redistribution
+requires an independent assessment of the applicable source terms and law.
+
+NO LEGAL ADVICE
+
+ILIA provides research assistance and does not provide legal advice. Verify
+formal quotations and current legal status against the linked official source.

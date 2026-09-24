@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the ILIA prototype corpus and emit a machine-readable report."""
+"""Validate the distributable ILIA normalized corpus and database."""
 
 from __future__ import annotations
 
@@ -13,7 +13,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 MANIFEST_PATH = ROOT / "corpus" / "manifests" / "prototype_manifest.json"
-DB_PATH = Path(os.environ.get("ILIA_DB_PATH", ROOT / "data" / "ilia_prototype.sqlite3"))
+NORMALIZED_MANIFEST_PATH = ROOT / "corpus" / "normalized" / "manifest.json"
+DB_PATH = Path(os.environ.get("ILIA_DB_PATH", ROOT / "data" / "ilia.sqlite3"))
 REPORT_PATH = Path(os.environ.get("ILIA_VALIDATION_REPORT", ROOT / "data" / "validation_report.json"))
 
 
@@ -27,6 +28,11 @@ def sha256_file(path: Path) -> str:
 
 def main() -> None:
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+    normalized_manifest = json.loads(NORMALIZED_MANIFEST_PATH.read_text(encoding="utf-8"))
+    excluded = set(normalized_manifest["excluded_documents"])
+    normalized_artifacts = {
+        artifact["document_id"]: artifact for artifact in normalized_manifest["artifacts"]
+    }
     checks: list[dict] = []
 
     def record(name: str, passed: bool, detail: str, severity: str = "error") -> None:
@@ -35,14 +41,40 @@ def main() -> None:
     connection = sqlite3.connect(DB_PATH)
     connection.row_factory = sqlite3.Row
 
+    record(
+        "normalized:document_count",
+        normalized_manifest["document_count"] == 49 and len(normalized_artifacts) == 49,
+        f"declared={normalized_manifest['document_count']} artifacts={len(normalized_artifacts)}",
+    )
+    record(
+        "normalized:excluded_documents",
+        excluded == {"icrc-cihl-rules"},
+        f"excluded={sorted(excluded)}",
+    )
+    embedded_texts = connection.execute(
+        "SELECT count(*) FROM normalized_document_texts"
+    ).fetchone()[0]
+    record(
+        "normalized:embedded_texts",
+        embedded_texts == 49,
+        f"embedded_texts={embedded_texts}",
+    )
+
     for document in manifest["documents"]:
         document_id = document["id"]
-        source_path = ROOT / document["local_file_path"]
+        if document_id in excluded:
+            db_doc = connection.execute(
+                "SELECT 1 FROM documents WHERE id = ?", (document_id,)
+            ).fetchone()
+            record(f"{document_id}:excluded", db_doc is None, "excluded from distributable database")
+            continue
+        artifact = normalized_artifacts[document_id]
+        source_path = ROOT / artifact["path"]
         actual_hash = sha256_file(source_path)
         record(
             f"{document_id}:sha256",
-            actual_hash == document["sha256"],
-            f"expected={document['sha256']} actual={actual_hash}",
+            actual_hash == artifact["sha256"],
+            f"expected={artifact['sha256']} actual={actual_hash}",
         )
         db_doc = connection.execute(
             "SELECT document_type, legal_status FROM documents WHERE id = ?", (document_id,)

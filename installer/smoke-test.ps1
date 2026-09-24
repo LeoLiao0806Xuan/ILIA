@@ -1,5 +1,5 @@
 param(
-    [string]$Version = "1.0.0",
+    [string]$Version = "1.0.1",
     [ValidateSet("auto", "cuda", "vulkan", "cpu")][string]$Backend = "cpu",
     [switch]$SkipCliBuild
 )
@@ -96,7 +96,7 @@ try {
     $appProcess = $null
     Start-Sleep -Seconds 5
 
-    $database = Join-Path $installRoot "data\ilia_prototype.sqlite3"
+    $database = Join-Path $installRoot "data\ilia.sqlite3"
     $bgeCache = Join-Path $installRoot "models\bge-m3"
     $runtimeRoot = Join-Path $installRoot "runtime"
     $qwenModel = Join-Path $installRoot "models\qwen3-4b\Qwen3-4B-Q4_K_M.gguf"

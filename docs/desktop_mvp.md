@@ -22,7 +22,7 @@ npm run tauri -- dev
 
 开发时默认从仓库根目录读取：
 
-- `data/ilia_prototype.sqlite3`
+- `data/ilia.sqlite3`
 - `models/bge-m3/`
 - `models/qwen3-4b/Qwen3-4B-Q4_K_M.gguf`
 - `runtime/onnx/`、`runtime/cuda/`、`runtime/vulkan/`、`runtime/cpu/`
@@ -49,5 +49,5 @@ target/x86_64-pc-windows-gnu/release/ilia-desktop.exe
 
 - TypeScript/Vite 生产构建通过。
 - Rust workspace：14 项单元/集成测试全部通过。
-- 真实混合检索已验证：领海宽度问题首条命中 `UNCLOS, Article 3`，同时返回第 21 页、原文和联合国官方 PDF。
+- 真实混合检索已验证：领海宽度问题首条命中 `UNCLOS, Article 3`，同时返回来源版页码、规范化正文和联合国官方来源链接。
 - 1440×900 三栏布局、检索态、回答态、引证和原文联动已做视觉验收。

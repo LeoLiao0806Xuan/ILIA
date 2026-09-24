@@ -1,0 +1,1257 @@
+ILIA NORMALIZED LEGAL TEXT
+
+Document ID: icj-bosnian-genocide-preliminary-1996
+Title: Application of the Genocide Convention Preliminary Objections Judgment
+Chinese title: 适用灭绝种族罪公约案初步反对判决
+Issuing body: International Court of Justice
+Official source: https://www.icj-cij.org/sites/default/files/case-related/91/091-19960711-JUD-01-00-EN.pdf
+Database version: public-international-law-v1.0.1-normalized-2026.09.24
+
+NOTICE
+This is an ILIA-generated normalized text for offline legal research.
+It is not an official edition. Source-edition page markers are retained
+only as factual verification locators. Verify quotations against the
+official source linked above.
+
+========================================================================
+
+[Source edition page 2]
+
+COUR INTERNATIONALE DE JUSTICE
+RECUEIL DES ARRÊTS,
+AVIS CONSULTATIFS ET ORDONNANCES
+AFFAIRE RELATIVE À L'APPLICATION
+DE LA CONVENTION POUR LA PRÉVENTION
+ET LA RÉPRESSION DU CRIME DE GÉNOCIDE
+(BOSNIE-HERZÉGOVINE c. YOUGOSLAVIE)
+EXCEPTIONS PRÉLIMINAIRES
+ARRÊT DU 11 JUILLET 1996
+INTERNATIONAL COURT OF JUSTICE
+REPORTS OF JUDGMENTS,
+ADVISORY OPINIONS AND ORDERS
+CASE CONCERNING APPLICATION OF
+THE CONVENTION ON THE PREVENTION AND
+PUNISHMENT OF THE CRIME OF GENOCIDE
+(BOSNIA AND HERZEGOVINA v. YUGOSLAVIA)
+PRELIMINARY OBJECTIONS
+JUDGMENT OF 11 JULY 1996
+
+[Source edition page 3]
+
+Mode officiel de citation:
+Application de la convention pour la prévention et la répression
+du crime de génocide, exceptions préliminaires, arrêt,
+C.Z.J. Recueil 1996, p. 595
+Officia1 citation :
+Application of the Convention on the Prevention and Punishment
+of the Crime of Genocide, Preliminary Objections, Judgment,
+1. C.J . Reports 1996, p. 595
+1
+680
+No àe vente:
+ISSN 0074-4441 Sales number
+
+[Source edition page 4]
+
+INTERNATIONAL COURT OF JUSTICE
+YEAR 1996 1996
+11 July
+General List
+11 July 1996 No. 91
+CASE CONCERNING APPLICATION OF
+THE CONVENTION ON THE PREVENTION AND
+PUNISHMENT OF THE CRIME OF GENOCIDE
+(BOSNIA AND HERZEGOVINA v. YUGOSLAVIA)
+PRELIMINARY OBJECTIONS
+Jurisdiction of the Court - Withdrawal of the fourth preliminary objection
+of Yugoslavia - Article IX of the Genocide Convention:
+(a) Jurisdiction ratione personae - Intention expressed by Yugoslavia to
+remain bound by the treaties to which the former Yugoslavia wasparty - It has
+not been contested that Yugoslavia was party to the Genocide Convention -
+Notice of Succession addressed by Bosnia and Herzegovina to the Secretary-
+General of the United Nations - Accession to independence of Bosnia and
+Herzegovina and admission to the United Nations - Article XI of the Genocide
+Convention opens it to "any Member of the United Nations" - Bosnia and
+Herzegovina could become a party to the Genocide Convention through the
+mechanism of State succession - Lack of mutual recognition of the Parties ut
+the time ofjiling of the Application - Article X of the Dayton-Paris Agreement
+- Principle whereby the Court should not penalize a defect in a procedural act
+which the applicant could easily remedy.
+(b) Jurisdiction ratione materiae - Existence of a legal dispute - Dispute
+falling within the provisions of Article IX of the Genocide Convention - Applicability of the Convention without reference to the circumstances linked to the
+domestic or international nature of the conflict - The question whether Yugoslavia took part in the conflict ut issue belongs to the merits - The obligation
+each State has to prevent and punish the crime of genocide is not territorially
+limited by the Convention - Article IX does not exclude any form of State
+responsibility under the Convention.
+(c) Scope ratione temporis of the jurisdiction of the Court.
+Additional bases of jurisdiction invoked by Bosnia and Herzegovina - Letter
+of 8 June 1992 from the Presidents of Montenegro and Serbia - Treaty
+
+[Source edition page 5]
+
+between the Allied and Associated Powers and the Kingdom of the Serbs,
+Croats and Slovenes of 10 September 1919 - Acquiescence in the jurisdiction
+of the Court on the basis of Article IX of the Genocide Convention - Forum
+prorogatum.
+Admissibility of the Application - Events that might have taken place in a
+context of civil war - Head of State presumed to be able to act on behalfof the
+State in its international relations and recognized as such.
+Absence of abuse of the rights of Yugoslavia under Article 36, paragraph 6, of
+the Statute and Article 79 of the Rules of Court.
+JUDGMENT
+Present : President BEDJAO;U I Vice-President SCHWEB;E LJ udges ODA,
+GUILLAUMSEH, AHABUDDEWENEE, RAMANTRRYA, NJEVAH, ERCZEGH,
+SHI, KOROMAV, ERESHCHETFINER, RARBI RAVOP, ARRA-ARANGUREN;
+Judges ad hoc LAUTERPACKHRT,E CAR; egistrar VALENCIA-OSPINA.
+In the case concerning application of the Convention on the Prevention and
+Punishment of the Crime of Genocide,
+between
+the Republic of Bosnia and Herzegovina,
+represented by
+H.E. Mr. Muhamed Sacirbey, Ambassador and Permanent Representative
+of the Republic of Bosnia and Herzegovina to the United Nations,
+as Agent;
+Mr. Phon van den Biesen, Attorney in Amsterdam,
+as Deputy-Agent, Counsel and Advocate;
+Mr. Thomas M. Franck, Professor at the School of Law and Director,
+Center for International Studies, New York University,
+Mr. Alain Pellet, Professor, University of Paris X-Nanterre and Institute of
+Political Studies, Paris,
+Ms Brigitte Stern, Professor, University of Paris 1 (Panthéon-Sorbonne),
+as Counsel and Advocates;
+Mr. Khawar M. Qureshi, Member of the English Bar, Lecturer in Law,
+King's College, London,
+Ms Vasvija VidoviC, Minister-Counsellor, Embassy of Bosnia and Herzegovina in the Netherlands, Representative of the Republic of Bosnia and
+Herzegovina at the International Criminal Tribunal for the former Yugoslavia,
+Mr. Marc Weller, Assistant Director of Studies, Centre for International
+Studies, University of Cambridge, Member of the Faculty of Law of the
+University of Cambridge,
+as Counsel;
+
+[Source edition page 6]
+
+Mr. Pierre Bodeau, Research AssistantITutor, University of Paris X-Nanterre,
+Mr. Michiel Pestman, Attorney in Amsterdam,
+Mr. Thierry Vaissière, Research Student, Cedin-Paris 1 (Panthéon-Sorbonne),
+as Counsellors;
+Mr. Hervé Ascencio, Research AssistantITutor, University of Paris X-
+Nanterre,
+Ms Marieke Drenth,
+Ms Froana Hoff,
+Mr. Michael Kellogg,
+Mr. Harold Kocken,
+Ms Nathalie Lintvelt,
+Mr. Sam Muller,
+Mr. Joop Nijssen,
+Mr. Eelco Szabo,
+as Assistants,
+and
+the Federal Republic of Yugoslavia,
+represented by
+Mr. Rodoljub Etinski, Chief Legal Adviser, Ministry of Foreign Affairs of
+the Federal Republic of Yugoslavia, Professor of International Law, Novi
+Sad University,
+Mr. Djordje LopiEié, Chargé d'Affaires, Embassy of the Federal Republic of
+Yugoslavia in the Netherlands,
+as Agents ;
+Mr. Ian Brownlie, C.B.E., F.B.A., Q.C., Chichele Professor of Public International Law, University of Oxford,
+Mr. Miodrag Mitié, Assistant Federal Minister for Foreign Affairs of the
+Federal Republic of Yugoslavia (Ret.),
+Mr. Eric Suy, Professor, Catholic University of Louvain (K.U. Leuven), formerly Under-Secretary-General and Legal Counsel of the United Nations,
+as Counsel and Advocates;
+Mr. Stevan Djordjevié, Professor of International Law, Belgrade University,
+Mr. Shabtai Rosenne, Member of the Israel Bar,
+Mr. Gavro Perazié, Professor of International Law, Podgorica University,
+as Counsel,
+composed as above,
+after deliberation,
+delivers the following Judgment:
+1. On 20 March 1993, the Government of the Republic of Bosnia and Herzegovina (hereinafter called "Bosnia and Herzegovina") filed in the Registry of
+the Court an Application instituting proceedings against the Government of
+
+[Source edition page 7]
+
+the Federal Republic of Yugoslavia (hereinafter called "Yugoslavia") in respect
+of a dispute concerning alleged violations of the Convention on the Prevention
+and Punishment of the Crime of Genocide (hereinafter called "the Genocide
+Convention"), adopted by the General Assembly of the United Nations on
+9 December 1948, as well as various matters which Bosnia and Herzegovina
+claims are connected therewith. The Application invoked Article IX of the
+Genocide Convention as the basis of the jurisdiction of the Court.
+2. Pursuant to Article 40, paragraph 2, of the Statute, the Application was
+immediately communicated to the Yugoslav Government by the Registrar;
+pursuant to paragraph 3 of that Article, al1 States entitled to appear before the
+Court were notified of the Application.
+3. Pursuant to Article 43 of the Rules of Court, the Registrar addressed the
+notification provided for in Article 63, paragraph 1, of the Statute to al1 the
+States which appeared to be parties to the Genocide Convention on the basis of
+the information supplied by the Secretary-General of the United Nations as
+depositary; he also addressed to the Secretary-General the notification provided for in Article 34, paragraph 3, of the Statute.
+4. On 20 March 1993, immediately after the filing of its Application, Bosnia
+and Herzegovina submitted a request for the indication of provisional measures
+under Article 41 of the Statute. On 31 March 1993, the Agent of Bosnia and
+Herzegovina filed in the Registry, invoking it as an additional basis of the jurisdiction of the Court in the case, the text of a letter dated 8 June 1992, addressed
+to the President of the Arbitration Commission of the International Conference
+for Peace in Yugoslavia by the Presidents of the Republics of Montenegro and
+Serbia.
+osn nia
+On 1 April 1993, Yugoslavia submitted written observations on and
+Herzegovina's request for provisional measures, in which, in turn, it recommended the Court to order the application of provisional measures to Bosnia
+and Herzegovina.
+By an Order dated 8 April 1993, the Court, after hearing the Parties, indicated certain provisional measures with a view to the protection of rights under
+the Genocide Convention.
+5. By an Order of 16 April 1993, the President of the Court fixed 15 October
+1993 as the time-lirnit for the filing of the Memorial of Bosnia and Herzegovina
+and 15 April 1994 as the time-limit for the filing of the Counter-Memorial of
+Yugoslavia.
+6. Since the Court included upon the Bench no judge of the nationality of
+the Parties, each of them exercised its right under Article 31, paragraph 3, of
+the Statute of the Court to choose a judge ad hoc to sit in the case: Bosnia and
+Herzegovina chose Mr. Elihu Lauterpacht, and Yugoslavia chose Mr. Milenko
+KreEa.
+7. On 27 July 1993, Bosnia and Herzegovina submitted a new request for the
+indication of provisional measures; and, by a series of subsequent communications, it stated that it was amending or supplementing that request, as well as,
+in some cases, the Application, including the basis of jurisdiction relied on
+therein. By letters of 6 August and 10 August 1993, the Agent of Bosnia and
+Herzegovina indicated that his Government was relying, as additional bases of
+the jurisdiction of the Court in the case, on, respectively, the Treaty between
+the Allied and Associated Powers and the Kingdom of the Serbs, Croats and
+Slovenes on the Protection of Minorities, signed at Saint-Germain-en-Laye on
+
+[Source edition page 8]
+
+10 September 1919, and on customary and conventional international laws of
+war and international humanitarian law; and, by a letter of 13 August 1993,
+the Agent of Bosnia and Herzegovina confirmed his Government's desire to
+rely, on the same basis, on the aforementioned letter from the Presidents of
+Montenegro and Serbia, dated 8 June 1992 (see paragraph 4 above).
+On 10 August 1993, Yugoslavia also submitted a request for the indication of
+provisional measures; and, on 10 August and 23 August 1993, it filed written
+observations on Bosnia and Herzegovina's new request, as amended or supplemented.
+By an Order dated 13 September 1993, the Court, after hearing the Parties,
+reaffirmed the measures indicated in its Order of 8 April 1993 and declared that
+those measures should be irnmediately and effectively implemented.
+8. By an Order dated 7 October 1993, the Vice-President of the Court, at the
+request of Bosnia and Herzegovina, extended to 15 April 1994 the time-limit for
+the filing of the Memorial; the time-limit for the filing of the Counter-Memorial
+was extended, by the same Order, to 15 April 1995. Bosnia and Herzegovina
+duly filed its Memorial within the extended time-limit thus fixed.
+9. By an Order dated 21 March 1995, the President of the Court, at the
+request of Yugoslavia, extended to 30 June 1995 the time-limit for the filing of
+the Counter-Memorial. Within the extended time-limit thus fixed, Yugoslavia,
+referring to Article 79, paragraph 1, of the Rules of Court, raised preliminary
+objections concerning, respectively, the admissibility of the Application and the
+jurisdiction of the Court to entertain the case. Accordingly, by an Order dated
+14 July 1995, the President of the Court, noting that, by virtue of Article 79,
+paragraph 3, of the Rules of Court, the proceedings on the merits were suspended, fixed 14 November 1995 as the time-limit within which Bosnia and
+Herzegovina could present a written statement of its observations and submissions on the preliminary objections raised by Yugoslavia. Bosnia and Herzegovina filed such a statement within the time-limit so fixed, and the case
+became ready for hearing in respect of the preliminary objections.
+10. By a letter dated 2 February 1996, the Agent of Yugoslavia submitted to
+the Court, "as a document relevant to the case", the text of the General Framework Agreement for Peace in Bosnia and Herzegovina and the annexes thereto
+(collectively "the peace agreement"), initialled in Dayton, Ohio, on 21 November 1995 and signed in Paris on 14 December 1995 (hereinafter called the
+"Dayton-Paris Agreement").
+11. Pursuant to Article 53, paragraph 2, of the Rules of Court, the Court
+decided to make the pleadings and documents annexed thereto accessible to the
+public on the opening of the oral proceedings.
+12. Public hearings were held between 29 April and 3 May 1996 at which the
+Court heard the oral arguments and replies of:
+For Yugoslavia : Mr. Rodoljub Etinski,
+Mr. Miodrag Mitié,
+Mr. Djordje Lopicik,
+Mr. Eric Suy,
+Mr. Ian Brownlie,
+Mr. Gavro Perazik.
+
+[Source edition page 9]
+
+For Bosnia and Herzegovina: H.E. Mr. Muhamed Sacirbey,
+Mr. Phon van den Biesen,
+Mr. Alain Pellet,
+Ms Brigitte Stern,
+Mr. Thomas M. Franck.
+13. In the Application, the following requests were made by Bosnia and
+Herzegovina :
+"Accordingly, while reserving the right to revise, supplement or amend
+this Application, and subject to the presentation to the Court of the relevant evidence and legal arguments, Bosnia and Herzegovina requests the
+Court to adjudge and declare as follows :
+(a) that Yugoslavia (Serbia and Montenegro) has breached, and is continuing to breach, its legal obligations toward the People and state of
+Bosnia and Herzegovina under Articles 1, II (a), II (b), II (c),
+11 (d), III (a), III (b), III (c), III (d), III (e), IV and V of the
+Genocide Convention;
+(b) that Yugoslavia (Serbia and Montenegro) has violated and is continuing to violate its legal obligations toward the People and state of
+Bosnia and Herzegovina under the four Geneva Conventions of
+1949, their Additional Protocol 1 of 1977, the customary international laws of war including the Hague Regulations on Land Warfare
+of 1907, and other fundamental principles of international humanitarian law ;
+(c) that Yugoslavia (Serbia and Montenegro) has violated and continues
+toviolateArticles1,2,3,4,5,6,7,8,9, 10, 11, 12, 13, 15, 16, 17, 18,
+19, 20, 21, 22, 23, 25, 26 and 28 of the Universal Declaration of
+Human Rights with respect to the citizens of Bosnia and Herzegovina ;
+(d) that Yugoslavia (Serbia and Montenegro), in breach of its obligations under general and customary international law, has killed,
+murdered, wounded, raped, robbed, tortured, kidnapped, illegally
+detained, and exterminated the citizens of Bosnia and Herzegovina,
+and is continuing to do so;
+(e) that in its treatment of the citizens of Bosnia and Herzegovina,
+Yugoslavia (Serbia and Montenegro) has violated, and is continuing
+to violate, its solemn obligations under Articles 1 (3), 55 and 56 of
+the United Nations Charter;
+(f) that Yugoslavia (Serbia and Montenegro) has used and is continuing
+to use force and the threat of force against Bosnia and Herzegovina
+in violation of Articles 2 (l), 2 (2), 2 (3), 2 (4), and 33 (l), of the
+United Nations Charter;
+(g) that Yugoslavia (Serbia and Montenegro), in breach of its obligations under general and customary international law, has used and is
+using force and the threat of force against Bosnia and Herzegovina;
+(h) that Yugoslavia (Serbia and Montenegro), in breach of its obligations under general and customary international law, has violated
+and is violating the sovereignty of Bosnia and Herzegovina by:
+- armed attacks against Bosnia and Herzegovina by air and land;
+
+[Source edition page 10]
+
+- aerial trespass into Bosnian airspace;
+- efforts by direct and indirect means to coerce and intimidate the
+Government of Bosnia and Herzegovina;
+that Yugoslavia (Serbia and Montenegro), in breach of its obligations under general and customary international law, has intervened
+and is intervening in the interna1 affairs of Bosnia and Herzegovina;
+that Yugoslavia (Serbia and Montenegro), in recruiting, training,
+arming, equipping, financing, supplying and otherwise encouraging,
+supporting, aiding, and directing military and paramilitary actions in
+and against Bosnia and Herzegovina by means of its agents and surrogates, has violated and is violating its express charter and treaty
+obligations to Bosnia and Herzegovina and, in particular, its charter
+and treaty obligations under Article 2 (4) of the United Nations
+Charter, as well as its obligations under general and customary international law ;
+that under the circumstances set forth above, Bosnia and Herzegovina has the sovereign right to defend Itself and its People under
+United Nations Charter Article 51 and customary international law,
+including by means of immediately obtaining military weapons,
+equipment, supplies and troops from other States;
+that under the circumstances set forth above, Bosnia and Herzegovina has the sovereign right under United Nations Charter
+Article 51 and customary international law to request the immediate
+assistance of any State to come to its defence, including by military
+means (weapons, equipment, supplies, troops, etc.);
+that Security Council resolution 713 (1991), imposing a weapons
+embargo upon the former Yugoslavia, must be construed in a manner that shall not impair the inherent right of individual or collective
+self-defence of Bosnia and Herzegovina under the terms of United
+Nations Charter Article 51 and the d e so f customary international
+law ;
+that al1 subsequent Security Council resolutions that refer to or
+reaffirm resolution 713 (1991) must be construed in a manner that
+shall not impair the inherent right of individual or collective selfdefence of Bosnia and Herzegovina under the terms of United Nations
+Charter Article 51 and the rules of customary international law;
+that Security Council resolution 713 (1991) and al1 subsequent Security Council resolutions referring thereto or reaffirming thereof must
+not be construed to impose an arms embargo upon Bosnia and
+Herzegovina, as required by Articles 24 (1) and 51 of the United
+Nations Charter and in accordance with the customary doctrine of
+ultra vires;
+that pursuant to the right of collective self-defence recognized by
+United Nations Charter Article 51, al1 other States parties to the
+Charter have the right to come to the immediate defence of Bosnia
+and Herzegovina - at its request - including by means of immediately providing it with weapons, military equipment and supplies,
+and armed forces (soldiers, sailors, airpeople, etc.);
+
+[Source edition page 11]
+
+(q) that Yugoslavia (Serbia and Montenegro) and its agents and surrogates are under an obligation to cease and desist immediately from its
+breaches of the foregoing legal obligations, and is under a particular
+duty to cease and desist immediately:
+- from its systematic practice of so-called 'ethnic cleansing' of the
+citizens and sovereign territory of Bosnia and Herzegovina;
+- from the murder, summary execution, torture, rape, kidnapping,
+mayhem, wounding, physical and mental abuse, and detention of
+the citizens of Bosnia and Herzegovina;
+- from the wanton devastation of villages, towns, districts, cities,
+and religious institutions in Bosnia and Herzegovina;
+- from the bombardment of civilian population centres in Bosnia
+and Herzegovina, and especially its capital, Sarajevo;
+- from continuing the siege of any civilian population centres in
+Bosnia and Herzegovina, and especially its capital, Sarajevo;
+- from the starvation of the civilian population in Bosnia and
+Herzegovina ;
+- from the interruption of, interference with, or harassment of
+humanitarian relief supplies to the citizens of Bosnia and Herzegovina by the international community ;
+- from al1 use of force - whether direct or indirect, overt or covert
+- against Bosnia and Herzegovina, and from al1 threats of force
+against Bosnia and Herzegovina;
+- from al1 violations of the sovereignty, territorial integrity or
+political independence of Bosnia and Herzegovina, including al1
+intervention, direct or indirect, in the interna1 affairs of Bosnia
+and Herzegovina ;
+- from al1 support of any kind - including the provision of training, arms, ammunition, finances, supplies, assistance, direction or
+any other form of support - to any nation, group, organization,
+movement or individual engaged or planning to engage in military or paramilitary actions in or against Bosnia and Herzegovina ;
+(r) that Yugoslavia (Serbia and Montenegro) has an obligation to pay
+Bosnia and Herzegovina, in its own right and as parenspatriae for its
+citizens, reparations for damages to persons and property as well as
+to the Bosnian economy and environment caused by the foregoing
+violations of international law in a sum to be detennined by the
+Court. Bosnia and Herzegovina reserves the right to introduce to the
+Court a precise evaluation of the damages caused by Yugoslavia
+(Serbia and Montenegro)."
+14. In the written proceedings, the following submissions were presented by
+the Parties:
+On behalf of the Government of Bosnia and Herzegovina,
+in the Memorial:
+"On the basis of the evidence and legal arguments presented in this
+Memorial, the Republic of Bosnia and Herzegovina,
+
+[Source edition page 12]
+
+Requests the International Court of Justice to adjudge and declare,
+1. That the Federal Republic of Yugoslavia (Serbia and Montenegro),
+directly, or through the use of its surrogates, has violated and is violating
+the Convention on the Prevention and Punishment of the Crime of Genocide, by destroying in part, and attempting to destroy in whole, national,
+ethnical or religious groups within the, but not limited to the, territory
+of the Republic of Bosnia and Herzegovina, including in particular the
+Muslim population, by
+- killing members of the group;
+- causing deliberate bodily or mental harm to members of the group;
+- deliberately inflicting on the group conditions of life calculated to
+bring about its physical destruction in whole or in part;
+- imposing measures intended to prevent births within the group;
+2. That the Federal Republic of Yugoslavia (Serbia and Montenegro)
+has violated and is violating the Convention on the Prevention and Punishment of the Crime of Genocide by conspiring to commit genocide, by
+complicity in genocide, by attempting to commit genocide and by incitement to commit genocide;
+3. That the Federal Republic of Yugoslavia (Serbia and Montenegro)
+has violated and is violating the Convention on the Prevention and Punishment of the Crime of Genocide by aiding and abetting individuals and
+groups engaged in acts of genocide;
+4. That the Federal Republic of Yugoslavia (Serbia and Montenegro)
+has violated and is violating the Convention on the Prevention and Punishment of the Crime of Genocide by virtue of having failed to prevent and
+to punish acts of genocide;
+5. That the Federal Republic of Yugoslavia (Serbia and Montenegro)
+must immediately cease the above conduct and take immediate and effective steps to ensure full compliance with its obligations under the Convention on the Prevention and Punishment of the Crime of Genocide;
+6. That the Federal Republic of Yugoslavia (Serbia and Montenegro)
+must wipe out the consequences of its international wrongful acts and must
+restore the situation existing before the violations of the Convention on the
+Prevention and Punishment of the Crime of Genocide were committed;
+7. That, as a result of the international responsibility incurred for the
+above violations of the Convention on the Prevention and Punishment of
+the Crime of Genocide, the Federal Republic of Yugoslavia (Serbia and
+Montenegro) is required to pay, and the Republic of Bosnia and Herzegovina is entitled to receive, in its own right and as parens patriae for its
+citizens, full compensation for the damages and losses caused, in the
+amount to be determined by the Court in a subsequent phase of the proceedings in this case.
+The Republic of Bosnia and Herzegovina reserves its right to supplement or amend its submissions in the light of further pleadings.
+The Republic of Bosnia and Herzegovina also respectfully draws the
+attention of the Court to the fact that it has not reiterated, at this point,
+several of the requests it made in its Application, on the forma1 assumption that the Federal Republic of Yugoslavia (Serbia and Montenegro) has
+
+[Source edition page 13]
+
+accepted the jurisdiction of this Court under the terms of the Convention
+on the Prevention and Punishment of the Crime of Genocide. If the
+Respondent were to reconsider its acceptance of the jurisdiction of the
+Court under the terms of that Convention - which it is, in any event, not
+entitled to do - the Government of Bosnia and Herzegovina reserves its
+right to invoke also al1 or some of the other existing titles of jurisdiction
+and to revive al1 or some of its previous submissions and requests."
+On behalf of the Government of Yugoslavia,
+in the preliminary objections:
+"The Federal Republic of Yugoslavia asks the Court to adjudge and
+declare :
+First preliminary objection
+A.1. Whereas civil war excludes the existence of an international dispute,
+the Application of the so-called Republic of Bosnia and Herzegovina is
+not admissible.
+Second preliminary objection
+A.2. Whereas Alija IzetbegoviC did not serve as the President of the
+Republic at the time when he granted the authorization to initiate proceedings and whereas the decision to initiate proceedings was not taken by the
+Presidency nor the Government as the competent organs, the authorization for the initiation and conduct of proceedings was granted in violation
+of a rule of interna1 law of fundamental significance and, consequently,
+the Application by the so-called Republic of Bosnia and Herzegovina is
+not admissible.
+Third preliminary objection
+B. 1. Whereas the so-called Republic of Bosnia and Herzegovina has by
+its acts on independence flagrantly violated the duties stemrning from the
+principle of equal rights and self-determination of peoples and for that
+reason the Notification of Succession, dated 29 December 1992, of the
+Applicant to the 1948 Convention on the Prevention and Punishment
+of the Crime of Genocide has no legal effect,
+Whereas the so-called Republic of Bosnia and Herzegovina has not
+become a State party to the 1948 Convention on the Prevention and Punishment of the Crime of Genocide in accordance with the provisions of the
+Convention itself,
+the so-called Republic of Bosnia and Herzegovina is not a State party to
+the 1948 Convention on the Prevention and Punishment of the Crime of
+Genocide and consequently
+the Court has no jurisdiction over this case.
+Fourth preliminary objection
+B.2. Whereas the so-called Republic of Bosnia and Herzegovina has
+been recognized in contravention of the rules of international law and that
+
+[Source edition page 14]
+
+it has never been established in the territory and in the form in which it
+pretends to exist ever since its illegal declaration of independence, and that
+there are at present four States in existence in the territory of the former
+Yugoslav Republic of Bosnia and Herzegovina, the so-called Republic of
+Bosnia and Herzegovina is not a party to the 1948 Convention on the Prevention and Punishment of the Crime or Genocide, and consequently,
+the Court has no jurisdiction over this case.
+Fifth pveliminavy objection
+C. Whereas the case in point is an interna1 conflict between four sides in
+which the Federal Republic of Yugoslavia is not taking part and whereas
+the Federal Republic of Yugoslavia did not exercise any jurisdiction over
+the disputed areas in the period under review,
+Whereas the Memorial of the Applicant State is based upon a fundamentally erroneous construction of the 1948 Convention on the Prevention
+and Punishment of the Crime of Genocide and, in consequence the claims
+contained in the 'Submissions' are based on allegations of State responsibility which fa11 outside the scope of the Convention and of its compromissory clause,
+there is no international dispute under Article IX of the 1948 Convention on the Prevention and Punishment of the Crime of Genocide and,
+consequently,
+the Court has no jurisdiction over this case.
+If the Court does not accept any of the above-mentioned preliminary
+objections :
+Sixth preliminary objection
+D.1. Without prejudice to the above exposed preliminary objections,
+whereas the Notification of Succession, dated 29 December 1992, whereby
+the so-called Republic of Bosnia and Herzegovina expressed the intention
+to enter into the 1948 Convention on the Prevention and Punishment of
+the Crime of Genocide can only produce the effect of accession to the
+Convention,
+the Court has jurisdiction over this case as of 29 March 1993 and, thus,
+the Applicant's claims pertaining to the alleged acts or facts which
+occurred prior to that date do not fa11 within the jurisdiction of the
+Court.
+In case the Court refuses to adopt the preliminary objection under D.l:
+Seventh preliminary objection
+D.2. Without prejudice to the sixth preliminary objection, if the Applicant State's Notification of Succession, dated 29 December 1992, is construed on the basis that it has the effect that the Applicant state became a
+party to the 1948 Genocide Convention from 6 March 1992, according to
+the rule of customary international law, the 1948 Convention on the Prevention and Punishment of the Crime of Genocide would not be operative
+between the parties prior to 29 December 1992 and, accordingly, this would
+
+[Source edition page 15]
+
+not confer jurisdiction on the Court in respect of events occurring prior to
+29 December 1992 and consequently,
+the Applicant's claims pertaining to the alleged acts or facts which
+occurred prior to 29 December 1992 do not fa11 within the jurisdiction of
+the Court.
+The Federal Republic of Yugoslavia reserves its right to supplement or
+amend its submissions in the light of further pleadings."
+On behalf of the Government of Bosnia and Herzegovina,
+in the written statement containing its observations and submissions on the
+preliminary objections :
+"In consideration of the foregoing, the Government of the Republic of
+Bosnia and Herzegovina requests the Court:
+- to reject and dismiss the Prelirninary Objections of Yugoslavia (Serbia
+and Montenegro); and
+- to adjudge and declare:
+(i) that the Court has jurisdiction in respect of the submissions
+presented in the Memorial of Bosnia and Herzegovina; and
+(ii) that the submissions are admissible."
+15. In the oral proceedings, the following submissions were presented by the
+Parties :
+On behalf of the Government of Yugoslavia',
+at the hearing on 2 May 1996:
+"The Federal Republic of Yugoslavia asks the Court to adjudge and
+declare :
+First preliminary objection
+Whereas the events in Bosnia and Herzegovina to which the Application
+refers constituted a civil war, no international dispute exists within the
+terms of Article IX of the 1948 Convention on the Prevention and Punishment of the Crime of Genocide, consequently,
+the Application of Bosnia and Herzegovina is not admissible.
+Second preliminary objection
+Whereas Mr. Alija Izetbegovii: did not serve as the President of the
+Republic at the time when he granted the authorization to initiate proceedings and whereas the decision to initiate proceedings was not taken either
+by the Presidency or the Government as the competent organs, the authorization for the initiation and conduct of proceedings was granted in violation of the mles of interna1 law of fundamental significance, consequently,
+the Application by Bosnia and Herzegovina is not admissible.
+Third preliminary objection
+Whereas Bosnia and Herzegovina has not established its independent
+The Government of Yugoslavia relinquished its fourth preliminary objection.
+15
+
+[Source edition page 16]
+
+statehood in conformity with the principle of equal rights and selfdetermination of peoples and for that reason could not succeed to the 1948
+Convention on the Prevention and Punishment of the Crime of Genocide,
+Whereas Bosnia and Herzegovina has not become a party to the 1948
+Convention on the Prevention and Punishment of the Crime of Genocide
+in accordance with the provisions of the Convention itself,
+Bosnia and Herzegovina is not a party to the 1948 Convention on the
+Prevention and Punishment of the Crime of Genocide, consequently,
+the Court lacks the competence over the case.
+Fifth ppreliminary objection
+Whereas the case in point is an interna1 conflict between three sides in
+which the Federal Republic of Yugoslavia was not taking part and whereas
+the Federal Republic of Yugoslavia did not exercise any jurisdiction within
+the region of Bosnia and Herzegovina at the material time,
+Whereas the Memorial of the Applicant State is based upon a fundamentally erroneous interpretation of the 1948 Convention on the Prevention and Punishment of the Crime of Genocide and, in consequence, the
+claims contained in the 'Submissions' are based on allegations of State
+responsibility which fa11 outside the scope of the Convention and of its
+compromissory clause,
+there is no international dispute under Article IX of the 1948 Convention on the Prevention and Punishment of the Crime of Genocide, consequently,
+the Court lacks the competence over the case.
+If the Court does not accept any of the above-mentioned preliminary
+objections :
+Sixth preliminary objection
+Without prejudice to the above exposed preliminary objections, whereas
+the two Parties recognized each other on 14 December 1995, the 1948 Convention on the ~revëntiona nd Punishment of the Crime of Genocide was
+not operative between them prior to 14 December 1995, consequently,
+the Court lacks the competence before 14 December 1995 over the case.
+Alternatively and without prejudice to the preliminary objections formulated above, whereas the Notification of Succession, dated 29 December
+1992, whereby Bosnia and Herzegovina expressed the intention to enter
+into the 1948 Convention on the Prevention and Punishment of the Crime
+of Genocide can only produce the effect of accession to the Convention,
+the Court lacks competence before 29 March 1993 over the case and,
+thus, the Applicant's claims pertaining to the alleged acts or facts which
+occurred prior to that date do not fa11 within the competence of the
+Court.
+In case the Court refuses to adopt the above preliminary objections:
+
+[Source edition page 17]
+
+Seventh prelimirzary objection
+If the Applicant State's Notification of Succession, dated 29 December
+1992, is construed as having an effect of the Applicant State becoming a
+party to the 1948 Convention on the Prevention and Punishment of the
+Crime of Genocide from 6 March 1992 and whereas the Secretary-General
+of the United Nations sent to the parties of the said Convention the Note
+dated 18 March 1993, informing of the said succession, according to the
+rules of general international law, the 1948 Convention on the Prevention
+and Punishment of the Crime of Genocide would not be operative between
+the Parties prior to 18 March 1993 and, whereas this would not confer
+the competence on the Court in respect of events occurring prior to
+18 March 1993, consequently,
+the Applicant's claims pertaining to the alleged acts or facts which
+occurred prior to 18 March 1993 do not fa11 within the competence of
+the Court.
+As a final alternative:
+If the Applicant State's Notification of Succession, dated 29 December
+1992, is construed as having the effect of the Applicant State becoming a
+party to the Convention on the Prevention and Punishrnent of the Crime
+of Genocide from 6 March 1992, according to the rules of general international law, the 1948 Convention on the Prevention and Punishment of
+the Crime of Genocide would not be operative between the Parties prior to
+29 December 1992, and, whereas this would not confer competence on the
+Court in respect of events occurring prior to 29 December 1992, consequently,
+the Applicant's claims pertaining to the alleged acts or facts which
+occurred prior to 29 December 1992 do not fa11 within the competence
+of the Court.
+Objections on alleged additional bases of jurisdiction
+In view of the claim of the Applicant to base the jurisdiction of the
+Court under Articles 11 and 16 of the Treaty between Allied and Associated Powers and the Kingdom of Serbs, Croats and Slovenes, signed
+at Saint-Germain-en-Laye on 10 September 1919, the Federal Republic of
+Yugoslavia asks the Court
+to reject the said claim,
+because the Treaty between Allied and Associated Powers and the
+-
+Kingdom of Serbs, Croats and Slovenes signed at Saint-Germain-en-
+Laye on 10 September 1919 is not in force; and alternatively
+because the Applicant is not entitled to invoke the jurisdiction of the
+-
+Court according to Articles 11 and 16 of the Treaty.
+In view of the claim of the Applicant to establish the jurisdiction of the
+Court on the basis of the letter of 8 June 1992, sent by the Presidents of the
+two Yugoslav Republics, Serbia and Montenegro, Mr. Slobodan MiloseviC and Mr. Momir BulatoviC, to the President of the Arbitration Commission of the Conference on Yugoslavia, the Federal Republic of Yugoslavia asks the Court
+to reject the said claim,
+
+[Source edition page 18]
+
+- because the declaration contained in the letter of 8 June 1992 cannot
+be understood as a declaration of the Federal Republic of Yugoslavia
+according to the rules of international law; and
+- because the declaration was not in force on 31 March 1993 and later.
+In view of the claim of the Applicant State to establish the jurisdiction
+of the Court on the basis of the doctrine of forum prorogatum, the Federal
+Republic of Yugoslavia asks the Court
+to reject the said claim,
+- because the request for indication of provisional measures of proteetion does not imply a consent to the jurisdiction of the Court; and
+- because the conditions for the application of the doctrine of forum prorogatum are not fulfilled."
+On behalf of the Govevnment of Bosnia and Herzegovina,
+at the hearing on 3 May 1996:
+"Considering what has been stated by Bosnia and Herzegovina in al1 of
+its previous written subrnissions, considering what has been stated by the
+representatives of Bosnia and Herzegovina in the course of this week's oral
+proceedings, the Government of Bosnia and Herzegovina respectfully
+requests the Court,
+1. to adjudge and declare that the Federal Republic of Yugoslavia has
+abused its right to raise prelirninary objections as foreseen in Article 36,
+paragraph 6, of the Statute of the Court and to Article 79 of the Rules of
+Court ;
+2. to reject and dismiss the preliminary objections of the Federal Republic of Yugoslavia; and
+3. to adjudge and declare:
+(i) that the Court has jurisdiction on the various grounds set out in
+our previous written submissions and as further demonstrated
+during the present pleadings in respect of the submissions
+presented in the Memorial of Bosnia and Herzegovina; and
+(ii) that the submissions are admissible."
+16. Bosnia and Herzegovina has principally relied, as a basis for the
+jurisdiction of the'court in this case, on Article IX of the Genocide
+Convention. The Court will initially consider the preliminary objections
+raised by Yugoslavia on this point. It takes note, first, of the withdrawal
+by Yugoslavia, during the oral proceedings, of its fourth preliminary
+objection, which therefore need no longer be dealt with. In its third objection, Yugoslavia, on various grounds, has disputed the contention that
+the Convention binds the two Parties or that it has entered into force
+between them; and in its fifth objection, Yugoslavia has objected, for
+various reasons, to the argument that the dispute submitted by Bosnia
+
+[Source edition page 19]
+
+and Herzegovina falls within the provisions of Article IX of the Convention. The Court will consider these two alleged grounds of lack of jurisdiction in turn.
+17. The proceedings instituted before the Court are between two States
+whose territories are located within the former Socialist Federal Republic
+of Yugoslavia. That Republic signed the Genocide Convention on
+11 Decernber 1948 and deposited its instrument of ratification, without
+reservation, on 29 August 1950. At the time of the proclamation of the
+Federal Republic of Yugoslavia, on 27 April 1992, a forma1 declaration
+was adopted on its behalf to the effect that:
+"The Federal Republic of Yugoslavia, continuing the State,
+international legal and political personality of the Socialist Federal
+Republic of Yugoslavia, shall strictly abide by al1 the commitments
+that the Socialist Federal Republic of Yugoslavia assumed internationally."
+This intention thus expressed by Yugoslavia to remain bound by the
+international treaties to which the former Yugoslavia was party was confirmed in an officia1 Note of 27 April 1992 from the Permanent Mission
+of Yugoslavia to the United Nations, addressed to the Secretary-General.
+The Court observes, furthermore, that it has not been contested that
+Yugoslavia was party to the Genocide Convention. Thus, Yugoslavia
+was bound by the provisions of the Convention on the date of the filing
+of the Application in the present case, namely, on 20 March 1993.
+18. For its part, on 29 December 1992, Bosnia and Herzegovina transmitted to the Secretary-General of the United Nations, as depositary of
+the Genocide Convention, a Notice of Succession in the following terms:
+"the Government of the Republic of Bosnia and Herzegovina, having
+considered the Convention on the Prevention and Punishment of
+the Crime of Genocide, of December 9, 1948, to which the former
+Socialist Federal Republic of Yugoslavia was a party, wishes to succeed to the same and undertakes faithfully to perfom and carry out
+al1 the stipulations therein contained with effect from March 6, 1992,
+the date on which the Republic of Bosnia and Herzegovina became
+independent".
+On 18 March 1993, the Secretary-General communicated the following
+Depositary Notification to the parties to the Genocide Convention:
+"On 29 December 1992, the notification of succession by the
+Government of Bosnia and Herzegovina to the above-mentioned
+Convention was deposited with the Secretary-General, with effect
+from 6 March 1992, the date on which Bosnia and Herzegovina
+assumed responsibility for its international relations."
+
+[Source edition page 20]
+
+19. Yugoslavia has contested the validity and legal effect of the Notice
+of 29 December 1992, contending that, by its acts relating to its accession
+to independence, the Republic of Bosnia and Herzegovina had flagrantly
+violated the duties stemming from the "principle of equal rights and selfdetermination of peoples". According to Yugoslavia, Bosnia and Herzegovina was not, for this reason, qualified to become a party to the convention. Yugoslavia subsequently reiterated this objection in the third
+preliminary objection which it raised in this case.
+The Court notes that Bosnia and Herzegovina became a Member of
+the United Nations following the decisions adopted on 22 May 1992 by
+the Security Council and the General Assembly, bodies competent under
+the Charter. Article XI of the Genocide Convention opens it to "any
+Member of the United Nations"; from the time of its admission to the
+Organization, Bosnia and Herzegovina could thus become a party to the
+Convention. Hence the circumstances of its accession to independence
+are of little consequence.
+20. It is clear from the foregoing that Bosnia and Herzegovina could
+become a party to the Convention through the mechanism. of State
+succession. Moreover, the Secretary-General of the United Nations considered that this had been the case, and the Court took note of this in
+its Order of 8 April 1993 (Application of the Convention on the Prevention and Punishment of the Crime of Genocide, Provisional Measuves,
+I.C.J. Reports 1993, p. 16, para. 25).
+21. The Parties to the dispute differed as to the legal consequences to
+be drawn from the occurrence of a State succession in the present case. In
+this context, Bosnia and Herzegovina has, among other things, contended that the Genocide Convention falls within the category of instruments for the protection of human rights, and that consequently, the rule
+of "automatic succession" necessarily applies. Bosnia and Herzegovina
+concluded therefrom that it became a party to the Convention with effect
+from its accession to independence. Yugoslavia disputed any "automatic
+succession" of Bosnia and Herzegovina to the Genocide Convention on
+this or any other basis.
+22. As regards the nature of the Genocide Convention, the Court
+would recall what it stated in its Advisory Opinion of 28 May 1951 relating to the Reservations to the Convention on the Prevention and Punishment of the Crime of Genocide:
+"In such a convention the contracting States do not have any
+interests of their own; they merely have, one and all, a comrnon
+interest, namely, the accomplishment of those high purposes which
+are the raison d'être of the convention. Consequently, in a convention of this type one cannot speak of individual advantages or disadvantages to States, or of the maintenance of a perfect contractual
+balance between rights and duties." (I.C .J. Reports 1951, p. 23.)
+
+[Source edition page 21]
+
+The Court subsequently noted in that Opinion that:
+"The object and purpose of the Genocide Convention imply that
+it was the intention of the General Assembly and of the States which
+adopted it that as many States as possible should participate. The
+complete exclusion from the Convention of one or more States
+would not only restrict the scope of its application, but would
+detract from the authority of the moral and humanitarian principles
+which are its basis." (1.C . J. Reports 1951, p. 24.)
+23. Without prejudice as to whether or not the principle of "automatic
+succession" applies in the case of certain types of international treaties or
+conventions. the Court does not consider it necessarv. in order to decide
+on its jurisdiction in this case, to make a determinatioJn2 on the legal issues
+concerning State succession in respect to treaties which have been raised
+by the Parties. Whether Bosnia and Herzegovina automatically became
+party to the Genocide Convention on the date of its accession to independence on 6 March 1992, or whether it became a party as a result
+-
+retroactive or not - of its Notice of Succession of 29 December 1992, at
+al1 events it was a party to it on the date of the filing of its Application
+on 20 March 1993. These matters might, at the most, possess a certain
+relevance with respect to the determination of the scope ratione temporis
+of the jurisdiction of the Court, a point which the Court will consider
+later (paragraph 34 below).
+24. Yugoslavia has also contended, in its sixth preliminary objection,
+that, if the Notice given by Bosnia and Herzegovina on 29 December
+1992 had to be interpreted as constituting an instrument of accession
+within the meaning of Article XI of the Genocide Convention, it could
+only have become effective, pursuant to Article XIII of the Convention,
+on the 90th day following its deposit, that is, 29 March 1993.
+Since the Court has concluded that Bosnia and Herzegovina could
+become a party to the Genocide Convention as a result of a succession,
+the question of the application of Articles XI and XIII of the Convention
+does not arise. However, the Court would recall that, as it noted in its
+Order of 8 April 1993, even if Bosnia and Herzegovina were to be treated
+as having acceded to the Genocide Convention, which would mean that
+the Application could be said to be premature by nine days when filed on
+20 March 1993, during the time elapsed since then, Bosnia and Herzegovina could, on its own initiative, have remedied the procedural defect
+by filing a new Application. It therefore matters little that the Application had been filed some days too early. As will be indicated in the following paragraphs, the Court is not bound to attach the same degree of
+importance to considerations of fom as they might possess in domestic
+law .
+25. However, in the oral proceedings Yugoslavia submitted that, even
+supposing that Bosnia and Herzegovina had been bound by the Convention in March 1993, it could not, at that time, have entered into force
+
+[Source edition page 22]
+
+between the Parties, because the two States did not recognize one another
+and the conditions necessary to found the consensual basis of the Court's
+jurisdiction were therefore lacking. However, this situation no longer
+obtains since the signature, and the entry into force on 14 December
+1995, of the Dayton-Paris Agreement, Article X of which stipulates that:
+"The Federal Republic of Yugoslavia and the Republic of Bosnia
+and Herzegovina recognize each other as sovereign independent
+States within their international borders. Further aspects of their
+mutual recognition will be subject to subsequent discussions."
+26. For the purposes of determining its jurisdiction in this case, the
+Court has no need to settle the question of what the effects of a situation
+of non-recognition may be on the contractual ties between parties to a
+multilateral treaty. It need only note that, even if it were to be assumed
+that the Genocide Convention did not enter into force between the Parties
+until the signature of the Dayton-Paris Agreement, al1 the conditions are
+now fulfilled to found the jurisdiction of the Court ratione personae.
+It is the case that the jurisdiction of the Court must normally be
+assessed on the date of the filing of the act instituting proceedings. However, the Court, like its predecessor, the Permanent Court of International Justice, has always had recourse to the principle according to
+which it should not penalize a defect in a procedural act which the applicant could easily remedy. Hence, in the case concerning the Mavrommatis Palestine Concessions, the Permanent Court said:
+"Even if the grounds on which the institution of proceedings was
+based were defective for the reason stated, this would not be an
+adequate reason for the dismissal of the applicant's suit. The Court,
+whose jurisdiction is international, is not bound to attach to matters
+of form the same degree of importance which they might possess in
+municipal law. Even, therefore, if the application were premature
+because the Treaty of Lausanne had not yet been ratified, this circumstance would now be covered by the subsequent deposit of the
+necessary ratifications." (P.C.I . J., Series A, No. 2, p. 34.)
+The same principle lies at the root of the following dictum of the Permanent Court of International Justice in the case concerning Certain German Interests in Polish Upper Silesia:
+"Even if, under Article 23, the existence of a definite dispute were
+necessary, this condition could at any time be fulfilled by means of
+unilateral action on the part of the applicant Party. And the Court
+cannot allow itself to be hampered by a mere defect of form, the
+removal of which depends solely on the Party concerned." (P.C . I. J.,
+Series A, No. 6, p. 14.)
+The present Court applied this principle in the case concerning the
+Northern Cameroons (I.C .J . Reports 1963, p. 28), as well as Military and
+
+[Source edition page 23]
+
+Paramilitary Activities in and against Nicaragua (Nicaragua v. United
+States of America) when it stated: "It would make no sense to require
+Nicaragua now to institute fresh proceedings based on the Treaty, which
+it would be fully entitled to do." (I.C.J. Reports 1984, pp. 428-429,
+para. 83.)
+In the present case, even if it were established that the Parties, each of
+which was bound by the Convention when the Application was filed, had
+only been bound as between themselves with effect from 14 December
+1995, the Court could not set aside its jurisdiction on this basis, inasmuch
+as Bosnia and Herzegovina might at any time file a new application,
+identical to the present one, which would be unassailable in this respect.
+In the light of the foregoing, the Court considers that it must reject
+Yugoslavia's third preliminary objection.
+27. In order to determine whether it has jurisdiction to entertain the
+case on the basis of Article IX of the Genocide Convention, it remains
+for the Court to verify whether there is a dispute between the Parties that
+falls within the scope of that provision. Article IX of the Convention is
+worded as follows:
+"Disputes between the Contracting Parties relating to the interpretation, application or fulfilment of the present Convention, including
+those relating to the responsibility of a State for genocide or for any
+of the other acts enumerated in article III, shall be submitted to the
+International Court of Justice at the request of any of the parties to
+the dispute."
+It is jurisdiction ratione materiae, as so defined, to which Yugoslavia's
+fifth obiection relates.
+28. fn their final form, the principal requests submitted by Bosnia and
+Herzegovina are for the Court to adjudge and declare that Yugoslavia has
+in several ways violated the Genocide Convention; to order Yugoslavia to
+cease the acts contrary to the obligations stipulated in the Convention; and
+to declare that Yugoslavia has incurred international responsibility by
+reason of those violations, for which it must make appropriate reparation.
+While Yueoslavia has refrained from filing a Counter-Memorial on the
+rnerits and has raised preliminary objectigns, it has nevertheless wholly
+denied al1 of Bosnia and Herzegovina's allegations, whether at the stage of
+proceedings relating to the requests for the indication of provisional measures, or at the stage of the present proceedings relating to those objections.
+29. In conformity with well-established jurisprudence, the Court
+accordingly notes that there persists
+"a situation in which the two sides hold clearly opposite views
+concerning the question of the performance or non-performance of
+certain treaty obligations7' (Interpretation of Peace Treaties with
+
+[Source edition page 24]
+
+Bulgaria, Hungary and Romania, First Phase, Advisory Opinion,
+I. C.J . Reports 1950, p. 74)
+and that, by reason of the rejection by Yugoslavia of the complaints
+formulated against it by Bosnia and Herzegovina, "there is a legal dispute" between them (East Timor (Portugal v. Australia), I. C. J. Reports
+1995, p. 100, para. 22).
+30. To found its jurisdiction, the Court must, however, still ensure
+that the dispute in question does indeed fa11 within the provisions of
+Article IX of the Genocide Convention.
+Yugoslavia disputes this. It contests the existence in this case of an
+"international dispute" within the meaning of the Convention, basing
+itself on two propositions: first, that the conflict occurring in certain
+parts of the Applicant's territory was of a domestic nature, Yugoslavia
+was not party to it and did not exercise jurisdiction over that territory at
+the time in question; and second, that State responsibility, as referred to
+in the requests of Bosnia and Herzegovina, was excluded from the scope
+of application of Article IX.
+31. The Court will begin with a consideration of Yugoslavia's first
+proposition.
+In doing so, it will start by recalling the tems of Article 1 of the Genocide Convention, worded as follows:
+"The Contracting Parties confirm that genocide, whether committed in time of peace or in time of war, is a crime under international
+law which they undertake to prevent and to punish."
+The Court sees nothing in this provision which would make the applicability of the Convention subject to the condition that the acts contemplated by it should have been committed within the framework of a
+particular type of conflict. The contracting parties expressly state therein
+their willingness to consider genocide as "a crime under international
+law", which they must prevent and punish independently of the context
+"of peace" or "of war" in which it takes place. In the view of the Court,
+this means that the Convention is applicable, without reference to the circumstances linked to the domestic or international nature of the conflict,
+provided the acts to which it refers in Articles II and III have been perpetrated. In other words, irrespective of the nature of the conflict forming
+the background to such acts, the obligations of prevention and punishment which are incumbent upon the States parties to the Convention
+remain identical.
+As regards the question whether Yugoslavia took part - directly or
+indirectly - in the conflict at issue, the Court would merely note that the
+Parties have radically differing viewpoints in this respect and that it cannot, at this stage in the proceedings, settle this question, which clearly
+belongs to the merits.
+Lastly, as to the territorial problems linked to the application of the
+Convention, the Court would point out that the only provision relevant
+
+[Source edition page 25]
+
+to this, Article VI, merely provides for persons accused of one of the acts
+prohibited by the Convention to "be tried by a competent tribunal of the
+State in the territory of which the act was committed . . .". It would also
+recall its understanding of the object and purpose of the Convention, as
+set out in its Opinion of 28 May 1951, cited above:
+"The origins of the Convention show that it was the intention of
+the United Nations to condemn and punish genocide as 'a crime
+under international law' involving a denial of the right of existence
+of entire human groups, a denial which shocks the conscience of
+mankind and results in great losses to humanity, and which is contrary to moral law and to the spirit and aims of the United Nations
+(Resolution 96 (1) of the General Assembly, December 11t h 1946).
+The first consequence arising from this conception is that the principles underlying the Convention are principles which are recognized
+by civilized nations as binding on States, even without any conventional obligation. A second consequence is the universal character
+both of the condemnation of genocide and of the CO-operation
+required 'in order to liberate mankind from such an odious scourge'
+(Preamble to the Convention)." (I.C .J . Reports 1951, p. 23.)
+It follows that the rights and obligations enshrined by the Convention are
+rights and obligations erga omnes. The Court notes that the obligation
+each State thus has to prevent and to punish the crime of genocide is not
+territorially limited by the Convention.
+32. The Court now comes to the second proposition advanced by Yugoslavia, regarding the type of State responsibility envisaged in Article IX
+of the Convention. According to Yugoslavia, that Article would only
+cover the responsibility flowing from the failure of a State to fulfil its obligations of prevention and punishment as contemplated by Articles V,
+VI and VII; on the other hand, the responsibility of a State for an act of
+genocide perpetrated by the State itself would be excluded from the scope
+of the Convention.
+The Court would observe that the reference in Article IX to "the
+responsibility of a State for genocide or for any of the other acts enumerated in Article III", does not exclude any form of State responsibility.
+Nor is the responsibility of a State for acts of its organs excluded by
+Article IV of the Convention, which contemplates the commission of an
+act of genocide by "rulers" or "public officials".
+33. In the light of the foregoing, the Court considers that it must reject
+the fifth preliminary objection of Yugoslavia. It would moreover observe
+that it is sufficiently apparent from the very terms of that objection that
+the Parties not only differ with respect to the facts of the case, their
+imputability and the applicability to them of the provisions of the Genocide Convention, but are moreover in disagreement with respect to the
+meaning and legal scope of several of those provisions, including
+Article IX. For the Court, there is accordingly no doubt that there
+exists a dispute between them relating to "the interpretation, application or
+
+[Source edition page 26]
+
+fulfilment of the . . . Convention, including . . . the responsibility of a
+State for genocide . . .", according to the form of words employed by that
+latter provision (cf. Applicability of the Obligation to Arbitrate under
+Section 21 of the United Nations Headquarters Agreement of 26 June
+1947, Advisory Opinion, I. C. J. Reports 1988, pp. 27-32).
+34. Having reached the conclusion that it has jurisdiction in the present
+case, both ratione personae and ratione materiae on the basis of Article IX of the Genocide Convention, it remains for the Court to specify
+the scope of that jurisdiction ratione temporis. In its sixth and seventh
+preliminary objections, Yugoslavia, basing its contention on the principle
+of the non-retroactivity of legal acts, has indeed asserted as a subsidiary
+argument that, even though the Court might have jurisdiction on the
+basis of the Convention, it could only deal with events subsequent to the
+different dates on which the Convention might have become applicable
+as between the Parties. In this regard, the Court will confine itself to
+the observation that the Genocide Convention and in particular
+-
+Article IX does not contain any clause the object or effect of which is
+-
+to limit in such manner the scope of its jurisdiction ratione temporis, and
+nor did the Parties themselves make any reservation to that end, either to
+the Convention or on the occasion of the signature of the Dayton-Paris
+Agreement. The Court thus finds that it has jurisdiction in this case to
+give effect to the Genocide Convention with regard to the relevant facts
+which have occurred since the beginning of the conflict which took place
+in Bosnia and Herzegovina. This finding is, moreover, in accordance with
+the object and purpose of the Convention as defined by the Court in 1951
+and referred to above (see paragraph 31). As a result, the Court considers
+that it must reject Yugoslavia's sixth and seventh preliminary objections.
+35. After the filing of its Application, Bosnia and Herzegovina invoked
+various additional bases of iurisdiction of the Court in the ~resentc ase.
+Even though, in both the written and oral proceedings, it relied essentially upon Article IX of the Genocide Convention, Bosnia and Herzegovina indicated that it was maintaining its claims in relation to those
+additional grounds of jurisdiction. In particular, it specified at the hearing that while it was renouncing "al1 the claims [set forth in its Application] which are not directly linked to the genocide committed or abetted
+by Yugoslavia", those additional bases could nonetheless
+"present a degree of interest, enabling the Court to make findings on
+some of the means used by Yugoslavia to perpetrate the genocide of
+which it stands accused, and particularly its recourse to a war of
+
+[Source edition page 27]
+
+aggression during which it seriously violated the 1949 Geneva
+Conventions and the 1977 Protocols 1 and II";
+and Bosnia and Herzegovina went on to Say that "The Court might proceed in this way on the basis of Article IX alone", explaining that
+"The possibility of relying on other bases of jurisdiction . . . would
+at least . . . avoid futile arguments between the Parties as to whether
+such conduct is or is not linked 'with sufficient directness' to the
+Convention."
+36. Yugoslavia, for its part, contended during the proceedings that the
+Court could not take account of such additional grounds as could have
+been referred to in the Application but to which no reference was in fact
+made. However, in its final submissions, it did not reiterate that objection
+and asked the Court, for the reasons there given, to declare that it lacked
+jurisdiction on those grounds.
+37. As the Court has indicated above (see paragraph 4), the Agent of
+Bosnia and Herzegovina filed in the Registry, on 3 1 March 1993, the text
+of a letter dated 8 June 1992 that was addressed to the President of the
+Arbitration Commission of the International Conference for Peace in
+Yugoslavia by Mr. Momir Bulatovié, President of the Republic of
+Montenegro, and Mr. Slobodan Milosevié, President of the Republic of
+Serbia. According to the English translation of that letter provided by
+Bosnia and Herzegovina, they expressed the following views, inter alia:
+"FR Yugoslavia holds the view that al1 legal disputes which
+cannot be settled by agreement between FR Yugoslavia and the
+former Yugoslav republics should be taken to the International
+Court of Justice, as the principal judicial organ of the United Nations.
+Accordingly, and in view of the fact that al1 the issues raised in
+your letter are of a legal nature, FR Yugoslavia proposes that in the
+event that agreement is not reached among the participants in the
+Conference, these questions should be adjudicated by the International Court of Justice, in accordance with its Statute."
+The Court finds that, given the circumstances in which that letter was
+written and the declarations that ensued, it could not be taken as expressing an immediate commitment by the two Presidents, binding on Yugoslavia, to accept unconditionally the unilateral submission to the Court
+of a wide range of legal disputes. It thus confirms the provisional conclusion which it had reached in this regard in its Orders of 8 April (1. C. J.
+Reports 1993, pp. 16-18, paras. 27-32) and 13 September 1993 (Z.C.J.
+Reports 1993, pp. 340-341, para. 32); besides, no fundamentally new
+argument has been presented to it on this matter since that time. It fol-
+
+[Source edition page 28]
+
+lows that the Court cannot find in that letter an additional basis of jurisdiction in the present case.
+38. The Court has likewise recalled above (see paragraph 7) that, by a
+communication dated 6 August 1993, the Agent of Bosnia and Herzegovina indicated that his Government intended likewise to submit, as an
+additional basis of jurisdiction, the Treaty between the Allied and Associated Powers (the United States of America, the British Empire, France,
+Italy and Japan) and the Kingdom of the Serbs, Croats and Slovenes,
+that was signed at Saint-Germain-en-Laye on 10 September 1919 and
+entered into force on 16 July 1920. Chapter 1 of that Treaty concerns the
+protection of minorities and includes an Article 11 according to which:
+"The Serb-Croat-Slovene State agrees that any Member of the
+Council of the League of Nations shall have the right to bring to the
+attention of the Council any infraction, or any danger of infraction,
+of any of these obligations, and that the Council may thereupon take
+such action and give such directions as it may deem proper and
+effective in the circumstances.
+The Serb-Croat-Slovene State further agrees that any difference of
+opinion as to questions of law or fact arising out of these Articles
+between the Serb-Croat-Slovene State and any one of the Principal
+Allied and Associated Powers or any other Power, a member of the
+Council of the League of Nations, shall be held to be a dispute of
+an international character under Article 14 of the Covenant of the
+League of Nations. The Serb-Croat-Slovene State hereby consents
+that any such dispute shall, if the other party thereto demands, be
+referred to the Permanent Court of International Justice. The decision of the Permanent Court shall be final and shall have the same
+force and effect as an award under Article 13 of the Covenant."
+Chapter II, which concerns succession in respect of treaties, trade, the
+treatment of foreign vessels and freedom of transit, includes an Article 16
+which provides, inter alia, that
+"Al1 rights and privileges accorded by the foregoing Articles to the
+Allied and Associated Powers shall be accorded equally to al1 States
+Members of the League of Nations."
+Bosnia and Herzegovina substantially contends that, by the effect of
+those two provisions, any Member of the League of Nations could refer
+to the Permanent Court a dispute to which Article 11 applied; that the
+General Assembly of the United Nations has taken the place of the
+Council of the League of Nations in respect of such matters; and that
+Bosnia and Herzegovina, as a Member of the United Nations, may now,
+by operation of Article 37 of the Statute, seise the present Court of its
+dispute with Yugoslavia, on the basis of the 1919 Treaty.
+The Court considers that, in so far as Yugoslavia is now bound by the
+
+[Source edition page 29]
+
+1919 Treaty as successor to the Kingdom of the Serbs, Croats and
+Slovenes, its obligations under that Treaty would be limited to its present
+territory; it notes that Bosnia and Herzegovina has put forward no
+claim in its Application concerning the treatment of minorities in Yugoslavia. In these circumstances, the Court is unable to uphold the 1919
+Treaty as a basis on which its jurisdiction in this case could be founded.
+On this point as well, the Court thus confirms the provisional conclusion
+reached in its Order of 13 September 1993 (I.C . J. Reports 1993, pp. 339-
+340, paras. 29-31); besides, no fundamentally new argument has been
+presented on this matter either, since that time.
+39. As the Court has also recalled above (see paragraph 7), Bosnia and
+Herzegovina, by a letter from its Agent dated 10 August 1993, further
+invoked as an additional basis of jurisdiction in the present case
+"the Customary and Conventional International Laws of War and
+International Humanitarian Law, including but not limited to the
+Four Geneva Conventions of 1949, their First Additional Protocol
+of 1977, the Hague Regulations on Land Warfare of 1907, and the
+Nuremberg Charter, Judgrnent, and Principles".
+As it has already pointed out in its Order of 13 September 1993 (I.C .J .
+Reports 1993, p. 341, para. 33), the Court can find no provision relevant
+to its jurisdiction in any of the above-mentioned instruments. It notes, in
+addition, that the Applicant has made no further reference to this basis of
+jurisdiction as such.
+40. Lastly, at a later stage of the proceedings, Bosnia and Herzegovina
+advanced two related arguments aimed at basing the Court's jurisdiction
+in this case on still other grounds.
+According to the first of those arguments, Yugoslavia, by various
+aspects of its conduct in the course of the incidental proceedings set in
+motion by the requests for the indication of provisional measures, had
+acquiesced in the jurisdiction of the Court on the basis of Article IX of
+the Genocide Convention. As the Court has alreadv reached the conclusion that it has jurisdiction on the basis of that Provision, it need no
+longer consider that question.
+According to the second argument, as Yugoslavia, on 1 April 1993,
+itself called for the indication of provisional measures some of which
+were aimed at the preservation of rights not covered by the Genocide
+Convention, it was said, in accordance with the doctrine of forum prorogatum (stricto sensu), to have given its consent to the exercise by the
+Court, in the present case, of a wider jurisdiction than that provided for
+in Article IX of the Convention. Given the nature of both the provisional
+measures subsequently requested by Yugoslavia on 9 August 1993
+-
+which were aimed exclusively at the preservation of rights conferred by
+
+[Source edition page 30]
+
+the Genocide Convention - and the unequivocal declarations whereby
+Yugoslavia consistently contended during the subsequent proceedings
+that the Court lacked jurisdiction - whether on the basis of the Genocide Convention or on any other basis the Court finds that it must
+-
+confirm the provisional conclusion that it reached on that subject in its
+Order of 13 September 1993 (1.C .J. Reports 1993, pp. 341-342, para. 34).
+The Court does not find that the Respondent has given in this case a
+"voluntary and indisputable" consent (see Corfu Channel, Preliminary
+Objection, Judgment, 1948, I. C.J . Reports 1947-1948, p. 27) which would
+confer upon it a jurisdiction exceeding that which it has already acknowledged to have been conferred upon it by Article IX of the Genocide
+Convention.
+41. It follows from the foregoing that the Court is unable to uphold
+any of the additional bases of jurisdiction invoked by the Applicant and
+that its only jurisdiction to entertain the case is on the basis of Article IX
+of the Genocide Convention.
+42. Having ruled on the objections raised by Yugoslavia with respect
+to its jurisdiction, the Court will now proceed to consider the objections
+of Yugoslavia that relate to the admissibility of the Application.
+43. According to the first preliminary objection of Yugoslavia, the
+Application is said to be inadmissible on the ground that it refers to
+events that took place within the framework of a civil war, and there is
+consequently no international dispute upon which the Court could make
+a finding.
+This objection is very close to the fifth objection which the Court has
+already considered (paragraphs 27-33). In responding to the latter objection, the Court has in fact also answered this. Having noted that there
+does indeed exist between the Parties a dispute falling within the provisions of Article IX of the Genocide Convention - that is to Say an international dispute -, the Court cannot find that the Application is inadmissible on the sole ground that, in order to decide the dispute, it would
+be impelled to take account of events that may have occurred in a context
+of civil war. It follows that the first objection of Yugoslavia must be
+rejected.
+44. According to the second objection of Yugoslavia, the Application
+is inadmissible because, as Mr. Alija IzetbegoviE was not serving as President of the Republic - but only as President of the Presidency - at the
+
+[Source edition page 31]
+
+time at which he granted the authorization to initiate proceedings, that
+authorization was granted in violation of certain rules of domestic law of
+fundamental significance. Yugoslavia likewise contended that Mr. Izetbegovié was not even acting legally at that time as President of the Presidency.
+The Court does not, in order to rule on that objection, have to consider the tlrovisions of domestic law which were invoked in the course of
+the proceedings either in support of or in opposition to that objection.
+According to international law, there is no doubt that every Head of
+State is presumed to be able to act on behalf of the State in its international relations (see for example the Vienna Convention on the Law of
+Treaties, Art. 7, para. 2 (a)). As the Court found in its Order of 8 April
+1993 (1.C .J . Reports 1993, p. 11, para. 13), at the time of the filing of the
+Application, Mr. Izetbegovik was recognized, in particular by the United
+Nations, as the Head of State of Bosnia and Herzegovina. Moreover, his
+status as Head of State continued subsequently to be recognized in many
+international bodies and several international agreements including
+-
+the Dayton-Paris Agreement bear his signature. It follows that the
+-
+second preliminary objection of Yugoslavia must also be rejected.
+45. The Court concludes from the foregoing that the Application filed
+by Bosnia and Herzegovina on 20 March 1993 is admissible.
+46. The Court has taken note of the withdrawal of the fourth preliminary objection of Yugoslavia and has rejected the other preliminary
+objections. In conclusion, the Court emphasizes that in so doing it does
+not consider that Yugoslavia has, in presenting those objections, abused
+its rights to do so under Article 36, paragraph 6, of the Statute of the
+Court and Article 79 of the Rules of Court. The Court rejects the request
+made to that end by Bosnia and Herzegovina in its final submissions. The
+Court must, in each case submitted to it, verify whether it has jurisdiction
+to deal with the case, and, if necessary, whether the Application is admissible, and such objections as are raised by the Respondent may be useful
+to clarify the legal situation. As matters now stand, the preliminary
+objections presented by Yugoslavia have served that purpose. Having
+established its jurisdiction under Article IX of the Genocide Convention,
+and having concluded that the Application is admissible, the Court may
+now proceed to consider the merits of the case on that basis.
+
+[Source edition page 32]
+
+47. For these reasons,
+(1) Having taken note of the withdrawal of the fourth preliminary
+objection raised by the Federal Republic of Yugoslavia,
+Rejects
+(a) by fourteen votes to one,
+the first, second and third preliminary objections;
+IN FAVOUPRr:e sident Bedjaoui; Vice-President Schwebel; Judges Oda,
+Guillaume, Shahabuddeen, Weeramantry, Ranjeva, Herczegh, Shi,
+Koroma, Vereshchetin, Ferrari Bravo, Parra-Aranguren; Judge ad
+hoc Lauterpacht ;
+AGAINSJTu:d ge ad hoc Kreéa;
+(b) by eleven votes to four,
+the fifth preliminary objection;
+IN FAVOURP:r esident Bedjaoui; Vice-President Schwebel; Judges
+Guillaume, Shahabuddeen, Weeramantry, Ranjeva, Herczegh, Koroma,
+Ferrari Bravo, Parra-Aranguren ; Judge ad hoc Lauterpacht ;
+AGAINSJTu:d ges Oda, Shi, Vereshchetin; Judge ad hoc KreCa;
+(c) by fourteen votes to one,
+the sixth and seventh preliminary objections;
+IN FAVOUPRr:e sident Bedjaoui; Vice-President Schwebel; Judges Oda,
+Guillaume, Shahabuddeen, Weeramantry, Ranjeva, Herczegh, Shi,
+Koroma, Vereshchetin, Ferrari Bravo, Parra-Aranguren; Judge ad
+hoc Lauterpacht ;
+AGAINSJTu:d ge ad hoc Kreéa;
+(2) (a) by thirteen votes to two,
+Finds that, on the basis of Article IX of the Convention on the Prevention and Punishment of the Crime of Genocide, it has jurisdiction to
+adjudicate upon the dispute;
+IN FAVOUR : President Bedjaoui ; Vice-President Schwebel ; Judges Guillaume,
+Shahabuddeen, Weeramantry, Ranjeva, Herczegh, Shi, Koroma, Vereshchetin, Ferrari Bravo, Parra-Aranguren; Judge ad hoc Lauterpacht;
+AGAINST : Judge Oda ; Judge ad hoc Kreka ;
+(b) By fourteen votes to one,
+Dismisses the additional bases of jurisdiction invoked by the Republic
+of Bosnia and Herzegovina;
+IN FAVOUR : President Bedjaoui ; Vice-President Schwebel ; Judges Oda,
+Guillaume, Shahabuddeen, Weeramantry, Ranjeva, Herczegh, Shi,
+Koroma, Vereshchetin, Ferrari Bravo, Parra-Aranguren; Judge ad hoc
+KreCa ;
+AGAINST : Judge ad hoc Lauterpacht ;
+
+[Source edition page 33]
+
+(3) By thirteen votes to two,
+Finds that the Application filed by the Republic of Bosnia and Herzegovina on 20 March 1993 is admissible.
+IN FAVOUR : President Bedjaoui; Vice-President Schwebel; Judges Guillaume,
+Shahabuddeen, Weeramantry, Ranjeva, Herczegh, Shi, Koroma, Vereshchetin, Ferrari Bravo, Parra-Aranguren; Judge ad hoc Lauterpacht;
+AGAINSJTud: ge Oda; Judge ad hoc KreCa.
+Done in French and in English, the French text being authoritative, at
+the Peace Palace, The Hague, this eleventh day of July, one thousand
+nine hundred and ninety-six, in three copies, one of which will be placed
+in the archives of the Court and the others transmitted to the Government of the Republic of Bosnia and Herzegovina and the Government of
+the Federal Republic of Yugoslavia, respectively.
+(Signed) Mohammed BEDJAOUI,
+President.
+(Signed) Eduardo VALENCIA-OSPINA,
+Registrar.
+Judge ODA appends a declaration to the Judgment of the Court;
+Judges SHI and VERESHCHETaIpNp end a joint declaration to the Judgment of the Court; Judge ad hoc LAUTERPACaHpTp ends a declaration to
+the Judgment of the Court.
+Judges SHAHABUDDEEWN,E ERAMANTRaYn d PARRA-ARANGUREN
+append separate opinions to the Judgment of the Court.
+Judge ad hoc KRECAa ppends a dissenting opinion to the Judgment of
+the Court.
+(Initialled) M.B.
+(Initialled) E.V.O.

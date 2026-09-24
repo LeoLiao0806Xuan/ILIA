@@ -16,4 +16,4 @@ npm run build --prefix apps/desktop
 
 PowerShell removes a bare `--` when it invokes a `.ps1` file. In commands that need Cargo's argument separator, write `---`; the wrapper converts it back to `--` before starting Cargo. GitHub Actions uses Cargo directly and therefore keeps the standard `--` syntax.
 
-Do not commit model weights, ad-hoc SQLite databases, llama.cpp binaries, downloaded PDFs, installer payloads, update private keys or generated release directories. The reviewed `data/ilia_prototype.sqlite3` release baseline is the sole SQLite exception. Update manifests must be signed only by the release owner using the private key described in `docs/update_system.md`.
+Do not commit model weights, ad-hoc SQLite databases, llama.cpp binaries, downloaded PDFs, installer payloads, update private keys or generated release directories. The reviewed `data/ilia_prototype.sqlite3` baseline and its deterministic distributable derivative `data/ilia.sqlite3` are the only SQLite exceptions. Update manifests must be signed only by the release owner using the private key described in `docs/update_system.md`.

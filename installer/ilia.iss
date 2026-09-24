@@ -1,9 +1,9 @@
 #define AppName "ILIA"
 #ifndef AppVersion
-  #define AppVersion "1.0.0"
+  #define AppVersion "1.0.1"
 #endif
 #ifndef AppFileVersion
-  #define AppFileVersion "1.0.0.0"
+  #define AppFileVersion "1.0.1.0"
 #endif
 #ifndef SourceDir
   #error SourceDir must point to the staged ILIA application directory
@@ -13,6 +13,9 @@
 #endif
 #ifndef WebView2Installer
   #define WebView2Installer ""
+#endif
+#ifndef VCRedistInstaller
+  #error VCRedistInstaller must point to the official Microsoft x64 redistributable
 #endif
 
 [Setup]
@@ -43,12 +46,14 @@ RestartApplications=no
 MinVersion=10.0.17763
 VersionInfoVersion={#AppFileVersion}
 VersionInfoProductName={#AppName}
+LicenseFile={#SourceDir}\licenses\INSTALLER-THIRD-PARTY-TERMS.txt
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
 Source: "{#SourceDir}\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#VCRedistInstaller}"; DestDir: "{tmp}"; Flags: deleteafterinstall
 #if WebView2Installer != ""
 Source: "{#WebView2Installer}"; DestDir: "{tmp}"; Flags: deleteafterinstall
 #endif
@@ -61,12 +66,29 @@ Name: "{autodesktop}\ILIA"; Filename: "{app}\ilia-desktop.exe"; Tasks: desktopic
 Name: "desktopicon"; Description: "创建桌面快捷方式"; GroupDescription: "快捷方式："
 
 [Run]
+Filename: "{tmp}\VC_redist.x64.exe"; Parameters: "/install /quiet /norestart"; StatusMsg: "正在安装 Microsoft Visual C++ Runtime..."; Flags: waituntilterminated runhidden; Check: not IsRequiredVCRuntimeInstalled
 #if WebView2Installer != ""
 Filename: "{tmp}\MicrosoftEdgeWebView2RuntimeInstallerX64.exe"; Parameters: "/silent /install"; StatusMsg: "正在安装 Microsoft Edge WebView2 Runtime..."; Flags: waituntilterminated runhidden; Check: not IsWebView2Installed
 #endif
 Filename: "{app}\ilia-desktop.exe"; Description: "启动 ILIA"; Flags: nowait postinstall skipifsilent
 
 [Code]
+function IsRequiredVCRuntimeInstalled: Boolean;
+var
+  Installed, Major, Minor, Build: Cardinal;
+  Key: String;
+begin
+  Key := 'SOFTWARE\Microsoft\VisualStudio\14.0\VC\Runtimes\x64';
+  Result :=
+    RegQueryDWordValue(HKLM64, Key, 'Installed', Installed) and
+    RegQueryDWordValue(HKLM64, Key, 'Major', Major) and
+    RegQueryDWordValue(HKLM64, Key, 'Minor', Minor) and
+    RegQueryDWordValue(HKLM64, Key, 'Bld', Build) and
+    (Installed = 1) and
+    ((Major > 14) or ((Major = 14) and ((Minor > 51) or
+      ((Minor = 51) and (Build >= 36247)))));
+end;
+
 procedure StopIliaProcesses;
 var
   ResultCode: Integer;

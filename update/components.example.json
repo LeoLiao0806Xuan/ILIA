@@ -13,7 +13,7 @@
     "kind": "corpus",
     "version": "public-international-law-v1.1",
     "from_version": "public-international-law-v1-2026.09.22",
-    "target": "data/ilia_prototype.sqlite3",
+    "target": "data/ilia.sqlite3",
     "payload_path": "update/payloads/corpus-v1.1.patch.json",
     "payload_format": "sqlite_patch"
   }

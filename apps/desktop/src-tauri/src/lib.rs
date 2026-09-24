@@ -30,7 +30,7 @@ struct AppPaths {
     log_dir: PathBuf,
     updater: PathBuf,
     trusted_update_key: PathBuf,
-    corpus_sources: PathBuf,
+    normalized_corpus: PathBuf,
 }
 
 impl AppPaths {
@@ -49,7 +49,7 @@ impl AppPaths {
             .map_err(|error| format!("cannot create ILIA log directory: {error}"))?;
         let paths = Self {
             install_root: root.clone(),
-            database: root.join("data/ilia_prototype.sqlite3"),
+            database: root.join("data/ilia.sqlite3"),
             bge_cache: root.join("models/bge-m3"),
             qwen_model: root.join("models/qwen3-4b/Qwen3-4B-Q4_K_M.gguf"),
             runtime_root: root.join("runtime"),
@@ -59,7 +59,7 @@ impl AppPaths {
                 .map(|root| root.join("target/x86_64-pc-windows-gnu/release/ilia-updater.exe"))
                 .unwrap_or_else(|| root.join("ilia-updater.exe")),
             trusted_update_key: root.join("update/trusted-key.json"),
-            corpus_sources: root.join("corpus/sources"),
+            normalized_corpus: root.join("corpus/normalized"),
         };
         for (label, path) in [
             ("database", &paths.database),
@@ -68,7 +68,7 @@ impl AppPaths {
             ("llama.cpp runtimes", &paths.runtime_root),
             ("ONNX Runtime", &paths.onnx_runtime),
             ("trusted update key", &paths.trusted_update_key),
-            ("original PDF library", &paths.corpus_sources),
+            ("normalized legal-text library", &paths.normalized_corpus),
         ] {
             if !path.exists() {
                 return Err(format!("{label} is missing: {}", path.display()));
@@ -253,7 +253,7 @@ impl DesktopServices {
             .map_err(|error| error.to_string())
     }
 
-    fn open_document_pdf(&self, document_id: &str) -> Result<(), String> {
+    fn read_document_text(&self, document_id: &str) -> Result<String, String> {
         if document_id.is_empty() || document_id.contains(['/', '\\']) || document_id.contains("..")
         {
             return Err("invalid document identifier".to_owned());
@@ -267,15 +267,22 @@ impl DesktopServices {
         {
             return Err("document does not exist in the local library".to_owned());
         }
-        let pdf = self
+        let text = self
             .paths
-            .corpus_sources
+            .normalized_corpus
             .join(document_id)
-            .join("source.pdf");
-        if !pdf.is_file() {
-            return Err(format!("local PDF is missing: {}", pdf.display()));
+            .join("source.txt");
+        if text.is_file() {
+            let metadata = std::fs::metadata(&text).map_err(|error| error.to_string())?;
+            if metadata.len() > 16 * 1024 * 1024 {
+                return Err("local normalized text exceeds the 16 MiB display limit".to_owned());
+            }
+            return std::fs::read_to_string(&text).map_err(|error| error.to_string());
         }
-        tauri_plugin_opener::open_path(&pdf, None::<&str>).map_err(|error| error.to_string())
+        database
+            .normalized_document_text(document_id)
+            .map_err(|error| error.to_string())?
+            .ok_or_else(|| "local normalized text is missing".to_owned())
     }
 }
 
@@ -351,12 +358,12 @@ async fn list_documents(
 }
 
 #[tauri::command]
-async fn open_document_pdf(
+async fn read_document_text(
     state: State<'_, Arc<DesktopServices>>,
     document_id: String,
-) -> Result<(), String> {
+) -> Result<String, String> {
     let services = state.inner().clone();
-    tauri::async_runtime::spawn_blocking(move || services.open_document_pdf(&document_id))
+    tauri::async_runtime::spawn_blocking(move || services.read_document_text(&document_id))
         .await
         .map_err(|error| error.to_string())?
 }
@@ -460,7 +467,7 @@ pub fn run() {
             ask_question,
             translate_source,
             list_documents,
-            open_document_pdf,
+            read_document_text,
             check_updates,
             install_update
         ])

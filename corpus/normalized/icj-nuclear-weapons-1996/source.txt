@@ -1,0 +1,1646 @@
+ILIA NORMALIZED LEGAL TEXT
+
+Document ID: icj-nuclear-weapons-1996
+Title: Legality of the Threat or Use of Nuclear Weapons Advisory Opinion
+Chinese title: 以核武器相威胁或使用核武器的合法性咨询意见
+Issuing body: International Court of Justice
+Official source: https://www.icj-cij.org/sites/default/files/case-related/95/095-19960708-ADV-01-00-EN.pdf
+Database version: public-international-law-v1.0.1-normalized-2026.09.24
+
+NOTICE
+This is an ILIA-generated normalized text for offline legal research.
+It is not an official edition. Source-edition page markers are retained
+only as factual verification locators. Verify quotations against the
+official source linked above.
+
+========================================================================
+
+[Source edition page 5]
+
+occasion of the extension of the Non-Proliferation Treaty - Absence of comprehensive and universal conventional prohibition of the use or the threat of use of
+nuclear weapons as such - Unlawfulness per se: custornary law - Consistent
+practice of non-utilization of nuclear weapons - Policy of deterrence - General Assembly resolutions afjr~ningt he illegality of nuclear weapons - Continuing tensions between the nascent opinio juris and the still strong adherence
+to the practice of deterrence.
+Principles and rules of international humanitarian law - Prohibition of
+methods and means of warfare precluding any distinction between civilian and
+militarj targets or resulting in unnecessary suffering to combatants - Martens
+Clause - Principle of neutrality - Applicability of thesepvinciples and rules to
+nuclear weapons - Conclusions.
+Right of a State to survival and right to resort to self-defence - Policy of
+deterreizce - Reservations to undertakings given by certain nuclear-weapon
+States not to resort to such weapons.
+Current state of international law and elements of fact available to the Court
+- Use of nuclear weapons in an extreme circumstance of self-defence in which
+the very survival of a State is at stake.
+Article VI of the Non-Proliferation Treaty - Obligation to negotiate in good
+faith and to achieve nuclear disavmament in al1 its aspects.
+ADVISORY OPINION
+Present : President BEDJAO;U I Vice-President SCHWEB;E LJ udges ODA,
+GUILLAUMSEH, AHABUDDEWENE,E RAMANTRRYA, NJEVAH, ERCZEGH,
+SHI, FLEISCHHAUEKRO, ROMA,V ERESHCHETINFE, RRARIB RAVO,
+HIGGIN;S R egistrar VALENCIA-OSPINA.
+On the legality of the threat or use of nuclear weapons,
+composed as above,
+gives the following Advisory Opinion:
+1. The question upon which the advisory opinion of the Court has been
+requested is set forth in resolution 49/75 K adopted by the General Assembly of
+the United Nations (hereinafter called the "General Assembly") on 15 December 1994. By a letter dated 19 December 1994, received in the Registry by
+facsimile on 20 December 1994 and filed in the original on 6 January 1995,
+the Secretary-General of the United Nations officially communicated to the
+Registrar the decision taken by the General Assembly to submit the question
+to the Court for an advisory opinion. Resolution 49/75 K, the English text of
+which was enclosed with the letter, reads as follows:
+"The General Assembly,
+Conscious that the continuing existence and development of nuclear
+weapons pose serious risks to humanity,
+Mindful that States have an obligation under the Charter of the United
+
+[Source edition page 6]
+
+Nations to refrain from the threat or use of force against the territorial
+integrity or political independence of any State,
+Recalling its resolutions 1653 (XVI) of 24 November 1961, 33/71 B of
+14 December 1978, 34/83 G of 11 December 1979, 351152D of 12 December 1980, 36192 1 of 9 December 1981, 45/59 B of 4 December 1990 and
+46/37D of 6 December 1991, in which it declared that the use of nuclear
+weapons would be a violation of the Charter and a crime against
+humanity,
+Welcoming the progress made on the prohibition and elimination of
+weapons of mass destruction, including the Convention on the Prohibition
+of the Development, Production and Stockpiling of Bacteriological (Bio-
+'
+logical) and Toxin Weapons and on Their Destruction and the Convention on the Prohibition of the Development, Production, Stockpiling and
+Use of Chemical Weapons and on Their Destruction2,
+Convinced that the complete elimination of nuclear weapons is the only
+guarantee against the threat of nuclear war,
+Noting the concerns expressed in the Fourth Review Conference of the
+Parties to the Treaty on the Non-Proliferation of Nuclear Weapons that
+insufficient progress had been made towards the complete elimination of
+nuclear weapons at the earliest possible time,
+Recalling that, convinced of the need to strengthen the rule of law in
+international relations, it has declared the period 1990-1999 the United
+Nations Decade of International Law 3,
+Noting that Article 96, paragraph 1, of the Charter empowers the
+General Assembly to request the International Court of Justice to give an
+advisory opinion on any legal question,
+Recalling the recommendation of the Secretary-General, made in his
+report entitled 'An Agenda for Pea~e'~th,a t United Nations organs that
+are authorized to take advantage of the advisory competence of the International Court of Justice turn to the Court more frequently for such
+opinions,
+Welcoming resolution 46/40 of 14 May 1993 of the Assembly of the
+World Health Organization, in which the organization requested the International Court of Justice to give an advisory opinion on whether the use of
+nuclear weapons by a State in war or other armed conflict would be a
+breach of its obligations under international law, including the Constitution of the World Health Organization,
+Decides, pursuant to Article 96, paragraph 1, of the Charter of the
+United Nations, to request the International Court of Justice urgently to
+render its advisory opinion on the following question: '1s the threat or use
+of nuclear weapons in any circumstance permitted under international
+law ?'
+l Resolution 2826 (XXVI), annex.
+See Official Records of the General Assembly, Forty-seventh Session, Supplement No. 27 (A/47/27), appendix 1.
+Resolution 44123.
+N471277-Sl24111. "
+
+[Source edition page 7]
+
+2. Pursuant to Article 65, paragraph 2, of the Statute, the Secretary-General
+of the United Nations communicated to the Court a dossier of documents
+likely to throw light upon the question.
+3. By letters dated 21 December 1994, the Registrar, pursuant to Article 66,
+paragraph 1, of the Statute, gave notice of the request for an advisory opinion
+to al1 States entitled to appear before the Court.
+4. By an Order dated 1 February 1995 the Court decided that the States
+entitled to appear before it and the United Nations were likely to be able to furnish information on the question, in accordance with Article 66, paragraph 2, of
+the Statute. By the same Order, the Court fixed, respectively, 20 June 1995 as
+the time-limit within which written statements might be submitted to it on the
+question, and 20 September 1995 as the time-limit within which States and
+organizations having presented written statements might submit written comments on the other written statements in accordance with Article 66, paragraph 4, of the Statute. In the aforesaid Order, it was stated in particular that
+the General Assembly had requested that the advisory opinion of the Court be
+rendered "urgently"; reference was also made to the procedural time-limits
+already fixed for the request for an advisory opinion previously submitted to
+the Court by the World Health Organization on the question of the Legality of
+the Use by a State of Nuclear Weapons in Avrned Conflict.
+On 8 February 1995, the Registrar addressed to the States entitled to appear
+before the Court and to the United Nations the special and direct communication provided for in Article 66, paragraph 2, of the Statute.
+5. Written statements were filed by the following States: Bosnia and Herzegovina, Burundi, Democratic People's Republic of Korea, Ecuador, Egypt,
+Finland, France, Germany, India, Ireland, Islamic Republic of Iran, Italy,
+Japan, Lesotho, Malaysia, Marshall Islands, Mexico, Nauru, Netherlands,
+New Zealand, Qatar, Russian Federation, Samoa, San Marino, Solomon
+Islands, Sweden, United Kingdom of Great Britain and Northern Ireland, and
+United States of America. In addition, written comments on those written
+statements were submitted by the following States: Egypt, Nauru and Solomon
+Islands. Upon receipt of those statements and comments, the Registrar communicated the text to al1 States having taken part in the written proceedings.
+6. The Court decided to hold public sittings, opening on 30 October 1995, at
+which oral statements might be submitted to the Court by any State or organization which had been considered likely to be able to furnish information on
+the question before the Court. By letters dated 23 June 1995, the Registrar
+requested the States entitled to appear before the Court and the United
+Nations to inform him whether they intended to take part in the oral proceedings; it was indicated, in those letters, that the Court had decided to hear,
+during the same public sittings, oral statements relating to the request for an
+advisory opinion from the General Assembly as well as oral statements concerning the above-mentioned request for an advisory opinion laid before the
+Court by the World Health Organization, on the understanding that the United
+Nations would be entitled to speak only in regard to the request submitted by
+the General Assembly, and it was further specified therein that the participants
+in the oral proceedings which had not taken part in the written proceedings
+would receive the text of the statements and comments produced in the course
+of the latter.
+7. By a letter dated 20 October 1995, the Republic of Nauru requested the
+Court's permission to withdraw the written comments submitted on its behalf
+
+[Source edition page 8]
+
+in a document entitled "Response to submissions of other States". The Court
+granted the request and, by letters dated 30 October 1995, the Deputy-Registrar notified the States to which the document had been communicated, specifying that the document consequently did not form part of the record before
+the Court.
+8. Pursuant to Article 106 of the Rules of Court, the Court decided to make
+the written statements and comments submitted to the Court accessible to the
+public, with effect from the opening of the oral proceedings.
+9. In the course of public sittings held from 30 October 1995 to 15 November 1995, the Court heard oral statements in the following order by:
+for the Commonwealth Mr. Gavan Griffith, Q.C., Solicitor-General of
+of Australia : Australia, Counsel,
+The Honourable Gareth Evans, Q.C., Senator,
+Minister for Foreign Affairs, Counsel;
+for the Arab Republic Mr. George Abi-Saab, Professor of International
+of E ~ Y:P ~ Law, Graduate Institute of International Studies, Geneva, Member of the Institute of International Law;
+for the French Republic: Mr. Marc Perrin de Brichambaut, Director of Legal
+Affairs, Ministry of Foreign Affairs,
+Mr. Alain Pellet, Professor of International Law,
+University of Paris X and Institute of Political
+Studies, Paris ;
+for the Federal Republic Mr. Hartmut Hillgenberg, Director-General of
+of Germany : Legal Affairs, Ministry of Foreign Affairs;
+for Indonesia : H.E. Mr. Johannes Berchmans Soedarmanto
+Kadarisman, Ambassador of Indonesia to the
+Netherlands ;
+for Mexico: H.E. Mr. Sergio Gonzalez Galvez, Ambassador,
+Under-Secretary of Foreign Relations;
+for the Islamic H.E. Mr. Mohammad J. Zarif, Deputy Minister,
+Republic of Iran: Legal and International Affairs, Ministry of
+Foreign Affairs ;
+for Ztaly : Mr. Umberto Leanza, Professor of International
+Law at the Faculty of Law at the University of
+Rome "Tor Vergata", Head of the Diplomatie
+Legal Service at the Ministry of Foreign Affairs;
+for Japan: H.E. Mr. Takekazu Kawamura, Ambassador,
+Director General for Arms Control and Scientific Affairs, Ministry of Foreign Affairs,
+Mr. Takashi Hiraoka, Mayor of Hiroshima,
+Mr. Iccho Itoh, Mayor of Nagasaki;
+
+[Source edition page 9]
+
+for Malaysia: H.E. Mr. Tan Sri Razali Ismail, Ambassador, Permanent Representative of Malaysia to the United
+Nations,
+Dato' Mohtar Abdullah, Attorney-General;
+for New Zealand: The Honourable Paul East, Q.C., Attorney-General
+of New Zealand,
+Mr. Allan Bracegirdle, Deputy Director of Legal
+Division of the New Zealand Ministry for Foreign Affairs and Trade;
+for the Philippines: H.E. Mr. Rodolfo S. Sanchez, Ambassador of the
+Philippines to the Netherlands,
+Professor Merlin N. Magallona, Dean, College of
+Law, University of the Philippines ;
+for Qatar: H.E. Mr. Najeeb ibn Mohammed Al-Nauimi,
+Minister of Justice;
+for the Russian Mr. A. G. Khodakov, Director, Legal Department,
+Federation : Ministry of Foreign Affairs;
+for San Marino: Mrs. Federica Bigi, Embassy Counsellor, Officia1
+in Charge of Political Directorate, Department
+of Foreign Affairs;
+for Samoa: H.E. Mr. Neroni Slade, Ambassador and Permanent Representative of Samoa to the United
+Nations,
+Miss Laurence Boisson de Chazournes, Assistant
+Professor, Graduate Institute of International
+Studies, Geneva,
+Mr. Roger S. Clark, Distinguished Professor of Law,
+Rutgers University School of Law, Camden, New
+Jersey;
+for the Marshall Islands: The Honourable Theodore G. Kronmiller, Legal
+Counsel, Embassy of the Marshall Islands to the
+United States of America,
+Mrs. Lijon Eknilang, Council Member, Rongelap
+Atoll Local Government;
+for Solomon Islands: The Honourable Victor Ngele, Minister of Police
+and National Security,
+Mr. Jean Salmon, Professor of Law, Université
+libre de Bruxelles,
+Mr. Eric David, Professor of Law, Université libre
+de Bruxelles,
+Mr. Philippe Sands, Lecturer in Law, School of
+Oriental and African Studies, London University, and Legal Director, Foundation for International Environmental Law and Development,
+Mr. James Crawford, Whewell Professor of International Law, University of Cambridge;
+
+[Source edition page 10]
+
+for Costa Rica: Mr. Carlos Vargas-Pizarro, Legal Counsel and
+Special Envoy of the Government of Costa Rica;
+for the United Kingdom
+of Great Britain and The Rt. Honourable Sir Nicholas Lyell, Q.C., M.P.,
+Nortlzern Ireland: Her Majesty's Attorney-General;
+for the United States Mr. Conrad K. Harper, Legal Adviser, United
+of America: States Department of State,
+Mr. Michael J. Matheson, Principal Deputy Legal
+Adviser, United States Department of State,
+Mr. John H. McNeill, Senior Deputy General
+Counsel, United States Department of Defense;
+for Zimbabwe: Mr. Jonathan Wutawunashe, Chargé d'affaires ai.,
+Embassy of the Republic of Zimbabwe in the
+Netherlands.
+Questions were put by Members of the Court to particular participants in the
+oral proceedings, who replied in writing, as requested, within the prescribed
+time-limits; the Court having decided that the other participants could also
+reply to those questions on the same terms, several of them did so. Other questions put by Mernbers of the Court were addressed, more generally, to any participant in the oral proceedings; several of them replied in writing, as requested,
+within the prescribed time-limits.
+10. The Court must first consider whether it has the jurisdiction to
+give a reply to the request of the General Assembly for an advisory
+opinion and whether, should the answer be in the affirmative, there is any
+reason it should decline to exercise any such jurisdiction.
+The Court draws its competence in respect of advisory opinions from
+Article 65, paragraph 1, of its Statute. Under this Article, the Court
+"may give an advisory opinion on any legal question at the request
+of whatever body may be authorized by or in accordance with the
+Charter of the United Nations to make such a request".
+11. For the Court to be competent to give an advisory opinion, it is
+thus necessary at the outset for the body requesting the opinion to be
+"authorized by or in accordance with the Charter of the United Nations
+to make such a request". The Charter provides in Article 96, paragraph 1, that: "The General Assembly or the Security Council may
+request the International Court of Justice to give an advisory opinion on
+any legal question."
+Some States which oppose the giving of an opinion by the Court
+argued that the General Assembly and Security Council are not entitled
+
+[Source edition page 11]
+
+to ask for opinions on matters totally unrelated to their work. They
+suggested that, as in the case of organs and agencies acting under
+Article 96, paragraph 2, of the Charter, and notwithstanding the difference
+in wording between that provision and paragraph 1 of the same Article,
+the General Assembly and Security Council may ask for an advisory
+opinion on a legal question only within the scope of their activities.
+In the view of the Court, it matters little whether this interpretation of
+Article 96, paragraph 1, is or is not correct; in the present case, the General Assembly has competence in aily event to seise the Court. Indeed,
+Article 10 of the Charter has conferred upon the General Assembly a
+competence relating to "any questions or any matters" within the scope
+of the Charter. Article 11 has specifically provided it with a competence
+to "consider the general principles . . . in the maintenance of international
+peace and security, including the principles governing disarmament and
+the regulation of armaments". Lastly, according to Article 13, the General Assemblv "shall initiate studies and make recommendations for the
+purpose of. . . encouraging the progressive development of international
+law and its codification".
+12. The question put to the Court has a relevance to many aspects of
+the activities and concerns of the General Assembly including those relating to the threat or use of force in international relations, the disarmament process, and the progressive development of international law. The
+General Assembly has a long-standing interest in these matters and in
+their relation to nuclear weapons. This interest has been manifested in the
+annual First Committee debates, and the Assembly resolutions on nuclear
+weapons; in the holding of three special sessions on disarmament (1978,
+1982 and 1988) by the General Assembly, and the annual meetings of the
+Disarmament Commission since 1978; and also in the commissioning of
+studies on the effects of the use of nuclear weapons. In this context, it
+does not matter that important recent and current activities relating to
+nuclear disarmament are being pursued in other fora.
+Finally, Article 96, paragraph 1, of the Charter cannot be read as
+limiting the ability of the Assembly to request an opinion only in those
+circumstances in which it can take binding decisions. The fact that the
+Assembly's activities in the above-mentioned field have led it only to the
+making of recommendations thus has no bearing on the issue of whether
+it had the competence to put to the Court the question of which it is
+seised.
+13. The Court must furthermore satisfy itself that the advisory opinion
+requested does indeed relate to a "legal question" within the meaning of
+its Statute and the United Nations Charter.
+The Court has already had occasion to indicate that questions
+"framed in terms of law and rais[ing] problems of international law
+. . . are by their very nature susceptible of a reply based on law . . .
+
+[Source edition page 12]
+
+[and] appear . . . to be questions of a legal character" (Western
+Sahara, Advisory Opinion, I.C.J. Reports 1975, p. 18, para. 15).
+The question put to the Court by the General Assembly is indeed a
+legal one, since the Court is asked to rule on the compatibility of the
+threat or use of nuclear weapons with the relevant principles and rules of
+international law. To do this, the Court must identify the existing principles and rules, interpret them and apply them to the threat or use of
+nuclear weapons, thus offering a reply to the question posed based on
+law.
+The fact that this question also has political aspects, as, in the nature
+of things, is the case with so many questions which arise in international
+life, does not suffice to deprive it of its character as a "legal question" and
+to "deprive the Court of a competence expressly conferred on it by its
+Statute" (Application for Review of Judgement No. 158 of the United
+Nations Administrative Tribunal, Advisory Opinion, 1. C.J . Reports 1973,
+p. 172, para. 14). Whatever its political aspects, the Court cannot refuse
+to admit the legal character of a question which invites it to discharge an
+essentially judicial task, namely, an assessment of the legality of the possible conduct of States with regard to the obligations imposed upon them
+by international law (cf. Conditions of Admission of a State to Membership in the United Nations (Article 4 of Charter), Advisory Opinion,
+1948, I.C.J. Reports 1947-1948, pp. 61-62; Competence of the General
+Assembly for the Admission of a State to the United Nations, Advisory
+Opinion, I. C.J. Reports 1950, pp. 6-7; Certain Expenses of the United
+Nations (Article 17, paragraph 2, of the Charter), Advisory Opinion,
+I. C.J . Reports 1962, p. 155).
+Furthermore, as the Court said in the Opinion it gave in 1980 concerning the Interpretation of the Agreement of 25 March 1951 between the
+WHO and Egypt:
+"Indeed, in situations in which political considerations are prominent it may be particularly necessary for an international organization to obtain an advisory opinion from the Court as to the legal
+principles applicable with respect to the matter under debate . . ."
+(I.C.J. Reports 1980, p. 87, para. 33.)
+The Court moreover considers that the political nature of the motives
+which may be said to have inspired the request and the political implications that the opinion given might have are of no relevance in the establishment of its jurisdiction to give such an opinion.
+14. Article 65, paragraph 1, of the Statute provides: "The Court may
+give an advisory opinion . . ." (Emphasis added.) This is more than an
+enabling provision. As the Court has repeatedly emphasized, the Statute
+
+[Source edition page 13]
+
+leaves a discretion as to whether or not it will give an advisory opinion
+that has been requested of it, once it has established its competence to do
+so. In this context, the Court has previously noted as follows:
+"The Court's Opinion is given not to the States, but to the organ
+which is entitled to request it; the reply of the Court, itself an 'organ
+of the United Nations', represents its participation in the activities of
+the Organization, and, in principle, should not be refused." (Interpretation of Peace Treaties with Bulgaria, Hungary and Romania,
+First Phase, Advisory Opinion, I.C.J. Reports 1950, p. 71 ; see also
+Reservations to the Convention on the Prevention and Punishment of
+the Crime of Genocide, Advisory Opinion, 1. C.J . Reports 1951,
+p. 19; Judgments of the Administrative Tribunal of the IL0 upon
+Complaints Made against Unesco, Advisory Opinion, I. C.J . Reports
+1956, p. 86; Certain Expenses of the United Nations (Article 17, paragraph 2, of the Charter), Advisory Opinion, I.C.J. Reports 1962,
+p. 155; and Applicability of Article VI, Section 22, of the Convention
+on the Privileges and Immunities of the United Nations, Advisory
+Opinion, I. C.J . Reports 1989, p. 189.)
+The Court has constantly been mindful of its responsibilities as "the
+principal judicial organ of the United Nations" (Charter, Art. 92). When
+considering each request, it is mindful that it should not, in principle,
+refuse to give an advisory opinion. In accordance with the consistent
+jurisprudence of the Court, only "compelling reasons" could lead it to
+such a refusa1 (Judgments of the Administrative Tribunal of the IL0
+upon Cornplaints Made against Unesco, Advisory Opinion, I. C.J . Reports
+1956, p. 86; Certain Expenses of the United Nations (Article 17, paragraph 2, of the Charter), Advisory Opinion, I.C.J. Reports 1962, p. 155;
+Legal Consequences for States of the Continued Presence of South Africa
+in Namibia (South West Africa) notwithstanding Security Council Resolution 276 (1970), Advisory Opinion, I. C.J . Reports 1971, p. 27; Application for Review of Judgement No. 158 of the United Nations Administrative Tribunal, Advisory Opinion, I.C.J. Reports 1973, p. 183; Western
+Sahara, Advisory Opinion, I. C.J. Reports 1975, p. 21 ; and Applicability
+of Article VI, Section 22, of the Convention on the Privileges and Immunities of the United Nations, Advisory Opinion, I. C.J . Reports 1989,
+p. 191). There has been no refusal, based on the discretionary power of
+the Court, to act upon a request for advisory opinion in the history of the
+present Court; in the case concerning the Legality of the Use by a State
+of Nuclear Weapons in Arrned Conflict, the refusa1 to give the World
+Health Organization the advisory opinion requested by it was justified by
+the Court's lack of jurisdiction in that case. The Permanent Court of
+International Justice took the view on only one occasion that it could not
+reply to a question put to it, having regard to the very particular circumstances of the case, among which were that the question directly concerned an already existing dispute, one of the States parties to which was
+
+[Source edition page 14]
+
+neither a party to the Statute of the Permanent Court nor a Member of
+the League of Nations, objected to the proceedings, and refused to take
+part in any way (Status of Eastern Carelia, P. C.I.J ., Series B, No. 5).
+15. Most of the reasons adduced in these proceedings in order to persuade the Court that in the exercise of its discretionary power it should
+decline to render the opinion requested by General Assembly resolution 49175K were summarized in the following statement made by one
+State in the written proceedings :
+"The question presented is vague and abstract, addressing complex
+issues which are the subject of consideration among interested States
+and within other bodies of the United Nations which have an express
+mandate to address these matters. An opinion by the Court in regard
+to the question presented would provide no practical assistance to
+the General Assembly in carrying out its functions under the Charter. Such an opinion has the potential of undermining progress
+already made or being made on this sensitive subject and, therefore,
+is contrary to the interests of the United Nations Organization."
+(United States of America, Written Statement, pp. 1-2; cf. pp. 3-7, II.
+See also United Kingdom, Written Statement, pp. 9-20, paras. 2.23-
+2.45; France, Written Statement, pp. 13-20, paras. 5-9; Finland,
+Written Statement, pp. 1-2; Netherlands, Written Statement, pp. 3-4,
+paras. 6-13 ; Germany, Written Statement, pp. 3-6, para. 2 (b). )
+In contending that the question put to the Court is vague and abstract,
+some States appeared to mean by this that there exists no specific dispute
+on the subject-matter of the question. In order to respond to this argument, it is necessary to distinguish between requirements governing contentious procedure and those applicable to advisory opinions. The purpose of the advisory function is not to settle - at least directly -
+disputes between States, but to offer legal advice to the organs and institutions requesting the opinion (cf. Interpretation of Peace Treaties with
+Bulgaria, Hungary and Romania, First Phase, Advisory Opinion, I. C.J .
+Reports 1950, p. 71). The fact that the question put to the Court does not
+relate to a specific dispute should consequently not lead the Court to
+decline to give the opinion requested.
+Moreover, it is the clear position of the Court that to contend that it
+should not deal with a question couched in abstract terms is "a mere
+affirmation devoid of any justification", and that "the Court may give an
+advisory opinion on any legal question, abstract or otherwise" (Conditions of Admission of a State to Membership in the United Nations
+(Article 4 of Charter), Advisory Opinion, 1948, I.C.J. Reports 1947-1948,
+p. 61; see also Effect of Awards of Compensation Made by the United
+Nations Administrative Tribunal, Advisory Opinion, I. C.J . Reports 1954,
+p. 51; and Legal Consequences for States of the Continued Presence of
+South Africa in Narnibia (South West Africa) notwithstanding Security
+Council Resolution 276 (1970), Advisory Opinion, I. C.J . Reports 1971,
+p. 27, para. 40).
+
+[Source edition page 15]
+
+Certain States have however expressed the fear that the abstract nature
+of the question might lead the Court to make hypothetical or speculative
+declarations outside the scope of its judicial function. The Court does not
+consider that, in giving an advisory opinion in the present case, it would
+necessarily have to write "scenarios", to study various types of nuclear
+weapons and to evaluate highly complex and controversial technological,
+strategic and scientific information. The Court will simply address the
+issues arising in al1 their aspects by applying the legal rules relevant to the
+situation.
+16. Certain States have observed that the General Assembly has not
+explained to the Court for what precise purposes it seeks the advisory
+opinion. Nevertheless, it is not for the Court itself to purport to decide
+whether or not an advisory opinion is needed by the Assembly for the performance of its functions. The General Assembly has the right to decide
+for itself on the usefulness of an opinion in the light of its own needs.
+Equally, once the Assembly has asked, by adopting a resolution, for an
+advisory opinion on a legal question, the Court, in determining whether
+there are any compelling reasons for it to refuse to give such an opinion,
+will not have regard to the origins or to the political history of the
+request, or to the distribution of votes in respect of the adopted resolution.
+17. It has also been submitted that a reply from the Court in this case
+might adversely affect disarmament negotiations and would, therefore,
+be contrary to the interest of the United Nations. The Court is aware
+that, no matter what might be its conclusions in any opinion it might
+give, they would have relevance for the continuing debate on the matter
+in the General Assembly and would present an additional element in the
+negotiations on the matter. Beyond that, the effect of the opinion is a
+matter of appreciation. The Court has heard contrary positions advanced
+and there are no evident criteria by which it can prefer one assessment to
+another. That being so, the Court cannot regard this factor as a compelling reason to decline to exercise its jurisdiction.
+18. Finally, it has been contended by some States that in answering the
+question posed, the Court would be going beyond its judicial role and
+would be taking upon itself a law-making capacity. It is clear that the
+Court cannot legislate, and, in the circumstances of the present case, it is
+not called upon to do so. Rather its task is to engage in its normal judicial function of ascertaining the existence or otherwise of legal principles
+and rules applicable to the threat or use of nuclear weapons. The contention that the giving of an answer to the question posed would require the
+Court to legislate is based on a supposition that the present corpus juris is
+devoid of relevant rules in this matter. The Court could not accede to this
+argument; it states the existing law and does not legislate. This is so even
+if, in stating and applying the law, the Court necessarily has to specify its
+scope and sometimes note its general trend.
+
+[Source edition page 16]
+
+19. In view of what is stated above, the Court concludes that it has the
+authority to deliver an opinion on the question posed by the General
+Assembly, and that there exist no "compelling reasons" which would lead
+the Court to exercise its discretion not to do so.
+An entirely different question is whether the Court, under the constraints placed upon it as a judicial organ, will be able to give a complete
+answer to the question asked of it. However, that is a different matter
+from a refusa1 to answer at all.
+20. The Court must next address certain matters arising in relation to
+the formulation of the question put to it by the General Assembly. The
+English text asks: "1s the threat or use of nuclear weapons in any circumstance permitted under international law?" The French text of the question reads as follows : "Est-il permis en droit international de recourir à la
+menace ou à l'emploi d'armes nucléaires en toute circonstance?" It was
+suggested that the Court was being asked by the General Assembly
+whether it was permitted to have recourse to nuclear weapons in every
+circumstance, and it was contended that such a question would inevitably
+invite a simple negative answer.
+The Court finds it unnecessary to pronounce on the possible divergences between the English and French texts of the question posed. Its
+real objective is clear: to determine the legality or illegality of the threat
+or use of nuclear weapons.
+21. The use of the word "permitted" in the question put by the General Assembly was criticized before the Court by certain States on the
+ground that this implied that the threat or the use of nuclear weapons
+would only be permissible if authorization could be found in a treaty provision or in customary international law. Such a starting point, those
+States submitted, was incompatible with the very basis of international
+law, which rests upon the principles of sovereignty and consent; accordingly, and contrary to what was implied by use of the word "permitted",
+States are free to threaten or use nuclear weapons unless it can be shown
+that they are bound not to do so by reference to a prohibition in either
+treaty law or customary international law. Support for this contention
+was found in dicta of the Permanent Court of International Justice in the
+"Lotus" case that "restrictions upon the independence of States cannot
+. . . be presumed" and that international law leaves to States "a wide
+measure of discretion which is only limited in certain cases by prohibitive
+rules" (P.C.I.J., Series A, No. IO, pp. 18 and 19). Reliance was also
+placed on the dictum of the present Court in the case concerning Military
+and Pavamilitary Activities in and against Nicaragua (Nicaragua
+v. United States of America) that:
+"in international law there are no rules, other than such rules as may
+be accepted by the State concerned, by treaty or otherwise, whereby
+
+[Source edition page 17]
+
+the level of armaments of a sovereign State can be limited" (1.C .J.
+Reports 1986, p. 135, para. 269).
+For other States, the invocation of these dicta in the "Lotus" case was
+inapposite; their status in contemporary international law and applicability in the very different circumstances of the present case were challenged. It was also contended that the above-mentioned dictum of
+the present Court was directed to the possession of armaments and was
+irrelevant to the threat or use of nuclear weapons.
+Finally, it was suggested that, were the Court to answer the question
+put by the Assembly, the word "permitted" should be replaced by "prohibited".
+22. The Court notes that the nuclear-weapon States appearing before
+it either accepted, or did not dispute, that their independence to act was
+indeed restricted by the principles and rules of international law, more
+particularly humanitarian law (see below, paragraph 86), as did the other
+States which took part in the proceedings.
+Hence, the argument concerning the legal conclusions to be drawn
+from the use of the word "permitted", and the questions of burden of
+proof to which it was said to give rise, are without particular significance
+for the disposition of the issues before the Court.
+23. In seeking to answer the question put to it by the General
+Assembly, the Court must decide, after consideration of the great
+corpus of international law norms available to it, what might be the
+relevant applicable law.
+24. Some of the proponents of the illegality of the use of nuclear
+weapons have argued that such use would violate the right to life as guaranteed in Article 6 of the International Covenant on Civil and Political
+Rights, as well as in certain regional instruments for the protection of
+human rights. Article 6, paragraph 1, of the International Covenant provides as follows: "Every human being has the inherent right to life. This
+right shall be protected by law. No one shall be arbitrarily deprived of his
+life."
+In reply, others contended that the International Covenant on Civil
+and Political Rights made no mention of war or weapons, and it had
+never been envisaged that the legality of nuclear weapons was regulated
+by that instrument. It was suggested that the Covenant was directed to
+the protection of human rights in peacetime, but that questions relating
+to unlawful loss of life in hostilities were governed by the law applicable
+in armed conflict.
+
+[Source edition page 18]
+
+25. The Court observes that the protection of the International Covenant of Civil and Political Rights does not cease in times of war, except
+by operation of Article 4 of the Covenant whereby certain provisions
+may be derogated from in a time of national emergency. Respect for the
+right to life is not, however, such a provision. In principle, the right not
+arbitrarily to be deprived of one's life applies also in hostilities. The test
+of what is an arbitrary deprivation of life, however, then falls to be determined by the applicable lex specialis, namely, the law applicable in
+armed conflict which is designed to regulate the conduct of hostilities.
+Thus whether a particular loss of life, through the use of a certain
+weapon in warfare, is to be considered an arbitrary deprivation of life
+contrary to Article 6 of the Covenant, can only be decided by reference to
+the law applicable in armed conflict and not deduced from the terms of
+the Covenant itself.
+26. Some States also contended that the prohibition against genocide,
+contained in the Convention of 9 December 1948 on the Prevention and
+Punishment of the Crime of Genocide, is a relevant rule of customary
+international law which the Court must apply. The Court recalls that in
+Article II of the Convention genocide is defined as
+"any of the following acts committed with intent to destroy, in
+whole or in part, a national, ethnical, racial or religious group, as
+such :
+(a) Killing members of the group;
+(b) Causing serious bodily or mental harm to members of the
+group ;
+(c) Deliberately inflicting on the group conditions of life calculated
+to bring about its physical destruction in whole or in part;
+(d) Imposing measures intended to prevent births within the group;
+(e) Forcibly transferring children of the group to another group."
+It was maintained before the Court that the number of deaths occasioned
+by the use of nuclear weapons would be enormous; that the victims could,
+in certain cases, include persons of a particular national, ethnic, racial or
+religious group; and that the intention to destroy such groups could be
+inferred from the fact that the user of the nuclear weapon would have
+omitted to take account of the well-known effects of the use of such weapons.
+The Court would point out in that regard that the prohibition of genocide would be pertinent in this case if the recourse to nuclear weapons did
+indeed entai1 the element of intent, towards a group as such, required by
+the provision quoted above. In the view of the Court, it would only be
+possible to arrive at such a conclusion after having taken due account of
+the circumstances specific to each case.
+
+[Source edition page 19]
+
+27. In both their written and oral statements, some States furthermore
+argued that any use of nuclear weapons would be unlawful by reference
+to existing norms relating to the safeguarding and protection of the environment, in view of their essential importance.
+Specific references were made to various existing international treaties
+and instruments. These included Additional Protocol 1 of 1977 to the
+Geneva Conventions of 1949, Article 35, paragraph 3, of which prohibits
+the employment of "methods or means of warfare which are intended, or
+may be expected, to cause widespread, long-term and severe damage to
+the natural environment"; and the Convention of 18 May 1977 on the
+Prohibition of Military or Any Other Hostile Use of Environmental
+Modification Techniques, which prohibits the use of weapons which have
+"widespread, long-lasting or severe effects" on the environment (Art. 1).
+Also cited were Principle 21 of the Stockholm Declaration of 1972 and
+Principle 2 of the Rio Declaration of 1992 which express the common
+conviction of the States concerned that they have a duty
+"to ensure that activities within their jurisdiction or control do not
+cause damage to the environment of other States or of areas beyond
+the limits of national jurisdiction".
+These instruments and other provisions relating to the protection and
+safeguarding of the environment were said to apply at al1 times, in war as
+well as in peace, and it was contended that they would be violated by the
+use of nuclear weapons whose consequences would be widespread and
+would have transboundary effects.
+28. Other States questioned the binding legal quality of these precepts
+of environmental law; or, in the context of the Convention on the Prohibition of Military or Any Other Hostile Use of Environmental Modification Techniques, denied that it was concerned at al1 with the use of
+nuclear weapons in hostilities; or, in the case of Additional Protocol 1,
+denied that they were generally bound by its terms, or recalled that they
+had reserved their position in respect of Article 35, paragraph 3, thereof.
+It was also argued by some States that the principal purpose of environmental treaties and norms was the protection of the environment in
+time of peace. It was said that those treaties made no mention of nuclear
+weapons. It was also pointed out that warfare in general, and nuclear
+warfare in particular, were not mentioned in their texts and that it would
+be destabilizing to the rule of law and to confidence in international
+negotiations if those treaties were now interpreted in such a way as to
+prohibit the use of nuclear weapons.
+29. The Court recognizes that the environment is under daily threat
+and that the use of nuclear weapons could constitute a catastrophe for
+the environment. The Court also recognizes that the environment is not
+an abstraction but represents the living space, the quality of life and
+the very health of human beings, including generations unborn. The
+
+[Source edition page 20]
+
+existence of the general obligation of States to ensure that activities
+within their jurisdiction and control respect the environment of other
+States or of areas beyond national control is now part of the corpus
+of international law relating to the environment.
+30. However, the Court is of the view that the issue is not whether the
+treaties relating to the protection of the environment are or are not applicable during an armed conflict, but rather whether the obligations
+stemming from these treaties were intended to be obligations of total
+restraint during military conflict.
+The Court does not consider that the treaties in question could have
+intended to deprive a State of the exercise of its right of self-defence
+under international law because of its obligations to protect the environment. Nonetheless, States must take environmental considerations into
+account when assessing what is necessary and proportionate in the pursuit of legitimate military objectives. Respect for the environment is one
+of the elements that go to assessing whether an action is in conformity
+with the principles of necessity and proportionality.
+This approach is supported, indeed, by the terms of Principle 24 of the
+Rio Declaration, which provides that :
+"Warfare is inherently destructive of sustainable development.
+States shall therefore respect international law providing protection
+for the environment in times of armed conflict and cooperate in its
+further development, as necessary."
+31. The Court notes furthermore that Articles 35, paragraph 3, and 55
+of Additional Protocol 1 provide additional protection for the environment. Taken together, these provisions embody a general obligation to
+protect the natural environment against widespread, long-term and severe
+environmental damage; the prohibition of methods and means of warfare which are intended, or may be expected, to cause such damage; and
+the prohibition of attacks against the natural environment by way of
+reprisals.
+These are powerful constraints for al1 the States having subscribed to
+these provisions.
+32. General Assembly resolution 47/37 of 25 November 1992 on the
+"Protection of the Environment in Times of Armed Conflict" is also of
+interest in this context. It affirms the general view according to which
+environmental considerations constitute one of the elements to be taken
+into account in the implementation of the principles of the law applicable
+in armed conflict: it states that "destruction of the environment, not justified by military necessity and carried out wantonly, is clearly contrary
+to existing international law". Addressing the reality that certain instruments are not yet binding on al1 States, the General Assembly in this
+resolution "[aJppeals to al1 States that have not yet done so to consider
+becoming parties to the relevant international conventions".
+
+[Source edition page 21]
+
+In its recent Order in the Request for an Examination of the Situation
+in Accordance with Paragraph 63 of the Court's Judgment of 20 December 1974 in the Nuclear Tests (New Zealand v. France) Case, the Court
+stated that its conclusion was "without prejudice to the obligations of
+States to respect and protect the natural environment" (Order of 22 September 1995, I. C.J . Reports 1995, p. 306, para. 64). Although that statement was made in the context of nuclear testing, it naturally also applies
+to the actual use of nuclear weapons in armed conflict.
+33. The Court thus finds that while the existing international law
+relating to the protection and safeguarding of the environment does not
+specifically prohibit the use of nuclear weapons, it indicates important
+environmental factors that are properly to be taken into account
+in the context of the implementation of the principles and rules of the law
+applicable in armed conflict.
+34. In the light of the foregoing the Court concludes that the most
+directly relevant applicable law governing the question of which it was
+seised, is that relating to the use of force enshrined in the United Nations
+Charter and the law applicable in armed conflict which regulates the conduct of hostilities, together with any specific treaties on nuclear weapons
+that the Court might determine to be relevant.
+35. In applying this law to the present case, the Court cannot however fail to take into account certain unique characteristics of nuclear
+weapons.
+The Court has noted the definitions of nuclear weapons contained in
+various treaties and accords. It also notes that nuclear weapons are
+explosive devices whose energy results from the fusion or fission of the
+atom. By its very nature, that process, in nuclear weapons as they exist
+today, releases not only immense quantities of heat and energy, but also
+powerful and prolonged radiation. According to the material before the
+Court, the first two causes of damage are vastly more powerful than the
+damage caused by other weapons, while the phenomenon of radiation is
+said to be peculiar to nuclear weapons. These characteristics render the
+nuclear weapon potentially catastrophic. The destructive power of
+nuclear weapons cannot be contained in either space or time. They have
+the potential to destroy al1 civilization and the entire ecosystem of the
+planet.
+The radiation released by a nuclear explosion would affect health,
+agriculture, natural resources and demography over a very wide area.
+
+[Source edition page 22]
+
+Further, the use of nuclear weapons would be a serious danger to future
+generations. Ionizing radiation has the potential to damage the future
+environment, food and marine ecosystem, and to cause genetic defects
+and illness in future generations.
+36. In consequence, in order correctly to apply to the present case the
+Charter law on the use of force and the law applicable in armed conflict,
+in particular humanitarian law, it is imperative for the Court to take
+account of the unique characteristics of nuclear weapons, and in particular their destructive capacity, their capacity to cause untold human suffering, and their ability to cause damage to generations to come.
+37. The Court will now address the question of the legality or illegality
+of recourse to nuclear weapons in the light of the provisions of the Charter relating to the threat or use of force.
+38. The Charter contains several provisions relating to the threat and
+use of force. In Article 2, paragraph 4, the threat or use of force against
+the territorial integrity or political independence of another State or in
+any other manner inconsistent with the purposes of the United Nations is
+prohibited. That paragraph provides :
+"Al1 Members shall refrain in their international relations from
+the threat or use of force against the territorial integrity or political
+independence of any State, or in any other manner inconsistent with
+the Purposes of the United Nations."
+This prohibition of the use of force is to be considered in the light of
+other relevant provisions of the Charter. In Article 51, the Charter
+recognizes the inherent right of individual or collective self-defence if
+an armed attack occurs. A further lawful use of force is envisaged in
+Article 42, whereby the Security Council may take military enforcement
+measures in conformity with Chapter VI1 of the Charter.
+39. These provisions do not refer to specific weapons. They apply to
+any use of force, regardless of the weapons employed. The Charter
+neither expressly prohibits, nor permits, the use of any specific weapon,
+including nuclear weapons. A weapon that is already unlawful per se,
+whether by treaty or custom, does not become lawful by reason of its
+being used for a legitimate purpose under the Charter.
+40. The entitlement to resort to self-defence under Article 51 is subject
+to certain constraints. Some of these constraints are inherent in the very
+concept of self-defence. Other requirements are specified in Article 51.
+
+[Source edition page 23]
+
+41. The submission of the exercise of the right of self-defence to the
+conditions of necessity and proportionality is a rule of customary international law. As the Court stated in the case concerning Military and
+Paramilitary Activities in and against Nicaragua (Nicaragua v. United
+States of Arnerica) : there is a "specific rule whereby self-defence would
+warrant only measures which are proportional to the armed attack and
+necessary to respond to it, a rule well established in customary international law" (I.C .J . Reports 1986, p. 94, para. 176). This dual condition
+applies equally to Article 51 of the Charter, whatever the means of force
+employed.
+42. The proportionality principle may thus not in itself exclude the use
+of nuclear weapons in self-defence in al1 circumstances. But at the same
+time, a use of force that is proportionate under the law of self-defence,
+must, in order to be lawful, also meet the requirements of the law applicable in armed conflict which comprise in particular the principles and
+rules of humanitarian law.
+43. Certain States have in their written and oral pleadings suggested
+that in the case of nuclear weapons, the condition of proportionality
+must be evaluated in the light of still further factors. They contend that
+the very nature of nuclear weapons, and the high probability of an escalation of nuclear exchanges, mean that there is an extremely strong risk
+of devastation. The risk factor is said to negate the possibility of the condition of proportionality being complied with. The Court does not find it
+necessary to embark upon the quantification of such risks; nor does it
+need to enquire into the question whether tactical nuclear weapons exist
+which are sufficiently precise to limit those risks: it suffices for the Court
+to note that the very nature of al1 nuclear weapons and the profound
+risks associated therewith are further considerations to be borne in mind
+by States believing they can exercise a nuclear response in self-defence in
+accordance with the requirements of proportionality.
+44. Beyond the conditions of necessity and proportionality, Article 51
+specifically requires that measures taken by States in the exercise of the
+right of self-defence shall be immediately reported to the Security Council; this article further provides that these measures shall not in any way
+affect the authority and responsibility of the Security Council under the
+Charter to take at any time such action as it deems necessary in order to
+maintain or restore international peace and security. These requirements
+of Article 51 apply whatever the means of force used in self-defence.
+45. The Court notes that the Security Council adopted on 11 April
+1995, in the context of the extension of the Treaty on the Non-Proliferation of Nuclear Weapons, resolution 984 (1995) by the terms of which, on
+the one hand, it
+"[tlakes note with appreciation of the statements made by each
+of the nuclear-weapon States (S119951261, S119951262, S119951263,
+S119951264, S/19951265), in which they give security assurances
+23
+
+[Source edition page 24]
+
+against the use of nuclear weapons to non-nuclear-weapon States
+that are Parties to the Treaty on the Non-Proliferation of Nuclear
+Weapons",
+and, on the other hand, it
+"[w]elcomes the intention expressed by certain States that they will
+provide or support immediate assistance, in accordance with the
+Charter, to any non-nuclear-weapon State Party to the Treaty on the
+Non-Proliferation of Nuclear Weapons that is a victim of an act of,
+or an object of a threat of, aggression in which nuclear weapons are
+used".
+46. Certain States asserted that the use of nuclear weapons in the conduct of reprisals would be lawful. The Court does not have to examine, in
+this context, the question of armed reprisals in time of peace, which are
+considered to be unlawful. Nor does it have to pronounce on the question of belligerent reprisals save to observe that in any case any right of
+recourse to such reprisals would, like self-defence, be governed inter alia
+by the principle of proportionality.
+47. In order to lessen or eliminate the risk of unlawful attack, States
+sometimes signal that they possess certain weapons to use in self-defence
+against any State violating their territorial integrity or political independence. Whether a signalled intention to use force if certain events
+occur is or is not a "threat" within Article 2, paragraph 4, of the Charter
+depends upon various factors. If the envisaged use of force is itself unlawful, the stated readiness to use it would be a threat prohibited under
+Article 2, paragraph 4. Thus it would be illegal for a State to threaten
+force to secure territory from another State, or to cause it to follow or
+not follow certain political or economic paths. The notions of "threat"
+and "use" of force under Article 2, paragraph 4, of the Charter stand
+together in the sense that if the use of force itself in a given case is illegal
+- for whatever reason - the threat to use such force will likewise be
+illegal. In short, if it is to be lawful, the declared readiness of a State to
+use force must be a use of force that is in conformity with the Charter.
+For the rest, no State whether or not it defended the policy of deter-
+-
+rence - suggested to the Court that it would be lawful to threaten to use
+force if the use of force contemplated would be illegal.
+48. Some States put forward the argument that possession of nuclear
+weapons is itself an unlawful threat to use force. Possession of nuclear
+weapons may indeed justify an inference of preparedness to use them. In
+order to be effective, the policy of deterrence, by which those States possessing or under the umbrella of nuclear weapons seek to discourage military aggression by demonstrating that it will serve no purpose, necessitates that the intention to use nuclear weapons be credible. Whether this
+
+[Source edition page 25]
+
+is a "threat" contrary to Article 2, paragraph 4, depends upon whether
+the particular use of force envisaged would be directed against the territorial integrity or political independence of a State, or against the Purposes of the United Nations or whether, in the event that it were
+intended as a means of defence, it would necessarily violate the principles
+of necessity and proportionality. In any of these circumstances the use of
+force, and the threat to use it, would be unlawful under the law of the
+Charter.
+49. Moreover, the Security Council may take enforcement measures
+under Chapter VI1 of the Charter. From the statements presented to it
+the Court does not consider it necessary to address questions which
+might, in a given case, arise from the application of Chapter VII.
+50. The terms of the question put to the Court by the General Assembly in resolution 49175 K could in principle also cover a threat or use of
+nuclear weapons by a State within its own boundaries. However, this
+particular aspect has not been dealt with by any of the States which
+addressed the Court orally or in writing in these proceedings. The Court
+finds that it is not called upon to deal with an interna1 use of nuclear
+weapons.
+51. Having dealt with the Charter provisions relating to the threat or
+use of force, the Court will now turn to the law applicable in situations of
+armed conflict. It will first address the question whether there are specific
+rules in international law regulating the legality or illegality of recourse to
+nuclear weapons pev se; it will then examine the question put to it in the
+light of the law applicable in armed conflict proper, i.e. the principles and
+rules of humanitarian law applicable in armed conflict, and the law of
+neutrality.
+52. The Court notes by way of introduction that international customary and treaty law does not contain any specific prescription authorizing
+the threat or use of nuclear weapons or any other weapon in general or in
+certain circumstances, in particular those of the exercise of legitimate selfdefence. Nor, however, is there any principle or rule of international law
+which would make the legality of the threat or use of nuclear weapons or
+of any other weapons dependent on a specific authorization. State practice shows that the illegality of the use of certain weapons as such does
+not result from an absence of authorization but, on the contrary, is
+formulated in terms of prohibition.
+
+[Source edition page 26]
+
+53. The Court must therefore now examine whether there is any prohibition of recourse to nuclear weapons as such; it will first ascertain
+whether there is a conventional prescription to this effect.
+54. In this regard, the argument has been advanced that nuclear
+weapons should be treated in the same way as poisoned weapons. In that
+case, they would be prohibited under:
+(a) the Second Hague Declaration of 29 July 1899, which prohibits "the
+use of projectiles the object of which is the diffusion of asphyxiating
+or deleterious gases" ;
+(b) Article 23 (a) of the Regulations respecting the laws and customs of
+war on land annexed to the Hague Convention IV of 18 October
+1907, whereby "it is especially forbidden: . . . to employ poison or
+poisoned weapons" ; and
+(c) the Geneva Protocol of 17 June 1925 which prohibits "the use in war
+of asphyxiating, poisonous or other gases, and of al1 analogous
+liquids, materials or devices".
+55. The Court will observe that the Regulations annexed to the Hague
+Convention IV do not define what is to be understood by "poison or
+poisoned weapons" and that different interpretations exist on the issue.
+Nor does the 1925 Protocol specify the meaning to be given to the term
+"analogous materials or devices". The terms have been understood, in
+the practice of States, in their ordinary sense as covering weapons whose
+prime, or even exclusive, effect is to poison or asphyxiate. This practice is
+clear, and the parties to those instruments have not treated them as referring to nuclear weapons.
+56. In view of this. it does not seem to the Court that the use of
+bé
+nuclear weapons can regarded as specifically prohibited on the basis of
+the above-mentioned provisions of the Second Hague Declaration of
+1899, the Regulations annexed to the Hague Convention IV of 1907 or
+the 1925 Protocol (see paragraph 54 above).
+57. The pattern until now has been for weapons of mass destruction to
+be declared illegal by specific instruments. The most recent such instruments are the Convention of 10 April 1972 on the Prohibition of the
+Development, Production and Stockpiling of Bacteriological (Biological)
+and Toxin Weapons and on Their Destruction - which prohibits the
+possession of bacteriological and toxic weapons and reinforces the prohibition of their use and the Convention of 13 January 1993 on the
+-
+Prohibition of the Development, Production, Stockpiling and Use of
+Chemical Weapons and on Their Destruction which prohibits al1 use
+-
+of chemical weapons and requires the destruction of existing stocks. Each
+of these instruments has been negotiated and adopted in its own context
+and for its own reasons. The Court does not find any specific prohibition
+of recourse to nuclear weapons in treaties expressly prohibiting the use of
+certain weaDons of mass destruction.
+58. In the last two decades, a great many negotiations have been conducted regarding nuclear weapons; they have not resulted in a treaty of
+
+[Source edition page 27]
+
+general prohibition of the same kind as for bacteriological and chemical
+weapons. However, a number of specific treaties have been concluded in
+order to limit:
+(a) the acquisition, manufacture and possession of nuclear weapons
+(Peace Treaties of 10 February 1947; State Treaty for the Re-establishment of an Independent and Democratic Austria of 15 May
+1955; Treaty of Tlatelolco of 14 February 1967 for the Prohibition
+of Nuclear Weapons in Latin America, and its Additional Protocols; Treaty of 1 July 1968 on the Non-Proliferation of Nuclear
+Weapons; Treaty of Rarotonga of 6 August 1985 on the Nuclear-
+Weapon-Free Zone of the South Pacific, and its Protocols; Treaty of
+12 September 1990 on the Final Settlement with respect to Germany);
+(b) the deployment of nuclear weapons (Antarctic Treaty of 1 December
+1959; Treaty of 27 January 1967 on Principles Governing the Activities of States in the Exploration and Use of Outer Space, including
+the Moon and Other Celestial Bodies; Treaty of Tlatelolco of 14 February 1967 for the Prohibition of Nuclear Weapons in Latin America,
+and its Additional Protocols; Treaty of 11 February 1971 on the
+Prohibition of the Emplacement of Nuclear Weapons and Other
+Weapons of Mass Destruction on the Sea-Bed and the Ocean Floor
+and in the Subsoil Thereof; Treaty of Rarotonga of 6 August 1985
+on the Nuclear-Weapon-Free Zone of the South Pacific, and its Protocols); and
+(c) the testing of nuclear weapons (Antarctic Treaty of 1 December
+1959; Treaty of 5 August 1963 Banning Nuclear Weapon Tests in
+the Atmosphere, in Outer Space and under Water; Treaty of 27 January 1967 on Principles Governing the Activities of States in the
+Exploration and Use of Outer Space, including the Moon and Other
+Celestial Bodies; Treaty of Tlatelolco of 14 February 1967 for the
+Prohibition of Nuclear Weapons in Latin America, and its Additional Protocols; Treaty of Rarotonga of 6 August 1985 on the
+Nuclear-Weapon-Free Zone of the South Pacific, and its Protocols).
+59. Recourse to nuclear weapons is directly addressed by two of these
+Conventions and also in connection with the indefinite extension of the
+Treaty on the Non-Proliferation of Nuclear Weapons of 1968 :
+(a) the Treaty of Tlatelolco of 14 February 1967 for the Prohibition of
+Nuclear Weapons in Latin America prohibits, in Article 1, the use of
+nuclear weapons by the Contracting Parties. It further includes an
+Additional Protocol II open to nuclear-weapon States outside the
+region, Article 3 of which provides:
+"The Governments represented by the undersigned Plenipotentiaries also undertake not to use or threaten to use nuclear
+weapons against the Contracting Parties of the Treaty for the
+Prohibition of Nuclear Weapons in Latin America."
+
+[Source edition page 28]
+
+The Protocol was signed and ratified by the five nuclear-weapon
+States. Its ratification was accompanied by a variety of declarations.
+The United Kingdom Government, for example, stated that "in the
+event of any act of aggression by a Contracting Party to the Treaty
+in which that Party was supported by a nuclear-weapon State", the
+United Kingdom Government would "be free to reconsider the
+extent to which they could be regarded as committed by the provisions of Additional Protocol II". The United States made a similar
+statement. The French Government, for its part, stated that it "interprets the undertaking made in article 3 of the Protocol as being without prejudice to the full exercise of the right of self-defence confirmed by Article 51 of the Charter". China reaffirmed its commitment not to be the first to make use of nuclear weapons. The Soviet
+Union reserved "the right to review" the obligations imposed upon it
+by Additional Protocol II, particularly in the event of an attack by a
+State party either "in support of a nuclear-weapon State or jointly
+with that State". None of these statements drew comment or objection from the parties to the Treaty of Tlatelolco.
+(b) the Treaty of Rarotonga of 6 August 1985 establishes a South
+Pacific Nuclear Free Zone in which the Parties undertake not to
+manufacture, acquire or possess any nuclear explosive device
+(Art. 3). Unlike the Treaty of Tlatelolco, the Treaty of Rarotonga
+does not expressly prohibit the use of such weapons. But such a prohibition is for the States parties the necessary consequence of the
+prohibitions stipulated by the Treaty. The Treaty has a number of
+protocols. Protocol2, open to the five nuclear-weapon States, specifies in its Article 1 that:
+"Each Party undertakes not to use or threaten to use any
+nuclear explosive device against :
+(a) Parties to the Treaty; or
+(b) any territory within the South Pacific Nuclear Free Zone for
+which a State that has become a Party to Protocol 1 is internationally responsible."
+China and Russia are parties to that Protocol. In signing it, China
+and the Soviet Union each made a declaration by which they reserved
+the "right to reconsider" their obligations under the said Protocol;
+the Soviet Union also referred to certain circumstances in which it
+would consider itself released from those obligations. France, the
+United Kingdom and the United States, for their part, signed Protocol 2 on 25 March 1996, but have not yet ratified it. On that occasion, France declared, on the one hand, that no provision in that
+Protocol "shall impair the full exercise of the inherent right of selfdefence provided for in Article 51 of the . . . Charter" and, on the
+other hand, that "the commitment set out in Article 1 of [that] Protocol amounts to the negative security assurances given by France to
+
+[Source edition page 29]
+
+25 1 THREAT OR USE OF NUCLEAR WEAPONS (ADVISOORYPI NION)
+non-nuclear-weapon States which are parties to the Treaty on . . .
+Non-Proliferation", and that "these assurances shall not apply to
+States which are not parties" to that Treaty. For its part, the United
+Kingdom made a declaration setting out the precise circumstances in
+which it "will not be bound by [its] undertaking under Article 1" of
+the Protocol.
+(c) as to the Treaty on the Non-Proliferation of Nuclear Weapons, at
+the time of its signing in 1968 the United States, the United Kingdom and the USSR gave various security assurances to the nonnuclear-weapon States that were parties to the Treaty. In resolution 255 (1968) the Security Council took note with satisfaction of
+the intention expressed by those three States to
+"provide or support immediate assistance, in accordance with the
+Charter, to any non-nuclear-weapon State Party to the Treaty on
+the Non-Proliferation . . . that is a victim of an act of, or an object
+of a threat of, aggression in which nuclear weapons are used".
+On the occasion of the extension of the Treaty in 1995, the five
+nuclear-weapon States gave their non-nuclear-weapon partners, by
+means of separate unilateral statements on 5 and 6 April 1995,
+positive and negative security assurances against the use of such
+weapons. Al1 the five nuclear-weapon States first undertook not to
+use nuclear weapons against non-nuclear-weapon States that were
+parties to the Treaty on the Non-Proliferation of Nuclear Weapons. However, these States, apart from China, made an exception
+in the case of an invasion or any other attack against them, their
+territories, armed forces or allies, or on a State towards which they
+had a security commitment, carried out or sustained by a nonnuclear-weapon State party to the Non-Proliferation Treaty in
+association or alliance with a nuclear-wea~onS tate. Each of the
+nuclear-weapon States further undertook, as a permanent member
+of the Security Council, in the event of an attack with the use of
+nuclear weapons, or threat of such attack, against a non-nuclearweapon State, to refer the matter to the Security Council without
+delay and to act within it in order that it might take immediate
+measures with a view to supplying, pursuant to the Charter, the
+necessary assistance to the victim State (the commitments assumed
+comprising minor variations in wording). The Security Council, in
+unanimously adopting resolution 984 (1995) of 11 April 1995, cited
+above, took note of those statements with appreciation. It also
+recognized
+"that the nuclear-weapon State permanent members of the Security Council will bring the matter immediately to the attention of
+the Council and seek Council action to provide, in accordance
+with the Charter, the necessary assistance to the State victim";
+
+[Source edition page 30]
+
+and welcomed the fact that
+"the intention expressed by certain States that they will provide or
+support immediate assistance, in accordance with the Charter, to
+any non-nuclear-weapon State Party to the Treaty on the Non-
+Proliferation of Nuclear Weapons that is a victim of an act of, or
+an object of a threat of, aggression in which nuclear weapons are
+used".
+60. Those States that believe that recourse to nuclear weapons is illegal
+stress that the conventions that include various rules providing for the
+limitation or elimination of nuclear weapons in certain areas (such as the
+Antarctic Treaty of 1959 which prohibits the deployment of nuclear
+weapons in the Antarctic, or the Treaty of Tlatelolco of 1967 which creates a nuclear-weapon-free zone in Latin America) or the conventions
+that apply certain measures of control and limitation to the existence of
+nuclear weapons (such as the 1963 Partial Test-Ban Treaty or the Treaty
+on the Non-Proliferation of Nuclear Wea~ons)al 1 set limits to the use of
+nuclear weapons. In their view, these treaL ties 1b ear witness, in their own
+way, to the emergence of a rule of complete legal prohibition of al1 uses
+of nuclear weapons.
+61. Those States who defend the position that recourse to nuclear
+weapons is legal in certain circumstances see a logical contradiction in
+reaching such a conclusion. According to them, those Treaties, such as
+the Treaty on the Non-Proliferation of Nuclear Weapons, as well as
+Security Council resolutions 255 (1968) and 984 (1995) which take note
+of the security assurances given by the nuclear-weapon States to the nonnuclear-weapon States in relation to any nuclear aggression against the
+latter, cannot be understood as prohibiting the use of nuclear weapons,
+and such a claim is contrary to the very text of those instruments. For
+those who support the legality in certain circumstances of recourse to
+nuclear weapons, there is no absolute prohibition against the use of such
+weapons. The very logic and construction of the Treaty on the Non-Proliferation of Nuclear Weapons, they assert, confirm this. This Treaty,
+whereby, they contend, the possession of nuclear weapons by the five
+nuclear-weapon States has been accepted, cannot be seen as a treaty banning their use by those States; to accept the fact that those States possess
+nuclear weapons is tantamount to recognizing that such weapons may be
+used in certain circumstances. Nor, they contend, could the security
+assurances given by the nuclear-weapon States in 1968, and more recently
+in connection with the Review and Extension Conference of the Parties
+to the Treaty on the Non-Proliferation of Nuclear Weapons in 1995,
+have been conceived without its being supposed that there were circumstances in which nuclear weapons could be used in a lawful manner. For
+those who defend the legality of the use, in certain circumstances, of
+nuclear weapons, the acceptance of those instruments by the different
+non-nuclear-weapon States confirms and reinforces the evident logic
+upon which those instruments are based.
+
+[Source edition page 31]
+
+62. The Court notes that the treaties dealing exclusively with acquisition, manufacture, possession, deployment and testing of nuclear
+weapons, without specifically addressing their threat or use, certainly
+point to an increasing concern in the international community with these
+weapons; the Court concludes from this that these treaties could therefore be seen as foreshadowing a future general prohibition of the use
+of such weapons, but they do not constitute such a prohibition by themselves. As to the treaties of Tlatelolco and Rarotonga and their Protocols,
+and also the declarations made in connection with the indefinite extension
+of the Treaty on the Non-Proliferation of Nuclear Weapons, it emerges
+from these instruments that :
+(a) a number of States have undertaken not to use nuclear weapons in
+specific zones (Latin America; the South Pacific) or against certain
+other States (non-nuclear-weapon States which are parties to the
+Treaty on the Non-Proliferation of Nuclear Weapons) ;
+(b) nevertheless, even within this framework, the nuclear-weapon States
+have reserved the right to use nuclear weapons in certain circumstances; and
+(c) these reservations met with no objection from the parties to the
+Tlatelolco or Rarotonga Treaties or from the Security Council.
+63. These two treaties, the security assurances given in 1995 by the
+nuclear-weapon States and the fact that the Security Council took note of
+them with satisfaction, testify to a growing awareness of the need to
+liberate the community of States and the international public from the
+dangers resulting from the existence of nuclear weapons. The Court moreover notes the signing, even more recently, on 15 December 1995, at
+Bangkok, of a Treaty on the Southeast Asia Nuclear-Weapon-Free Zone,
+and on 11 April 1996, at Cairo, of a treaty on the creation of a nuclearweapons-free zone in Africa. It does not, however, view these elements as
+amounting to a comprehensive and universal conventional prohibition
+on the use, or the threat of use, of those weapons as such.
+64. The Court will now turn to an examination of customary international law to determine whether a prohibition of the threat or use of
+nuclear weapons as such flows from that source of law. As the Court has
+stated, the substance of that law must be "looked for primarily in the
+actual practice and opinio juris of States" (Continental Shelf (Libyan
+Arab Jarnahiriya/Malta), Judgment, 1. C.J . Reports 1985, p. 29,
+para. 27).
+65. States which hold the view that the use of nuclear weapons is illegal have endeavoured to demonstrate the existence of a customary rule
+prohibiting this use. They refer to a consistent practice of non-utilization
+of nuclear weapons by States since 1945 and they would see in that prac-
+
+[Source edition page 32]
+
+tice the expression of an opinio juris on the part of those who possess
+such weapons.
+66. Some other States, which assert the legality of the threat and use of
+nuclear weapons in certain circumstances, invoked the doctrine and practice of deterrence in support of their argument. They recall that they have
+always, in concert with certain other States, reserved the right to use
+those weapons in the exercise of the right to self-defence against an
+armed attack threatening their vital security interests. In their view, if
+nuclear weapons have not been used since 1945, it is not on account of an
+existing or nascent custom but merely because circumstances that might
+justify their use have fortunately not arisen.
+67. The Court does not intend to pronounce here upon the practice
+known as the "policy of deterrence". It notes that it is a fact that a
+number of States adhered to that practice during the greater part of the
+Cold War and continue to adhere to it. Furthermore, the members of the
+international community are profoundly divided on the matter of whether
+non-recourse to nuclear weapons over the past 50 years constitutes the
+expression of an opinio juris. Under these circumstances the Court does
+not consider itself able to find that there is such an opinio juris.
+68. According to certain States, the important series of General Assembly resolutions, beginning with resolution 1653 (XVI) of 24 November
+1961, that deal with nuclear weapons and that affirm, with consistent
+regularity, the illegality of nuclear weapons, signify the existence of a
+rule of international customary law which prohibits recourse to those
+weapons. According to other States, however, the resolutions in question
+have no binding character on their own account and are not declaratory
+of any customary rule of prohibition of nuclear weapons; some of these
+States have also pointed out that this series of resolutions not only did
+not meet with the approval of al1 of the nuclear-weapon States but of
+many other States as well.
+69. States which consider that the use of nuclear weapons is illegal
+indicated that those resolutions did not claim to create any new rules, but
+were confined to a confirmation of customary law relating to the prohibition of means or methods of warfare which, by their use, overstepped the
+bounds of what is permissible in the conduct of hostilities. In their view,
+the resolutions in question did no more than apply to nuclear weapons
+the existing rules of international law applicable in armed conflict; they
+were no more than the "envelope" or instrumentum containing certain
+pre-existing customary rules of international law. For those States it is
+accordingly of little importance that the instrumentum should have occasioned negative votes, which cannot have the effect of obliterating those
+customary rules which have been confirmed by treaty law.
+70. The Court notes that General Assembly resolutions, even if they
+are not binding, may sometimes have normative value. They can, in certain circumstances, provide evidence important for establishing the exist-
+
+[Source edition page 33]
+
+ence of a rule or the emergence of an opinio juris. To establish whether
+this is true of a given General Assembly resolution, it is necessary to look
+at its content and the conditions of its adoption; it is also necessary to see
+whether an opinio juris exists as to its normative character. Or a series of
+resolutions may show the gradua1 evolution of the opinio juris required
+for the establishment of a new rule.
+71. Examined in their totality, the General Assembly resolutions put
+before the Court declare that the use of nuclear weapons would be "a
+direct violation of the Charter of the United Nations7'; and in certain formulations that such use "should be prohibited". The focus of these resolutions has sometimes shifted to diverse related matters; however, several
+of the resolutions under consideration in the present case have been
+adopted with substantial numbers of negative votes and abstentions;
+thus, although those resolutions are a clear sign of deep concern regarding the problem of nuclear weapons, they still fa11 short of establishing the existence of an opinio juvis on the illegality of the use of such
+weapons.
+72. The Court further notes that the first of the resolutions of the General Assembly expressly proclaiming the illegality of the use of nuclear
+weapons, resolution 1653 (XVI) of 24 November 1961 (mentioned in subsequent resolutions), after referring to certain international declarations
+and binding agreements, from the Declaration of St. Petersburg of 1868
+to the Geneva Protocol of 1925, proceeded to qualify the legal nature of
+nuclear weapons, determine their effects, and apply general rules of customary international law to nuclear weapons in particular. That application by the General Assembly of general rules of customary law to the
+particular case of nuclear weapons indicates that, in its view, there was
+no specific rule of customary law which prohibited the use of nuclear
+weapons; if such a rule had existed, the General Assembly could simply
+have referred to it and would not have needed to undertake such an exercise of legal qualification.
+73. Having said this, the Court points out that the adoption each year
+by the General Assembly, by a large majority, of resolutions recalling the
+content of resolution 1653 (XVI), and requesting the member States to
+conclude a convention prohibiting the use of nuclear weapons in any circumstance, reveals the desire of a very large section of the international
+community to take, by a specific and express prohibition of the use of
+nuclear weapons, a significant step forward along the road to complete
+nuclear disarmament. The emergence, as lex lata, of a customary rule
+specifically prohibiting the use of nuclear weapons as such is hampered
+by the continuing tensions between the nascent opinio juris on the one
+hand, and the still strong adherence to the practice of deterrence on the
+other.
+
+[Source edition page 34]
+
+74. The Court not having found a conventional rule of general scope,
+nor a customary rule specifically proscribing the threat or use of nuclear
+weapons pev se, it will now deal with the question whether recourse to
+nuclear weapons must be considered as illegal in the light of the principles and rules of international humanitarian law applicable in armed
+conflict and of the law of neutrality.
+75. A large number of customary rules have been developed by the
+practice of States and are an integral part of the international law relevant to the question posed. The "laws and customs of war" - as they
+were traditionally called were the subject of efforts at codification
+-
+undertaken in The Hague (including the Conventions of 1899 and 1907),
+and were based partly upon the St. Petersburg Declaration of 1868 as
+well as the results of the Brussels Conference of 1874. This "Hague Law"
+and, more particularly, the Regulations Respecting the Laws and Customs of War on Land, fixed the rights and duties of belligerents in their
+conduct of operations and limited the choice of methods and means of
+injuring the enemy in an international armed conflict. One should add to
+this the "Geneva Law" (the Conventions of 1864, 1906, 1929 and 1949),
+which protects the victims of war and aims to provide safeguards for
+disabled armed forces personnel and persons not taking part in the hostilities. These two branches of the law applicable in armed conflict have
+become so closely interrelated that they are considered to have gradually
+formed one single complex system, known today as international humanitarian law. The provisions of the Additional Protocols of 1977 give
+expression and attest to the unity and complexity of that law.
+76. Since the turn of the century, the appearance of new means of
+combat has without calling into question the longstanding principles
+-
+and rules of international law rendered necessary some specific prohi-
+-
+bitions of the use of certain weapons, such as explosive projectiles under
+400 grammes, dum-dum bullets and asphyxiating gases. Chemical and
+bacteriological weapons were then prohibited by the 1925 Geneva Protocol. More recently, the use of weapons producing "non-detectable fragments", of other types of "mines, booby traps and other devices", and
+of "incendiary weapons", was either prohibited or limited, depending on
+the case, by the Convention of 10 October 1980 on Prohibitions or
+Restrictions on the Use of Certain Conventional Weapons Which May
+Be Deemed to Be Excessively Injurious or to Have Indiscriminate Effects.
+The provisions of the Convention on "mines, booby traps and other
+devices" have just been amended, on 3 May 1996, and now regulate in
+greater detail, for example, the use of anti-personnel land mines.
+77. Al1 this shows that the conduct of military operations is governed
+by a body of legal prescriptions. This is so because "the right of belligerents to adopt means of injuring the enemy is not unlimited" as stated
+in Article 22 of the 1907 Hague Regulations relating to the laws and
+customs of war on land. The St. Petersburg Declaration had already
+condemned the use of weapons "which uselessly aggravate the suffering of
+
+[Source edition page 35]
+
+disabled men or make their death inevitable". The aforementioned Regulations relating to the laws and customs of war on land, annexed to the
+Hague Convention IV of 1907, prohibit the use of "arms, projectiles, or
+material calculated to cause unnecessary suffering" (Art. 23).
+78. The cardinal principles contained in the texts constituting the
+fabric of humanitarian law are the following. The first is aimed at the protection of the civilian population and civilian objects and establishes the
+distinction between combatants and non-combatants; States must never
+make civilians the object of attack and must consequently never use
+weapons that are incapable of distinguishing between civilian and military targets. According to the second principle, it is prohibited to cause
+unnecessary suffering to combatants: it is accordingly prohibited to use
+weapons causing them such harm or uselessly aggravating their suffering.
+In application of that second principle, States do not have unlimited freedom of choice of means in the weapons they use.
+The Court would likewise refer, in relation to these principles, to the
+Martens Clause, which was first included in the Hague Convention II
+with Res~ectt o the Laws and Customs of War on Land of 1899 and
+which has proved to be an effective means of addressing the rapid evolution of military technology. A modern version of that clause is to be
+found in Article 1, paragraph 2, of Additional Protocol 1 of 1977, which
+reads as follows:
+"In cases not covered by this Protocol or by other international
+agreements, civilians and combatants remain under the protection
+and authority of the principles of international law derived from
+established custom, from the principles of humanity and from the
+dictates of public conscience."
+In conformity with the aforementioned principles, humanitarian law, at a
+very early stage, prohibited certain types of weapons either because of
+their indiscriminate effect on combatants and civilians or because of the
+unnecessary suffering caused to combatants, that is to Say, a harm
+greater than that unavoidable to achieve legitimate military objectives. If
+an envisaged use of weapons would not meet the requirements of humanitarian law, a threat to engage in such use would also be contrary to that
+law .
+79. It is undoubtedly because a great many rules of humanitarian law
+applicable in armed conflict are so fundamental to the respect of the
+human person and "elementary considerations of humanity" as the Court
+put it in its Judgment of 9 April 1949 in the Covfu Channel case (1.C . J.
+Reports 1949, p. 22), that the Hague and Geneva Conventions have
+enjoyed a broad accession. Further these fundamental rules are to be
+observed by al1 States whether or not they have ratified the conventions
+that contain them, because they constitute intransgressible principles of
+international customary law.
+
+[Source edition page 36]
+
+80. The Nuremberg International Military Tribunal had already found
+in 1945 that the humanitarian rules included in the Regulations annexed
+to the Hague Convention IV of 1907 "were recognized by al1 civilized
+nations and were regarded as being declaratory of the laws and customs
+of war" (Trial of the Major War Criminals, 14 November 1945-1 October
+1946, Nuremberg, 1947, Vol. 1, p. 254).
+81. The Report of the Secretary-General pursuant to paragraph 2 of
+Security Council resolution 808 (1993), with which he introduced the
+Statute of the International Tribunal for the Prosecution of Persons
+Responsible for Serious Violations of International Humanitarian Law
+Committed in the Territory of the Former Yugoslavia since 1991, and
+which was unanimously approved by the Security Council (resolution
+827 (1993)), stated :
+"In the view of the Secretary-General, the application of the principle nullum crimen sine lege requires that the international tribunal
+should apply rules of international humanitarian law which are
+beyond any doubt part of customary law . . .
+The part of conventional international humanitarian law which
+has beyond doubt become part of international customary law is the
+law applicable in armed conflict as embodied in: the Geneva Conventions of 12 August 1949 for the Protection of War Victims; the
+Hague Convention (IV) Respecting the Laws and Customs of War
+on Land and the Regulations annexed thereto of 18 October 1907;
+the Convention on the Prevention and Punishment of the Crime of
+Genocide of 9 December 1948; and the Charter of the International
+Military Tribunal of 8 August 1945."
+82. The extensive codification of humanitarian law and the extent of
+the accession to the resultant treaties, as well as the fact that the denunciation clauses that existed in the codification instruments have never
+been used, have provided the international community with a corpus of
+treaty rules the great majority of which had already become customary
+and which reflected the most universally recognized humanitarian principles. These rules indicate the normal conduct and behaviour expected
+of States.
+83. It has been maintained in these proceedings that these principles
+and rules of humanitarian law are part of jus cogens as defined in
+Article 53 of the Vienna Convention on the Law of Treaties of 23 May
+1969. The question whether a norm is part of the jus cogens relates to the
+legal character of the norm. The request addressed to the Court by the
+General Assembly raises the question of the applicability of the principles
+and rules of humanitarian law in cases of recourse to nuclear weapons
+and the consequences of that applicability for the legality of recourse to
+these weapons. But it does not raise the question of the character of the
+humanitarian law which would apply to the use of nuclear weapons.
+There is, therefore, no need for the Court to pronounce on this matter.
+
+[Source edition page 37]
+
+84. Nor is there any need for the Court to elaborate on the question of
+the applicability of Additional Protocol 1 of 1977 to nuclear weapons. It
+need only observe that while, at the Diplomatic Conference of 1974-1977,
+there was no substantive debate on the nuclear issue and no specific solution concerning this question was put forward, Additional Protocol 1 in
+no way replaced the general customary rules applicable to al1 means and
+methods of combat including nuclear weapons. In particular, the Court
+recalls that al1 States are bound by those rules in Additional Protocol 1
+which, when adopted, were merely the expression of the pre-existing
+customary law, such as the Martens Clause, reaffirmed in the first
+article of Additional Protocol 1. The fact that certain types of weapons
+were not specifically dealt with by the 1974-1977 Conference does not
+permit the drawing of any legal conclusions relating to the substantive
+issues which the use of such weapons would raise.
+85. Turning now to the applicability of the principles and rules of
+humanitarian law to a possible threat or use of nuclear weapons, the
+Court notes that doubts in this respect have sometimes been voiced on
+the ground that these principles and rules had evolved prior to the invention of nuclear weapons and that the Conferences of Geneva of 1949 and
+1974-1977 which respectively adopted the four Geneva Conventions of
+1949 and the two Additional Protocols thereto did not deal with nuclear
+weapons specifically. Such views, however, are only held by a small
+minority. In the view of the vast majority of States as well as writers there
+can be no doubt as to the applicability of humanitarian law to nuclear
+weapons.
+86. The Court shares that view. Indeed, nuclear weapons were invented
+after most of the principles and rules of humanitarian law applicable in
+armed conflict had already come into existence; the Conferences of 1949
+and 1974-1977 left these weapons aside, and there is a qualitative as well
+as quantitative difference between nuclear weapons and al1 conventional
+arms. However. it cannot be concluded from this that the established
+principles and rules of humanitarian law applicable in armed conflict did
+not apply to nuclear weapons. Such a conclusion would be incompatible
+with the intrinsically humanitarian character of the legal principles in
+question which permeates the entire law of armed conflict and applies to
+al1 forms of warfare and to al1 kinds of weapons, those of the past, those
+of the present and those of the future. In this respect it seems significant
+that the thesis that the rules of humanitarian law do not apply to the new
+weaponry, because of the newness of the latter, has not been advocated
+in the present proceedings. On the contrary, the newness of nuclear
+weapons has been expressly rejected as an argument against the application to them of international humanitarian law :
+"In general, international humanitarian law bears on the threat or
+use of nuclear weapons as it does of other weapons.
+
+[Source edition page 38]
+
+International humanitarian law has evolved to meet contemporary circumstances, and is not limited in its application to weaponry
+of an earlier time. The fundamental principles of this law endure:
+to mitigate and circumscribe the cruelty of war for humanitarian
+reasons." (New Zealand, Written Statement, p. 15, paras. 63-64.)
+None of the statements made before the Court in any way advocated a
+freedom to use nuclear weapons without regard to humanitarian constraints. Quite the reverse; it has been explicitly stated,
+"Restrictions set by the rules applicable to armed conflicts in
+respect of means and methods of warfare definitely also extend to
+nuclear weapons" (Russian Federation, CR 95129, p. 52);
+"So far as the customary law of war is concerned, the United
+Kingdom has always accepted that the use of nuclear weapons is
+subject to the general principles of the jus in bello" (United Kingdom, CR 95134, p. 45);
+and
+"The United States has long shared the view that the law of armed
+conflict governs the use of nuclear weapons just as it governs the
+-
+use of conventional weapons" (United States of America, CR 95134,
+p. 85).
+87. Finally, the Court points to the Martens Clause, whose continuing
+existence and applicability is not to be doubted, as an affirmation that the
+principles and rules of humanitarian law apply to nuclear weapons.
+88. The Court will now turn to the principle of neutrality which was
+raised by several States. In the context of the advisory proceedings
+brought before the Court by the WHO concerning the Legality of the
+Use by a State of Nuclear Weapons in Armed Conflict, the position was
+put as follows by one State:
+"The principle of neutrality, in its classic sense, was aimed at preventing the incursion of belligerent forces into neutral territory, or
+attacks on the persons or ships of neutrals. Thus: 'the territory of
+neutral powers is inviolable' (Article 1 of the Hague Convention (V)
+Respecting the Rights and Duties of Neutral Powers and Persons in
+Case of War on Land, concluded on 18 October 1907); 'belligerents
+are bound to respect the sovereign rights of neutral powers . . .'
+(Article 1 to the Hague Convention (XIII) Respecting the Rights and
+Duties of Neutral Powers in Naval War. concluded on 18 October
+1907), 'neutral states have equal inter& in having their rights
+respected by belligerents . . .' (Preamble to Convention on Maritime
+
+[Source edition page 39]
+
+Neutrality, concluded on 20 February 1928). It is clear, however,
+that the principle of neutrality applies with equal force to transborder incursions of armed forces and to the transborder damage
+caused to a neutral State by the use of a weapon in a belligerent
+State." (Nauru, Written Statement (1), p. 35, IV E.)
+The principle so circumscribed is presented as an established part of the
+customary international law.
+89. The Court finds that as in the case of the principles of humanitarian law applicable in armed conflict, international law leaves no doubt
+that the principle of neutrality, whatever its content, which is of a fundamental character similar to that of the humanitarian principles and
+rules, is applicable (subject to the relevant provisions of the United
+Nations Charter), to al1 international armed conflict, whatever type of
+weapons might be used.
+90. Although the applicability of the principles and rules of humanitarian law and of the principle of neutrality to nuclear weapons is hardly
+disputed, the conclusions to be drawn from this applicability are, on the
+other hand, controversial.
+91. According to one point of view, the fact that recourse to nuclear
+weapons is subject to and regulated by the law of armed conflict does not
+necessarily mean that such recourse is as such prohibited. As one State
+put it to the Court:
+"Assuming that a State's use of nuclear weapons meets the requirements of self-defence, it must then be considered whether it conforms to the fundamental principles of the law of armed conflict
+regulating the conduct of hostilities" (United Kingdom, Written
+Statement, p. 40, para. 3.44);
+"the legality of the use of nuclear weapons must therefore be assessed
+in the light of the applicable principles of international law regarding
+the use of force and the conduct of hostilities, as is the case with
+other methods and means of warfare" (ibid.,p . 75, para. 4.2 (3));
+and
+"The reality . . . is that nuclear weapons might be used in a wide
+variety of circumstances with very different results in terms of likely
+civilian casualties. In some cases, such as the use of a low yield
+nuclear weapon against warships on the High Seas or troops in
+sparsely populated areas, it is possible to envisage a nuclear attack
+which caused comparatively few civilian casualties. It is by no means
+the case that every use of nuclear weapons against a military objective would inevitably cause very great collateral civilian casualties."
+
+[Source edition page 40]
+
+(Ibid., p. 53, para. 3.70; see also United States of America, CR951
+34, pp. 89-90.)
+92. Another view holds that recourse to nuclear weapons could never
+be compatible with the principles and rules of humanitarian law and is
+therefore prohibited. In the event of their use, nuclear weapons would in
+al1 circumstances be unable to draw any distinction between the civilian
+population and combatants, or between civilian objects and military
+objectives, and their effects, largely uncontrollable, could not be restricted,
+either in time or in space, to lawful military targets. Such weapons would
+kill and destroy in a necessarily indiscriminate manner, on account of the
+blast, heat and radiation occasioned by the nuclear explosion and the
+effects induced; and the number of casualties which would ensue would
+be enormous. The use of nuclear weapons would therefore be prohibited
+in any circumstance, notwithstanding the absence of any explicit conventional prohibition. That view lay at the basis of the assertions by certain
+States before the Court that nuclear weapons are by their nature illegal
+under customary international law, by virtue of the fundamental principle of humanity.
+93. A similar view has been expressed with respect to the effects of the
+principle of neutrality. Like the principles and rules of humanitarian law,
+that principle has therefore been considered by some to rule out the use
+of a weapon the effects of which simply cannot be contained within the
+territories of the contending States.
+94. The Court would observe that none of the States advocating the
+legality of the use of nuclear weapons under certain circumstances,
+including the "clean" use of smaller, low yield, tactical nuclear weapons,
+has indicated what, supposing such limited use were feasible, would be
+the precise circumstances justifying such use; nor whether such limited
+use would not tend to escalate into the all-out use of high yield nuclear
+weapons. This being so, the Court does not consider that it has a sufficient basis for a determination on the validity of this view.
+95. Nor can the Court make a determination on the validity of the
+view that the recourse to nuclear weapons would be illegal in any circumstance owing to their inherent and total incompatibility with the law
+applicable in armed conflict. Certainly, as the Court has already indicated, the principles and rules of law applicable in armed conflict - at
+the heart of which is the overriding consideration of humanity make
+-
+the conduct of armed hostilities subject to a number of strict requirements. Thus, methods and means of warfare, which would preclude any
+distinction between civilian and military targets, or which would result in
+unnecessary suffering to combatants, are prohibited. In view of the
+unique characteristics of nuclear weapons, to which the Court has referred
+above, the use of such weapons in fact seems scarcely reconcilable with
+respect for such requirements. Nevertheless, the Court considers that it
+
+[Source edition page 41]
+
+does not have sufficient elements to enable it to conclude with certainty
+that the use of nuclear weapons would necessarily be at variance with the
+principles and rules of law applicable in armed conflict in any circumstance.
+96. Furthermore, the Court cannot lose sight of the fundamental right
+of every State to survival, and thus its right to resort to self-defence, in
+accordance with Article 51 of the Charter. when its survival is at stake.
+Nor can it ignore the practice referred to as "policy of deterrence", to
+which an appreciable section of the international community adhered for
+many years. The Court also notes the reservations which certain nuclearweapon States have appended to the undertakings they have given,
+notably under the Protocols to the Treaties of Tlatelolco and Rarotonga,
+and also under the declarations made by them in connection with the
+extension of the Treaty on the Non-Proliferation of Nuclear Weapons,
+not to resort to such weapons.
+97. Accordingly, in view of the present state of international law
+viewed as a whole, as examined above by the Court, and of the elements
+of fact at its disposal, the Court is led to observe that it cannot reach a
+definitive conclusion as to the legality or illegality of the use of nuclear
+weapons by a State in an extreme circumstance of self-defence, in which
+its very survival would be at stake.
+98. Given the eminently difficult issues that arise in applying the law
+on the use of force and above al1 the law applicable in armed conflict to
+nuclear weapons, the Court considers that it now needs to examine one
+further aspect of the question before it, seen in a broader context.
+In the long run, international law, and with it the stability of the international order which it is intended to govern, are bound to suffer from
+the continuing difference of views with regard to the legal status of
+weapons as deadly as nuclear weapons. It is consequently important to
+put an end to this state of affairs: the long-promised complete nuclear
+disarmament appears to be the most appropriate means of achieving
+that result.
+99. In these circumstances, the Court appreciates the full importance
+of the recognition by Article VI of the Treaty on the Non-Proliferation of
+Nuclear Weapons of an obligation to negotiate in good faith a nuclear
+disarmament. This provision is worded as follows:
+"Each of the Parties to the Treaty undertakes to pursue negotiations in good faith on effective measures relating to cessation of the
+nuclear arms race at an early date and to nuclear disarmament, and
+on a treaty on general and complete disarmament under strict and
+effective international control."
+
+[Source edition page 42]
+
+The legal import of that obligation goes beyond that of a mere obligation
+of conduct ; the obligation involved here is an obligation to achieve a precise result - nuclear disarmament in al1 its aspects - by adopting a particular course of conduct, namely, the pursuit of negotiations on the
+matter in good faith.
+100. This twofold obligation to pursue and to conclude negotiations
+formally concerns the 182 States parties to the Treaty on the Non-
+Proliferation of Nuclear Weapons, or, in other words, the vast majority
+of the international community.
+Virtually the whole of this community appears moreover to have been
+involved when resolutions of the United Nations General Assembly concerning nuclear disarmament have repeatedly been unanimously adopted.
+Indeed, any realistic search for general and complete disarmament, especially nuclear disarmament, necessitates the CO-operationo f al1 States.
+101. Even the very first General Assembly resolution, unanimously
+adopted on 24 January 1946 at the London session, set up a commission
+whose terms of reference included making specific proposals for, among
+other things, "the elimination from national armaments of atomic
+weapons and of al1 other major weapons adaptable to mass destruction".
+In a large number of subsequent resolutions, the General Assembly has reaffirmed the need for nuclear disarmament. Thus, in resolution 808 A (IX)
+of 4 November 1954, which was likewise unanimously adopted, it concluded
+"that a further effort should be made to reach agreement on comprehensive and CO-ordinated proposals to be embodied in a draft
+international disarmament convention providing for: . . . (b) The
+total prohibition of the use and manufacture of nuclear weapons
+and weapons of mass destruction of every type, together with the
+conversion of existing stocks of nuclear weapons for peaceful purposes."
+The same conviction has been expressed outside the United Nations
+context in various instruments.
+102. The obligation expressed in Article VI of the Treaty on the Non-
+Proliferation of Nuclear Weapons includes its fulfilment in accordance
+with the basic principle of good faith. This basic principle is set forth in
+Article 2, paragraph 2, of the Charter. It was reflected in the Declaration
+on Friendly Relations between States (resolution 2625 (XXV) of 24 October 1970) and in the Final Act of the Helsinki Conference of 1 August
+1975. It is also embodied in Article 26 of the Vienna Convention on the
+Law of Treaties of 23 May 1969, according to which "[elvery treaty in
+force is binding upon the parties to it and must be performed by them in
+good faith".
+Nor has the Court omitted to draw attention to it, as follows:
+"One of the basic principles governing the creation and perform-
+
+[Source edition page 43]
+
+ance of legal obligations, whatever their source, is the principle of good
+faith. Trust and confidence are inherent in international CO-operation,
+in particular in an age when this CO-operationi n many fields is becoming increasingly essential." (Nuclear Tests (Australia v. France),
+Judgment, I. C.J. Reports 1974, p. 268, para. 46.)
+103. In its resolution 984 (1995) dated 11 April 1995, the Security
+Council took care to reaffirm "the need for al1 States Parties to the
+Treaty on the Non-Proliferation of Nuclear Weapons to comply fully
+with al1 their obligations" and urged
+"al1 States, as provided for in Article VI of the Treaty on the Non-
+Proliferation of Nuclear Weapons, to pursue negotiations in good
+faith on effective measures relating to nuclear disarmament and on a
+treaty on general and complete disarmament under strict and effective international control which remains a universal goal".
+The importance of fulfilling the obligation expressed in Article VI of
+the Treaty on the Non-Proliferation of Nuclear Weapons was also
+reaffirmed in the final document of the Review and Extension Conference
+of the parties to the Treaty on the Non-Proliferation of Nuclear Weapons,
+held from 17 April to 12 May 1995.
+In the view of the Court, it remains without any doubt an objective of
+vital importance to the whole of the international community today.
+104. At the end of the present Opinion, the Court emphasizes that its
+reply to the question put to it by the General Assembly rests on the totality of the legal grounds set forth by the Court above (paragraphs 20 to
+103), each of which is to be read in the light of the others. Some of these
+grounds are not such as to form the object of forma1 conclusions in the
+final paragraph of the Opinion; they nevertheless retain, in the view of
+the Court, al1 their importance.
+105. For these reasons,
+(1) By thirteen votes to one,
+Decides to comply with the request for an advisory opinion;
+IN FAVOUR : President Bedjaoui ; Vice-President Schwebel ; Judges
+Guillaume, Shahabuddeen, Weeramantry, Ranjeva, Herczegh, Shi,
+Fleischhauer, Koroma, Vereshchetin, Ferrari Bravo, Higgins;
+AGAINST : Judge Oda ;
+
+[Source edition page 44]
+
+(2) Replies in the following manner to the question put by the General
+Assembly :
+A. Unanimously,
+There is in neither customary nor conventional international law
+any specific authorization of the threat or use of nuclear weapons;
+B. By eleven votes to three,
+There is in neither customary nor conventional international law
+any comprehensive and universal prohibition of the threat or use
+of nuclear weapons as such;
+IN FAVOUPRre: sident Bedjaoui; Vice-President Schwebel; Judges Oda,
+Guillaume, Ranjeva, Herczegh, Shi, Fleischhauer, Vereshchetin,
+Ferrari Bravo, Higgins;
+AGAINSJTud:g es Shahabuddeen, Weeramantry, Koroma;
+C. Unanimously,
+A threat or use of force by means of nuclear weapons that
+is contrary to Article 2, paragraph 4, of the United Nations
+Charter and that fails to meet al1 the requirements of Article 51, is
+unlawful ;
+D. Unanimously,
+A threat or use of nuclear weapons should also be compatible
+with the requirements of the international law applicable in armed
+conflict, particularly those of the principles and rules of international humanitarian law, as well as with specific obligations under
+treaties and other undertakings which expressly deal with nuclear
+weapons ;
+E. By seven votes to seven, by the President's casting vote,
+It follows from the above-mentioned requirements that the threat
+or use of nuclear weapons would generally be contrary to the rules
+of international law applicable in armed conflict, and in particular
+the principles and rules of humanitarian law;
+However, in view of the current state of international law, and of
+the elements of fact at its disposal, the Court cannot conclude
+definitively whether the threat or use of nuclear weapons would be
+lawful or unlawful in an extreme circumstance of self-defence, in
+which the very survival of a State would be at stake;
+IN FAVOUR : President Bedjaoui ; Judges Ranjeva, Herczegh, Shi, Fleischhauer, Vereshchetin, Ferrari Bravo;
+AGAINST : Vice-Presiden t Schwebel ; Judges Oda, Guillaume, Shahabuddeen, Weeramantry, Koroma, Higgins;
+
+[Source edition page 45]
+
+F. Unanimously,
+There exists an obligation to pursue in good faith and bring to a
+conclusion negotiations leading to nuclear disarmament in al1 its
+aspects under strict and effective international control.
+Done in English and in French, the English text being authoritative, at
+the Peace Palace, The Hague, this eighth day of July, one thousand nine
+hundred and ninety-six, in two copies, one of which will be placed in the
+archives of the Court and the other transmitted to the Secretary-General
+of the United Nations.
+(Signed) Mohammed BEDJAOUI,
+President.
+(Signed) Eduardo VALENCIA-OSPINA,
+Registrar.
+President BEDJAOUJIu,d ges HERCZEGSHH, I,V ERESHCHETanINd FERRARI
+BRAVOap pend declarations to the Advisory Opinion of the Court.
+Judges GUILLAUMER,A NJEVAAN D FLEISCHHAUaEpRp end separate
+opinions to the Advisory Opinion of the Court.
+Vice-President SCHWEBEJLud, ges ODA,S HAHABUDDEWEENE, RAMANTRY,
+KOROMaAn d HIGGINaSp pend dissenting opinions to the Advisory Opinion
+of the Court.
+(Initialled) M.B.
+(Initialled) E.V.O.

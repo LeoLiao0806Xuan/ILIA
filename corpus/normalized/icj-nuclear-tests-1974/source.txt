@@ -1,0 +1,872 @@
+ILIA NORMALIZED LEGAL TEXT
+
+Document ID: icj-nuclear-tests-1974
+Title: Nuclear Tests (Australia v. France) Judgment
+Chinese title: 核试验案判决
+Issuing body: International Court of Justice
+Official source: https://www.icj-cij.org/sites/default/files/case-related/58/058-19741220-JUD-01-00-EN.pdf
+Database version: public-international-law-v1.0.1-normalized-2026.09.24
+
+NOTICE
+This is an ILIA-generated normalized text for offline legal research.
+It is not an official edition. Source-edition page markers are retained
+only as factual verification locators. Verify quotations against the
+official source linked above.
+
+========================================================================
+
+[Source edition page 5]
+
+assisted by
+H.E. Mr. F. J. Blakeney, C.B.E., Ambassador of Australia,
+as Co-Agent,
+Senator the Honourable Lionel Murphy, Q.C., Attorney-General of
+Australia,
+Mr. M. H. Byers, Q.C., Solicitor-General of Australia,
+Mr. E. Lauterpacht, Q.C., of the English Bar, Lecturer in the University of
+Cambridge,
+Professor D. P. O'Connell, of the English, Australian and New Zealand
+Bars, Chichele Professor of Public International Law in the University of
+Oxford,
+as Counsel,
+and by
+Professor H. Messel, Head of School of Physics, University of Sydney,
+Mr. D. J. Stevens, Director, Australian Radiation Laboratory,
+Mr. H. Burmester, of the Australian Bar, Officer of the Attorney-General's
+Department,
+Mr. F. M. Douglas, of the Australian Bar, Officer of the Attorney-General's
+Department,
+Mr: J. F. Browne, of the Australian Bar, Officer of the Department of
+Foreign Affairs,
+Mr. C. D. Mackenzie, of the Australian Bar, hi rd Secretary, Australian
+Embassy, The Hague,
+as Advisers,
+and
+the French Republic,
+composed as above,
+delivers the following Judgment:
+1. By a letter of 9 May 1973, received in the Registry of the Court the same
+day, the Ambassador of Australia to the Netherlands transmitted to the
+Registrar an Application instituting proceedings against France in respect of a
+dispute concerning the holding of atmospheric tests of nuclear weapons by
+the French Government in the Pacific Ocean. In order to found to the jurisdiction of the Court, the Application relied on Article 17 of the General Act
+for the Pacific Settlement of International Disputes done at Geneva on 26
+September 1928, read together with Articles 36, paragraph 1, and 37 of the
+Statute of the Court, and alternatively on Article 36, paragraph 2, of the
+Statute of the Court.
+2. Pursuant to Article 40, paragraph 2, of the Statute, the Application was
+at once communicated to the French Government. In accordance with
+paragraph 3 of that Article, al1 other States entitled to appear before the Court
+were notified of the Application.
+
+[Source edition page 6]
+
+3. Pursuant to Article 31, paragraph 2, of the Statute of the Court, the
+Government of Australia chose the Right Honourable Sir Garfield Barwick,
+Chief Justice of Australia, to sit as judge ad hoc in the case.
+4. By a letter dated 16 May 1973 from the Ambassador of France to the
+Netherlands, handed by him to the Registrar the same day, the French
+Government stated that, for reasons set out in the letter and an Annex
+thereto, it considered that the Court was manifestly not competent in the
+case, and that it could not accept the Court's jurisdiction; and that accordingly the French Government did not intend to appoint an agent, and requested the Court to remove the case from its list. Nor has an agent been
+appointed by the French Government.
+5. On 9 May 1973, the date of filing of the Application instituting proceedings, the Agent of Australia also filed in the Registry of the Court a
+request for the indication of interim measures of protection under Article 33
+of the 1928 General Act for the Pacific Settlement of International Disputes
+and Article 41 of the Statute and Article 66 of the Rules of Court. By an
+Order dated 22 June 1973 the Court indicated, on the basis of Article 41 of the
+Statute, certain interim measures of protection in the case.
+6. By the same Order of 22 June 1973, the Court, considering that it was
+necessary to resolve as soon as possible the questions of the Court's jurisdiction and of the admissibility of the Application, decided that the written
+proceedings should first be addressed to the questions of the jurisdiction of
+the Court to entertain the dispute and of the admissibility of the Application,
+and fixed 21 September 1973 as the time-limit for the filing of a Memorial by
+the Government of Australia and 21 December 1973 as the time-limit for a
+Counter-Memorial by the French Government. The Co-Agent of Australia
+having requested an extension to 23 November 1973 of the time-limit fixed
+for the filing of the Memorial, the time-limits fixed by the Order of 22 June
+1973 were extended, by an Order dated 28 August 1973, to 23 November 1973
+for the Memorial and 19 April 1974 for the Counter-Memorial. The Memorial
+of the Government of Australia was filed within the extended time-limit fixed
+therefor, and was communicated to the French Government. No Counter-
+Memorial was filed by the French Government and, the written proceedings
+being thus closed, the case was ready for hearing on 20 April 1974, the day
+following the expiration of the time-limit fixed for the Counter-Memorial of
+the French Government.
+7. On 16 May 1973 the Government of Fiji filed in the Registry of the
+Court a request under Article 62 of the Statute to be permitted to intervene in
+these proceedings. By an Order of 12 July 1973 the Court, having regard to
+its Order of 22 June 1973 by which the written proceedings were first to be
+addressed to the questions of the jurisdiction of the Court and of the admissibility of the Application, decided to defer its consideration of the application
+of the Government of Fiji for permission to intervene until the Court should
+have pronounced upon these questions.
+8. On 24 July 1973, the Registrar addressed the notification provided for
+in Article 63 of the Statute to the States, other than the Parties to the case,
+which were still in existence and were listed in the relevant documents of the
+League of Nations as parties to the General Act for the Pacific Settlement of
+International Disputes, done at Geneva on 26 September 1928, which was
+invoked in the Application as a basis of jurisdiction.
+9. The Governments of Argentina, Fiji, New Zealand and Peru requested
+that the pleadings and annexed documents should be made available to them
+
+[Source edition page 7]
+
+in accordance with Article 48, paragraph 2, of the Rules of Court. The Parties
+were consulted on each occasion, and the French Government having maintained the position stated in the letter of 16 May 1973, and thus declined to
+express an opinion, the Court or the President decided to accede to these
+requests.
+10. On 4-6, 8-9 and 11 July 1974, after due notice to the Parties, public
+hearings were held, in the course of which the Court heard the oral argument,
+on the questions of the Court's jurisdiction and of the admissibility of the
+Application, advanced by Mr. P. Brazil, Agent of Australia and Senator the
+Honourable Lionel Murphy, Q.C., Mr. M. H. Byers, Q.C., Mr. E. Lauterpacht, Q.C., and Professor D. P. O'Connell, counsel, on behalf of the Government of Australia. The French Government was not represented at the
+hearings.
+11. In the course of the written proceedings, the following submissions
+were presented on behalf of the Government of Australia:
+in the Application:
+"The Government of Australia asks the Court to adjudge and
+declare that, for the above-mentioned reasons or any of them or
+for any other reason that the Court deems to be relevant, the carrying
+out of further atmospheric nuclear weapon tests in the South Pacific
+Ocean is not consistent with applicable rules of international law.
+And to Order
+that the French Republic shall not carry out any further such tests."
+in the Mernorial:
+"The Government of Australia submits to the Court that it is entitled
+to a declaration and judgment that:
+(a) the Court has jurisdiction to entertain the dispute, the subject of the
+Application filed by the Government of Australia on 9 May 1973;
+and
+(6) the Application is admissible."
+12. During the oral proceedings, the following written submissions were
+filed in the Registry of the Court on behalf of the Government of Australia:
+"The final submissions of the Government of Australia are that:
+(a) the Court has jurisdiction to entertain the dispute the subject of the
+Application filed by the Government of Australia on 9 May 1973;
+and
+(b) the Application is admissible
+and that accordingly the Government of Australia is entitled to a declaration and judgment that the Court has full competence to proceed to
+entertain the Application by Australia on the Merits of the dispute."
+13. No pleadings were filed by the French Government, and it was not
+represented at the oral proceedings; no formal submissions were therefor
+made by that Government. The attitude of the French Government with
+regard to the question of the Court's jurisdiction was however defined in the
+above-mentioned letter of 16 May 1973 from the French Arnbassador to the
+7
+
+[Source edition page 8]
+
+Netherlands, and the document annexed thereto. The said letter stated in
+particular that :
+". . . the Government of the [French] Republic, as it has notified the
+Australian Government, considers that the Court is manifestly not
+competent in this case and that it cannot accept its juridiction".
+14. As indicated above (paragraph 4), the letter from the French
+Ambassador of 16 May 1973 also stated that the French Government
+"respectfully requests the Court to be so good as to order that the case be
+removed from the list". At the opening of the public hearing concerning
+the request for interim measures of protection, held on 21 May 1973, the
+President announced that "this request . . . has been duly noted, and the
+Court will deal with it in due course, in application of Article 36, paragraph 6, of the Statute of the Court". In its Order of 22 June 1973, the
+Court stated that the considerations therein set out did not "permit the
+Court to accede at the present stage of the proceedings" to that request.
+Having now had the opportunity of examining the request in the light of
+the subsequent proceedings, the Court finds that the present case is not
+one in which the procedure of summary removal from the list would be
+appropriate.
+15. It is to be regretted that the French Government has failed to
+appear in order to put forward its arguments on the issues arising in the
+present phase of the proceedings, and the Court has thus not had the
+assistance it might have derived from such arguments or from any
+evidence adduced in support of them. The Court nevertheless has to
+proceed and reach a conclusion, and in doing so must have regard not
+only to the evidence brought before it and the arguments addressed to it
+by the Applicant, but also to any documentary or other evidence which
+may be relevant. It must on this basis satisfy itself, first that there exists
+no bar to the exercise of its judicial function, and secondly, if no such bar
+exists, that the Application is well founded in fact and in law.
+16. The present case relates to a dispute between the Government of
+Australia and the French Government concerning the holding of atmospheric tests of nuclear weapons by the latter Government in the South
+Pacific Ocean. Since in the present phase of the proceedings the Court has
+to deal only with preliminary matters, it is appropriate to recall that its
+approach to a phase of this kind must be, as it was expressed in the
+Fisheries Jurisdiction cases, as follows:
+
+[Source edition page 9]
+
+"The issue being thus limited, the Court will avoid not only al1
+expressions of opinion on matters of substance, but also any pronouncement which might prejudge or appear to prejudge any
+eventual decision on the merits." (I.C.J. Reports 1973, pp. 7 and 54.)
+It will however be necessary to give a summary of the principal facts
+underlying the case.
+17. Prior to the filing of the Application instituting proceedings in this
+case, the French Government had carried out atmospheric tests of
+nuclear devices at its Centre d'expérimentations du Pacifique, in the
+territory of French Polynesia, in the years 1966, 1967, 1968, 1970, 1971
+and 1972. The main firing site used has been Mururoa atoll some 6,000
+kilometres to the east of the Australian mainland. The French Government has created "Prohibited Zones" for aircraft and "Dangerous Zones"
+for aircraft and shipping, in order to exclude aircraft and shipping from
+the area of the tests centre; these "zones" have been put into effect
+during the period of testing in each year in which tests have been carried
+out.
+18. As the United Nations Scientific Committee on the Effects of
+Atomic Radiation has recorded in its successive reports to the General
+Assembly, the testing of nuclear devices in the atmosphere has entailed
+the release into the atmosphere, and the consequent dissipation in
+varying degrees throughout the world, of measurable quantities of radioactive matter. It is asserted by Australia that the French atmospheric
+tests have caused some fall-out of this kind to be deposited on Australian
+territory; France has maintained in particular that the radio-active matter
+produced by its tests has been so infinitesimal that it may be regarded as
+negligible, and that such fall-out on Australian territory does not constitute a danger to the health of the Australian population. These disputed points are clearly matters going to the merits of the case, and the
+Court must therefore refrain, for the reasons given above, from expressing any view on them.
+19. By letters of 19 September 1973,29 August and 11 November 1974,
+the Government of Australia informed the Court that subsequent to the
+Court's Order of 22 June 1973 indicating, as interim measures under
+Article 41 of the Statute.(inter alia) that the French Government should
+avoid nuclear tests causing the deposit of radio-active fall-out in Australian territory, two further series of atmospheric tests, in the months of
+July and August 1973 and June to September 1974, had been carried out
+at the Centre d'expérimentations du Pacifique. The letters also stated
+that fall-out had been recorded on Australian territory which, according
+to the Australian Government, was clearly attributable to these tests,
+
+[Source edition page 10]
+
+259 NUCLEAR TESTS (JUDGMENT)
+and that "in the opinion of the Government of Australia the conduct of
+the French Government constitutes a clear and deliberate breach of the
+Order of the Court of 22 June 1973".
+20. Recently a number of authoritative statements have been made on
+behalf of the French Government concerning its intentions as to future
+nuclear testing in the South Pacific Ocean. The significance of these
+statements, and their effect for the purposes of the present proceedings,
+will be examined in detail later in the present Judgment.
+21. The Application founds the jurisdiction of the Court on the following basis :
+"(i) Article 17 of the General Act for the Pacific Settlement of
+International Disputes, 1928, read together with Articles 36 (1)
+and 37 of the Statute of the Court. Australia and the French
+Republic both acceded to the General Act on 21 May 1931 . . .
+(ii) Alternatively, Article 36 (2) of the Statute of the Court. Australia and the French Republic have both made declarations
+thereunder."
+22. The scope of the present phase of the proceedings was defined by
+the Court's Order of 22 June 1973, by which the Parties were called upon
+to argue, in the first instance, questions of the jurisdiction of the Court
+and the admissibility of the Application. For this reason, as already
+indicated, not only the Parties but also the Court itself must refrain from
+entering into the merits of the claim. However, while examining these
+questions of a preliminary character, the Court is entitled, and in some
+circumstances may be required, to go into other questions which may not
+be strictly capable of classification as matters of jurisdiction or admissibility but are of such a nature as to require examination in priority to
+those matters.
+23. In this connection, it should be emphasized that the Court possesses an inherent jurisdiction enabling it to take such action as may be
+required, on the one hand to ensure that the exercise of its jurisdiction
+over the merits, if and when established, shall not be frustrated, and on
+the other, to provide for the orderly settlement of al1 matters in dispute,
+to ensure the observance of the "inherent limitations on the exercise of
+the judicial function" of the Court, and to "maintain its judicial character" (Northern Cameroons, Judgment, I.C.J. Reports 1963, at p. 29).
+Such inherent jurisdiction, on the basis of which the Court is fully
+empowered to make whatever findings may be necessary for the purposes
+just indicated, derives from the mere existence of the Court as a judicial
+
+[Source edition page 11]
+
+organ established by the consent of States, and is conferred upon it in
+order that its basic judicial functions may be safeguarded.
+24. With these considerations in mind, the Court has first to examine
+a question which it finds to be essentially preliminary, namely the existence of a dispute, for, whether or not the Court has jurisdiction in the
+present case, the resolution of that question could exert a decisive influence on the continuation of the proceedings. It will therefore be necessary to make a detailed analysis of the claim submitted to the Court by
+the Application of Australia. The present phase of the proceedings
+having been devoted solely to preliminary questions, the Applicant has
+not had the opportunity of fully expounding its contentions on the
+merits. However the Application, which is required by Article 40 of the
+Statute of the Court to indicate "the subject of the dispute", must be the
+point of reference for the consideration by the Court of the nature and
+existence of the dispute brought before it.
+25. The Court would recall that the submission made in the Application (paragraph 11 above) is that the Court should adjudge and declare
+that "the carrying out of further atmospheric nuclear weapon tests in the
+South Pacific Ocean is not consistent with applicable rules of international
+lawW-the Application having specified in what respect further tests
+were alleged to be in violation of international law-and should order
+"that the French Republic shall not carry out any further such tests".
+26. The diplomatic correspondence of recent years between Australia
+and France reveals Australia's preoccupation with French nuclear
+atmospheric tests in the South Pacific region, and indicates that its
+objective has been to bring about their termination. Thus in a Note
+dated 3 January 1973 the Australian Government made it clear that it was
+inviting the French Government "to refrain from any further atmospheric
+nuclear tests in the Pacific area and formally to assure the Australian
+Government that no more such tests will be held in the Pacific area". In
+the Application, the Government of Australia observed in connection
+with this Note (and the French reply of 7 February 1973) that:
+"It is at these Notes, of 3 January and 7 February 1973, that the
+Court is respectfully invited to look most closely; for it is in them
+that the shape and dimensions of the dispute which now so sadly
+divides the parties appear so clearly. The Government of Australia
+claimed that the continuance of testing by France is illegal and called
+for the cessation of tests. The Government of France asserted the
+legality of its conduct and gave no indication that the tests would
+stop." (Para. 15 of the Application.)
+That this was the object of the claim also clearly emerges from the request
+for the indication of interim measures of protection, submitted to the
+Court by the Applicant on 9 May 1973, in which it was observed:
+"As is stated in the Application, Australia has sought to obtain
+from the French Republic a permanent undertaking to refrain from
+
+[Source edition page 12]
+
+further atmospheric nuclear tests in the Pacific. However, the French
+Republic has expressly refused to give any such undertaking. It was
+made clear in a statement in the French Parliament on 2 May 1973
+by the French Secretary of State for the Armies that the French
+Government, regardless of the protests made by Australia and other
+countries, does not envisage any cancellation or modification of the
+programme of nuclear testing as originally planned." (Para. 69.)
+27. Further light is thrown on the nature of the Australian claim by the
+reaction of Australia, through its Attorney-General, to statements,
+referred to in paragraph 20 above, made on behalf of France and relating
+to nuclear tests in the South Pacific Ocean. In the course of the oral
+proceedings, the Attorney-General of Australia outlined the history of the
+dispute subsequent to the Order of 22 June 1973, and included in this
+review mention of a communiqué issued by the Office of the President
+of the French Republic on 8 June 1974. The Attorney-General's comments on this document indicated that it merited analysis as possible
+evidence of a certain development in the controversy between the Parties,
+though at the same time he made it clear that this development was not, in
+his Government's view, of such a nature as to resolve the dispute to its
+satisfaction. More particularly he reminded the Court that "Australia has
+consistently stated that it would welcome a French statement to the
+effect that no further atmospheric nuclear tests would be conducted . . .
+but no such assurance was given". The Attorney-General continued, with
+reference to the communiqué of 8 June:
+"The concern of the Australian Government is to exclude completely atmospheric testing. It has repeatedly sought assurances that
+atmospheric tests will end. It has not received those assurances. The
+recent French Presidential statement cannot be read as a firm,
+explicit and binding undertaking to refrain from further atmospheric
+tests. It follows that the Government of France is still reserving to
+itself the right to carry out atmospheric nuclear tests." (Hearing of
+4 July 1974.)
+It is clear from these statements that if the French Government had given
+what could have been construed by Australia as "a firm, explicit and
+binding undertaking to refrain from further atmospheric tests", the
+applicant Government would have regarded its objective as having been
+achieved.
+28. Subsequently, on 26 September 1974, the Attorney-General of
+Australia, replying to a question put in the Australian Senate with regard
+to reports that France had announced that it had finished atmospheric
+nuclear testing, said :
+"From the reports 1 have received it appears that what the French
+Foreign Minister actually said was 'We have now reached a stage in
+
+[Source edition page 13]
+
+our nuclear technology that makes it possible for us to continue our
+program by underground testing, and we have taken steps to do so as
+. . .
+early as next year' this statement falls far short of a commitment
+or undertaking that there will be no more atmospheric tests con-
+. . .
+ducted by the French Government at its Pacific Tests Centre
+There is a basic distinction between an assertion that steps are being
+taken to continue the testing program by underground testing as
+early as next year and an assurance that no further atmospheric tests
+will take place. It seems that the Government of France, while
+apparently taking a step in the right direction, is still reserving to
+itself the right to carry out atmospheric nuclear tests. In legal terms,
+Australia has nothing from the French Government which protects it
+against any further atmospheric tests should the French Government
+subsequently decide to hold them."
+Without commenting for the moment on the Attorney-General's interpretation of the French statements brought to his notice, the Court would
+observe that it is clear that the Australian Government contemplated the
+possibility of "an assurance that no further atmospheric tests will take
+place" being sufficient to protect Australia.
+29. In the light of these statements, it is essential to consider whether
+the Government of Australia requests a judgment by the Court which
+would only state the legal relationship between the Applicant and the
+Respondent with regard to the matters in issue, or a judgment of a type
+which in terms requires one or both of the Parties to take, or refrain from
+taking, some action. Thus it is the Court's duty to isolate the real issue in
+the case and to identify the object of the claim. It has never been contested that the Court is entitled to interpret the submissions of the parties,
+and in fact is bound to do so; this is one of the attributes of its judicial
+functions. It is true that, when the claim is not properly formulated
+because the submissions of the parties are inadequate, the Court has no
+power to "substitute itself for them and formulate new submissions
+simply on the basis of arguments and facts advanced" (P.C.I.J., Series A,
+No. 7,p . 35), but that is not the case here, nor is it a case of the reformulation of submissions by the Court. The Court has on the other hand
+repeatedly exercised the power to exclude, when necessary, certain contentions or arguments which were advanced by a party as part of the
+submissions, but which were regarded by the Court, not as indications of
+what the party was asking the Court to decide, but as reasons advanced
+why the Court should decide in the sense contended for by that party.
+Thus in the Fisheries case, the Court said of nine of the thirteen points in
+the Applicant's submissions: "These are elements which might furnish
+reasons in support of the Judgment, but cannot constitute the decision"
+
+[Source edition page 14]
+
+(I.C.J. Reports 1951, p. 126). Similarly in the Minquiers and Ecrehos case,
+the Court observed that:
+"The Submissions reproduced above and presented by the United
+Kingdom Government consist of three paragraphs, the last two
+being reasons underlying the first, which must be regarded as the
+final Submission of that Government. The Submissions of the French
+Government consist of ten paragraphs, the first nine being reasons
+leading up to the last, which must be regarded as the final Submission of that Government." (I.C.J. Reports 1953, p. 52; see also
+Nottebohm, Second Phase, Judgment, I.C.J. Reports 1955, p. 16.)
+30. In the circumstances of the present case, although the Applicant
+has in its Application used the traditional formula of asking the Court
+"to adjudge and declare" (a formula similar to those used in the cases
+quoted in the previous paragraph), the Court must ascertain the true
+object and purpose of the claim and in doing so it cannot confine itself
+to the ordinary meaning of the words used; it must take into account the
+Application as a whole, the arguments of the Applicant before the Court,
+the diplomatic exchanges brought to the Court's attention, and public
+statements made on behalf of the applicant Government. If these clearly
+circumscribe the object of the claim, the interpretation of the submissions
+must necessarily be affected. Ln the present case, it is evident that the
+fons et origo of the case was the atmospheric nuclear tests conducted by
+France in the South Pacific region, and that the original and ultimate
+objective of the Applicant was and has remained to obtain a termination
+of those tests; thus its claim cannot be regarded as being a claim for a
+declaratory judgment. While the judgment of the Court which Australia
+seeks to obtain would in its view have been based on a finding by the
+Court on questions of law, such finding would be only a means to an end,
+and not an end in itself. The Court is of course aware of the role of
+declaratory judgments, but the present case is not one in which such a
+judgment is requested.
+31. In view of the object of the Applicant's claim, namely to prevent
+further tests, the Court has to take account of any developments, since
+the filing of the Application, bearing upon the conduct of the Respondent.
+Moreover, as already mentioned, the Applicant itself impliedly recognized the possible relevance of events subsequent to the Application, by
+drawing the Court's attention to the communiqué of 8 June 1974, and
+making observations thereon. In these circumstances the Court is bound
+to take note of further developments, both prior to and subsequent to
+the close of the oral proceedings. In view of the non-appearance of the
+Respondent, it is especially incumbent upon the Court to satisfy itself
+that it is in possession of al1 the available facts.
+32. At the hearing of 4 July 1974, in the course of a review of developments in relation to the proceedings since counsel for Australia had
+
+[Source edition page 15]
+
+previously addressed the Court in May 1973, the Attorney-General of
+Australia made the following statement :
+"You will recall that Australia has consistently stated it would
+welcome a French statement to the effect that no further atmospheric
+nuclear tests would be conducted. Indeed as the Court will remember
+such an assurance was sought of the French Government by the
+Australian Government by note dated 3 January 1973, but no such
+assurance was given.
+1 should remind the Court that in paragraph 427 of its Memorial
+the Australian Government made a statement, then completely
+accurate, to the effect that the French Government had given no
+indication of any intention of departing from the programme of
+testing planned for 1974 and 1975. That statement will need now to
+be read in light of the matters to which 1 now turn and which deal
+with the official communications by the French Government of its
+present plans."
+He devoted considerable attention to a communiqué dated 8 June 1974
+from the Office of the President of the French Republic, and submitted
+to the Court the Australian Government's interpretation of that document. Since that time, certain French authorities have made a number of
+consistent public statements concerning future tests, which provide
+material facilitating the Court's task of assessing the Applicant's interpretation of the earlier documents, and which indeed require to be examined
+in order to discern whether they embody any modification of intention as
+to France's future conduct. It is true that these statements have not been
+made before the Court, but they are in the public domain, and are
+known to the Australian Government, and one of them was commented
+on by the Attorney-General in the Australian Senate on 26 September
+1974. It will clearly be necessary to consider al1 these statements, both that
+drawn to the Court's attention in July 1974 and those subsequently made.
+33. It would no doubt have been possible for the Court, had it considered that the interests of justice so required, to have afforded the
+Parties the opportunity, e.g., by reopening the oral proceedings, of
+addressing to the Court comments on the statements made since the close
+of those proceedings. Such a course however would have been fully
+justified only if the matter dealt with in those statements had been
+completely new, had not been raised during the proceedings, or was
+unknown to the Parties. This is manifestly not the case. The essential
+material which the Court must examine was introduced into the proceedings by the Applicant itself, by no means incidentally, during the course
+of the hearings, when it drew the Court's attention to a statement by the
+French authorities made prior to that date, submitted the documents
+containing it and presented an interpretation of its character, touching
+particularly upon the question whether it contained a firm assurance.
+Thus both the statement and the Australian interpretation of it are before
+
+[Source edition page 16]
+
+the Court pursuant to action by the Applicant. Moreover, the Applicant
+subsequently publicly expressed its comments (see paragraph 28 above)
+on statements made by the French authorities since the closure of the
+oral proceedings. The -court is therefore in possession not only of the
+statements made by French authorities concerning the cessation of
+atmospheric nuclear testing, but also of the views of the Applicant on
+them. Although as a judicial body the Court is conscious of the importance of the principle expressed in the maxim audi alteram partem, it does
+not consider that this principle precludes the Court from taking account
+of statements made subsequently to the oral proceedings, and which merely
+supplement and reinforce matters already discussed in the course of the
+proceedings, statements with which the Applicant must be familiar. Thus
+the Applicant, havingcommented on the statements of the French authorities, both that made prior to the oral proceedings and those made subsequently, could reasonably expect that the Court would deal with the matter
+and come to its own conclusion on the meaning and effect of those statements. The Court, having taken note of the Applicant's comments, and
+feeling no obligation to consult the Parties onthe basis for its decisioqfinds
+that the reopening of the oral proceedings would serve no useful pur'pose.
+34. It will be convenient to take the statements referred to above in
+chronological order. The first statement is contained in the communiqué
+issued by the Office of the President of the French Republic on 8 June
+1974, shortly before the commencement of the 1974 series of French
+nuclear tests :
+"The Decree reintroducing the security measures in the South
+Pacific nuclear test zone has been published in the Officia1 Journal
+of 8 June 1974.
+The Office of the President of the Republic takes this opportunity
+of stating that in view of the stage reached in carrying out the French
+nuclear defence programme France will be in a position to pass on
+to the stage of underground explosions as soon as the series of tests
+planned for this summer is completed."
+A copy of the communiqué was transmitted with a Note dated 11 June
+1974 from the French Embassy in Canberra to the Australian Department
+of Foreign Affairs, and as already mentioned, the text of the communiqué
+was brought to the attention of the Court in the course of the oral
+proceedings.
+35. In addition to this, the Court cannot fail to take note of a reference
+to a document made by counsel at a public hearing in the proceedings,
+parallel to this case, instituted by New Zealand against France on 9 May
+1973. At the hearing of 10 July 1974 in that case, the Attorney-General of
+New Zealand, after referring to the communiqué of 8 June 1974, mentioned above, stated that on 10 June 1974 the French Embassy in Wellington sent a Note to the New Zealand Ministry of Foreign Affairs,
+containing a passage which the Attorney General read out, and which, in
+the translation used by New Zealand, runs as follows:
+
+[Source edition page 17]
+
+"France, at the point which has been reached in the execution of
+its programme of defence by nuclear means, will be in a position to
+move to the stage of underground tests, as soon as the test series
+planned for this summer is completed.
+Thus the atmospheric tests which are soon to be carried out will, in
+the normal course of events, be the last of this type."
+36. The Court will also have to consider the relevant statements
+made by the French authorities subsequently to the oral proceedings: on
+25 July 1974 by the President of the Republic; on 16 August 1974 by the
+Minister of Defence; on 25 September 1974 by the Minister for Foreign
+Affairs in the United Nations General Assembly; and on 11 October 1974
+by the Minister of Defence.
+37. The next statement to be considered, therefore, will be that made
+on 25 July at a press conference given by the President of the Republic,
+when he said :
+". . . on this question of nuclear tests, you know that the Prime
+Minister had publicly expressed himself in the National Assembly
+in his speech introducing the Government's programme. He had
+indicated that French nuclear testing would continue. 1 had myself
+made it clear that this round of atmospheric tests would be the last,
+and so the members of the Government were completely informed
+of Our intentions in this respect . . ."
+38. On 16 August 1974, in the course of an interview on French television, the Minister of Defence said that the French Government had
+done its best to ensure that the 1974 nuclear tests would be the last atmospheric tests.
+39. On 25 September 1974, the French Minister for Foreign Affairs,
+addressing the United Nations General Assembly, said:
+"We have now reached a stage in Our nuclear technology that
+makes it possible for us to continue our programme by underground
+testing, and we have taken steps to do so as early as next year."
+40. On 11 October 1974, the Minister of Defence held a press conference during which he stated twice, in almost identical terms, that there
+would not be any atmospheric tests in 1975 and that France was ready
+to proceed to underground tests. When the comment was made that he
+had not added "in the normal course of events", he agreed that he had
+not. This latter point is relevant in view of the passage from the Note of
+10 June 1974 from the French Embassy in Wellington to the Ministry of
+Foreign Affairs of New Zealand, quoted in paragraph 35 above, to the
+effect that the atmospheric tests contemplated "will, in the normal course
+of events, be the last of this type". The Minister also mentioned that,
+whether or not other governments had been officially advised of the
+
+[Source edition page 18]
+
+decision, they could become aware of it through the press and by reading
+the communiqués issued by the Office of the President of the Republic.
+41. In view of the foregoing, the Court finds that France made public
+its intention to cease the conduct of atmospheric nuclear tests following
+the conclusion of the 1974 series of tests. The Court must in particular
+take into consideration the President's statement of 25 July 1974 (paragraph 37 above) followed by the Defence Minister's statement on 11 October 1974 (paragraph 40). These reveal that the official statements made
+on behalf of France concerning future nuclear testing are not subject to
+whatever proviso, if any, was implied by the expression "in the normal
+course of events [normalement]".
+42. Before considering whether the declarations made by the French
+authorities meet the object of the claim by the Applicant that no further
+atmospheric nuclear tests should be carried out in the South Pacific, it is
+first necessary to determine the status and scope on the international Clane
+of these declarations.
+43. It is well recognized that declarations made by way of unilateral
+acts, concerning legal or factual situations, may have the effect of creating
+legal obligations. Declarations of this kind may be, and often are, very
+specific. When it is the intention of the State making the declaration that
+it should become bound according to its terms, that intention confers on
+the declaration the character of a legal undertaking, the State being
+thenceforth legally required to follow a course of conduct consistent with
+the declaration. An undertaking of this kind, if given publicly, and with
+an intent to be bound, even though not made within the context of international negotiations, is binding. In these circumstances, nothing in the
+nature of a quidpro quo nor any subsequent acceptance of the declaration,
+nor even any reply or reaction from other States, is required for the
+declaration to take effect, since such a requirement would be inconsistent
+with the strictly unilateral nature of the juridical act by which the pronouncement by the state was made.
+44. Of course, not al1 unilateral acts imply obligation; but a State may
+choose to take up a certain position in relation to a particular matter
+with the intention of being bound-the intention is to be ascertained by
+interpretation of the act. When States make statements by which their
+freedom of action is to be limited, a restrictive interpretation is called for.
+45. With regard to the question of form, it should be observed that
+this is not a domain in which international law imposes any special or
+strict requirements. Whether a statement is made orally or in writing
+makes no essential difference, for such statements made in particular
+circumstances may create commitments in international law, which does
+not require that they should be couched in written form. Thus the ques-
+
+[Source edition page 19]
+
+tion of form is not decisive. As the Court said in its Judgment on the
+preliminary objections in the case concerning the Temple of Preah Vihear :
+"Where . . . as is generally the case in international law, which
+places the principal emphasis on the intentions of the parties, the
+law prescribes no particular form, parties are free to choose what
+form they please provided their intention clearly results from it."
+(I.C.J. Reports 1961, p. 31 .)
+The Court further stated in the same case: ". . . the sole relevant question
+is whether the language employed in any given declaration does reveal a
+clear intention . . ." (ibid., p. 32).
+46. One of the basic principles governing the creation and performance of legal obligations, whatever their source, is the principle of
+good faith. Trust and confidence are inherent in international co-operation, in particular in an age when this CO-operation in many fields is
+becoming increasingly essential. Just as the very rule of pacta sunt
+servanda in the law of treaties is based on good faith, so also is the binding
+character of an international obligation assumed by unilateral declaration. Thus interested States may take cognizance of unilateral declarations
+and place confidence in them, and are entitled to require that the obligation thus created be respected.
+47. Having examined the legal principles involved, the Court will now
+turn to the particular statements made by the French Government. The
+Government of Australia has made known to the Court at the oral
+proceedings its own interpretation of the first such statement (paragraph
+27 above). As to subsequent statements, reference may be made to what
+was said in the Australian Senate by the Attorney-General on 26 September 1974 (paragraph 28 above). In reply to a question concerning
+reports that France had announced that it had finished atmospheric
+nuclear testing, he said that the statement of the French Foreign Minister
+on 25 September (paragraph 39 above) "falls far short of an undertaking
+that there will be no more atmospheric tests conducted by the French
+Government at its Pacific Tests Centre" and that France was "still reserving to itself the right to carry out atmospheric nuclear tests" so that
+"In legal terms, Australia has riothing from the French Government
+which protects it against any further atmospheric tests".
+48. It will be observed that Australia has recognized the possibility
+of the dispute being resolved by a unilateral declaration, of the kind
+specified above, on the part of France, and its conclusion that in fact no
+"commitment" or "firm, explicit and binding undertaking" had been
+given is based on the view that the assurance is not absolute in its terms,
+
+[Source edition page 20]
+
+that there is a "distinction between an assertion that tests will go underground and an assurance that no further atmospheric tests will take
+place", that "the possibility of further atmospheric testing taking place
+after the commencement of underground tests cannot be excluded" and
+that thus "the Government of France is still reserving to itself the right to
+carry out atmospheric nuclear tests". The Court must however form its
+own view of the meaning and scope intended by the author of a unilateral
+declaration which may create a legal obligation, and cannot in this respect be bound by the view expressed by another State which is in no way
+a party to the text.
+49. Of the statements by the French Government now before the
+Court, the most essential are clearly those made by the President of the
+Republic. There can be no doubt, in view of his functions, that his public
+communications or statements, oral or written, as Head of State, are in
+international relations acts of the French State. His statements, and those
+of members of the French Government acting under his authority, up to
+the last statement made by the Minister of Defence (of 11 October 1974),
+constitute a whole. Thus, in whatever form these statements were expressed, they must be held to constitute an engagement of the State,
+having regard to their intention and to the circumstances in which they
+were made.
+50. The unilateral statements of the French authorities were made
+outside the Court, publicly and erga omnes, even though the first of them
+was communicated to the Government of Australia. As was observed
+above, to have legal effect, there was no need for these statements to be
+addressed to a particular State, nor was acceptance by any other State
+required. The general nature and characteristics of these statements are
+decisive for the evaluation of the legal implications, and it is to the interpretation of the statements that the Court must now proceed. The Court
+is entitled to presume, at the outset, that these statements were not made
+in vacuo, but in relation to the tests which constitute the very object of the
+present proceedings, although France has not appeared in the case.
+51. In announcing that the 1974 series of atmospheric tests would be
+the last, the French Government conveyed to the world at large, including
+the Applicant, its intention effectively to terminate these tests. It was
+bound to assume that other States might take note of these statements
+and rely on their being effective. The validity of these statements and
+their legal consequences must be considered within the general framework of the security of international intercourse, and the confidence and
+trust which are so essential in the relations among States. It is from the
+actual substance of these statements, and from the circumstances attending their making, that the legal implications of the unilateral act must be
+deduced. The objects of these statements are clear and they were addressed
+to the international community as a whole, and the Court holds that they
+constitute an undertaking possessing legal effect. The Court considers
+20
+
+[Source edition page 21]
+
+that the President of the Republic, in deciding upon the effective cessation
+of atmospheric tests, gave an undertaking to the international community
+to which his words were addressed. It is true that the French Government
+has consistently maintained, for example in a Note dated 7 February 1973
+from the French Ambassador in Canberra to the Prime Minister and
+Minister for Foreign Affairs of Australia, that it "has the conviction that
+its nuclear experiments have not violated any rule of international law",
+nor did France recognize that it was bound by any rule of international
+law to terminate its tests, but this does not affect the legal consequences
+of the statements examined above. The Court finds that the unilateral
+undertaking resulting from these statements cannot be interpreted as
+having been made in implicit reliance on an arbitrary power of reconsideration. The Court finds further that the French Government has undertaken an obligation the precise nature and liinits of which must be understood in accordance with the actual terms in which they have been
+publicly expressed.
+52. Thus the Court faces a situation in which the objective of the
+Applicant has in effect been accomplished, inasmuch as the Court finds
+that France has undertaken the obligation to hold no further nuclear
+tests in the atmosphere in the South Pacific.
+53. The Court finds that no question of damages arises in the present
+case, since no such claim has been raised by the Applicant either prior
+to or during the proceedings, and the original and ultimate objective of
+Applicant has been to seek protection "against any further atmospheric
+test" (see paragraph 28 above).
+54. It would of course have been open to Australia, if it had considered
+that the case had in effect been concluded, to discontinue the proceedings
+in accordance with the Rules of Court. If it has not done so, this does not
+prevent the Court from making its own independent finding on the subject. It is true that "the Court cannot take into account declarations,
+admissions or proposals which the Parties may have made during direct
+negotiations between themselves, when such negotiations have not led
+to a complete agreement" (Factory ut Clzorz6w (Merits) , P.C.I .J ., Series
+A, No. 17, p. 51). However, in the present case, that is not the situation
+before the Court. The Applicant has clearly indicated what would satisfy
+its claim, and the Respondent has independently taken action; the
+question for the Court is thus one of interpretation of the conduct of
+each of the Parties. The conclusion at which the Court has arrived as a
+result of such interpretation does not mean that it is itself effecting a
+compromise of the claim; the Court is merely ascertaining the object of
+the claim and the effect of the Respondent's action, and this it is obliged
+to do. Any suggestion that the dispute would not be capable of being
+terminated by statements made on behalf of France would run counter
+to the unequivocally expressed views of the Applicant both before the
+Court and elsewhere.
+55. The Court, as a court of law, is called upon to resolve existing
+disputes between States. Thus the existence of a dispute is the primary
+
+[Source edition page 22]
+
+condition for the Court to exercise its judicial function; it is not sufficient
+for one party to assert that there is a dispute, since "whether there exists
+an international dispute is a matter for objective determination" by the
+Court (Interpretation of Peace Treaties with Bulgaria, Hungary and
+Romania (First Phase), Advisory Opinion, I.C.J. Reports 1950, p. 74).
+The dispute brought before it must therefore continue to exist at the time
+when the Court makes its decision. It must not fail to take cognizance of a
+situation in which the dispute has disappeared because the object of the
+claim has been achieved by other means. If the declarations of France
+concerning the effective cessation of the nuclear tests have the significance
+described by the Court, that is to say if they have caused the dispute to
+disappear, al1 the necessary consequences must be drawn from this
+finding.
+56. It may be argued that although France may have undertaken such
+an obligation, by a unilateral declaration, not to carry out atmospheric
+nuclear tests in the South Pacific Ocean, a judgment of the Court on this
+subject might still be of value because, if the judgment upheld the Applicant's contentions, it would reinforce the position of the Applicant by
+affirming the obligation of the Respondent. However, the Court having
+found that the Respondent has assumed an obligation as to conduct,
+concerning the effective cessation of nuclear tests, no further judicial
+action is required. The Applicant has repeatedly sought from the Respondent an assurance that the tests would cease, and the Respondent
+has, on its own initiative, made a series of statements to the effect that
+they will cease. Thus the Court concludes that, the dispute having disappeared, the claim advanced by Australia no longer has any object. It follows that any further finding would have no raison d'être.
+57. This is not to say that the Court may select from the cases submitted to it those it feels suitable for judgment while refusing to give
+judgment in others. Article 38 of the Court's Statute provides that its
+function is "to decide in accordance with international law such disputes
+as are submitted to it"; but not only Article 38 itself but other provisions
+of the Statute and Rules also make it clear that the Court can exercise its
+jurisdiction in contentious proceedings only when a dispute genuinely
+exists between the parties. In refraining from further action in this case
+the Court is therefore merely acting in accordance with the proper interpretation of its judicial function.
+58. The Court has in the past indicated considerations which would
+lead it to decline to give judgment. The present case is one in which
+"circumstances that have . . . arisen render any adjudication devoid of
+purpose" (Northern Cameroons, Judgment, I.C.J. Reports 1963, p. 38).
+The Court therefore sees no reason to allow the continuance of proceedings which it knows are bound to be fruitless. While judicial settlement
+may provide a path to international harmony in circumstances of conflict,
+it is none the less true that the needless continuance of litigation is an
+obstacle to such harmony.
+59. Thus the Court finds that no further pronouncement is required
+
+[Source edition page 23]
+
+272 NUCLEAR TESTS (JUDGMENT)
+in the present case. It does not enter into the adjudicatory functions of the
+Court to deal with issues in abstracto, once it has reached the conclusion
+that the merits of the case no longer faIl to be determined. The object of
+the claim having clearly disappeared, there is nothing on which to give
+judgment.
+*
+60. Once the Court has found that a State has entered into a commitment concerning its future conduct it is not the Court's function to
+contemplate that it will not comply with it. However, the Court observes
+that if the basis of this Judgment were to be affected, the Applicant could
+request an examination of the situation in accordance with the provisions
+of the Statute; the denunciation by France, by letter dated 2 January
+1974, of the General Act for the Pacific Settlement of International Disputes, which is relied on as a basis of jurisdiction in the present case,
+cannot by itself constitute an obstacle to the presentation of such a
+request.
+*
+* *
+61. In its above-mentioned Order of 22 June 1973, the Court stated
+that the provisional measures therein set out were indicated "pending its
+final decision in the proceedings instituted on 9 May 1973 by Australia
+against France". It follows that such Order ceases to be operative upon
+the delivery of the present Judgment, and that the provisional measures
+lapse at the same time.
+62. For these reasons,
+by nine votes to six,
+finds that the claim of Australia no longer has any object and that the
+Court is therefore not called upon to give a decision thereon.
+Done in English and in French, the English text being authoritative,
+at the Peace Palace, The Hague, this twentieth day of December, one
+thousand nine hundred and seventy-four, in three copies, one of which
+will be placed in the archives of the Court and the others transmitted to
+the Government of Australia and the Government of the French Republic, respectively.
+(Signed) Manfred LACHS,
+President.
+(Signed) . S. AQUARONE,
+Registrar.
+
+[Source edition page 24]
+
+President LACHSm akes the following declaration :
+Good administration of justice and respect for the Court require
+that the outcome of its deliberations be kept in strict secrecy and nothing
+of its decision be published until it is officially rendered. It was therefore
+regrettable that in the present case, prior to the public reading of the
+Court's Order of 22 June 1973, a statement was made and press reports
+appeared which exceeded what is legally admissible in relation to a case
+sub judice.
+The Court was seriously concerned with the matter and an enquiry
+was ordered in the course of which al1 possible avenues accessible to the
+Court were explored.
+The Court concluded, by a resolution of 21 March 1974, that its
+investigations had not enabled it to identify any specific source of the
+statements and reports published.
+1 remain satisfied that the Court had done everything possible in this
+respect and that it dealt with the matter with al1 the seriousness for which
+it called.
+Judges BENGZONO, NYEAMAD,I LLARDJ,I MENEZDE ARECHAGaAn d Sir
+Humphrey WALDOCKm ake the following joint declaration:
+Certain criticisms have been made of the Court's handling of the
+matter to which the President alludes in the preceding declaration. We
+wish by our declaration to make it clear that we do not consider those
+criticisms to be in any way justified.
+The Court undertook a lengthy examination of the matter by the several
+means at its disposal: through its services, by convoking the Agent for
+Australia and having him questioned, and by its own investigations and
+enquiries. Any suggestion that the Court failed to treat the matter with
+al1 the seriousness and care which it required is, in our opinion, without
+foundation. The seriousness with which the Court regarded the matter is
+indeed reflected and emphasized in the communiqués which it issued,
+first on 8 August 1973 and subsequently on 26 March 1974.
+The examination of the matter carried out by the Court did not enable
+it to identify any specific source of the information on which were based
+the statements and press reports to which the President has referred.
+When the Court, by eleven votes to three, decided to conclude its examination it did so for the solid reason that to pursue its investigations and
+inquiries would in its view, be very unlikely to produce further useful
+information.
+
+[Source edition page 25]
+
+Judges FORSTERG, ROS,P ETRÉNa nd IGNACIO-PINTapOp end separate
+opinions to the Judgment of the Court.
+Judges ONYEAMAD,I LLARDJI, MÉNEDZE ARECHAGaAn d Sir Humphrey
+WALDOCKap pend a joint dissenting opinion, and Judge DE CASTROan d
+Judge ad hoc Sir Garfield BARWICaKp pend dissenting opinions to the
+Judgment of the Court.
+(Initialled) M.L.
+(Initialled) S.A.

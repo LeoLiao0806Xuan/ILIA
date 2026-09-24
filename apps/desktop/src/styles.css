@@ -92,6 +92,9 @@ pre { margin: 0; max-height: 46vh; overflow: auto; padding: 18px; border: 1px so
 .source-link:hover { background: #e3ece6; }
 .library-modal { position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; padding: 28px; background: rgba(12, 28, 23, .5); }
 .library-dialog { width: min(820px, 100%); max-height: min(780px, 90vh); overflow: auto; padding: 26px; border: 1px solid #c7c8be; border-radius: 8px; background: #f8f7f2; box-shadow: 0 20px 60px rgba(0,0,0,.25); }
+.reader-dialog { width: min(980px, 100%); height: min(840px, 92vh); display: flex; flex-direction: column; padding: 26px; border: 1px solid #c7c8be; border-radius: 8px; background: #f8f7f2; box-shadow: 0 20px 60px rgba(0,0,0,.25); }
+.reader-dialog > p { margin: 8px 0 14px; color: #69746f; font-size: 11px; }
+.reader-text { flex: 1; max-height: none; min-height: 0; background: #fffefa; }
 .library-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
 .library-header h2 { margin-top: 6px; }
 .library-header + p { color: #69746f; font-size: 12px; line-height: 1.7; }

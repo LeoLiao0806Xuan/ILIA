@@ -171,7 +171,7 @@ async function call<T>(command: string, args: Record<string, unknown> = {}): Pro
   if (command === "check_updates") return { manifest: { release_id: "demo", components: [] }, installed_versions: { components: {} } } as T;
   if (command === "install_update") return undefined as T;
   if (command === "list_documents") return demoDocuments as T;
-  if (command === "open_document_pdf") return undefined as T;
+  if (command === "read_document_text") return `ILIA NORMALIZED LEGAL TEXT\n\n${demoHit.text}` as T;
   const search: SearchResponse = { query: String(args.query ?? ""), hits: [demoHit], evidence: [{ rank: 1, chunk_id: demoHit.chunk_id, citation_label: demoHit.citation_label, selection_reason: "RRF fusion of FTS5 and BGE-M3", text: demoHit.text }] };
   if (command === "search_documents") return search as T;
   if (command === "translate_source") return {
@@ -222,7 +222,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
           <button class="example">《联合国宪章》第51条规定了什么？</button>
         </div>
         <div class="legal-notice" role="note">
-          <strong>法律免责声明 · 1.0.0</strong>
+          <strong>法律免责声明 · 1.0.1</strong>
           <p>ILIA 提供国际法资料检索与辅助解释，不构成法律意见，不替代执业律师或相关主管机构的专业判断。条约状态、保留、声明及最新法律发展应以官方来源为准。</p>
         </div>
       </aside>
@@ -259,11 +259,18 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </main>
     <div id="library-modal" class="library-modal hidden" role="dialog" aria-modal="true" aria-labelledby="library-title">
       <div class="library-dialog">
-        <div class="library-header"><div><div class="section-kicker">本地资料库</div><h2 id="library-title">浏览原始文献</h2></div><button id="library-close" class="library-close" aria-label="关闭资料库">×</button></div>
-        <p>共 50 份国际法资料。选择文献后将用本机默认 PDF 阅读器打开原始文件。</p>
+        <div class="library-header"><div><div class="section-kicker">本地资料库</div><h2 id="library-title">浏览规范化法律文本</h2></div><button id="library-close" class="library-close" aria-label="关闭资料库">×</button></div>
+        <p>共 49 份国际法资料。文本由 ILIA 从核验基线生成，不是官方排版版本；正式引用请通过文献中的官方来源核验。</p>
         <input id="library-filter" class="library-filter" type="search" placeholder="按中文名、英文名或缩写筛选" />
         <div id="library-count" class="library-count"></div>
         <div id="library-list" class="library-list"></div>
+      </div>
+    </div>
+    <div id="reader-modal" class="library-modal hidden" role="dialog" aria-modal="true" aria-labelledby="reader-title">
+      <div class="reader-dialog">
+        <div class="library-header"><div><div class="section-kicker">ILIA 规范化文本</div><h2 id="reader-title">文献</h2></div><button id="reader-close" class="library-close" aria-label="关闭阅读器">×</button></div>
+        <p id="reader-note">非官方排版版本 · 请通过官方来源核验正式引文</p>
+        <pre id="reader-text" class="reader-text"></pre>
       </div>
     </div>
   </div>`;
@@ -277,6 +284,10 @@ const libraryModal = document.querySelector<HTMLElement>("#library-modal")!;
 const libraryClose = document.querySelector<HTMLButtonElement>("#library-close")!;
 const libraryFilter = document.querySelector<HTMLInputElement>("#library-filter")!;
 const libraryList = document.querySelector<HTMLElement>("#library-list")!;
+const readerModal = document.querySelector<HTMLElement>("#reader-modal")!;
+const readerClose = document.querySelector<HTMLButtonElement>("#reader-close")!;
+const readerTitle = document.querySelector<HTMLElement>("#reader-title")!;
+const readerText = document.querySelector<HTMLElement>("#reader-text")!;
 const backendSelect = document.querySelector<HTMLSelectElement>("#backend-select")!;
 const sourceLink = document.querySelector<HTMLAnchorElement>("#source-link")!;
 const translateButton = document.querySelector<HTMLButtonElement>("#translate-button")!;
@@ -456,13 +467,17 @@ function renderLibrary() {
     const english = window.document.createElement("span");
     english.textContent = document.canonical_title;
     const meta = window.document.createElement("small");
-    meta.textContent = `${document.document_type} · ${document.legal_status} · 本地 PDF`;
+    meta.textContent = `${document.document_type} · ${document.legal_status} · ILIA 规范化文本`;
     const open = window.document.createElement("button");
-    open.textContent = "打开 PDF ↗";
+    open.textContent = "阅读正文";
     open.addEventListener("click", async () => {
       open.disabled = true;
-      try { await call<void>("open_document_pdf", { documentId: document.document_id }); }
-      catch (error) { window.alert(`无法打开本地 PDF：${String(error)}`); }
+      try {
+        readerTitle.textContent = document.title_zh ?? document.canonical_title;
+        readerText.textContent = await call<string>("read_document_text", { documentId: document.document_id });
+        readerModal.classList.remove("hidden");
+      }
+      catch (error) { window.alert(`无法读取规范化文本：${String(error)}`); }
       finally { open.disabled = false; }
     });
     item.append(title, english, meta, open);
@@ -540,6 +555,8 @@ updateButton.addEventListener("click", checkForUpdates);
 libraryButton.addEventListener("click", openLibrary);
 libraryClose.addEventListener("click", () => libraryModal.classList.add("hidden"));
 libraryModal.addEventListener("click", (event) => { if (event.target === libraryModal) libraryModal.classList.add("hidden"); });
+readerClose.addEventListener("click", () => readerModal.classList.add("hidden"));
+readerModal.addEventListener("click", (event) => { if (event.target === readerModal) readerModal.classList.add("hidden"); });
 libraryFilter.addEventListener("input", renderLibrary);
 question.addEventListener("keydown", (event) => { if ((event.ctrlKey || event.metaKey) && event.key === "Enter") runAsk(); });
 document.querySelectorAll<HTMLButtonElement>(".example").forEach((button) => button.addEventListener("click", () => { question.value = button.textContent ?? ""; question.focus(); }));

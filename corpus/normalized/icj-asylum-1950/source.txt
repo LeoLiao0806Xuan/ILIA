@@ -1,0 +1,1470 @@
+ILIA NORMALIZED LEGAL TEXT
+
+Document ID: icj-asylum-1950
+Title: Asylum (Colombia v. Peru) Judgment
+Chinese title: 庇护案判决
+Issuing body: International Court of Justice
+Official source: https://www.icj-cij.org/sites/default/files/case-related/7/007-19501120-JUD-01-00-EN.pdf
+Database version: public-international-law-v1.0.1-normalized-2026.09.24
+
+NOTICE
+This is an ILIA-generated normalized text for offline legal research.
+It is not an official edition. Source-edition page markers are retained
+only as factual verification locators. Verify quotations against the
+official source linked above.
+
+========================================================================
+
+[Source edition page 1]
+
+COUR INTERNATIONALE DE JUSTICE
+RECUEIL DES ARRÊTS,
+AVIS CONSULTATIFS ET ORDONNANCES
+AFFAIRE DU DROIT
+D'A SILE
+(COLOMBIE / PÉROU)
+ARRÊT DU 20 NOVEMBRE 1950
+INTERNATIONAL COURT OF JUSTICE
+REPORTS OF JUDGMENTS,
+ADVTSORY OPINIONS AND ORDERS
+ASYLUM CASE
+(COLOMBIA / PERU)
+JUDGMENT OF NOVEMBER 20th, 1950
+
+[Source edition page 2]
+
+Le présent arrêt doit être cité comme suit :
+« Agaire colombo-péruvienne relative au droit d'asile,
+Arrêt du 20 novembre 1950: C. I. J. Recueil 1950, p. 266. )!
+This Judgment should be cited as follows :
+"Colombian-Peruvian asylum case,
+Judgment of November 20th 1950 : I.C. J. Refiorts 1950, fi. 266."
+1 1
+NO de .vMente :, 5~0.
+
+[Source edition page 3]
+
+266
+
+INTERNATIONAL COURT OF JUSTICE
+
+YEAR 1950
+. November 20th
+November 20th, 1950 General List:
+No. 7
+ASYLUM CASE
+(COLOMBIA / PERU)
+
+Diplomatic asylum.—Right of qualification of the nature of the
+offence as political or ordinary ; claim to unilateral and definitive
+qualification by the State granting asylum.—Lack of foundation of
+such a claim in the absence of agreement or of a customary rule to
+justify it.—Bolivarian Agreement of 1911 on Extradition ; differences
+between territorial asylum (extradition) and diplomatic asylum.—
+The Havana Convention on Asylum of 1928, the Montevideo Convention on Political Asylum of 1933; custom, elements and proof
+of custom.—Guarantees for the free departure of the refugee ; conditions
+required for the request for a safe-conduct.
+
+Counter-claim.—Admissibility : direct connexion with the subjectmatter of the Application (Article 63 of the Rules of Court).—Merits :
+interpretation of Article 1, paragraph rx, of the Havana Convention ;
+interpretation of Article 2, paragraph 2, of the same Convention :
+notion of urgency, nature of the danger the imminence of which constitutes urgency, legal proceedings instituted by the territorial authorities
+prior to the grant of asylum, regular proceedings, proceedings manifestly
+of an arbitrary character ; absence of urgency at the time of the grant
+of asylum ; protection maintained against regular proceedings ; prolongation of asylum. contrary to Article 2, paragraph 2, of the Havana
+Convention.
+
+JUDGMENT
+
+Present : President BASDEVANT; Vice-President GUERRERO;
+Judges ALVAREZ, HACKWORTH, WINIARSKI, ZORICIC,
+DE VISSCHER, Sir Arnold McNair, KLAESTAD, BADAWI
+PASHA, KRYLOV, READ, Hsu Mo, AZEVEDO ; M. ALAYZA
+y Paz SOLDAN and M. CAICEDO CASTILLA, Judges ad
+hoc ; M. GARNIER-COIGNET, Deputy-Registrar.
+
+[Source edition page 4]
+
+In the Asylum case,
+between
+the Republic of Colombia,
+represented by :
+M. J. M. Yepes, Professor, Minister Plenipotentiary, Legal
+Adviser to the Ministry for Foreign Affairs of Colombia, former
+Senator, as Agent ;
+assisted by
+M. Alfredo Vasquez, Minister Plenipotentiary, Secretary-General
+of the Ministry for Foreign Affairs of Colombia, as Advocate ;
+and
+the Republic of Peru,
+represented by :
+M. Carlos SayAn Alvarez, Barrister, Ambassador, former Minister,
+former President of the Peruvian Chamber of Deputies, as Agent;
+assisted by
+M. Felipe Tudela y Barreda, Barrister, Professor of Coristitutional Law at Lima,
+M. Fernando Morales Macedo R., Parliamentary Interpreter,
+M. Juan José Calle y Calle, Secretary of Embassy ;
+and, as Counsel,
+M. Georges Scelle, Honorary Professor of the University of Paris,
+and
+M. Julio Lopez Olivan, Ambassador,
+composed as above,
+delivers the following Judgment :
+On August yst, 1949, an agreement called the "Act of Lima"
+was signed at Lima in the name of the Colombian Government
+and of the Peruvian Government. This Act is as follows :
+"His Excellency Monsieur Victor Andrés Belaunde, Ambassador
+Extraordinary and Plenipotentiary ad hoc of +lie Peruvian Kepublic,
+and His Excellency Monsieur Eduardo Zuleta Ançel, Ambassador
+Estraordinary and Plenipotentiary ad hoc of Colombia, du157 designated by tlieir respective Governments to negotiatc and draw up tlie
+5
+
+[Source edition page 5]
+
+ASYLUM CASE (JUDGMENT OF 20 XI 50) 268
+terms of an agreement to refer to the International Court of Justice
+a dispute which arose following a request by the Colombian Embassy
+in Lima for delivery of a safe-conduct for Monsieur Victor Raul Haya
+de la Torre, have met in the Ministry of Foreign Affairs and Public
+Worship in Lima and, having exchanged their respective credentials,
+make the following declaration in the spirit of cordial fnendship
+which characterizes the relations between the two countries :
+First :
+They have examined in a spirit of understanding the existing
+dispute which they agree to refer for decision to the International
+Court of Justice, in accordance ~ 3 thhe a greement concluded by
+the two Governments.
+Second :
+The Plenipotentianes of Peru and Colombia having been unable
+to reach an agreement on the terms in which they might refer the
+dispute jointly to the International Court of Justice, agree that
+proceedings before the recognized junsdiction of the Court may be
+instituted on the application of either of the Parties without this
+being regarded as an unfnendly act toward the other, or as an act
+likely to affect the good relations between the two countries. The
+Party exercising this right shall, with reasonable advance notice,
+announce in a friendly way to the other Party the date on which
+the application is to be made.
+Third :
+They agree, here and now : (a) that the procedure in this case shall
+be the ordinary procedure ; (b) that, in accordance with Article 31,
+paragraph 3, of the Statute of the Court, each of the Parties may
+exercise its right to choose a judge of its nationality ; (c) that the
+case shall be conducted in French.
+Fourth :
+This document, after it has been signed, shall be communicated
+to the Court by the Parties."
+On October 15th, 1949, an Application, referring to the Act of
+Lima of August 31st, 1949, was filed in the Registry of the Court
+in the name of the Colombian Government. After stating that
+Colombia asserts :
+"(a) that she is entitled in the case cf perçons who have claimed
+asylum in her embassies, legations, warships, rnilitary camps or
+military aircraft, io qualify the refugees, either as offenders for
+common crimes or deserters from the army or navy, or as political
+offenders ;
+(b) that the territorial State, namely, in this case, Peru, is bound
+to give 'the guarantees necessary for the departure of the refugee,
+with due regard to the inviolability of his person, from the country' ",
+6
+
+[Source edition page 6]
+
+the Application concludes by requesting the Court :
+"To pass judgment on and answer, whether the Government of
+the Republic of Peru enters an appearance or not, and after such
+time-limits as the Court may fix in the absence of an agreement
+between the Parties, the following questions :
+First Question.-Within the limits of the obligations resulting
+in particular from the Eolivarian Agreement on Extradition of
+July 18th, 1911, and the Convention on Asylum of February zoth,
+1928, both in force between Colombia and Peru, and in general from
+American international law, was Colombia competent, as the country
+granting asylum, to qualify the offence for the purposes of said
+asylum ?
+Second Question.-In the specific case under consideration, was
+Peru, as the territorial State, bound to give the guarantees necessary
+for the departure of the refugee from the country, with due regard
+to the inviolability of his person ?"
+Together with the Application, the Agent of the Colombian
+Government filed in the Registry a certified true copy of the original
+in Spanish, accompanied by a French translation, of the Act of
+Lima. By letter of October 15th, 1949, received by the Registry
+on ,the same day, the Agent of the Peruvian Government also
+deposited a certified true translation of the Act of Lima.
+The Application was notified, under Article 40, paragraph 3,
+of the Statute of the Court, to the States entitled to appear before
+the Court. It was also transmitted to the Secretary-General of the
+'C'nited Nations.
+As the Application \vas based upon the Convention on Asylum
+signed at Havana on February zoth, 1928, and upon the Agreement
+on Extradition signed at Caracas on July 18th, 1911, the notification
+prescribed by Article 63, paragraph 1, of the Statute of the Court
+was addressed to the States other than those concerned in the
+case which were parties to the foregoing Conventions.
+The Pleadings having been deposited within the time-limits
+prescribed in the Order of October zoth, 1949, as extended by
+Orders of December 17th, 1949, and May gth, 1950, the case was
+ready for hearing on June 15th, 1950.
+As the Court did not include upon the Bench any judge of the
+nationality of the Parties, the latter availed themselves of the
+right provided by Article 31, paragraph 3, of the Statute. The
+Judges ad hoc designated were M. José Joaquin Caicedo Castilla,
+Doctor of Law, Professor, former Deputy and former President
+of the Senate, Ambassador, for the Government of Colombia, and
+M. Luis Alayza y Paz SoldAn, Doctor of Law, Professor, former
+Minister, Ambassador, for the Government of Peru.
+The opening of the oral proceedings was fixed for September 26th,
+1950. Public sittings were held by the Court on September 26th,
+27th, 28th and 29th and on October and, 3rd, 6th and gth, 1950.
+7
+
+[Source edition page 7]
+
+In the course of the sittings, the Court heard statements by M. J.
+M. Yepes, Agent, and M. Alfredo Vasquez, Advocate, on behalf of
+the Republic of Colombia, and by M. Carlos SayAn Alvarez, Agent,
+and M. Georges Scelle, Counsel, on behalf of the Republic of Peru.
+At the end of the written proceedings the Parties had presented
+the following submissions :
+On behalf of Colombia (submissions contained in the Reply) :
+"MAY IT PLEASE THE COURT
+To dismiss the submissions of the Government of the Republic
+of Peru,
+TO ADJUDGE AND DECLARE :
+In accordance with the submissions presented by the Government
+of the Republic of Colombia in its Memorial of January ~oth1,9 50,
+which was submitted to the Court on the same date, and
+Rejecting al1 contrary submissions,
+1. That the Republic of Colombia, as the country granting
+asylum, is competent to qualify the offence for the purpose of the
+said asylum, within the limits of the obligations resulting in particular from the Bolivarian Agreement on Extradition of July 18th,
+1911,a nd the Convention on Asylum of February zoth, 1928, and
+of American international law in general ;
+,
+II. That the Republic of Peru, as the territorial State, is bound
+in the case now before the Court to give the guarantees necessary
+for the departure of M. Victor Rahl Haya de la Torre from the
+country, with due regard to the inviolability of his person."
+On behalf of Peru (submissions contained in the Rejoinder) :
+"MAY IT PLEASE THE COURT
+To set aside the submissions of the Government of the Republic
+of Colombia;
+As a counter-claim, under Article 63 of the Rules of Court, and
+in the same decision, that the grant of asylum by the Colombian
+Ambassador at Lima to Victor Raiil Haya de la Torre was made
+in violation of Article 1, paragraph 1, and Article 2, paragraph 2,
+item I (ilzciso primera), of the Convention on Asylum signed at
+Havana in 1928."
+At the end of the oral statements, the Agent for the Government
+of Peru having made an addition to the submissions in the Pleadings, the following final submissions were presented to the Court
+orally and confirmed in writing :
+On behalf of Colombia
+(on the claim)
+
+[Source edition page 8]
+
+ASYLUM CASE (JUDGMENT OF 20 XI 50) 271
+T0 ADJUDGE AND DECLARE :
+1.-That the Republic of Colombia, as the country granting
+asylum, is competent to qualify the offence for the purpose of
+the said asylum, within the limits of the obligations resulting
+in particular from the Bolivarian Agreement on Extradition of
+July 18th, 1911, and the Havana Convention on Asylum of
+February zoth, 1928, and of American international law in general ;
+II.-That the Republic of Peru, as the territorial State, is
+bound in the case now before the Court to give the guarantees
+necessary for the departure of M. Victor Raul Haya de la Torre
+from the country, with due regard to the inviolability of his
+person."
+(on the counter-claim)
+"1. That the counter-claim presented by the Peruvian Government on March z~st,1 950, is not admissible because of its lack
+of direct connexion with the Application of the Colombian Government ;
+2. That the new counter-claim, irregularly presented on
+October 3rd, 1950, in the form of a submission upon allegations
+made during the oral debate, is not admissible on the grounds
+that :
+(a.) It was presented in violation of Article 63 of the Rules
+of Court ;
+(b) The Court has no jurisdiction to take cognizance of it ;
+('c) It has no direct connexion with the Application of the
+Colombian Government."
+On behalf of Peru :
+"MAY IT PLEASE THE COURT
+To set aside submissions 1 and II of the Colombian Memorial.
+To set aside the submissions which were presented by the Agent
+of the Colombian Government at the end of his oral statement
+on October 6th, 1950, in regard to the counter-claim of the Government of Peru, and which were repeated in his letter of October 7th,
+1950.
+TO ADJUDGE AND DECLARE,
+As a counter-claim, under Article 63 of the Rules of Court and
+in the same decision, that the grant of asylum by the Colombian
+Ambassador at Lima to Victor Raul Haya de la Torre was made
+in violation of Article 1, paragraph 1, and of Article 2, paragraph 2,
+item I (inciso primera), of the Convention on Asylum signed in
+1928, and that in any case the maintenance of the asylum constitutes at the present time a violation of that treaty."
+
+[Source edition page 9]
+
+On October 3rd, 1948, a military rebellion broke out in Pen.
+It was suppressed on the same day and investigations were at
+once opened.
+On October 4th, the President of the Republic issued a decree
+in the recitals of which a political party, the American People's
+Revolutionary Alliance, was charged with having organized and
+directed the rebellion. The decree consequently enacted that this
+party had placed itself outside the law, that it would henceforth
+not be permitted to exercise any kind of. activity, and that its
+leaders would be brought to justice in the national courts as
+instigators of the rebellion. Simultaneously, the head of the Judicial
+Department of the Navy issued an order requiring the Examining
+Magistrate to open at once an enquiry as to the facts constituting
+the crime of military rebellion.
+On October 5th, the Minister of the Interior addressed to the
+Minister for the Navy a "note of denunciation" against the leader
+of the American People's Revolutionary Alliance, Victor Raul
+Haya de la Torre, and other members of the party as responsible
+for the rebellion. This denunciation was approved on the same day
+by the Minister for the Navy and on October 10th by the Public
+Prosecutor, who stated that the subject-matter of the proceedings
+was the crime of military rebellion.
+On October t th, the Examining Magistrate issued an order for
+the opening of judicial proceedings against Haya de la Torre and
+others "in respect of the crime of military rebellion with which
+they are charged in the 'denunciation' ", and on October 25th he
+ordered the arrest of the perçons "denounced" who had not yet
+been detained.
+On October 27th, a Military Junta made a coz@ d'état and seized
+the supreme power. This Military Junta of the Govèrnment issued
+on November 4th a decree providing for Courts-Martial for summary
+procedure in cases of rebellion, sedition and rioting, fixing short
+time-limits and severe punishment without appeal.
+This decree was not applied to the judicial proceedings agabst
+Haya de la Torre and others. These proceedings continued under
+the same jurisdiction as theretofore. This is shown by a note of
+November 8th from the Examining Magistrate requesting the
+production of certain documents, by a note of November 13th
+from the Head of the Investigation and Surveillance Service te
+the Examining Magistrate stating that Haya de la Torre and others
+were not arrested as they could not be found, and by an Order by
+the Examining Magistrate of the same date requiring the defaulters
+to be cited by public summons. On November 16th and the two
+subsequent days, the summons was published in the officia1 gazette
+El Peruano, requiring "the accused persons who are in default" -
+Haya de la Torre and others-to report to the office of the
+Examining Magistrate to answer the accusation brought against
+IO
+
+[Source edition page 10]
+
+them "for the crime of military rebellion". Haya de la Torre did
+not report, and the facts brought to the knowledge of the Court do
+not show that any further measures were taken against him.
+On October 4th, the day after the military rebellion, a state of
+siege was declared, suspending certain constitutional rights ; it was
+renewed on November and and December and, 1948, and on
+January and, 1949.
+On January 3rd, 1949, Haya de la Torre sought asylum in the
+Colombian Embassy in Lima. On the next day, the Colombian
+Ambassador sent the following note to the Peruvian hIinister for
+Foreign Affairs and Public Worship :
+"1 have the honour to inform Your Excellency, in accordance
+with what is provided in Article 2, paragrapl-i 2, of the Convention
+on Asylum signed by Our two countries in the city of Havana in
+the year 1928, that Seiïor Victor Raul Haya de la Torre has been
+given asylum at the seat of this mission as from g p.m. yesterday.
+In view of the foregoing, and in view of the desire of this Embassy
+that Sefior Haya de la Torre should leave Peru as early as possible,
+1 request Your Excellency to be good enough to give orders for the
+requisite safe-conduct to be issued, so that Sefior Haya de la Torre
+may leave the country with the usual facilities attaching to the
+right of diplomatic asylum."
+On January 14th, the Ambassador sent to the Minister a further
+note as follows :
+"Pursiiant to instructions received from the Chancellery of my
+country, 1 have the honour to inform Your Excellency that the
+Government of Colombia, in accordance with the right conferred
+upon it by Article 2 of the Convention on Political Asylum signed
+by our two countries in the city of Montevideo on December 26th,
+1933,l ias qualifiecl Sefior Victor Rad Haya de la Torre as a political
+refugee."
+A diplomatic correspondence followed, leading up to the Act
+of Lima of Aiigust 31st, 1949, whereby the dispute which had
+arisen between the two Governments was referred to the Court.
+The Colombian Government has presented two submissions, of
+which the first asks the Court to adjudge and declare
+"That the Republic of Colombia, as the country granting asylum,
+is competent to qtialify the offence for the purpose of the said asylum,
+witliin the limits of the obligations resulting in particular from tlie
+Bolivarian Agreement on Extradition of July ~Sth1,9 11, and the
+Convention on ilsylun of February zoth, 1928, and of -4merican
+international law in gcnerrtl."
+If the Colombian (;o\~eriîmcnt by this submission intended to
+allege that Colombin, as the State granting asylum, is competent
+
+[Source edition page 11]
+
+to qualify the offence only provisionally and without binding
+effect for Peru, the solution would not remain a matter of doubt.
+It is evident that the diplomatic representative who has to
+determine whether a refugee is to be granted asylum or not must
+have the competence to make such a provisional qualification
+of any offence alleged to have been committed by the refugee.
+He must in fact examine the question whether the conditions
+required for granting asylum are fulfilled. The territorial State
+would not thereby be deprived of its right to contest the qualification. In case of disagreement between the two States, a dispute
+would arise which might be settled by the methods provided
+by the Parties for the settlement of their disputes.
+This is not, however, the meaning which the Colombian Government has put on its submission. It has not claimed the right of
+qualification for the sole purpose of determining its own conduct.
+The written and oral arguments submitted on behalf of that
+Government show that its claim must be understood in the sense
+that Colombia, as the State granting asylum, is competent to
+qualify the nature of the offence by a unilateral and definitive
+decision binding on Peru. Colombia has based this submission
+partly on rules resulting from agreement, partly on an alleged
+custom.
+The Colombian Government has referred to the Bolivarian
+Agreement of 1911, Article 18, which is framed in the following
+terms :
+"Aside from the stipulations of the present Agreement, the
+signatory States recognize the institution of asylum in conformity
+with the principles of international law."
+In recognizing "the institution of asylum", this article merely
+refers to the principles of international law. But the principles
+of international law do not recognize any rule of unilateral and
+definitive qualification by the State granting diplomatic asylum.
+The Colombian Government has also relied on Article 4 of this
+Agreement concerning extradition of a criminal refugee from the
+territory of the State in which he has sought refuge. The arguments
+submitted in this respect reveal a confusion between territorial
+asylum (extradition), on the one hand, and diplomatic asylum,
+on the other.
+In the case of extradition, the refugee is within the territory
+of the State of refuge. A decision with regard to extradition
+implies only the normal exercise of the territorial sovereignty.
+The refugee is outside the territory of the State where the offence
+was committed, and a decision to grant him asylum in no way
+derogates from the sovereignty of that State.
+In the case of diplomatic asylum, the refugee is within the
+territory of the State where the offence was committed. A decision
+to grant diplomatic asylum involves a derogation from the
+
+[Source edition page 12]
+
+sovereignty of that State. It withdraws the offender from the
+jurisdiction of the territorial State and constitutes an intervention
+in matters which are exclusively within the competence of that
+State. Such a derogation from territorial sovereignty cannot be
+recognized unless its legal basis is established in each particular
+case.
+For these reasons, it is not possible to deduce from the provisions
+of agreements concerning extradition any conclusion which would
+apply to the question now under consideration.
+The Colombian Government further relies on the Havana Convention on Asylum of 1928. This Convention lays down certain
+rules relating to diplomatic asylum, but does not contain any
+provision conferring on the State granting asylum a unilateral
+competence to qualify the offence with definitive. and binding
+force for the territorial State. The Colombian Government contends,
+however, that such a competence is implied in that Convention
+and is inherent in the institution of asylum.
+A competence of this kind is of an exceptional character. It
+involves a derogation from the equal rights of qualification which,
+in the absence of any contrary rule, must be attributed to each
+of the States concerned ; it thus aggravates the derogation from
+territorial sovereignty constituted by the exercise of asylum.
+Such a competence is not inherent in the institution of diplomatic
+asylum. This institution would perhaps be more effective if a
+rule of unilateral and definitive qualification were applied. But
+such a rule is not essential to the exercise of asylum.
+These considerations show that the alleged right of uailateral
+and definitive qualification cannot be regarded as recognized by
+implication in the Havana Convention. Moreover, this Convention,
+in pursuance of the desire expressed in its preamble of "fixing
+the rules" which the Governments of the States of America must
+observe for the granting of asylum, was concluded with the
+manifest intention of preventing the abuses which had arisen in
+the previous practice, by limiting the grant of asylum. It did so
+in a number of ways and in terms which are unusually restrictive
+and emphatic ("It is not permissible for States. ..." ; "Asylum
+may not be granted except in urgent cases and for the period of
+time strictly indispensable....", etc.).
+The Colombian Government has invoked Article 2, paragraph 1,
+of the Havana Convention, which is framed in the following
+terms :
+"Asylum granted to political offenders in legations, warships,
+military camps or military aircraft, shall be respected to the extent
+in which allowed as a right or through humanitarian toleration,
+by the usages, the conventions or the laws of the country in which
+granted and in accordance with the following provisions :"
+
+[Source edition page 13]
+
+This provision has been interpreted by that Government in the
+sense that the usages, conventions and laws of Colombia relating to
+the qualification of the offence can be invoked against Peru. This
+interpretation, which would mean that the extent of the obligation
+.of one of the signatory States would depend upon any modifications
+which might occur in the law of another, cannot be accepted. Tfie
+provision must be regarded as a limitation of the extent to which
+asylum shall be respected. What the provision says in effect is that
+the State of refuge shall not exercise asylum to a larger extent than
+is warranted by its own usages, conventions or laws and that the
+asylum granted must be respected by the territorial State only
+where such asylum would be permitted according to the usages,
+conventions or laws of the State of refuge. Nothing therefore
+can be deduced from this provision in so far as qualification is
+concerned.
+The Colombian Government has further referred to the Montevideo Convention on Political Asylum of 1933. It was in fact this
+Convention which was invoked in the note of January 14th, 1949,
+from the Colombian Ambassador to the Peruvian Minister for
+Foreign Affairs. It is argued that, by Article 2 of that Convention,
+the Havana Convention of 1928 is interpreted in the sense that the
+qualification of a political offence appertains to the State granting
+asylum. Articles 6 and 7 of the Montevideo Convention provide that
+it shall be ratified and will enter into force as and when the ratifications are deposited. The Montevideo Convention has not been
+ratified by Peru, and cannot be invoked against that State. The
+fact that it was considered necessary to incorporate in that Convention an article accepting the right of unilateral qualification, seems to
+indicate that this solution was regarded as a new rule not recognized
+by the Havana Convention. Moreover, the preamble of the Montevideo Convention States in its Spanish, French and Portuguese
+texts that it modifies the Havana Convention. It cannot therefore
+be considered as representing merely an interpretation of that
+Convention.
+The Colombian Government has finally invoked "American
+international law in general". In addition to the rules arising from
+agreements which have already been considered, it has relied on an
+alleged regional or local custom peciiliar to Latin-American States.
+The Party which relies on a custom of this kind must prove
+that this custom is established in such a rnanner that it has become
+binding on the other Party. The Colombian Government must
+prove that the rule invoked by it is in accordance with a constant
+and uniform usage practised by the States in question, and that
+this usage is the expression of a right appertaining to the State
+granting asylum and a duty incumbent on the territorial State. This
+follo\vs from Article 38 of the Statute of the Court, which refers to
+
+[Source edition page 14]
+
+international custom "as evidence of a general practice accepted
+as law".
+In support of its contention concerning the existence of such a
+custom, the Colombian Government has referred to a large number
+of extradition treaties which, as already explained, can have no
+bearing on the question now under consideration. It has cited
+conventions and agreements which do not contain any provision
+concerning the alleged rule of unilateral and definitive qualification
+such as the Montevideo Convention of 1889 on international penal
+law, the Bolivarian Agreement of 1911 and the Havana Convention
+of 1928. It has invoked conventions which have not been ratified by
+Peru, such as the Montevideo Conventions of 1933 and 1939. The
+Convention of 1933 ha, in fact, been ratified by not more than
+eleven States and the Convention of 1939 by two States only.
+It is particularly the Montevideo Convention of 1933 which
+Counsel for the Colombian Government has also relied on in this
+connexion. It is contended that this Convention has merely codified
+principles which were already recognized by Latin-American
+custom, and that it is valid against Peru as a proof of customary
+law. The limited number of States which have ratified this Convention reveals the weakness of this argument, and furthermore, it is
+invalidated by the preamble which states that this Convention
+modifies the Havana Convention.
+Finally, the Colombian Government has referred to a large
+number of particular cases in which diplomatic asylum was in fact
+granted and respected. But it has not shown that the alleged riile
+of unilateral and definitive qualification was invoked or-if in some
+cases it was in fact invoked-that it was, apart from conventional
+stipulations, exercised by the States granting asylum as a right
+appertaining to them and respected by the territorial States as a
+duty incumbent on them and not merely for reasons of political
+expediency. The facts brought to the knowledge of the Court
+disclose so much uncertainty and contradiction, so much fluctuation
+and discrepancy in the exercise of diplomatic asylum and in the
+officia1 views expressed on various occasions, there has been so much
+inconsistency in the rapid succession of conventions on asylum,
+ratified by some States and rejected by others, and the practice
+has been so much influenced by considerations of political expediency
+in the various cases, that it is not possible to discern in al1 thiç any
+constant and uniform usage, accepted as law, with regard to the
+alleged rule of unilateral and definitive qualification of the offence.
+The Court cannot therefore find that the Colombian Government
+has proved the existence of such a custom. But even if it could be
+supposed that such a custom existed between certain Latin-American States only, it could not be invoked against Peru which, far
+
+[Source edition page 15]
+
+from having by its attitude adhered to it, has, on the contrary,
+repudiated it by refraining from ratifying the Montevideo Conventions of 1933 and 1939, which were the first to include a rule concerning the qualification of the offence in matters of diplomatic asylum.
+In the written Pleadings and during the oral proceedings, the
+Government of Colombia relied upon officia1 communiqués published
+by the Peruvian Ministry of Foreign Affairs on October 13th
+and 26th, 1948, and the Government of Peru relied upon a Report
+of the Advisory Committee of the Ministry of Foreign Affairs
+of Colombia dated September znd, 1937 ; on the question of
+qualification, these documents state views which are contrary to
+those now maintained by these Governments. The Court, whose
+duty it is to apply international law in deciding the present case,
+cannot attach decisive importance to any of these documents.
+For these reasons, the Court has arrived at the conclusion that
+Colombia, as the State granting asylum, is not competent to
+qualify the offence by a unilateral and definitive decision, binding
+on Peru.
+In its second submission, the Colombian Government asks the
+Court to adjudge and declare :
+"That the Republic of Peru, as the territorial State, is bound in
+the case now before the Court, to give the guarantees necessary
+for the departure of M. Victor Raul Haya de la Torre from the
+country, with due regard to the inviolability of his person."
+This alleged obligation of the Peruvian Government does not
+entirely depend on the answer. given to the first Colombian submission relating to the unilateral and definitive qualification of
+the offence. It follows from the first two articles of the Havana
+Convention that, even if such a right of qualification is not
+admitted, the Colombian Government is entitled to request a
+safe-conduct under certain conditions.
+The first condition is that asylum has been regularly granted
+and maintained. It can be granted only to political offenders
+who are not accused or condemned for coinmon crimes and only
+in urgent cases and for the time strictly indispensable for the
+safety of the refugee. These points relate to the Periivian counterclaim and will be considered later to the estent necessary for
+the decision of the present case.
+The second condition is laid down in Article 2 of the Hnvana
+Convention :
+
+[Source edition page 16]
+
+"Third: The Government of the State may require that the
+refugee be sent out of the national territory within the shortest
+time possible ; and the diplomatic agent of the country wl~oh as
+granted asylum may in turn require the guarantees necessary for
+the departure of the refugee from the country with due regard to
+the inviolability of his person."
+If regard is had, on the one hand, to the structure of this
+provision which indicates a successive order, and, on the other
+hand, to the natural and ordinary meaning of the words "in
+turn", this provision can only mean that the territorial State
+may require that the refugee be sent out of the country, and
+that only after such a demand can the State granting asylum
+require the necessary guarantees as a condition of his beiilg sent
+out. The provision gives, in other words, the territorial State
+an option to require the departure of the refugee, and that State
+becomes bound to grant a safe-coilduct only if it fias exercised
+this option.
+A contrary interpretation would lead, in the case now before
+the Court, to the conclusion that Colombia would be entitled
+to decide alone whether the conditions provided by Articles I
+and 2 of the Convention for the regularity of asyluin are fulfilled.
+Such a consequence obviously would be incoinpatible with the
+legal situation created by the Convention.
+There exists undoubtedly a practice whereby the diplomatic
+representative who grants asylum immediately requests a safeconduct without awaiting a request from the territorial State
+for the departure of the refugee. This procedure meets certain
+requirements : the diplomatic agent is naturally desirous that the
+presence of the refugee on his premises should not be prolonged ;
+and the goverilment of the country, for its part, desires in a great
+number of cases that its political opponent who has obtained asylurn
+should depart. This coilcordance of views suffices to explain the
+practice which has been noted in this connexion, but this practice
+does not and cannot mean that the State, to whom such a request
+for a safe-conduct has been addressed, is legally bound to accede
+to it.
+In the present case, the Peruvian Government has not requested
+that Haya de la Torre should leave Peru. It has contested the
+legality of the asylum granted to him and has refused to deliver a
+safe-conduct. In such circumstances the Colombian Government is
+not entitled to claim that the Peruvian Government should give the
+guarantees necessary for the departure of Haya de la Torre from the
+country, with due regard to the inviolability of his person.
+The counter-claim of the Government of Peru was stated in its
+final form during the oral statement of October 3rd, 1950, in the
+following terms :
+
+[Source edition page 17]
+
+To adjudge and declare as a counter-claim under ilrticle 63
+of the Rules of Court, and in the same decision, that the grant
+of asylum by the Colombian Ambassador at Lima to Victor Rad
+Haya de la Torre was made in violation of Article 1, paragraph 1,
+and Article 2, paragraph z, item I (inciso $rimera), of the Convention on Asylum signed in 1928, and that in any case the
+maintenance of the asylum constitutes at the present time a
+violation of that treaty."
+As has already been pointed out, the last part of this sentence :
+"and that in any case the maintenance of the asylum constiiutes
+at the present time a violation of that treaty", did not appear in
+the counter-claim presented by the Government of Peru in the
+Counter-Memorial. The addition was only made during the oral
+proceedings. The Court u~illf. irst consider the counter-claim in its
+original form.
+This counter-claim is intended, in substance, to put an end to the
+dispute by requesting the Court to declare that asylum was \i7rongfully given, the grant of asylum being contrary to certain provisions
+of the Havana Convention. The object of the counter-claim is
+simply to define for this purpose the legal relations which that
+Convention has established between Colombia and Peru. The Court
+observes in this connexion that the question of the possible surrender of the refugee to the territorial authorities is in no way raised
+in the counter-claim. It points out that the Havana Convention,
+which provides for the surrender to those authorities of persons
+accused of or condemned for common crimes, contains no similar
+provision in respect of political offenders. The Court notes, finally,
+that this question was not raised either in the diplomatic correspondence submitted by the Parties or at any moment in the proceedings before the Court, and in fact the Government of Peru has
+not requested that the refugee should be surrendered.
+It results from the final submissions of the Government of
+Colombia, as formulated before the Court on October 6th, 1950,
+that that Government did not contest the jurisdiction of the
+Court in respect of the original counter-claim ; it did so only in
+respect of the addition made during the oral proceedings. On the
+other hand, relying upon Article 63 of the Rules of Court, the
+Government of Colombia has disputed the admissibility of the
+counter-claim by arguing that it is not directly connected with the
+subject-matter of the Application. In its view, this lack of connexion
+results from the fact that the counter-claim raises new problems and
+thus tends to shift the erounds of the dis~ute.
+The Court is unable tz accept this view.l~te merges clearly from
+the arguments of the Parties that the second submission of the
+Government of Colombia, which concerns the demand for a safeconduct, rests largely on the alleged regularity of the asylum, which
+is precisely what is disputed by the counter-claim. The connexion
+is so direct that certain conditions which are required to exist
+before a safe-conduct can be demanded depend precisely on facts
+
+[Source edition page 18]
+
+which are raised by the counter-claim. The direct connexion being
+thus clearly established, the sole objection to the admissibility of
+the counter-claim in its original form is therefore removed.
+Before examining the question whether the counter-claim is well
+founded, the Court must state in precise terms what meaning it
+attaches to the words "the grant of asylum" which are used therein.
+The grant of asylum is not an instantaneous act which terminates
+with the admission, at a given moment, of a refugee to an embassy
+or a legation. Any grant of asylum results in, and in consequence
+logically implies, a state of protection ; the asylum is granted as
+long as the continued presence of the refugee in the embassy
+prolongs this protection. This view, which results from the very
+nature of the institution of asylum, is further confirmed by the
+attitude of the Parties during this case. The counter-claim, as it
+appears in the Counter-Memorial of the Government of Peru,
+refers expressly to Article 2, paragraph 2, of the Havana Convention,
+which provides that asylum may not be granted except "for the
+period of time strictly indispensable". Such has also been the view
+of the Government of Colombia ; its Reply shows that, in its opinion,
+as in that of the Government of Peru, the reference to the abovementioned provision of the Havana Convention raises the question
+of "the duration of the refuge".
+The Govei-nment of Peru has based its counter-claim on two
+different grounds which correspond respectively to Article 1, paragraph 1, and Article 2, paragraph 2, of the Havana Convention.
+Gnder Article 1, paragraph 1, "It is not permissible for States to
+grant asylum .... to perçons accused or condrnined for common
+crimes....". The onus of proving that Haya de la Torre had been
+accused or conciemned for common crimes before the grant of
+asylunl rested upon Peru.
+The Court has no difficulty in finding, in the present case, that
+the refugee was an "accused person" within the meaning of the
+Havana Convention, inasmuch as the evidence presented by the
+Government of Peru appears conclusive in this connexion. It
+can hardly be agreed that the term "accused" occurring in a
+multilateral treaty such as that of Havana has a precise and
+technical connotation, ~vhich~ vouldh ave the effect of subordinating
+the definition of "accused" to the completion of certain strictly
+prescribed steps in procedure, which might differ from one legal
+system to another.
+On the other hand, the Court considers that the Government of
+Peru has not proved that the acts of which the refugee was accused
+before January 3rd/4th, 1949, constitute common crimes. From
+the point of view of the application of the Havana Convention, it
+is the terms of the accusation, as formulated by the legal authorities
+before the grant of asylum, that must alone be considered. As has
+been shown in the recital of the facts, the sole accusation contained
+in al1 the documents emanating from the Peruvian legal authorities
+19
+
+[Source edition page 19]
+
+is that of military rebellion, and the Government of Peru has not
+established that military rebellion in itself constitutes a common
+crime. Article 248 of the Peruvian Code of Military Justice of
+1939 even tends to prove the contrary, for it makes a distinction
+between military rebellion and common crimes by providing that :
+"Common crimes committed during the course of, and in connexion
+with, a rebellion, shall be punishable in conformity with the laws,
+irrespective of the rebellion."
+These considerations lead to the conclusion that the first objection
+made by the Government of Peru against the asylum is not jistified
+and that on.t his point the counter-claim is not well founded and
+must be dismissed.
+The Government of Peru relies, as a second basis for its counterclaim, upon the alleged disregard of Article 2, paragraph 2, of the
+Havana Convention, which provides as follows : "Asylum may
+not be granted except in urgent cases and for the period of time
+strictly indispensable for the person who has sought asylum to
+ensure in some other way his safety."
+Before proceeding to an examination of this provision, the
+Court considers it necessary to make the following remark concerning the Havana Convention in general and Article 2 in
+particular.
+The object of the Havaria Convention, which is the only agreement relevant to the present case, was, as indicated in its preamble,
+to fix the rules which the signatory States must observe for the
+granting of asylum in their mutual relations. The intention was,
+as has been stated above, to put an end to the abuses which
+had arisen in the practice of asylum and which were likely to
+impair its credit and usefulness. This is borne out by the wording
+of Articles I and 2 of the Convention which is at times ~rohibitive
+and at times clearly restrictive.
+-Article 2 refers to asylum granted to political offenders and
+lays down in precise terms the conditions under which asylum
+granted to such offenders shall be respected by the territorial
+State. It is worthy of note that al1 these conditions are designed
+to give guarantees to the territorial State and appear, in the
+final analysis, as the consideration for the obligation which that
+State assumes to respect asylum, that is, to accept its principle
+and its consequenccs as long as it is regularly maintained.
+At the head of the list of these conditions appears Article 2,
+paragraph 2, quoted above. It is certainly the most important
+of them, the essential justification for asylum being in the imminence or persistence of a danger for the person of the refugee.
+It was incumbent mon the Government of Colombia to submit
+proof of facts to shhw that the above-mentioned condition uTas
+fulfilled.
+It his not been disputed by the Parties that asylum may be
+granted on humanitarian grounds in order to protect political
+offenders against the violent and disorderly action of irresponsible
+
+[Source edition page 20]
+
+sections of the population. It has not been contended by the
+Government of Colombia that Haya de la Torre was in such a
+situation at the time when he sought refuge in the Colombian
+Embassy at Lima. At that time, three months had elapsed since
+the military rebellion. This long interval gives the present case
+a very special character. During those three months, Haya de la
+Torre had apparently been in hiding in the country, refusing to
+obey the summons to appear of the legal authorities which was
+published on November 16th/18th, 1948, and refraining from
+seeking asylum in the foreign embassies where several of his
+CO-accused had found refuge beforé these dates. It was only on
+January 3rd, 1949, that he sought refuge in the Colombian Embassy. The Court considers that, firima yacie, such circumstances
+make it difficult to speak of urgency.
+The diplomatic correspondence between the two Governments
+does not indicate the nature of the danger which was alleged to
+threaten the refugee. Likewise, the Memorial of the Government
+of Colombia confines itself to stating that the refugee begged
+the ,4mbassador to grant him the diplomatic protection of asylum
+as his freedom and life were in jeopardy. It is only in the written
+Reply that the Government of Colombia described in more precise
+terms the nature of the danger against which the refugee intended
+to request the protection of the Ambassador. It was then claimed
+that this danger resulted in particular from the abnormal political
+situation existing in Peru, following the state of siege proclaimed
+on October 4th, 1948, and renewed successively on November znd,
+December znd, 1948, and January end, 1949 ; that it further
+resulted from the declaration of "a state of national crisis" made
+on October 25th, 1938, containing various statements against the
+Arnerican People's Revolutionary Alliance of w-hich the refugee
+was the head; from the outlawing of this Party by the decree
+of October 4th, 1948 ; from the Order issued by the acting
+Examining Magistrate for the Navy on November 13th, 1948,
+requiring the defaulters to be cited by public summons ; from
+the decree of Xovember 4th, 1948, providing for Courts-Martial
+to judge summarily, with the option of increasing the penalties
+and vithout appeal, the authors, accomplices and others responsible for the offences of rebellion, sedition or mutiny.
+From these facts regarded as a whole the nature of the danger
+now becomes clear, and it is upon the urgent character of such a
+danger that the Goverilment of Coloinbia seeks to justify the
+asylum-the danger of political justice by reason of the subordination of the Peruvian jiidicial aixthorities to the instructions of
+the Executivc.
+It is therefore necessary to csainine nhethcr, and, if so, to what
+extent, a danger of tliis kirlcl car1 seri-e as ri bnsis for nsylum.
+
+[Source edition page 21]
+
+In principle, it is inconceivable that the Havana Convention
+could have intended the term "urgent cases" to include the danger
+of regular prosecution to which the citizens of any country lay themselves open by attacking the institutions of that country ; nor can
+it be admitted that in referring to "the period of tirne strictly
+indispensable for the person who has sought asylum to ensure in
+some other way his safety", the Convention envisaged protection
+from the operation of regular legal proceedings.
+It would be useless to seek an argument to the contrary in
+Article I of the Havana Convention which forbids the grant of
+asylum to persons "accused or condemned for common crimes" and
+directs that such persons shall be surrendered immediately upon
+request of the local government. It is not possible to infer from that
+provision that, because a person is accused of political offences and
+not of common crimes, he is, by that fact alone, entitled to asylum.
+It is clear that such an inference would disregard the requirements
+laid down by Article 2, paragraph 2, for the grant of asylum to
+political offenders.
+In principle, therefore, asylum cannot be opposed to the operation
+of justice. An exception to this rule can occur only if, in the guise
+of justice, arbitrary action is substituted for the rule of law. Such
+would be the case if the administration of justice were corrupted by
+measures clearly prompted by political aims. Asylum protects the
+political offender against any measures of a manifestly extra-legal
+character which a government might take or attempt to take against
+its political opponents. The word "safety", which in Article 2,
+paragraph 2, determines the specific effect of asylum granted to
+political offenders, means that the refugee is protected against
+arbitrary action by the government, and that he enjoys the benefits
+of the law. On the other hand, the safety which arises out of asylum
+cannot be construed as a protection against the regular application
+of the laws and against the jurisdiction of legally constituted tribunals. Protection thus understood would authorize the diplomatic
+agent to obstruct the application of the laws of the country whereas
+it is his duty to respect them ; it would in fact become the equivalent of an immunity, which was evidently not within the intentions
+of the draftsmen of the Havana Convention.
+It is true that successive decrees promulgated by the Government
+of Peru proclaimed and prolonged a state of siege in that country ;
+but it has not been shown that the existence of a state of siege
+implied the subordination of justice to the executive authority, or
+that the suspension of certain constitutional guarantees entailed the
+abolition of judicial guarantees. As for the decree of November 4th,
+1948, providing for Courts-Martial, it contained no indication which
+might be taken to mean that the new provisions would apply
+retroactively to offences committed prior to the publication of the
+said decree. In fact, this decree was not applied to the legal proceedings against Haya de la Torre, as appears from the foregoing recital
+
+[Source edition page 22]
+
+of the facts. As regards the future, the Court places on record the
+following declaration made on behalf of the Peruvian Government :
+"The decree in question is dated November 4th, 1948, that
+is, it was enacted one month after the events which led to the
+institution of proceedings against Haya de la Torre. This decree
+was intended to apply to crimes occurring after its publication,
+and nobody in Peru would ever have dreamed of utilizing it in
+the case to which the Colombian Government clumsily refers,
+since the principle that laws have no retroactive effect, especially
+in penal matters, is broadly admitted in that decree. If the
+Colombian Government's statement on this point were true, the
+Peruvian Goverilment would never have referred this case to
+the International Court of Justice."
+This declaration, ~vhicha ppears in the Rejoinder, was confirmed
+by the Agent for the Government of Peru in his oral statement of
+October znd, 1950.
+The Court cannot admit that the States signatory to the Havana
+Convention intended to substitute for the practice of the Latin-
+American republics, in which considerations of courtesy, goodneighbourliness and political expediency have always held a prominent place, a legal system which would guarantee to their own
+nationals accused of political offences the privilege of evading
+national jurisdiction. Such a conception, moreover, would come into
+conflict with one of the most firmly established traditions of Latin
+America, namely, non-intervention. It was at the Sixth Pan-
+American Conference of 1928, during which the Convention on
+Asylum was signed, that the States of Latin America declared tlleir
+resolute opposition to any foreign political intervention. It would
+be difficult to conceive that these same States had consented, at the
+very same moment, to submit to intervention in its least acceptable
+form, one which implies foreign interference in the administration
+of domestic justice and which could not manifest itself without
+casting some doubt on the impartiality of that justice.
+Indeed the diplomatic correspondence between the two Governments shows the constant anxiety of Colombia to remain, in this
+field as elsewhere, faithful to the tradition of non-intervention.
+Colombia did not depart from this attitude, even when she found
+herself confronted with an emphatic declaration by the Perl~vian
+Minister for Foreign Affairs asserting that the tribunal before which
+Haya de la Torre had been summoned to appear was in conformity
+with the general and permanent organization of Peruvian judicial
+administration and under the control of the Supreme Court. This
+assertion met with no contradiction or reservation on the part of
+Colombia. It was only much later, following the presentation of the
+Peruvian counter-claiin, that the Govern~nento f Colombia chose,
+
+[Source edition page 23]
+
+in the Reply -and during the oral proceedings, to transfer the
+defence of asylum to a plane on which the Havana Convention,
+interpreted in the light of the most firmly established traditions of
+Latin America, could provide it with no foundation.
+The foregoing considerations lead us to reject the argument that
+the Havana Convention was intended to afford a quite general
+protection of asylum to any person prosecuted for political offences,
+either in the course of revolutionary events, or in .the more or
+less troubled times that follow, for the sole reason that it must be
+assumed that such events interfere with the administration of
+justice. It is clear that the adoption of such a criterion would lead
+to foreign interference of a particularly offensive natnre in the
+domestic affairs of States ; besides which, no confirmation of this
+criterion can be found in Latin-American practice, as this practice
+has been explained to the Court.
+In thus expressing itself, the Court does not lose sight of the
+numerous cases of asylum which have been cited in the 14eply
+of the Government of Colombia and during the oral statements. In this connexion, the following observations shoiild be
+made :
+In the absence of precise data, it is difficult to assess the value
+of such cases as precedents tending to establish the existence of
+a legal obligation upon a territorial State to recognize the validity
+of asylum which has been granted against proceedings instituted
+by local judicial authorities. The facts which have been laid
+before the Court show that in a number of cases the perçons who
+have enjoyed asylum were not, at the moment at which asylum
+was granted, the object of any accusation on the part of the
+judicial authorjties. In a more general way, considerations of
+convenience or simple political expediency seem to have led the
+territorial State to recognize asylum without that decision being
+dictated by any feeling of legal obligation.
+If these remarks tend to reduce considerably the value as
+precedents of the cases of asylum cited by the Government of
+Colombia, they show, none the less, that asylum as practised in
+Latin America is an institution which, to a very great extent,
+owes its development to extra-legal factors. The good-neighbour
+relations between the republics, the different political interests
+of the governments, have favoured the mutual recognition of
+asylum apart from any clearly defined juridical system. Even if
+the Havana Convention, in particular, represents an indisputable
+reaction against certain abuses in practice, it in no way tends to
+limit the practice of asylum as it may arise from agreements
+between interested governments inspired by mutual feelings of
+toleration and goodwill.
+
+[Source edition page 24]
+
+In conclusion, on the basis of the foregoing observations and
+considerations, the Court considers that on January 3rd/4th, 1949,
+there did not exist a danger constituting a case of urgency within
+the meaning of Article 2, paragraph 2, of the Havana Convention.
+This finding implies no criticism of the Ambassador of Colombia.
+His decision to receive the refugee on the evening of January 3rd,
+1949, may have been taken without the opportunity of lengthy
+reflection ; it may have been influenced as much by the previous
+grant of safe-conducts to perçons accused together with Haya de
+la Torre as by the more general consideration of recent events in
+Peru ; these events may have led him to believe in the existence
+of urgency. But this subjective appreciation is not the relevant
+element in the decision which the Court is called upon to take
+concerning the validitv of the asylum ; the only important question
+to be considered here is the objective existence of the facts, and it
+is this which must determine the decision of the Court.
+The notes of the Ambassador of Colombia of January 14th and
+February ~zth1,9 49, reflect the attitude of the Government towards
+the asylum granted by its Ambassador. The first of these confirms
+the asylum and claims to justify its grant by a unilateral qualification of the refugee. The second formulates a demand for a safeconduct with a view to permitting the departure of the refugee,
+and has based this demand expressly on the "international obligations" alleged to be binding on the Government of Peru. In thus
+expressing itself, the Government of Colombia definitively proclaimed its intention of protecting Haya de la Torre, in spite of
+the existence of proceedings instituted against him for military
+rebellion. It has maintained this attitude and this protection by
+continuing to insist on the grant of a safe-conduct, even when the
+Minister for Foreign Affairs of Peru referred to the existence of
+"a judicial prosecution, instituted by the sovereign power of the
+State" against the refugee (notes of the Mïnister for Foreign Affairs
+of Peru of March ~gth1, 949 ; of the Ambassador of Colombia of
+March asth, 1949).
+Thus, it is clearly apparent from this correspondence that the
+Court, in its appraisal of the asylum, cannot be confined to the
+date of January 3rd/4th, 1949, as the date on which it was granted.
+The grant, as has been stated above, is inseparable from the protection to which it gives rise -a protection which has here assumed
+the form of a defence against legal proceedings. It therefore results
+that asylum has been granted for as long as the Government of
+Colombia has relied upon it in support of its request for a safeconduct.
+The Court is thus led to find that the grant of asylum from
+January 3rd/4th, 1949, until the time when the two Governments
+agreed to submit the dispute to its jurisdiction, has been prolonged
+for a reason which is not recognized by Article 2, paragraph 2,
+of the Havana Convention.
+?j
+
+[Source edition page 25]
+
+ASYLUM CASE (JUDGMEXT OF 20 XI 50) 288
+This finding renders superfluous the addition to the counterclaim submitted during the oral proceedings and worded as f01lo~vs:
+"and that in any case the maintenance of the asylum constitutes
+at the present time a violation of that treaty". This part of the
+submission, as finally worded by the Government of Peru, was
+intended as a substitution for the counter-claim in its original form
+if the latter were rejected : it disappears with the allowance of
+this counter-claim. Hence it will not be necessary for the Court to
+consider either the objection on the ground of lack of jurisdiction
+or the objections on the grounds of inadmissibility which the
+Government of Colombia has based on an alleged disregard of
+Article 63 of the Rules of Court or to consider the merits of the
+claim thus submitted by the Government of Peru.
+on the submissions of the Government of Colombia,
+by fourteen votes to two,
+Rejects the first submission in so far as it involves a right for
+Colombia, as the country granting asylum, to qualify the nature
+of the offence by a unilateral and definitive decision, binding on
+Peru ;
+by fifteen votes to one,
+Rejects the second submission ;
+on the counter-claim of the Goyernment of Peru,
+by fifteen votes to one,
+Rejects it in so far as it is founded on a violation of Arricle 1,
+paragraph 1, of the Convention on Asylum signed at Havana in
+1928 ;
+by ten votes to six,
+Finds that the grant oi asylum by the Colombian Government to
+Victor Rahl Haya de la Torre was not made in conformity with
+Article 2, paragraph 2 ("First"), of that Convention.
+
+[Source edition page 26]
+
+Done in French and English, the French text being authoritative,
+at the Peace Palace, The Hague, this twentieth day of November,
+one thousand nine hundred and fift~7,i n three copies, one of which
+will be placed in the archives of the Court and the others transmitted to the Governments of the Republic of Colombia and of the
+Republic of Peru respectively.
+(Sig~zed)B ASDEVANT,
+.
+President
+(Signed) GARNIER-COIGNET,
+Deputy-Registrar.
+Judges ALVAREZB, ADAWIP ASHA,R EAD and AZEVEDOa,n d
+M. CAICEDOJ, udge ad hoc, declaring that they are unable to
+concur in certain points of the Judgment of the Court, have availed
+themselves of the right conferred on them by Article 57 of the
+Statute and appended to the Judgment statements of their dissenting opinions.
+Judge ZORIEIC, whilst accepting the first three points of the
+operative part of the Judgment and the reasons given in support,
+regrets to state that he is unable to agree with the last point of the
+operative part, as he considers that asylum was granted in conformity with Article 2, paragraph 2, of the Havana Convention.
+On this point he shares the views expressed by Judge Read in his
+dissenting opinion.
+(Initialled) J. B.
+
+[Source edition page 27]
+
+ANNEX
+LIST OF DOCUMENTS SUBMITTED TO THE COURT
+1.-ANNEXES DEPOSITED DURING THE WRITTEN PROCEEDINGS
+A.-BY THE GOVERNMENOFT COLOMBIA
+(a) Annexes to the Mernorial:
+1.-1949, January 4th. No. 211. Letter from the Ambassador of
+Colombia at Lima to the Peruvian Minister for Foreign Affairs and
+Religion.
+2.-1949, January 14th. No. 812. Letter from the Ambaisador of
+Colombia at Lima to the Peruvian Minister for Foreign Affairs and
+Religion.
+3.-1949, February 12th. No. 2/64. Letter from the Ambassador of
+Colombia at Lima to the Peruvian Minister for Foreign Affairs and
+Religion.
+4.-1949, February aand. No. (D) 6-812. Letter from the Penivian
+Minister for Foreign Affairs and Religion to the Ambassador of
+Colombia at Lima.
+5.-1949, March 4th. No. 4016. Letter from the Ambassador of Colombia at Lima to the Peruvian Minister for Foreign Affairs and
+Religion.
+6.-1949, March 19th. No. (D) 6-814. Letter from the Peruvian Minister
+for Foreign Affairs and Religion to the Ambassador of Colombia at
+Lima.
+7.-1949, March 28th. No. 7319. Letter from the Ambassador of
+Colombia at Lima to the Peruvian Minister for Foreign Affairs and
+Religion.
+S.-1949, April 6th. No. (D) 6-816. Letter from the Peruvian Minister
+for Foreign Affairs and Religion to the Ambassador of Colombia at
+Lima.
+9.-1949. April 7th. Statements given to the press by the Colombian
+Minister for Foreign Affairs.
+IO.-1949, April 29th. No. (S) 6-8/7. Letter from the Peruvian Minister
+for Foreign Affairs and Religion to the Ambassador of Colombia at
+Lima.
+II.-The Act of Lima, dated August yst, 1949.
+12.-1949, August 31st. Letter from the Special Plenipotentiary of
+Colombia at Lima to the Peruvian Special Plenipotentiary.
+13.-1949, August 31st. No. (D) 6-8/14. Letter from the Peruvian Special
+Plenipotentiary to the Special Plenipotentiary of Colombia at Lima.
+14.-1949, August 31st. No. 300136 Letter from the Ambassador of
+Colombia to the Peruvian Minister for Foreign Affairs anà Religion.
+120
+
+[Source edition page 28]
+
+15.-1949, September 1st. Letter from the Peruvian Minister for Foreign
+Affairs and Religion to the Ambassador of Colombia at Lima.
+16.-1944, October 20th. Letter from the Peruvian Legation at Guatemala to the Military Junta of the Government.
+17.-1948, October 28th. No. 5-20 Ml34 Letter from the Peruvian
+Legation at Panama to the Minister for Foreign Affairs.
+18.-Extract from the Treaty on Private International Law, signed at
+the Junta of American jurists which met at Lima in 1879.
+19.-Extract from the Treaty on International Penal Law, signed at the
+1st South-American Congress on Private International Law which
+met at Montevideo in 1889.
+20.-Bolivarian Agreement on Extradition, signed at Caracas on July
+18th, 1911.
+21.-Convention on Asylum, signed at the VIth Pan-American Conference.
+22.-Convention on Political Asylum, signed at the VIIth Pan-American
+Conference.
+23.-Extract from the Treaty on Asylum and Political Refuge, signed at
+the IInd South-American International Law Congress which met
+at Montevideo in 1939.
+24.-Excerpt from the American Declaration on the Rights and Duties
+of Man, adopted at the IXth Pan-American Conference.
+25.-Extract from the Universal Declaration on Human Rights, adopted
+by the General Assembly of the U.N. on December ~oth,1 948.
+(b) Annexes to the Reply :
+1.-Documents concerning the asylum of MM. Manuel Gutiérrez
+Aliaga and Luis Felipe Rodriguez in the Uruguayan Embassy at
+Lima and the safe-conducts granted to them by the Peruvian
+Government (five notes listed from A to E).
+2.-Decree No. 4 of November 4th, 1948, creating a Court Martial for
+the summary judgment of authors, accomplices and other perçons
+responsible for rebellion, sedition or rioting.
+(a) Annexes to the Counter-Mc.moria1:
+1.-The Lima Act of August yst, 1949 (cf. Annex Ko. 1).
+2.-The Public Prosecutor's indictment, dated September 7th, 1949,
+in the proceedings concerning the crime of military rebellion and
+other crimes (cf. Annexes Nos. 2, 4, 25).
+3.-Folios 105 to 145 of Folder 8-A in the proceedings concerning the
+crime of military rebellion and other crimes, containing the report
+of the Deputy-Inspector, head of the Bureau for special cases, on
+the malicious damage caused to the Central Telephone Escliange
+(cf. Annex No. 3).
+4.-Copy of El Peruano, the Peruvian officia1 gazette, of October 4th,
+1948 (cf. Anneses Nos. 4 and 32).
+
+[Source edition page 29]
+
+ASYLUM CASE (JUDGMENT OF 20 XI 50) 384
+5.-Folios 27, 31 and 196 of Folder IO-A in theproceedings concerning
+the crime of military rebellion and other crimes, containing the
+indictment, the inspection by eye-witnesses and the experts' report
+on the explosives found at San Isidro (cf. Annex No. 5).
+6.-Folio 708 of Folder IO-B of the proceedings concerning the crime
+of military rebellion and other crimes, containing note No. 290, of
+October 3rd,. 1948, to the Inspector-General, head of the Tnvestigations and Surveillance Service, on the bombs found in a taxi
+(cf. Annex No. 6).
+7.-Note of October 4th, 1948, to the Inspector-General, head of the
+Investigations and Surveillance Service, concerning a dynamite
+bomb found in the garden of the house of the secretary of the
+Telephone Company ; Folder IO-A in the proceedings concerning
+the crime of military rebellion and other crimes (cf. Annex No. 7).
+8.-Folios 219 et sqq. of Folder IO-A in the proceedings concerning the
+crime of military rebellion and other crimes, containing Report
+No. 312, of October jth, 1948, to the Deputy-Inspector, head of
+the Secretariat, on the explosion of bombs on the roofs of buildings
+(cf. Annex No. 8).
+9.-Folio 501 of Folder IO-B in the proceedings concerning the crime
+of military rebellion and other crimes, containing communiqué
+No. 201, of October 4th, 1948, addressed to the Inspector-General,
+head of the Investigations and Surveillance Service, on the damage
+caused to a branch of the People's Bank of Peru (cf. Annex No. 9).
+IO.-Folios 215 to 217 of Folder IO-A in the proceedings concerning the
+crime of military rebellion and other crimes, containing note
+No. 465, of October 4th, 1948, and the report No. 1309, of October
+qth, 1948, addressed to the Inspector-General, head of the Investigations and Surveillance Service, on the dynamite cartridges placed
+near a petrol pump (cf. Annex No. IO), and note No. 211-R/Ia,
+addressed to the said inspecter-general in regard to bombs found
+near a barracks (cf., Annex No. 24).
+II.-Folios 516 et sqq. of Folder IO-B in the proceedings concerning the
+crime of military rebellion and other crimes, containing the documents relating to the bombs placed in the party wall of a glasç
+factory (cf. Annex No. II).
+12.-Folios 509 et sqq. of Folder IO-B in the proceedings concerning the
+crime of military rebellion and other crimes, containing documents
+relating to the dynamite bombs found in the garden of a house at
+Miraflores (cf. Annex No. 12).
+13.-Folios 523 et sqq. of Folder IO-B in the proceedings concerning the
+crime of military rebellion and other crimes, containing various
+documents relating to the bombs which exploded on the public
+highway, injuring passers-by (cf. Annex No. 13).
+14.-Folio 703 of Folder IO-B in the proceedings concerning the crime
+of military rebellion and other crimes, containing various documents
+relating to the bomb and the incendiary bottle placed in the doorway of a grocer's shop (cf. Annex No. 14).
+
+[Source edition page 30]
+
+15.-Folios 221 to 223 of Folder IO-A in the proceedings concerning the
+crime of military rebellion and other crimes, containing various
+documents relating to the bomb found near the printing works of
+the newspaper El Comercio (cf. Annex No. 15).
+16.-Folios 512 et sqq. of Folder IO-B in the proceedings concerning the
+crime of military rebellion and other crimes, containing various
+documents relating to the bombs thrown at a house (cf. Annex
+No. 16), and the bomb found at the foot of the Wall of a barracks
+(cf. Annex No. 22).
+17.-Folios 203 to 205, and overleaf, of Folder IO-A in the proceedings
+concerning the crime of military rebellion and other crimes, containing various documents relating to a bomb placed on the tramway
+(cf. Annex No. 17).
+18.-Folder 210 of Folder IO-A in the proceedings concerning the crime
+of military rebellion and other crimes, containing documents
+relating to the bomb found in a motor bus (cf. Annex No. 18).
+19.-Folio 229 of Foldef IO-A in the proceedings concerning the crime
+of military rebellion and other crimes, containing documents
+relating to the gelignite cartridge found in the premises of the
+daily paper La Prensa (cf. Annex h'o. 19).
+20.-Folios 201 and 202 of Fclder IO-A in the proceedings concerning
+the crime of military rebellion and other crimes, containing various
+documents relating to the twenty-eight dynamite bombs found on
+the roof of an hotel (cf. Annex No. 20).
+21.-Folios 740 et sqq. of Folder IO-E in the proceedings concerning the
+crime of military rebellion and other crimes, containing various
+documents concerning the bomb, hidden in the coal, which exploded
+in a kitchen range (cf. Annex No. 21).
+22.-Folio 700 of Folder IO-B in the proceedings concerning the crime
+of military rebellion and other crimes, containing various documents
+relating to bombs found on the roof of a house adjoining the workshops of the Telephone Company (cf. Annex No. 23).
+23.-Folios 21 and 22 of Folder II-A in the proceedings concerning the
+crime of military rebellion and other crimes, containing a list of
+documents and exhibits transmitted by the Prefecture to the
+judicial department of the Navy with a ~iewto their being attached
+to the prosecution opened in regard to the subversive movement of
+October 3rd, 1948 (cf. Annexes Nos. 2 j and 57).
+24.-Folios 96 to 98 of Folio 8-A in the proceedings concerning the crime
+of military rebellion and other crimes, containing Report No. jj of
+October 8th, 1948, on the manufacture of explosives in a kitclieil
+stove factory (cf. Annex No. 26).
+25.-Folios go et sqq. of Folder 8-A in the proceedings concerning the
+crime of military rebellion and other crimes, containing the report
+of the assistant chief of the Investigations and Surveillance Service
+to the Inspector-General, chief of the Service, on the manufacture
+of bombs by the Apnst Party (cf. Annex No. 27).
+26.-Report by the examining magistrate on the malicious damage
+caused to the Central Telephone Eschange and the manufacture
+123
+
+[Source edition page 31]
+
+of explosive bombs by the n~embers of the Aprist Party ; this
+report is contained in Folios 300 et sqq. of Folder 8-A in the proceedings concerning the crime of military rebellion and other crimes
+(cf. Annex No. 28).
+27.-Folio 847, and overleaf, of Folder IO-B in the proceedings concerning the crime of military rebellion and other crimes, containing the
+deposition of M. Alberto Benavides, who was asked by the Aprist
+leaders to cast shells for explosive bombs (cf. Annex No. 29).
+2s.-Five photographic reproductions of leaflets used by Apra in its
+campaign of incitement preceding the rebellion of October 3rd,
+1948 (cf. Annex No. 30).
+29.-Copies of the Lima newspapers containing information published
+after the rising on October 3rd, 1948 (cf. Annex No. 31).
+30.-Volume containing the record of the prosecution for trade in drugs
+instituted in a court of the United States of America (district of
+Southern New York), against Edward Tampa, Miguel E. Gonzales
+and Eduardo Balarezo, showing the connexion which existed
+between the latter and the revolutionary movement of October 3rd,
+1948, and also his connexion with Victor Raul Haya de la Torre,
+the leader of Apra. This document is authenticated by the United
+States authorities (cf. Annex No. 33).
+31.-Photographic copies of documents communicated to the Peruvian
+Ambassador at Washington by the Bureau of Narcotics of the
+United States of America (cf. Annex No. 34).
+32.-Letter addressed to M. Haya de la Torre by Major Aguila Pardo,
+Folio 624 of Folder IO-B in the proceedings concerning the crime
+of military rebellion and other crimes. Photographic reproduction
+of the document and authenticated copy (cf. Annex No. 35).
+33.-Decree No. 23 of October 4th, 1948, by the Executive Power,
+outlawing Apra (cf. Annex No. 36).
+34.-Copy of the Penal Code of the Republic of Peru ; law NO. 4868 of
+January ~oth1, 924 (cf. Annex No. 37).
+35.-Copy of the Code of Military Justice of the Republic of Peru ; law
+No. 8991 of October 16th, 1939 (cf. Annex No. 37).
+36.-Order made by the head of the Naval Judicial Department, dated
+October 3rd, 1948, giving instructions for the opening of investigations by the Permanent Examining Magistrate of the Navy, Folio 1,
+and overleaf, in the proceedings concerning the crime of military
+rebellion and other crimes (cf. Annex No. 38).
+37.-Folios 8 and 9 of Folder I in the proceedings concerning the crime
+of military rebellion and other crimes, containing a request by the
+prosecutor to the Directorate of the Judicial Department of the
+Navy for the issue of a forma1 order for the opening of the proceedings, and an order dated October 4th, 1948, for the opening of a
+military prosecution in accordance with the opinion given by tlie
+prosecutor on the same date (cf. Annex No. 39).
+124
+
+[Source edition page 32]
+
+38.-Folios 22 to 24 of Folder I in the proceedings concerning the crime
+of military rebellion and other crimes, containing the institution of
+the prosecu.tion of the persons responsible, the perpetrators and
+accomplices (cf. Annex No. 40).
+39.-A~cusation by the Minister of the Interior, transmitted by the
+Minister of the Navy to the head of the Judicial Department of
+the Navy ; this accusation appears in Folios I to 5, and on the
+reverse of Folios j, IO and II, and on the reverse of Folder IO-A of
+the proceedings concerning the crime of military rebellion and other
+crimes (cf. Annex No. 41).
+40.-Folios 16 to 23 of Folder IO-A concerning the crime of military
+rebellion and other crimes, containing a certified true copy of the
+examining magistrate's report (cf. Annex No. 42).
+41.-Folio 170, and overleaf, of Folder IO-A in the proceedings concerning the crime of military rebellion and other crimes, containing the
+judicial order for the arrest of the accused persons who are not yet
+in custody (cf. Annex No. 43).
+42.-Folio 346, and overleaf, of Folder IO-A in the proceedings concerning the crime of military rebellion and other crimes, containing the
+note requesting the delivery of the documents found at the headquarters of the Aprist Party, in the premises of La Tribuna, and
+in Haya de la Torre's private house, with a renewed order for the
+arrest of the accused persons who have defaulted (cf. Annex No. 44).
+43.-Folio 421, and overleaf, of Folder IO-A in the proceedings concerning the crime of military rebellion and other crimes, containing the
+note from the Inspector-General of the Investigations and Surveillance Service to the judicial authority, informing the latter that
+Haya de la Torre and other accused persons had not been found
+(cf. Annex No. 43).
+44.-Folio 414, and overleaf, of Folder IO-A in the proceedings concerning the crime of military rebellion and other crimes, containing the
+judge's order for the citation, by public summons, in accordance
+with the law, of the accused persons who have defaulted (cf. Annex
+No. 46).
+45.-Copy of the Peruvian officia1 gazette El Peruaflo,o f November 16th,
+1948, containing the first of the citations summoning the accused
+persons to appear (cf. Annex No. 47).
+46.-Note dated January 4th, 1949, from the Colombian Ambassador in
+Lima to the Peruvian Minister for Foreign Affairs (cf. Annex No. 48.)
+47.-Note dated January 14th, 1949, from the Colombian Ambassador in
+Lima. to the Peruvian Minister for Foreign Affairs (cf. Annex No. 48.)
+&.-Note dated February ~zth1,9 49, from the Colombian Ambassador
+in Lima to the Peruvian Minister for Foreign Affairs (cf. Anne:<
+No. 48).
+49.-Officia1 publication containing the note No. (D) 6-812, dated
+February zznd, 1949, from the Peruvian Minister for Foreign
+Affairs to the Colombian Ambassador in Lima (cf. Annex No. 49).
+125
+
+[Source edition page 33]
+
+50.-Official publication containing the note No. (D) 6-814, dated
+March 19th, 1949, from the Peruvian Minister for Foreign Affairs
+to the Colombian Ambassador in Lima (cf. Annex No. 49).
+51.-Officia1 publication containing the note No. (D) 6-816, dated
+April 6th, 1949, from the Peruvian Minister for Foreign Affairs to
+the Colombian Ambassador in Lima (cf. Annex No. 49).
+52.-Photographic copy of the pages of the Revista colombiana de Derecho
+internacional, containing a report by the advisory commission of the
+Colombian Ministry of Foreign Affairs (cf. Annex No. 50).
+53.-Photographic copy of a page of the year-book of Peruvian legislation, containing the text of law No. 9048 (cf. Annex No. 54).
+54.-Photographic copy contained in Folder IO-B in the proceedings
+concerning the crime of military rebellion and other crimes, of the
+Disciplinary Statute of the People's Party, together with an authenticated copy of the same document (cf. Annex No. jj).
+55.-Photographic copy contained in Folder IO-B in the proceedings
+concerning the cnme of military rebellion and other crimes, of the
+Code of Justice of the Aprist Advanced Guard, together with an
+authenticated copy of that document (cf. Annex No. 56).
+56.-Text of a cable from President Benavides, dated December 26th,
+1938 (cf. Annex No. 58).
+57.-Officia1 publication by the Peruvian Ministry of the Interior
+containing President Bustamante y Rivero's message dated February zgth, 1948 (cf. Annex No. 59).
+58.-Judgment delivered on December 5th, 1949, in the trial of Alfredo
+Tello Salavarria and other persons for the murder of M. Francisco
+Grafia Garland, in which orders were given for the institution of
+proceedings against Victor Rad Haya de la Torre and Carlos Boado
+for the crime which was the subject of that trial (cf. Annex No. 60).
+59.-The public prosecutor's indictment of Haya de la Torre and other
+persons for the cnme of usurpation of authority (cf. Annex No. 61).
+60.-Order for the institution of proceedings against Victor Raid Haya
+de la Torre and other persons for the crime of usurpation of functions to the prejudice of the State (cf. Annex No. 62).
+(b) Annexes to the Rejoinder
+1.-Extracts from the Peruvian Code of Military Law (documeilt
+transmitted with the Counter-Memorial).
+2.-Extracts from the resolution of the head of the Judicial Department
+of the Navy which declares Mr. Haya de la Torre, among others, a
+defaulting criminal. (Folios 24 to 54 of Folder II-C in the proceedings concerning the crime of military rebellion and other crimes.)
+3.-Extracts from the sentence pronounced on March zznd, 1950, by
+the tribunal which tried the persons responsible for rebellion and
+other crimes.
+4.-Articles from the Military Penal Code of Colombia.
+126
+
+[Source edition page 34]
+
+ASYLUM CASE (JUDGMENT OF 20 XI 50) 38 9
+5.-Colombian decree extending the jurisdiction of the Courts Martial.
+6.-Colombian decree increasing the penalties under the Penal Code.
+?.-Extracts from the report of the examining magistrate in the
+proceedings against Victor Ratil Haya de la Torre and others
+concerning the crime of usurpation of authority.
+(c) Documents submitted to the Registry of the Inter?zational Court of
+Justice with the Rejoinder :
+1.-Folios 24 to 54 of Folder II-C in the proceedings concerning military
+rebellion and other crimes, containing the resolution of the head of
+the Judicial Department of the Navy, which declares M. Haya de la
+Torre, among others, a defaulting criminal.
+a.-Certified copy of the sentence pronounced on March zznd, 1950,
+by the tribunal which tried the persons responsible for rebellion
+and other crimes.
+3.-Copy of the Military Penal Code of Colombia (law 3 a of 1945).
+4.-Cutting from the Officia1 Journal of Colombia containing decree
+No. 3562 of 1949.
+5.-Copy of the Officia1 Journal of Colombia containing decree No. 957
+0i' 1950.
+6.-Certified copy of the report of the examining magistrate in the
+proceedings against Victor Rahl Haya de la Torre and others
+concerning the crime of usurpation of authority.
+II.-ANNEXES DEPOSITED DURING ORAL PROCEEDINGS
+1.-Authentication of the signature of the Notary Public for the District
+of Columbia by the Secretary of the Bureau des Commissaires of
+that district.
+2.-Letter from M. Serafino Romualdi to M. Francisco Urrutia, signed
+before a notary at New York on 6th September, 1950.
+3.-Copy of a letter from M. Serafino Romualdi to M. Edward G.
+Miller Jr., dated 11th April, 1950.
+4.-Photocopy of a letter from Mr. Edward G. Miller Jr., dated 1st May,
+1950, in answer to M. Serafino Romualdi's letter.
+5.-Photocopy of M. Victor Ratil Haya de la Torre's passport.

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "application",
+    "kind": "application",
+    "version": "1.0.1",
+    "from_version": "1.0.0",
+    "target": "ilia-desktop.exe",
+    "payload_path": "target/release/ilia-desktop.exe",
+    "payload_format": "raw_file"
+  },
+  {
+    "id": "database",
+    "kind": "application",
+    "version": "public-international-law-v1.0.1-normalized-2026.09.24",
+    "from_version": null,
+    "target": "data/ilia.sqlite3",
+    "payload_path": "data/ilia.sqlite3",
+    "payload_format": "raw_file"
+  }
+]

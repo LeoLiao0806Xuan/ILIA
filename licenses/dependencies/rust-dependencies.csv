@@ -1,0 +1,590 @@
+name,version,license_expression,license_file_metadata,license_files_found,authors,repository,source
+adler2,2.0.1,0BSD OR MIT OR Apache-2.0,,LICENSE-0BSD;LICENSE-APACHE;LICENSE-MIT,Jonas Schievink <jonasschievink@gmail.com>; oyvindln <oyvindln@users.noreply.github.com>,https://github.com/oyvindln/adler2,registry+https://github.com/rust-lang/crates.io-index
+ahash,0.8.12,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Tom Kaitchuck <Tom.Kaitchuck@gmail.com>,https://github.com/tkaitchuck/ahash,registry+https://github.com/rust-lang/crates.io-index
+aho-corasick,1.1.5,Unlicense OR MIT,,COPYING;LICENSE-MIT,Andrew Gallant <jamslam@gmail.com>,https://github.com/BurntSushi/aho-corasick,registry+https://github.com/rust-lang/crates.io-index
+alloc-no-stdlib,2.0.4,BSD-3-Clause,,LICENSE,Daniel Reiter Horn <danielrh@dropbox.com>,https://github.com/dropbox/rust-alloc-no-stdlib,registry+https://github.com/rust-lang/crates.io-index
+alloc-stdlib,0.2.4,BSD-3-Clause,,,Daniel Reiter Horn <danielrh@dropbox.com>,https://github.com/dropbox/rust-alloc-no-stdlib,registry+https://github.com/rust-lang/crates.io-index
+allocator-api2,0.2.21,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Zakarum <zaq.dev@icloud.com>,https://github.com/zakarumych/allocator-api2,registry+https://github.com/rust-lang/crates.io-index
+android_system_properties,0.1.6,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Nicolas Silva <nical@fastmail.com>,https://github.com/nical/android_system_properties,registry+https://github.com/rust-lang/crates.io-index
+anyhow,1.0.104,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/anyhow,registry+https://github.com/rust-lang/crates.io-index
+async-broadcast,0.7.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Stjepan Glavina <stjepang@gmail.com>; Yoshua Wuyts <yoshuawuyts@gmail.com>; Zeeshan Ali Khan <zeeshanak@gnome.org>,https://github.com/smol-rs/async-broadcast,registry+https://github.com/rust-lang/crates.io-index
+async-channel,2.5.0,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Stjepan Glavina <stjepang@gmail.com>,https://github.com/smol-rs/async-channel,registry+https://github.com/rust-lang/crates.io-index
+async-executor,1.14.0,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Stjepan Glavina <stjepang@gmail.com>; John Nunley <dev@notgull.net>,https://github.com/smol-rs/async-executor,registry+https://github.com/rust-lang/crates.io-index
+async-io,2.6.0,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Stjepan Glavina <stjepang@gmail.com>,https://github.com/smol-rs/async-io,registry+https://github.com/rust-lang/crates.io-index
+async-lock,3.4.2,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Stjepan Glavina <stjepang@gmail.com>,https://github.com/smol-rs/async-lock,registry+https://github.com/rust-lang/crates.io-index
+async-process,2.5.0,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Stjepan Glavina <stjepang@gmail.com>,https://github.com/smol-rs/async-process,registry+https://github.com/rust-lang/crates.io-index
+async-recursion,1.1.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Robert Usher <266585+dcchut@users.noreply.github.com>,https://github.com/dcchut/async-recursion,registry+https://github.com/rust-lang/crates.io-index
+async-signal,0.2.14,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,John Nunley <dev@notgull.net>,https://github.com/smol-rs/async-signal,registry+https://github.com/rust-lang/crates.io-index
+async-task,4.7.1,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Stjepan Glavina <stjepang@gmail.com>,https://github.com/smol-rs/async-task,registry+https://github.com/rust-lang/crates.io-index
+async-trait,0.1.92,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/async-trait,registry+https://github.com/rust-lang/crates.io-index
+atk,0.18.2,MIT,,COPYRIGHT;LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk3-rs,registry+https://github.com/rust-lang/crates.io-index
+atk-sys,0.18.2,MIT,,LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk3-rs,registry+https://github.com/rust-lang/crates.io-index
+atomic-waker,1.1.2,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT;LICENSE-THIRD-PARTY,Stjepan Glavina <stjepang@gmail.com>; Contributors to futures-rs,https://github.com/smol-rs/atomic-waker,registry+https://github.com/rust-lang/crates.io-index
+autocfg,1.5.1,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Josh Stone <cuviper@gmail.com>,https://github.com/cuviper/autocfg,registry+https://github.com/rust-lang/crates.io-index
+base64,0.13.1,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Alice Maz <alice@alicemaz.com>; Marshall Pierce <marshall@mpierce.org>,https://github.com/marshallpierce/rust-base64,registry+https://github.com/rust-lang/crates.io-index
+base64,0.21.7,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Alice Maz <alice@alicemaz.com>; Marshall Pierce <marshall@mpierce.org>,https://github.com/marshallpierce/rust-base64,registry+https://github.com/rust-lang/crates.io-index
+base64,0.22.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Marshall Pierce <marshall@mpierce.org>,https://github.com/marshallpierce/rust-base64,registry+https://github.com/rust-lang/crates.io-index
+base64,0.23.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Marshall Pierce <marshall@mpierce.org>,https://github.com/marshallpierce/rust-base64,registry+https://github.com/rust-lang/crates.io-index
+base64ct,1.8.3,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,RustCrypto Developers,https://github.com/RustCrypto/formats,registry+https://github.com/rust-lang/crates.io-index
+bit-set,0.8.0,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Alexis Beingessner <a.beingessner@gmail.com>,https://github.com/contain-rs/bit-set,registry+https://github.com/rust-lang/crates.io-index
+bit-vec,0.8.0,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Alexis Beingessner <a.beingessner@gmail.com>,https://github.com/contain-rs/bit-vec,registry+https://github.com/rust-lang/crates.io-index
+bitflags,1.3.2,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Rust Project Developers,https://github.com/bitflags/bitflags,registry+https://github.com/rust-lang/crates.io-index
+bitflags,2.13.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Rust Project Developers,https://github.com/bitflags/bitflags,registry+https://github.com/rust-lang/crates.io-index
+block-buffer,0.10.4,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,RustCrypto Developers,https://github.com/RustCrypto/utils,registry+https://github.com/rust-lang/crates.io-index
+block2,0.6.2,MIT,,,Mads Marquart <mads@marquart.dk>,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+blocking,1.7.0,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/smol-rs/blocking,registry+https://github.com/rust-lang/crates.io-index
+brotli,8.0.4,BSD-3-Clause AND MIT,,LICENSE.BSD-3-Clause;LICENSE.MIT,Daniel Reiter Horn <danielrh@dropbox.com>; The Brotli Authors,https://github.com/dropbox/rust-brotli,registry+https://github.com/rust-lang/crates.io-index
+brotli-decompressor,5.0.3,BSD-3-Clause/MIT,,LICENSE,Daniel Reiter Horn <danielrh@dropbox.com>; The Brotli Authors,https://github.com/dropbox/rust-brotli-decompressor,registry+https://github.com/rust-lang/crates.io-index
+bs58,0.5.1,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/Nullus157/bs58-rs,registry+https://github.com/rust-lang/crates.io-index
+bumpalo,3.20.3,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Nick Fitzgerald <fitzgen@gmail.com>,https://github.com/fitzgen/bumpalo,registry+https://github.com/rust-lang/crates.io-index
+bytemuck,1.25.2,Zlib OR Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT;LICENSE-ZLIB,Lokathor <zefria@gmail.com>,https://github.com/Lokathor/bytemuck,registry+https://github.com/rust-lang/crates.io-index
+byteorder,1.5.0,Unlicense OR MIT,,COPYING;LICENSE-MIT,Andrew Gallant <jamslam@gmail.com>,https://github.com/BurntSushi/byteorder,registry+https://github.com/rust-lang/crates.io-index
+bytes,1.12.1,MIT,,LICENSE,Carl Lerche <me@carllerche.com>; Sean McArthur <sean@seanmonstar.com>,https://github.com/tokio-rs/bytes,registry+https://github.com/rust-lang/crates.io-index
+cairo-rs,0.18.5,MIT,,COPYRIGHT;LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk-rs-core,registry+https://github.com/rust-lang/crates.io-index
+cairo-sys-rs,0.18.2,MIT,,LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk-rs-core,registry+https://github.com/rust-lang/crates.io-index
+camino,1.2.6,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Without Boats <saoirse@without.boats>; Ashley Williams <ashley666ashley@gmail.com>; Steve Klabnik <steve@steveklabnik.com>; Rain <rain@sunshowers.io>,https://github.com/camino-rs/camino,registry+https://github.com/rust-lang/crates.io-index
+cargo-platform,0.1.9,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rust-lang/cargo,registry+https://github.com/rust-lang/crates.io-index
+cargo_metadata,0.19.2,MIT,,LICENSE-MIT,Oliver Schneider <git-spam-no-reply9815368754983@oli-obk.de>,https://github.com/oli-obk/cargo_metadata,registry+https://github.com/rust-lang/crates.io-index
+cargo_toml,0.22.3,Apache-2.0 OR MIT,,LICENSE,Kornel <kornel@geekhood.net>,https://gitlab.com/lib.rs/cargo_toml,registry+https://github.com/rust-lang/crates.io-index
+castaway,0.2.4,MIT,,LICENSE,Stephen M. Coakley <me@stephencoakley.com>,https://github.com/sagebind/castaway,registry+https://github.com/rust-lang/crates.io-index
+cc,1.4.7,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rust-lang/cc-rs,registry+https://github.com/rust-lang/crates.io-index
+cesu8,1.1.0,Apache-2.0/MIT,,COPYRIGHT-RUST.txt,Eric Kidd <git@randomhacks.net>,https://github.com/emk/cesu8-rs,registry+https://github.com/rust-lang/crates.io-index
+cfb,0.7.3,MIT,,LICENSE,Matthew D. Steele <mdsteele@alum.mit.edu>,https://github.com/mdsteele/rust-cfb,registry+https://github.com/rust-lang/crates.io-index
+cfg-expr,0.15.8,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Embark <opensource@embark-studios.com>; Jake Shadle <jake.shadle@embark-studios.com>,https://github.com/EmbarkStudios/cfg-expr,registry+https://github.com/rust-lang/crates.io-index
+cfg-if,1.0.5,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Alex Crichton <alex@alexcrichton.com>,https://github.com/rust-lang/cfg-if,registry+https://github.com/rust-lang/crates.io-index
+chrono,0.4.45,MIT OR Apache-2.0,,LICENSE.txt,,https://github.com/chronotope/chrono,registry+https://github.com/rust-lang/crates.io-index
+combine,4.6.8,MIT,,LICENSE,Markus Westerlind <marwes91@gmail.com>,https://github.com/Marwes/combine,registry+https://github.com/rust-lang/crates.io-index
+compact_str,0.9.1,MIT,,LICENSE,Parker Timmerman <parker@parkertimmerman.com>,https://github.com/ParkMyCar/compact_str,registry+https://github.com/rust-lang/crates.io-index
+concurrent-queue,2.5.0,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Stjepan Glavina <stjepang@gmail.com>; Taiki Endo <te316e89@gmail.com>; John Nunley <dev@notgull.net>,https://github.com/smol-rs/concurrent-queue,registry+https://github.com/rust-lang/crates.io-index
+console,0.16.6,MIT,,LICENSE,,https://github.com/console-rs/console,registry+https://github.com/rust-lang/crates.io-index
+cookie,0.18.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Sergio Benitez <sb@sergio.bz>; Alex Crichton <alex@alexcrichton.com>,https://github.com/SergioBenitez/cookie-rs,registry+https://github.com/rust-lang/crates.io-index
+cookie_store,0.22.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Patrick Fernie <patrick.fernie@gmail.com>,https://github.com/pfernie/cookie_store,registry+https://github.com/rust-lang/crates.io-index
+core-foundation,0.10.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Servo Project Developers,https://github.com/servo/core-foundation-rs,registry+https://github.com/rust-lang/crates.io-index
+core-foundation,0.9.4,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Servo Project Developers,https://github.com/servo/core-foundation-rs,registry+https://github.com/rust-lang/crates.io-index
+core-foundation-sys,0.8.7,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Servo Project Developers,https://github.com/servo/core-foundation-rs,registry+https://github.com/rust-lang/crates.io-index
+core-graphics,0.25.0,MIT OR Apache-2.0,,COPYRIGHT;LICENSE-APACHE;LICENSE-MIT,The Servo Project Developers,https://github.com/servo/core-foundation-rs,registry+https://github.com/rust-lang/crates.io-index
+core-graphics-types,0.2.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Servo Project Developers,https://github.com/servo/core-foundation-rs,registry+https://github.com/rust-lang/crates.io-index
+core_detect,1.0.0,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Thom Chiovoloni <chiovolonit@gmail.com>,https://github.com/thomcc/core_detect,registry+https://github.com/rust-lang/crates.io-index
+cpufeatures,0.2.17,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,RustCrypto Developers,https://github.com/RustCrypto/utils,registry+https://github.com/rust-lang/crates.io-index
+crc32fast,1.5.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Sam Rijs <srijs@airpost.net>; Alex Crichton <alex@alexcrichton.com>,https://github.com/srijs/rust-crc32fast,registry+https://github.com/rust-lang/crates.io-index
+crossbeam-channel,0.5.17,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT;LICENSE-THIRD-PARTY,,https://github.com/crossbeam-rs/crossbeam,registry+https://github.com/rust-lang/crates.io-index
+crossbeam-deque,0.8.8,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/crossbeam-rs/crossbeam,registry+https://github.com/rust-lang/crates.io-index
+crossbeam-epoch,0.9.21,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/crossbeam-rs/crossbeam,registry+https://github.com/rust-lang/crates.io-index
+crossbeam-utils,0.8.23,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/crossbeam-rs/crossbeam,registry+https://github.com/rust-lang/crates.io-index
+crypto-common,0.1.7,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,RustCrypto Developers,https://github.com/RustCrypto/traits,registry+https://github.com/rust-lang/crates.io-index
+cssparser,0.36.0,MPL-2.0,,LICENSE,Simon Sapin <simon.sapin@exyr.org>,https://github.com/servo/rust-cssparser,registry+https://github.com/rust-lang/crates.io-index
+cssparser-macros,0.6.1,MPL-2.0,,LICENSE,Simon Sapin <simon.sapin@exyr.org>,https://github.com/servo/rust-cssparser,registry+https://github.com/rust-lang/crates.io-index
+ctor,0.8.0,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Matt Mastracci <matthew@mastracci.com>,https://github.com/mmastrac/rust-ctor,registry+https://github.com/rust-lang/crates.io-index
+ctor-proc-macro,0.0.7,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Matt Mastracci <matthew@mastracci.com>,https://github.com/mmastrac/rust-ctor,registry+https://github.com/rust-lang/crates.io-index
+daachorse,3.0.3,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Koichi Akabe <vbkaisetsu@gmail.com>; Shunsuke Kanda <shnsk.knd@gmail.com>,https://github.com/daac-tools/daachorse,registry+https://github.com/rust-lang/crates.io-index
+darling,0.20.11,MIT,,LICENSE,Ted Driggs <ted.driggs@outlook.com>,https://github.com/TedDriggs/darling,registry+https://github.com/rust-lang/crates.io-index
+darling,0.24.1,MIT,,LICENSE,Ted Driggs <ted.driggs@outlook.com>,https://github.com/TedDriggs/darling,registry+https://github.com/rust-lang/crates.io-index
+darling_core,0.20.11,MIT,,LICENSE,Ted Driggs <ted.driggs@outlook.com>,https://github.com/TedDriggs/darling,registry+https://github.com/rust-lang/crates.io-index
+darling_core,0.24.1,MIT,,LICENSE,Ted Driggs <ted.driggs@outlook.com>,https://github.com/TedDriggs/darling,registry+https://github.com/rust-lang/crates.io-index
+darling_macro,0.20.11,MIT,,LICENSE,Ted Driggs <ted.driggs@outlook.com>,https://github.com/TedDriggs/darling,registry+https://github.com/rust-lang/crates.io-index
+darling_macro,0.24.1,MIT,,LICENSE,Ted Driggs <ted.driggs@outlook.com>,https://github.com/TedDriggs/darling,registry+https://github.com/rust-lang/crates.io-index
+dary_heap,0.3.9,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Han Mertens <hanmertens@outlook.com>,https://github.com/hanmertens/dary_heap,registry+https://github.com/rust-lang/crates.io-index
+dbus,0.9.12,Apache-2.0/MIT,,LICENSE-APACHE;LICENSE-MIT,David Henningsson <diwic@ubuntu.com>,https://github.com/diwic/dbus-rs,registry+https://github.com/rust-lang/crates.io-index
+defmt,1.1.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Knurling-rs developers,https://github.com/knurling-rs/defmt,registry+https://github.com/rust-lang/crates.io-index
+defmt-macros,1.1.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Knurling-rs developers,https://github.com/knurling-rs/defmt,registry+https://github.com/rust-lang/crates.io-index
+defmt-parser,1.0.0,MIT OR Apache-2.0,,,The Knurling-rs developers,https://github.com/knurling-rs/defmt,registry+https://github.com/rust-lang/crates.io-index
+der,0.8.2,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,RustCrypto Developers,https://github.com/RustCrypto/formats,registry+https://github.com/rust-lang/crates.io-index
+deranged,0.5.8,MIT OR Apache-2.0,,LICENSE-Apache;LICENSE-MIT,Jacob Pratt <jacob@jhpratt.dev>,https://github.com/jhpratt/deranged,registry+https://github.com/rust-lang/crates.io-index
+derive_builder,0.20.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Colin Kiegel <kiegel@gmx.de>; Pascal Hertleif <killercup@gmail.com>; Jan-Erik Rediger <janerik@fnordig.de>; Ted Driggs <ted.driggs@outlook.com>,https://github.com/colin-kiegel/rust-derive-builder,registry+https://github.com/rust-lang/crates.io-index
+derive_builder_core,0.20.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Colin Kiegel <kiegel@gmx.de>; Pascal Hertleif <killercup@gmail.com>; Jan-Erik Rediger <janerik@fnordig.de>; Ted Driggs <ted.driggs@outlook.com>,https://github.com/colin-kiegel/rust-derive-builder,registry+https://github.com/rust-lang/crates.io-index
+derive_builder_macro,0.20.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Colin Kiegel <kiegel@gmx.de>; Pascal Hertleif <killercup@gmail.com>; Jan-Erik Rediger <janerik@fnordig.de>; Ted Driggs <ted.driggs@outlook.com>,https://github.com/colin-kiegel/rust-derive-builder,registry+https://github.com/rust-lang/crates.io-index
+derive_more,2.1.1,MIT,,LICENSE,Jelte Fennema <github-tech@jeltef.nl>,https://github.com/JelteF/derive_more,registry+https://github.com/rust-lang/crates.io-index
+derive_more-impl,2.1.1,MIT,,LICENSE,Jelte Fennema <github-tech@jeltef.nl>,https://github.com/JelteF/derive_more,registry+https://github.com/rust-lang/crates.io-index
+digest,0.10.7,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,RustCrypto Developers,https://github.com/RustCrypto/traits,registry+https://github.com/rust-lang/crates.io-index
+dirs,6.0.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Simon Ochsenreither <simon@ochsenreither.de>,https://github.com/soc/dirs-rs,registry+https://github.com/rust-lang/crates.io-index
+dirs-sys,0.5.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Simon Ochsenreither <simon@ochsenreither.de>,https://github.com/dirs-dev/dirs-sys-rs,registry+https://github.com/rust-lang/crates.io-index
+dispatch2,0.3.1,Zlib OR Apache-2.0 OR MIT,,,Mads Marquart <mads@marquart.dk>; Mary <mary@mary.zone>,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+displaydoc,0.2.7,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Jane Lusby <jlusby@yaah.dev>,https://github.com/yaahc/displaydoc,registry+https://github.com/rust-lang/crates.io-index
+dlopen2,0.8.2,MIT,,,Szymon Wieloch <szymon.wieloch@gmail.com>; Ahmed Masud <ahmed.masud@saf.ai>; OpenByte <development.openbyte@gmail.com>,https://github.com/OpenByteDev/dlopen2,registry+https://github.com/rust-lang/crates.io-index
+dlopen2_derive,0.4.3,MIT,,,Szymon Wieloch <szymon.wieloch@gmail.com>; OpenByte <development.openbyte@gmail.com>,https://github.com/OpenByteDev/dlopen2,registry+https://github.com/rust-lang/crates.io-index
+document-features,0.2.12,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Slint Developers <info@slint.dev>,https://github.com/slint-ui/document-features,registry+https://github.com/rust-lang/crates.io-index
+dom_query,0.27.0,MIT,,LICENSE,niklak <morgenpurple@gmail.com>; importcjj <importcjj@gmail.com>,https://github.com/niklak/dom_query,registry+https://github.com/rust-lang/crates.io-index
+dpi,0.1.2,Apache-2.0 AND MIT,,LICENSE;LICENSE-LIBM-MIT,,https://github.com/rust-windowing/winit,registry+https://github.com/rust-lang/crates.io-index
+dtoa,1.0.11,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/dtoa,registry+https://github.com/rust-lang/crates.io-index
+dtoa-short,0.3.5,MPL-2.0,,LICENSE,Xidorn Quan <me@upsuper.org>,https://github.com/upsuper/dtoa-short,registry+https://github.com/rust-lang/crates.io-index
+dtor,0.3.0,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Matt Mastracci <matthew@mastracci.com>,https://github.com/mmastrac/rust-ctor,registry+https://github.com/rust-lang/crates.io-index
+dtor-proc-macro,0.0.6,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Matt Mastracci <matthew@mastracci.com>,https://github.com/mmastrac/rust-ctor,registry+https://github.com/rust-lang/crates.io-index
+dunce,1.0.5,CC0-1.0 OR MIT-0 OR Apache-2.0,,LICENSE,Kornel <kornel@geekhood.net>,https://gitlab.com/kornelski/dunce,registry+https://github.com/rust-lang/crates.io-index
+dyn-clone,1.0.20,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/dyn-clone,registry+https://github.com/rust-lang/crates.io-index
+either,1.18.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rayon-rs/either,registry+https://github.com/rust-lang/crates.io-index
+embed-resource,3.0.11,MIT,,LICENSE,наб <nabijaczleweli@nabijaczleweli.xyz>; Cat Plus Plus <piotrlegnica@piotrl.pl>; Liigo <liigo@qq.com>; azyobuzin <azyobuzin@users.sourceforge.jp>; Peter Atashian <retep998@gmail.com>; pravic <ehysta@gmail.com>; Gabriel Majeri <gabriel.majeri6@gmail.com>; SonnyX; Johan Andersson <repi@repi.se>; Jordan Poles <jpdev.noreply@gmail.com>; MSxDOS <melcodos@gmail.com>; Jim McGrath <jimmc2@gmail.com>; roblabla <unfiltered@roblab.la>; Jasper Bekkers <jasper@traverseresearch.nl>; Richard Markiewicz <rmarkiewicz@devolutions.net>; Emerson de Freitas Barcelos <emersonfxbx@gmail.com>; Li Keqing <me@kaze.ai>; Alexis Bourget <alexis.bourget@gmail.com>; Michael Farrell <micolous+git@gmail.com>; Jacob Okamoto <oko@oko.io>; Marijn Suijten <marijn@traverseresearch.nl>; Lucas Nogueira <lucas@tauri.app>; CharlesChen0823 <yongchen0823@gmail.com>; Daniel Schaefer <dhs@frame.work>; Rene Leonhardt; ssrlive; Kan-Ru Chen <kanru@kanru.info>; Tony <legendmastertony@gmail.com>; Berrysoft <Strawberry_Str@hotmail.com>; Marcus Ahlberg <marcus.ahlberg@kvaser.com>,https://github.com/nabijaczleweli/rust-embed-resource,registry+https://github.com/rust-lang/crates.io-index
+embed_plist,1.2.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Nikolai Vazquez <hello@nikolaivazquez.com>,https://github.com/nvzqz/embed-plist-rs,registry+https://github.com/rust-lang/crates.io-index
+encode_unicode,1.0.0,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Torbjørn Birch Moltu <t.b.moltu@lyse.net>,https://github.com/tormol/encode_unicode,registry+https://github.com/rust-lang/crates.io-index
+encoding_rs,0.8.41,(Apache-2.0 OR MIT) AND BSD-3-Clause,,COPYRIGHT;LICENSE-APACHE;LICENSE-MIT;LICENSE-WHATWG,Henri Sivonen <hsivonen@hsivonen.fi>,https://github.com/hsivonen/encoding_rs,registry+https://github.com/rust-lang/crates.io-index
+endi,1.1.1,MIT,,LICENSE-MIT,Zeeshan Ali Khan <zeenix@gmail.com>,https://github.com/zeenix/endi,registry+https://github.com/rust-lang/crates.io-index
+enumflags2,0.7.12,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,maik klein <maikklein@googlemail.com>; Maja Kądziołka <maya@compilercrim.es>,https://github.com/meithecatte/enumflags2,registry+https://github.com/rust-lang/crates.io-index
+enumflags2_derive,0.7.12,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,maik klein <maikklein@googlemail.com>; Maja Kądziołka <maya@compilercrim.es>,https://github.com/meithecatte/enumflags2,registry+https://github.com/rust-lang/crates.io-index
+equivalent,1.0.2,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/indexmap-rs/equivalent,registry+https://github.com/rust-lang/crates.io-index
+erased-serde,0.4.10,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/erased-serde,registry+https://github.com/rust-lang/crates.io-index
+errno,0.3.14,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Chris Wong <lambda.fairy@gmail.com>; Dan Gohman <dev@sunfishcode.online>,https://github.com/lambda-fairy/rust-errno,registry+https://github.com/rust-lang/crates.io-index
+esaxx-rs,0.1.10,Apache-2.0,,LICENSE,Nicolas Patry <patry.nicolas@protonmail.com>,https://github.com/Narsil/esaxx-rs,registry+https://github.com/rust-lang/crates.io-index
+event-listener,5.4.2,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Stjepan Glavina <stjepang@gmail.com>; John Nunley <dev@notgull.net>,https://github.com/smol-rs/event-listener,registry+https://github.com/rust-lang/crates.io-index
+event-listener-strategy,0.5.4,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,John Nunley <dev@notgull.net>,https://github.com/smol-rs/event-listener-strategy,registry+https://github.com/rust-lang/crates.io-index
+fallible-iterator,0.3.0,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Steven Fackler <sfackler@gmail.com>,https://github.com/sfackler/rust-fallible-iterator,registry+https://github.com/rust-lang/crates.io-index
+fallible-streaming-iterator,0.1.9,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Steven Fackler <sfackler@gmail.com>,https://github.com/sfackler/fallible-streaming-iterator,registry+https://github.com/rust-lang/crates.io-index
+fastembed,7.0.1,Apache-2.0,,LICENSE,Anush008 <mail@anush.sh>; Josh Niemelä <josh@jniemela.dk>; GrisiaEvy <a115020115@gmail.com>; George MacKerron <georgemackerron@neon.tech>; Timon Vonk <mail@timonv.nl>; Luya Wang <luya.wang@qq.com>; Tri <tri@triandco.com>; Denny Wong <denwong47@hotmail.com>; Alex Rozgo <alex.rozgo@gmail.com>,https://github.com/Anush008/fastembed-rs,registry+https://github.com/rust-lang/crates.io-index
+fastrand,2.5.0,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Stjepan Glavina <stjepang@gmail.com>,https://github.com/smol-rs/fastrand,registry+https://github.com/rust-lang/crates.io-index
+fdeflate,0.3.7,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The image-rs Developers,https://github.com/image-rs/fdeflate,registry+https://github.com/rust-lang/crates.io-index
+field-offset,0.3.6,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Diggory Blake <diggsey@googlemail.com>,https://github.com/Diggsey/rust-field-offset,registry+https://github.com/rust-lang/crates.io-index
+find-msvc-tools,0.1.13,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rust-lang/cc-rs,registry+https://github.com/rust-lang/crates.io-index
+flate2,1.1.10,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Alex Crichton <alex@alexcrichton.com>; Josh Triplett <josh@joshtriplett.org>,https://github.com/rust-lang/flate2-rs,registry+https://github.com/rust-lang/crates.io-index
+fnv,1.0.7,Apache-2.0 / MIT,,LICENSE-APACHE;LICENSE-MIT,Alex Crichton <alex@alexcrichton.com>,https://github.com/servo/rust-fnv,registry+https://github.com/rust-lang/crates.io-index
+foldhash,0.1.5,Zlib,,LICENSE,Orson Peters <orsonpeters@gmail.com>,https://github.com/orlp/foldhash,registry+https://github.com/rust-lang/crates.io-index
+foldhash,0.2.0,Zlib,,LICENSE,Orson Peters <orsonpeters@gmail.com>,https://github.com/orlp/foldhash,registry+https://github.com/rust-lang/crates.io-index
+foreign-types,0.3.2,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Steven Fackler <sfackler@gmail.com>,https://github.com/sfackler/foreign-types,registry+https://github.com/rust-lang/crates.io-index
+foreign-types,0.5.0,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Steven Fackler <sfackler@gmail.com>,https://github.com/sfackler/foreign-types,registry+https://github.com/rust-lang/crates.io-index
+foreign-types-macros,0.2.4,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Steven Fackler <sfackler@gmail.com>,https://github.com/sfackler/foreign-types,registry+https://github.com/rust-lang/crates.io-index
+foreign-types-shared,0.1.1,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Steven Fackler <sfackler@gmail.com>,https://github.com/sfackler/foreign-types,registry+https://github.com/rust-lang/crates.io-index
+foreign-types-shared,0.3.1,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Steven Fackler <sfackler@gmail.com>,https://github.com/sfackler/foreign-types,registry+https://github.com/rust-lang/crates.io-index
+form_urlencoded,1.2.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The rust-url developers,https://github.com/servo/rust-url,registry+https://github.com/rust-lang/crates.io-index
+futures-channel,0.3.34,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rust-lang/futures-rs,registry+https://github.com/rust-lang/crates.io-index
+futures-core,0.3.34,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rust-lang/futures-rs,registry+https://github.com/rust-lang/crates.io-index
+futures-executor,0.3.34,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rust-lang/futures-rs,registry+https://github.com/rust-lang/crates.io-index
+futures-io,0.3.34,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rust-lang/futures-rs,registry+https://github.com/rust-lang/crates.io-index
+futures-lite,2.6.1,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT;LICENSE-THIRD-PARTY,Stjepan Glavina <stjepang@gmail.com>; Contributors to futures-rs,https://github.com/smol-rs/futures-lite,registry+https://github.com/rust-lang/crates.io-index
+futures-macro,0.3.34,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rust-lang/futures-rs,registry+https://github.com/rust-lang/crates.io-index
+futures-sink,0.3.34,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rust-lang/futures-rs,registry+https://github.com/rust-lang/crates.io-index
+futures-task,0.3.34,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rust-lang/futures-rs,registry+https://github.com/rust-lang/crates.io-index
+futures-util,0.3.34,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rust-lang/futures-rs,registry+https://github.com/rust-lang/crates.io-index
+gdk,0.18.2,MIT,,COPYRIGHT;LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk3-rs,registry+https://github.com/rust-lang/crates.io-index
+gdk-pixbuf,0.18.5,MIT,,COPYRIGHT;LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk-rs-core,registry+https://github.com/rust-lang/crates.io-index
+gdk-pixbuf-sys,0.18.0,MIT,,LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk-rs-core,registry+https://github.com/rust-lang/crates.io-index
+gdk-sys,0.18.2,MIT,,LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk3-rs,registry+https://github.com/rust-lang/crates.io-index
+gdkwayland-sys,0.18.2,MIT,,LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk3-rs,registry+https://github.com/rust-lang/crates.io-index
+gdkx11,0.18.2,MIT,,COPYRIGHT;LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk3-rs,registry+https://github.com/rust-lang/crates.io-index
+gdkx11-sys,0.18.2,MIT,,LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk3-rs,registry+https://github.com/rust-lang/crates.io-index
+generic-array,0.14.7,MIT,,LICENSE,Bartłomiej Kamiński <fizyk20@gmail.com>; Aaron Trent <novacrazy@gmail.com>,https://github.com/fizyk20/generic-array.git,registry+https://github.com/rust-lang/crates.io-index
+getrandom,0.2.17,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Rand Project Developers,https://github.com/rust-random/getrandom,registry+https://github.com/rust-lang/crates.io-index
+getrandom,0.3.4,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Rand Project Developers,https://github.com/rust-random/getrandom,registry+https://github.com/rust-lang/crates.io-index
+getrandom,0.4.3,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Rand Project Developers,https://github.com/rust-random/getrandom,registry+https://github.com/rust-lang/crates.io-index
+gio,0.18.4,MIT,,COPYRIGHT;LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk-rs-core,registry+https://github.com/rust-lang/crates.io-index
+gio-sys,0.18.1,MIT,,LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk-rs-core,registry+https://github.com/rust-lang/crates.io-index
+glib,0.18.5,MIT,,COPYRIGHT;LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk-rs-core,registry+https://github.com/rust-lang/crates.io-index
+glib-macros,0.18.5,MIT,,COPYRIGHT;LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk-rs-core,registry+https://github.com/rust-lang/crates.io-index
+glib-sys,0.18.1,MIT,,LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk-rs-core,registry+https://github.com/rust-lang/crates.io-index
+glob,0.3.4,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Rust Project Developers,https://github.com/rust-lang/glob,registry+https://github.com/rust-lang/crates.io-index
+gobject-sys,0.18.0,MIT,,LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk-rs-core,registry+https://github.com/rust-lang/crates.io-index
+gtk,0.18.2,MIT,,COPYRIGHT;LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk3-rs,registry+https://github.com/rust-lang/crates.io-index
+gtk-sys,0.18.2,MIT,,LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk3-rs,registry+https://github.com/rust-lang/crates.io-index
+gtk3-macros,0.18.2,MIT,,COPYRIGHT;LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk3-rs,registry+https://github.com/rust-lang/crates.io-index
+h2,0.4.19,MIT,,LICENSE,Carl Lerche <me@carllerche.com>; Sean McArthur <sean@seanmonstar.com>,https://github.com/hyperium/h2,registry+https://github.com/rust-lang/crates.io-index
+hashbrown,0.12.3,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Amanieu d'Antras <amanieu@gmail.com>,https://github.com/rust-lang/hashbrown,registry+https://github.com/rust-lang/crates.io-index
+hashbrown,0.15.5,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Amanieu d'Antras <amanieu@gmail.com>,https://github.com/rust-lang/hashbrown,registry+https://github.com/rust-lang/crates.io-index
+hashbrown,0.16.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Amanieu d'Antras <amanieu@gmail.com>,https://github.com/rust-lang/hashbrown,registry+https://github.com/rust-lang/crates.io-index
+hashbrown,0.17.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rust-lang/hashbrown,registry+https://github.com/rust-lang/crates.io-index
+hashlink,0.10.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,kyren <kerriganw@gmail.com>,https://github.com/kyren/hashlink,registry+https://github.com/rust-lang/crates.io-index
+heck,0.4.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Without Boats <woboats@gmail.com>,https://github.com/withoutboats/heck,registry+https://github.com/rust-lang/crates.io-index
+heck,0.5.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/withoutboats/heck,registry+https://github.com/rust-lang/crates.io-index
+hermit-abi,0.5.3,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/hermit-os/hermit-rs,registry+https://github.com/rust-lang/crates.io-index
+hex,0.4.3,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,KokaKiwi <kokakiwi@kokakiwi.net>,https://github.com/KokaKiwi/rust-hex,registry+https://github.com/rust-lang/crates.io-index
+hf-hub,0.5.0,Apache-2.0,,LICENSE,,https://github.com/huggingface/hf-hub,registry+https://github.com/rust-lang/crates.io-index
+html5ever,0.38.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The html5ever Project Developers,https://github.com/servo/html5ever,registry+https://github.com/rust-lang/crates.io-index
+http,1.5.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Alex Crichton <alex@alexcrichton.com>; Carl Lerche <me@carllerche.com>; Sean McArthur <sean@seanmonstar.com>,https://github.com/hyperium/http,registry+https://github.com/rust-lang/crates.io-index
+http-body,1.1.0,MIT,,LICENSE,Carl Lerche <me@carllerche.com>; Lucio Franco <luciofranco14@gmail.com>; Sean McArthur <sean@seanmonstar.com>,https://github.com/hyperium/http-body,registry+https://github.com/rust-lang/crates.io-index
+http-body-util,0.1.5,MIT,,LICENSE,Carl Lerche <me@carllerche.com>; Lucio Franco <luciofranco14@gmail.com>; Sean McArthur <sean@seanmonstar.com>,https://github.com/hyperium/http-body,registry+https://github.com/rust-lang/crates.io-index
+httparse,1.10.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Sean McArthur <sean@seanmonstar.com>,https://github.com/seanmonstar/httparse,registry+https://github.com/rust-lang/crates.io-index
+hyper,1.11.1,MIT,,LICENSE,Sean McArthur <sean@seanmonstar.com>,https://github.com/hyperium/hyper,registry+https://github.com/rust-lang/crates.io-index
+hyper-rustls,0.27.10,Apache-2.0 OR ISC OR MIT,,LICENSE-APACHE;LICENSE-ISC;LICENSE-MIT,,https://github.com/rustls/hyper-rustls,registry+https://github.com/rust-lang/crates.io-index
+hyper-tls,0.6.0,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Sean McArthur <sean@seanmonstar.com>,https://github.com/hyperium/hyper-tls,registry+https://github.com/rust-lang/crates.io-index
+hyper-util,0.1.20,MIT,,LICENSE,Sean McArthur <sean@seanmonstar.com>,https://github.com/hyperium/hyper-util,registry+https://github.com/rust-lang/crates.io-index
+iana-time-zone,0.1.65,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Andrew Straw <strawman@astraw.com>; René Kijewski <rene.kijewski@fu-berlin.de>; Ryan Lopopolo <rjl@hyperbo.la>,https://github.com/strawlab/iana-time-zone,registry+https://github.com/rust-lang/crates.io-index
+iana-time-zone-haiku,0.1.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,René Kijewski <crates.io@k6i.de>,https://github.com/strawlab/iana-time-zone,registry+https://github.com/rust-lang/crates.io-index
+ico,0.5.0,MIT,,LICENSE,Matthew D. Steele <mdsteele@alum.mit.edu>,https://github.com/mdsteele/rust-ico,registry+https://github.com/rust-lang/crates.io-index
+icu_collections,2.3.0,Unicode-3.0,,LICENSE,The ICU4X Project Developers,https://github.com/unicode-org/icu4x,registry+https://github.com/rust-lang/crates.io-index
+icu_locale_core,2.3.0,Unicode-3.0,,LICENSE,The ICU4X Project Developers,https://github.com/unicode-org/icu4x,registry+https://github.com/rust-lang/crates.io-index
+icu_normalizer,2.3.0,Unicode-3.0,,LICENSE,The ICU4X Project Developers,https://github.com/unicode-org/icu4x,registry+https://github.com/rust-lang/crates.io-index
+icu_normalizer_data,2.3.0,Unicode-3.0,,LICENSE,The ICU4X Project Developers,https://github.com/unicode-org/icu4x,registry+https://github.com/rust-lang/crates.io-index
+icu_properties,2.3.0,Unicode-3.0,,LICENSE,The ICU4X Project Developers,https://github.com/unicode-org/icu4x,registry+https://github.com/rust-lang/crates.io-index
+icu_properties_data,2.3.0,Unicode-3.0,,LICENSE,The ICU4X Project Developers,https://github.com/unicode-org/icu4x,registry+https://github.com/rust-lang/crates.io-index
+icu_provider,2.3.1,Unicode-3.0,,LICENSE,The ICU4X Project Developers,https://github.com/unicode-org/icu4x,registry+https://github.com/rust-lang/crates.io-index
+ident_case,1.0.1,MIT/Apache-2.0,,LICENSE,Ted Driggs <ted.driggs@outlook.com>,https://github.com/TedDriggs/ident_case,registry+https://github.com/rust-lang/crates.io-index
+idna,1.1.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The rust-url developers,https://github.com/servo/rust-url/,registry+https://github.com/rust-lang/crates.io-index
+idna_adapter,1.2.2,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,The rust-url developers,https://github.com/hsivonen/idna_adapter,registry+https://github.com/rust-lang/crates.io-index
+indexmap,1.9.3,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/bluss/indexmap,registry+https://github.com/rust-lang/crates.io-index
+indexmap,2.14.2,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/indexmap-rs/indexmap,registry+https://github.com/rust-lang/crates.io-index
+indicatif,0.18.6,MIT,,LICENSE,,https://github.com/console-rs/indicatif,registry+https://github.com/rust-lang/crates.io-index
+infer,0.19.0,MIT,,LICENSE,Bojan <dbojan@gmail.com>,https://github.com/bojand/infer,registry+https://github.com/rust-lang/crates.io-index
+ipnet,2.12.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Kris Price <kris@krisprice.nz>,https://github.com/krisprice/ipnet,registry+https://github.com/rust-lang/crates.io-index
+is-docker,0.2.0,MIT,,LICENSE,Sean Larkin <TheLarkInn@users.noreply.github.com>,https://github.com/TheLarkInn/is-docker,registry+https://github.com/rust-lang/crates.io-index
+is-wsl,0.4.0,MIT,,LICENSE,Sean Larkin <TheLarkInn@users.noreply.github.com>,https://github.com/TheLarkInn/is-wsl,registry+https://github.com/rust-lang/crates.io-index
+itertools,0.14.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,bluss,https://github.com/rust-itertools/itertools,registry+https://github.com/rust-lang/crates.io-index
+itoa,1.0.18,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/itoa,registry+https://github.com/rust-lang/crates.io-index
+javascriptcore-rs,1.1.2,MIT,,LICENSE,,https://github.com/tauri-apps/javascriptcore-rs,registry+https://github.com/rust-lang/crates.io-index
+javascriptcore-rs-sys,1.1.1,MIT,,LICENSE,The Gtk-rs Project Developers,https://github.com/tauri-apps/javascriptcore-rs,registry+https://github.com/rust-lang/crates.io-index
+jiff,0.2.37,Unlicense OR MIT,,COPYING;LICENSE-MIT,Andrew Gallant <jamslam@gmail.com>,https://github.com/BurntSushi/jiff,registry+https://github.com/rust-lang/crates.io-index
+jiff-core,0.1.1,Unlicense OR MIT,,COPYING;LICENSE-MIT,Andrew Gallant <jamslam@gmail.com>,https://github.com/BurntSushi/jiff,registry+https://github.com/rust-lang/crates.io-index
+jiff-static,0.2.37,Unlicense OR MIT,,COPYING;LICENSE-MIT,Andrew Gallant <jamslam@gmail.com>,https://github.com/BurntSushi/jiff,registry+https://github.com/rust-lang/crates.io-index
+jiff-tzdb,0.1.8,Unlicense OR MIT,,COPYING;LICENSE-MIT,Andrew Gallant <jamslam@gmail.com>,https://github.com/BurntSushi/jiff,registry+https://github.com/rust-lang/crates.io-index
+jiff-tzdb-platform,0.1.3,Unlicense OR MIT,,COPYING;LICENSE-MIT,Andrew Gallant <jamslam@gmail.com>,https://github.com/BurntSushi/jiff,registry+https://github.com/rust-lang/crates.io-index
+jni,0.21.1,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Josh Chase <josh@prevoty.com>,https://github.com/jni-rs/jni-rs,registry+https://github.com/rust-lang/crates.io-index
+jni-sys,0.3.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Steven Fackler <sfackler@gmail.com>,https://github.com/jni-rs/jni-sys,registry+https://github.com/rust-lang/crates.io-index
+jni-sys,0.4.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Steven Fackler <sfackler@gmail.com>; Robert Bragg <robert@sixbynine.org>,https://github.com/jni-rs/jni-sys,registry+https://github.com/rust-lang/crates.io-index
+jni-sys-macros,0.4.1,MIT OR Apache-2.0,,,Robert Bragg <robert@sixbynine.org>,https://github.com/jni-rs/jni-sys,registry+https://github.com/rust-lang/crates.io-index
+js-sys,0.3.105,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The wasm-bindgen Developers,https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/js-sys,registry+https://github.com/rust-lang/crates.io-index
+json-patch,3.0.1,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Ivan Dubrov <dubrov.ivan@gmail.com>,https://github.com/idubrov/json-patch,registry+https://github.com/rust-lang/crates.io-index
+jsonptr,0.6.3,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,chance dinkins; André Sá de Mello <codasm@pm.me>,https://github.com/chanced/jsonptr,registry+https://github.com/rust-lang/crates.io-index
+keyboard-types,0.7.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Pyfisch <pyfisch@posteo.org>,https://github.com/pyfisch/keyboard-types,registry+https://github.com/rust-lang/crates.io-index
+libappindicator,0.9.0,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,,,registry+https://github.com/rust-lang/crates.io-index
+libappindicator-sys,0.9.0,Apache-2.0 OR MIT,,,,,registry+https://github.com/rust-lang/crates.io-index
+libc,0.2.189,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rust-lang/libc,registry+https://github.com/rust-lang/crates.io-index
+libdbus-sys,0.2.7,Apache-2.0/MIT,,LICENSE-APACHE;LICENSE-MIT,David Henningsson <diwic@ubuntu.com>,https://github.com/diwic/dbus-rs,registry+https://github.com/rust-lang/crates.io-index
+libloading,0.7.4,ISC,,LICENSE,Simonas Kazlauskas <libloading@kazlauskas.me>,https://github.com/nagisa/rust_libloading/,registry+https://github.com/rust-lang/crates.io-index
+libloading,0.9.0,ISC,,LICENSE,Simonas Kazlauskas <libloading@kazlauskas.me>,https://github.com/nagisa/rust_libloading/,registry+https://github.com/rust-lang/crates.io-index
+libredox,0.1.24,MIT,,LICENSE,4lDO2 <4lDO2@protonmail.com>,https://gitlab.redox-os.org/redox-os/libredox.git,registry+https://github.com/rust-lang/crates.io-index
+libsqlite3-sys,0.35.0,MIT,,LICENSE,The rusqlite developers,https://github.com/rusqlite/rusqlite,registry+https://github.com/rust-lang/crates.io-index
+linux-raw-sys,0.12.1,Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT,,COPYRIGHT;LICENSE-APACHE;LICENSE-Apache-2.0_WITH_LLVM-exception;LICENSE-MIT,Dan Gohman <dev@sunfishcode.online>,https://github.com/sunfishcode/linux-raw-sys,registry+https://github.com/rust-lang/crates.io-index
+litemap,0.8.3,Unicode-3.0,,LICENSE,The ICU4X Project Developers,https://github.com/unicode-org/icu4x,registry+https://github.com/rust-lang/crates.io-index
+litrs,1.0.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Lukas Kalbertodt <lukas.kalbertodt@gmail.com>,https://github.com/LukasKalbertodt/litrs,registry+https://github.com/rust-lang/crates.io-index
+lock_api,0.4.14,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Amanieu d'Antras <amanieu@gmail.com>,https://github.com/Amanieu/parking_lot,registry+https://github.com/rust-lang/crates.io-index
+log,0.4.34,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Rust Project Developers,https://github.com/rust-lang/log,registry+https://github.com/rust-lang/crates.io-index
+macro_rules_attribute,0.2.3,Apache-2.0 OR MIT OR Zlib,,LICENSE-APACHE;LICENSE-MIT;LICENSE-ZLIB,Daniel Henry-Mantilla <daniel.henry.mantilla@gmail.com>,https://github.com/danielhenrymantilla/macro_rules_attribute-rs,registry+https://github.com/rust-lang/crates.io-index
+macro_rules_attribute-proc_macro,0.2.3,Apache-2.0 OR MIT OR Zlib,,LICENSE-APACHE;LICENSE-MIT;LICENSE-ZLIB,Daniel Henry-Mantilla <daniel.henry.mantilla@gmail.com>,https://github.com/danielhenrymantilla/macro_rules_attribute-rs,registry+https://github.com/rust-lang/crates.io-index
+markup5ever,0.38.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The html5ever Project Developers,https://github.com/servo/html5ever,registry+https://github.com/rust-lang/crates.io-index
+matrixmultiply,0.3.11,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,bluss; R. Janis Goldschmidt,https://github.com/bluss/matrixmultiply/,registry+https://github.com/rust-lang/crates.io-index
+memchr,2.8.3,Unlicense OR MIT,,COPYING;LICENSE-MIT,Andrew Gallant <jamslam@gmail.com>; bluss,https://github.com/BurntSushi/memchr,registry+https://github.com/rust-lang/crates.io-index
+memoffset,0.9.1,MIT,,LICENSE,Gilad Naaman <gilad.naaman@gmail.com>,https://github.com/Gilnaa/memoffset,registry+https://github.com/rust-lang/crates.io-index
+mime,0.3.17,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Sean McArthur <sean@seanmonstar.com>,https://github.com/hyperium/mime,registry+https://github.com/rust-lang/crates.io-index
+minimal-lexical,0.2.1,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT;LICENSE.md,Alex Huszagh <ahuszagh@gmail.com>,https://github.com/Alexhuszagh/minimal-lexical,registry+https://github.com/rust-lang/crates.io-index
+miniz_oxide,0.8.9,MIT OR Zlib OR Apache-2.0,,LICENSE;LICENSE-APACHE.md;LICENSE-MIT.md;LICENSE-ZLIB.md,Frommi <daniil.liferenko@gmail.com>; oyvindln <oyvindln@users.noreply.github.com>; Rich Geldreich richgel99@gmail.com,https://github.com/Frommi/miniz_oxide/tree/master/miniz_oxide,registry+https://github.com/rust-lang/crates.io-index
+miniz_oxide,0.9.1,MIT OR Zlib OR Apache-2.0,,LICENSE;LICENSE-APACHE.md;LICENSE-MIT.md;LICENSE-ZLIB.md,Frommi <daniil.liferenko@gmail.com>; oyvindln <oyvindln@users.noreply.github.com>; Rich Geldreich richgel99@gmail.com,https://github.com/Frommi/miniz_oxide/tree/master/miniz_oxide,registry+https://github.com/rust-lang/crates.io-index
+mio,1.2.3,MIT,,LICENSE,Carl Lerche <me@carllerche.com>; Thomas de Zeeuw <thomasdezeeuw@gmail.com>; Tokio Contributors <team@tokio.rs>,https://github.com/tokio-rs/mio,registry+https://github.com/rust-lang/crates.io-index
+monostate,0.1.18,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/monostate,registry+https://github.com/rust-lang/crates.io-index
+monostate-impl,0.1.18,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/monostate,registry+https://github.com/rust-lang/crates.io-index
+muda,0.19.3,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT;LICENSE.spdx,,https://github.com/tauri-apps/muda,registry+https://github.com/rust-lang/crates.io-index
+multiversion,0.9.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Caleb Zulawski <caleb.zulawski@gmail.com>,https://github.com/calebzulawski/multiversion,registry+https://github.com/rust-lang/crates.io-index
+multiversion-macros,0.9.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Caleb Zulawski <caleb.zulawski@gmail.com>,https://github.com/calebzulawski/multiversion,registry+https://github.com/rust-lang/crates.io-index
+multiversion_no_op,1.0.0,Apache-2.0 OR MIT,,COPYRIGHT;LICENSE-APACHE;LICENSE-MIT,Henri Sivonen <hsivonen@hsivonen.fi>,https://github.com/hsivonen/multiversion_no_op,registry+https://github.com/rust-lang/crates.io-index
+native-tls,0.2.18,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Steven Fackler <sfackler@gmail.com>,https://github.com/rust-native-tls/rust-native-tls,registry+https://github.com/rust-lang/crates.io-index
+ndarray,0.17.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,"Ulrik Sverdrup ""bluss""; Jim Turner",https://github.com/rust-ndarray/ndarray,registry+https://github.com/rust-lang/crates.io-index
+ndk,0.9.0,MIT OR Apache-2.0,,,The Rust Mobile contributors,https://github.com/rust-mobile/ndk,registry+https://github.com/rust-lang/crates.io-index
+ndk-sys,0.6.0+11769913,MIT OR Apache-2.0,,,The Rust Windowing contributors,https://github.com/rust-mobile/ndk,registry+https://github.com/rust-lang/crates.io-index
+new_debug_unreachable,1.0.6,MIT,,LICENSE-MIT,Matt Brubeck <mbrubeck@limpet.net>; Jonathan Reem <jonathan.reem@gmail.com>,https://github.com/mbrubeck/rust-debug-unreachable,registry+https://github.com/rust-lang/crates.io-index
+nom,7.1.3,MIT,,LICENSE,contact@geoffroycouprie.com,https://github.com/Geal/nom,registry+https://github.com/rust-lang/crates.io-index
+num-complex,0.4.6,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Rust Project Developers,https://github.com/rust-num/num-complex,registry+https://github.com/rust-lang/crates.io-index
+num-conv,0.2.2,MIT OR Apache-2.0,,LICENSE-Apache;LICENSE-MIT,Jacob Pratt <jacob@jhpratt.dev>,https://github.com/jhpratt/num-conv,registry+https://github.com/rust-lang/crates.io-index
+num-integer,0.1.47,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Rust Project Developers,https://github.com/rust-num/num-integer,registry+https://github.com/rust-lang/crates.io-index
+num-traits,0.2.19,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Rust Project Developers,https://github.com/rust-num/num-traits,registry+https://github.com/rust-lang/crates.io-index
+num_enum,0.7.6,BSD-3-Clause OR MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-BSD;LICENSE-MIT,Daniel Wagner-Hall <dawagner@gmail.com>; Daniel Henry-Mantilla <daniel.henry.mantilla@gmail.com>; Vincent Esche <regexident@gmail.com>,https://github.com/illicitonion/num_enum,registry+https://github.com/rust-lang/crates.io-index
+num_enum_derive,0.7.6,BSD-3-Clause OR MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-BSD;LICENSE-MIT,Daniel Wagner-Hall <dawagner@gmail.com>; Daniel Henry-Mantilla <daniel.henry.mantilla@gmail.com>; Vincent Esche <regexident@gmail.com>,https://github.com/illicitonion/num_enum,registry+https://github.com/rust-lang/crates.io-index
+objc2,0.6.4,MIT,,,Mads Marquart <mads@marquart.dk>,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+objc2-app-kit,0.3.2,Zlib OR Apache-2.0 OR MIT,,,,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+objc2-cloud-kit,0.3.2,Zlib OR Apache-2.0 OR MIT,,,,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+objc2-core-data,0.3.2,Zlib OR Apache-2.0 OR MIT,,,,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+objc2-core-foundation,0.3.2,Zlib OR Apache-2.0 OR MIT,,,,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+objc2-core-graphics,0.3.2,Zlib OR Apache-2.0 OR MIT,,,,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+objc2-core-image,0.3.2,Zlib OR Apache-2.0 OR MIT,,,,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+objc2-core-location,0.3.2,Zlib OR Apache-2.0 OR MIT,,,,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+objc2-core-text,0.3.2,Zlib OR Apache-2.0 OR MIT,,,,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+objc2-encode,4.1.0,MIT,,,Mads Marquart <mads@marquart.dk>,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+objc2-exception-helper,0.1.1,Zlib OR Apache-2.0 OR MIT,,,Mads Marquart <mads@marquart.dk>,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+objc2-foundation,0.3.2,MIT,,,,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+objc2-io-surface,0.3.2,Zlib OR Apache-2.0 OR MIT,,,,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+objc2-quartz-core,0.3.2,Zlib OR Apache-2.0 OR MIT,,,,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+objc2-ui-kit,0.3.2,Zlib OR Apache-2.0 OR MIT,,,,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+objc2-user-notifications,0.3.2,Zlib OR Apache-2.0 OR MIT,,,,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+objc2-web-kit,0.3.2,Zlib OR Apache-2.0 OR MIT,,,,https://github.com/madsmtm/objc2,registry+https://github.com/rust-lang/crates.io-index
+once_cell,1.21.4,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Aleksey Kladov <aleksey.kladov@gmail.com>,https://github.com/matklad/once_cell,registry+https://github.com/rust-lang/crates.io-index
+onig,6.5.3,MIT,,LICENSE.md,Will Speak <will@willspeak.me>; Ivan Ivashchenko <defuz@me.com>,https://github.com/iwillspeak/rust-onig,registry+https://github.com/rust-lang/crates.io-index
+onig_sys,69.9.3,MIT,,LICENSE.md,Will Speak <will@willspeak.me>; Ivan Ivashchenko <defuz@me.com>,https://github.com/rust-onig/rust-onig,registry+https://github.com/rust-lang/crates.io-index
+open,5.4.4,MIT,,LICENSE.md,Sebastian Thiel <byronimo@gmail.com>,https://github.com/Byron/open-rs,registry+https://github.com/rust-lang/crates.io-index
+openssl,0.10.81,Apache-2.0,,LICENSE;LICENSE-APACHE,Steven Fackler <sfackler@gmail.com>,https://github.com/rust-openssl/rust-openssl,registry+https://github.com/rust-lang/crates.io-index
+openssl-macros,0.1.1,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,,registry+https://github.com/rust-lang/crates.io-index
+openssl-probe,0.2.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Alex Crichton <alex@alexcrichton.com>,https://github.com/rustls/openssl-probe,registry+https://github.com/rust-lang/crates.io-index
+openssl-sys,0.9.117,MIT,,LICENSE-MIT,Alex Crichton <alex@alexcrichton.com>; Steven Fackler <sfackler@gmail.com>,https://github.com/rust-openssl/rust-openssl,registry+https://github.com/rust-lang/crates.io-index
+option-ext,0.2.0,MPL-2.0,,LICENSE.txt,Simon Ochsenreither <simon@ochsenreither.de>,https://github.com/soc/option-ext.git,registry+https://github.com/rust-lang/crates.io-index
+ordered-stream,0.2.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Daniel De Graaf <code@danieldg.net>; Zeeshan Ali Khan <zeeshanak@gnome.org>,https://github.com/danieldg/ordered-stream,registry+https://github.com/rust-lang/crates.io-index
+ort,2.0.0-rc.13,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,pyke.io <contact@pyke.io>; Nicolas Bigaouette <nbigaouette@gmail.com>,https://github.com/pykeio/ort,registry+https://github.com/rust-lang/crates.io-index
+ort-sys,2.0.0-rc.13,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,pyke.io <contact@pyke.io>,https://github.com/pykeio/ort,registry+https://github.com/rust-lang/crates.io-index
+pango,0.18.3,MIT,,COPYRIGHT;LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk-rs-core,registry+https://github.com/rust-lang/crates.io-index
+pango-sys,0.18.0,MIT,,LICENSE,The gtk-rs Project Developers,https://github.com/gtk-rs/gtk-rs-core,registry+https://github.com/rust-lang/crates.io-index
+parking,2.2.1,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT;LICENSE-THIRD-PARTY,Stjepan Glavina <stjepang@gmail.com>; The Rust Project Developers,https://github.com/smol-rs/parking,registry+https://github.com/rust-lang/crates.io-index
+parking_lot,0.12.5,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Amanieu d'Antras <amanieu@gmail.com>,https://github.com/Amanieu/parking_lot,registry+https://github.com/rust-lang/crates.io-index
+parking_lot_core,0.9.12,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Amanieu d'Antras <amanieu@gmail.com>,https://github.com/Amanieu/parking_lot,registry+https://github.com/rust-lang/crates.io-index
+paste,1.0.15,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/paste,registry+https://github.com/rust-lang/crates.io-index
+pastey,0.2.3,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Aditya Kumar <git@adityais.dev>; David Tolnay <dtolnay@gmail.com>,https://github.com/as1100k/pastey,registry+https://github.com/rust-lang/crates.io-index
+pem-rfc7468,1.0.0,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,RustCrypto Developers,https://github.com/RustCrypto/formats,registry+https://github.com/rust-lang/crates.io-index
+percent-encoding,2.3.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The rust-url developers,https://github.com/servo/rust-url/,registry+https://github.com/rust-lang/crates.io-index
+phf,0.13.1,MIT,,LICENSE,Steven Fackler <sfackler@gmail.com>,https://github.com/rust-phf/rust-phf,registry+https://github.com/rust-lang/crates.io-index
+phf_codegen,0.13.1,MIT,,LICENSE,Steven Fackler <sfackler@gmail.com>,https://github.com/rust-phf/rust-phf,registry+https://github.com/rust-lang/crates.io-index
+phf_generator,0.13.1,MIT,,LICENSE,Steven Fackler <sfackler@gmail.com>,https://github.com/rust-phf/rust-phf,registry+https://github.com/rust-lang/crates.io-index
+phf_macros,0.13.1,MIT,,LICENSE,Steven Fackler <sfackler@gmail.com>,https://github.com/rust-phf/rust-phf,registry+https://github.com/rust-lang/crates.io-index
+phf_shared,0.13.1,MIT,,LICENSE,Steven Fackler <sfackler@gmail.com>,https://github.com/rust-phf/rust-phf,registry+https://github.com/rust-lang/crates.io-index
+pin-project-lite,0.2.17,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/taiki-e/pin-project-lite,registry+https://github.com/rust-lang/crates.io-index
+piper,0.2.5,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Stjepan Glavina <stjepang@gmail.com>; John Nunley <dev@notgull.net>,https://github.com/smol-rs/piper,registry+https://github.com/rust-lang/crates.io-index
+pkg-config,0.3.34,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Alex Crichton <alex@alexcrichton.com>,https://github.com/rust-lang/pkg-config-rs,registry+https://github.com/rust-lang/crates.io-index
+plist,1.10.1,MIT,,LICENCE,Ed Barnard <eabarnard@gmail.com>,https://github.com/ebarnard/rust-plist/,registry+https://github.com/rust-lang/crates.io-index
+png,0.17.16,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The image-rs Developers,https://github.com/image-rs/image-png,registry+https://github.com/rust-lang/crates.io-index
+png,0.18.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The image-rs Developers,https://github.com/image-rs/image-png,registry+https://github.com/rust-lang/crates.io-index
+polling,3.11.0,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Stjepan Glavina <stjepang@gmail.com>; John Nunley <dev@notgull.net>,https://github.com/smol-rs/polling,registry+https://github.com/rust-lang/crates.io-index
+portable-atomic,1.15.0,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/taiki-e/portable-atomic,registry+https://github.com/rust-lang/crates.io-index
+portable-atomic-util,0.2.8,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/taiki-e/portable-atomic-util,registry+https://github.com/rust-lang/crates.io-index
+potential_utf,0.1.6,Unicode-3.0,,LICENSE,The ICU4X Project Developers,https://github.com/unicode-org/icu4x,registry+https://github.com/rust-lang/crates.io-index
+powerfmt,0.2.0,MIT OR Apache-2.0,,LICENSE-Apache;LICENSE-MIT,Jacob Pratt <jacob@jhpratt.dev>,https://github.com/jhpratt/powerfmt,registry+https://github.com/rust-lang/crates.io-index
+ppv-lite86,0.2.21,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The CryptoCorrosion Contributors,https://github.com/cryptocorrosion/cryptocorrosion,registry+https://github.com/rust-lang/crates.io-index
+precomputed-hash,0.1.1,MIT,,LICENSE,Emilio Cobos Álvarez <emilio@crisal.io>,https://github.com/emilio/precomputed-hash,registry+https://github.com/rust-lang/crates.io-index
+proc-macro-crate,1.3.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Bastian Köcher <git@kchr.de>,https://github.com/bkchr/proc-macro-crate,registry+https://github.com/rust-lang/crates.io-index
+proc-macro-crate,2.0.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Bastian Köcher <git@kchr.de>,https://github.com/bkchr/proc-macro-crate,registry+https://github.com/rust-lang/crates.io-index
+proc-macro-crate,3.5.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Bastian Köcher <git@kchr.de>,https://github.com/bkchr/proc-macro-crate,registry+https://github.com/rust-lang/crates.io-index
+proc-macro-error,1.0.4,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,CreepySkeleton <creepy-skeleton@yandex.ru>,https://gitlab.com/CreepySkeleton/proc-macro-error,registry+https://github.com/rust-lang/crates.io-index
+proc-macro-error-attr,1.0.4,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,CreepySkeleton <creepy-skeleton@yandex.ru>,https://gitlab.com/CreepySkeleton/proc-macro-error,registry+https://github.com/rust-lang/crates.io-index
+proc-macro2,1.0.107,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>; Alex Crichton <alex@alexcrichton.com>,https://github.com/dtolnay/proc-macro2,registry+https://github.com/rust-lang/crates.io-index
+quick-xml,0.42.0,MIT,,LICENSE-MIT.md,,https://github.com/tafia/quick-xml,registry+https://github.com/rust-lang/crates.io-index
+quote,1.0.47,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/quote,registry+https://github.com/rust-lang/crates.io-index
+r-efi,5.3.0,MIT OR Apache-2.0 OR LGPL-2.1-or-later,,,,https://github.com/r-efi/r-efi,registry+https://github.com/rust-lang/crates.io-index
+r-efi,6.0.0,MIT OR Apache-2.0 OR LGPL-2.1-or-later,,,,https://github.com/r-efi/r-efi,registry+https://github.com/rust-lang/crates.io-index
+rand,0.9.5,MIT OR Apache-2.0,,COPYRIGHT;LICENSE-APACHE;LICENSE-MIT,The Rand Project Developers; The Rust Project Developers,https://github.com/rust-random/rand,registry+https://github.com/rust-lang/crates.io-index
+rand_chacha,0.9.0,MIT OR Apache-2.0,,COPYRIGHT;LICENSE-APACHE;LICENSE-MIT,The Rand Project Developers; The Rust Project Developers; The CryptoCorrosion Contributors,https://github.com/rust-random/rand,registry+https://github.com/rust-lang/crates.io-index
+rand_core,0.9.5,MIT OR Apache-2.0,,COPYRIGHT;LICENSE-APACHE;LICENSE-MIT,The Rand Project Developers; The Rust Project Developers,https://github.com/rust-random/rand,registry+https://github.com/rust-lang/crates.io-index
+raw-window-handle,0.6.2,MIT OR Apache-2.0 OR Zlib,,LICENSE-APACHE.md;LICENSE-MIT.md;LICENSE-ZLIB.md,Osspial <osspial@gmail.com>,https://github.com/rust-windowing/raw-window-handle,registry+https://github.com/rust-lang/crates.io-index
+rawpointer,0.2.1,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,bluss,https://github.com/bluss/rawpointer/,registry+https://github.com/rust-lang/crates.io-index
+rayon,1.12.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rayon-rs/rayon,registry+https://github.com/rust-lang/crates.io-index
+rayon-cond,0.4.0,Apache-2.0/MIT,,LICENSE-APACHE;LICENSE-MIT,Josh Stone <cuviper@gmail.com>,https://github.com/cuviper/rayon-cond,registry+https://github.com/rust-lang/crates.io-index
+rayon-core,1.13.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rayon-rs/rayon,registry+https://github.com/rust-lang/crates.io-index
+redox_syscall,0.5.18,MIT,,LICENSE,Jeremy Soller <jackpot51@gmail.com>,https://gitlab.redox-os.org/redox-os/syscall,registry+https://github.com/rust-lang/crates.io-index
+redox_users,0.5.3,MIT,,LICENSE,Jose Narvaez <goyox86@gmail.com>; Wesley Hershberger <mggmugginsmc@gmail.com>,https://gitlab.redox-os.org/redox-os/users,registry+https://github.com/rust-lang/crates.io-index
+ref-cast,1.0.27,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/ref-cast,registry+https://github.com/rust-lang/crates.io-index
+ref-cast-impl,1.0.27,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/ref-cast,registry+https://github.com/rust-lang/crates.io-index
+regex,1.13.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Rust Project Developers; Andrew Gallant <jamslam@gmail.com>,https://github.com/rust-lang/regex,registry+https://github.com/rust-lang/crates.io-index
+regex-automata,0.4.18,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Rust Project Developers; Andrew Gallant <jamslam@gmail.com>,https://github.com/rust-lang/regex,registry+https://github.com/rust-lang/crates.io-index
+regex-syntax,0.8.11,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Rust Project Developers; Andrew Gallant <jamslam@gmail.com>,https://github.com/rust-lang/regex,registry+https://github.com/rust-lang/crates.io-index
+reqwest,0.12.28,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Sean McArthur <sean@seanmonstar.com>,https://github.com/seanmonstar/reqwest,registry+https://github.com/rust-lang/crates.io-index
+reqwest,0.13.5,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Sean McArthur <sean@seanmonstar.com>,https://github.com/seanmonstar/reqwest,registry+https://github.com/rust-lang/crates.io-index
+ring,0.17.14,Apache-2.0 AND ISC,,LICENSE;LICENSE-BoringSSL;LICENSE-other-bits,,https://github.com/briansmith/ring,registry+https://github.com/rust-lang/crates.io-index
+rusqlite,0.37.0,MIT,,LICENSE,The rusqlite developers,https://github.com/rusqlite/rusqlite,registry+https://github.com/rust-lang/crates.io-index
+rustc-hash,2.1.3,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,The Rust Project Developers,https://github.com/rust-lang/rustc-hash,registry+https://github.com/rust-lang/crates.io-index
+rustc_version,0.4.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/djc/rustc-version-rs,registry+https://github.com/rust-lang/crates.io-index
+rustix,1.1.5,Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT,,COPYRIGHT;LICENSE-APACHE;LICENSE-Apache-2.0_WITH_LLVM-exception;LICENSE-MIT,Dan Gohman <dev@sunfishcode.online>; Jakub Konka <kubkon@jakubkonka.com>,https://github.com/bytecodealliance/rustix,registry+https://github.com/rust-lang/crates.io-index
+rustls,0.23.45,Apache-2.0 OR ISC OR MIT,,LICENSE-APACHE;LICENSE-ISC;LICENSE-MIT,,https://github.com/rustls/rustls,registry+https://github.com/rust-lang/crates.io-index
+rustls-pki-types,1.15.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rustls/pki-types,registry+https://github.com/rust-lang/crates.io-index
+rustls-webpki,0.103.15,ISC,,LICENSE,,https://github.com/rustls/webpki,registry+https://github.com/rust-lang/crates.io-index
+rustversion,1.0.23,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/rustversion,registry+https://github.com/rust-lang/crates.io-index
+ryu,1.0.23,Apache-2.0 OR BSL-1.0,,LICENSE-APACHE;LICENSE-BOOST,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/ryu,registry+https://github.com/rust-lang/crates.io-index
+safetensors,0.8.0,Apache-2.0,,LICENSE,,https://github.com/huggingface/safetensors,registry+https://github.com/rust-lang/crates.io-index
+same-file,1.0.6,Unlicense/MIT,,COPYING;LICENSE-MIT,Andrew Gallant <jamslam@gmail.com>,https://github.com/BurntSushi/same-file,registry+https://github.com/rust-lang/crates.io-index
+schannel,0.1.29,MIT,,LICENSE.md,Steven Fackler <sfackler@gmail.com>; Steffen Butzer <steffen.butzer@outlook.com>,https://github.com/steffengy/schannel-rs,registry+https://github.com/rust-lang/crates.io-index
+schemars,0.8.22,MIT,,LICENSE,Graham Esau <gesau@hotmail.co.uk>,https://github.com/GREsau/schemars,registry+https://github.com/rust-lang/crates.io-index
+schemars,0.9.0,MIT,,LICENSE,Graham Esau <gesau@hotmail.co.uk>,https://github.com/GREsau/schemars,registry+https://github.com/rust-lang/crates.io-index
+schemars,1.2.2,MIT,,LICENSE,Graham Esau <gesau@hotmail.co.uk>,https://github.com/GREsau/schemars,registry+https://github.com/rust-lang/crates.io-index
+schemars_derive,0.8.22,MIT,,LICENSE,Graham Esau <gesau@hotmail.co.uk>,https://github.com/GREsau/schemars,registry+https://github.com/rust-lang/crates.io-index
+scopeguard,1.2.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,bluss,https://github.com/bluss/scopeguard,registry+https://github.com/rust-lang/crates.io-index
+security-framework,3.7.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Steven Fackler <sfackler@gmail.com>; Kornel <kornel@geekhood.net>,https://github.com/kornelski/rust-security-framework,registry+https://github.com/rust-lang/crates.io-index
+security-framework-sys,2.17.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Steven Fackler <sfackler@gmail.com>; Kornel <kornel@geekhood.net>,https://github.com/kornelski/rust-security-framework,registry+https://github.com/rust-lang/crates.io-index
+selectors,0.36.1,MPL-2.0,,,The Servo Project Developers,https://github.com/servo/stylo,registry+https://github.com/rust-lang/crates.io-index
+semver,1.0.28,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/semver,registry+https://github.com/rust-lang/crates.io-index
+serde,1.0.229,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Erick Tryzelaar <erick.tryzelaar@gmail.com>; David Tolnay <dtolnay@gmail.com>,https://github.com/serde-rs/serde,registry+https://github.com/rust-lang/crates.io-index
+serde-untagged,0.1.9,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/serde-untagged,registry+https://github.com/rust-lang/crates.io-index
+serde_core,1.0.229,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Erick Tryzelaar <erick.tryzelaar@gmail.com>; David Tolnay <dtolnay@gmail.com>,https://github.com/serde-rs/serde,registry+https://github.com/rust-lang/crates.io-index
+serde_derive,1.0.229,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Erick Tryzelaar <erick.tryzelaar@gmail.com>; David Tolnay <dtolnay@gmail.com>,https://github.com/serde-rs/serde,registry+https://github.com/rust-lang/crates.io-index
+serde_derive_internals,0.29.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Erick Tryzelaar <erick.tryzelaar@gmail.com>; David Tolnay <dtolnay@gmail.com>,https://github.com/serde-rs/serde,registry+https://github.com/rust-lang/crates.io-index
+serde_json,1.0.151,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Erick Tryzelaar <erick.tryzelaar@gmail.com>; David Tolnay <dtolnay@gmail.com>,https://github.com/serde-rs/json,registry+https://github.com/rust-lang/crates.io-index
+serde_repr,0.1.21,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/serde-repr,registry+https://github.com/rust-lang/crates.io-index
+serde_spanned,0.6.9,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/toml-rs/toml,registry+https://github.com/rust-lang/crates.io-index
+serde_spanned,1.1.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/toml-rs/toml,registry+https://github.com/rust-lang/crates.io-index
+serde_urlencoded,0.7.1,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Anthony Ramine <n.oxyde@gmail.com>,https://github.com/nox/serde_urlencoded,registry+https://github.com/rust-lang/crates.io-index
+serde_with,3.23.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Jonas Bushart; Marcin Kaźmierczak,https://github.com/jonasbb/serde_with/,registry+https://github.com/rust-lang/crates.io-index
+serde_with_macros,3.23.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Jonas Bushart,https://github.com/jonasbb/serde_with/,registry+https://github.com/rust-lang/crates.io-index
+serialize-to-javascript,0.1.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Chip Reed <chip@chip.sh>,https://github.com/chippers/serialize-to-javascript,registry+https://github.com/rust-lang/crates.io-index
+serialize-to-javascript-impl,0.1.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Chip Reed <chip@chip.sh>,https://github.com/chippers/serialize-to-javascript,registry+https://github.com/rust-lang/crates.io-index
+servo_arc,0.4.3,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Servo Project Developers,https://github.com/servo/stylo,registry+https://github.com/rust-lang/crates.io-index
+sha2,0.10.9,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,RustCrypto Developers,https://github.com/RustCrypto/hashes,registry+https://github.com/rust-lang/crates.io-index
+shlex,2.0.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,comex <comexk@gmail.com>; Fenhl <fenhl@fenhl.net>; Adrian Taylor <adetaylor@chromium.org>; Alex Touchet <alextouchet@outlook.com>; Daniel Parks <dp+git@oxidized.org>; Garrett Berg <googberg@gmail.com>,https://github.com/comex/rust-shlex,registry+https://github.com/rust-lang/crates.io-index
+signal-hook-registry,1.4.8,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Michal 'vorner' Vaner <vorner@vorner.cz>; Masaki Hara <ackie.h.gmai@gmail.com>,https://github.com/vorner/signal-hook,registry+https://github.com/rust-lang/crates.io-index
+simd-adler32,0.3.10,MIT,,LICENSE.md,Marvin Countryman <me@maar.vin>,https://github.com/mcountryman/simd-adler32,registry+https://github.com/rust-lang/crates.io-index
+simdutf8,0.1.5,MIT OR Apache-2.0,,LICENSE-Apache;LICENSE-MIT,Hans Kratz <hans@appfour.com>,https://github.com/rusticstuff/simdutf8,registry+https://github.com/rust-lang/crates.io-index
+siphasher,1.0.3,MIT/Apache-2.0,,COPYING,Frank Denis <github@pureftpd.org>,https://github.com/jedisct1/rust-siphash,registry+https://github.com/rust-lang/crates.io-index
+slab,0.4.12,MIT,,LICENSE,Carl Lerche <me@carllerche.com>,https://github.com/tokio-rs/slab,registry+https://github.com/rust-lang/crates.io-index
+smallvec,1.16.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Servo Project Developers,https://github.com/servo/rust-smallvec,registry+https://github.com/rust-lang/crates.io-index
+socket2,0.6.5,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Alex Crichton <alex@alexcrichton.com>; Thomas de Zeeuw <thomasdezeeuw@gmail.com>,https://github.com/rust-lang/socket2,registry+https://github.com/rust-lang/crates.io-index
+socks,0.3.4,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Steven Fackler <sfackler@gmail.com>,https://github.com/sfackler/rust-socks,registry+https://github.com/rust-lang/crates.io-index
+softbuffer,0.4.8,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rust-windowing/softbuffer,registry+https://github.com/rust-lang/crates.io-index
+soup3,0.5.0,MIT,,LICENSE,,https://gitlab.gnome.org/World/Rust/soup3-rs,registry+https://github.com/rust-lang/crates.io-index
+soup3-sys,0.5.0,MIT,,LICENSE,The Gtk-rs Project Developers,https://gitlab.gnome.org/World/Rust/soup3-rs,registry+https://github.com/rust-lang/crates.io-index
+spm_precompiled,0.1.4,Apache-2.0,,LICENSE,Nicolas Patry <patry.nicolas@protonmail.com>,https://github.com/huggingface/spm_precompiled,registry+https://github.com/rust-lang/crates.io-index
+stable_deref_trait,1.2.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Robert Grosse <n210241048576@gmail.com>,https://github.com/storyyeller/stable_deref_trait,registry+https://github.com/rust-lang/crates.io-index
+static_assertions,1.1.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Nikolai Vazquez,https://github.com/nvzqz/static-assertions-rs,registry+https://github.com/rust-lang/crates.io-index
+string_cache,0.9.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Servo Project Developers,https://github.com/servo/string-cache,registry+https://github.com/rust-lang/crates.io-index
+string_cache_codegen,0.6.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The Servo Project Developers,https://github.com/servo/string-cache,registry+https://github.com/rust-lang/crates.io-index
+strsim,0.11.1,MIT,,LICENSE,Danny Guo <danny@dannyguo.com>; maxbachmann <oss@maxbachmann.de>,https://github.com/rapidfuzz/strsim-rs,registry+https://github.com/rust-lang/crates.io-index
+subtle,2.6.1,BSD-3-Clause,,LICENSE,Isis Lovecruft <isis@patternsinthevoid.net>; Henry de Valence <hdevalence@hdevalence.ca>,https://github.com/dalek-cryptography/subtle,registry+https://github.com/rust-lang/crates.io-index
+swift-rs,1.0.8,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The swift-rs contributors,https://github.com/Brendonovich/swift-rs,registry+https://github.com/rust-lang/crates.io-index
+syn,1.0.109,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/syn,registry+https://github.com/rust-lang/crates.io-index
+syn,2.0.119,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/syn,registry+https://github.com/rust-lang/crates.io-index
+syn,3.0.6,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/syn,registry+https://github.com/rust-lang/crates.io-index
+sync_wrapper,1.0.2,Apache-2.0,,LICENSE,Actyx AG <developer@actyx.io>,https://github.com/Actyx/sync_wrapper,registry+https://github.com/rust-lang/crates.io-index
+synstructure,0.14.0,MIT,,LICENSE,Nika Layzell <nika@thelayzells.com>,https://github.com/mystor/synstructure,registry+https://github.com/rust-lang/crates.io-index
+system-configuration,0.7.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Mullvad VPN,https://github.com/mullvad/system-configuration-rs,registry+https://github.com/rust-lang/crates.io-index
+system-configuration-sys,0.6.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Mullvad VPN,https://github.com/mullvad/system-configuration-rs,registry+https://github.com/rust-lang/crates.io-index
+system-deps,6.2.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Guillaume Desmottes <guillaume.desmottes@collabora.com>; Josh Triplett <josh@joshtriplett.org>,https://github.com/gdesmott/system-deps,registry+https://github.com/rust-lang/crates.io-index
+tao,0.35.3,Apache-2.0,,LICENSE;LICENSE.spdx,Tauri Programme within The Commons Conservancy; The winit contributors,https://github.com/tauri-apps/tao,registry+https://github.com/rust-lang/crates.io-index
+tao-macros,0.1.4,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT;LICENSE.spdx,Tauri Programme within The Commons Conservancy,https://github.com/tauri-apps/tao,registry+https://github.com/rust-lang/crates.io-index
+target-lexicon,0.12.16,Apache-2.0 WITH LLVM-exception,,LICENSE,Dan Gohman <sunfish@mozilla.com>,https://github.com/bytecodealliance/target-lexicon,registry+https://github.com/rust-lang/crates.io-index
+tauri,2.11.6,Apache-2.0 OR MIT,,LICENSE_APACHE-2.0;LICENSE_MIT,Tauri Programme within The Commons Conservancy,https://github.com/tauri-apps/tauri,registry+https://github.com/rust-lang/crates.io-index
+tauri-build,2.6.3,Apache-2.0 OR MIT,,LICENSE_APACHE-2.0;LICENSE_MIT,Tauri Programme within The Commons Conservancy,https://github.com/tauri-apps/tauri,registry+https://github.com/rust-lang/crates.io-index
+tauri-codegen,2.6.3,Apache-2.0 OR MIT,,LICENSE_APACHE-2.0;LICENSE_MIT,Tauri Programme within The Commons Conservancy,https://github.com/tauri-apps/tauri,registry+https://github.com/rust-lang/crates.io-index
+tauri-macros,2.6.3,Apache-2.0 OR MIT,,LICENSE_APACHE-2.0;LICENSE_MIT,Tauri Programme within The Commons Conservancy,https://github.com/tauri-apps/tauri,registry+https://github.com/rust-lang/crates.io-index
+tauri-plugin,2.6.3,Apache-2.0 OR MIT,,,Tauri Programme within The Commons Conservancy,https://github.com/tauri-apps/tauri,registry+https://github.com/rust-lang/crates.io-index
+tauri-plugin-opener,2.5.5,Apache-2.0 OR MIT,,LICENSE.spdx;LICENSE_APACHE-2.0;LICENSE_MIT,Tauri Programme within The Commons Conservancy,https://github.com/tauri-apps/plugins-workspace,registry+https://github.com/rust-lang/crates.io-index
+tauri-runtime,2.11.3,Apache-2.0 OR MIT,,LICENSE_APACHE-2.0;LICENSE_MIT,Tauri Programme within The Commons Conservancy,https://github.com/tauri-apps/tauri,registry+https://github.com/rust-lang/crates.io-index
+tauri-runtime-wry,2.11.4,Apache-2.0 OR MIT,,LICENSE_APACHE-2.0;LICENSE_MIT,Tauri Programme within The Commons Conservancy,https://github.com/tauri-apps/tauri,registry+https://github.com/rust-lang/crates.io-index
+tauri-utils,2.9.3,Apache-2.0 OR MIT,,LICENSE_APACHE-2.0;LICENSE_MIT,Tauri Programme within The Commons Conservancy,https://github.com/tauri-apps/tauri,registry+https://github.com/rust-lang/crates.io-index
+tauri-winres,0.3.6,MIT,,LICENSE,Tauri Programme within The Commons Conservancy; Max Resch <resch.max@gmail.com>,https://github.com/tauri-apps/winres,registry+https://github.com/rust-lang/crates.io-index
+tempfile,3.27.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Steven Allen <steven@stebalien.com>; The Rust Project Developers; Ashley Mannix <ashleymannix@live.com.au>; Jason White <me@jasonwhite.io>,https://github.com/Stebalien/tempfile,registry+https://github.com/rust-lang/crates.io-index
+tendril,0.5.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Keegan McAllister <mcallister.keegan@gmail.com>; Simon Sapin <simon.sapin@exyr.org>; Chris Morgan <me@chrismorgan.info>,https://github.com/servo/html5ever,registry+https://github.com/rust-lang/crates.io-index
+thiserror,1.0.69,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/thiserror,registry+https://github.com/rust-lang/crates.io-index
+thiserror,2.0.20,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/thiserror,registry+https://github.com/rust-lang/crates.io-index
+thiserror-impl,1.0.69,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/thiserror,registry+https://github.com/rust-lang/crates.io-index
+thiserror-impl,2.0.20,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/thiserror,registry+https://github.com/rust-lang/crates.io-index
+time,0.3.55,MIT OR Apache-2.0,,LICENSE-Apache;LICENSE-MIT,Jacob Pratt <open-source@jhpratt.dev>; Time contributors,https://github.com/time-rs/time,registry+https://github.com/rust-lang/crates.io-index
+time-core,0.1.9,MIT OR Apache-2.0,,LICENSE-Apache;LICENSE-MIT,Jacob Pratt <open-source@jhpratt.dev>; Time contributors,https://github.com/time-rs/time,registry+https://github.com/rust-lang/crates.io-index
+time-macros,0.2.32,MIT OR Apache-2.0,,LICENSE-Apache;LICENSE-MIT,Jacob Pratt <open-source@jhpratt.dev>; Time contributors,https://github.com/time-rs/time,registry+https://github.com/rust-lang/crates.io-index
+tinystr,0.8.4,Unicode-3.0,,LICENSE,The ICU4X Project Developers,https://github.com/unicode-org/icu4x,registry+https://github.com/rust-lang/crates.io-index
+tinyvec,1.13.3,Zlib OR Apache-2.0 OR MIT,,LICENSE-APACHE.md;LICENSE-MIT.md;LICENSE-ZLIB.md,Lokathor <zefria@gmail.com>,https://github.com/Lokathor/tinyvec,registry+https://github.com/rust-lang/crates.io-index
+tokenizers,0.23.2,Apache-2.0,,LICENSE,Anthony MOI <m.anthony.moi@gmail.com>; Nicolas Patry <patry.nicolas@protonmail.com>,https://github.com/huggingface/tokenizers,registry+https://github.com/rust-lang/crates.io-index
+tokio,1.53.1,MIT,,LICENSE,Tokio Contributors <team@tokio.rs>,https://github.com/tokio-rs/tokio,registry+https://github.com/rust-lang/crates.io-index
+tokio-native-tls,0.3.1,MIT,,LICENSE,Tokio Contributors <team@tokio.rs>,https://github.com/tokio-rs/tls,registry+https://github.com/rust-lang/crates.io-index
+tokio-rustls,0.26.5,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/rustls/tokio-rustls,registry+https://github.com/rust-lang/crates.io-index
+tokio-util,0.7.19,MIT,,LICENSE,Tokio Contributors <team@tokio.rs>,https://github.com/tokio-rs/tokio,registry+https://github.com/rust-lang/crates.io-index
+toml,0.8.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Alex Crichton <alex@alexcrichton.com>,https://github.com/toml-rs/toml,registry+https://github.com/rust-lang/crates.io-index
+toml,0.9.12+spec-1.1.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/toml-rs/toml,registry+https://github.com/rust-lang/crates.io-index
+toml,1.1.6+spec-1.1.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/toml-rs/toml,registry+https://github.com/rust-lang/crates.io-index
+toml_datetime,0.6.3,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Alex Crichton <alex@alexcrichton.com>,https://github.com/toml-rs/toml,registry+https://github.com/rust-lang/crates.io-index
+toml_datetime,0.7.5+spec-1.1.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/toml-rs/toml,registry+https://github.com/rust-lang/crates.io-index
+toml_datetime,1.1.1+spec-1.1.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/toml-rs/toml,registry+https://github.com/rust-lang/crates.io-index
+toml_edit,0.19.15,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Andronik Ordian <write@reusable.software>; Ed Page <eopage@gmail.com>,https://github.com/toml-rs/toml,registry+https://github.com/rust-lang/crates.io-index
+toml_edit,0.20.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Andronik Ordian <write@reusable.software>; Ed Page <eopage@gmail.com>,https://github.com/toml-rs/toml,registry+https://github.com/rust-lang/crates.io-index
+toml_edit,0.25.15+spec-1.1.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/toml-rs/toml,registry+https://github.com/rust-lang/crates.io-index
+toml_parser,1.1.3+spec-1.1.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/toml-rs/toml,registry+https://github.com/rust-lang/crates.io-index
+toml_writer,1.1.2+spec-1.1.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/toml-rs/toml,registry+https://github.com/rust-lang/crates.io-index
+tower,0.5.3,MIT,,LICENSE,Tower Maintainers <team@tower-rs.com>,https://github.com/tower-rs/tower,registry+https://github.com/rust-lang/crates.io-index
+tower-http,0.6.11,MIT,,LICENSE,Tower Maintainers <team@tower-rs.com>,https://github.com/tower-rs/tower-http,registry+https://github.com/rust-lang/crates.io-index
+tower-layer,0.3.3,MIT,,LICENSE,Tower Maintainers <team@tower-rs.com>,https://github.com/tower-rs/tower,registry+https://github.com/rust-lang/crates.io-index
+tower-service,0.3.3,MIT,,LICENSE,Tower Maintainers <team@tower-rs.com>,https://github.com/tower-rs/tower,registry+https://github.com/rust-lang/crates.io-index
+tracing,0.1.44,MIT,,LICENSE,Eliza Weisman <eliza@buoyant.io>; Tokio Contributors <team@tokio.rs>,https://github.com/tokio-rs/tracing,registry+https://github.com/rust-lang/crates.io-index
+tracing-attributes,0.1.31,MIT,,LICENSE,Tokio Contributors <team@tokio.rs>; Eliza Weisman <eliza@buoyant.io>; David Barsky <dbarsky@amazon.com>,https://github.com/tokio-rs/tracing,registry+https://github.com/rust-lang/crates.io-index
+tracing-core,0.1.36,MIT,,LICENSE,Tokio Contributors <team@tokio.rs>,https://github.com/tokio-rs/tracing,registry+https://github.com/rust-lang/crates.io-index
+tray-icon,0.24.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT;LICENSE.spdx,,https://github.com/tauri-apps/tray-icon,registry+https://github.com/rust-lang/crates.io-index
+try-lock,0.2.5,MIT,,LICENSE,Sean McArthur <sean@seanmonstar.com>,https://github.com/seanmonstar/try-lock,registry+https://github.com/rust-lang/crates.io-index
+typeid,1.0.3,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/typeid,registry+https://github.com/rust-lang/crates.io-index
+typenum,1.20.1,MIT OR Apache-2.0,,LICENSE;LICENSE-APACHE;LICENSE-MIT,,https://github.com/paholg/typenum,registry+https://github.com/rust-lang/crates.io-index
+uds_windows,1.2.1,MIT,,LICENSE,Azure IoT Edge Devs; Harald Hoyer <harald@redhat.com>,https://github.com/haraldh/rust_uds_windows,registry+https://github.com/rust-lang/crates.io-index
+unic-char-property,0.9.0,MIT/Apache-2.0,,,The UNIC Project Developers,https://github.com/open-i18n/rust-unic/,registry+https://github.com/rust-lang/crates.io-index
+unic-char-range,0.9.0,MIT/Apache-2.0,,,The UNIC Project Developers,https://github.com/open-i18n/rust-unic/,registry+https://github.com/rust-lang/crates.io-index
+unic-common,0.9.0,MIT/Apache-2.0,,,The UNIC Project Developers,https://github.com/open-i18n/rust-unic/,registry+https://github.com/rust-lang/crates.io-index
+unic-ucd-ident,0.9.0,MIT/Apache-2.0,,,The UNIC Project Developers,https://github.com/open-i18n/rust-unic/,registry+https://github.com/rust-lang/crates.io-index
+unic-ucd-version,0.9.0,MIT/Apache-2.0,,,The UNIC Project Developers,https://github.com/open-i18n/rust-unic/,registry+https://github.com/rust-lang/crates.io-index
+unicode-ident,1.0.26,(MIT OR Apache-2.0) AND Unicode-3.0,,LICENSE-APACHE;LICENSE-MIT;LICENSE-UNICODE,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/unicode-ident,registry+https://github.com/rust-lang/crates.io-index
+unicode-normalization-alignments,0.1.12,MIT/Apache-2.0,,COPYRIGHT;LICENSE-APACHE;LICENSE-MIT,Anthony MOI <m.anthony.moi@gmail.com>,https://github.com/n1t0/unicode-normalization,registry+https://github.com/rust-lang/crates.io-index
+unicode-segmentation,1.13.3,MIT OR Apache-2.0,,COPYRIGHT;LICENSE-APACHE;LICENSE-MIT,kwantam <kwantam@gmail.com>; Manish Goregaokar <manishsmail@gmail.com>,https://github.com/unicode-rs/unicode-segmentation,registry+https://github.com/rust-lang/crates.io-index
+unicode-width,0.2.2,MIT OR Apache-2.0,,COPYRIGHT;LICENSE-APACHE;LICENSE-MIT,kwantam <kwantam@gmail.com>; Manish Goregaokar <manishsmail@gmail.com>,https://github.com/unicode-rs/unicode-width,registry+https://github.com/rust-lang/crates.io-index
+unicode_categories,0.1.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Sean Gillespie <sean@swgillespie.me>,https://github.com/swgillespie/unicode-categories,registry+https://github.com/rust-lang/crates.io-index
+unit-prefix,0.5.2,MIT,,LICENSE,Fabio Valentini <decathorpe@gmail.com>; Benjamin Sago <ogham@bsago.me>,https://codeberg.org/commons-rs/unit-prefix,registry+https://github.com/rust-lang/crates.io-index
+untrusted,0.9.0,ISC,,LICENSE.txt,Brian Smith <brian@briansmith.org>,https://github.com/briansmith/untrusted,registry+https://github.com/rust-lang/crates.io-index
+ureq,3.4.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Martin Algesten <martin@algesten.se>; Jacob Hoffman-Andrews <ureq@hoffman-andrews.com>,https://github.com/algesten/ureq,registry+https://github.com/rust-lang/crates.io-index
+ureq-proto,0.6.4,MIT OR Apache-2.0,,LICENSE-APACHE.txt;LICENSE-MIT.txt,Martin Algesten <martin@algesten.se>,https://github.com/algesten/ureq-proto,registry+https://github.com/rust-lang/crates.io-index
+url,2.5.8,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The rust-url developers,https://github.com/servo/rust-url,registry+https://github.com/rust-lang/crates.io-index
+urlpattern,0.3.0,MIT,,LICENSE,the Deno authors; crowlKats <crowlkats@toaxl.com>,https://github.com/denoland/rust-urlpattern,registry+https://github.com/rust-lang/crates.io-index
+utf8-zero,0.8.1,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Simon Sapin <simon.sapin@exyr.org>; Martin Algesten <martin@algesten.se>,https://github.com/algesten/utf8-zero,registry+https://github.com/rust-lang/crates.io-index
+utf8_iter,1.0.4,Apache-2.0 OR MIT,,COPYRIGHT;LICENSE-APACHE;LICENSE-MIT,Henri Sivonen <hsivonen@hsivonen.fi>,https://github.com/hsivonen/utf8_iter,registry+https://github.com/rust-lang/crates.io-index
+uuid,1.26.1,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,Ashley Mannix<ashleymannix@live.com.au>; Dylan DPC<dylan.dpc@gmail.com>; Hunar Roop Kahlon<hunar.roop@gmail.com>,https://github.com/uuid-rs/uuid,registry+https://github.com/rust-lang/crates.io-index
+vcpkg,0.2.15,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Jim McGrath <jimmc2@gmail.com>,https://github.com/mcgoo/vcpkg-rs,registry+https://github.com/rust-lang/crates.io-index
+version-compare,0.2.1,MIT,,LICENSE,Tim Visee <3a4fb3964f@sinenomine.email>,https://gitlab.com/timvisee/version-compare,registry+https://github.com/rust-lang/crates.io-index
+version_check,0.9.5,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Sergio Benitez <sb@sergio.bz>,https://github.com/SergioBenitez/version_check,registry+https://github.com/rust-lang/crates.io-index
+vswhom,0.1.0,MIT,,LICENSE,nabijaczleweli <nabijaczleweli@gmail.com>,https://github.com/nabijaczleweli/vswhom.rs,registry+https://github.com/rust-lang/crates.io-index
+vswhom-sys,0.1.3,MIT,,LICENSE,наб <nabijaczleweli@nabijaczleweli.xyz>; forrestsmithfb <forrest.smith@fb.com>,https://github.com/nabijaczleweli/vswhom-sys.rs,registry+https://github.com/rust-lang/crates.io-index
+walkdir,2.5.0,Unlicense/MIT,,COPYING;LICENSE-MIT,Andrew Gallant <jamslam@gmail.com>,https://github.com/BurntSushi/walkdir,registry+https://github.com/rust-lang/crates.io-index
+want,0.3.1,MIT,,LICENSE,Sean McArthur <sean@seanmonstar.com>,https://github.com/seanmonstar/want,registry+https://github.com/rust-lang/crates.io-index
+wasi,0.11.1+wasi-snapshot-preview1,Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-Apache-2.0_WITH_LLVM-exception;LICENSE-MIT,The Cranelift Project Developers,https://github.com/bytecodealliance/wasi,registry+https://github.com/rust-lang/crates.io-index
+wasip2,1.0.4+wasi-0.2.12,Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-Apache-2.0_WITH_LLVM-exception;LICENSE-MIT,,https://github.com/bytecodealliance/wasi-rs,registry+https://github.com/rust-lang/crates.io-index
+wasm-bindgen,0.2.128,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The wasm-bindgen Developers,https://github.com/wasm-bindgen/wasm-bindgen,registry+https://github.com/rust-lang/crates.io-index
+wasm-bindgen-futures,0.4.78,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The wasm-bindgen Developers,https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/futures,registry+https://github.com/rust-lang/crates.io-index
+wasm-bindgen-macro,0.2.128,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The wasm-bindgen Developers,https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/macro,registry+https://github.com/rust-lang/crates.io-index
+wasm-bindgen-macro-support,0.2.128,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The wasm-bindgen Developers,https://github.com/wasm-bindgen/wasm-bindgen/tree/main/crates/macro-support,registry+https://github.com/rust-lang/crates.io-index
+wasm-bindgen-shared,0.2.128,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The wasm-bindgen Developers,https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/shared,registry+https://github.com/rust-lang/crates.io-index
+wasm-streams,0.4.2,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Mattias Buelens <mattias@buelens.com>,https://github.com/MattiasBuelens/wasm-streams/,registry+https://github.com/rust-lang/crates.io-index
+wasm-streams,0.5.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Mattias Buelens <mattias@buelens.com>,https://github.com/MattiasBuelens/wasm-streams/,registry+https://github.com/rust-lang/crates.io-index
+web-sys,0.3.105,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The wasm-bindgen Developers,https://github.com/wasm-bindgen/wasm-bindgen/tree/master/crates/web-sys,registry+https://github.com/rust-lang/crates.io-index
+web-time,1.1.0,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,,https://github.com/daxpedda/web-time,registry+https://github.com/rust-lang/crates.io-index
+web_atoms,0.2.6,MIT OR Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,The html5ever Project Developers,https://github.com/servo/html5ever,registry+https://github.com/rust-lang/crates.io-index
+webkit2gtk,2.0.2,MIT,,LICENSE,,https://github.com/tauri-apps/webkit2gtk-rs,registry+https://github.com/rust-lang/crates.io-index
+webkit2gtk-sys,2.0.2,MIT,,LICENSE,,https://github.com/tauri-apps/webkit2gtk-rs,registry+https://github.com/rust-lang/crates.io-index
+webpki-root-certs,1.0.9,CDLA-Permissive-2.0,,LICENSE,,https://github.com/rustls/webpki-roots,registry+https://github.com/rust-lang/crates.io-index
+webpki-roots,1.0.9,CDLA-Permissive-2.0,,LICENSE,,https://github.com/rustls/webpki-roots,registry+https://github.com/rust-lang/crates.io-index
+webview2-com,0.38.2,MIT,,,,https://github.com/wravery/webview2-rs,registry+https://github.com/rust-lang/crates.io-index
+webview2-com-macros,0.8.1,MIT,,,,https://github.com/wravery/webview2-rs,registry+https://github.com/rust-lang/crates.io-index
+webview2-com-sys,0.38.2,MIT,,,,https://github.com/wravery/webview2-rs,registry+https://github.com/rust-lang/crates.io-index
+winapi,0.3.9,MIT/Apache-2.0,,LICENSE-APACHE;LICENSE-MIT,Peter Atashian <retep998@gmail.com>,https://github.com/retep998/winapi-rs,registry+https://github.com/rust-lang/crates.io-index
+winapi-i686-pc-windows-gnu,0.4.0,MIT/Apache-2.0,,,Peter Atashian <retep998@gmail.com>,https://github.com/retep998/winapi-rs,registry+https://github.com/rust-lang/crates.io-index
+winapi-util,0.1.11,Unlicense OR MIT,,COPYING;LICENSE-MIT,Andrew Gallant <jamslam@gmail.com>,https://github.com/BurntSushi/winapi-util,registry+https://github.com/rust-lang/crates.io-index
+winapi-x86_64-pc-windows-gnu,0.4.0,MIT/Apache-2.0,,,Peter Atashian <retep998@gmail.com>,https://github.com/retep998/winapi-rs,registry+https://github.com/rust-lang/crates.io-index
+window-vibrancy,0.6.0,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT;LICENSE.spdx,Tauri Programme within The Commons Conservancy,https://github.com/tauri-apps/tauri-plugin-vibrancy,registry+https://github.com/rust-lang/crates.io-index
+windows,0.61.3,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-collections,0.2.0,MIT OR Apache-2.0,,license-apache-2.0;license-mit,,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-core,0.61.2,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-core,0.62.2,MIT OR Apache-2.0,,license-apache-2.0;license-mit,,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-future,0.2.1,MIT OR Apache-2.0,,license-apache-2.0;license-mit,,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-implement,0.60.2,MIT OR Apache-2.0,,license-apache-2.0;license-mit,,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-interface,0.59.3,MIT OR Apache-2.0,,license-apache-2.0;license-mit,,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-link,0.1.3,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-link,0.2.1,MIT OR Apache-2.0,,license-apache-2.0;license-mit,,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-numerics,0.2.0,MIT OR Apache-2.0,,license-apache-2.0;license-mit,,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-registry,0.6.1,MIT OR Apache-2.0,,license-apache-2.0;license-mit,,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-result,0.3.4,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-result,0.4.1,MIT OR Apache-2.0,,license-apache-2.0;license-mit,,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-strings,0.4.2,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-strings,0.5.1,MIT OR Apache-2.0,,license-apache-2.0;license-mit,,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-sys,0.45.0,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-sys,0.52.0,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-sys,0.59.0,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-sys,0.61.2,MIT OR Apache-2.0,,license-apache-2.0;license-mit,,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-targets,0.42.2,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-targets,0.52.6,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-threading,0.1.0,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows-version,0.1.7,MIT OR Apache-2.0,,license-apache-2.0;license-mit,,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows_aarch64_gnullvm,0.42.2,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows_aarch64_gnullvm,0.52.6,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows_aarch64_msvc,0.42.2,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows_aarch64_msvc,0.52.6,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows_i686_gnu,0.42.2,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows_i686_gnu,0.52.6,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows_i686_gnullvm,0.52.6,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows_i686_msvc,0.42.2,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows_i686_msvc,0.52.6,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows_x86_64_gnu,0.42.2,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows_x86_64_gnu,0.52.6,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows_x86_64_gnullvm,0.42.2,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows_x86_64_gnullvm,0.52.6,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows_x86_64_msvc,0.42.2,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+windows_x86_64_msvc,0.52.6,MIT OR Apache-2.0,,license-apache-2.0;license-mit,Microsoft,https://github.com/microsoft/windows-rs,registry+https://github.com/rust-lang/crates.io-index
+winnow,0.5.40,MIT,,LICENSE-MIT,,https://github.com/winnow-rs/winnow,registry+https://github.com/rust-lang/crates.io-index
+winnow,0.7.15,MIT,,LICENSE-MIT,,https://github.com/winnow-rs/winnow,registry+https://github.com/rust-lang/crates.io-index
+winnow,1.0.4,MIT,,LICENSE-MIT,,https://github.com/winnow-rs/winnow,registry+https://github.com/rust-lang/crates.io-index
+winreg,0.55.0,MIT,,LICENSE,Igor Shaula <gentoo90@gmail.com>,https://github.com/gentoo90/winreg-rs,registry+https://github.com/rust-lang/crates.io-index
+wit-bindgen,0.57.1,Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-Apache-2.0_WITH_LLVM-exception;LICENSE-MIT,Alex Crichton <alex@alexcrichton.com>,https://github.com/bytecodealliance/wit-bindgen,registry+https://github.com/rust-lang/crates.io-index
+writeable,0.6.4,Unicode-3.0,,LICENSE,The ICU4X Project Developers,https://github.com/unicode-org/icu4x,registry+https://github.com/rust-lang/crates.io-index
+wry,0.55.1,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT;LICENSE.spdx,Tauri Programme within The Commons Conservancy,https://github.com/tauri-apps/wry,registry+https://github.com/rust-lang/crates.io-index
+x11,2.21.0,MIT,,LICENSE-MIT,daggerbot <daggerbot@gmail.com>; Erle Pereira <erle@erlepereira.com>; AltF02 <contact@altf2.dev>,https://github.com/AltF02/x11-rs.git,registry+https://github.com/rust-lang/crates.io-index
+x11-dl,2.21.0,MIT,,LICENSE-MIT,daggerbot <daggerbot@gmail.com>; Erle Pereira <erle@erlepereira.com>; AltF02 <contact@altf2.dev>,https://github.com/AltF02/x11-rs.git,registry+https://github.com/rust-lang/crates.io-index
+yoke,0.8.3,Unicode-3.0,,LICENSE,Manish Goregaokar <manishsmail@gmail.com>,https://github.com/unicode-org/icu4x,registry+https://github.com/rust-lang/crates.io-index
+yoke-derive,0.8.3,Unicode-3.0,,LICENSE,Manish Goregaokar <manishsmail@gmail.com>,https://github.com/unicode-org/icu4x,registry+https://github.com/rust-lang/crates.io-index
+zbus,5.19.0,MIT,,LICENSE,Zeeshan Ali Khan <zeeshanak@gnome.org>,https://github.com/z-galaxy/zbus/,registry+https://github.com/rust-lang/crates.io-index
+zbus_macros,5.19.0,MIT,,LICENSE,Marc-André Lureau <marcandre.lureau@redhat.com>; Zeeshan Ali Khan <zeeshanak@gnome.org>,https://github.com/z-galaxy/zbus/,registry+https://github.com/rust-lang/crates.io-index
+zbus_names,4.3.4,MIT,,LICENSE,Zeeshan Ali Khan <zeeshanak@gnome.org>,https://github.com/z-galaxy/zbus/,registry+https://github.com/rust-lang/crates.io-index
+zcheapstr,1.1.0,MIT,,LICENSE,Zeeshan Ali Khan <zeeshanak@gnome.org>,https://github.com/z-galaxy/zcheapstr/,registry+https://github.com/rust-lang/crates.io-index
+zerocopy,0.8.57,BSD-2-Clause OR Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-BSD;LICENSE-MIT,,https://github.com/google/zerocopy,registry+https://github.com/rust-lang/crates.io-index
+zerocopy-derive,0.8.57,BSD-2-Clause OR Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-BSD;LICENSE-MIT,,https://github.com/google/zerocopy,registry+https://github.com/rust-lang/crates.io-index
+zerofrom,0.1.8,Unicode-3.0,,LICENSE,The ICU4X Project Developers,https://github.com/unicode-org/icu4x,registry+https://github.com/rust-lang/crates.io-index
+zerofrom-derive,0.1.8,Unicode-3.0,,LICENSE,Manish Goregaokar <manishsmail@gmail.com>,https://github.com/unicode-org/icu4x,registry+https://github.com/rust-lang/crates.io-index
+zeroize,1.9.0,Apache-2.0 OR MIT,,LICENSE-APACHE;LICENSE-MIT,The RustCrypto Project Developers,https://github.com/RustCrypto/utils,registry+https://github.com/rust-lang/crates.io-index
+zerotrie,0.2.5,Unicode-3.0,,LICENSE,The ICU4X Project Developers,https://github.com/unicode-org/icu4x,registry+https://github.com/rust-lang/crates.io-index
+zerovec,0.11.8,Unicode-3.0,,LICENSE,The ICU4X Project Developers,https://github.com/unicode-org/icu4x,registry+https://github.com/rust-lang/crates.io-index
+zerovec-derive,0.11.6,Unicode-3.0,,LICENSE,Manish Goregaokar <manishsmail@gmail.com>,https://github.com/unicode-org/icu4x,registry+https://github.com/rust-lang/crates.io-index
+zlib-rs,0.6.8,Zlib,,LICENSE,,https://github.com/trifectatechfoundation/zlib-rs,registry+https://github.com/rust-lang/crates.io-index
+zmij,1.0.23,MIT,,LICENSE-MIT,David Tolnay <dtolnay@gmail.com>,https://github.com/dtolnay/zmij,registry+https://github.com/rust-lang/crates.io-index
+zvariant,5.15.0,MIT,,LICENSE,Zeeshan Ali Khan <zeeshanak@gnome.org>,https://github.com/z-galaxy/zbus/,registry+https://github.com/rust-lang/crates.io-index
+zvariant_derive,5.15.0,MIT,,LICENSE,Zeeshan Ali Khan <zeeshanak@gnome.org>,https://github.com/z-galaxy/zbus/,registry+https://github.com/rust-lang/crates.io-index
+zvariant_utils,4.2.0,MIT,,LICENSE,Zeeshan Ali Khan <zeeshanak@gnome.org>; turbocooler <turbocooler@cocaine.ninja>,https://github.com/z-galaxy/zbus/,registry+https://github.com/rust-lang/crates.io-index

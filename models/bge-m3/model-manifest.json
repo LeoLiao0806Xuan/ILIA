@@ -1,7 +1,9 @@
 {
   "model_id": "gpahal/bge-m3-onnx-int8",
   "upstream_model": "BAAI/bge-m3",
-  "source_url": "https://huggingface.co/gpahal/bge-m3-onnx-int8/resolve/main/model_quantized.onnx",
+  "revision": "2b34e84df040034d4b9eabb62383a87c18955822",
+  "upstream_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "source_url": "https://huggingface.co/gpahal/bge-m3-onnx-int8/resolve/2b34e84df040034d4b9eabb62383a87c18955822/model_quantized.onnx",
   "local_file": "model.onnx",
   "format": "onnx-int8",
   "dimension": 1024,
@@ -10,5 +12,5 @@
   "downloaded_at": "2026-09-21",
   "license": "MIT",
   "license_source": "https://huggingface.co/gpahal/bge-m3-onnx-int8",
-  "license_review": "metadata_verified_legal_review_pending"
+  "license_review": "mit_metadata_verified_notice_packaged"
 }

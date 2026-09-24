@@ -1,8 +1,10 @@
 param(
-    [string]$Version = "1.0.0",
+    [string]$Version = "1.0.1",
     [string]$InnoSetupCompiler = "",
     [switch]$SkipBuild,
-    [switch]$SkipWebView2
+    [switch]$SkipWebView2,
+    [switch]$AllowPendingComponentsForLocalTesting,
+    [switch]$PreflightOnly
 )
 
 $ErrorActionPreference = "Stop"
@@ -15,6 +17,7 @@ $desktopRoot = Join-Path $projectRoot "apps\desktop"
 # stale explicit-target directory left by older builds.
 $releaseRoot = Join-Path $projectRoot "target\release"
 $webView2 = Join-Path $projectRoot "installer\prerequisites\MicrosoftEdgeWebView2RuntimeInstallerX64.exe"
+$vcRedist = Join-Path $projectRoot "installer\prerequisites\VC_redist.x64.exe"
 $trustedUpdateKey = Join-Path $projectRoot "update\trusted-key.json"
 
 function Assert-File([string]$Path, [string]$Label) {
@@ -33,7 +36,24 @@ function Copy-Tree([string]$Source, [string]$Destination) {
     }
 }
 
-Assert-File (Join-Path $projectRoot "data\ilia_prototype.sqlite3") "SQLite database"
+function Copy-IliaRuntime([string]$Name) {
+    $source = Join-Path $projectRoot "runtime\$Name"
+    $destination = Join-Path $stageRoot "runtime\$Name"
+    if (-not (Test-Path -LiteralPath $source -PathType Container)) {
+        throw "Required runtime directory is missing: $source"
+    }
+    New-Item -ItemType Directory -Path $destination -Force | Out-Null
+    $allowed = @("llama-server.exe", "llama-server-impl.dll", "llama-common.dll", "llama.dll", "mtmd.dll", "libomp.dll", "LICENSE-LLVM-OpenMP", "runtime-manifest.json")
+    $files = @(Get-ChildItem -LiteralPath $source -File | Where-Object {
+        $_.Name -in $allowed -or $_.Name -like "ggml*.dll" -or ($Name -eq "cuda" -and $_.Name -in @("cudart64_13.dll", "cublas64_13.dll", "cublasLt64_13.dll"))
+    })
+    foreach ($file in $files) {
+        Copy-Item -LiteralPath $file.FullName -Destination $destination -Force
+    }
+}
+
+Assert-File (Join-Path $projectRoot "data\ilia.sqlite3") "Distributable SQLite database"
+Assert-File (Join-Path $projectRoot "corpus\normalized\manifest.json") "Normalized corpus manifest"
 Assert-File (Join-Path $projectRoot "models\bge-m3\model.onnx") "BGE-M3 model"
 Assert-File (Join-Path $projectRoot "models\qwen3-4b\Qwen3-4B-Q4_K_M.gguf") "Qwen3-4B model"
 foreach ($backend in @("cuda", "vulkan", "cpu")) {
@@ -41,8 +61,87 @@ foreach ($backend in @("cuda", "vulkan", "cpu")) {
 }
 Assert-File (Join-Path $projectRoot "runtime\onnx\onnxruntime.dll") "ONNX Runtime"
 Assert-File $trustedUpdateKey "trusted update public key"
+$requiredLicenseFiles = @(
+    "BGE-M3-MIT.txt",
+    "CORPUS-TERMS.md",
+    "MICROSOFT-RUNTIME-REDISTRIBUTION.md",
+    "microsoft-redistributables.json",
+    "NVIDIA-CUDA-EULA-2026-01-26.html",
+    "NVIDIA-CUDA-REDISTRIBUTION.md",
+    "ONNX-Runtime-MIT.txt",
+    "ONNX-Runtime-ThirdPartyNotices.txt",
+    "Qwen3-4B-Apache-2.0.txt",
+    "component-clearance.json",
+    "corpus-redistribution-rights-matrix.csv",
+    "cuda-redistributables.json",
+    "dependencies\NPM-NOTICES.md",
+    "dependencies\RUST-NOTICES.md",
+    "dependencies\npm-dependencies.csv",
+    "dependencies\rust-dependencies.csv",
+    "dependencies\summary.json",
+    "downloaded-license-manifest.json",
+    "INSTALLER-THIRD-PARTY-TERMS.txt",
+    "llama.cpp-MIT.txt"
+)
+foreach ($licenseFile in $requiredLicenseFiles) {
+    Assert-File (Join-Path $projectRoot "licenses\$licenseFile") "Third-party license $licenseFile"
+}
+$dependencySummary = Get-Content -Raw -LiteralPath (Join-Path $projectRoot "licenses\dependencies\summary.json") | ConvertFrom-Json
+if ($dependencySummary.rust_missing_declared_license -ne 0 -or $dependencySummary.npm_missing_declared_license -ne 0) {
+    throw "Dependency inventory contains packages without a declared license"
+}
+$corpusRights = @(Import-Csv -LiteralPath (Join-Path $projectRoot "licenses\corpus-redistribution-rights-matrix.csv"))
+if ($corpusRights.Count -ne 50) { throw "Corpus rights matrix must contain exactly 50 rows" }
+$normalizedManifest = Get-Content -Raw -LiteralPath (Join-Path $projectRoot "corpus\normalized\manifest.json") | ConvertFrom-Json
+if ($normalizedManifest.document_count -ne 49 -or @($normalizedManifest.artifacts).Count -ne 49) {
+    throw "Normalized corpus manifest must contain exactly 49 artifacts"
+}
+if (@($normalizedManifest.excluded_documents).Count -ne 1 -or $normalizedManifest.excluded_documents[0] -ne "icrc-cihl-rules") {
+    throw "Normalized corpus manifest must exclude only icrc-cihl-rules"
+}
+foreach ($artifact in $normalizedManifest.artifacts) {
+    $relative = $artifact.path -replace '/', '\'
+    $path = Join-Path $projectRoot $relative
+    Assert-File $path "Normalized corpus artifact $($artifact.document_id)"
+    if ((Get-Item -LiteralPath $path).Length -ne $artifact.byte_length) { throw "Normalized corpus size mismatch: $relative" }
+    $hash = (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLowerInvariant()
+    if ($hash -ne $artifact.sha256) { throw "Normalized corpus SHA-256 mismatch: $relative" }
+}
+$cudaInventory = Get-Content -Raw -LiteralPath (Join-Path $projectRoot "licenses\cuda-redistributables.json") | ConvertFrom-Json
+foreach ($entry in $cudaInventory.files.psobject.Properties) {
+    $path = Join-Path $projectRoot "runtime\cuda\$($entry.Name)"
+    Assert-File $path "CUDA redistributable $($entry.Name)"
+    $hash = (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLowerInvariant()
+    if ($hash -ne $entry.Value) { throw "CUDA redistributable SHA-256 mismatch: $($entry.Name)" }
+}
+$microsoftInventory = Get-Content -Raw -LiteralPath (Join-Path $projectRoot "licenses\microsoft-redistributables.json") | ConvertFrom-Json
+Assert-File $vcRedist "Microsoft Visual C++ Redistributable installer"
+if ((Get-Item -LiteralPath $vcRedist).Length -ne $microsoftInventory.vc_redist_x64.byte_length) {
+    throw "Microsoft Visual C++ Redistributable size mismatch"
+}
+$vcRedistHash = (Get-FileHash -LiteralPath $vcRedist -Algorithm SHA256).Hash.ToLowerInvariant()
+if ($vcRedistHash -ne $microsoftInventory.vc_redist_x64.sha256) {
+    throw "Microsoft Visual C++ Redistributable SHA-256 mismatch"
+}
+$vcSignature = Get-AuthenticodeSignature -LiteralPath $vcRedist
+if ($vcSignature.Status -ne "Valid" -or $vcSignature.SignerCertificate.Subject -notlike "*Microsoft Corporation*") {
+    throw "Microsoft Visual C++ Redistributable must have a valid Microsoft Authenticode signature"
+}
+$componentClearance = Get-Content -Raw -LiteralPath (Join-Path $projectRoot "licenses\component-clearance.json") | ConvertFrom-Json
+$blockedComponents = @($componentClearance.components.psobject.Properties | Where-Object { $_.Value.public_distribution -eq "blocked" })
+if ($blockedComponents.Count -gt 0 -and -not $AllowPendingComponentsForLocalTesting) {
+    throw "Component rights gate blocked packaging: $($blockedComponents.Name -join ', '). Use -AllowPendingComponentsForLocalTesting only for a non-public local test build."
+}
+if ($AllowPendingComponentsForLocalTesting) {
+    Write-Warning "Building a local test package with pending components: $($blockedComponents.Name -join ', '); do not publish this package."
+}
 if (-not $SkipWebView2) {
     Assert-File $webView2 "WebView2 offline installer"
+}
+
+if ($PreflightOnly) {
+    Write-Output "Installer preflight passed: 49 normalized documents, ICRC CIHL excluded, CUDA hashes verified."
+    exit 0
 }
 
 if (-not $SkipBuild) {
@@ -85,21 +184,16 @@ New-Item -ItemType Directory -Path (Join-Path $stageRoot ".ilia-update") -Force 
 Copy-Item -LiteralPath (Join-Path $projectRoot "update\initial-versions.json") -Destination (Join-Path $stageRoot ".ilia-update\versions.json")
 
 New-Item -ItemType Directory -Path (Join-Path $stageRoot "data") -Force | Out-Null
-Copy-Item -LiteralPath (Join-Path $projectRoot "data\ilia_prototype.sqlite3") -Destination (Join-Path $stageRoot "data")
+Copy-Item -LiteralPath (Join-Path $projectRoot "data\ilia.sqlite3") -Destination (Join-Path $stageRoot "data")
 Copy-Tree (Join-Path $projectRoot "models\bge-m3") (Join-Path $stageRoot "models\bge-m3")
 Copy-Tree (Join-Path $projectRoot "models\qwen3-4b") (Join-Path $stageRoot "models\qwen3-4b")
-Copy-Tree (Join-Path $projectRoot "corpus\sources") (Join-Path $stageRoot "corpus\sources")
-foreach ($runtimeName in @("cuda", "vulkan", "cpu", "onnx")) {
-    Copy-Tree (Join-Path $projectRoot "runtime\$runtimeName") (Join-Path $stageRoot "runtime\$runtimeName")
+Copy-Tree (Join-Path $projectRoot "corpus\normalized") (Join-Path $stageRoot "corpus\normalized")
+foreach ($runtimeName in @("cuda", "vulkan", "cpu")) {
+    Copy-IliaRuntime $runtimeName
 }
-
-$vcRuntimeNames = @("msvcp140.dll", "vcruntime140.dll", "vcruntime140_1.dll")
-foreach ($runtimeName in @("cuda", "vulkan", "cpu", "onnx")) {
-    foreach ($dll in $vcRuntimeNames) {
-        $source = Join-Path $env:WINDIR "System32\$dll"
-        Assert-File $source "Microsoft VC runtime $dll"
-        Copy-Item -LiteralPath $source -Destination (Join-Path $stageRoot "runtime\$runtimeName\$dll") -Force
-    }
+New-Item -ItemType Directory -Path (Join-Path $stageRoot "runtime\onnx") -Force | Out-Null
+foreach ($onnxFile in @("onnxruntime.dll", "onnxruntime_providers_shared.dll", "README.md")) {
+    Copy-Item -LiteralPath (Join-Path $projectRoot "runtime\onnx\$onnxFile") -Destination (Join-Path $stageRoot "runtime\onnx") -Force
 }
 
 $manifestFiles = Get-ChildItem -LiteralPath $stageRoot -Recurse -File | Sort-Object FullName | ForEach-Object {
@@ -115,6 +209,16 @@ $manifest = [ordered]@{
     version = $Version
     architecture = "windows-x64"
     generated_at = (Get-Date).ToUniversalTime().ToString("o")
+    corpus_rights = [ordered]@{
+        reviewed_items = $corpusRights.Count
+        packaged_normalized_documents = $normalizedManifest.document_count
+        excluded_documents = @($normalizedManifest.excluded_documents)
+        source_pdfs_packaged = 0
+    }
+    component_rights = [ordered]@{
+        blocked_components = @($blockedComponents.Name)
+        local_testing_override = [bool]$AllowPendingComponentsForLocalTesting
+    }
     files = @($manifestFiles)
 }
 $manifest | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $stageRoot "package-manifest.json") -Encoding utf8
@@ -132,9 +236,10 @@ New-Item -ItemType Directory -Path $outputRoot -Force | Out-Null
 
 $innoArgs = @(
     "/DAppVersion=$Version",
-    "/DAppFileVersion=1.0.0.0",
+    "/DAppFileVersion=1.0.1.0",
     "/DSourceDir=$stageRoot",
-    "/DOutputDir=$outputRoot"
+    "/DOutputDir=$outputRoot",
+    "/DVCRedistInstaller=$vcRedist"
 )
 if (-not $SkipWebView2) {
     $innoArgs += "/DWebView2Installer=$webView2"

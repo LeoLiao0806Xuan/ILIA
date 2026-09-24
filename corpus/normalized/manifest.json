@@ -1,0 +1,500 @@
+{
+  "format_version": 1,
+  "database_version": "public-international-law-v1.0.1-normalized-2026.09.24",
+  "document_count": 49,
+  "excluded_documents": [
+    "icrc-cihl-rules"
+  ],
+  "artifacts": [
+    {
+      "document_id": "ap-i-1977",
+      "path": "corpus/normalized/ap-i-1977/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 138012,
+      "sha256": "a5d45e76008ddf9630f03ab7bae586e3083cece8c0bdd249305ad982b9d9863c",
+      "source_locator_count": 60,
+      "official_source_url": "https://www.icrc.org/en/doc/assets/files/other/icrc_002_0321.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "ap-ii-1977",
+      "path": "corpus/normalized/ap-ii-1977/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 21152,
+      "sha256": "4f969d48884a23bde057662d67c9aca6bcdb445917ac0ddf8ac246e3a62709cd",
+      "source_locator_count": 10,
+      "official_source_url": "https://www.icrc.org/en/doc/assets/files/other/icrc_002_0321.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "arsiwa-2001",
+      "path": "corpus/normalized/arsiwa-2001/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 25019,
+      "sha256": "0511bc15dd21e6d378629019fbf5e1de6e5675c95dffc6177f23ed676ccfde28",
+      "source_locator_count": 15,
+      "official_source_url": "https://legal.un.org/ilc/texts/instruments/english/draft_articles/9_6_2001.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "cat-1984",
+      "path": "corpus/normalized/cat-1984/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 32934,
+      "sha256": "b9341408bbdbd2129b5353c6fe0bfd0512f1d080db2ee4f724664c083583a830",
+      "source_locator_count": 13,
+      "official_source_url": "https://www.ohchr.org/sites/default/files/Documents/ProfessionalInterest/cat.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "cedaw-1979",
+      "path": "corpus/normalized/cedaw-1979/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 29164,
+      "sha256": "38924736285087b11c0b7dbc673e9f707b0694369a17e0c061eec849df60a4d9",
+      "source_locator_count": 10,
+      "official_source_url": "https://www.ohchr.org/sites/default/files/Documents/ProfessionalInterest/cedaw.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "crc-1989",
+      "path": "corpus/normalized/crc-1989/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 48983,
+      "sha256": "6cd95c07c6bb2ea3570c9c908cfa8e56e2a8579793e8d35ddce65ae5ed070921",
+      "source_locator_count": 15,
+      "official_source_url": "https://www.ohchr.org/sites/default/files/Documents/ProfessionalInterest/crc.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "gc-i-1949",
+      "path": "corpus/normalized/gc-i-1949/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 58084,
+      "sha256": "c078452f8c53f5fe3b446ae914f0ed19e0781c814888f2870ec5814150e4ede3",
+      "source_locator_count": 26,
+      "official_source_url": "https://www.icrc.org/sites/default/files/external/doc/en/assets/files/publications/icrc-002-0173.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "gc-ii-1949",
+      "path": "corpus/normalized/gc-ii-1949/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 46536,
+      "sha256": "f5f20a6ff51a633e68b27279a06354cd3d1d390d3cf2f33958375fd34b6175a0",
+      "source_locator_count": 20,
+      "official_source_url": "https://www.icrc.org/sites/default/files/external/doc/en/assets/files/publications/icrc-002-0173.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "gc-iii-1949",
+      "path": "corpus/normalized/gc-iii-1949/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 162423,
+      "sha256": "a684f5ca1f87ecb342982fb685a3085e88e3c7d49f8149a63ef40c69f3626f9a",
+      "source_locator_count": 70,
+      "official_source_url": "https://www.icrc.org/sites/default/files/external/doc/en/assets/files/publications/icrc-002-0173.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "gc-iv-1949",
+      "path": "corpus/normalized/gc-iv-1949/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 154070,
+      "sha256": "dd63a158d0b75551274d22f9518cf7e833bc15a2fee2b88ff11004e04730b932",
+      "source_locator_count": 69,
+      "official_source_url": "https://www.icrc.org/sites/default/files/external/doc/en/assets/files/publications/icrc-002-0173.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "iccpr-1966",
+      "path": "corpus/normalized/iccpr-1966/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 43828,
+      "sha256": "8a26fd872dd727edff9aa4dc4cfc35150a2864118e86eada9462a2d9e7ff8f3b",
+      "source_locator_count": 26,
+      "official_source_url": "https://www.ohchr.org/sites/default/files/ccpr.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icerd-1965",
+      "path": "corpus/normalized/icerd-1965/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 31060,
+      "sha256": "d58693c7b25876d46e44148615edaf9e1c992313bfe940fb9bb8b710ff0cc980",
+      "source_locator_count": 9,
+      "official_source_url": "https://www.ohchr.org/sites/default/files/Documents/ProfessionalInterest/cerd.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icescr-1966",
+      "path": "corpus/normalized/icescr-1966/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 24058,
+      "sha256": "404bb9871d5065da9d92c7064048135d53d55f9f53b9146c3a44f337e1ab39dd",
+      "source_locator_count": 8,
+      "official_source_url": "https://www.ohchr.org/sites/default/files/cescr.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-armed-activities-2005",
+      "path": "corpus/normalized/icj-armed-activities-2005/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 290714,
+      "sha256": "ad669d89dd2a1c33d69c752a8655092fe7e3ccbba04248ad618dec8fba4b26ed",
+      "source_locator_count": 109,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/116/116-20051219-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-arrest-warrant-2002",
+      "path": "corpus/normalized/icj-arrest-warrant-2002/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 80921,
+      "sha256": "44ed835dc8f3f2d9e6b7f02844061062f16e71adad7ee220621a14479d22109f",
+      "source_locator_count": 29,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/121/121-20020214-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-asylum-1950",
+      "path": "corpus/normalized/icj-asylum-1950/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 83493,
+      "sha256": "270fbaffabe1bf1c329c794e56005f113b6a41648f1fccb441d8eaf29aee54d9",
+      "source_locator_count": 34,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/7/007-19501120-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-barcelona-traction-1970",
+      "path": "corpus/normalized/icj-barcelona-traction-1970/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 140293,
+      "sha256": "1845d50ee62b1ac3223957c65b3f88f39ecdbacb6445c6c9722a828bc4c80403",
+      "source_locator_count": 48,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/50/050-19700205-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-bosnian-genocide-2007",
+      "path": "corpus/normalized/icj-bosnian-genocide-2007/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 537633,
+      "sha256": "999491dfbc73e70ff232277654c71655bf5136cca62d33a309625632fc4be7c3",
+      "source_locator_count": 201,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/91/091-20070226-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-bosnian-genocide-preliminary-1996",
+      "path": "corpus/normalized/icj-bosnian-genocide-preliminary-1996/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 80643,
+      "sha256": "f0c489c5616d271a3e75b99d5f80a0718bca0decd11c8599483577494352ad50",
+      "source_locator_count": 32,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/91/091-19960711-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-chagos-2019",
+      "path": "corpus/normalized/icj-chagos-2019/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 132375,
+      "sha256": "abf8788d8a4f239882e79d3a8d96466019b985a51112b8a28977745b03d1352e",
+      "source_locator_count": 47,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/169/169-20190225-ADV-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-continental-shelf-tunisia-libya-1982",
+      "path": "corpus/normalized/icj-continental-shelf-tunisia-libya-1982/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 216545,
+      "sha256": "c4537b3e1756fbaee0ea9a520d2cde56c2b86d2e6b96c9beb49e6b2a7cf48dc3",
+      "source_locator_count": 74,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/63/063-19820224-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-corfu-channel-1949-merits",
+      "path": "corpus/normalized/icj-corfu-channel-1949-merits/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 172052,
+      "sha256": "226be804b1d3231ee5f8a108da35eaff7f24c8b73bd706dcc9b1f4e47a7a6ba7",
+      "source_locator_count": 75,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/1/001-19490409-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-elsi-1989",
+      "path": "corpus/normalized/icj-elsi-1989/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 188100,
+      "sha256": "ee1e45c9a92db425dcead7b26f44f48b51963a92f6570c15f7b8996440962f6b",
+      "source_locator_count": 70,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/76/076-19890720-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-frontier-dispute-1986",
+      "path": "corpus/normalized/icj-frontier-dispute-1986/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 275051,
+      "sha256": "c383e5bbee402cfac865745a4269bd7af38ba30064909457ded974fdca8f6542",
+      "source_locator_count": 96,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/69/069-19861222-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-gabcikovo-1997",
+      "path": "corpus/normalized/icj-gabcikovo-1997/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 208267,
+      "sha256": "98b9c01239c08428d5db492b4386754aecc359123d31ba4396b7d1afca144815",
+      "source_locator_count": 81,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/92/092-19970925-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-gambia-myanmar-preliminary-2022",
+      "path": "corpus/normalized/icj-gambia-myanmar-preliminary-2022/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 106604,
+      "sha256": "e5b513166c1ac50f62fd248791c59db282265c8dd13eb492aca0e8385d3b9f3a",
+      "source_locator_count": 33,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/178/178-20220722-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-genocide-reservations-1951",
+      "path": "corpus/normalized/icj-genocide-reservations-1951/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 67156,
+      "sha256": "da9cd42ddbf1b59fe246f3e4434b2034cb4c6424928aec07efe3a9bd46cbc6d0",
+      "source_locator_count": 32,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/12/012-19510528-ADV-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-jurisdictional-immunities-2012",
+      "path": "corpus/normalized/icj-jurisdictional-immunities-2012/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 168548,
+      "sha256": "832be71f8e950eaa4fec593248798d37644960fdbe5d9a88db37eae7819568cf",
+      "source_locator_count": 58,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/143/143-20120203-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-kosovo-2010",
+      "path": "corpus/normalized/icj-kosovo-2010/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 138673,
+      "sha256": "2a5f852f01503d91bb7a38a6191f420762c7f187a8218173f3abb9a4e8d51e5a",
+      "source_locator_count": 51,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/141/141-20100722-ADV-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-lagrand-2001",
+      "path": "corpus/normalized/icj-lagrand-2001/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 125520,
+      "sha256": "2105e8ab06d8fa2056ecbdaf57f02700a1236a3dc219b4c4881ecb2ec48a22e9",
+      "source_locator_count": 48,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/104/104-20010627-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-namibia-1971",
+      "path": "corpus/normalized/icj-namibia-1971/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 140292,
+      "sha256": "b53b9a7eea208131c8001e522420e4534718ba32646e5df3e0d76aa0ec1ce02d",
+      "source_locator_count": 50,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/53/053-19710621-ADV-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-nauru-preliminary-1992",
+      "path": "corpus/normalized/icj-nauru-preliminary-1992/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 75577,
+      "sha256": "9b117891328edac77fef154b7a07ca129d61dc8847fbedae4f924770b6a4d389",
+      "source_locator_count": 28,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/80/080-19920626-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-nicaragua-1986-merits",
+      "path": "corpus/normalized/icj-nicaragua-1986-merits/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 391186,
+      "sha256": "4d33722d5c6935d0a4544d1193772a76b3566bf0b02d38c5de7d00580aecb5fa",
+      "source_locator_count": 135,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/70/070-19860627-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-north-sea-1969",
+      "path": "corpus/normalized/icj-north-sea-1969/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 145599,
+      "sha256": "58f893f95412e0c0a86ed9afe8ee863346f27a1101a54ef505a913c28a7c683f",
+      "source_locator_count": 51,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/52/052-19690220-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-nottebohm-1955",
+      "path": "corpus/normalized/icj-nottebohm-1955/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 61807,
+      "sha256": "5d9038774f2f12660fbcd9761cd106f5b2c8f6669391481073d6ac32ba974c15",
+      "source_locator_count": 26,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/18/018-19550406-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-nuclear-tests-1974",
+      "path": "corpus/normalized/icj-nuclear-tests-1974/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 57725,
+      "sha256": "b66fc4d131ec95ba147679bd709c096e64f89ec3051d77e43217905fdc7fb15c",
+      "source_locator_count": 21,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/58/058-19741220-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-nuclear-weapons-1996",
+      "path": "corpus/normalized/icj-nuclear-weapons-1996/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 113016,
+      "sha256": "7f9cd09a1dc8a400651e68e64430bb6e81767157c12f28767e839a4ace999cc2",
+      "source_locator_count": 41,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/95/095-19960708-ADV-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-reparation-injuries-1949",
+      "path": "corpus/normalized/icj-reparation-injuries-1949/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 39263,
+      "sha256": "145c67efa1c109fa1954637804ca20efb536d61d39b45e5bc8365ffe2975d8c8",
+      "source_locator_count": 19,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/4/004-19490411-ADV-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-right-passage-1960",
+      "path": "corpus/normalized/icj-right-passage-1960/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 110504,
+      "sha256": "7a2863be8834e10da0f1377ed08ae5555bcb3ac69ca082e67b003c24ee416d08",
+      "source_locator_count": 43,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/32/032-19600412-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-statute-1945",
+      "path": "corpus/normalized/icj-statute-1945/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 31776,
+      "sha256": "b4a4d5f4355568e29e1656c7b832d7e6c63413d8e36d55e039d448a3f670ff32",
+      "source_locator_count": 13,
+      "official_source_url": "https://treaties.un.org/doc/Publication/CTC/uncharter-all-lang.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-temple-preah-vihear-1962",
+      "path": "corpus/normalized/icj-temple-preah-vihear-1962/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 84841,
+      "sha256": "034ec7eb8f5bef9aa6ddfad3c59de84dd561c8061918fd547c47f059792ffc8e",
+      "source_locator_count": 35,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/45/045-19620615-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-wall-2004",
+      "path": "corpus/normalized/icj-wall-2004/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 183575,
+      "sha256": "9f1915a12b7bd483160aa288be646030d84f698b5c2d4bbc8992208c25abcf7d",
+      "source_locator_count": 65,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/131/131-20040709-ADV-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-western-sahara-1975",
+      "path": "corpus/normalized/icj-western-sahara-1975/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 209582,
+      "sha256": "b9021a260f35f2f6166771215c22ab9cdaa4f7bd1b36a3da2f4475e7797e3952",
+      "source_locator_count": 70,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/61/061-19751016-ADV-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "icj-whaling-2014",
+      "path": "corpus/normalized/icj-whaling-2014/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 205672,
+      "sha256": "ab7fdff470e930cfe5a62b188b90c732f4b5264e83ccaafc322e629128829a7c",
+      "source_locator_count": 75,
+      "official_source_url": "https://www.icj-cij.org/sites/default/files/case-related/148/148-20140331-JUD-01-00-EN.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "rome-statute-1998",
+      "path": "corpus/normalized/rome-statute-1998/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 183905,
+      "sha256": "b73ddbc7bead654e5ef5e587d404629b57f805415f6929f96af079ae93ce5ed3",
+      "source_locator_count": 105,
+      "official_source_url": "https://treaties.un.org/doc/Treaties/1998/07/19980717%2006-33%20PM/Ch_XVIII_10p.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "udhr-1948",
+      "path": "corpus/normalized/udhr-1948/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 11613,
+      "sha256": "454421a36815ccc6ce6166efc726fe79de70eb8e3f16c2d190f7ed7eac6fd123",
+      "source_locator_count": 8,
+      "official_source_url": "https://www.ohchr.org/sites/default/files/UDHR/Documents/UDHR_Translations/eng.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "un-charter-1945",
+      "path": "corpus/normalized/un-charter-1945/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 56654,
+      "sha256": "d2dee13c2dc06922c0e64fb7145aeeb44fb04a779ae011653ef59a3a2b7cd1d7",
+      "source_locator_count": 20,
+      "official_source_url": "https://treaties.un.org/doc/Publication/CTC/uncharter-all-lang.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "unclos-1982",
+      "path": "corpus/normalized/unclos-1982/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 313506,
+      "sha256": "e31b77263df14b4aa0514e41003de67fc0fd842b938814ebf55e9bd9b52bf9df",
+      "source_locator_count": 119,
+      "official_source_url": "https://www.un.org/Depts/los/convention_agreements/texts/unclos/unclos_e.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    },
+    {
+      "document_id": "vclt-1969",
+      "path": "corpus/normalized/vclt-1969/source.txt",
+      "mime_type": "text/plain; charset=utf-8",
+      "byte_length": 62358,
+      "sha256": "2d0ba55d838ee211be7cc63e8c6dea34c3232e5e93fec74e0af8319ec1bcd7c0",
+      "source_locator_count": 31,
+      "official_source_url": "https://legal.un.org/ilc/texts/instruments/english/conventions/1_1_1969.pdf",
+      "artifact_status": "ilia_normalized_not_official_edition"
+    }
+  ]
+}
