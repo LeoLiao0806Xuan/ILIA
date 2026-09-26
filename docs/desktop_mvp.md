@@ -1,9 +1,19 @@
 # Tauri 桌面 MVP
 
+## 1.1 研究工作流
+
+桌面端主导航现包含研究、项目、资料库和设置。项目区保存会话、证据快照与自动保存笔记并导出安全 Markdown/HTML；资料库区区分核心和个人资料，执行五格式预览导入、去重、删除与重建；设置区提供模型预热、运行后端、三档性能、资源估算、空闲显存回收、更新代理和本地 `.ilia` 包入口。证据阅读器支持原文、中文和对照三态，格式化引文可复制为普通中文、OSCOLA、Bluebook、ICJ、Markdown 或纯文本。
+
 ## 已接通范围
 
 - `search_documents`：调用 BGE-M3 + FTS5/RRF 混合检索，返回证据包。
-- `ask_question`：复用检索证据，按 CUDA → Vulkan → CPU 降级启动 Qwen3-4B / llama.cpp，并返回带 `【n】` 引证的回答。
+- `ask_question`：保留的 1.0.x 兼容命令，阻塞式返回带 `【n】` 引证的回答。
+- `start_research`：1.1 研究入口；支持快速、标准、深度三模式，通过 `research-event` 按请求 ID 发送检索、计划、回答片段、完成、取消或失败事件。
+- `cancel_research`：取消指定活动请求；新请求与窗口销毁也复用相同取消令牌。
+
+快速模式不启动 Qwen。标准模式最多向模型提供 5 条证据。深度模式固定产生 3 个可见子问题，每个只检索一次，去重并受全局证据预算约束后生成六段研究答复。任一时刻只保留一个活动研究请求；新请求会先取消旧请求。
+
+研究事件在流式草稿后执行逐句引证审计。若发生一次安全重写或红句删除，后端发送 `answer_replaced` 覆盖草稿，随后发送含四级标签的 `citation_audit_completed`。回答中的 `【n】` 通过 `AnswerCitation.stable_key` 定位证据，不依赖当前结果数组顺序。
 - `get_runtime_status` / `set_runtime_preference`：展示或切换自动、CUDA、Vulkan、CPU 运行偏好。
 - 证据区展示文书名、规范引用和摘要；原文区展示语言、页码、法律性质、完整文本与官方来源。
 - 官方来源通过 Tauri opener 交给系统浏览器；能力范围只允许当前语料涉及的 UN、ICJ、OHCHR 与 Internet Archive 域名。

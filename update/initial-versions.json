@@ -1,6 +1,6 @@
 {
   "components": {
-    "application": "1.0.1",
+    "application": "1.1.0",
     "database": "public-international-law-v1.0.1-normalized-2026.09.24",
     "corpus": "public-international-law-v1.0.1-normalized-2026.09.24",
     "model-bge-m3": "gpahal-bge-m3-onnx-int8",

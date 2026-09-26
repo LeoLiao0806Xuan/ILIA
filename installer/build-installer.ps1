@@ -1,5 +1,5 @@
 param(
-    [string]$Version = "1.0.1",
+    [string]$Version = "1.1.0",
     [string]$InnoSetupCompiler = "",
     [switch]$SkipBuild,
     [switch]$SkipWebView2,
@@ -19,6 +19,9 @@ $releaseRoot = Join-Path $projectRoot "target\release"
 $webView2 = Join-Path $projectRoot "installer\prerequisites\MicrosoftEdgeWebView2RuntimeInstallerX64.exe"
 $vcRedist = Join-Path $projectRoot "installer\prerequisites\VC_redist.x64.exe"
 $trustedUpdateKey = Join-Path $projectRoot "update\trusted-key.json"
+$rightsGate = Join-Path $projectRoot "tools\release_rights_gate.py"
+$corpusValidator = Join-Path $projectRoot "tools\corpus-validator\validate_corpus.py"
+$validationReport = Join-Path $projectRoot "data\validation_report_$Version.json"
 
 function Assert-File([string]$Path, [string]$Label) {
     if (-not (Test-Path -LiteralPath $Path -PathType Leaf)) {
@@ -91,22 +94,11 @@ if ($dependencySummary.rust_missing_declared_license -ne 0 -or $dependencySummar
     throw "Dependency inventory contains packages without a declared license"
 }
 $corpusRights = @(Import-Csv -LiteralPath (Join-Path $projectRoot "licenses\corpus-redistribution-rights-matrix.csv"))
-if ($corpusRights.Count -ne 50) { throw "Corpus rights matrix must contain exactly 50 rows" }
 $normalizedManifest = Get-Content -Raw -LiteralPath (Join-Path $projectRoot "corpus\normalized\manifest.json") | ConvertFrom-Json
-if ($normalizedManifest.document_count -ne 49 -or @($normalizedManifest.artifacts).Count -ne 49) {
-    throw "Normalized corpus manifest must contain exactly 49 artifacts"
-}
-if (@($normalizedManifest.excluded_documents).Count -ne 1 -or $normalizedManifest.excluded_documents[0] -ne "icrc-cihl-rules") {
-    throw "Normalized corpus manifest must exclude only icrc-cihl-rules"
-}
-foreach ($artifact in $normalizedManifest.artifacts) {
-    $relative = $artifact.path -replace '/', '\'
-    $path = Join-Path $projectRoot $relative
-    Assert-File $path "Normalized corpus artifact $($artifact.document_id)"
-    if ((Get-Item -LiteralPath $path).Length -ne $artifact.byte_length) { throw "Normalized corpus size mismatch: $relative" }
-    $hash = (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLowerInvariant()
-    if ($hash -ne $artifact.sha256) { throw "Normalized corpus SHA-256 mismatch: $relative" }
-}
+& python $rightsGate --root $projectRoot --database (Join-Path $projectRoot "data\ilia.sqlite3")
+if ($LASTEXITCODE -ne 0) { throw "Release rights gate failed with exit code $LASTEXITCODE" }
+& python $corpusValidator --version $Version --database (Join-Path $projectRoot "data\ilia.sqlite3") --report $validationReport
+if ($LASTEXITCODE -ne 0) { throw "Versioned corpus validation failed with exit code $LASTEXITCODE" }
 $cudaInventory = Get-Content -Raw -LiteralPath (Join-Path $projectRoot "licenses\cuda-redistributables.json") | ConvertFrom-Json
 foreach ($entry in $cudaInventory.files.psobject.Properties) {
     $path = Join-Path $projectRoot "runtime\cuda\$($entry.Name)"
@@ -128,12 +120,9 @@ if ($vcSignature.Status -ne "Valid" -or $vcSignature.SignerCertificate.Subject -
     throw "Microsoft Visual C++ Redistributable must have a valid Microsoft Authenticode signature"
 }
 $componentClearance = Get-Content -Raw -LiteralPath (Join-Path $projectRoot "licenses\component-clearance.json") | ConvertFrom-Json
-$blockedComponents = @($componentClearance.components.psobject.Properties | Where-Object { $_.Value.public_distribution -eq "blocked" })
-if ($blockedComponents.Count -gt 0 -and -not $AllowPendingComponentsForLocalTesting) {
-    throw "Component rights gate blocked packaging: $($blockedComponents.Name -join ', '). Use -AllowPendingComponentsForLocalTesting only for a non-public local test build."
-}
+$blockedComponents = @($componentClearance.components.psobject.Properties | Where-Object { $_.Value.public_distribution -in @("blocked", "pending", "red") })
 if ($AllowPendingComponentsForLocalTesting) {
-    Write-Warning "Building a local test package with pending components: $($blockedComponents.Name -join ', '); do not publish this package."
+    throw "AllowPendingComponentsForLocalTesting is no longer supported; pending or blocked components cannot enter an installer stage."
 }
 if (-not $SkipWebView2) {
     Assert-File $webView2 "WebView2 offline installer"
@@ -185,9 +174,13 @@ Copy-Item -LiteralPath (Join-Path $projectRoot "update\initial-versions.json") -
 
 New-Item -ItemType Directory -Path (Join-Path $stageRoot "data") -Force | Out-Null
 Copy-Item -LiteralPath (Join-Path $projectRoot "data\ilia.sqlite3") -Destination (Join-Path $stageRoot "data")
+Copy-Item -LiteralPath $validationReport -Destination (Join-Path $stageRoot "data")
 Copy-Tree (Join-Path $projectRoot "models\bge-m3") (Join-Path $stageRoot "models\bge-m3")
 Copy-Tree (Join-Path $projectRoot "models\qwen3-4b") (Join-Path $stageRoot "models\qwen3-4b")
 Copy-Tree (Join-Path $projectRoot "corpus\normalized") (Join-Path $stageRoot "corpus\normalized")
+New-Item -ItemType Directory -Path (Join-Path $stageRoot "corpus\manifests") -Force | Out-Null
+Copy-Item -LiteralPath (Join-Path $projectRoot "corpus\manifests\document_topics.v1.json") -Destination (Join-Path $stageRoot "corpus\manifests")
+Copy-Item -LiteralPath (Join-Path $projectRoot "corpus\manifests\document_relations.v1.json") -Destination (Join-Path $stageRoot "corpus\manifests")
 foreach ($runtimeName in @("cuda", "vulkan", "cpu")) {
     Copy-IliaRuntime $runtimeName
 }
@@ -195,6 +188,9 @@ New-Item -ItemType Directory -Path (Join-Path $stageRoot "runtime\onnx") -Force 
 foreach ($onnxFile in @("onnxruntime.dll", "onnxruntime_providers_shared.dll", "README.md")) {
     Copy-Item -LiteralPath (Join-Path $projectRoot "runtime\onnx\$onnxFile") -Destination (Join-Path $stageRoot "runtime\onnx") -Force
 }
+
+& python $rightsGate --root $projectRoot --database (Join-Path $projectRoot "data\ilia.sqlite3") --stage-root $stageRoot
+if ($LASTEXITCODE -ne 0) { throw "Staged release rights gate failed with exit code $LASTEXITCODE" }
 
 $manifestFiles = Get-ChildItem -LiteralPath $stageRoot -Recurse -File | Sort-Object FullName | ForEach-Object {
     [ordered]@{
@@ -217,7 +213,7 @@ $manifest = [ordered]@{
     }
     component_rights = [ordered]@{
         blocked_components = @($blockedComponents.Name)
-        local_testing_override = [bool]$AllowPendingComponentsForLocalTesting
+        local_testing_override = $false
     }
     files = @($manifestFiles)
 }
@@ -234,9 +230,16 @@ if (-not $InnoSetupCompiler) {
 Assert-File $InnoSetupCompiler "Inno Setup 6 compiler"
 New-Item -ItemType Directory -Path $outputRoot -Force | Out-Null
 
+$numericParts = @($Version.Split('.') | ForEach-Object {
+    $parsed = 0
+    if (-not [int]::TryParse(($_ -replace '[^0-9].*$', ''), [ref]$parsed)) { $parsed = 0 }
+    $parsed
+})
+while ($numericParts.Count -lt 4) { $numericParts += 0 }
+$appFileVersion = ($numericParts[0..3] -join '.')
 $innoArgs = @(
     "/DAppVersion=$Version",
-    "/DAppFileVersion=1.0.1.0",
+    "/DAppFileVersion=$appFileVersion",
     "/DSourceDir=$stageRoot",
     "/DOutputDir=$outputRoot",
     "/DVCRedistInstaller=$vcRedist"

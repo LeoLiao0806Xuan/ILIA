@@ -1,0 +1,4 @@
+%PDF-1.4
+BT (Text-layer PDF fixture: Article 3.) Tj ET
+
+This textual fixture is consumed by the Rust extraction test without invoking a PDF renderer.

@@ -16,7 +16,7 @@ ILIA 的 Windows x64 安装包包含桌面程序、正式 SQLite 数据库、BGE
 powershell -NoProfile -ExecutionPolicy Bypass -File installer/build-installer.ps1
 ```
 
-默认构建版本为 `1.0.1`。安装器和桌面 EXE 当前没有 Authenticode 签名；发行包通过项目 GitHub Release 分发，并附带构建生成的 `SHA256SUMS.txt`。用户可运行 `Get-FileHash -Algorithm SHA256 <文件>` 与清单逐项比对。
+默认构建版本为 `1.1.0`。安装器和桌面 EXE 当前没有 Authenticode 签名；发行包通过项目 GitHub Release 分发，并附带构建生成的 `SHA256SUMS.txt`。用户可运行 `Get-FileHash -Algorithm SHA256 <文件>` 与清单逐项比对。
 
 产物位于 `dist/installer/`。由于完整离线负载超过单个安装数据文件的安全上限，交付物由一个 `setup.exe` 和若干 `.bin` 数据片组成；它们必须放在同一目录。用户只需运行 `setup.exe`。
 
@@ -28,7 +28,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File installer/build-installer.ps
 powershell -NoProfile -ExecutionPolicy Bypass -File installer/smoke-test.ps1
 ```
 
-脚本默认强制使用 CPU 后端，以便构建机结果不依赖 CUDA；也可用 `-Backend auto` 单独验证自动选择。测试会把最新报告同时写入 `dist/installer/installer-smoke-test.json` 和 `release/evidence/1.0.1/windows-installer-smoke.json`。
+脚本默认强制使用 CPU 后端，以便构建机结果不依赖 CUDA；也可用 `-Backend auto` 单独验证自动选择。测试会把最新报告同时写入 `dist/installer/installer-smoke-test.json` 和 `release/evidence/<version>/windows-installer-smoke.json`。
 
 ## 新电脑验收
 

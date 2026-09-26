@@ -1,0 +1,37 @@
+{
+  "report_version": 1,
+  "release_version": "1.1.0",
+  "generated_at_utc": "2026-09-26T12:12:51.462331+00:00",
+  "scope": "static boundary audit for import, workspace, retrieval, and embedding paths",
+  "status": "passed",
+  "files": [
+    {
+      "path": "crates/ilia-database/src/import.rs",
+      "sha256": "58eebb4e40c90a6cdb522391bf3ee00c2383ad53741926c2a967040f7c998c7c",
+      "network_markers": [],
+      "secret_log_markers": []
+    },
+    {
+      "path": "crates/ilia-database/src/workspace.rs",
+      "sha256": "dee88d50b46e6e694d4e61dea8d9bf9b4da12bbdb9fc87952dea9a541c3b54eb",
+      "network_markers": [],
+      "secret_log_markers": []
+    },
+    {
+      "path": "crates/ilia-retrieval/src/lib.rs",
+      "sha256": "03ca1f0ac4e26fa473ab1aa4de8133acfa45655722afff87349dc859670f3a9f",
+      "network_markers": [],
+      "secret_log_markers": []
+    },
+    {
+      "path": "crates/ilia-embedding/src/lib.rs",
+      "sha256": "88da80cef40b5a92fc56f52fd24d3bc303346b248bf6eccc749e312452a5e45c",
+      "network_markers": [],
+      "secret_log_markers": []
+    }
+  ],
+  "findings": [],
+  "limitations": [
+    "Runtime packet interception is performed by the release-host acceptance matrix, not inferred by this static report."
+  ]
+}

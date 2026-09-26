@@ -1,13 +1,32 @@
+mod import;
+mod user;
+mod workspace;
+mod writable;
+
 use std::path::Path;
 
-use ilia_core::{DocumentSummary, MatchKind, SearchHit};
+pub use import::{
+    CommitImport, ImportChunk, ImportError, ImportPreview, ImportedDocument, UserLibrary,
+};
+pub use user::UserDatabase;
+pub use workspace::{
+    Conversation, MemoSection, Message, NewSavedEvidence, Note, Project, SavedEvidence,
+    WorkspaceDatabase, WorkspaceExport,
+};
+pub use writable::{ApplicationDatabasePaths, USER_SCHEMA_VERSION, WORKSPACE_SCHEMA_VERSION};
+
+use ilia_core::{DocumentSummary, LibraryKind, MatchKind, SearchHit, StableEvidenceKey};
 use rusqlite::{Connection, OpenFlags, OptionalExtension, params};
 use thiserror::Error;
 
 #[derive(Debug, Error)]
 pub enum DatabaseError {
+    #[error("I/O error: {0}")]
+    Io(#[from] std::io::Error),
     #[error("SQLite error: {0}")]
     Sqlite(#[from] rusqlite::Error),
+    #[error("JSON error: {0}")]
+    Json(#[from] serde_json::Error),
     #[error("unsupported or missing ILIA schema; expected schema version 001")]
     InvalidSchema,
     #[error("invalid FTS query")]
@@ -16,6 +35,12 @@ pub enum DatabaseError {
     InvalidVector(String),
     #[error("embedding dimension mismatch: expected {expected}, got {actual}")]
     DimensionMismatch { expected: usize, actual: usize },
+    #[error("{database} database schema {found} is newer than supported schema {supported}")]
+    UnsupportedWritableSchema {
+        database: &'static str,
+        found: i64,
+        supported: i64,
+    },
 }
 
 #[derive(Debug, Clone)]
@@ -28,6 +53,23 @@ pub struct ResolvedDocument {
 pub struct ChunkForEmbedding {
     pub chunk_id: String,
     pub text: String,
+}
+
+#[derive(Debug, Clone, Default, PartialEq, Eq)]
+pub struct DatabaseQueryFilter {
+    pub document_types: Vec<String>,
+    pub document_ids: Vec<String>,
+    pub match_none: bool,
+}
+
+impl DatabaseQueryFilter {
+    pub(crate) fn document_types_json(&self) -> Result<String, DatabaseError> {
+        Ok(serde_json::to_string(&self.document_types)?)
+    }
+
+    pub(crate) fn document_ids_json(&self) -> Result<String, DatabaseError> {
+        Ok(serde_json::to_string(&self.document_ids)?)
+    }
 }
 
 pub struct Database {
@@ -119,16 +161,33 @@ impl Database {
     }
 
     pub fn resolve_document(&self, query: &str) -> Result<Option<ResolvedDocument>, DatabaseError> {
+        self.resolve_document_filtered(query, &DatabaseQueryFilter::default())
+    }
+
+    pub fn resolve_document_filtered(
+        &self,
+        query: &str,
+        filter: &DatabaseQueryFilter,
+    ) -> Result<Option<ResolvedDocument>, DatabaseError> {
+        if filter.match_none {
+            return Ok(None);
+        }
         let normalized_query = normalize(query);
+        let document_types = filter.document_types_json()?;
+        let document_ids = filter.document_ids_json()?;
         let mut statement = self.connection.prepare(
-            r#"SELECT document_id, alias FROM (
+            r#"SELECT candidates.document_id, candidates.alias FROM (
             SELECT document_id, alias FROM document_aliases
-            UNION ALL SELECT id AS document_id, id AS alias FROM documents)
+            UNION ALL SELECT id AS document_id, id AS alias FROM documents) candidates
+            JOIN documents d ON d.id = candidates.document_id
+            WHERE (json_array_length(?1) = 0 OR d.document_type IN (SELECT value FROM json_each(?1)))
+              AND (json_array_length(?2) = 0 OR d.id IN (SELECT value FROM json_each(?2)))
             ORDER BY length(alias) DESC"#,
         )?;
-        let aliases = statement.query_map([], |row| {
+        let aliases = statement.query_map(params![document_types, document_ids], |row| {
             Ok((row.get::<_, String>(0)?, row.get::<_, String>(1)?))
         })?;
+        let mut fuzzy_match: Option<(usize, ResolvedDocument)> = None;
         for alias in aliases {
             let (document_id, alias) = alias?;
             let normalized_alias = normalize(&alias);
@@ -138,20 +197,51 @@ impl Database {
                     matched_alias: alias,
                 }));
             }
+            if let Some(distance) = fuzzy_alias_distance(query, &alias)
+                && fuzzy_match
+                    .as_ref()
+                    .is_none_or(|(best_distance, _)| distance < *best_distance)
+            {
+                fuzzy_match = Some((
+                    distance,
+                    ResolvedDocument {
+                        document_id,
+                        matched_alias: alias,
+                    },
+                ));
+            }
         }
-        Ok(None)
+        Ok(fuzzy_match.map(|(_, resolved)| resolved))
     }
 
     pub fn document(&self, document_id: &str) -> Result<Option<DocumentSummary>, DatabaseError> {
+        self.document_filtered(document_id, &DatabaseQueryFilter::default())
+    }
+
+    pub fn document_filtered(
+        &self,
+        document_id: &str,
+        filter: &DatabaseQueryFilter,
+    ) -> Result<Option<DocumentSummary>, DatabaseError> {
+        if filter.match_none {
+            return Ok(None);
+        }
+        let document_types = filter.document_types_json()?;
+        let document_ids = filter.document_ids_json()?;
         self.connection
             .query_row(
                 r#"SELECT id, canonical_title, title_zh, short_title, document_type,
                     legal_status, official_source_url
-                    FROM documents WHERE id = ?1"#,
-                [document_id],
+                    FROM documents WHERE id = ?1
+                    AND (json_array_length(?2) = 0 OR document_type IN (SELECT value FROM json_each(?2)))
+                    AND (json_array_length(?3) = 0 OR id IN (SELECT value FROM json_each(?3)))"#,
+                params![document_id, document_types, document_ids],
                 |row| {
+                    let document_id: String = row.get(0)?;
                     Ok(DocumentSummary {
-                        document_id: row.get(0)?,
+                        library_kind: LibraryKind::Core,
+                        stable_document_key: format!("core:{document_id}"),
+                        document_id,
                         canonical_title: row.get(1)?,
                         title_zh: row.get(2)?,
                         short_title: row.get(3)?,
@@ -166,15 +256,32 @@ impl Database {
     }
 
     pub fn documents(&self) -> Result<Vec<DocumentSummary>, DatabaseError> {
+        self.documents_filtered(&DatabaseQueryFilter::default())
+    }
+
+    pub fn documents_filtered(
+        &self,
+        filter: &DatabaseQueryFilter,
+    ) -> Result<Vec<DocumentSummary>, DatabaseError> {
+        if filter.match_none {
+            return Ok(Vec::new());
+        }
+        let document_types = filter.document_types_json()?;
+        let document_ids = filter.document_ids_json()?;
         let mut statement = self.connection.prepare(
             r#"SELECT id, canonical_title, title_zh, short_title, document_type,
                 legal_status, official_source_url
                 FROM documents
+                WHERE (json_array_length(?1) = 0 OR document_type IN (SELECT value FROM json_each(?1)))
+                  AND (json_array_length(?2) = 0 OR id IN (SELECT value FROM json_each(?2)))
                 ORDER BY COALESCE(title_zh, canonical_title), canonical_title"#,
         )?;
-        let rows = statement.query_map([], |row| {
+        let rows = statement.query_map(params![document_types, document_ids], |row| {
+            let document_id: String = row.get(0)?;
             Ok(DocumentSummary {
-                document_id: row.get(0)?,
+                library_kind: LibraryKind::Core,
+                stable_document_key: format!("core:{document_id}"),
+                document_id,
                 canonical_title: row.get(1)?,
                 title_zh: row.get(2)?,
                 short_title: row.get(3)?,
@@ -206,6 +313,26 @@ impl Database {
         article_number: i64,
         limit: usize,
     ) -> Result<Vec<SearchHit>, DatabaseError> {
+        self.article_filtered(
+            document_id,
+            article_number,
+            limit,
+            &DatabaseQueryFilter::default(),
+        )
+    }
+
+    pub fn article_filtered(
+        &self,
+        document_id: Option<&str>,
+        article_number: i64,
+        limit: usize,
+        filter: &DatabaseQueryFilter,
+    ) -> Result<Vec<SearchHit>, DatabaseError> {
+        if filter.match_none {
+            return Ok(Vec::new());
+        }
+        let document_types = filter.document_types_json()?;
+        let document_ids = filter.document_ids_json()?;
         let sql = r#"SELECT c.id, c.document_id, d.canonical_title, d.title_zh,
             d.document_type, d.legal_status, d.official_source_url, c.citation_label, c.page_start, c.page_end,
             c.language, c.text_original
@@ -215,11 +342,19 @@ impl Database {
             JOIN documents d ON d.id = c.document_id
             WHERE CAST(p.article_number AS INTEGER) = ?1
               AND (?2 IS NULL OR d.id = ?2)
+              AND (json_array_length(?3) = 0 OR d.document_type IN (SELECT value FROM json_each(?3)))
+              AND (json_array_length(?4) = 0 OR d.id IN (SELECT value FROM json_each(?4)))
             ORDER BY CASE WHEN d.id = ?2 THEN 0 ELSE 1 END, d.canonical_title
-            LIMIT ?3"#;
+            LIMIT ?5"#;
         self.query_hits(
             sql,
-            params![article_number, document_id, limit as i64],
+            params![
+                article_number,
+                document_id,
+                document_types,
+                document_ids,
+                limit as i64
+            ],
             MatchKind::ExactArticle,
         )
     }
@@ -230,6 +365,26 @@ impl Database {
         paragraph_number: i64,
         limit: usize,
     ) -> Result<Vec<SearchHit>, DatabaseError> {
+        self.case_paragraph_filtered(
+            document_id,
+            paragraph_number,
+            limit,
+            &DatabaseQueryFilter::default(),
+        )
+    }
+
+    pub fn case_paragraph_filtered(
+        &self,
+        document_id: Option<&str>,
+        paragraph_number: i64,
+        limit: usize,
+        filter: &DatabaseQueryFilter,
+    ) -> Result<Vec<SearchHit>, DatabaseError> {
+        if filter.match_none {
+            return Ok(Vec::new());
+        }
+        let document_types = filter.document_types_json()?;
+        let document_ids = filter.document_ids_json()?;
         let sql = r#"SELECT c.id, c.document_id, d.canonical_title, d.title_zh,
             d.document_type, d.legal_status, d.official_source_url, c.citation_label, c.page_start, c.page_end,
             c.language, c.text_original
@@ -238,11 +393,19 @@ impl Database {
             JOIN documents d ON d.id = c.document_id
             WHERE p.paragraph_number = ?1
               AND (?2 IS NULL OR d.id = ?2)
+              AND (json_array_length(?3) = 0 OR d.document_type IN (SELECT value FROM json_each(?3)))
+              AND (json_array_length(?4) = 0 OR d.id IN (SELECT value FROM json_each(?4)))
             ORDER BY CASE WHEN d.id = ?2 THEN 0 ELSE 1 END, d.canonical_title
-            LIMIT ?3"#;
+            LIMIT ?5"#;
         self.query_hits(
             sql,
-            params![paragraph_number, document_id, limit as i64],
+            params![
+                paragraph_number,
+                document_id,
+                document_types,
+                document_ids,
+                limit as i64
+            ],
             MatchKind::ExactCaseParagraph,
         )
     }
@@ -253,9 +416,29 @@ impl Database {
         document_id: Option<&str>,
         limit: usize,
     ) -> Result<Vec<SearchHit>, DatabaseError> {
+        self.full_text_filtered(
+            fts_query,
+            document_id,
+            limit,
+            &DatabaseQueryFilter::default(),
+        )
+    }
+
+    pub fn full_text_filtered(
+        &self,
+        fts_query: &str,
+        document_id: Option<&str>,
+        limit: usize,
+        filter: &DatabaseQueryFilter,
+    ) -> Result<Vec<SearchHit>, DatabaseError> {
         if fts_query.trim().is_empty() {
             return Err(DatabaseError::InvalidFtsQuery);
         }
+        if filter.match_none {
+            return Ok(Vec::new());
+        }
+        let document_types = filter.document_types_json()?;
+        let document_ids = filter.document_ids_json()?;
         let mut statement = self.connection.prepare(
             r#"SELECT c.id, c.document_id, d.canonical_title, d.title_zh,
             d.document_type, d.legal_status, d.official_source_url, c.citation_label, c.page_start, c.page_end,
@@ -265,27 +448,46 @@ impl Database {
             JOIN documents d ON d.id = c.document_id
             WHERE chunks_fts MATCH ?1
               AND (?2 IS NULL OR c.document_id = ?2)
+              AND (json_array_length(?3) = 0 OR d.document_type IN (SELECT value FROM json_each(?3)))
+              AND (json_array_length(?4) = 0 OR d.id IN (SELECT value FROM json_each(?4)))
             ORDER BY rank, c.citation_label
-            LIMIT ?3"#,
+            LIMIT ?5"#,
         )?;
-        let rows = statement.query_map(params![fts_query, document_id, limit as i64], |row| {
-            Ok(SearchHit {
-                chunk_id: row.get(0)?,
-                document_id: row.get(1)?,
-                canonical_title: row.get(2)?,
-                title_zh: row.get(3)?,
-                document_type: row.get(4)?,
-                legal_status: row.get(5)?,
-                official_source_url: row.get(6)?,
-                citation_label: row.get(7)?,
-                page_start: row.get(8)?,
-                page_end: row.get(9)?,
-                language: row.get(10)?,
-                text: row.get(11)?,
-                match_kind: MatchKind::FullText,
-                score: -row.get::<_, f64>(12)?,
-            })
-        })?;
+        let rows = statement.query_map(
+            params![
+                fts_query,
+                document_id,
+                document_types,
+                document_ids,
+                limit as i64
+            ],
+            |row| {
+                let chunk_id: String = row.get(0)?;
+                let document_id: String = row.get(1)?;
+                Ok(SearchHit {
+                    library_kind: LibraryKind::Core,
+                    stable_key: StableEvidenceKey {
+                        library: LibraryKind::Core,
+                        document_id: document_id.clone(),
+                        chunk_id: chunk_id.clone(),
+                    },
+                    chunk_id,
+                    document_id,
+                    canonical_title: row.get(2)?,
+                    title_zh: row.get(3)?,
+                    document_type: row.get(4)?,
+                    legal_status: row.get(5)?,
+                    official_source_url: row.get(6)?,
+                    citation_label: row.get(7)?,
+                    page_start: row.get(8)?,
+                    page_end: row.get(9)?,
+                    language: row.get(10)?,
+                    text: row.get(11)?,
+                    match_kind: MatchKind::FullText,
+                    score: -row.get::<_, f64>(12)?,
+                })
+            },
+        )?;
         Ok(rows.collect::<Result<Vec<_>, _>>()?)
     }
 
@@ -296,6 +498,26 @@ impl Database {
         document_id: Option<&str>,
         limit: usize,
     ) -> Result<Vec<SearchHit>, DatabaseError> {
+        self.vector_search_filtered(
+            query_vector,
+            model_id,
+            document_id,
+            limit,
+            &DatabaseQueryFilter::default(),
+        )
+    }
+
+    pub fn vector_search_filtered(
+        &self,
+        query_vector: &[f32],
+        model_id: &str,
+        document_id: Option<&str>,
+        limit: usize,
+        filter: &DatabaseQueryFilter,
+    ) -> Result<Vec<SearchHit>, DatabaseError> {
+        if filter.match_none {
+            return Ok(Vec::new());
+        }
         let dimension: Option<i64> = self
             .connection
             .query_row(
@@ -318,6 +540,8 @@ impl Database {
             .map(|value| value * value)
             .sum::<f32>()
             .sqrt();
+        let document_types = filter.document_types_json()?;
+        let document_ids = filter.document_ids_json()?;
         let mut statement = self.connection.prepare(
             r#"SELECT c.id, c.document_id, d.canonical_title, d.title_zh,
             d.document_type, d.legal_status, d.official_source_url, c.citation_label, c.page_start, c.page_end,
@@ -325,32 +549,45 @@ impl Database {
             FROM chunk_embeddings e
             JOIN chunks c ON c.id = e.chunk_id
             JOIN documents d ON d.id = c.document_id
-            WHERE e.model_id = ?1 AND (?2 IS NULL OR c.document_id = ?2)"#,
+            WHERE e.model_id = ?1 AND (?2 IS NULL OR c.document_id = ?2)
+              AND (json_array_length(?3) = 0 OR d.document_type IN (SELECT value FROM json_each(?3)))
+              AND (json_array_length(?4) = 0 OR d.id IN (SELECT value FROM json_each(?4)))"#,
         )?;
-        let rows = statement.query_map(params![model_id, document_id], |row| {
-            let bytes: Vec<u8> = row.get(12)?;
-            let vector_norm: f32 = row.get(13)?;
-            Ok((
-                SearchHit {
-                    chunk_id: row.get(0)?,
-                    document_id: row.get(1)?,
-                    canonical_title: row.get(2)?,
-                    title_zh: row.get(3)?,
-                    document_type: row.get(4)?,
-                    legal_status: row.get(5)?,
-                    official_source_url: row.get(6)?,
-                    citation_label: row.get(7)?,
-                    page_start: row.get(8)?,
-                    page_end: row.get(9)?,
-                    language: row.get(10)?,
-                    text: row.get(11)?,
-                    match_kind: MatchKind::Vector,
-                    score: 0.0,
-                },
-                bytes,
-                vector_norm,
-            ))
-        })?;
+        let rows = statement.query_map(
+            params![model_id, document_id, document_types, document_ids],
+            |row| {
+                let bytes: Vec<u8> = row.get(12)?;
+                let vector_norm: f32 = row.get(13)?;
+                let chunk_id: String = row.get(0)?;
+                let document_id: String = row.get(1)?;
+                Ok((
+                    SearchHit {
+                        library_kind: LibraryKind::Core,
+                        stable_key: StableEvidenceKey {
+                            library: LibraryKind::Core,
+                            document_id: document_id.clone(),
+                            chunk_id: chunk_id.clone(),
+                        },
+                        chunk_id,
+                        document_id,
+                        canonical_title: row.get(2)?,
+                        title_zh: row.get(3)?,
+                        document_type: row.get(4)?,
+                        legal_status: row.get(5)?,
+                        official_source_url: row.get(6)?,
+                        citation_label: row.get(7)?,
+                        page_start: row.get(8)?,
+                        page_end: row.get(9)?,
+                        language: row.get(10)?,
+                        text: row.get(11)?,
+                        match_kind: MatchKind::Vector,
+                        score: 0.0,
+                    },
+                    bytes,
+                    vector_norm,
+                ))
+            },
+        )?;
         let mut hits = Vec::new();
         for row in rows {
             let (mut hit, bytes, vector_norm) = row?;
@@ -387,9 +624,17 @@ impl Database {
     ) -> Result<Vec<SearchHit>, DatabaseError> {
         let mut statement = self.connection.prepare(sql)?;
         let rows = statement.query_map(params, |row| {
+            let chunk_id: String = row.get(0)?;
+            let document_id: String = row.get(1)?;
             Ok(SearchHit {
-                chunk_id: row.get(0)?,
-                document_id: row.get(1)?,
+                library_kind: LibraryKind::Core,
+                stable_key: StableEvidenceKey {
+                    library: LibraryKind::Core,
+                    document_id: document_id.clone(),
+                    chunk_id: chunk_id.clone(),
+                },
+                chunk_id,
+                document_id,
                 canonical_title: row.get(2)?,
                 title_zh: row.get(3)?,
                 document_type: row.get(4)?,
@@ -414,4 +659,69 @@ fn normalize(value: &str) -> String {
         .filter(|character| character.is_alphanumeric())
         .flat_map(char::to_lowercase)
         .collect()
+}
+
+pub fn fuzzy_alias_distance(query: &str, alias: &str) -> Option<usize> {
+    let normalized_alias = normalize(alias);
+    if normalized_alias.chars().count() < 5 {
+        return None;
+    }
+    let mut candidates = vec![normalize(query)];
+    candidates.extend(
+        query
+            .split(|character: char| !character.is_alphanumeric())
+            .map(normalize)
+            .filter(|value| value.chars().count() >= 5),
+    );
+    candidates
+        .into_iter()
+        .filter(|candidate| {
+            candidate
+                .chars()
+                .count()
+                .abs_diff(normalized_alias.chars().count())
+                <= 2
+        })
+        .filter_map(|candidate| {
+            let distance = levenshtein(&candidate, &normalized_alias);
+            (distance <= 2).then_some(distance)
+        })
+        .min()
+}
+
+fn levenshtein(left: &str, right: &str) -> usize {
+    let right = right.chars().collect::<Vec<_>>();
+    let mut previous = (0..=right.len()).collect::<Vec<_>>();
+    for (left_index, left_character) in left.chars().enumerate() {
+        let mut current = Vec::with_capacity(right.len() + 1);
+        current.push(left_index + 1);
+        for (right_index, right_character) in right.iter().enumerate() {
+            current.push(
+                (previous[right_index + 1] + 1)
+                    .min(current[right_index] + 1)
+                    .min(previous[right_index] + usize::from(left_character != *right_character)),
+            );
+        }
+        previous = current;
+    }
+    previous[right.len()]
+}
+
+#[cfg(test)]
+mod tests {
+    use super::fuzzy_alias_distance;
+
+    #[test]
+    fn fuzzy_aliases_allow_conservative_document_name_typos() {
+        assert_eq!(fuzzy_alias_distance("UNCLO", "UNCLOS"), Some(1));
+        assert_eq!(
+            fuzzy_alias_distance(
+                "Vienna Convention on the Law of Treates",
+                "Vienna Convention on the Law of Treaties"
+            ),
+            Some(1)
+        );
+        assert_eq!(fuzzy_alias_distance("unrelated query", "UNCLOS"), None);
+        assert_eq!(fuzzy_alias_distance("ICJ", "ICC"), None);
+    }
 }

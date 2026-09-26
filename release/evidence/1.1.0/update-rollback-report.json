@@ -1,0 +1,29 @@
+{
+  "report_version": 1,
+  "release_version": "1.1.0",
+  "generated_at_utc": "2026-09-26T12:13:00.520991+00:00",
+  "host": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.7"
+  },
+  "command": [
+    "cargo",
+    "+stable-x86_64-pc-windows-gnu",
+    "test",
+    "-p",
+    "ilia-updater"
+  ],
+  "exit_code": 0,
+  "status": "passed",
+  "covered": [
+    "signature",
+    "hash",
+    "path traversal",
+    "transactional rollback",
+    "local .ilia package",
+    "partial resume",
+    "SQLite integrity"
+  ],
+  "stdout_tail": "\nrunning 11 tests\ntest tests::rejects_path_traversal ... ok\ntest tests::rejects_updater_self_replacement ... ok\ntest tests::update_diagnostics_are_stable_and_proxy_debug_is_redacted ... ok\ntest tests::verifies_ed25519_detached_signature ... ok\ntest tests::local_package_rejects_path_traversal_entries ... ok\ntest tests::rejects_reparse_or_symlink_target_parent ... ok\ntest tests::creates_and_loads_signed_local_package ... ok\ntest tests::applies_raw_file_and_rolls_back_after_later_failure ... ok\ntest tests::applies_sqlite_patch_transactionally ... ok\ntest tests::resumes_a_matching_partial_file_payload ... ok\ntest tests::stages_large_payload_without_buffering_the_whole_file ... ok\n\ntest result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.73s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n",
+  "stderr_tail": "   Compiling ilia-updater v1.1.0 (D:\\Users\\11373\\Personal\\YAOY\\ILIA\\crates\\ilia-updater)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.84s\n     Running unittests src\\lib.rs (target\\debug\\deps\\ilia_updater-8efff33a832cf1fc.exe)\n     Running unittests src\\bin\\ilia-update-sign.rs (target\\debug\\deps\\ilia_update_sign-df7825b4cc234fb7.exe)\n     Running unittests src\\main.rs (target\\debug\\deps\\ilia_updater-403e65cb36679109.exe)\n   Doc-tests ilia_updater\n"
+}

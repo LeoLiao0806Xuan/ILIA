@@ -2,7 +2,9 @@
 
 ILIA（International Law Intelligence Assistant）是一款完全离线运行的 Windows 国际法检索与辅助问答应用。它把法律资料检索、中文问答、原文翻译和文献阅读放在同一个工作台中，让结论回到具体条款、判例段落和来源。
 
-当前版本：`1.0.1`
+当前候选版：`1.1.0`；安装介质、版本化证据和本地发布门禁已经完成，公网 Release 发布后转为稳定版。
+
+1.1 开发线在现有离线检索与有据问答上新增研究工作区、个人资料导入、双语对照、引证审计、本地签名更新、更新代理、运行时预热与性能档位。开发构建不应被当作正式发布版分发。
 
 ## 核心能力
 
@@ -30,21 +32,21 @@ ILIA（International Law Intelligence Assistant）是一款完全离线运行的
 Windows x64 离线安装介质位于 `dist/installer/`。安装时必须把以下四个文件放在同一目录：
 
 ```text
-ILIA-1.0.1-windows-x64-offline-setup.exe
-ILIA-1.0.1-windows-x64-offline-setup-1.bin
-ILIA-1.0.1-windows-x64-offline-setup-2.bin
-ILIA-1.0.1-windows-x64-offline-setup-3.bin
+ILIA-1.1.0-windows-x64-offline-setup.exe
+ILIA-1.1.0-windows-x64-offline-setup-1.bin
+ILIA-1.1.0-windows-x64-offline-setup-2.bin
+ILIA-1.1.0-windows-x64-offline-setup-3.bin
 ```
 
 双击 `...setup.exe` 并按提示安装。离线介质已经包含桌面程序、资料库、Qwen3-4B、BGE-M3、CUDA/Vulkan/CPU 运行时、ONNX Runtime 及 WebView2 离线运行时，无需安装 Rust、Node.js 或 Python。
 
-下载后可使用同目录的 `SHA256SUMS.txt` 核验文件完整性。1.0.1 安装器尚未进行 Windows Authenticode 代码签名，Windows 可能显示“未知发布者”。
+下载后可使用同目录的 `SHA256SUMS.txt` 核验文件完整性。1.1.0 安装器尚未进行 Windows Authenticode 代码签名，Windows 可能显示“未知发布者”。
 
 ## 技术组成
 
 ILIA 使用 Tauri 2、Rust、SQLite/FTS5、BGE-M3、Qwen3-4B、llama.cpp 和 ONNX Runtime 构建。应用、资料库、模型与运行时可分别进行签名更新，并具有负载哈希校验、备份和失败回滚能力。
 
-项目结构、开发与验证说明见 [`docs/repository_structure.md`](docs/repository_structure.md)，版本变更见 [`docs/release_notes_1.0.1.md`](docs/release_notes_1.0.1.md)。第三方组件及资料许可状态见 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)。
+项目结构、开发与验证说明见 [`docs/repository_structure.md`](docs/repository_structure.md)，1.1.0 的目标架构、里程碑和任务基线见 [`docs/implementation_plan_1.1.0.md`](docs/implementation_plan_1.1.0.md)，版本变更见 [`docs/release_notes_1.1.0.md`](docs/release_notes_1.1.0.md)。第三方组件及资料许可状态见 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)。
 
 ## 从源码运行
 

@@ -9,8 +9,12 @@ ilia-core = { path = "../ilia-core" }
 ilia-database = { path = "../ilia-database" }
 ilia-embedding = { path = "../ilia-embedding" }
 regex.workspace = true
+serde.workspace = true
 serde_json.workspace = true
 thiserror.workspace = true
+
+[dev-dependencies]
+rusqlite.workspace = true
 
 [[bin]]
 name = "ilia-search"

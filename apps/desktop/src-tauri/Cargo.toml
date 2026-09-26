@@ -26,3 +26,4 @@ serde_json.workspace = true
 tauri = { version = "2.11.6", features = [] }
 tauri-plugin-opener = "2.5.4"
 uuid.workspace = true
+url.workspace = true

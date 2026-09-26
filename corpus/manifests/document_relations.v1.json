@@ -1,0 +1,16 @@
+{
+  "format_version": 1,
+  "basis": "Human-maintained legal research links; never generated at query time.",
+  "relations": [
+    { "left": "un-charter-1945", "right": "icj-nicaragua-1986-merits" },
+    { "left": "un-charter-1945", "right": "icj-armed-activities-2005" },
+    { "left": "unclos-1982", "right": "icj-north-sea-1969" },
+    { "left": "unclos-1982", "right": "icj-continental-shelf-tunisia-libya-1982" },
+    { "left": "vclt-1969", "right": "icj-gabcikovo-1997" },
+    { "left": "arsiwa-2001", "right": "icj-armed-activities-2005" },
+    { "left": "gc-iv-1949", "right": "icj-wall-2004" },
+    { "left": "icj-statute-1945", "right": "icj-nicaragua-1986-merits" },
+    { "left": "icj-bosnian-genocide-preliminary-1996", "right": "icj-bosnian-genocide-2007" },
+    { "left": "udhr-1948", "right": "iccpr-1966" }
+  ]
+}

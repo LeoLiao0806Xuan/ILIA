@@ -21,6 +21,9 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: apps/desktop/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
       - name: Install frontend dependencies
         run: npm ci --prefix apps/desktop
       - name: Check formatting
@@ -38,6 +41,20 @@ jobs:
           if ($size -lt 1MB) {
             throw "Retrieval database is unexpectedly small: $size bytes"
           }
+      - name: Enforce release rights gate
+        run: python tools/release_rights_gate.py
+      - name: Validate versioned release database report
+        shell: pwsh
+        run: python tools/corpus-validator/validate_corpus.py --version ci --report "$env:RUNNER_TEMP/validation_report_ci.json"
+      - name: Test release tooling
+        run: python -m unittest discover -s tools/tests -v
+      - name: Verify retrieval 1.1 evaluation suite
+        run: python tools/build_retrieval_eval_1_1.py --check
+      - name: Verify offline and privacy boundaries
+        shell: pwsh
+        run: python tools/privacy_offline_audit.py --version ci --output "$env:RUNNER_TEMP/privacy_offline_report.json"
+      - name: Verify related-document metadata
+        run: python -c "import json, pathlib; json.loads(pathlib.Path('corpus/manifests/document_relations.v1.json').read_text(encoding='utf-8'))"
       - name: Rust tests
         run: cargo test --workspace
       - name: Frontend build

@@ -3,9 +3,10 @@
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
-import os
+import re
 import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
@@ -14,8 +15,34 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 MANIFEST_PATH = ROOT / "corpus" / "manifests" / "prototype_manifest.json"
 NORMALIZED_MANIFEST_PATH = ROOT / "corpus" / "normalized" / "manifest.json"
-DB_PATH = Path(os.environ.get("ILIA_DB_PATH", ROOT / "data" / "ilia.sqlite3"))
-REPORT_PATH = Path(os.environ.get("ILIA_VALIDATION_REPORT", ROOT / "data" / "validation_report.json"))
+DEFAULT_DB_PATH = ROOT / "data" / "ilia.sqlite3"
+RIGHTS_MATRIX_PATH = ROOT / "licenses" / "corpus-redistribution-rights-matrix.csv"
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Validate one versioned ILIA release database."
+    )
+    parser.add_argument(
+        "--version",
+        required=True,
+        help="Release version recorded in the report, for example 1.0.1 or 1.1.0-rc.1.",
+    )
+    parser.add_argument("--database", type=Path, default=DEFAULT_DB_PATH)
+    parser.add_argument(
+        "--report",
+        type=Path,
+        help="Output path. Defaults to data/validation_report_<version>.json.",
+    )
+    return parser.parse_args()
+
+
+def safe_version(value: str) -> str:
+    if not re.fullmatch(r"[0-9A-Za-z][0-9A-Za-z._-]*", value):
+        raise ValueError(
+            "version must contain only ASCII letters, digits, dots, underscores, and hyphens"
+        )
+    return value
 
 
 def sha256_file(path: Path) -> str:
@@ -27,6 +54,21 @@ def sha256_file(path: Path) -> str:
 
 
 def main() -> None:
+    args = parse_args()
+    version = safe_version(args.version)
+    db_path = args.database.resolve()
+    report_path = (
+        args.report.resolve()
+        if args.report
+        else ROOT / "data" / f"validation_report_{version}.json"
+    )
+    if version not in report_path.name:
+        raise ValueError(
+            f"report filename must include release version {version!r}: {report_path.name}"
+        )
+    if not db_path.is_file():
+        raise FileNotFoundError(f"release database is missing: {db_path}")
+
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
     normalized_manifest = json.loads(NORMALIZED_MANIFEST_PATH.read_text(encoding="utf-8"))
     excluded = set(normalized_manifest["excluded_documents"])
@@ -38,7 +80,7 @@ def main() -> None:
     def record(name: str, passed: bool, detail: str, severity: str = "error") -> None:
         checks.append({"name": name, "passed": passed, "severity": severity, "detail": detail})
 
-    connection = sqlite3.connect(DB_PATH)
+    connection = sqlite3.connect(f"{db_path.as_uri()}?mode=ro", uri=True)
     connection.row_factory = sqlite3.Row
 
     record(
@@ -232,6 +274,32 @@ def main() -> None:
         f"AUTO_UNIT_COUNT_NOT_FROZEN={unfrozen_counts}",
     )
 
+    document_count = connection.execute("SELECT count(*) FROM documents").fetchone()[0]
+    chunk_count = connection.execute("SELECT count(*) FROM chunks").fetchone()[0]
+    vector_count = connection.execute("SELECT count(*) FROM chunk_embeddings").fetchone()[0]
+    fts_count = connection.execute("SELECT count(*) FROM chunks_fts").fetchone()[0]
+    database_versions = [
+        row[0]
+        for row in connection.execute(
+            "SELECT DISTINCT database_version FROM documents ORDER BY database_version"
+        )
+    ]
+    record(
+        "release:document_count",
+        document_count == normalized_manifest["document_count"],
+        f"documents={document_count} expected={normalized_manifest['document_count']}",
+    )
+    record(
+        "release:index_counts",
+        chunk_count == vector_count == fts_count,
+        f"chunks={chunk_count} vectors={vector_count} fts={fts_count}",
+    )
+    record(
+        "release:database_version",
+        database_versions == [normalized_manifest["database_version"]],
+        f"database_versions={database_versions} manifest={normalized_manifest['database_version']}",
+    )
+
     integrity = connection.execute("PRAGMA integrity_check").fetchone()[0]
     record("sqlite:integrity", integrity == "ok", f"integrity_check={integrity}")
     connection.close()
@@ -243,15 +311,33 @@ def main() -> None:
         if not check["passed"] and check["severity"] == "warning"
     ]
     report = {
+        "report_format_version": 2,
+        "release_version": version,
         "validated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
-        "database": str(DB_PATH),
+        "database": str(db_path),
+        "database_version": normalized_manifest["database_version"],
+        "database_sha256": sha256_file(db_path),
+        "counts": {
+            "documents": document_count,
+            "chunks": chunk_count,
+            "vectors": vector_count,
+            "fts": fts_count,
+        },
+        "excluded_documents": sorted(excluded),
+        "rights_matrix": {
+            "path": str(RIGHTS_MATRIX_PATH.relative_to(ROOT)).replace("\\", "/"),
+            "sha256": sha256_file(RIGHTS_MATRIX_PATH),
+        },
         "status": "passed" if not errors else "failed",
         "error_count": len(errors),
         "warning_count": len(warnings),
         "checks": checks,
         "manual_review_queue": review_pages,
     }
-    REPORT_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text(
+        json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
     print(json.dumps(report, ensure_ascii=False, indent=2))
     if errors:
         raise SystemExit(1)

@@ -37,6 +37,28 @@ pub enum RuntimePreference {
     Cpu,
 }
 
+#[derive(Debug, Clone, Copy, Serialize, Deserialize, PartialEq, Eq, Default)]
+#[serde(rename_all = "snake_case")]
+pub enum PerformancePreset {
+    EnergySaver,
+    #[default]
+    Balanced,
+    HighPerformance,
+}
+
+impl std::str::FromStr for PerformancePreset {
+    type Err = String;
+
+    fn from_str(value: &str) -> Result<Self, Self::Err> {
+        match value.to_ascii_lowercase().as_str() {
+            "energy_saver" => Ok(Self::EnergySaver),
+            "balanced" => Ok(Self::Balanced),
+            "high_performance" => Ok(Self::HighPerformance),
+            _ => Err(format!("unsupported performance preset: {value}")),
+        }
+    }
+}
+
 impl RuntimePreference {
     pub fn fallback_order(self) -> &'static [RuntimeBackend] {
         match self {
@@ -98,6 +120,7 @@ pub struct RuntimeProfile {
     pub gpu_layers: i32,
     pub device: Option<String>,
     pub flash_attention: bool,
+    pub estimated_memory_mib: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -121,6 +144,7 @@ pub struct RuntimeManagerConfig {
     pub runtime_root: PathBuf,
     pub model: PathBuf,
     pub preference: RuntimePreference,
+    pub performance_preset: PerformancePreset,
     pub host: String,
     pub port: u16,
     pub startup_timeout: Duration,
@@ -177,9 +201,26 @@ impl RuntimeManager {
     }
 
     pub fn start(config: &RuntimeManagerConfig) -> Result<AutoManagedLlamaServer, InferenceError> {
+        Self::start_internal(config, None)
+    }
+
+    pub fn start_cancellable(
+        config: &RuntimeManagerConfig,
+        cancellation: &crate::CancellationToken,
+    ) -> Result<AutoManagedLlamaServer, InferenceError> {
+        Self::start_internal(config, Some(cancellation))
+    }
+
+    fn start_internal(
+        config: &RuntimeManagerConfig,
+        cancellation: Option<&crate::CancellationToken>,
+    ) -> Result<AutoManagedLlamaServer, InferenceError> {
         let detection = Self::probe(&config.runtime_root, config.preference);
         let mut attempts = Vec::new();
         for backend in config.preference.fallback_order() {
+            if let Some(cancellation) = cancellation {
+                cancellation.check()?;
+            }
             let probe = detection
                 .probes
                 .iter()
@@ -194,7 +235,14 @@ impl RuntimeManager {
                 });
                 continue;
             }
-            let profile = runtime_profile(*backend, probe.recommended_device.clone());
+            let profile = runtime_profile(
+                *backend,
+                probe.recommended_device.clone(),
+                config.performance_preset,
+                std::fs::metadata(&config.model)
+                    .map(|metadata| metadata.len())
+                    .unwrap_or_default(),
+            );
             let server_config = LlamaServerConfig {
                 executable: probe.executable.clone(),
                 model: config.model.clone(),
@@ -210,7 +258,13 @@ impl RuntimeManager {
                 device: profile.device.clone(),
                 flash_attention: profile.flash_attention,
             };
-            match ManagedLlamaServer::start(&server_config) {
+            let started = match cancellation {
+                Some(cancellation) => {
+                    ManagedLlamaServer::start_cancellable(&server_config, cancellation)
+                }
+                None => ManagedLlamaServer::start(&server_config),
+            };
+            match started {
                 Ok(server) => {
                     attempts.push(RuntimeAttempt {
                         backend: *backend,
@@ -228,12 +282,17 @@ impl RuntimeManager {
                         },
                     });
                 }
-                Err(error) => attempts.push(RuntimeAttempt {
-                    backend: *backend,
-                    executable: probe.executable.clone(),
-                    started: false,
-                    error: Some(error.to_string()),
-                }),
+                Err(error) => {
+                    if cancellation.is_some_and(crate::CancellationToken::is_cancelled) {
+                        return Err(InferenceError::Cancelled);
+                    }
+                    attempts.push(RuntimeAttempt {
+                        backend: *backend,
+                        executable: probe.executable.clone(),
+                        started: false,
+                        error: Some(error.to_string()),
+                    });
+                }
             }
         }
         let summary = attempts
@@ -316,29 +375,37 @@ fn probe_backend(runtime_root: &Path, backend: RuntimeBackend) -> BackendProbe {
     }
 }
 
-fn runtime_profile(backend: RuntimeBackend, device: Option<String>) -> RuntimeProfile {
-    match backend {
-        RuntimeBackend::Cuda => RuntimeProfile {
-            backend,
-            context_size: 16_384,
-            gpu_layers: 99,
-            device,
-            flash_attention: true,
+pub fn runtime_profile(
+    backend: RuntimeBackend,
+    device: Option<String>,
+    preset: PerformancePreset,
+    model_bytes: u64,
+) -> RuntimeProfile {
+    let (context_size, gpu_layers) = match (backend, preset) {
+        (RuntimeBackend::Cpu, PerformancePreset::EnergySaver) => (2_048, 0),
+        (RuntimeBackend::Cpu, PerformancePreset::Balanced) => (4_096, 0),
+        (RuntimeBackend::Cpu, PerformancePreset::HighPerformance) => (8_192, 0),
+        (RuntimeBackend::Vulkan, PerformancePreset::EnergySaver) => (4_096, 24),
+        (RuntimeBackend::Vulkan, PerformancePreset::Balanced) => (8_192, 99),
+        (RuntimeBackend::Vulkan, PerformancePreset::HighPerformance) => (16_384, 99),
+        (RuntimeBackend::Cuda, PerformancePreset::EnergySaver) => (4_096, 24),
+        (RuntimeBackend::Cuda, PerformancePreset::Balanced) => (16_384, 99),
+        (RuntimeBackend::Cuda, PerformancePreset::HighPerformance) => (32_768, 99),
+    };
+    let estimated_memory_mib = model_bytes.div_ceil(1024 * 1024)
+        + (context_size as u64 * if backend == RuntimeBackend::Cpu { 1 } else { 2 }) / 4
+        + 512;
+    RuntimeProfile {
+        backend,
+        context_size,
+        gpu_layers,
+        device: if backend == RuntimeBackend::Cpu {
+            Some("none".to_owned())
+        } else {
+            device
         },
-        RuntimeBackend::Vulkan => RuntimeProfile {
-            backend,
-            context_size: 8_192,
-            gpu_layers: 99,
-            device,
-            flash_attention: true,
-        },
-        RuntimeBackend::Cpu => RuntimeProfile {
-            backend,
-            context_size: 4_096,
-            gpu_layers: 0,
-            device: Some("none".to_owned()),
-            flash_attention: false,
-        },
+        flash_attention: backend != RuntimeBackend::Cpu,
+        estimated_memory_mib,
     }
 }
 
@@ -442,12 +509,52 @@ mod tests {
 
     #[test]
     fn backend_profiles_reduce_resources_during_fallback() {
-        let cuda = runtime_profile(RuntimeBackend::Cuda, Some("CUDA0".to_owned()));
-        let vulkan = runtime_profile(RuntimeBackend::Vulkan, Some("Vulkan0".to_owned()));
-        let cpu = runtime_profile(RuntimeBackend::Cpu, None);
+        let cuda = runtime_profile(
+            RuntimeBackend::Cuda,
+            Some("CUDA0".to_owned()),
+            PerformancePreset::Balanced,
+            2_500_000_000,
+        );
+        let vulkan = runtime_profile(
+            RuntimeBackend::Vulkan,
+            Some("Vulkan0".to_owned()),
+            PerformancePreset::Balanced,
+            2_500_000_000,
+        );
+        let cpu = runtime_profile(
+            RuntimeBackend::Cpu,
+            None,
+            PerformancePreset::Balanced,
+            2_500_000_000,
+        );
         assert!(cuda.context_size > vulkan.context_size);
         assert!(vulkan.context_size > cpu.context_size);
         assert_eq!(cpu.gpu_layers, 0);
         assert_eq!(cpu.device.as_deref(), Some("none"));
+    }
+
+    #[test]
+    fn performance_presets_map_to_monotonic_resource_profiles() {
+        let saver = runtime_profile(
+            RuntimeBackend::Cuda,
+            None,
+            PerformancePreset::EnergySaver,
+            1_000_000_000,
+        );
+        let balanced = runtime_profile(
+            RuntimeBackend::Cuda,
+            None,
+            PerformancePreset::Balanced,
+            1_000_000_000,
+        );
+        let fast = runtime_profile(
+            RuntimeBackend::Cuda,
+            None,
+            PerformancePreset::HighPerformance,
+            1_000_000_000,
+        );
+        assert!(saver.context_size < balanced.context_size);
+        assert!(balanced.context_size < fast.context_size);
+        assert!(saver.estimated_memory_mib < fast.estimated_memory_mib);
     }
 }

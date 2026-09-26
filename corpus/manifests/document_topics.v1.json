@@ -1,0 +1,91 @@
+{
+  "format_version": 1,
+  "basis": "Human-maintained, auditable subject classification for ILIA 1.1 retrieval filters.",
+  "topics": {
+    "foundations": [
+      "un-charter-1945",
+      "icj-statute-1945",
+      "vclt-1969",
+      "arsiwa-2001"
+    ],
+    "law_of_treaties": [
+      "vclt-1969",
+      "icj-genocide-reservations-1951",
+      "icj-gabcikovo-1997"
+    ],
+    "use_of_force": [
+      "un-charter-1945",
+      "icj-corfu-channel-1949-merits",
+      "icj-nicaragua-1986-merits",
+      "icj-nuclear-weapons-1996",
+      "icj-armed-activities-2005"
+    ],
+    "state_responsibility": [
+      "arsiwa-2001",
+      "icj-corfu-channel-1949-merits",
+      "icj-nicaragua-1986-merits",
+      "icj-gabcikovo-1997",
+      "icj-armed-activities-2005"
+    ],
+    "law_of_the_sea": [
+      "unclos-1982",
+      "icj-north-sea-1969",
+      "icj-continental-shelf-tunisia-libya-1982"
+    ],
+    "international_human_rights": [
+      "udhr-1948",
+      "iccpr-1966",
+      "icescr-1966",
+      "icerd-1965",
+      "cedaw-1979",
+      "cat-1984",
+      "crc-1989",
+      "icj-wall-2004"
+    ],
+    "international_humanitarian_law": [
+      "gc-i-1949",
+      "gc-ii-1949",
+      "gc-iii-1949",
+      "gc-iv-1949",
+      "ap-i-1977",
+      "ap-ii-1977",
+      "icj-nuclear-weapons-1996",
+      "icj-wall-2004"
+    ],
+    "international_criminal_law": [
+      "rome-statute-1998",
+      "icj-bosnian-genocide-preliminary-1996",
+      "icj-bosnian-genocide-2007",
+      "icj-gambia-myanmar-preliminary-2022"
+    ],
+    "jurisdiction_and_immunities": [
+      "icj-arrest-warrant-2002",
+      "icj-jurisdictional-immunities-2012",
+      "icj-nottebohm-1955",
+      "icj-barcelona-traction-1970"
+    ],
+    "self_determination": [
+      "icj-namibia-1971",
+      "icj-western-sahara-1975",
+      "icj-wall-2004",
+      "icj-kosovo-2010",
+      "icj-chagos-2019"
+    ],
+    "territory_and_boundaries": [
+      "icj-asylum-1950",
+      "icj-right-passage-1960",
+      "icj-temple-preah-vihear-1962",
+      "icj-frontier-dispute-1986",
+      "icj-western-sahara-1975"
+    ],
+    "international_adjudication": [
+      "icj-statute-1945",
+      "icj-reparation-injuries-1949",
+      "icj-nuclear-tests-1974",
+      "icj-nauru-preliminary-1992",
+      "icj-lagrand-2001",
+      "icj-elsi-1989",
+      "icj-whaling-2014"
+    ]
+  }
+}

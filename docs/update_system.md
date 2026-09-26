@@ -2,6 +2,14 @@
 
 `ilia-updater` 将应用、资料库、模型和推理运行时统一为一份签名发布清单，但每个组件独立标识、独立版本、独立负载和独立回滚。
 
+## 1.1 本地包与受限网络
+
+`ilia-updater pack --manifest <update-manifest.json> --signature <update-manifest.sig> --output <release.ilia>` 生成版本化本地容器。安装使用 `apply-package --root <安装目录> --package <release.ilia> --public-key <trusted-key.json>`。解析器限制展开大小并拒绝绝对路径、`..`、重复项和符号链接；验证通过后复用在线更新的哈希、SQLite 完整性、事务应用与回滚路径。
+
+在线更新把 DNS、连接超时、服务不可达、下载中断、签名失败和负载失败映射为稳定诊断代码。更新代理位于应用数据目录 `update-proxy.json`，支持 HTTP、HTTPS 和 SOCKS5；凭据不会出现在 UI 或 Debug 输出中，研究命令不读取该文件。
+
+下载使用 `.part` 与 `.part.json` 保存匹配组件 ID、总大小、SHA-256 和偏移。远端接受 Range 时续传；返回完整响应时截断重下；最终哈希失败立即清理部分文件。
+
 ## 安全边界
 
 - 发布清单使用 Ed25519 分离签名；桌面端和更新助手均使用安装包内置公钥复核。
