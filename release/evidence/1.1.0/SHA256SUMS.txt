@@ -1,4 +1,4 @@
-﻿60106e2db8d2247d190c69c287bbc60d32220fb5def4a4328db2ffce0b0580f1  ILIA-1.1.0-windows-x64-offline-setup.exe
-95d797cf78414bd3c40b890d8af30286744c913960ca1ba36c88379a9ecca6bb  ILIA-1.1.0-windows-x64-offline-setup-1.bin
-8e46d8c6feb6964b90ffa0719ddf960bac7c4265828547474b03e1ab16db2c19  ILIA-1.1.0-windows-x64-offline-setup-2.bin
-1d494d3aad3d2659b39bf8bc7ddf7b4da3c44960250e5fe1c62b163ceaebfc59  ILIA-1.1.0-windows-x64-offline-setup-3.bin
+﻿7183f2175802fb4a3c8ea216f22495dc987eca63a7068362aeaddb509a065ea7  ILIA-1.1.0-windows-x64-offline-setup.exe
+d26b4741de2903e17e88c8684ad667bc2e11f85e92f7d3d382879f76a0fa05ab  ILIA-1.1.0-windows-x64-offline-setup-1.bin
+88f4035d0e0841528e3b992ec218e0e1e59609d5f99119e59275c4e4d0f7cd1d  ILIA-1.1.0-windows-x64-offline-setup-2.bin
+c07264b03357f7164f6fbbf1b0d6aac04a1c5ad2480533067bf1b7e200c8b302  ILIA-1.1.0-windows-x64-offline-setup-3.bin
