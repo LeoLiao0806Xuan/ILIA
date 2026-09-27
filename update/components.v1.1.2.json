@@ -3,7 +3,7 @@
     "id": "application",
     "kind": "application",
     "version": "1.1.2",
-    "from_version": "1.1.1",
+    "from_version": null,
     "target": "ilia-desktop.exe",
     "payload_path": "target/release/ilia-desktop.exe",
     "payload_format": "raw_file"
