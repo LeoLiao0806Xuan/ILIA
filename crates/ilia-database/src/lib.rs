@@ -35,6 +35,8 @@ pub enum DatabaseError {
     InvalidVector(String),
     #[error("embedding dimension mismatch: expected {expected}, got {actual}")]
     DimensionMismatch { expected: usize, actual: usize },
+    #[error("invalid workspace operation: {0}")]
+    InvalidWorkspace(String),
     #[error("{database} database schema {found} is newer than supported schema {supported}")]
     UnsupportedWritableSchema {
         database: &'static str,

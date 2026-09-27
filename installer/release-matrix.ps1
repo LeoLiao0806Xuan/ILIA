@@ -53,7 +53,7 @@ function Start-And-VerifyDesktop([string]$Label) {
 
 Assert-SafePath $installRoot
 Assert-SafePath $profileRoot
-if (-not (Test-Path -LiteralPath $Installer -PathType Leaf)) { throw "1.1 installer is missing: $Installer" }
+if (-not (Test-Path -LiteralPath $Installer -PathType Leaf)) { throw "Candidate installer is missing: $Installer" }
 if (-not (Test-Path -LiteralPath $PreviousInstaller -PathType Leaf)) { throw "Previous installer is missing: $PreviousInstaller" }
 
 if (-not $SmokeReport) {
@@ -83,7 +83,7 @@ try {
     Invoke-Installer $PreviousInstaller
     $desktop = Join-Path $installRoot "ilia-desktop.exe"
     $previousVersion = (Get-Item -LiteralPath $desktop).VersionInfo.ProductVersion
-    Start-And-VerifyDesktop "1.0.1"
+    Start-And-VerifyDesktop $previousVersion
     $marker = Join-Path $profileRoot "user-data-preservation.marker"
     [IO.File]::WriteAllText($marker, "ILIA-UPGRADE-PRESERVE", [Text.UTF8Encoding]::new($false))
     New-Item -ItemType Directory -Path $env:ILIA_APP_DATA_DIR -Force | Out-Null
@@ -96,7 +96,7 @@ try {
     Invoke-Installer $Installer
     $upgradedVersion = (Get-Item -LiteralPath $desktop).VersionInfo.ProductVersion
     if ($upgradedVersion -ne $Version) { throw "Upgraded desktop version is $upgradedVersion, expected $Version" }
-    Start-And-VerifyDesktop "1.1.0"
+    Start-And-VerifyDesktop $Version
     if ((Get-Content -Raw -LiteralPath $marker) -ne "ILIA-UPGRADE-PRESERVE") {
         throw "Isolated user-data preservation marker changed during upgrade"
     }
@@ -113,10 +113,10 @@ try {
             throw "SQLite integrity or preservation check failed: $database"
         }
     }
-    Add-Case "upgrade_1.0.1_to_1.1.0" "passed" "Installed and started $previousVersion, upgraded in place to $upgradedVersion, started the new desktop, preserved isolated user data, and verified both writable databases."
+    Add-Case "upgrade_${previousVersion}_to_$Version" "passed" "Installed and started $previousVersion, upgraded in place to $upgradedVersion, started the new desktop, preserved isolated user data, and verified both writable databases."
 } catch {
     $errors.Add($_.Exception.Message)
-    Add-Case "upgrade_1.0.1_to_1.1.0" "failed" $_.Exception.Message
+    Add-Case "upgrade_to_$Version" "failed" $_.Exception.Message
 } finally {
     if ($upgradeProcess -and -not $upgradeProcess.HasExited) {
         Stop-Process -Id $upgradeProcess.Id -Force -ErrorAction SilentlyContinue

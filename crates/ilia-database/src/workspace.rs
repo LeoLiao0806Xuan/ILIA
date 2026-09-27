@@ -253,6 +253,39 @@ impl WorkspaceDatabase {
         Ok(value)
     }
 
+    pub fn save_research(
+        &mut self,
+        project_id: &str,
+        conversation_title: &str,
+        question: &str,
+        answer: &str,
+        evidence: &[NewSavedEvidence],
+    ) -> Result<WorkspaceExport, DatabaseError> {
+        let transaction = self.connection.transaction()?;
+        let conversation_id = Uuid::new_v4().to_string();
+        transaction.execute(
+            "INSERT INTO conversations(id,project_id,title) VALUES (?1,?2,?3)",
+            params![conversation_id, project_id, conversation_title],
+        )?;
+        for (sequence_number, (role, content)) in [("user", question), ("assistant", answer)]
+            .into_iter()
+            .enumerate()
+        {
+            transaction.execute(
+                "INSERT INTO messages(id,conversation_id,role,content,sequence_number) VALUES (?1,?2,?3,?4,?5)",
+                params![Uuid::new_v4().to_string(), conversation_id, role, content, sequence_number as i64 + 1],
+            )?;
+        }
+        for item in evidence {
+            transaction.execute(
+                "INSERT INTO saved_evidence(id,project_id,stable_evidence_key,title,citation_label,text_snapshot) VALUES (?1,?2,?3,?4,?5,?6)",
+                params![Uuid::new_v4().to_string(), project_id, item.stable_evidence_key, item.title, item.citation_label, item.text_snapshot],
+            )?;
+        }
+        transaction.commit()?;
+        self.snapshot(project_id)
+    }
+
     pub fn mark_source_deleted(&self, stable_key: &str) -> Result<usize, DatabaseError> {
         Ok(self.connection.execute(
             "UPDATE saved_evidence SET source_status='deleted' WHERE stable_evidence_key=?1",
@@ -268,13 +301,28 @@ impl WorkspaceDatabase {
         evidence_id: Option<&str>,
         body: &str,
     ) -> Result<Note, DatabaseError> {
-        let id = id
-            .map(str::to_owned)
-            .unwrap_or_else(|| Uuid::new_v4().to_string());
-        self.connection.execute(
-            "INSERT INTO notes(id,project_id,message_id,evidence_id,body) VALUES (?1,?2,?3,?4,?5) ON CONFLICT(id) DO UPDATE SET project_id=excluded.project_id,message_id=excluded.message_id,evidence_id=excluded.evidence_id,body=excluded.body,updated_at=CURRENT_TIMESTAMP",
-            params![id,project_id,message_id,evidence_id,body],
-        )?;
+        let id = match id {
+            Some(id) => {
+                let changed = self.connection.execute(
+                    "UPDATE notes SET message_id=?3,evidence_id=?4,body=?5,updated_at=CURRENT_TIMESTAMP WHERE id=?1 AND project_id IS ?2",
+                    params![id, project_id, message_id, evidence_id, body],
+                )?;
+                if changed != 1 {
+                    return Err(DatabaseError::InvalidWorkspace(
+                        "note does not belong to the selected project".into(),
+                    ));
+                }
+                id.to_owned()
+            }
+            None => {
+                let id = Uuid::new_v4().to_string();
+                self.connection.execute(
+                    "INSERT INTO notes(id,project_id,message_id,evidence_id,body) VALUES (?1,?2,?3,?4,?5)",
+                    params![id, project_id, message_id, evidence_id, body],
+                )?;
+                id
+            }
+        };
         Ok(Note {
             id,
             project_id: project_id.map(str::to_owned),
@@ -579,6 +627,24 @@ mod tests {
             .query_row("SELECT count(*) FROM messages", [], |r| r.get(0))
             .unwrap();
         assert_eq!(orphan, 0);
+        drop(db);
+        fs::remove_dir_all(root).unwrap();
+    }
+
+    #[test]
+    fn refuses_to_move_an_existing_note_between_projects() {
+        let (root, mut db) = database();
+        let first = db.create_project("项目一", "", &[]).unwrap();
+        let second = db.create_project("项目二", "", &[]).unwrap();
+        let note = db
+            .upsert_note(None, Some(&first.id), None, None, "原始笔记")
+            .unwrap();
+        assert!(matches!(
+            db.upsert_note(Some(&note.id), Some(&second.id), None, None, "错误覆盖"),
+            Err(DatabaseError::InvalidWorkspace(_))
+        ));
+        assert_eq!(db.snapshot(&first.id).unwrap().notes[0].body, "原始笔记");
+        assert!(db.snapshot(&second.id).unwrap().notes.is_empty());
         drop(db);
         fs::remove_dir_all(root).unwrap();
     }

@@ -324,7 +324,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
           <div class="loading-state hidden" id="loading-state"><div class="loader"></div><h3 id="loading-title">正在检索本地资料</h3><p id="loading-copy">正在运行 FTS5 与 BGE-M3 混合检索。</p></div>
           <article class="answer-card hidden" id="answer-card"><div class="answer-warning hidden" id="answer-warning" role="status"></div><div class="answer-copy" id="answer-copy"></div><div class="answer-footer"><div class="answer-meta" id="answer-meta"></div><button class="secondary answer-save" id="save-answer-button">保存到当前项目</button></div></article>
         </section>
-        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.0</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
+        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.1</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
       </section>
     </main>
 
@@ -771,13 +771,20 @@ async function loadProjects() {
   await loadProjectNote();
 }
 
-let currentNoteId: string | null = null;
+let noteLoadGeneration = 0;
+let noteSaveChain: Promise<void> = Promise.resolve();
+const projectNoteIds = new Map<string, string | null>();
 async function loadProjectNote() {
   const note = document.querySelector<HTMLTextAreaElement>("#project-note")!;
-  currentNoteId = null; note.value = ""; note.disabled = !projectSelect.value;
-  if (!projectSelect.value) return;
-  const snapshot = await call<{ notes: Array<{ id: string; body: string }> }>("get_project", { projectId: projectSelect.value });
-  const latest = snapshot.notes.at(-1); if (latest) { currentNoteId = latest.id; note.value = latest.body; }
+  const projectId = projectSelect.value;
+  const generation = ++noteLoadGeneration;
+  note.value = ""; note.disabled = !projectSelect.value;
+  if (!projectId) return;
+  const snapshot = await call<{ notes: Array<{ id: string; body: string }> }>("get_project", { projectId });
+  if (generation !== noteLoadGeneration || projectSelect.value !== projectId) return;
+  const latest = snapshot.notes.at(-1);
+  projectNoteIds.set(projectId, latest?.id ?? null);
+  if (latest) note.value = latest.body;
 }
 
 async function createProject() {
@@ -882,7 +889,7 @@ async function checkForUpdates() {
       return;
     }
     const summary = available.map((component) => `${component.kind} · ${component.version}`).join("\n");
-    if (!window.confirm(`发现 ${status.manifest.release_id} 更新：\n\n${summary}\n\n现在安装并重启 ILIA？`)) return;
+    if (!window.confirm(`发现 ${status.manifest.release_id} 更新：\n\n${summary}\n\n现在安装更新？ILIA 将退出，更新完成后请重新打开。`)) return;
     updateButton.textContent = "准备更新…";
     await call<void>("install_update", {
       manifestUrl: updateManifestUrl,
@@ -926,7 +933,26 @@ projectSelect.addEventListener("change", () => { localStorage.setItem("ilia.proj
 document.querySelector("#save-answer-button")?.addEventListener("click", () => { void saveResearchToProject(); });
 document.querySelector("#export-md")?.addEventListener("click", () => { void exportCurrent("markdown"); });
 document.querySelector("#export-html")?.addEventListener("click", () => { void exportCurrent("html"); });
-document.querySelector<HTMLTextAreaElement>("#project-note")?.addEventListener("input", (event) => { if (noteTimer !== null) window.clearTimeout(noteTimer); const body = (event.target as HTMLTextAreaElement).value; noteTimer = window.setTimeout(async () => { if (!projectSelect.value) return; try { const result = await call<{ notes: Array<{ id: string }> }>("save_note", { projectId: projectSelect.value, noteId: currentNoteId, body }); currentNoteId = result.notes.at(-1)?.id ?? currentNoteId; document.querySelector<HTMLElement>("#project-status")!.textContent = "笔记已自动保存"; } catch (error) { document.querySelector<HTMLElement>("#project-status")!.textContent = `保存失败：${String(error)}；编辑内容仍保留。`; } }, 600); });
+document.querySelector<HTMLTextAreaElement>("#project-note")?.addEventListener("input", (event) => {
+  if (noteTimer !== null) window.clearTimeout(noteTimer);
+  const projectId = projectSelect.value;
+  const body = (event.target as HTMLTextAreaElement).value;
+  if (!projectId) return;
+  noteTimer = window.setTimeout(() => {
+    noteTimer = null;
+    noteSaveChain = noteSaveChain.then(async () => {
+      try {
+        const saved = await call<{ id: string }>("save_note", { projectId, noteId: projectNoteIds.get(projectId) ?? null, body });
+        projectNoteIds.set(projectId, saved.id);
+        if (projectSelect.value === projectId) {
+          document.querySelector<HTMLElement>("#project-status")!.textContent = "笔记已自动保存";
+        }
+      } catch (error) {
+        if (projectSelect.value === projectId) document.querySelector<HTMLElement>("#project-status")!.textContent = `保存失败：${String(error)}；编辑内容仍保留。`;
+      }
+    });
+  }, 600);
+});
 question.addEventListener("keydown", (event) => { if ((event.ctrlKey || event.metaKey) && event.key === "Enter") runAsk(); });
 document.querySelectorAll<HTMLButtonElement>(".example").forEach((button) => button.addEventListener("click", () => { question.value = button.querySelector("strong")?.textContent ?? button.textContent ?? ""; document.querySelectorAll(".history-item").forEach((item) => item.classList.toggle("active", item === button)); question.focus(); }));
 backendSelect.addEventListener("change", async () => { try { updateRuntime(await call<RuntimeProbeReport>("set_runtime_preference", { preference: backendSelect.value })); } catch (error) { showError(error); } });

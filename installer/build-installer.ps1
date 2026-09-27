@@ -1,5 +1,5 @@
 param(
-    [string]$Version = "1.1.0",
+    [string]$Version = "1.1.1",
     [string]$InnoSetupCompiler = "",
     [switch]$SkipBuild,
     [switch]$SkipWebView2,
@@ -161,6 +161,7 @@ New-Item -ItemType Directory -Path $stageRoot -Force | Out-Null
 Copy-Item -LiteralPath (Join-Path $releaseRoot "ilia-desktop.exe") -Destination $stageRoot
 Copy-Item -LiteralPath (Join-Path $releaseRoot "WebView2Loader.dll") -Destination $stageRoot
 Copy-Item -LiteralPath (Join-Path $releaseRoot "ilia-updater.exe") -Destination $stageRoot
+Copy-Item -LiteralPath (Join-Path $releaseRoot "ilia-updater.exe") -Destination (Join-Path $stageRoot "ilia-updater-$Version.exe")
 Copy-Item -LiteralPath (Join-Path $desktopRoot "src-tauri\icons\icon.ico") -Destination $stageRoot
 Copy-Item -LiteralPath (Join-Path $projectRoot "THIRD_PARTY_NOTICES.md") -Destination $stageRoot
 New-Item -ItemType Directory -Path (Join-Path $stageRoot "licenses") -Force | Out-Null

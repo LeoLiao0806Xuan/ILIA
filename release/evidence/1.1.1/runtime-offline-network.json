@@ -1,0 +1,36 @@
+{
+  "report_version": 1,
+  "release_version": "1.1.1",
+  "generated_at_utc": "2026-09-27T05:44:11.3321624Z",
+  "scope": "50ms TCP connection observation during installed-payload retrieval and CPU local answer",
+  "packet_driver": "PktMon unavailable without administrator rights; Get-NetTCPConnection process observation used",
+  "answer_grounded": true,
+  "observed_connections": [
+    {
+      "observed_at_utc": "2026-09-27T05:44:08.1435129Z",
+      "process": "ilia-ask",
+      "process_id": 16712,
+      "local_address": "127.0.0.1",
+      "local_port": 57357,
+      "remote_address": "127.0.0.1",
+      "remote_port": 57344,
+      "PSComputerName": "localhost",
+      "RunspaceId": "8aeffdde-8e89-4a3b-a413-31be4585eb71",
+      "PSShowComputerName": false
+    },
+    {
+      "observed_at_utc": "2026-09-27T05:44:05.9835942Z",
+      "process": "llama-server",
+      "process_id": 7108,
+      "local_address": "127.0.0.1",
+      "local_port": 57344,
+      "remote_address": "127.0.0.1",
+      "remote_port": 57357,
+      "PSComputerName": "localhost",
+      "RunspaceId": "8aeffdde-8e89-4a3b-a413-31be4585eb71",
+      "PSShowComputerName": false
+    }
+  ],
+  "external_connections": [],
+  "status": "passed"
+}

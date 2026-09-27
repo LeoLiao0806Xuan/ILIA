@@ -51,6 +51,10 @@ foreach ($relative in $required) {
     $path = Join-Path $StageRoot $relative
     if (-not (Test-Path -LiteralPath $path -PathType Leaf)) { throw "Staged package is missing $relative" }
 }
+$versionedUpdater = Join-Path $StageRoot "ilia-updater-$Version.exe"
+if (-not (Test-Path -LiteralPath $versionedUpdater -PathType Leaf)) {
+    throw "Staged package is missing versioned update helper ilia-updater-$Version.exe"
+}
 
 $manifest = Get-Content -Raw -LiteralPath (Join-Path $StageRoot "package-manifest.json") | ConvertFrom-Json
 if ($manifest.version -ne $Version) { throw "Package manifest version mismatch" }

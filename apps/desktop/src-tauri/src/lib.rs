@@ -80,6 +80,16 @@ impl AppPaths {
         let databases = ApplicationDatabasePaths::initialize(&core_database, &app_data_dir)
             .map_err(|error| format!("cannot initialize ILIA databases: {error}"))?;
         let proxy_config = app_data_dir.join("update-proxy.json");
+        let updater = if let Some(development_root) = development_root.as_ref() {
+            development_root.join("target/release/ilia-updater.exe")
+        } else {
+            let versioned = root.join(format!("ilia-updater-{}.exe", env!("CARGO_PKG_VERSION")));
+            if versioned.is_file() {
+                versioned
+            } else {
+                root.join("ilia-updater.exe")
+            }
+        };
         let paths = Self {
             install_root: root.clone(),
             app_data_dir,
@@ -91,9 +101,7 @@ impl AppPaths {
             runtime_root: root.join("runtime"),
             onnx_runtime: root.join("runtime/onnx/onnxruntime.dll"),
             log_dir,
-            updater: development_root
-                .map(|root| root.join("target/x86_64-pc-windows-gnu/release/ilia-updater.exe"))
-                .unwrap_or_else(|| root.join("ilia-updater.exe")),
+            updater,
             trusted_update_key: root.join("update/trusted-key.json"),
             proxy_config,
             normalized_corpus: root.join("corpus/normalized"),
@@ -882,14 +890,13 @@ async fn save_research(
     tauri::async_runtime::spawn_blocking(
         move || -> Result<WorkspaceExport, ilia_database::DatabaseError> {
             let mut database = WorkspaceDatabase::open(path)?;
-            let conversation = database
-                .create_conversation(Some(&request.project_id), &request.conversation_title)?;
-            database.append_message(&conversation.id, "user", &request.question, &[])?;
-            database.append_message(&conversation.id, "assistant", &request.answer, &[])?;
-            for evidence in request.evidence {
-                database.save_evidence(Some(&request.project_id), &evidence)?;
-            }
-            database.snapshot(&request.project_id)
+            database.save_research(
+                &request.project_id,
+                &request.conversation_title,
+                &request.question,
+                &request.answer,
+                &request.evidence,
+            )
         },
     )
     .await
@@ -903,13 +910,12 @@ async fn save_note(
     project_id: String,
     note_id: Option<String>,
     body: String,
-) -> Result<WorkspaceExport, String> {
+) -> Result<ilia_database::Note, String> {
     let path = state.paths.workspace_database.clone();
     tauri::async_runtime::spawn_blocking(
-        move || -> Result<WorkspaceExport, ilia_database::DatabaseError> {
+        move || -> Result<ilia_database::Note, ilia_database::DatabaseError> {
             let database = WorkspaceDatabase::open(path)?;
-            database.upsert_note(note_id.as_deref(), Some(&project_id), None, None, &body)?;
-            database.snapshot(&project_id)
+            database.upsert_note(note_id.as_deref(), Some(&project_id), None, None, &body)
         },
     )
     .await
@@ -1103,7 +1109,7 @@ async fn start_research(
     let cancellation = services.begin_research(request.request_id)?;
     let request_id = request.request_id;
     let event_app = app.clone();
-    let result = tauri::async_runtime::spawn_blocking(move || {
+    let joined = tauri::async_runtime::spawn_blocking(move || {
         services.research(&request, &cancellation, |event| {
             let _ = event_app.emit(
                 "research-event",
@@ -1111,11 +1117,11 @@ async fn start_research(
             );
         })
     })
-    .await
-    .map_err(|error| error.to_string())?;
+    .await;
 
     let services = state.inner().clone();
     services.finish_research(request_id);
+    let result = joined.map_err(|error| error.to_string())?;
     if let Err(error) = &result {
         let event = if error == &InferenceError::Cancelled.to_string() {
             ResearchEvent::Cancelled
@@ -1290,8 +1296,9 @@ async fn check_updates(
             &trusted,
             proxy.as_ref(),
         )?;
-        let installed_versions =
-            UpdateEngine::new(paths.install_root).and_then(|engine| engine.installed_versions())?;
+        let engine = UpdateEngine::new(paths.install_root)?;
+        let installed_versions = engine.installed_versions()?;
+        engine.validate_applicable(&release.manifest)?;
         let current = release.manifest.components.iter().all(|component| {
             installed_versions.components.get(&component.id) == Some(&component.version)
         });

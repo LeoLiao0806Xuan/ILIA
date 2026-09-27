@@ -158,6 +158,8 @@ pub struct UpdateJournal {
     pub release_id: String,
     pub status: JournalStatus,
     pub applied_components: Vec<String>,
+    #[serde(default)]
+    pub previous_versions: BTreeMap<String, Option<String>>,
     pub error: Option<String>,
 }
 
@@ -368,7 +370,16 @@ pub fn create_local_package(
     let signature = fs::read(signature_path)?;
     let mut payloads = Vec::new();
     for component in &manifest.components {
-        let source = file_url_path(&component.payload_url)?;
+        let source = if component.payload_url.starts_with("file://") {
+            file_url_path(&component.payload_url)?
+        } else {
+            manifest_path
+                .parent()
+                .ok_or_else(|| {
+                    UpdateError::InvalidPackage("manifest has no parent directory".into())
+                })?
+                .join(format!("{}.payload", safe_segment(&component.id)?))
+        };
         verify_payload_file(component, &source)?;
         payloads.push((
             LocalPackagePayload {
@@ -567,19 +578,33 @@ impl UpdateEngine {
     }
 
     pub fn stage(&self, release: &VerifiedRelease) -> Result<PathBuf, UpdateError> {
+        self.stage_with_proxy(release, None)
+    }
+
+    pub fn stage_with_proxy(
+        &self,
+        release: &VerifiedRelease,
+        proxy: Option<&ProxyConfig>,
+    ) -> Result<PathBuf, UpdateError> {
         let stage_root = self
             .work_root
             .join("staging")
             .join(safe_segment(&release.manifest.release_id)?);
         fs::create_dir_all(&stage_root)?;
-        for component in &release.manifest.components {
+        let versions = self.installed_versions()?;
+        let pending = pending_components(&release.manifest, &versions)?;
+        if pending.is_empty() {
+            return Ok(stage_root);
+        }
+        for component in pending {
             let destination = stage_root.join(format!("{}.payload", safe_segment(&component.id)?));
-            download_payload(component, &destination)?;
+            download_payload(component, &destination, proxy)?;
         }
         let journal = UpdateJournal {
             release_id: release.manifest.release_id.clone(),
             status: JournalStatus::Staged,
             applied_components: Vec::new(),
+            previous_versions: BTreeMap::new(),
             error: None,
         };
         self.write_journal(&journal)?;
@@ -592,37 +617,39 @@ impl UpdateEngine {
         stage_root: &Path,
     ) -> Result<UpdateOutcome, UpdateError> {
         let mut versions = self.installed_versions()?;
-        for component in &release.manifest.components {
-            if let Some(expected) = &component.from_version {
-                let actual = versions
-                    .components
-                    .get(&component.id)
-                    .cloned()
-                    .unwrap_or_else(|| "unversioned".into());
-                if &actual != expected {
-                    return Err(UpdateError::VersionMismatch {
-                        component: component.id.clone(),
-                        expected: expected.clone(),
-                        actual,
-                    });
-                }
-            }
-        }
-
+        let pending = pending_components(&release.manifest, &versions)?;
         let backup_root = self
             .work_root
             .join("backups")
             .join(safe_segment(&release.manifest.release_id)?);
+        if pending.is_empty() {
+            return Ok(UpdateOutcome {
+                release_id: release.manifest.release_id.clone(),
+                applied_components: Vec::new(),
+                backup_root,
+            });
+        }
+
         fs::create_dir_all(&backup_root)?;
+        let previous_versions = pending
+            .iter()
+            .map(|component| {
+                (
+                    component.id.clone(),
+                    versions.components.get(&component.id).cloned(),
+                )
+            })
+            .collect();
         let mut journal = UpdateJournal {
             release_id: release.manifest.release_id.clone(),
             status: JournalStatus::Applying,
             applied_components: Vec::new(),
+            previous_versions,
             error: None,
         };
         self.write_journal(&journal)?;
 
-        for component in &release.manifest.components {
+        for component in &pending {
             let payload = stage_root.join(format!("{}.payload", safe_segment(&component.id)?));
             let result = self.apply_component(component, &payload, &backup_root);
             if let Err(error) = result {
@@ -648,7 +675,7 @@ impl UpdateEngine {
             self.write_journal(&journal)?;
         }
 
-        for component in &release.manifest.components {
+        for component in pending {
             versions
                 .components
                 .insert(component.id.clone(), component.version.clone());
@@ -668,19 +695,38 @@ impl UpdateEngine {
             .work_root
             .join("backups")
             .join(safe_segment(&manifest.release_id)?);
-        let applied = manifest
-            .components
-            .iter()
-            .map(|component| component.id.clone())
-            .collect::<Vec<_>>();
+        let journal_path = self.work_root.join("journal.json");
+        let journal = if journal_path.is_file() {
+            let journal: UpdateJournal = serde_json::from_slice(&fs::read(journal_path)?)?;
+            if journal.release_id == manifest.release_id {
+                journal
+            } else {
+                return Err(UpdateError::InvalidManifest(
+                    "no matching update journal is available for rollback".into(),
+                ));
+            }
+        } else {
+            return Err(UpdateError::InvalidManifest(
+                "no update journal is available for rollback".into(),
+            ));
+        };
+        let applied = journal.applied_components;
         let errors = self.rollback_components(manifest, &applied, &backup_root);
         if errors.is_empty() {
             let mut versions = self.installed_versions()?;
-            for component in &manifest.components {
-                if let Some(previous) = &component.from_version {
-                    versions
-                        .components
-                        .insert(component.id.clone(), previous.clone());
+            for component in manifest
+                .components
+                .iter()
+                .filter(|component| applied.contains(&component.id))
+            {
+                if let Some(previous) = journal
+                    .previous_versions
+                    .get(&component.id)
+                    .cloned()
+                    .flatten()
+                    .or_else(|| component.from_version.clone())
+                {
+                    versions.components.insert(component.id.clone(), previous);
                 } else {
                     versions.components.remove(&component.id);
                 }
@@ -701,6 +747,17 @@ impl UpdateEngine {
             return Ok(InstalledVersions::default());
         }
         Ok(serde_json::from_slice(&fs::read(path)?)?)
+    }
+
+    pub fn validate_applicable(
+        &self,
+        manifest: &UpdateManifest,
+    ) -> Result<Vec<String>, UpdateError> {
+        let versions = self.installed_versions()?;
+        Ok(pending_components(manifest, &versions)?
+            .into_iter()
+            .map(|component| component.id.clone())
+            .collect())
     }
 
     fn apply_component(
@@ -866,7 +923,11 @@ fn read_url_with_proxy(url: &str, proxy: Option<&ProxyConfig>) -> Result<Vec<u8>
     Ok(agent.get(url).call()?.body_mut().read_to_vec()?)
 }
 
-fn download_payload(component: &UpdateComponent, destination: &Path) -> Result<(), UpdateError> {
+fn download_payload(
+    component: &UpdateComponent,
+    destination: &Path,
+    proxy: Option<&ProxyConfig>,
+) -> Result<(), UpdateError> {
     if let Some(parent) = destination.parent() {
         fs::create_dir_all(parent)?;
     }
@@ -898,7 +959,15 @@ fn download_payload(component: &UpdateComponent, destination: &Path) -> Result<(
             input.seek(SeekFrom::Start(offset))?;
             stream_payload_from(component, &mut input, &mut output, offset, hasher)?;
         } else {
-            let mut request = ureq::get(&component.payload_url);
+            let mut builder = ureq::Agent::config_builder()
+                .timeout_connect(Some(std::time::Duration::from_secs(30)))
+                .timeout_recv_response(Some(std::time::Duration::from_secs(30)))
+                .timeout_recv_body(Some(std::time::Duration::from_secs(6 * 60 * 60)));
+            if let Some(proxy) = proxy {
+                builder = builder.proxy(Some(ureq::Proxy::new(&proxy.url)?));
+            }
+            let agent: ureq::Agent = builder.build().into();
+            let mut request = agent.get(&component.payload_url);
             if offset > 0 {
                 request = request.header("Range", &format!("bytes={offset}-"));
             }
@@ -936,6 +1005,31 @@ fn download_payload(component: &UpdateComponent, destination: &Path) -> Result<(
         let _ = write_atomic(&state_path, &serde_json::to_vec(&state).unwrap_or_default());
     }
     result
+}
+
+fn pending_components<'a>(
+    manifest: &'a UpdateManifest,
+    versions: &InstalledVersions,
+) -> Result<Vec<&'a UpdateComponent>, UpdateError> {
+    let mut pending = Vec::new();
+    for component in &manifest.components {
+        let actual = versions.components.get(&component.id);
+        if actual == Some(&component.version) {
+            continue;
+        }
+        if let Some(expected) = &component.from_version {
+            let actual = actual.cloned().unwrap_or_else(|| "unversioned".into());
+            if &actual != expected {
+                return Err(UpdateError::VersionMismatch {
+                    component: component.id.clone(),
+                    expected: expected.clone(),
+                    actual,
+                });
+            }
+        }
+        pending.push(component);
+    }
+    Ok(pending)
 }
 
 #[derive(Serialize, Deserialize)]
@@ -1382,6 +1476,105 @@ mod tests {
     }
 
     #[test]
+    fn skips_components_that_are_already_current() {
+        let root = temp_root("skip-current");
+        fs::write(root.join("app.exe"), b"current app").unwrap();
+        let model_source = root.join("model-source.bin");
+        fs::write(&model_source, b"new model").unwrap();
+        let mut app = component(
+            "application",
+            ComponentKind::Application,
+            "app.exe",
+            PayloadFormat::RawFile,
+            b"current app",
+        );
+        app.payload_url = "file:///missing-current-component".into();
+        let mut model = component(
+            "model",
+            ComponentKind::Model,
+            "models/model.bin",
+            PayloadFormat::RawFile,
+            b"new model",
+        );
+        model.payload_url = url::Url::from_file_path(&model_source).unwrap().to_string();
+        let release = VerifiedRelease {
+            manifest: UpdateManifest {
+                schema_version: 1,
+                release_id: "skip-current-release".into(),
+                channel: "stable".into(),
+                created_at: "2026-09-27T00:00:00Z".into(),
+                components: vec![app, model],
+            },
+            manifest_bytes: Vec::new(),
+        };
+        let engine = UpdateEngine::new(root.clone()).unwrap();
+        engine
+            .write_installed_versions(&InstalledVersions {
+                components: [("application".into(), "2.0.0".into())]
+                    .into_iter()
+                    .collect(),
+            })
+            .unwrap();
+        let stage = engine.stage(&release).unwrap();
+        assert!(!stage.join("application.payload").exists());
+        let outcome = engine.apply(&release, &stage).unwrap();
+        assert_eq!(outcome.applied_components, vec!["model"]);
+        assert_eq!(fs::read(root.join("app.exe")).unwrap(), b"current app");
+        assert_eq!(
+            fs::read(root.join("models/model.bin")).unwrap(),
+            b"new model"
+        );
+        fs::remove_dir_all(root).unwrap();
+    }
+
+    #[test]
+    fn manual_rollback_restores_recorded_version_when_from_version_is_open() {
+        let root = temp_root("manual-rollback-version");
+        fs::write(root.join("app.exe"), b"old app").unwrap();
+        let stage = root.join("stage");
+        fs::create_dir_all(&stage).unwrap();
+        fs::write(stage.join("application.payload"), b"new app").unwrap();
+        let manifest = UpdateManifest {
+            schema_version: 1,
+            release_id: "manual-rollback-release".into(),
+            channel: "stable".into(),
+            created_at: "2026-09-27T00:00:00Z".into(),
+            components: vec![component(
+                "application",
+                ComponentKind::Application,
+                "app.exe",
+                PayloadFormat::RawFile,
+                b"new app",
+            )],
+        };
+        let release = VerifiedRelease {
+            manifest: manifest.clone(),
+            manifest_bytes: Vec::new(),
+        };
+        let engine = UpdateEngine::new(root.clone()).unwrap();
+        engine
+            .write_installed_versions(&InstalledVersions {
+                components: [("application".into(), "1.5.0".into())]
+                    .into_iter()
+                    .collect(),
+            })
+            .unwrap();
+        engine.apply(&release, &stage).unwrap();
+        engine.rollback(&manifest).unwrap();
+        assert_eq!(fs::read(root.join("app.exe")).unwrap(), b"old app");
+        assert_eq!(
+            engine
+                .installed_versions()
+                .unwrap()
+                .components
+                .get("application")
+                .map(String::as_str),
+            Some("1.5.0")
+        );
+        fs::remove_dir_all(root).unwrap();
+    }
+
+    #[test]
     fn rejects_updater_self_replacement() {
         let manifest = UpdateManifest {
             schema_version: 1,
@@ -1429,7 +1622,7 @@ mod tests {
     #[test]
     fn creates_and_loads_signed_local_package() {
         let root = temp_root("local-package");
-        let payload = root.join("app.payload");
+        let payload = root.join("application.payload");
         fs::write(&payload, b"new app").unwrap();
         let mut app = component(
             "application",
@@ -1438,7 +1631,7 @@ mod tests {
             PayloadFormat::RawFile,
             b"new app",
         );
-        app.payload_url = url::Url::from_file_path(&payload).unwrap().to_string();
+        app.payload_url = "https://example.invalid/releases/local-1/application.payload".into();
         let manifest = UpdateManifest {
             schema_version: 1,
             release_id: "local-1".into(),

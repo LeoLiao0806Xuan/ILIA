@@ -30,6 +30,7 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
     let mut manifest = None;
     let mut signature = None;
     let mut proxy_config = None;
+    let mut restart = false;
     while let Some(argument) = args.next() {
         match argument.as_str() {
             "--root" => root = args.next().map(PathBuf::from),
@@ -42,6 +43,7 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
             "--manifest" => manifest = args.next().map(PathBuf::from),
             "--signature" => signature = args.next().map(PathBuf::from),
             "--proxy-config" => proxy_config = args.next().map(PathBuf::from),
+            "--restart" => restart = true,
             _ => return Err(format!("unknown argument: {argument}").into()),
         }
     }
@@ -54,6 +56,7 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
         return Ok(());
     }
     let root = root.ok_or("missing --root")?;
+    let restart_executable = root.join("ilia-desktop.exe");
     let public_key = public_key.ok_or("missing --public-key")?;
     let trusted: TrustedPublicKey = serde_json::from_slice(&fs::read(public_key)?)?;
     let proxy: Option<ProxyConfig> = proxy_config
@@ -73,12 +76,15 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
                 &trusted,
                 proxy.as_ref(),
             )?;
-            let stage = engine.stage(&release)?;
+            let stage = engine.stage_with_proxy(&release, proxy.as_ref())?;
             if let Some(pid) = wait_pid {
                 wait_for_process_exit(pid, Duration::from_secs(120))?;
             }
             let outcome = engine.apply(&release, &stage)?;
             println!("{}", serde_json::to_string_pretty(&outcome)?);
+            if restart {
+                restart_desktop(&restart_executable)?;
+            }
         }
         "apply-package" => {
             let package = package.ok_or("missing --package")?;
@@ -89,6 +95,9 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
             }
             let outcome = engine.apply(&release, &stage)?;
             println!("{}", serde_json::to_string_pretty(&outcome)?);
+            if restart {
+                restart_desktop(&restart_executable)?;
+            }
         }
         "rollback" => {
             let manifest_url = manifest_url.ok_or("missing --manifest-url")?;
@@ -103,6 +112,18 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
         }
         _ => return Err(format!("unknown command: {command}").into()),
     }
+    Ok(())
+}
+
+fn restart_desktop(executable: &std::path::Path) -> Result<(), Box<dyn std::error::Error>> {
+    if !executable.is_file() {
+        return Err(format!(
+            "updated desktop executable is missing: {}",
+            executable.display()
+        )
+        .into());
+    }
+    std::process::Command::new(executable).spawn()?;
     Ok(())
 }
 
