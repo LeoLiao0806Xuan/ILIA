@@ -1,0 +1,20 @@
+[
+  {
+    "id": "application",
+    "kind": "application",
+    "version": "1.1.3",
+    "from_version": null,
+    "target": "ilia-desktop.exe",
+    "payload_path": "target/release/ilia-desktop.exe",
+    "payload_format": "raw_file"
+  },
+  {
+    "id": "updater",
+    "kind": "application",
+    "version": "1.1.3",
+    "from_version": null,
+    "target": "ilia-updater-1.1.3.exe",
+    "payload_path": "target/release/ilia-updater.exe",
+    "payload_format": "raw_file"
+  }
+]

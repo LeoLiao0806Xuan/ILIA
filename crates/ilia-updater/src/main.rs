@@ -1,7 +1,7 @@
 use std::{env, fs, path::PathBuf, process::ExitCode, thread, time::Duration};
 
 use ilia_updater::{
-    ProxyConfig, TrustedPublicKey, UpdateEngine, create_local_package,
+    ProxyConfig, TrustedPublicKey, UpdateEngine, UpdateProgress, create_local_package,
     fetch_verified_release_with_proxy, load_local_package,
 };
 
@@ -31,6 +31,7 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
     let mut signature = None;
     let mut proxy_config = None;
     let mut restart = false;
+    let mut progress_file = None;
     while let Some(argument) = args.next() {
         match argument.as_str() {
             "--root" => root = args.next().map(PathBuf::from),
@@ -44,6 +45,7 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
             "--signature" => signature = args.next().map(PathBuf::from),
             "--proxy-config" => proxy_config = args.next().map(PathBuf::from),
             "--restart" => restart = true,
+            "--progress-file" => progress_file = args.next().map(PathBuf::from),
             _ => return Err(format!("unknown argument: {argument}").into()),
         }
     }
@@ -68,6 +70,10 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
 
     match command.as_str() {
         "apply" => {
+            write_progress(
+                progress_file.as_deref(),
+                &progress("checking", "", None, 0, 0, "正在验证更新清单和签名"),
+            )?;
             let manifest_url = manifest_url.ok_or("missing --manifest-url")?;
             let signature_url = signature_url.ok_or("missing --signature-url")?;
             let release = fetch_verified_release_with_proxy(
@@ -76,25 +82,98 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
                 &trusted,
                 proxy.as_ref(),
             )?;
-            let stage = engine.stage_with_proxy(&release, proxy.as_ref())?;
+            let stage =
+                engine.stage_with_proxy_and_progress(&release, proxy.as_ref(), |value| {
+                    let _ = write_progress(progress_file.as_deref(), value);
+                })?;
+            write_progress(
+                progress_file.as_deref(),
+                &progress(
+                    "ready_to_apply",
+                    &release.manifest.release_id,
+                    None,
+                    1,
+                    1,
+                    "更新已下载并验证，正在准备安装",
+                ),
+            )?;
             if let Some(pid) = wait_pid {
                 wait_for_process_exit(pid, Duration::from_secs(120))?;
             }
+            write_progress(
+                progress_file.as_deref(),
+                &progress(
+                    "applying",
+                    &release.manifest.release_id,
+                    None,
+                    1,
+                    1,
+                    "正在安装更新",
+                ),
+            )?;
             let outcome = engine.apply(&release, &stage)?;
             println!("{}", serde_json::to_string_pretty(&outcome)?);
+            write_progress(
+                progress_file.as_deref(),
+                &progress(
+                    "applied",
+                    &release.manifest.release_id,
+                    None,
+                    1,
+                    1,
+                    "更新安装完成",
+                ),
+            )?;
             if restart {
                 restart_desktop(&restart_executable)?;
             }
         }
         "apply-package" => {
+            write_progress(
+                progress_file.as_deref(),
+                &progress("checking", "", None, 0, 0, "正在读取并验证本地签名更新包"),
+            )?;
             let package = package.ok_or("missing --package")?;
             let extraction = package.with_extension("ilia-stage");
             let (release, stage) = load_local_package(&package, &trusted, &extraction)?;
+            write_progress(
+                progress_file.as_deref(),
+                &progress(
+                    "ready_to_apply",
+                    &release.manifest.release_id,
+                    None,
+                    1,
+                    1,
+                    "本地更新包已验证，正在准备安装",
+                ),
+            )?;
             if let Some(pid) = wait_pid {
                 wait_for_process_exit(pid, Duration::from_secs(120))?;
             }
+            write_progress(
+                progress_file.as_deref(),
+                &progress(
+                    "applying",
+                    &release.manifest.release_id,
+                    None,
+                    1,
+                    1,
+                    "正在安装更新",
+                ),
+            )?;
             let outcome = engine.apply(&release, &stage)?;
             println!("{}", serde_json::to_string_pretty(&outcome)?);
+            write_progress(
+                progress_file.as_deref(),
+                &progress(
+                    "applied",
+                    &release.manifest.release_id,
+                    None,
+                    1,
+                    1,
+                    "更新安装完成",
+                ),
+            )?;
             if restart {
                 restart_desktop(&restart_executable)?;
             }
@@ -112,6 +191,41 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
         }
         _ => return Err(format!("unknown command: {command}").into()),
     }
+    Ok(())
+}
+
+fn progress(
+    phase: &str,
+    release_id: &str,
+    component_id: Option<String>,
+    downloaded_bytes: u64,
+    total_bytes: u64,
+    message_zh: &str,
+) -> UpdateProgress {
+    UpdateProgress {
+        phase: phase.into(),
+        release_id: release_id.into(),
+        component_id,
+        downloaded_bytes,
+        total_bytes,
+        message_zh: message_zh.into(),
+    }
+}
+
+fn write_progress(
+    path: Option<&std::path::Path>,
+    progress: &UpdateProgress,
+) -> Result<(), Box<dyn std::error::Error>> {
+    let Some(path) = path else { return Ok(()) };
+    if let Some(parent) = path.parent() {
+        fs::create_dir_all(parent)?;
+    }
+    let temporary = path.with_extension("json.new");
+    fs::write(&temporary, serde_json::to_vec(progress)?)?;
+    if path.exists() {
+        fs::remove_file(path)?;
+    }
+    fs::rename(temporary, path)?;
     Ok(())
 }
 

@@ -1,0 +1,6096 @@
+{
+  "total": 305,
+  "passed": 305,
+  "failed": 0,
+  "pass_rate": 1.0,
+  "recall_at_1": 0.9867549668874173,
+  "recall_at_5": 0.9966887417218543,
+  "recall_at_10": 1.0,
+  "mean_reciprocal_rank": 0.9903736991485337,
+  "exact_locator_accuracy": 1.0,
+  "bilingual_document_name_accuracy": 1.0,
+  "filter_case_pass_rate": 1.0,
+  "filter_escape_count": 0,
+  "by_tag": {
+    "abbreviation": {
+      "total": 1,
+      "passed": 1
+    },
+    "alias": {
+      "total": 50,
+      "passed": 50
+    },
+    "article": {
+      "total": 3,
+      "passed": 3
+    },
+    "attribution": {
+      "total": 1,
+      "passed": 1
+    },
+    "case": {
+      "total": 77,
+      "passed": 77
+    },
+    "classification": {
+      "total": 3,
+      "passed": 3
+    },
+    "cross_lingual": {
+      "total": 4,
+      "passed": 4
+    },
+    "culture": {
+      "total": 1,
+      "passed": 1
+    },
+    "document_filter": {
+      "total": 1,
+      "passed": 1
+    },
+    "document_name": {
+      "total": 187,
+      "passed": 187
+    },
+    "education": {
+      "total": 1,
+      "passed": 1
+    },
+    "en": {
+      "total": 136,
+      "passed": 136
+    },
+    "exact": {
+      "total": 161,
+      "passed": 161
+    },
+    "exact_locator": {
+      "total": 4,
+      "passed": 4
+    },
+    "expanded": {
+      "total": 133,
+      "passed": 133
+    },
+    "expression": {
+      "total": 1,
+      "passed": 1
+    },
+    "fair_trial": {
+      "total": 1,
+      "passed": 1
+    },
+    "filter": {
+      "total": 2,
+      "passed": 2
+    },
+    "fts": {
+      "total": 2,
+      "passed": 2
+    },
+    "health": {
+      "total": 1,
+      "passed": 1
+    },
+    "high_seas": {
+      "total": 1,
+      "passed": 1
+    },
+    "hybrid": {
+      "total": 35,
+      "passed": 35
+    },
+    "innocent_passage": {
+      "total": 1,
+      "passed": 1
+    },
+    "islands": {
+      "total": 1,
+      "passed": 1
+    },
+    "last_article": {
+      "total": 3,
+      "passed": 3
+    },
+    "liberty": {
+      "total": 1,
+      "passed": 1
+    },
+    "life": {
+      "total": 1,
+      "passed": 1
+    },
+    "minorities": {
+      "total": 1,
+      "passed": 1
+    },
+    "natural_language": {
+      "total": 1,
+      "passed": 1
+    },
+    "necessity": {
+      "total": 1,
+      "passed": 1
+    },
+    "negative": {
+      "total": 3,
+      "passed": 3
+    },
+    "no_answer": {
+      "total": 1,
+      "passed": 1
+    },
+    "out_of_range": {
+      "total": 1,
+      "passed": 1
+    },
+    "reparation": {
+      "total": 1,
+      "passed": 1
+    },
+    "roman": {
+      "total": 3,
+      "passed": 3
+    },
+    "self_defence": {
+      "total": 1,
+      "passed": 1
+    },
+    "semantic": {
+      "total": 35,
+      "passed": 35
+    },
+    "territorial_sea": {
+      "total": 1,
+      "passed": 1
+    },
+    "type_filter": {
+      "total": 1,
+      "passed": 1
+    },
+    "typo": {
+      "total": 5,
+      "passed": 5
+    },
+    "v1.1": {
+      "total": 108,
+      "passed": 108
+    },
+    "work": {
+      "total": 1,
+      "passed": 1
+    },
+    "zh": {
+      "total": 115,
+      "passed": 115
+    }
+  },
+  "cases": [
+    {
+      "id": "vclt-en-27",
+      "query": "VCLT Article 27",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 27"
+      ],
+      "tags": [
+        "exact",
+        "en",
+        "article"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "vclt-1969"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "vclt-zh-31",
+      "query": "维也纳条约法公约第31条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 31"
+      ],
+      "tags": [
+        "exact",
+        "zh",
+        "article"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "vclt-1969"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "vclt-en-26",
+      "query": "Vienna Convention on the Law of Treaties Article 26",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 26"
+      ],
+      "tags": [
+        "exact",
+        "en",
+        "alias"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "vclt-1969"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "vclt-zh-46",
+      "query": "维也纳条约法公约第46条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 46"
+      ],
+      "tags": [
+        "exact",
+        "zh",
+        "article"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "vclt-1969"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "vclt-en-2",
+      "query": "VCLT art. 2",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 2"
+      ],
+      "tags": [
+        "exact",
+        "en",
+        "abbreviation"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "vclt-1969"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "arsiwa-en-1",
+      "query": "ARSIWA Article 1",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 1"
+      ],
+      "tags": [
+        "exact",
+        "classification"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "arsiwa-2001"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "arsiwa-zh-2",
+      "query": "国家对国际不法行为的责任条款第2条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 2"
+      ],
+      "tags": [
+        "exact",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "arsiwa-2001"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "arsiwa-en-8",
+      "query": "ARSIWA Article 8",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 8"
+      ],
+      "tags": [
+        "exact",
+        "attribution"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "arsiwa-2001"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "arsiwa-zh-25",
+      "query": "国家对国际不法行为的责任条款第25条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 25"
+      ],
+      "tags": [
+        "exact",
+        "necessity"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "arsiwa-2001"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "arsiwa-en-31",
+      "query": "ARSIWA art 31",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 31"
+      ],
+      "tags": [
+        "exact",
+        "reparation"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "arsiwa-2001"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "charter-en-1",
+      "query": "UN Charter Article 1",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 1"
+      ],
+      "tags": [
+        "exact",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "un-charter-1945"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "charter-zh-2",
+      "query": "联合国宪章第2条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 2"
+      ],
+      "tags": [
+        "exact",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "un-charter-1945"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "charter-en-51",
+      "query": "Charter of the United Nations Article 51",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 51"
+      ],
+      "tags": [
+        "exact",
+        "self_defence"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "un-charter-1945"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "charter-zh-103",
+      "query": "《联合国宪章》第103条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 103"
+      ],
+      "tags": [
+        "exact",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "un-charter-1945"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "charter-en-111",
+      "query": "UN Charter art. 111",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 111"
+      ],
+      "tags": [
+        "exact",
+        "last_article"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "un-charter-1945"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "udhr-en-1",
+      "query": "UDHR Article 1",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 1"
+      ],
+      "tags": [
+        "exact",
+        "classification"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "udhr-1948"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "udhr-zh-3",
+      "query": "世界人权宣言第3条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 3"
+      ],
+      "tags": [
+        "exact",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "udhr-1948"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "udhr-en-19",
+      "query": "Universal Declaration of Human Rights Article 19",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 19"
+      ],
+      "tags": [
+        "exact",
+        "expression"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "udhr-1948"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "udhr-zh-26",
+      "query": "世界人权宣言第26条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 26"
+      ],
+      "tags": [
+        "exact",
+        "education"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "udhr-1948"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "udhr-en-30",
+      "query": "UDHR Article 30",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 30"
+      ],
+      "tags": [
+        "exact",
+        "last_article"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "udhr-1948"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "iccpr-en-1",
+      "query": "ICCPR Article 1",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 1"
+      ],
+      "tags": [
+        "exact",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "iccpr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "iccpr-zh-6",
+      "query": "公民权利和政治权利国际公约第6条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 6"
+      ],
+      "tags": [
+        "exact",
+        "zh",
+        "life"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "iccpr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "iccpr-en-9",
+      "query": "ICCPR art. 9",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 9"
+      ],
+      "tags": [
+        "exact",
+        "liberty"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "iccpr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "iccpr-zh-14",
+      "query": "公民权利和政治权利国际公约第14条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 14"
+      ],
+      "tags": [
+        "exact",
+        "fair_trial"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "iccpr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "iccpr-en-27",
+      "query": "ICCPR Article 27",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 27"
+      ],
+      "tags": [
+        "exact",
+        "minorities"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "iccpr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "icescr-en-1",
+      "query": "ICESCR Article 1",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 1"
+      ],
+      "tags": [
+        "exact",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icescr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "icescr-zh-6",
+      "query": "经济社会及文化权利国际公约第6条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 6"
+      ],
+      "tags": [
+        "exact",
+        "zh",
+        "work"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icescr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "icescr-en-12",
+      "query": "ICESCR art 12",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 12"
+      ],
+      "tags": [
+        "exact",
+        "health"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icescr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "icescr-zh-15",
+      "query": "经济社会及文化权利国际公约第15条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 15"
+      ],
+      "tags": [
+        "exact",
+        "culture"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icescr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "icescr-en-31",
+      "query": "ICESCR Article 31",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 31"
+      ],
+      "tags": [
+        "exact",
+        "last_article"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icescr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "unclos-en-2",
+      "query": "UNCLOS Article 2",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 2"
+      ],
+      "tags": [
+        "exact",
+        "territorial_sea"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "unclos-1982"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "unclos-zh-3",
+      "query": "联合国海洋法公约第3条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 3"
+      ],
+      "tags": [
+        "exact",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "unclos-1982"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "unclos-en-17",
+      "query": "United Nations Convention on the Law of the Sea Article 17",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 17"
+      ],
+      "tags": [
+        "exact",
+        "innocent_passage"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "unclos-1982"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "unclos-zh-87",
+      "query": "联合国海洋法公约第87条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 87"
+      ],
+      "tags": [
+        "exact",
+        "high_seas"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "unclos-1982"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "unclos-en-121",
+      "query": "UNCLOS art. 121",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 121"
+      ],
+      "tags": [
+        "exact",
+        "islands"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "unclos-1982"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "nicaragua-en-191",
+      "query": "Nicaragua paragraph 191",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Nicaragua v. United States (Merits), para. 191"
+      ],
+      "tags": [
+        "exact",
+        "case"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-nicaragua-1986-merits"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "nicaragua-zh-195",
+      "query": "尼加拉瓜境内和针对尼加拉瓜的军事与准军事活动案（尼加拉瓜诉美国），实体判决第195段",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Nicaragua v. United States (Merits), para. 195"
+      ],
+      "tags": [
+        "exact",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-nicaragua-1986-merits"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "nicaragua-en-202",
+      "query": "Nicaragua Merits para. 202",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Nicaragua v. United States (Merits), para. 202"
+      ],
+      "tags": [
+        "exact",
+        "case"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-nicaragua-1986-merits"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "fts-arsiwa-control",
+      "query": "ARSIWA directed or controlled",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 8"
+      ],
+      "tags": [
+        "fts",
+        "classification"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "arsiwa-2001"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "fts-vclt-internal-law",
+      "query": "VCLT internal law",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 46",
+        "VCLT, Article 27",
+        "VCLT, Article 2"
+      ],
+      "tags": [
+        "fts",
+        "natural_language"
+      ],
+      "relevant_rank": 2,
+      "returned_document_ids": [
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "document-name-zh",
+      "query": "维也纳条约法公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "document-name-en",
+      "query": "United Nations Convention on the Law of the Sea",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "negative-invented-treaty",
+      "query": "zzzxqv imaginary treaty provision",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "negative",
+        "no_answer"
+      ],
+      "relevant_rank": null,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "negative-impossible-article",
+      "query": "VCLT Article 999",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "negative",
+        "out_of_range"
+      ],
+      "relevant_rank": null,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "vclt-extra-4",
+      "query": "VCLT Article 4",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 4"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "vclt-1969"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "vclt-extra-7",
+      "query": "VCLT Article 7",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 7"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "vclt-1969"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "vclt-extra-18",
+      "query": "VCLT Article 18",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 18"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "vclt-1969"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "vclt-extra-53",
+      "query": "维也纳条约法公约第53条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 53"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "vclt-1969"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "vclt-extra-62",
+      "query": "VCLT Article 62",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 62"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "vclt-1969"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "arsiwa-extra-4",
+      "query": "ARSIWA Article 4",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 4"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "arsiwa-2001"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "arsiwa-extra-5",
+      "query": "ARSIWA Article 5",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 5"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "arsiwa-2001"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "arsiwa-extra-11",
+      "query": "国家对国际不法行为的责任条款第11条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 11"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "arsiwa-2001"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "arsiwa-extra-16",
+      "query": "ARSIWA Article 16",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 16"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "arsiwa-2001"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "arsiwa-extra-34",
+      "query": "ARSIWA Article 34",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 34"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "arsiwa-2001"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "charter-extra-24",
+      "query": "UN Charter Article 24",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 24"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "un-charter-1945"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "charter-extra-25",
+      "query": "联合国宪章第25条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 25"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "un-charter-1945"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "charter-extra-39",
+      "query": "UN Charter Article 39",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 39"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "un-charter-1945"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "charter-extra-41",
+      "query": "UN Charter Article 41",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 41"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "un-charter-1945"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "charter-extra-94",
+      "query": "联合国宪章第94条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 94"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "un-charter-1945"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "udhr-extra-5",
+      "query": "UDHR Article 5",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 5"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "udhr-1948"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "udhr-extra-12",
+      "query": "世界人权宣言第12条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 12"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "udhr-1948"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "udhr-extra-18",
+      "query": "UDHR Article 18",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 18"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "udhr-1948"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "udhr-extra-23",
+      "query": "UDHR Article 23",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 23"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "udhr-1948"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "iccpr-extra-2",
+      "query": "ICCPR Article 2",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 2"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "iccpr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "iccpr-extra-7",
+      "query": "公民权利和政治权利国际公约第7条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 7"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "iccpr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "iccpr-extra-17",
+      "query": "ICCPR Article 17",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 17"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "iccpr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "iccpr-extra-18",
+      "query": "ICCPR Article 18",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 18"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "iccpr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "iccpr-extra-19",
+      "query": "ICCPR Article 19",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 19"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "iccpr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "icescr-extra-2",
+      "query": "ICESCR Article 2",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 2"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icescr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "icescr-extra-7",
+      "query": "经济社会及文化权利国际公约第7条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 7"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icescr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "icescr-extra-11",
+      "query": "ICESCR Article 11",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 11"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icescr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "icescr-extra-13",
+      "query": "ICESCR Article 13",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 13"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icescr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "unclos-extra-33",
+      "query": "UNCLOS Article 33",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 33"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "unclos-1982"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "unclos-extra-56",
+      "query": "联合国海洋法公约第56条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 56"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "unclos-1982"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "unclos-extra-57",
+      "query": "UNCLOS Article 57",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 57"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "unclos-1982"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "unclos-extra-74",
+      "query": "UNCLOS Article 74",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 74"
+      ],
+      "tags": [
+        "exact",
+        "expanded"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "unclos-1982"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "unclos-extra-76",
+      "query": "联合国海洋法公约第76条",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 76"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "unclos-1982"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "nicaragua-extra-176",
+      "query": "Nicaragua Merits paragraph 176",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Nicaragua v. United States (Merits), para. 176"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "case"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-nicaragua-1986-merits"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "nicaragua-extra-190",
+      "query": "尼加拉瓜境内和针对尼加拉瓜的军事与准军事活动案（尼加拉瓜诉美国），实体判决第190段",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Nicaragua v. United States (Merits), para. 190"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-nicaragua-1986-merits"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "nicaragua-extra-264",
+      "query": "Nicaragua Merits para. 264",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Nicaragua v. United States (Merits), para. 264"
+      ],
+      "tags": [
+        "exact",
+        "expanded",
+        "case"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-nicaragua-1986-merits"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-vclt-good-faith",
+      "query": "VCLT treaties must be performed in good faith",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 26",
+        "VCLT, Article 31",
+        "VCLT, Article 33",
+        "VCLT, Article 8",
+        "VCLT, Article 35",
+        "VCLT, Article 10",
+        "VCLT, Article 34",
+        "VCLT, Article 27",
+        "VCLT, Article 51",
+        "VCLT, Article 29"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-vclt-interpretation",
+      "query": "VCLT ordinary meaning context object and purpose of a treaty",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 31",
+        "VCLT, Article 5",
+        "VCLT, Article 1",
+        "VCLT, Article 29",
+        "VCLT, Article 2",
+        "VCLT, Article 18",
+        "VCLT, Article 35",
+        "VCLT, Article 59",
+        "VCLT, Article 30",
+        "VCLT, Article 34"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-vclt-jus-cogens",
+      "query": "VCLT treaty conflicting with a peremptory norm of general international law",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 53",
+        "VCLT, Article 64",
+        "VCLT, Article 71",
+        "VCLT, Article 52",
+        "VCLT, Article 46",
+        "VCLT, Article 48",
+        "VCLT, Article 44",
+        "VCLT, Article 30",
+        "VCLT, Article 60",
+        "VCLT, Article 31"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-vclt-zh-good-faith",
+      "query": "《维也纳条约法公约》善意履行条约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 26",
+        "VCLT, Article 35",
+        "VCLT, Article 77",
+        "VCLT, Article 11",
+        "VCLT, Article 75",
+        "VCLT, Article 36",
+        "VCLT, Article 31",
+        "VCLT, Article 82",
+        "VCLT, Article 85",
+        "VCLT, Article 13"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "cross_lingual",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969",
+        "vclt-1969"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-arsiwa-organ",
+      "query": "ARSIWA conduct of a state organ attributable to the state",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 4",
+        "ARSIWA, Article 6",
+        "ARSIWA, Article 11",
+        "ARSIWA, Article 5",
+        "ARSIWA, Article 7",
+        "ARSIWA, Article 8",
+        "ARSIWA, Article 2",
+        "ARSIWA, Article 10",
+        "ARSIWA, Article 9",
+        "ARSIWA, Article 43"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-arsiwa-control",
+      "query": "ARSIWA conduct directed or controlled by a state",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 8",
+        "ARSIWA, Article 9",
+        "ARSIWA, Article 4",
+        "ARSIWA, Article 5",
+        "ARSIWA, Article 17",
+        "ARSIWA, Article 18",
+        "ARSIWA, Article 6",
+        "ARSIWA, Article 7",
+        "ARSIWA, Article 10",
+        "ARSIWA, Article 20"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-arsiwa-reparation",
+      "query": "ARSIWA full reparation for injury caused by the wrongful act",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ARSIWA, Article 31",
+        "ARSIWA, Article 34",
+        "ARSIWA, Article 36",
+        "ARSIWA, Article 39",
+        "ARSIWA, Article 37",
+        "ARSIWA, Article 43",
+        "ARSIWA, Article 51",
+        "ARSIWA, Article 54",
+        "ARSIWA, Article 46",
+        "ARSIWA, Article 48"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001",
+        "arsiwa-2001"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-charter-force",
+      "query": "UN Charter prohibition of the threat or use of force against territorial integrity",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 41",
+        "UN Charter, Article 44",
+        "UN Charter, Article 39",
+        "UN Charter, Article 53",
+        "UN Charter, Article 2",
+        "UN Charter, Article 51",
+        "UN Charter, Article 46",
+        "UN Charter, Article 84",
+        "UN Charter, Article 73",
+        "UN Charter, Article 1"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 5,
+      "returned_document_ids": [
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-charter-self-defence-zh",
+      "query": "《联合国宪章》遭受武力攻击时的单独或集体自卫权",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 51",
+        "UN Charter, Article 42",
+        "UN Charter, Article 45",
+        "UN Charter, Article 35",
+        "UN Charter, Article 53",
+        "UN Charter, Article 107",
+        "UN Charter, Article 43",
+        "UN Charter, Article 5",
+        "UN Charter, Article 41",
+        "UN Charter, Article 44"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "cross_lingual",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-charter-peace",
+      "query": "UN Charter Security Council determines a threat to peace breach of peace or act of aggression",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 39",
+        "UN Charter, Article 38",
+        "UN Charter, Article 24",
+        "UN Charter, Article 34",
+        "UN Charter, Article 48",
+        "UN Charter, Article 51",
+        "UN Charter, Article 37",
+        "UN Charter, Article 42",
+        "UN Charter, Article 12",
+        "UN Charter, Article 99"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945",
+        "un-charter-1945"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-udhr-expression",
+      "query": "UDHR freedom to seek receive and impart information and ideas",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 19",
+        "UDHR, Article 27",
+        "UDHR, Article 18",
+        "UDHR, Article 10",
+        "UDHR, Article 29",
+        "UDHR, Article 21",
+        "UDHR, Article 28",
+        "UDHR, Article 26",
+        "UDHR, Article 3",
+        "UDHR, Article 30"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "udhr-1948",
+        "udhr-1948",
+        "udhr-1948",
+        "udhr-1948",
+        "udhr-1948",
+        "udhr-1948",
+        "udhr-1948",
+        "udhr-1948",
+        "udhr-1948",
+        "udhr-1948"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-udhr-education",
+      "query": "UDHR elementary education shall be free and compulsory",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UDHR, Article 26",
+        "UDHR, Article 4",
+        "UDHR, Article 21",
+        "UDHR, Article 25",
+        "UDHR, Article 28",
+        "UDHR, Article 1",
+        "UDHR, Article 5",
+        "UDHR, Article 10",
+        "UDHR, Article 2",
+        "UDHR, Article 29"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "udhr-1948",
+        "udhr-1948",
+        "udhr-1948",
+        "udhr-1948",
+        "udhr-1948",
+        "udhr-1948",
+        "udhr-1948",
+        "udhr-1948",
+        "udhr-1948",
+        "udhr-1948"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-iccpr-detention-zh",
+      "query": "《公民权利和政治权利国际公约》不得任意逮捕或拘禁",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 9",
+        "ICCPR, Article 5",
+        "ICCPR, Article 15",
+        "ICCPR, Article 8",
+        "ICCPR, Article 11",
+        "ICCPR, Article 7",
+        "ICCPR, Article 17",
+        "ICCPR, Article 12",
+        "ICCPR, Article 21",
+        "ICCPR, Article 22"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "cross_lingual",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-iccpr-hearing",
+      "query": "ICCPR fair public hearing by an independent impartial tribunal",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 14",
+        "ICCPR, Article 38",
+        "ICCPR, Article 19",
+        "ICCPR, Article 13",
+        "ICCPR, Article 1",
+        "ICCPR, Article 21",
+        "ICCPR, Article 16",
+        "ICCPR, Article 26",
+        "ICCPR, Article 10",
+        "ICCPR, Article 17"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-iccpr-minorities",
+      "query": "ICCPR minorities enjoy their culture religion and language",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICCPR, Article 27",
+        "ICCPR, Article 24",
+        "ICCPR, Article 26",
+        "ICCPR, Article 18",
+        "ICCPR, Article 47",
+        "ICCPR, Article 1",
+        "ICCPR, Article 19",
+        "ICCPR, Article 3",
+        "ICCPR, Article 2",
+        "ICCPR, Article 16"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966",
+        "iccpr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-icescr-health",
+      "query": "ICESCR highest attainable standard of physical and mental health",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "ICESCR, Article 12",
+        "ICESCR, Article 11",
+        "ICESCR, Article 7",
+        "ICESCR, Article 10",
+        "ICESCR, Article 3",
+        "ICESCR, Article 2",
+        "ICESCR, Article 22",
+        "ICESCR, Article 18",
+        "ICESCR, Article 6",
+        "ICESCR, Article 13"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icescr-1966",
+        "icescr-1966",
+        "icescr-1966",
+        "icescr-1966",
+        "icescr-1966",
+        "icescr-1966",
+        "icescr-1966",
+        "icescr-1966",
+        "icescr-1966",
+        "icescr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-unclos-territorial-zh",
+      "query": "《联合国海洋法公约》领海宽度不得超过十二海里",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 3",
+        "UNCLOS, Article 57",
+        "UNCLOS, Article 15",
+        "UNCLOS, Article 5",
+        "UNCLOS, Article 16",
+        "UNCLOS, Article 6",
+        "UNCLOS, Article 260",
+        "UNCLOS, Article 47",
+        "UNCLOS, Article 33",
+        "UNCLOS, Article 4"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "cross_lingual",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-unclos-eez",
+      "query": "UNCLOS exclusive economic zone shall not extend beyond 200 nautical miles",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 57",
+        "UNCLOS, Article 55",
+        "UNCLOS, Article 260",
+        "UNCLOS, Article 58",
+        "UNCLOS, Article 60",
+        "UNCLOS, Article 257",
+        "UNCLOS, Article 74",
+        "UNCLOS, Article 63",
+        "UNCLOS, Article 150",
+        "UNCLOS, Article 246"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-unclos-artificial-islands",
+      "query": "UNCLOS artificial islands do not possess the status of islands",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 60",
+        "UNCLOS, Article 259",
+        "UNCLOS, Article 80",
+        "UNCLOS, Article 121",
+        "UNCLOS, Article 89",
+        "UNCLOS, Article 11",
+        "UNCLOS, Article 137",
+        "UNCLOS, Article 241",
+        "UNCLOS, Article 46",
+        "UNCLOS, Article 34"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982",
+        "unclos-1982"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-nicaragua-armed-attack",
+      "query": "Nicaragua judgment most grave forms of the use of force constituting an armed attack",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Nicaragua v. United States (Merits), para. 191",
+        "Nicaragua v. United States (Merits), para. 227",
+        "Nicaragua v. United States (Merits), para. 195",
+        "Nicaragua v. United States (Merits), para. 247",
+        "Nicaragua v. United States (Merits), para. 249",
+        "Nicaragua v. United States (Merits), para. 238",
+        "Nicaragua v. United States (Merits), para. 210",
+        "Nicaragua v. United States (Merits), para. 133",
+        "Nicaragua v. United States (Merits), para. 228",
+        "Nicaragua v. United States (Merits), para. 15"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-nicaragua-1986-merits",
+        "icj-nicaragua-1986-merits",
+        "icj-nicaragua-1986-merits",
+        "icj-nicaragua-1986-merits",
+        "icj-nicaragua-1986-merits",
+        "icj-nicaragua-1986-merits",
+        "icj-nicaragua-1986-merits",
+        "icj-nicaragua-1986-merits",
+        "icj-nicaragua-1986-merits",
+        "icj-nicaragua-1986-merits"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-statute-1945",
+      "query": "Statute of the International Court of Justice",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-statute-1945",
+      "query": "国际法院规约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-rome-statute-1998",
+      "query": "Rome Statute of the International Criminal Court",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-rome-statute-1998",
+      "query": "国际刑事法院罗马规约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-cat-1984",
+      "query": "Convention against Torture and Other Cruel Inhuman or Degrading Treatment or Punishment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-cat-1984",
+      "query": "禁止酷刑和其他残忍不人道或有辱人格的待遇或处罚公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icerd-1965",
+      "query": "International Convention on the Elimination of All Forms of Racial Discrimination",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icerd-1965",
+      "query": "消除一切形式种族歧视国际公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-cedaw-1979",
+      "query": "Convention on the Elimination of All Forms of Discrimination against Women",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-cedaw-1979",
+      "query": "消除对妇女一切形式歧视公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-crc-1989",
+      "query": "Convention on the Rights of the Child",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-crc-1989",
+      "query": "儿童权利公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-gc-i-1949",
+      "query": "Geneva Convention I of 12 August 1949",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-gc-i-1949",
+      "query": "1949年日内瓦第一公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-gc-ii-1949",
+      "query": "Geneva Convention II of 12 August 1949",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-gc-ii-1949",
+      "query": "1949年日内瓦第二公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-gc-iii-1949",
+      "query": "Geneva Convention III of 12 August 1949",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-gc-iii-1949",
+      "query": "1949年日内瓦第三公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-gc-iv-1949",
+      "query": "Geneva Convention IV of 12 August 1949",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-gc-iv-1949",
+      "query": "1949年日内瓦第四公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-ap-i-1977",
+      "query": "Protocol Additional I to the Geneva Conventions of 12 August 1949",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-ap-i-1977",
+      "query": "1949年日内瓦公约第一附加议定书",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-ap-ii-1977",
+      "query": "Protocol Additional II to the Geneva Conventions of 12 August 1949",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-ap-ii-1977",
+      "query": "1949年日内瓦公约第二附加议定书",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-corfu-channel-1949-merits",
+      "query": "Corfu Channel United Kingdom v Albania Merits Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-corfu-channel-1949-merits",
+      "query": "科孚海峡案实体判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-reparation-injuries-1949",
+      "query": "Reparation for Injuries Suffered in the Service of the United Nations Advisory Opinion",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-reparation-injuries-1949",
+      "query": "为联合国服务而遭受损害的赔偿咨询意见",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-asylum-1950",
+      "query": "Asylum Colombia v Peru Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-asylum-1950",
+      "query": "庇护案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-genocide-reservations-1951",
+      "query": "Reservations to the Genocide Convention Advisory Opinion",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Genocide Reservations, PDF p. 1",
+        "Genocide Reservations, PDF p. 2",
+        "Genocide Reservations, PDF p. 4",
+        "Barcelona Traction (Second Phase), para. 34",
+        "The Gambia v. Myanmar (Preliminary Objections), para. 113",
+        "Western Sahara, para. 41",
+        "Namibia Advisory Opinion, para. 32"
+      ],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-genocide-reservations-1951",
+        "icj-genocide-reservations-1951",
+        "icj-genocide-reservations-1951",
+        "icj-barcelona-traction-1970",
+        "icj-gambia-myanmar-preliminary-2022",
+        "icj-western-sahara-1975",
+        "icj-namibia-1971"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-genocide-reservations-1951",
+      "query": "灭绝种族罪公约保留咨询意见",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-nottebohm-1955",
+      "query": "Nottebohm Liechtenstein v Guatemala Second Phase Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-nottebohm-1955",
+      "query": "诺特博姆案第二阶段判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-right-passage-1960",
+      "query": "Right of Passage over Indian Territory Merits Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Right of Passage (Merits), PDF p. 1",
+        "Right of Passage (Merits), PDF p. 2",
+        "Right of Passage (Merits), PDF p. 42"
+      ],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-right-passage-1960",
+        "icj-right-passage-1960",
+        "icj-right-passage-1960"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-right-passage-1960",
+      "query": "印度领土通行权案实体判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-temple-preah-vihear-1962",
+      "query": "Temple of Preah Vihear Merits Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Temple of Preah Vihear (Merits), PDF p. 1",
+        "Temple of Preah Vihear (Merits), PDF p. 2",
+        "Temple of Preah Vihear (Merits), PDF p. 7",
+        "Temple of Preah Vihear (Merits), PDF p. 26",
+        "Temple of Preah Vihear (Merits), PDF p. 22",
+        "Temple of Preah Vihear (Merits), PDF p. 3",
+        "Temple of Preah Vihear (Merits), PDF p. 8",
+        "Temple of Preah Vihear (Merits), PDF p. 6",
+        "Temple of Preah Vihear (Merits), PDF p. 19",
+        "Temple of Preah Vihear (Merits), PDF p. 25"
+      ],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-temple-preah-vihear-1962",
+        "icj-temple-preah-vihear-1962",
+        "icj-temple-preah-vihear-1962",
+        "icj-temple-preah-vihear-1962",
+        "icj-temple-preah-vihear-1962",
+        "icj-temple-preah-vihear-1962",
+        "icj-temple-preah-vihear-1962",
+        "icj-temple-preah-vihear-1962",
+        "icj-temple-preah-vihear-1962",
+        "icj-temple-preah-vihear-1962"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-temple-preah-vihear-1962",
+      "query": "柏威夏寺案实体判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-north-sea-1969",
+      "query": "North Sea Continental Shelf Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-north-sea-1969",
+      "query": "北海大陆架案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-barcelona-traction-1970",
+      "query": "Barcelona Traction Light and Power Company Limited Second Phase Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-barcelona-traction-1970",
+      "query": "巴塞罗那电车公司案第二阶段判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-namibia-1971",
+      "query": "Legal Consequences for States of the Continued Presence of South Africa in Namibia Advisory Opinion",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-namibia-1971",
+      "query": "纳米比亚咨询意见",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-nuclear-tests-1974",
+      "query": "Nuclear Tests Australia v France Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-nuclear-tests-1974",
+      "query": "核试验案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-western-sahara-1975",
+      "query": "Western Sahara Advisory Opinion",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-western-sahara-1975",
+      "query": "西撒哈拉咨询意见",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-continental-shelf-tunisia-libya-1982",
+      "query": "Continental Shelf Tunisia v Libyan Arab Jamahiriya Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-continental-shelf-tunisia-libya-1982",
+      "query": "突尼斯利比亚大陆架案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-frontier-dispute-1986",
+      "query": "Frontier Dispute Burkina Faso v Mali Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-frontier-dispute-1986",
+      "query": "布基纳法索马里边界争端案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-elsi-1989",
+      "query": "Elettronica Sicula United States v Italy Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Elettronica Sicula (ELSI), PDF p. 1",
+        "Elettronica Sicula (ELSI), PDF p. 2",
+        "Elettronica Sicula (ELSI), PDF p. 70"
+      ],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-elsi-1989",
+        "icj-elsi-1989",
+        "icj-elsi-1989"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-elsi-1989",
+      "query": "西西里电子公司案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-nauru-preliminary-1992",
+      "query": "Certain Phosphate Lands in Nauru Preliminary Objections Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-nauru-preliminary-1992",
+      "query": "瑙鲁某些磷酸盐地案初步反对判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-bosnian-genocide-preliminary-1996",
+      "query": "Application of the Genocide Convention Preliminary Objections Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-bosnian-genocide-preliminary-1996",
+      "query": "适用灭绝种族罪公约案初步反对判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-nuclear-weapons-1996",
+      "query": "Legality of the Threat or Use of Nuclear Weapons Advisory Opinion",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-nuclear-weapons-1996",
+      "query": "以核武器相威胁或使用核武器的合法性咨询意见",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-gabcikovo-1997",
+      "query": "Gabcikovo Nagymaros Project Hungary v Slovakia Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-gabcikovo-1997",
+      "query": "盖博奇科沃大毛罗斯项目案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-lagrand-2001",
+      "query": "LaGrand Germany v United States of America Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-lagrand-2001",
+      "query": "拉格朗案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-arrest-warrant-2002",
+      "query": "Arrest Warrant of 11 April 2000 Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Arrest Warrant, para. 62",
+        "Arrest Warrant, para. 45",
+        "Arrest Warrant, para. 72",
+        "Arrest Warrant, para. 75",
+        "Arrest Warrant, para. 65",
+        "Arrest Warrant, para. 14",
+        "Arrest Warrant, para. 11",
+        "Arrest Warrant, para. 5",
+        "Arrest Warrant, para. 12",
+        "Arrest Warrant, para. 13"
+      ],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-arrest-warrant-2002",
+        "icj-arrest-warrant-2002",
+        "icj-arrest-warrant-2002",
+        "icj-arrest-warrant-2002",
+        "icj-arrest-warrant-2002",
+        "icj-arrest-warrant-2002",
+        "icj-arrest-warrant-2002",
+        "icj-arrest-warrant-2002",
+        "icj-arrest-warrant-2002",
+        "icj-arrest-warrant-2002"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-arrest-warrant-2002",
+      "query": "2000年4月11日逮捕令案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-wall-2004",
+      "query": "Legal Consequences of the Construction of a Wall in the Occupied Palestinian Territory Advisory Opinion",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-wall-2004",
+      "query": "在被占巴勒斯坦领土修建隔离墙的法律后果咨询意见",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-armed-activities-2005",
+      "query": "Armed Activities on the Territory of the Congo DRC v Uganda Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-armed-activities-2005",
+      "query": "刚果领土上的武装活动案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-bosnian-genocide-2007",
+      "query": "Application of the Genocide Convention Bosnia and Herzegovina v Serbia and Montenegro Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-bosnian-genocide-2007",
+      "query": "适用灭绝种族罪公约案实体判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-kosovo-2010",
+      "query": "Accordance with International Law of the Unilateral Declaration of Independence in Respect of Kosovo Advisory Opinion",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-kosovo-2010",
+      "query": "科索沃单方面宣布独立是否符合国际法咨询意见",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-jurisdictional-immunities-2012",
+      "query": "Jurisdictional Immunities of the State Germany v Italy Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Jurisdictional Immunities, para. 135",
+        "Jurisdictional Immunities, para. 37",
+        "Jurisdictional Immunities, para. 120",
+        "Jurisdictional Immunities, para. 103",
+        "Jurisdictional Immunities, para. 133",
+        "Jurisdictional Immunities, para. 22",
+        "Jurisdictional Immunities, para. 51",
+        "Jurisdictional Immunities, para. 17",
+        "Jurisdictional Immunities, para. 5",
+        "Jurisdictional Immunities, para. 54"
+      ],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-jurisdictional-immunities-2012",
+        "icj-jurisdictional-immunities-2012",
+        "icj-jurisdictional-immunities-2012",
+        "icj-jurisdictional-immunities-2012",
+        "icj-jurisdictional-immunities-2012",
+        "icj-jurisdictional-immunities-2012",
+        "icj-jurisdictional-immunities-2012",
+        "icj-jurisdictional-immunities-2012",
+        "icj-jurisdictional-immunities-2012",
+        "icj-jurisdictional-immunities-2012"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-jurisdictional-immunities-2012",
+      "query": "国家管辖豁免案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-whaling-2014",
+      "query": "Whaling in the Antarctic Australia v Japan Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Whaling in the Antarctic, para. 205",
+        "Whaling in the Antarctic, para. 32",
+        "Whaling in the Antarctic, para. 33",
+        "Whaling in the Antarctic, para. 1",
+        "Whaling in the Antarctic, para. 102",
+        "Whaling in the Antarctic, para. 100",
+        "Whaling in the Antarctic, para. 184",
+        "Whaling in the Antarctic, para. 75",
+        "Whaling in the Antarctic, para. 25",
+        "Whaling in the Antarctic, para. 40"
+      ],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-whaling-2014",
+        "icj-whaling-2014",
+        "icj-whaling-2014",
+        "icj-whaling-2014",
+        "icj-whaling-2014",
+        "icj-whaling-2014",
+        "icj-whaling-2014",
+        "icj-whaling-2014",
+        "icj-whaling-2014",
+        "icj-whaling-2014"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-whaling-2014",
+      "query": "南极捕鲸案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-chagos-2019",
+      "query": "Legal Consequences of the Separation of the Chagos Archipelago from Mauritius in 1965 Advisory Opinion",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-chagos-2019",
+      "query": "1965年查戈斯群岛从毛里求斯分离的法律后果咨询意见",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-en-icj-gambia-myanmar-preliminary-2022",
+      "query": "Application of the Genocide Convention The Gambia v Myanmar Preliminary Objections Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "doc-zh-icj-gambia-myanmar-preliminary-2022",
+      "query": "适用灭绝种族罪公约案冈比亚诉缅甸初步反对判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "exact",
+        "document_name",
+        "expanded",
+        "case",
+        "zh"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-rome-complementarity",
+      "query": "international criminal court complementary to national criminal jurisdictions",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Rome Statute, Article 1",
+        "Bosnian Genocide (Merits), PDF p. 188",
+        "Rome Statute, Article 116",
+        "Rome Statute, Article 4",
+        "ICJ Statute, Article 36",
+        "Jurisdictional Immunities, para. 55",
+        "ICJ Statute, Article 6",
+        "Jurisdictional Immunities, para. 18",
+        "Jurisdictional Immunities, para. 100",
+        "Barcelona Traction (Second Phase), para. 98"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "expanded",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "rome-statute-1998",
+        "icj-bosnian-genocide-2007",
+        "rome-statute-1998",
+        "rome-statute-1998",
+        "icj-statute-1945",
+        "icj-jurisdictional-immunities-2012",
+        "icj-statute-1945",
+        "icj-jurisdictional-immunities-2012",
+        "icj-jurisdictional-immunities-2012",
+        "icj-barcelona-traction-1970"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-cat-non-refoulement",
+      "query": "torture convention no expulsion return or extradition where substantial grounds of torture",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "CAT, Article 3",
+        "CAT, Article 8",
+        "CAT, Article 16",
+        "GC IV, Article 45",
+        "ICCPR, Article 7",
+        "UDHR, Article 5",
+        "The Gambia v. Myanmar (Preliminary Objections), para. 95",
+        "The Gambia v. Myanmar (Preliminary Objections), para. 101",
+        "GC III, Article 99",
+        "UDHR, Article 9"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "expanded",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "cat-1984",
+        "cat-1984",
+        "cat-1984",
+        "gc-iv-1949",
+        "iccpr-1966",
+        "udhr-1948",
+        "icj-gambia-myanmar-preliminary-2022",
+        "icj-gambia-myanmar-preliminary-2022",
+        "gc-iii-1949",
+        "udhr-1948"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-crc-best-interests",
+      "query": "children convention best interests of the child shall be a primary consideration",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "CRC, Article 3",
+        "CRC, Article 18",
+        "CRC, Article 21",
+        "AP I, Article 77",
+        "ICESCR, Article 10"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "expanded",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "crc-1989",
+        "crc-1989",
+        "crc-1989",
+        "ap-i-1977",
+        "icescr-1966"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-corfu-knowledge",
+      "query": "ICJ case exclusive territorial control allows a more liberal recourse to inferences of fact",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Corfu Channel (Merits), PDF p. 17",
+        "Frontier Dispute, para. 54",
+        "Frontier Dispute, para. 47",
+        "UNCLOS, Article 220",
+        "Corfu Channel (Merits), PDF p. 3",
+        "North Sea Continental Shelf, para. 24",
+        "Frontier Dispute, para. 23",
+        "Western Sahara, para. 129",
+        "North Sea Continental Shelf, para. 43",
+        "UNCLOS, Article 122"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-corfu-channel-1949-merits",
+        "icj-frontier-dispute-1986",
+        "icj-frontier-dispute-1986",
+        "unclos-1982",
+        "icj-corfu-channel-1949-merits",
+        "icj-north-sea-1969",
+        "icj-frontier-dispute-1986",
+        "icj-western-sahara-1975",
+        "icj-north-sea-1969",
+        "unclos-1982"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-reparation-legal-personality",
+      "query": "ICJ advisory opinion United Nations has capacity to bring an international claim for injury to its agent",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Reparation for Injuries, PDF p. 16",
+        "Reparation for Injuries, PDF p. 9",
+        "Reparation for Injuries, PDF p. 13",
+        "ICJ Statute, Article 65",
+        "ICJ Statute, Article 17",
+        "Barcelona Traction (Second Phase), para. 35",
+        "The Gambia v. Myanmar (Preliminary Objections), para. 36",
+        "UN Charter, Article 96",
+        "Chagos Advisory Opinion, para. 182",
+        "ARSIWA, Article 48"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-reparation-injuries-1949",
+        "icj-reparation-injuries-1949",
+        "icj-reparation-injuries-1949",
+        "icj-statute-1945",
+        "icj-statute-1945",
+        "icj-barcelona-traction-1970",
+        "icj-gambia-myanmar-preliminary-2022",
+        "un-charter-1945",
+        "icj-chagos-2019",
+        "arsiwa-2001"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-nottebohm-genuine-link",
+      "query": "ICJ nationality genuine connection of existence interests and sentiments",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Nottebohm (Second Phase), PDF p. 23",
+        "Nottebohm (Second Phase), PDF p. 21",
+        "ICJ Statute, Article 2",
+        "ICJ Statute, Article 31",
+        "Nottebohm (Second Phase), PDF p. 22",
+        "Barcelona Traction (Second Phase), para. 103",
+        "ICCPR, Article 26",
+        "Barcelona Traction (Second Phase), para. 70",
+        "Bosnian Genocide (Merits), PDF p. 92",
+        "UNCLOS, Article 91"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-nottebohm-1955",
+        "icj-nottebohm-1955",
+        "icj-statute-1945",
+        "icj-statute-1945",
+        "icj-nottebohm-1955",
+        "icj-barcelona-traction-1970",
+        "iccpr-1966",
+        "icj-barcelona-traction-1970",
+        "icj-bosnian-genocide-2007",
+        "unclos-1982"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-north-sea-equitable-principles",
+      "query": "ICJ continental shelf delimitation equitable principles relevant circumstances",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Continental Shelf (Tunisia/Libya), para. 72",
+        "Continental Shelf (Tunisia/Libya), para. 69",
+        "Continental Shelf (Tunisia/Libya), para. 23",
+        "North Sea Continental Shelf, para. 90",
+        "North Sea Continental Shelf, para. 92",
+        "North Sea Continental Shelf, para. 85"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 4,
+      "returned_document_ids": [
+        "icj-continental-shelf-tunisia-libya-1982",
+        "icj-continental-shelf-tunisia-libya-1982",
+        "icj-continental-shelf-tunisia-libya-1982",
+        "icj-north-sea-1969",
+        "icj-north-sea-1969",
+        "icj-north-sea-1969"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-barcelona-erga-omnes",
+      "query": "ICJ obligations toward the international community as a whole erga omnes",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Wall Advisory Opinion, para. 155",
+        "The Gambia v. Myanmar (Preliminary Objections), para. 107",
+        "Wall Advisory Opinion, para. 156",
+        "ARSIWA, Article 33",
+        "Chagos Advisory Opinion, para. 180",
+        "Bosnian Genocide (Preliminary Objections), PDF p. 25",
+        "Barcelona Traction (Second Phase), para. 33",
+        "ICJ Statute, Article 36",
+        "ICCPR, Article 14",
+        "The Gambia v. Myanmar (Preliminary Objections), para. 100"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 7,
+      "returned_document_ids": [
+        "icj-wall-2004",
+        "icj-gambia-myanmar-preliminary-2022",
+        "icj-wall-2004",
+        "arsiwa-2001",
+        "icj-chagos-2019",
+        "icj-bosnian-genocide-preliminary-1996",
+        "icj-barcelona-traction-1970",
+        "icj-statute-1945",
+        "iccpr-1966",
+        "icj-gambia-myanmar-preliminary-2022"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-nuclear-tests-unilateral",
+      "query": "ICJ unilateral declarations may create legal obligations when made publicly with intent to be bound",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Nuclear Tests, para. 43",
+        "Frontier Dispute, para. 39",
+        "Kosovo Advisory Opinion, para. 79",
+        "ICJ Statute, Article 36",
+        "Nuclear Tests, para. 44",
+        "Frontier Dispute, para. 40",
+        "Nuclear Tests, para. 46",
+        "Kosovo Advisory Opinion, para. 106",
+        "Nicaragua v. United States (Merits), para. 71",
+        "Kosovo Advisory Opinion, para. 75"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-nuclear-tests-1974",
+        "icj-frontier-dispute-1986",
+        "icj-kosovo-2010",
+        "icj-statute-1945",
+        "icj-nuclear-tests-1974",
+        "icj-frontier-dispute-1986",
+        "icj-nuclear-tests-1974",
+        "icj-kosovo-2010",
+        "icj-nicaragua-1986-merits",
+        "icj-kosovo-2010"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-nuclear-weapons-ihl",
+      "query": "ICJ nuclear weapons threat or use must comply with international humanitarian law",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Nuclear Weapons Advisory Opinion, para. 86",
+        "Nuclear Weapons Advisory Opinion, para. 105",
+        "Nuclear Weapons Advisory Opinion, para. 89",
+        "Wall Advisory Opinion, para. 157"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-nuclear-weapons-1996",
+        "icj-nuclear-weapons-1996",
+        "icj-nuclear-weapons-1996",
+        "icj-wall-2004"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-gabcikovo-necessity",
+      "query": "ICJ state of necessity grave and imminent peril essential interest",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Gabčíkovo-Nagymaros Project, PDF p. 39",
+        "Gabčíkovo-Nagymaros Project, PDF p. 38",
+        "Wall Advisory Opinion, para. 140",
+        "Gabčíkovo-Nagymaros Project, PDF p. 37",
+        "ARSIWA, Article 25",
+        "ICJ Statute, Article 62",
+        "Jurisdictional Immunities, para. 18",
+        "UNCLOS, Article 198",
+        "Nicaragua v. United States (Merits), para. 224",
+        "Nicaragua v. United States (Merits), para. 282"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-gabcikovo-1997",
+        "icj-gabcikovo-1997",
+        "icj-wall-2004",
+        "icj-gabcikovo-1997",
+        "arsiwa-2001",
+        "icj-statute-1945",
+        "icj-jurisdictional-immunities-2012",
+        "unclos-1982",
+        "icj-nicaragua-1986-merits",
+        "icj-nicaragua-1986-merits"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-lagrand-provisional-measures",
+      "query": "LaGrand Germany United States ICJ judgment provisional measures are legally binding",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "LaGrand, para. 112",
+        "LaGrand, para. 93",
+        "LaGrand, para. 96",
+        "LaGrand, para. 108",
+        "LaGrand, para. 33",
+        "LaGrand, para. 97",
+        "LaGrand, para. 116",
+        "LaGrand, para. 109",
+        "LaGrand, para. 102",
+        "LaGrand, para. 98"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-lagrand-2001",
+        "icj-lagrand-2001",
+        "icj-lagrand-2001",
+        "icj-lagrand-2001",
+        "icj-lagrand-2001",
+        "icj-lagrand-2001",
+        "icj-lagrand-2001",
+        "icj-lagrand-2001",
+        "icj-lagrand-2001",
+        "icj-lagrand-2001"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-wall-self-determination",
+      "query": "ICJ wall occupied Palestinian territory right of peoples to self determination",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Wall Advisory Opinion, para. 115",
+        "Wall Advisory Opinion, para. 88",
+        "Wall Advisory Opinion, para. 149",
+        "Kosovo Advisory Opinion, para. 79",
+        "Chagos Advisory Opinion, para. 160",
+        "Western Sahara, para. 55",
+        "ICCPR, Article 1",
+        "Chagos Advisory Opinion, para. 148",
+        "Kosovo Advisory Opinion, para. 82"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-wall-2004",
+        "icj-wall-2004",
+        "icj-wall-2004",
+        "icj-kosovo-2010",
+        "icj-chagos-2019",
+        "icj-western-sahara-1975",
+        "iccpr-1966",
+        "icj-chagos-2019",
+        "icj-kosovo-2010"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-kosovo-declaration",
+      "query": "ICJ whether international law prohibited Kosovo declaration of independence",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Kosovo Advisory Opinion, para. 56",
+        "Kosovo Advisory Opinion, para. 110",
+        "Kosovo Advisory Opinion, para. 52"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-kosovo-2010",
+        "icj-kosovo-2010",
+        "icj-kosovo-2010"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "semantic-chagos-decolonization",
+      "query": "ICJ Chagos separation Mauritius decolonization self determination",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "Chagos Advisory Opinion, para. 144",
+        "Chagos Advisory Opinion, para. 177",
+        "Chagos Advisory Opinion, para. 84"
+      ],
+      "tags": [
+        "semantic",
+        "hybrid",
+        "expanded",
+        "case",
+        "en"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "icj-chagos-2019",
+        "icj-chagos-2019",
+        "icj-chagos-2019"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-ap-i-1977",
+      "query": "Protocol Additional I to the Geneva Conventions of 12 August 1949",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-ap-ii-1977",
+      "query": "Protocol Additional II to the Geneva Conventions of 12 August 1949",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-arsiwa-2001",
+      "query": "Articles on Responsibility of States for Internationally Wrongful Acts",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-cat-1984",
+      "query": "Convention against Torture and Other Cruel Inhuman or Degrading Treatment or Punishment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-cedaw-1979",
+      "query": "Convention on the Elimination of All Forms of Discrimination against Women",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-crc-1989",
+      "query": "Convention on the Rights of the Child",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-gc-i-1949",
+      "query": "Geneva Convention I of 12 August 1949",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-gc-ii-1949",
+      "query": "Geneva Convention II of 12 August 1949",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-gc-iii-1949",
+      "query": "Geneva Convention III of 12 August 1949",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-gc-iv-1949",
+      "query": "Geneva Convention IV of 12 August 1949",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-iccpr-1966",
+      "query": "International Covenant on Civil and Political Rights",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icerd-1965",
+      "query": "International Convention on the Elimination of All Forms of Racial Discrimination",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icescr-1966",
+      "query": "International Covenant on Economic, Social and Cultural Rights",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-armed-activities-2005",
+      "query": "Armed Activities on the Territory of the Congo (DRC v. Uganda) Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-arrest-warrant-2002",
+      "query": "Arrest Warrant of 11 April 2000 (Democratic Republic of the Congo v. Belgium) Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-asylum-1950",
+      "query": "Asylum (Colombia v. Peru) Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-barcelona-traction-1970",
+      "query": "Barcelona Traction Light and Power Company Limited Second Phase Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-bosnian-genocide-2007",
+      "query": "Application of the Genocide Convention (Bosnia and Herzegovina v. Serbia and Montenegro) Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-bosnian-genocide-preliminary-1996",
+      "query": "Application of the Genocide Convention Preliminary Objections Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-chagos-2019",
+      "query": "Legal Consequences of the Separation of the Chagos Archipelago from Mauritius in 1965 Advisory Opinion",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-continental-shelf-tunisia-libya-1982",
+      "query": "Continental Shelf (Tunisia v. Libyan Arab Jamahiriya) Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-corfu-channel-1949-merits",
+      "query": "Corfu Channel (United Kingdom v. Albania) Merits Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-elsi-1989",
+      "query": "Elettronica Sicula S.p.A. (United States v. Italy) Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-frontier-dispute-1986",
+      "query": "Frontier Dispute (Burkina Faso v. Mali) Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-gabcikovo-1997",
+      "query": "Gabcikovo-Nagymaros Project (Hungary v. Slovakia) Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-gambia-myanmar-preliminary-2022",
+      "query": "Application of the Genocide Convention (The Gambia v. Myanmar) Preliminary Objections Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-genocide-reservations-1951",
+      "query": "Reservations to the Convention on the Prevention and Punishment of the Crime of Genocide Advisory Opinion",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-jurisdictional-immunities-2012",
+      "query": "Jurisdictional Immunities of the State (Germany v. Italy: Greece intervening) Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-kosovo-2010",
+      "query": "Accordance with International Law of the Unilateral Declaration of Independence in Respect of Kosovo Advisory Opinion",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-lagrand-2001",
+      "query": "LaGrand (Germany v. United States of America) Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-namibia-1971",
+      "query": "Legal Consequences for States of the Continued Presence of South Africa in Namibia Advisory Opinion",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-nauru-preliminary-1992",
+      "query": "Certain Phosphate Lands in Nauru Preliminary Objections Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-nicaragua-1986-merits",
+      "query": "Military and Paramilitary Activities in and against Nicaragua (Nicaragua v. United States of America), Merits, Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-north-sea-1969",
+      "query": "North Sea Continental Shelf Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-nottebohm-1955",
+      "query": "Nottebohm (Liechtenstein v. Guatemala) Second Phase Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-nuclear-tests-1974",
+      "query": "Nuclear Tests (Australia v. France) Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-nuclear-weapons-1996",
+      "query": "Legality of the Threat or Use of Nuclear Weapons Advisory Opinion",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-reparation-injuries-1949",
+      "query": "Reparation for Injuries Suffered in the Service of the United Nations Advisory Opinion",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-right-passage-1960",
+      "query": "Right of Passage over Indian Territory (Portugal v. India) Merits Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-statute-1945",
+      "query": "Statute of the International Court of Justice",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-temple-preah-vihear-1962",
+      "query": "Temple of Preah Vihear (Cambodia v. Thailand) Merits Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-wall-2004",
+      "query": "Legal Consequences of the Construction of a Wall in the Occupied Palestinian Territory Advisory Opinion",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-western-sahara-1975",
+      "query": "Western Sahara Advisory Opinion",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-icj-whaling-2014",
+      "query": "Whaling in the Antarctic (Australia v. Japan: New Zealand intervening) Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-rome-statute-1998",
+      "query": "Rome Statute of the International Criminal Court",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-udhr-1948",
+      "query": "Universal Declaration of Human Rights",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-un-charter-1945",
+      "query": "Charter of the United Nations",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-unclos-1982",
+      "query": "United Nations Convention on the Law of the Sea",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-name-vclt-1969",
+      "query": "Vienna Convention on the Law of Treaties",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-ap-i-1977",
+      "query": "1949年日内瓦公约第一附加议定书",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-ap-ii-1977",
+      "query": "1949年日内瓦公约第二附加议定书",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-arsiwa-2001",
+      "query": "国家对国际不法行为的责任条款",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-cat-1984",
+      "query": "禁止酷刑和其他残忍不人道或有辱人格的待遇或处罚公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-cedaw-1979",
+      "query": "消除对妇女一切形式歧视公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-crc-1989",
+      "query": "儿童权利公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-gc-i-1949",
+      "query": "1949年日内瓦第一公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-gc-ii-1949",
+      "query": "1949年日内瓦第二公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-gc-iii-1949",
+      "query": "1949年日内瓦第三公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-gc-iv-1949",
+      "query": "1949年日内瓦第四公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-iccpr-1966",
+      "query": "公民权利和政治权利国际公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icerd-1965",
+      "query": "消除一切形式种族歧视国际公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icescr-1966",
+      "query": "经济社会及文化权利国际公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-armed-activities-2005",
+      "query": "刚果领土上的武装活动案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-arrest-warrant-2002",
+      "query": "2000年4月11日逮捕令案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-asylum-1950",
+      "query": "庇护案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-barcelona-traction-1970",
+      "query": "巴塞罗那电车公司案第二阶段判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-bosnian-genocide-2007",
+      "query": "适用灭绝种族罪公约案实体判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-bosnian-genocide-preliminary-1996",
+      "query": "适用灭绝种族罪公约案初步反对判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-chagos-2019",
+      "query": "1965年查戈斯群岛从毛里求斯分离的法律后果咨询意见",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-continental-shelf-tunisia-libya-1982",
+      "query": "突尼斯利比亚大陆架案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-corfu-channel-1949-merits",
+      "query": "科孚海峡案实体判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-elsi-1989",
+      "query": "西西里电子公司案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-frontier-dispute-1986",
+      "query": "布基纳法索马里边界争端案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-gabcikovo-1997",
+      "query": "盖博奇科沃大毛罗斯项目案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-gambia-myanmar-preliminary-2022",
+      "query": "适用灭绝种族罪公约案冈比亚诉缅甸初步反对判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-genocide-reservations-1951",
+      "query": "灭绝种族罪公约保留咨询意见",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-jurisdictional-immunities-2012",
+      "query": "国家管辖豁免案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-kosovo-2010",
+      "query": "科索沃单方面宣布独立是否符合国际法咨询意见",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-lagrand-2001",
+      "query": "拉格朗案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-namibia-1971",
+      "query": "纳米比亚咨询意见",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-nauru-preliminary-1992",
+      "query": "瑙鲁某些磷酸盐地案初步反对判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-nicaragua-1986-merits",
+      "query": "尼加拉瓜境内和针对尼加拉瓜的军事与准军事活动案（尼加拉瓜诉美国），实体判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-north-sea-1969",
+      "query": "北海大陆架案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-nottebohm-1955",
+      "query": "诺特博姆案第二阶段判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-nuclear-tests-1974",
+      "query": "核试验案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-nuclear-weapons-1996",
+      "query": "以核武器相威胁或使用核武器的合法性咨询意见",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-reparation-injuries-1949",
+      "query": "为联合国服务而遭受损害的赔偿咨询意见",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-right-passage-1960",
+      "query": "印度领土通行权案实体判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-statute-1945",
+      "query": "国际法院规约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-temple-preah-vihear-1962",
+      "query": "柏威夏寺案实体判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-wall-2004",
+      "query": "在被占巴勒斯坦领土修建隔离墙的法律后果咨询意见",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-western-sahara-1975",
+      "query": "西撒哈拉咨询意见",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-icj-whaling-2014",
+      "query": "南极捕鲸案判决",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-rome-statute-1998",
+      "query": "国际刑事法院罗马规约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-udhr-1948",
+      "query": "世界人权宣言",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-un-charter-1945",
+      "query": "联合国宪章",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-unclos-1982",
+      "query": "联合国海洋法公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-alias-vclt-1969",
+      "query": "维也纳条约法公约",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "alias",
+        "zh",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-roman-unclos-iii",
+      "query": "UNCLOS Art. III",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 3"
+      ],
+      "tags": [
+        "exact",
+        "exact_locator",
+        "roman",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "unclos-1982"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-roman-vclt-xxvii",
+      "query": "VCLT Article XXVII",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "VCLT, Article 27"
+      ],
+      "tags": [
+        "exact",
+        "exact_locator",
+        "roman",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "vclt-1969"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-roman-charter-li",
+      "query": "UN Charter Art. LI",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UN Charter, Article 51"
+      ],
+      "tags": [
+        "exact",
+        "exact_locator",
+        "roman",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "un-charter-1945"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-filter-document-unclos",
+      "query": "Article 3",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [
+        "UNCLOS, Article 3"
+      ],
+      "tags": [
+        "filter",
+        "document_filter",
+        "exact_locator",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [
+        "unclos-1982"
+      ],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-filter-type-negative",
+      "query": "Nicaragua paragraph 191",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "filter",
+        "type_filter",
+        "negative",
+        "v1.1"
+      ],
+      "relevant_rank": null,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-typo-unclos",
+      "query": "UNCLO",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "typo",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-typo-vclt",
+      "query": "Vienna Convention on the Law of Treates",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "typo",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-typo-nicaragua",
+      "query": "Nicarauga",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "typo",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-typo-iccpr",
+      "query": "International Covenant on Civil and Politcal Rights",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "typo",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    },
+    {
+      "id": "v1.1-typo-immunities",
+      "query": "Jurisdictional Immunites of the State (Germany v. Italy: Greece intervening), Judgment",
+      "passed": true,
+      "reasons": [],
+      "returned_citations": [],
+      "tags": [
+        "document_name",
+        "typo",
+        "en",
+        "v1.1"
+      ],
+      "relevant_rank": 1,
+      "returned_document_ids": [],
+      "filter_violation": false
+    }
+  ]
+}

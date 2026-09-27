@@ -169,6 +169,14 @@ interface UpdateSummary {
   last_status: "staged" | "applying" | "applied" | "rolling_back" | "rolled_back" | "failed" | null;
   applied_components: string[];
 }
+interface UpdateProgress {
+  phase: "checking" | "downloading" | "verifying" | "ready_to_apply" | "applying" | "applied" | "failed";
+  release_id: string;
+  component_id: string | null;
+  downloaded_bytes: number;
+  total_bytes: number;
+  message_zh: string;
+}
 
 const updateManifestUrl = "https://github.com/LeoLiao0806Xuan/ILIA/releases/latest/download/update-manifest.json";
 const updateSignatureUrl = "https://github.com/LeoLiao0806Xuan/ILIA/releases/latest/download/update-manifest.sig";
@@ -231,7 +239,7 @@ async function call<T>(command: string, args: Record<string, unknown> = {}): Pro
   if (command === "list_projects") return [] as T;
   if (command === "list_user_documents") return [] as T;
   if (command === "get_proxy_settings") return { enabled: false, redacted_url: null } as T;
-  if (command === "get_update_summary") return { current_version: "1.1.2", last_release_id: "v1.1.2", last_status: "applied", applied_components: ["application", "updater"] } as T;
+  if (command === "get_update_summary") return { current_version: "1.1.3", last_release_id: "v1.1.3", last_status: "applied", applied_components: ["application", "updater"] } as T;
   if (command === "check_updates") return { manifest: { release_id: "demo", components: [] }, installed_versions: { components: {} } } as T;
   if (command === "install_update") return undefined as T;
   if (command === "cancel_research") return true as T;
@@ -331,7 +339,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
           <div class="loading-state hidden" id="loading-state"><div class="loader"></div><h3 id="loading-title">正在检索本地资料</h3><p id="loading-copy">正在运行 FTS5 与 BGE-M3 混合检索。</p></div>
           <article class="answer-card hidden" id="answer-card"><div class="answer-warning hidden" id="answer-warning" role="status"></div><div class="answer-copy" id="answer-copy"></div><div class="answer-footer"><div class="answer-meta" id="answer-meta"></div><button class="secondary answer-save" id="save-answer-button">保存到当前项目</button></div></article>
         </section>
-        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.2</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
+        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.3</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
       </section>
     </main>
 
@@ -390,6 +398,15 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
       </div>
     </div>
     <div id="update-notice" class="update-notice hidden" role="status" aria-live="polite"><span id="update-notice-copy"></span><button id="update-notice-close" type="button" aria-label="关闭更新提示">×</button></div>
+    <div id="update-progress-modal" class="library-modal hidden" role="dialog" aria-modal="true" aria-labelledby="update-progress-title">
+      <div class="update-progress-dialog">
+        <div class="section-kicker">安全更新</div><h2 id="update-progress-title">正在准备更新</h2>
+        <p id="update-progress-message">ILIA 会先完成下载和校验，在真正替换程序前保持当前窗口打开。</p>
+        <div class="update-progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="update-progress-fill"></span></div>
+        <div id="update-progress-detail" class="update-progress-detail">正在连接更新服务器…</div>
+        <button id="update-progress-close" class="secondary hidden" type="button">关闭</button>
+      </div>
+    </div>
     <div id="reader-modal" class="library-modal hidden" role="dialog" aria-modal="true" aria-labelledby="reader-title">
       <div class="reader-dialog">
         <div class="library-header"><div><div class="section-kicker">ILIA 规范化文本</div><h2 id="reader-title">文献</h2></div><button id="reader-close" class="library-close" aria-label="关闭阅读器">×</button></div>
@@ -920,15 +937,47 @@ async function checkForUpdates() {
     const summary = available.map((component) => `${component.kind} · ${component.version}`).join("\n");
     if (!window.confirm(`发现 ${status.manifest.release_id} 更新：\n\n${summary}\n\n现在安装更新？ILIA 将短暂退出，完成后自动重新打开。`)) return;
     updateButton.textContent = "准备更新…";
+    showUpdateProgress({ phase: "checking", release_id: status.manifest.release_id, component_id: null, downloaded_bytes: 0, total_bytes: 0, message_zh: "正在启动安全更新进程" });
     await call<void>("install_update", {
       manifestUrl: updateManifestUrl,
       signatureUrl: updateSignatureUrl,
     });
   } catch (error) {
+    if (!document.querySelector("#update-progress-modal")?.classList.contains("hidden")) {
+      showUpdateProgress({ phase: "failed", release_id: "", component_id: null, downloaded_bytes: 0, total_bytes: 0, message_zh: String(error) });
+    }
     window.alert(`更新检查失败：${String(error)}`);
   } finally {
     updateButton.disabled = false;
     updateButton.textContent = original;
+  }
+}
+
+function showUpdateProgress(progress: UpdateProgress) {
+  const modal = document.querySelector<HTMLElement>("#update-progress-modal")!;
+  const title = document.querySelector<HTMLElement>("#update-progress-title")!;
+  const message = document.querySelector<HTMLElement>("#update-progress-message")!;
+  const detail = document.querySelector<HTMLElement>("#update-progress-detail")!;
+  const fill = document.querySelector<HTMLElement>("#update-progress-fill")!;
+  const track = fill.parentElement!;
+  const close = document.querySelector<HTMLButtonElement>("#update-progress-close")!;
+  modal.classList.remove("hidden");
+  const percent = progress.total_bytes > 0 ? Math.min(100, Math.round(progress.downloaded_bytes / progress.total_bytes * 100)) : 0;
+  fill.style.width = `${percent}%`;
+  track.setAttribute("aria-valuenow", String(percent));
+  close.classList.toggle("hidden", progress.phase !== "failed");
+  if (progress.phase === "downloading") {
+    title.textContent = `正在下载更新 · ${percent}%`;
+    message.textContent = "下载和校验完成前 ILIA 不会退出，你可以在这里查看实时进度。";
+    detail.textContent = `${progress.message_zh} · ${(progress.downloaded_bytes / 1024 / 1024).toFixed(1)} / ${(progress.total_bytes / 1024 / 1024).toFixed(1)} MiB`;
+  } else if (progress.phase === "verifying") {
+    title.textContent = "正在验证更新"; message.textContent = "正在核对签名、大小和 SHA-256。"; detail.textContent = progress.message_zh;
+  } else if (progress.phase === "ready_to_apply") {
+    title.textContent = "下载与验证完成"; message.textContent = "ILIA 即将退出以替换程序，完成后会自动重新打开。"; detail.textContent = progress.message_zh; fill.style.width = "100%"; track.setAttribute("aria-valuenow", "100");
+  } else if (progress.phase === "failed") {
+    title.textContent = "更新未完成"; message.textContent = "ILIA 保持打开，现有版本没有被替换。"; detail.textContent = progress.message_zh;
+  } else {
+    title.textContent = "正在准备更新"; message.textContent = "ILIA 会先完成下载和校验，在真正替换程序前保持当前窗口打开。"; detail.textContent = progress.message_zh;
   }
 }
 
@@ -952,6 +1001,7 @@ libraryClose.addEventListener("click", () => libraryModal.classList.add("hidden"
 document.querySelector("#projects-close")?.addEventListener("click", () => projectsModal.classList.add("hidden"));
 document.querySelector("#settings-close")?.addEventListener("click", () => settingsModal.classList.add("hidden"));
 document.querySelector("#update-notice-close")?.addEventListener("click", () => document.querySelector("#update-notice")?.classList.add("hidden"));
+document.querySelector("#update-progress-close")?.addEventListener("click", () => document.querySelector("#update-progress-modal")?.classList.add("hidden"));
 libraryModal.addEventListener("click", (event) => { if (event.target === libraryModal) libraryModal.classList.add("hidden"); });
 readerClose.addEventListener("click", () => readerModal.classList.add("hidden"));
 readerModal.addEventListener("click", (event) => { if (event.target === readerModal) readerModal.classList.add("hidden"); });
@@ -1013,6 +1063,7 @@ document.querySelector("#copy-citation")?.addEventListener("click", async () => 
 
 if (isTauri()) {
   void listen<ResearchEventEnvelope>("research-event", (event) => handleResearchEvent(event.payload));
+  void listen<UpdateProgress>("update-progress", (event) => showUpdateProgress(event.payload));
 }
 window.addEventListener("beforeunload", () => {
   if (activeRequestId && isTauri()) void invoke("cancel_research", { requestId: activeRequestId });

@@ -181,6 +181,16 @@ pub struct UpdateOutcome {
     pub backup_root: PathBuf,
 }
 
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]
+pub struct UpdateProgress {
+    pub phase: String,
+    pub release_id: String,
+    pub component_id: Option<String>,
+    pub downloaded_bytes: u64,
+    pub total_bytes: u64,
+    pub message_zh: String,
+}
+
 #[derive(Debug, Clone)]
 pub struct VerifiedRelease {
     pub manifest: UpdateManifest,
@@ -586,6 +596,15 @@ impl UpdateEngine {
         release: &VerifiedRelease,
         proxy: Option<&ProxyConfig>,
     ) -> Result<PathBuf, UpdateError> {
+        self.stage_with_proxy_and_progress(release, proxy, |_| {})
+    }
+
+    pub fn stage_with_proxy_and_progress(
+        &self,
+        release: &VerifiedRelease,
+        proxy: Option<&ProxyConfig>,
+        mut report: impl FnMut(&UpdateProgress),
+    ) -> Result<PathBuf, UpdateError> {
         let stage_root = self
             .work_root
             .join("staging")
@@ -596,10 +615,30 @@ impl UpdateEngine {
         if pending.is_empty() {
             return Ok(stage_root);
         }
+        let total_bytes = pending.iter().map(|component| component.payload_size).sum();
+        let mut completed_bytes = 0_u64;
         for component in pending {
             let destination = stage_root.join(format!("{}.payload", safe_segment(&component.id)?));
-            download_payload(component, &destination, proxy)?;
+            download_payload(component, &destination, proxy, |component_bytes| {
+                report(&UpdateProgress {
+                    phase: "downloading".into(),
+                    release_id: release.manifest.release_id.clone(),
+                    component_id: Some(component.id.clone()),
+                    downloaded_bytes: completed_bytes.saturating_add(component_bytes),
+                    total_bytes,
+                    message_zh: format!("正在下载更新组件 {}", component.id),
+                });
+            })?;
+            completed_bytes = completed_bytes.saturating_add(component.payload_size);
         }
+        report(&UpdateProgress {
+            phase: "verifying".into(),
+            release_id: release.manifest.release_id.clone(),
+            component_id: None,
+            downloaded_bytes: total_bytes,
+            total_bytes,
+            message_zh: "下载完成，正在校验签名和文件完整性".into(),
+        });
         let journal = UpdateJournal {
             release_id: release.manifest.release_id.clone(),
             status: JournalStatus::Staged,
@@ -927,6 +966,7 @@ fn download_payload(
     component: &UpdateComponent,
     destination: &Path,
     proxy: Option<&ProxyConfig>,
+    mut report: impl FnMut(u64),
 ) -> Result<(), UpdateError> {
     if let Some(parent) = destination.parent() {
         fs::create_dir_all(parent)?;
@@ -953,11 +993,19 @@ fn download_payload(
                 hasher.update(&buffer[..read]);
             }
         }
+        report(offset);
         if component.payload_url.starts_with("file://") {
             let mut input = File::open(file_url_path(&component.payload_url)?)?;
             use std::io::{Seek, SeekFrom};
             input.seek(SeekFrom::Start(offset))?;
-            stream_payload_from(component, &mut input, &mut output, offset, hasher)?;
+            stream_payload_from(
+                component,
+                &mut input,
+                &mut output,
+                offset,
+                hasher,
+                &mut report,
+            )?;
         } else {
             let mut builder = ureq::Agent::config_builder()
                 .timeout_connect(Some(std::time::Duration::from_secs(30)))
@@ -978,7 +1026,14 @@ fn download_payload(
                 hasher = Sha256::new();
             }
             let mut input = response.body_mut().as_reader();
-            stream_payload_from(component, &mut input, &mut output, offset, hasher)?;
+            stream_payload_from(
+                component,
+                &mut input,
+                &mut output,
+                offset,
+                hasher,
+                &mut report,
+            )?;
         }
         output.sync_all()?;
         if destination.exists() {
@@ -1076,6 +1131,7 @@ fn stream_payload_from(
     output: &mut File,
     mut total: u64,
     mut hasher: Sha256,
+    report: &mut dyn FnMut(u64),
 ) -> Result<(), UpdateError> {
     let mut buffer = [0_u8; 1024 * 1024];
     loop {
@@ -1086,6 +1142,7 @@ fn stream_payload_from(
         output.write_all(&buffer[..read])?;
         hasher.update(&buffer[..read]);
         total += read as u64;
+        report(total);
         if total > component.payload_size {
             return Err(payload_size_error(component, total));
         }
@@ -1524,6 +1581,55 @@ mod tests {
             fs::read(root.join("models/model.bin")).unwrap(),
             b"new model"
         );
+        fs::remove_dir_all(root).unwrap();
+    }
+
+    #[test]
+    fn staging_reports_monotonic_byte_progress_and_verification() {
+        let root = temp_root("stage-progress");
+        let payload = vec![7_u8; 2 * 1024 * 1024 + 19];
+        let source = root.join("payload.bin");
+        fs::write(&source, &payload).unwrap();
+        let mut item = component(
+            "application",
+            ComponentKind::Application,
+            "app.exe",
+            PayloadFormat::RawFile,
+            &payload,
+        );
+        item.payload_url = url::Url::from_file_path(&source).unwrap().to_string();
+        let release = VerifiedRelease {
+            manifest: UpdateManifest {
+                schema_version: 1,
+                release_id: "progress-release".into(),
+                channel: "stable".into(),
+                created_at: "2026-09-27T00:00:00Z".into(),
+                components: vec![item],
+            },
+            manifest_bytes: Vec::new(),
+        };
+        let engine = UpdateEngine::new(root.clone()).unwrap();
+        let mut reports = Vec::new();
+        engine
+            .stage_with_proxy_and_progress(&release, None, |progress| {
+                reports.push(progress.clone())
+            })
+            .unwrap();
+        let downloads = reports
+            .iter()
+            .filter(|progress| progress.phase == "downloading")
+            .collect::<Vec<_>>();
+        assert!(downloads.len() >= 3);
+        assert!(
+            downloads
+                .windows(2)
+                .all(|pair| pair[0].downloaded_bytes <= pair[1].downloaded_bytes)
+        );
+        assert_eq!(
+            downloads.last().unwrap().downloaded_bytes,
+            payload.len() as u64
+        );
+        assert_eq!(reports.last().unwrap().phase, "verifying");
         fs::remove_dir_all(root).unwrap();
     }
 

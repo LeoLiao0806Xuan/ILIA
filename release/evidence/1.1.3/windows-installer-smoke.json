@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "status": "passed",
+  "version": "1.1.3",
+  "tested_at": "2026-09-27T08:20:02.1633845Z",
+  "test_started_at": "2026-09-27T08:18:53.6352409Z",
+  "environment": {
+    "os": "Microsoft Windows NT 10.0.26200.0",
+    "architecture": "X64",
+    "backend_requested": "cpu",
+    "scope": "build-machine release-candidate smoke test; not a clean-VM certification"
+  },
+  "installer_files": [
+    {
+      "name": "ILIA-1.1.3-windows-x64-offline-setup-1.bin",
+      "size": 1897927424,
+      "generated_at": "2026-09-27T08:17:41.9441183Z",
+      "sha256": "d970c93570836e7daaba0c66f3fe0260afec310419fa68763fc0bdbb8fb641b1",
+      "authenticode_status": "UnknownError"
+    },
+    {
+      "name": "ILIA-1.1.3-windows-x64-offline-setup-2.bin",
+      "size": 1900000000,
+      "generated_at": "2026-09-27T08:17:53.0128869Z",
+      "sha256": "5ba26b701459a6253c614b7d7fe3dffe3f684fc7f5e134fa2aebdb82f76cdbb2",
+      "authenticode_status": "UnknownError"
+    },
+    {
+      "name": "ILIA-1.1.3-windows-x64-offline-setup-3.bin",
+      "size": 522978130,
+      "generated_at": "2026-09-27T08:18:19.1646433Z",
+      "sha256": "8d48ae7a97f9eee39887cf1ba8d144e865a797341e7cf31881f7b5520fa1bdc3",
+      "authenticode_status": "UnknownError"
+    },
+    {
+      "name": "ILIA-1.1.3-windows-x64-offline-setup.exe",
+      "size": 2072178,
+      "generated_at": "2026-09-27T08:18:19.1708539Z",
+      "sha256": "1f624e7d06eae726917fcf613f2c3ce8d378badb5f3c85e6e88569f73d75b547",
+      "authenticode_status": "NotSigned"
+    }
+  ],
+  "installation": {
+    "started_at": "2026-09-27T08:19:04.6769395Z",
+    "exit_code": 0,
+    "desktop_started": true
+  },
+  "retrieval": {
+    "passed": true,
+    "query": "Under UNCLOS Article 3, what is the maximum breadth of the territorial sea?",
+    "duration_ms": 2519,
+    "hit_count": 1,
+    "evidence_count": 1,
+    "top_document": "United Nations Convention on the Law of the Sea",
+    "top_citation": "UNCLOS, Article 3"
+  },
+  "local_answer": {
+    "passed": true,
+    "question": "Under UNCLOS Article 3, what is the maximum breadth of the territorial sea?",
+    "duration_ms": 10622,
+    "backend": "cpu",
+    "grounded": true,
+    "evidence_count": 1,
+    "citations": [
+      "UNCLOS, Article 3"
+    ],
+    "answer": "The maximum breadth of the territorial sea under UNCLOS Article 3 is 12 nautical miles 【1】."
+  },
+  "uninstall": {
+    "exit_code": 0,
+    "temporary_install_removed": true
+  },
+  "errors": []
+}

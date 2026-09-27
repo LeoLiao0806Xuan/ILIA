@@ -24,7 +24,8 @@ use ilia_inference::{
 use ilia_retrieval::{RelatedDocumentRegistry, RetrievalService, TopicRegistry};
 use ilia_updater::{
     InstalledVersions, ProxyConfig, TrustedPublicKey, UpdateDiagnostic, UpdateEngine,
-    UpdateManifest, diagnose_update_error, fetch_verified_release_with_proxy, redact_url,
+    UpdateManifest, UpdateProgress, diagnose_update_error, fetch_verified_release_with_proxy,
+    redact_url,
 };
 use serde::{Deserialize, Serialize};
 use tauri::{Emitter, Manager, State};
@@ -1373,27 +1374,7 @@ async fn install_update(
             paths.updater.display()
         ));
     }
-    let trusted: TrustedPublicKey = serde_json::from_slice(
-        &std::fs::read(&paths.trusted_update_key).map_err(|error| error.to_string())?,
-    )
-    .map_err(|error| error.to_string())?;
-    let manifest_for_check = manifest_url.clone();
-    let signature_for_check = signature_url.clone();
-    let proxy_config_for_check = paths.proxy_config.clone();
-    tauri::async_runtime::spawn_blocking(move || {
-        let proxy = load_proxy(&proxy_config_for_check)?;
-        fetch_verified_release_with_proxy(
-            &manifest_for_check,
-            &signature_for_check,
-            &trusted,
-            proxy.as_ref(),
-        )
-        .map(|_| ())
-        .map_err(|error| error.to_string())
-    })
-    .await
-    .map_err(|error| error.to_string())??;
-
+    let progress_path = paths.install_root.join(".ilia-update/progress.json");
     let mut command = std::process::Command::new(&paths.updater);
     command.args([
         "apply",
@@ -1408,21 +1389,13 @@ async fn install_update(
         "--wait-pid",
         &std::process::id().to_string(),
         "--restart",
+        "--progress-file",
+        &progress_path.to_string_lossy(),
     ]);
     if paths.proxy_config.is_file() {
         command.args(["--proxy-config", &paths.proxy_config.to_string_lossy()]);
     }
-    #[cfg(windows)]
-    {
-        use std::os::windows::process::CommandExt;
-        command.creation_flags(0x0800_0000);
-    }
-    command.spawn().map_err(|error| error.to_string())?;
-    std::thread::spawn(move || {
-        std::thread::sleep(Duration::from_millis(350));
-        app.exit(0);
-    });
-    Ok(())
+    spawn_update_and_monitor(command, progress_path, app)
 }
 
 #[tauri::command]
@@ -1440,6 +1413,7 @@ async fn install_local_update(
         return Err("请选择 .ilia 更新包".into());
     }
     let mut command = std::process::Command::new(&paths.updater);
+    let progress_path = paths.install_root.join(".ilia-update/progress.json");
     command.args([
         "apply-package",
         "--root",
@@ -1451,16 +1425,73 @@ async fn install_local_update(
         "--wait-pid",
         &std::process::id().to_string(),
         "--restart",
+        "--progress-file",
+        &progress_path.to_string_lossy(),
     ]);
+    spawn_update_and_monitor(command, progress_path, app)
+}
+
+fn spawn_update_and_monitor(
+    mut command: std::process::Command,
+    progress_path: PathBuf,
+    app: tauri::AppHandle,
+) -> Result<(), String> {
     #[cfg(windows)]
     {
         use std::os::windows::process::CommandExt;
         command.creation_flags(0x0800_0000);
     }
-    command.spawn().map_err(|e| e.to_string())?;
+    if progress_path.exists() {
+        std::fs::remove_file(&progress_path).map_err(|error| error.to_string())?;
+    }
+    let mut child = command.spawn().map_err(|error| error.to_string())?;
     std::thread::spawn(move || {
-        std::thread::sleep(Duration::from_millis(350));
-        app.exit(0);
+        let mut last_progress = Vec::new();
+        loop {
+            if let Ok(bytes) = std::fs::read(&progress_path)
+                && bytes != last_progress
+                && let Ok(progress) = serde_json::from_slice::<UpdateProgress>(&bytes)
+            {
+                last_progress = bytes;
+                let _ = app.emit("update-progress", &progress);
+                if progress.phase == "ready_to_apply" {
+                    std::thread::sleep(Duration::from_millis(650));
+                    app.exit(0);
+                    return;
+                }
+            }
+            match child.try_wait() {
+                Ok(Some(status)) => {
+                    let progress = UpdateProgress {
+                        phase: "failed".into(),
+                        release_id: String::new(),
+                        component_id: None,
+                        downloaded_bytes: 0,
+                        total_bytes: 0,
+                        message_zh: format!(
+                            "更新进程提前结束（退出码 {}），ILIA 将保持打开。",
+                            status.code().unwrap_or(-1)
+                        ),
+                    };
+                    let _ = app.emit("update-progress", progress);
+                    return;
+                }
+                Ok(None) => {}
+                Err(error) => {
+                    let progress = UpdateProgress {
+                        phase: "failed".into(),
+                        release_id: String::new(),
+                        component_id: None,
+                        downloaded_bytes: 0,
+                        total_bytes: 0,
+                        message_zh: format!("无法读取更新进程状态：{error}"),
+                    };
+                    let _ = app.emit("update-progress", progress);
+                    return;
+                }
+            }
+            std::thread::sleep(Duration::from_millis(200));
+        }
     });
     Ok(())
 }

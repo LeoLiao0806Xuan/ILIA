@@ -195,6 +195,13 @@ pre { margin: 0; max-height: 48vh; overflow: auto; padding: 15px; border: 1px so
 .settings-report { margin: -9px 0 18px; padding: 10px; border-left: 3px solid #9aaa9f; background: #eef1ed; color: var(--muted); font-size: 10px; line-height: 1.6; }
 .update-notice { position: fixed; right: 24px; bottom: 24px; z-index: 30; display: flex; align-items: center; gap: 16px; max-width: 420px; padding: 13px 15px; border: 1px solid #c7d2c9; border-left: 4px solid var(--gold); border-radius: 7px; background: #f8faf7; box-shadow: 0 12px 36px rgba(22, 37, 30, .16); color: var(--ink); font-size: 11px; line-height: 1.55; }
 .update-notice button { border: 0; background: transparent; color: var(--muted); cursor: pointer; font-size: 18px; }
+.update-progress-dialog { width: min(520px, calc(100vw - 48px)); padding: 30px; border-radius: 10px; background: var(--paper); box-shadow: 0 22px 70px rgba(15, 30, 23, .24); }
+.update-progress-dialog h2 { margin: 5px 0 10px; font-family: Georgia, serif; font-size: 25px; }
+.update-progress-dialog p { color: var(--muted); font-size: 11px; line-height: 1.7; }
+.update-progress-track { height: 8px; margin: 22px 0 10px; overflow: hidden; border-radius: 99px; background: #dfe5df; }
+.update-progress-track span { display: block; width: 0; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--gold), #4f7b64); transition: width .18s ease; }
+.update-progress-detail { min-height: 20px; color: var(--faint); font-size: 10px; }
+.update-progress-dialog .secondary { margin-top: 18px; }
 .library-dialog > select { width: 100%; padding: 9px; border: 1px solid var(--line); border-radius: 7px; background: var(--paper); }
 
 @media (max-width: 1180px) {
