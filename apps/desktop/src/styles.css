@@ -193,6 +193,8 @@ pre { margin: 0; max-height: 48vh; overflow: auto; padding: 15px; border: 1px so
 .form-grid button { grid-column: 1 / -1; }
 .settings-action { margin: 9px 0 17px; }
 .settings-report { margin: -9px 0 18px; padding: 10px; border-left: 3px solid #9aaa9f; background: #eef1ed; color: var(--muted); font-size: 10px; line-height: 1.6; }
+.update-notice { position: fixed; right: 24px; bottom: 24px; z-index: 30; display: flex; align-items: center; gap: 16px; max-width: 420px; padding: 13px 15px; border: 1px solid #c7d2c9; border-left: 4px solid var(--gold); border-radius: 7px; background: #f8faf7; box-shadow: 0 12px 36px rgba(22, 37, 30, .16); color: var(--ink); font-size: 11px; line-height: 1.55; }
+.update-notice button { border: 0; background: transparent; color: var(--muted); cursor: pointer; font-size: 18px; }
 .library-dialog > select { width: 100%; padding: 9px; border: 1px solid var(--line); border-radius: 7px; background: var(--paper); }
 
 @media (max-width: 1180px) {

@@ -163,6 +163,12 @@ interface Project { id: string; title: string; description: string; tags: string
 interface ImportPreview { preview_id: string; source_filename: string; source_sha256: string; byte_length: number; inferred_title: string; inferred_language: string; inferred_document_type: string; text_preview: string; chunk_count: number }
 interface ImportedDocument { id: string; title: string; source_filename: string; source_sha256: string; byte_length: number; chunk_count: number }
 interface ProxySettings { enabled: boolean; redacted_url: string | null }
+interface UpdateSummary {
+  current_version: string;
+  last_release_id: string | null;
+  last_status: "staged" | "applying" | "applied" | "rolling_back" | "rolled_back" | "failed" | null;
+  applied_components: string[];
+}
 
 const updateManifestUrl = "https://github.com/LeoLiao0806Xuan/ILIA/releases/latest/download/update-manifest.json";
 const updateSignatureUrl = "https://github.com/LeoLiao0806Xuan/ILIA/releases/latest/download/update-manifest.sig";
@@ -225,6 +231,7 @@ async function call<T>(command: string, args: Record<string, unknown> = {}): Pro
   if (command === "list_projects") return [] as T;
   if (command === "list_user_documents") return [] as T;
   if (command === "get_proxy_settings") return { enabled: false, redacted_url: null } as T;
+  if (command === "get_update_summary") return { current_version: "1.1.2", last_release_id: "v1.1.2", last_status: "applied", applied_components: ["application", "updater"] } as T;
   if (command === "check_updates") return { manifest: { release_id: "demo", components: [] }, installed_versions: { components: {} } } as T;
   if (command === "install_update") return undefined as T;
   if (command === "cancel_research") return true as T;
@@ -324,7 +331,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
           <div class="loading-state hidden" id="loading-state"><div class="loader"></div><h3 id="loading-title">正在检索本地资料</h3><p id="loading-copy">正在运行 FTS5 与 BGE-M3 混合检索。</p></div>
           <article class="answer-card hidden" id="answer-card"><div class="answer-warning hidden" id="answer-warning" role="status"></div><div class="answer-copy" id="answer-copy"></div><div class="answer-footer"><div class="answer-meta" id="answer-meta"></div><button class="secondary answer-save" id="save-answer-button">保存到当前项目</button></div></article>
         </section>
-        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.1</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
+        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.2</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
       </section>
     </main>
 
@@ -374,6 +381,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </div>
     <div id="settings-modal" class="library-modal hidden" role="dialog" aria-modal="true">
       <div class="library-dialog"><div class="library-header"><div><div class="section-kicker">本机设置</div><h2>模型、性能与更新</h2></div><button id="settings-close" class="library-close">×</button></div>
+        <div id="update-report" class="settings-report">正在读取版本与更新状态…</div>
         <label class="question-label" for="performance-preset">性能档位</label><select id="performance-preset"><option value="energy_saver">节能</option><option value="balanced" selected>平衡</option><option value="high_performance">高性能</option></select>
         <button id="prewarm-button" class="secondary settings-action">后台预热模型</button><div id="resource-report" class="settings-report">模型尚未加载；纯检索不会启动 Qwen。</div>
         <label class="question-label" for="idle-timeout">空闲释放显存</label><select id="idle-timeout"><option value="300">5 分钟</option><option value="900" selected>15 分钟</option><option value="1800">30 分钟</option><option value="0">不自动释放</option></select>
@@ -381,6 +389,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         <label class="question-label" for="local-update-path">本地签名更新包</label><input id="local-update-path" class="library-filter" placeholder="粘贴 .ilia 文件路径"/><button id="local-update-button" class="secondary settings-action">验证并安装本地包</button>
       </div>
     </div>
+    <div id="update-notice" class="update-notice hidden" role="status" aria-live="polite"><span id="update-notice-copy"></span><button id="update-notice-close" type="button" aria-label="关闭更新提示">×</button></div>
     <div id="reader-modal" class="library-modal hidden" role="dialog" aria-modal="true" aria-labelledby="reader-title">
       <div class="reader-dialog">
         <div class="library-header"><div><div class="section-kicker">ILIA 规范化文本</div><h2 id="reader-title">文献</h2></div><button id="reader-close" class="library-close" aria-label="关闭阅读器">×</button></div>
@@ -774,17 +783,18 @@ async function loadProjects() {
 let noteLoadGeneration = 0;
 let noteSaveChain: Promise<void> = Promise.resolve();
 const projectNoteIds = new Map<string, string | null>();
+const projectNoteDrafts = new Map<string, string>();
 async function loadProjectNote() {
   const note = document.querySelector<HTMLTextAreaElement>("#project-note")!;
   const projectId = projectSelect.value;
   const generation = ++noteLoadGeneration;
-  note.value = ""; note.disabled = !projectSelect.value;
+  note.value = projectNoteDrafts.get(projectId) ?? ""; note.disabled = !projectSelect.value;
   if (!projectId) return;
   const snapshot = await call<{ notes: Array<{ id: string; body: string }> }>("get_project", { projectId });
   if (generation !== noteLoadGeneration || projectSelect.value !== projectId) return;
   const latest = snapshot.notes.at(-1);
   projectNoteIds.set(projectId, latest?.id ?? null);
-  if (latest) note.value = latest.body;
+  if (!projectNoteDrafts.has(projectId)) note.value = latest?.body ?? "";
 }
 
 async function createProject() {
@@ -813,6 +823,25 @@ async function exportCurrent(format: "markdown" | "html") { if (!projectSelect.v
 async function openSettings() {
   settingsModal.classList.remove("hidden");
   const settings = await call<ProxySettings>("get_proxy_settings"); document.querySelector<HTMLElement>("#proxy-status")!.textContent = settings.enabled ? `已启用：${settings.redacted_url}` : "未启用代理；仅在线更新命令会读取此设置。";
+  await refreshUpdateSummary(false);
+}
+
+async function refreshUpdateSummary(showNotice: boolean) {
+  const summary = await call<UpdateSummary>("get_update_summary");
+  const release = summary.last_release_id ?? "尚无更新记录";
+  const statusLabels: Record<string, string> = { staged: "已下载", applying: "安装中", applied: "安装成功", rolling_back: "正在回滚", rolled_back: "已回滚", failed: "安装失败" };
+  document.querySelector<HTMLElement>("#update-report")!.textContent = `当前版本 ${summary.current_version} · 最近更新 ${release}${summary.last_status ? ` · ${statusLabels[summary.last_status]}` : ""}`;
+  if (!showNotice || !summary.last_release_id || !summary.last_status) return;
+  const noticeKey = `${summary.last_release_id}:${summary.last_status}`;
+  if (localStorage.getItem("ilia.update-notice") === noticeKey) return;
+  const notice = document.querySelector<HTMLElement>("#update-notice")!;
+  const copy = document.querySelector<HTMLElement>("#update-notice-copy")!;
+  if (summary.last_status === "applied") copy.textContent = `ILIA 已更新至 ${summary.current_version}，更新组件已验证并安装。`;
+  else if (summary.last_status === "rolled_back") copy.textContent = `${summary.last_release_id} 安装未完成，ILIA 已自动回滚到可用版本。`;
+  else if (summary.last_status === "failed") copy.textContent = `${summary.last_release_id} 安装失败，请在设置中重试或使用本地签名更新包。`;
+  else return;
+  localStorage.setItem("ilia.update-notice", noticeKey);
+  notice.classList.remove("hidden");
 }
 
 async function runSearch() {
@@ -889,7 +918,7 @@ async function checkForUpdates() {
       return;
     }
     const summary = available.map((component) => `${component.kind} · ${component.version}`).join("\n");
-    if (!window.confirm(`发现 ${status.manifest.release_id} 更新：\n\n${summary}\n\n现在安装更新？ILIA 将退出，更新完成后请重新打开。`)) return;
+    if (!window.confirm(`发现 ${status.manifest.release_id} 更新：\n\n${summary}\n\n现在安装更新？ILIA 将短暂退出，完成后自动重新打开。`)) return;
     updateButton.textContent = "准备更新…";
     await call<void>("install_update", {
       manifestUrl: updateManifestUrl,
@@ -922,6 +951,7 @@ document.querySelectorAll<HTMLButtonElement>("[data-inspector]").forEach((button
 libraryClose.addEventListener("click", () => libraryModal.classList.add("hidden"));
 document.querySelector("#projects-close")?.addEventListener("click", () => projectsModal.classList.add("hidden"));
 document.querySelector("#settings-close")?.addEventListener("click", () => settingsModal.classList.add("hidden"));
+document.querySelector("#update-notice-close")?.addEventListener("click", () => document.querySelector("#update-notice")?.classList.add("hidden"));
 libraryModal.addEventListener("click", (event) => { if (event.target === libraryModal) libraryModal.classList.add("hidden"); });
 readerClose.addEventListener("click", () => readerModal.classList.add("hidden"));
 readerModal.addEventListener("click", (event) => { if (event.target === readerModal) readerModal.classList.add("hidden"); });
@@ -938,13 +968,16 @@ document.querySelector<HTMLTextAreaElement>("#project-note")?.addEventListener("
   const projectId = projectSelect.value;
   const body = (event.target as HTMLTextAreaElement).value;
   if (!projectId) return;
+  projectNoteDrafts.set(projectId, body);
+  document.querySelector<HTMLElement>("#project-status")!.textContent = "正在保存笔记…";
   noteTimer = window.setTimeout(() => {
     noteTimer = null;
     noteSaveChain = noteSaveChain.then(async () => {
       try {
         const saved = await call<{ id: string }>("save_note", { projectId, noteId: projectNoteIds.get(projectId) ?? null, body });
         projectNoteIds.set(projectId, saved.id);
-        if (projectSelect.value === projectId) {
+        if (projectNoteDrafts.get(projectId) === body) projectNoteDrafts.delete(projectId);
+        if (projectSelect.value === projectId && !projectNoteDrafts.has(projectId)) {
           document.querySelector<HTMLElement>("#project-status")!.textContent = "笔记已自动保存";
         }
       } catch (error) {
@@ -987,6 +1020,7 @@ window.addEventListener("beforeunload", () => {
 
 call<RuntimeProbeReport>("get_runtime_status").then(updateRuntime).catch(showError);
 void loadProjects().catch(() => { document.querySelector<HTMLElement>("#workspace-context")!.textContent = "新研究"; });
+void refreshUpdateSummary(true).catch(() => { /* 更新状态不影响离线研究工作流。 */ });
 const idleTimeout = document.querySelector<HTMLSelectElement>("#idle-timeout")!;
 idleTimeout.value = localStorage.getItem("ilia.idle-timeout") ?? "900";
 idleTimeout.addEventListener("change", () => localStorage.setItem("ilia.idle-timeout", idleTimeout.value));

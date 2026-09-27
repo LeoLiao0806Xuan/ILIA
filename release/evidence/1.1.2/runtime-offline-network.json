@@ -1,0 +1,24 @@
+{
+  "report_version": 1,
+  "release_version": "1.1.2",
+  "generated_at_utc": "2026-09-27T06:19:45.1354909Z",
+  "scope": "50ms TCP connection observation during installed-payload retrieval and CPU local answer",
+  "packet_driver": "PktMon unavailable without administrator rights; Get-NetTCPConnection process observation used",
+  "answer_grounded": true,
+  "observed_connections": [
+    {
+      "observed_at_utc": "2026-09-27T06:19:35.4663909Z",
+      "process": "llama-server",
+      "process_id": 10068,
+      "local_address": "127.0.0.1",
+      "local_port": 50291,
+      "remote_address": "127.0.0.1",
+      "remote_port": 50307,
+      "PSComputerName": "localhost",
+      "RunspaceId": "ff8fbc2e-3961-4b5e-a2ce-98f4b90582ec",
+      "PSShowComputerName": false
+    }
+  ],
+  "external_connections": [],
+  "status": "passed"
+}

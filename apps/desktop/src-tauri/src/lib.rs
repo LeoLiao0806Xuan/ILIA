@@ -1276,6 +1276,39 @@ async fn set_proxy_settings(
     get_proxy_settings(state).await
 }
 
+#[derive(serde::Serialize)]
+struct DesktopUpdateSummary {
+    current_version: String,
+    last_release_id: Option<String>,
+    last_status: Option<ilia_updater::JournalStatus>,
+    applied_components: Vec<String>,
+}
+
+#[tauri::command]
+async fn get_update_summary(
+    state: State<'_, Arc<DesktopServices>>,
+) -> Result<DesktopUpdateSummary, String> {
+    let journal_path = state.paths.install_root.join(".ilia-update/journal.json");
+    let journal = if journal_path.is_file() {
+        Some(
+            serde_json::from_slice::<ilia_updater::UpdateJournal>(
+                &std::fs::read(journal_path).map_err(|error| error.to_string())?,
+            )
+            .map_err(|error| error.to_string())?,
+        )
+    } else {
+        None
+    };
+    Ok(DesktopUpdateSummary {
+        current_version: env!("CARGO_PKG_VERSION").into(),
+        last_release_id: journal.as_ref().map(|value| value.release_id.clone()),
+        last_status: journal.as_ref().map(|value| value.status),
+        applied_components: journal
+            .map(|value| value.applied_components)
+            .unwrap_or_default(),
+    })
+}
+
 #[tauri::command]
 async fn check_updates(
     state: State<'_, Arc<DesktopServices>>,
@@ -1374,6 +1407,7 @@ async fn install_update(
         &paths.trusted_update_key.to_string_lossy(),
         "--wait-pid",
         &std::process::id().to_string(),
+        "--restart",
     ]);
     if paths.proxy_config.is_file() {
         command.args(["--proxy-config", &paths.proxy_config.to_string_lossy()]);
@@ -1416,6 +1450,7 @@ async fn install_local_update(
         &paths.trusted_update_key.to_string_lossy(),
         "--wait-pid",
         &std::process::id().to_string(),
+        "--restart",
     ]);
     #[cfg(windows)]
     {
@@ -1476,6 +1511,7 @@ pub fn run() {
             rebuild_user_index,
             get_proxy_settings,
             set_proxy_settings,
+            get_update_summary,
             check_updates,
             install_update,
             install_local_update
