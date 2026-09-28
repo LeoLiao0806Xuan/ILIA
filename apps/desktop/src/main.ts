@@ -163,6 +163,7 @@ interface Project { id: string; title: string; description: string; tags: string
 interface ImportPreview { preview_id: string; source_filename: string; source_sha256: string; byte_length: number; inferred_title: string; inferred_language: string; inferred_document_type: string; text_preview: string; chunk_count: number }
 interface ImportedDocument { id: string; title: string; source_filename: string; source_sha256: string; byte_length: number; chunk_count: number }
 interface ProxySettings { enabled: boolean; redacted_url: string | null }
+interface BackupSummary { path: string; user_bytes: number; workspace_bytes: number; user_sha256: string; workspace_sha256: string }
 interface UpdateSummary {
   current_version: string;
   last_release_id: string | null;
@@ -239,7 +240,8 @@ async function call<T>(command: string, args: Record<string, unknown> = {}): Pro
   if (command === "list_projects") return [] as T;
   if (command === "list_user_documents") return [] as T;
   if (command === "get_proxy_settings") return { enabled: false, redacted_url: null } as T;
-  if (command === "get_update_summary") return { current_version: "1.1.3", last_release_id: "v1.1.3", last_status: "applied", applied_components: ["application", "updater"] } as T;
+  if (command === "create_backup" || command === "restore_backup") return { path: String(args.outputPath ?? args.packagePath ?? "ILIA-backup.ilia-workspace"), user_bytes: 32768, workspace_bytes: 65536, user_sha256: "demo", workspace_sha256: "demo" } as T;
+  if (command === "get_update_summary") return { current_version: "1.1.4", last_release_id: "v1.1.4", last_status: "applied", applied_components: ["application", "updater"] } as T;
   if (command === "check_updates") return { manifest: { release_id: "demo", components: [] }, installed_versions: { components: {} } } as T;
   if (command === "install_update") return undefined as T;
   if (command === "cancel_research") return true as T;
@@ -273,14 +275,17 @@ async function call<T>(command: string, args: Record<string, unknown> = {}): Pro
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div class="shell">
     <aside class="app-rail" aria-label="主导航">
-      <div class="brand-mark" aria-label="ILIA">I</div>
+      <div class="rail-brand" aria-label="ILIA 国际法研究助手">
+        <strong>ILIA</strong>
+        <span>国际法研究</span>
+      </div>
       <nav>
-        <button class="rail-button active" type="button" aria-label="研究" title="研究">研</button>
-        <button class="rail-button" id="projects-button" type="button" aria-label="项目" title="项目">项</button>
-        <button class="rail-button" id="library-button" type="button" aria-label="资料库" title="资料库">库</button>
-        <button class="rail-button" id="update-button" type="button" aria-label="检查更新" title="检查更新">更</button>
+        <button class="rail-button active" type="button" aria-current="page"><span class="rail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19.5V6.8c0-.7.5-1.3 1.2-1.4L12 4v15l-6.8 1.4A1 1 0 0 1 4 19.5Zm16 0V6.8c0-.7-.5-1.3-1.2-1.4L12 4v15l6.8 1.4a1 1 0 0 0 1.2-.9Z"/></svg></span><span>研究</span></button>
+        <button class="rail-button" id="projects-button" type="button"><span class="rail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7.5h6l1.6 2H20v9.5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7.5Zm0 0V5a1 1 0 0 1 1-1h4l1.5 2H19a1 1 0 0 1 1 1v2.5"/></svg></span><span>项目</span></button>
+        <button class="rail-button" id="library-button" type="button"><span class="rail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4v16H5V4Zm5.5 0h4v16h-4V4Zm5.5 1 3.5-1 3.5 14.5-3.5 1L16 5Z"/></svg></span><span>资料库</span></button>
+        <button class="rail-button" id="update-button" type="button"><span class="rail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5m10.2-2A8 8 0 0 0 6.5 6.5L4 9m16 6-2.5 2.5A8 8 0 0 1 4.8 14"/></svg></span><span>检查更新</span></button>
       </nav>
-      <button class="rail-button rail-settings" id="settings-button" type="button" aria-label="设置" title="设置">设</button>
+      <button class="rail-button rail-settings" id="settings-button" type="button"><span class="rail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 15.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Zm7-3.2 1.5-1.2-1.8-3.1-1.8.7a7.2 7.2 0 0 0-1.8-1L14.8 5h-3.6l-.3 2.4c-.6.2-1.2.6-1.8 1l-1.8-.7-1.8 3.1L7 12c0 .7.1 1.4.3 2l-1.5 1.2 1.8 3.1 1.8-.7c.5.4 1.1.8 1.8 1l.3 2.4h3.6l.3-2.4c.6-.2 1.2-.6 1.8-1l1.8.7 1.8-3.1-1.5-1.2c.1-.6.2-1.3.2-2Z"/></svg></span><span>设置</span></button>
     </aside>
 
     <aside class="project-sidebar">
@@ -339,7 +344,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
           <div class="loading-state hidden" id="loading-state"><div class="loader"></div><h3 id="loading-title">正在检索本地资料</h3><p id="loading-copy">正在运行 FTS5 与 BGE-M3 混合检索。</p></div>
           <article class="answer-card hidden" id="answer-card"><div class="answer-warning hidden" id="answer-warning" role="status"></div><div class="answer-copy" id="answer-copy"></div><div class="answer-footer"><div class="answer-meta" id="answer-meta"></div><button class="secondary answer-save" id="save-answer-button">保存到当前项目</button></div></article>
         </section>
-        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.3</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
+        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.4</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
       </section>
     </main>
 
@@ -379,7 +384,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
       </div>
     </div>
     <div id="projects-modal" class="library-modal hidden" role="dialog" aria-modal="true">
-      <div class="library-dialog"><div class="library-header"><div><div class="section-kicker">研究工作区</div><h2>项目、笔记与导出</h2></div><button id="projects-close" class="library-close">×</button></div>
+      <div class="library-dialog"><div class="library-header"><div><div class="section-kicker">研究工作区</div><h2>项目、笔记与导出</h2></div><button id="projects-close" class="library-close" aria-label="关闭项目窗口">×</button></div>
         <div class="form-grid"><input id="project-title" class="library-filter" placeholder="新项目名称"/><input id="project-tags" class="library-filter" placeholder="标签（逗号分隔）"/><textarea id="project-description" rows="2" placeholder="项目说明"></textarea><button id="create-project-button" class="primary">创建项目</button></div>
         <p class="modal-hint">当前项目在左侧研究空间中选择；这里用于创建项目、编辑笔记和导出成果。</p>
         <label class="question-label" for="project-note">项目笔记（输入后自动保存）</label><textarea id="project-note" rows="7" placeholder="研究笔记"></textarea>
@@ -388,13 +393,16 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
       </div>
     </div>
     <div id="settings-modal" class="library-modal hidden" role="dialog" aria-modal="true">
-      <div class="library-dialog"><div class="library-header"><div><div class="section-kicker">本机设置</div><h2>模型、性能与更新</h2></div><button id="settings-close" class="library-close">×</button></div>
+      <div class="library-dialog"><div class="library-header"><div><div class="section-kicker">本机设置</div><h2>模型、数据与更新</h2></div><button id="settings-close" class="library-close" aria-label="关闭设置">×</button></div>
         <div id="update-report" class="settings-report">正在读取版本与更新状态…</div>
         <label class="question-label" for="performance-preset">性能档位</label><select id="performance-preset"><option value="energy_saver">节能</option><option value="balanced" selected>平衡</option><option value="high_performance">高性能</option></select>
         <button id="prewarm-button" class="secondary settings-action">后台预热模型</button><div id="resource-report" class="settings-report">模型尚未加载；纯检索不会启动 Qwen。</div>
         <label class="question-label" for="idle-timeout">空闲释放显存</label><select id="idle-timeout"><option value="300">5 分钟</option><option value="900" selected>15 分钟</option><option value="1800">30 分钟</option><option value="0">不自动释放</option></select>
         <label class="question-label" for="proxy-url">更新代理（HTTP / HTTPS / SOCKS5）</label><input id="proxy-url" class="library-filter" type="password" autocomplete="off" placeholder="socks5://user:password@127.0.0.1:1080"/><button id="save-proxy" class="secondary settings-action">保存代理</button><div id="proxy-status" class="settings-report"></div>
         <label class="question-label" for="local-update-path">本地签名更新包</label><input id="local-update-path" class="library-filter" placeholder="粘贴 .ilia 文件路径"/><button id="local-update-button" class="secondary settings-action">验证并安装本地包</button>
+        <div class="settings-section"><div class="section-kicker">研究数据保障</div><p class="modal-hint">备份个人资料库、项目、笔记、会话与证据快照。恢复前会核验文件哈希、SQLite 完整性与架构版本。</p></div>
+        <label class="question-label" for="backup-path">备份文件路径</label><input id="backup-path" class="library-filter" placeholder="例如 D:\\ILIA-backup.ilia-workspace"/><button id="backup-button" class="secondary settings-action">创建加校验备份</button>
+        <label class="question-label" for="restore-path">恢复备份路径</label><input id="restore-path" class="library-filter" placeholder="粘贴 .ilia-workspace 文件路径"/><button id="restore-button" class="secondary settings-action">校验并恢复</button><div id="backup-status" class="settings-report" role="status" aria-live="polite"></div>
       </div>
     </div>
     <div id="update-notice" class="update-notice hidden" role="status" aria-live="polite"><span id="update-notice-copy"></span><button id="update-notice-close" type="button" aria-label="关闭更新提示">×</button></div>
@@ -1059,6 +1067,20 @@ document.querySelector<HTMLSelectElement>("#performance-preset")?.addEventListen
 document.querySelector("#prewarm-button")?.addEventListener("click", async (event) => { const button = event.currentTarget as HTMLButtonElement; button.disabled = true; button.textContent = "预热中…"; try { const report = await call<RuntimeStartupReport>("prewarm_model"); updateRuntime(report.detection, report); document.querySelector<HTMLElement>("#resource-report")!.textContent = `${report.selected_backend.toUpperCase()} · 上下文 ${report.selected_profile.context_size.toLocaleString()} · GPU 层 ${report.selected_profile.gpu_layers} · 估算内存 ${report.selected_profile.estimated_memory_mib.toLocaleString()} MiB`; } catch (error) { document.querySelector<HTMLElement>("#resource-report")!.textContent = `预热失败（不影响纯检索）：${String(error)}`; } finally { button.disabled = false; button.textContent = "后台预热模型"; } });
 document.querySelector("#save-proxy")?.addEventListener("click", async () => { const input = document.querySelector<HTMLInputElement>("#proxy-url")!; try { const settings = await call<ProxySettings>("set_proxy_settings", { url: input.value.trim() || null }); input.value = ""; document.querySelector<HTMLElement>("#proxy-status")!.textContent = settings.enabled ? `已安全保存到本机：${settings.redacted_url}` : "代理已关闭"; } catch (error) { window.alert(`代理设置无效：${String(error)}`); } });
 document.querySelector("#local-update-button")?.addEventListener("click", async () => { const path = document.querySelector<HTMLInputElement>("#local-update-path")!.value.trim(); if (!path) return; if (window.confirm("ILIA 将验证签名、哈希、路径和数据库完整性；失败会自动回滚。继续？")) await call("install_local_update", { packagePath: path }); });
+document.querySelector("#backup-button")?.addEventListener("click", async () => {
+  const input = document.querySelector<HTMLInputElement>("#backup-path")!; const status = document.querySelector<HTMLElement>("#backup-status")!; const outputPath = input.value.trim();
+  if (!outputPath) return input.focus(); status.textContent = "正在检查数据库并创建备份…";
+  try { const result = await call<BackupSummary>("create_backup", { outputPath }); status.textContent = `备份完成：${result.path}（${((result.user_bytes + result.workspace_bytes) / 1024).toFixed(1)} KiB）`; }
+  catch (error) { status.textContent = `备份失败，原数据未改变：${String(error)}`; }
+});
+document.querySelector("#restore-button")?.addEventListener("click", async () => {
+  const input = document.querySelector<HTMLInputElement>("#restore-path")!; const status = document.querySelector<HTMLElement>("#backup-status")!; const packagePath = input.value.trim();
+  if (!packagePath) return input.focus();
+  if (!window.confirm("恢复会替换当前个人资料与研究工作区。请先创建当前备份。确认继续？")) return;
+  status.textContent = "正在校验备份并安全恢复…";
+  try { const result = await call<BackupSummary>("restore_backup", { packagePath }); await loadProjects(); status.textContent = `恢复完成：${result.path}。项目与个人资料已重新载入。`; }
+  catch (error) { status.textContent = `恢复失败，当前数据未被替换：${String(error)}`; }
+});
 document.querySelector("#copy-citation")?.addEventListener("click", async () => { const evidence = currentEvidence[currentSourceIndex]; const hit = evidence ? currentHits.find((item) => item.stable_key === evidence.stable_key) : undefined; if (!hit) return; const citation = await call<string>("format_citation", { title: hit.canonical_title, locator: hit.citation_label, url: hit.official_source_url || null, style: document.querySelector<HTMLSelectElement>("#citation-style")!.value }); await navigator.clipboard.writeText(citation); });
 
 if (isTauri()) {
@@ -1067,6 +1089,12 @@ if (isTauri()) {
 }
 window.addEventListener("beforeunload", () => {
   if (activeRequestId && isTauri()) void invoke("cancel_research", { requestId: activeRequestId });
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") return;
+  const visible = Array.from(document.querySelectorAll<HTMLElement>(".library-modal:not(.hidden)"));
+  const top = visible.at(-1);
+  if (top && top.id !== "update-progress-modal") top.classList.add("hidden");
 });
 
 call<RuntimeProbeReport>("get_runtime_status").then(updateRuntime).catch(showError);

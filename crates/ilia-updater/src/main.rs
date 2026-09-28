@@ -1,4 +1,6 @@
-use std::{env, fs, path::PathBuf, process::ExitCode, thread, time::Duration};
+use std::{
+    env, fs, fs::OpenOptions, io::Write, path::PathBuf, process::ExitCode, thread, time::Duration,
+};
 
 use ilia_updater::{
     ProxyConfig, TrustedPublicKey, UpdateEngine, UpdateProgress, create_local_package,
@@ -226,6 +228,14 @@ fn write_progress(
         fs::remove_file(path)?;
     }
     fs::rename(temporary, path)?;
+    let events_path = path.with_extension("events.jsonl");
+    let mut events = OpenOptions::new()
+        .create(true)
+        .append(true)
+        .open(events_path)?;
+    serde_json::to_writer(&mut events, progress)?;
+    events.write_all(b"\n")?;
+    events.sync_all()?;
     Ok(())
 }
 

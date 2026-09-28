@@ -12,8 +12,9 @@ use ilia_core::{
     SearchResponse, format_legal_citation,
 };
 use ilia_database::{
-    ApplicationDatabasePaths, CommitImport, Database, ImportPreview, ImportedDocument,
-    NewSavedEvidence, Project, UserDatabase, UserLibrary, WorkspaceDatabase, WorkspaceExport,
+    ApplicationDatabasePaths, BackupSummary, CommitImport, Database, ImportPreview,
+    ImportedDocument, NewSavedEvidence, Project, UserDatabase, UserLibrary, WorkspaceDatabase,
+    WorkspaceExport, create_workspace_backup, restore_workspace_backup,
 };
 use ilia_embedding::{BGE_M3_MODEL_ID, BgeM3Embedder};
 use ilia_inference::{
@@ -858,6 +859,36 @@ async fn release_idle_model(
 }
 
 #[tauri::command]
+async fn create_backup(
+    state: State<'_, Arc<DesktopServices>>,
+    output_path: String,
+) -> Result<BackupSummary, String> {
+    let user = state.paths.user_database.clone();
+    let workspace = state.paths.workspace_database.clone();
+    tauri::async_runtime::spawn_blocking(move || {
+        create_workspace_backup(user, workspace, output_path, env!("CARGO_PKG_VERSION"))
+    })
+    .await
+    .map_err(|error| error.to_string())?
+    .map_err(|error| error.to_string())
+}
+
+#[tauri::command]
+async fn restore_backup(
+    state: State<'_, Arc<DesktopServices>>,
+    package_path: String,
+) -> Result<BackupSummary, String> {
+    let user = state.paths.user_database.clone();
+    let workspace = state.paths.workspace_database.clone();
+    tauri::async_runtime::spawn_blocking(move || {
+        restore_workspace_backup(user, workspace, package_path)
+    })
+    .await
+    .map_err(|error| error.to_string())?
+    .map_err(|error| error.to_string())
+}
+
+#[tauri::command]
 async fn list_projects(state: State<'_, Arc<DesktopServices>>) -> Result<Vec<Project>, String> {
     let path = state.paths.workspace_database.clone();
     tauri::async_runtime::spawn_blocking(move || WorkspaceDatabase::open(path)?.projects())
@@ -1444,6 +1475,10 @@ fn spawn_update_and_monitor(
     if progress_path.exists() {
         std::fs::remove_file(&progress_path).map_err(|error| error.to_string())?;
     }
+    let events_path = progress_path.with_extension("events.jsonl");
+    if events_path.exists() {
+        std::fs::remove_file(events_path).map_err(|error| error.to_string())?;
+    }
     let mut child = command.spawn().map_err(|error| error.to_string())?;
     std::thread::spawn(move || {
         let mut last_progress = Vec::new();
@@ -1528,6 +1563,8 @@ pub fn run() {
             read_document_text,
             related_documents,
             format_citation,
+            create_backup,
+            restore_backup,
             list_projects,
             create_project,
             save_research,

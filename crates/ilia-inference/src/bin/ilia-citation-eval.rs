@@ -43,6 +43,9 @@ struct Report {
     total: usize,
     correct: usize,
     accuracy: f64,
+    safety_boundary_accuracy: f64,
+    unsafe_false_accepts: usize,
+    passed: bool,
     by_label: BTreeMap<String, Metrics>,
     cases: Vec<CaseResult>,
 }
@@ -53,12 +56,23 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut input = None;
     let mut output = None;
     let mut version = "1.1.0-dev".to_owned();
+    let mut minimum_accuracy = 0.85_f64;
+    let mut minimum_safety_boundary_accuracy = 1.0_f64;
     while let Some(arg) = args.next() {
         match arg.as_str() {
             "--root" => root = args.next().map(PathBuf::from),
             "--input" => input = args.next().map(PathBuf::from),
             "--output" => output = args.next().map(PathBuf::from),
             "--version" => version = args.next().ok_or("missing version")?,
+            "--minimum-accuracy" => {
+                minimum_accuracy = args.next().ok_or("missing minimum accuracy")?.parse()?;
+            }
+            "--minimum-safety-boundary-accuracy" => {
+                minimum_safety_boundary_accuracy = args
+                    .next()
+                    .ok_or("missing minimum safety boundary accuracy")?
+                    .parse()?;
+            }
             _ => return Err(format!("unknown argument: {arg}").into()),
         }
     }
@@ -134,6 +148,19 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         );
     }
     let correct = results.iter().filter(|r| r.passed).count();
+    let safety_boundary_correct = results
+        .iter()
+        .filter(|result| is_red(result.expected) == is_red(result.predicted))
+        .count();
+    let unsafe_false_accepts = results
+        .iter()
+        .filter(|result| is_red(result.expected) && !is_red(result.predicted))
+        .count();
+    let accuracy = correct as f64 / results.len().max(1) as f64;
+    let safety_boundary_accuracy = safety_boundary_correct as f64 / results.len().max(1) as f64;
+    let passed = accuracy >= minimum_accuracy
+        && safety_boundary_accuracy >= minimum_safety_boundary_accuracy
+        && unsafe_false_accepts == 0;
     let report = Report {
         report_version: 1,
         release_version: version,
@@ -141,7 +168,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         model_backend: server.backend().as_str().into(),
         total: results.len(),
         correct,
-        accuracy: correct as f64 / results.len().max(1) as f64,
+        accuracy,
+        safety_boundary_accuracy,
+        unsafe_false_accepts,
+        passed,
         by_label,
         cases: results,
     };
@@ -149,7 +179,20 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         fs::create_dir_all(parent)?;
     }
     fs::write(output, serde_json::to_vec_pretty(&report)?)?;
+    if !passed {
+        return Err(format!(
+            "citation evaluation failed: accuracy {accuracy:.3} (minimum {minimum_accuracy:.3}), safety boundary {safety_boundary_accuracy:.3} (minimum {minimum_safety_boundary_accuracy:.3}), unsafe false accepts {unsafe_false_accepts}"
+        )
+        .into());
+    }
     Ok(())
+}
+
+fn is_red(value: CitationSupport) -> bool {
+    matches!(
+        value,
+        CitationSupport::Unsupported | CitationSupport::Conflict
+    )
 }
 fn available_port() -> std::io::Result<u16> {
     let listener = std::net::TcpListener::bind(("127.0.0.1", 0))?;

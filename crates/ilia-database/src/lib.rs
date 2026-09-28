@@ -1,3 +1,4 @@
+mod backup;
 mod import;
 mod user;
 mod workspace;
@@ -5,6 +6,9 @@ mod writable;
 
 use std::path::Path;
 
+pub use backup::{
+    BackupManifest, BackupSummary, create_workspace_backup, restore_workspace_backup,
+};
 pub use import::{
     CommitImport, ImportChunk, ImportError, ImportPreview, ImportedDocument, UserLibrary,
 };

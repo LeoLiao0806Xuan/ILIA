@@ -1,0 +1,124 @@
+{
+  "report_version": 1,
+  "release_version": "1.1.4",
+  "generated_at_unix": 1790581331,
+  "model_backend": "cuda",
+  "total": 12,
+  "correct": 12,
+  "accuracy": 1.0,
+  "safety_boundary_accuracy": 1.0,
+  "unsafe_false_accepts": 0,
+  "passed": true,
+  "by_label": {
+    "conflict": {
+      "total": 3,
+      "correct": 3,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "direct": {
+      "total": 3,
+      "correct": 3,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "summary": {
+      "total": 3,
+      "correct": 3,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "unsupported": {
+      "total": 3,
+      "correct": 3,
+      "precision": 1.0,
+      "recall": 1.0
+    }
+  },
+  "cases": [
+    {
+      "id": "direct-unclos-12nm-en",
+      "language": "en",
+      "expected": "direct",
+      "predicted": "direct",
+      "passed": true
+    },
+    {
+      "id": "direct-vclt-domestic-law-en",
+      "language": "en",
+      "expected": "direct",
+      "predicted": "direct",
+      "passed": true
+    },
+    {
+      "id": "direct-charter-self-defence-zh",
+      "language": "zh",
+      "expected": "direct",
+      "predicted": "direct",
+      "passed": true
+    },
+    {
+      "id": "summary-udhr-equality-zh",
+      "language": "zh",
+      "expected": "summary",
+      "predicted": "summary",
+      "passed": true
+    },
+    {
+      "id": "summary-unclos-baselines-en",
+      "language": "en",
+      "expected": "summary",
+      "predicted": "summary",
+      "passed": true
+    },
+    {
+      "id": "summary-icj-reparation-en",
+      "language": "en",
+      "expected": "summary",
+      "predicted": "summary",
+      "passed": true
+    },
+    {
+      "id": "unsupported-unclos-24nm-en",
+      "language": "en",
+      "expected": "unsupported",
+      "predicted": "unsupported",
+      "passed": true
+    },
+    {
+      "id": "unsupported-vclt-retroactivity-zh",
+      "language": "zh",
+      "expected": "unsupported",
+      "predicted": "unsupported",
+      "passed": true
+    },
+    {
+      "id": "unsupported-icj-vote-en",
+      "language": "en",
+      "expected": "unsupported",
+      "predicted": "unsupported",
+      "passed": true
+    },
+    {
+      "id": "conflict-unclos-6nm-en",
+      "language": "en",
+      "expected": "conflict",
+      "predicted": "conflict",
+      "passed": true
+    },
+    {
+      "id": "conflict-charter-force-zh",
+      "language": "zh",
+      "expected": "conflict",
+      "predicted": "conflict",
+      "passed": true
+    },
+    {
+      "id": "conflict-vclt-consent-en",
+      "language": "en",
+      "expected": "conflict",
+      "predicted": "conflict",
+      "passed": true
+    }
+  ]
+}
