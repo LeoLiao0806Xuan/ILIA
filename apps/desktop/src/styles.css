@@ -39,7 +39,8 @@ button:disabled { cursor: wait; opacity: .55; }
 .rail-icon svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.65; stroke-linecap: round; stroke-linejoin: round; }
 .rail-button:hover, .rail-button.active { background: rgba(255,255,255,.11); color: #fff; }
 .rail-button.active { box-shadow: inset 3px 0 #e1c177; }
-.rail-settings { margin-top: auto; }
+.rail-guide { margin-top: auto; }
+.rail-settings { margin-top: 0; }
 
 .project-sidebar { min-width: 0; display: flex; flex-direction: column; padding: 22px 16px 16px; border-right: 1px solid var(--line); background: var(--sidebar); }
 .sidebar-brand { padding: 0 4px 20px; border-bottom: 1px solid var(--line); }
@@ -75,6 +76,12 @@ button:disabled { cursor: wait; opacity: .55; }
 .research-heading h1 { margin: 4px 0 0; color: var(--text); font: 500 27px/1.3 Georgia, "Noto Serif SC", "Songti SC", serif; letter-spacing: -.02em; }
 .research-heading p { margin: 8px 0 0; color: var(--muted); font-size: 11px; }
 .section-kicker { color: var(--gold); font-size: 9px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; }
+.first-run-tip { display: flex; align-items: center; gap: 12px; margin-top: 18px; padding: 11px 12px 11px 14px; border: 1px solid #c8d7ce; border-radius: 9px; background: #edf4ef; }
+.first-run-tip > div { min-width: 0; flex: 1; }
+.first-run-tip strong, .first-run-tip span { display: block; }
+.first-run-tip strong { color: var(--accent-dark); font-size: 11px; }
+.first-run-tip span { margin-top: 3px; color: var(--muted); font-size: 10px; line-height: 1.5; }
+.first-run-tip > button:last-child { width: 24px; height: 24px; padding: 0; border: 0; background: transparent; color: var(--faint); font-size: 17px; }
 
 .query-composer { margin-top: 22px; padding: 16px; border: 1px solid #82a997; border-radius: 11px; background: var(--paper); box-shadow: 0 6px 20px rgba(47,113,89,.09); }
 .question-label { display: block; margin-bottom: 6px; color: var(--faint); font-size: 9px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
@@ -83,6 +90,10 @@ button:disabled { cursor: wait; opacity: .55; }
 .composer-options, .query-actions { display: flex; align-items: center; gap: 7px; }
 .composer-options label { display: flex; align-items: center; gap: 5px; color: var(--faint); font-size: 9px; }
 .composer-options select { padding: 6px 24px 6px 8px; border: 0; border-radius: 6px; background: var(--panel); color: var(--muted); font-size: 10px; }
+.mode-helper { display: flex; align-items: center; gap: 7px; margin: 10px -2px -4px; color: var(--faint); font-size: 9px; }
+.mode-helper strong { color: var(--accent); font-size: 10px; }
+.mode-helper span { min-width: 0; flex: 1; }
+.mode-helper kbd { padding: 2px 5px; border: 1px solid var(--line); border-radius: 4px; background: var(--panel); color: var(--muted); font: 8px "Segoe UI", sans-serif; }
 .primary, .secondary { border-radius: 7px; padding: 8px 11px; border: 0; font-size: 10px; font-weight: 600; }
 .primary { display: inline-flex; align-items: center; justify-content: space-between; gap: 18px; background: var(--accent); color: #fff; }
 .primary:hover { background: var(--accent-dark); }
@@ -195,6 +206,53 @@ pre { margin: 0; max-height: 48vh; overflow: auto; padding: 15px; border: 1px so
 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin: 18px 0; }
 .form-grid textarea { grid-column: 1 / -1; min-height: 70px; resize: vertical; }
 .form-grid button { grid-column: 1 / -1; }
+.project-dialog { width: min(1040px, 100%); max-height: min(760px, 92vh); overflow: hidden; padding: 0; border: 1px solid var(--line); border-radius: 12px; background: var(--shell); box-shadow: 0 24px 70px rgba(0,0,0,.28); }
+.project-dialog-header { padding: 22px 24px 18px; border-bottom: 1px solid var(--line); }
+.project-dialog-header p, .guide-dialog .library-header p { margin: 7px 0 0; color: var(--muted); font-size: 11px; }
+.dialog-header-actions { display: flex; align-items: center; gap: 8px; }
+.guide-chip { padding: 7px 10px; border: 1px solid #bdc8c1; border-radius: 99px; background: var(--paper); color: var(--accent); font-size: 10px; font-weight: 600; }
+.guide-chip:hover { border-color: var(--accent); background: var(--accent-soft); }
+.project-workspace { min-height: 500px; display: grid; grid-template-columns: 300px minmax(0, 1fr); }
+.project-create-panel { display: flex; flex-direction: column; gap: 22px; padding: 24px; border-right: 1px solid var(--line); background: #eeeeea; }
+.project-create-panel h3, .project-current-header h3, .guide-content h3 { margin: 6px 0 0; color: var(--text); font: 500 18px/1.35 Georgia, "Noto Serif SC", serif; }
+.project-create-panel p, .project-current-header p { margin: 7px 0 0; color: var(--muted); font-size: 10px; line-height: 1.6; }
+.project-form { display: grid; gap: 13px; }
+.project-form label { display: grid; gap: 6px; color: var(--faint); font-size: 10px; font-weight: 600; }
+.project-form textarea { width: 100%; min-height: 92px; padding: 10px 11px; resize: vertical; border: 1px solid #c8c9bf; border-radius: 7px; background: var(--paper); color: var(--text); outline: 0; }
+.project-form .primary { width: 100%; margin-top: 3px; }
+.project-note-panel { min-width: 0; display: flex; flex-direction: column; padding: 24px; background: var(--paper); }
+.project-current-header { min-height: 92px; display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; padding-bottom: 17px; border-bottom: 1px solid var(--line); }
+.project-current-header > div { min-width: 0; }
+.project-current-header h3 { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.project-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+.project-tags span { padding: 3px 7px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); font-size: 9px; }
+.save-state { flex: 0 0 auto; padding: 5px 8px; border-radius: 99px; background: var(--panel); color: var(--faint); font-size: 9px; }
+.project-note-panel > .question-label { margin-top: 18px; }
+#project-note { width: 100%; min-height: 245px; flex: 1; padding: 14px; resize: vertical; border: 1px solid var(--line); border-radius: 8px; background: #fffefa; color: var(--text); font: 13px/1.75 "Noto Serif SC", "Songti SC", SimSun, serif; outline: 0; }
+#project-note:disabled { background: var(--panel); color: var(--faint); }
+.project-export-bar { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding-top: 15px; }
+.project-export-bar strong, .project-export-bar span { display: block; }
+.project-export-bar strong { color: var(--text); font-size: 10px; }
+.project-export-bar span { margin-top: 4px; color: var(--faint); font-size: 9px; }
+.guide-dialog { width: min(900px, 100%); max-height: min(720px, 90vh); overflow: hidden; padding: 24px; border: 1px solid var(--line); border-radius: 12px; background: var(--shell); box-shadow: 0 24px 70px rgba(0,0,0,.28); }
+.guide-layout { min-height: 410px; display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 22px; margin-top: 22px; }
+.guide-steps { display: grid; align-content: start; gap: 5px; padding: 7px; border-radius: 10px; background: var(--sidebar); }
+.guide-step-button { display: grid; grid-template-columns: 27px 1fr; gap: 9px; align-items: center; padding: 10px; border: 0; border-radius: 7px; background: transparent; color: var(--muted); text-align: left; }
+.guide-step-button > span { width: 25px; height: 25px; display: grid; place-items: center; border-radius: 50%; background: rgba(47,113,89,.09); color: var(--accent); font-size: 9px; }
+.guide-step-button strong { font-size: 11px; font-weight: 500; }
+.guide-step-button:hover, .guide-step-button.active { background: var(--paper); color: var(--text); box-shadow: 0 2px 9px rgba(23,36,31,.06); }
+.guide-content { padding: 16px 18px; }
+.guide-step-count { color: var(--gold); font-size: 9px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+.guide-illustration { height: 116px; display: grid; place-items: center; margin: 12px 0 18px; border: 1px solid #ced8d1; border-radius: 10px; background: linear-gradient(135deg, #e6efe9, #f8f3e7); color: var(--accent); font: 38px Georgia, serif; }
+.guide-content h3 { font-size: 21px; }
+.guide-content > p { max-width: 620px; color: var(--muted); font-size: 12px; line-height: 1.75; }
+.guide-step-tips { display: grid; gap: 7px; margin-top: 18px; }
+.guide-step-tips div { padding: 10px 12px; border-left: 3px solid #9db8aa; background: #eef3ef; color: #45564f; font-size: 10px; line-height: 1.6; }
+.guide-footer { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding-top: 17px; border-top: 1px solid var(--line); color: var(--faint); font-size: 10px; }
+.guide-footer > div { display: flex; gap: 8px; }
+.update-resilience { display: grid; gap: 5px; margin: 8px 0 18px; padding: 12px 13px; border: 1px solid #c7d8ce; border-radius: 8px; background: var(--accent-soft); }
+.update-resilience strong { color: var(--accent-dark); font-size: 11px; }
+.update-resilience span { color: var(--muted); font-size: 10px; line-height: 1.6; }
 .settings-action { margin: 9px 0 17px; }
 .settings-report { margin: -9px 0 18px; padding: 10px; border-left: 3px solid #9aaa9f; background: #eef1ed; color: var(--muted); font-size: 10px; line-height: 1.6; }
 .settings-section { margin: 24px 0 12px; padding-top: 18px; border-top: 1px solid var(--line); }
@@ -228,7 +286,8 @@ pre { margin: 0; max-height: 48vh; overflow: auto; padding: 15px; border: 1px so
 .update-progress-track { height: 8px; margin: 22px 0 10px; overflow: hidden; border-radius: 99px; background: #dfe5df; }
 .update-progress-track span { display: block; width: 0; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--gold), #4f7b64); transition: width .18s ease; }
 .update-progress-detail { min-height: 20px; color: var(--faint); font-size: 10px; }
-.update-progress-dialog .secondary { margin-top: 18px; }
+.update-progress-actions { display: flex; gap: 8px; margin-top: 18px; }
+.update-progress-actions .secondary { margin-top: 0; }
 .library-dialog > select { width: 100%; padding: 9px; border: 1px solid var(--line); border-radius: 7px; background: var(--paper); }
 
 @media (max-width: 1180px) {
@@ -243,4 +302,7 @@ pre { margin: 0; max-height: 48vh; overflow: auto; padding: 15px; border: 1px so
   .inspector { grid-column: 2 / -1; border-top: 1px solid var(--line); border-left: 0; }
   .inspector-panel { min-height: 260px; }
   .source-placeholder { min-height: 250px; }
+  .project-workspace { grid-template-columns: 250px minmax(0, 1fr); }
+  .project-create-panel, .project-note-panel { padding: 19px; }
+  .guide-layout { grid-template-columns: 190px minmax(0, 1fr); }
 }

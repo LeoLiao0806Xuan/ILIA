@@ -1,9 +1,9 @@
 #define AppName "ILIA"
 #ifndef AppVersion
-  #define AppVersion "1.1.4"
+  #define AppVersion "1.1.5"
 #endif
 #ifndef AppFileVersion
-  #define AppFileVersion "1.1.4.0"
+  #define AppFileVersion "1.1.5.0"
 #endif
 #ifndef SourceDir
   #error SourceDir must point to the staged ILIA application directory

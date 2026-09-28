@@ -241,7 +241,7 @@ async function call<T>(command: string, args: Record<string, unknown> = {}): Pro
   if (command === "list_user_documents") return [] as T;
   if (command === "get_proxy_settings") return { enabled: false, redacted_url: null } as T;
   if (command === "create_backup" || command === "restore_backup") return { path: String(args.outputPath ?? args.packagePath ?? "ILIA-backup.ilia-workspace"), user_bytes: 32768, workspace_bytes: 65536, user_sha256: "demo", workspace_sha256: "demo" } as T;
-  if (command === "get_update_summary") return { current_version: "1.1.4", last_release_id: "v1.1.4", last_status: "applied", applied_components: ["application", "updater"] } as T;
+  if (command === "get_update_summary") return { current_version: "1.1.5", last_release_id: "v1.1.5", last_status: "applied", applied_components: ["application", "updater"] } as T;
   if (command === "check_updates") return { manifest: { release_id: "demo", components: [] }, installed_versions: { components: {} } } as T;
   if (command === "install_update") return undefined as T;
   if (command === "cancel_research") return true as T;
@@ -283,8 +283,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         <button class="rail-button active" type="button" aria-current="page"><span class="rail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19.5V6.8c0-.7.5-1.3 1.2-1.4L12 4v15l-6.8 1.4A1 1 0 0 1 4 19.5Zm16 0V6.8c0-.7-.5-1.3-1.2-1.4L12 4v15l6.8 1.4a1 1 0 0 0 1.2-.9Z"/></svg></span><span>研究</span></button>
         <button class="rail-button" id="projects-button" type="button"><span class="rail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7.5h6l1.6 2H20v9.5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7.5Zm0 0V5a1 1 0 0 1 1-1h4l1.5 2H19a1 1 0 0 1 1 1v2.5"/></svg></span><span>项目</span></button>
         <button class="rail-button" id="library-button" type="button"><span class="rail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4v16H5V4Zm5.5 0h4v16h-4V4Zm5.5 1 3.5-1 3.5 14.5-3.5 1L16 5Z"/></svg></span><span>资料库</span></button>
-        <button class="rail-button" id="update-button" type="button"><span class="rail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5m10.2-2A8 8 0 0 0 6.5 6.5L4 9m16 6-2.5 2.5A8 8 0 0 1 4.8 14"/></svg></span><span>检查更新</span></button>
+        <button class="rail-button" id="update-button" type="button"><span class="rail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5m10.2-2A8 8 0 0 0 6.5 6.5L4 9m16 6-2.5 2.5A8 8 0 0 1 4.8 14"/></svg></span><span id="update-button-label">检查更新</span></button>
       </nav>
+      <button class="rail-button rail-guide" id="guide-button" type="button"><span class="rail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.4 18h5.2M10 21h4M8.2 14.8A6 6 0 1 1 15.8 14c-.9.7-1.3 1.4-1.3 2H9.6c0-.6-.4-1.2-1.4-1.9Z"/></svg></span><span>使用指南</span></button>
       <button class="rail-button rail-settings" id="settings-button" type="button"><span class="rail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 15.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Zm7-3.2 1.5-1.2-1.8-3.1-1.8.7a7.2 7.2 0 0 0-1.8-1L14.8 5h-3.6l-.3 2.4c-.6.2-1.2.6-1.8 1l-1.8-.7-1.8 3.1L7 12c0 .7.1 1.4.3 2l-1.5 1.2 1.8 3.1 1.8-.7c.5.4 1.1.8 1.8 1l.3 2.4h3.6l.3-2.4c.6-.2 1.2-.6 1.8-1l1.8.7 1.8-3.1-1.5-1.2c.1-.6.2-1.3.2-2Z"/></svg></span><span>设置</span></button>
     </aside>
 
@@ -296,10 +297,10 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
       </section>
       <section class="sidebar-section sidebar-grow">
         <div class="sidebar-label"><span>研究起点</span></div>
-        <button class="example history-item active"><strong>领海宽度与基线</strong><small>UNCLOS · 条约解释</small></button>
-        <button class="example history-item"><strong>国家能否援引国内法</strong><small>VCLT · 条约义务</small></button>
-        <button class="example history-item"><strong>尼加拉瓜案第191段</strong><small>ICJ · 法律确信</small></button>
-        <button class="example history-item"><strong>《联合国宪章》第51条</strong><small>自卫权 · 武力使用</small></button>
+        <button class="example history-item active" data-question="《联合国海洋法公约》如何规定领海宽度与基线？"><strong>领海宽度与基线</strong><small>UNCLOS · 条约解释</small></button>
+        <button class="example history-item" data-question="一国能否援引其国内法作为不履行条约的理由？"><strong>国家能否援引国内法</strong><small>VCLT · 条约义务</small></button>
+        <button class="example history-item" data-question="尼加拉瓜案第191段如何说明国际习惯法中的法律确信？"><strong>尼加拉瓜案第191段</strong><small>ICJ · 法律确信</small></button>
+        <button class="example history-item" data-question="《联合国宪章》第51条对自卫权规定了哪些条件？"><strong>《联合国宪章》第51条</strong><small>自卫权 · 武力使用</small></button>
       </section>
       <div class="runtime-card" id="runtime-pill">
         <div><span class="pulse"></span><strong id="runtime-text">正在探测运行环境</strong></div>
@@ -320,6 +321,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         <div class="research-heading">
           <div><div class="section-kicker">新研究</div><h1>从问题到可核验结论</h1><p>在同一工作流中完成检索、回答、引证复核与原文核验。</p></div>
         </div>
+        <div id="first-run-tip" class="first-run-tip hidden"><div><strong>第一次使用？</strong><span>用 2 分钟了解从提问、核验证据到保存案件的完整流程。</span></div><button id="first-run-guide" class="secondary" type="button">打开指南</button><button id="first-run-dismiss" type="button" aria-label="关闭新手提示">×</button></div>
         <div class="query-composer">
           <label class="question-label" for="question">研究问题</label>
           <textarea id="question" rows="3">《联合国海洋法公约》规定领海宽度不得超过多少海里？</textarea>
@@ -330,6 +332,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
             </div>
             <div class="query-actions"><button class="secondary" id="search-button">只检索</button><button class="secondary hidden" id="stop-button">停止</button><button class="primary" id="ask-button"><span>开始研究</span><span aria-hidden="true">↗</span></button></div>
           </div>
+          <div id="mode-helper" class="mode-helper"><strong>标准模式</strong><span>适合大多数研究：检索法源并生成带引证的回答。</span><kbd>Ctrl + Enter</kbd></div>
         </div>
 
         <div class="process-strip" id="process-strip" aria-live="polite">
@@ -344,7 +347,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
           <div class="loading-state hidden" id="loading-state"><div class="loader"></div><h3 id="loading-title">正在检索本地资料</h3><p id="loading-copy">正在运行 FTS5 与 BGE-M3 混合检索。</p></div>
           <article class="answer-card hidden" id="answer-card"><div class="answer-warning hidden" id="answer-warning" role="status"></div><div class="answer-copy" id="answer-copy"></div><div class="answer-footer"><div class="answer-meta" id="answer-meta"></div><button class="secondary answer-save" id="save-answer-button">保存到当前项目</button></div></article>
         </section>
-        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.4</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
+        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.5</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
       </section>
     </main>
 
@@ -383,13 +386,33 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         <div id="library-list" class="library-list"></div>
       </div>
     </div>
-    <div id="projects-modal" class="library-modal hidden" role="dialog" aria-modal="true">
-      <div class="library-dialog"><div class="library-header"><div><div class="section-kicker">研究工作区</div><h2>项目、笔记与导出</h2></div><button id="projects-close" class="library-close" aria-label="关闭项目窗口">×</button></div>
-        <div class="form-grid"><input id="project-title" class="library-filter" placeholder="新项目名称"/><input id="project-tags" class="library-filter" placeholder="标签（逗号分隔）"/><textarea id="project-description" rows="2" placeholder="项目说明"></textarea><button id="create-project-button" class="primary">创建项目</button></div>
-        <p class="modal-hint">当前项目在左侧研究空间中选择；这里用于创建项目、编辑笔记和导出成果。</p>
-        <label class="question-label" for="project-note">项目笔记（输入后自动保存）</label><textarea id="project-note" rows="7" placeholder="研究笔记"></textarea>
-        <div class="query-actions"><button id="export-md" class="secondary">导出 Markdown</button><button id="export-html" class="secondary">导出自包含 HTML</button></div>
-        <div id="project-status" class="library-count"></div>
+    <div id="projects-modal" class="library-modal hidden" role="dialog" aria-modal="true" aria-labelledby="projects-title">
+      <div class="project-dialog">
+        <div class="library-header project-dialog-header"><div><div class="section-kicker">研究工作区</div><h2 id="projects-title">项目、笔记与导出</h2><p>把同一事项的问题、回答、证据与笔记保存在一个项目中。</p></div><div class="dialog-header-actions"><button class="guide-chip" id="project-guide-button" type="button">? 如何使用</button><button id="projects-close" class="library-close" aria-label="关闭项目窗口">×</button></div></div>
+        <div class="project-workspace">
+          <aside class="project-create-panel">
+            <div><div class="section-kicker">新建项目</div><h3>建立研究事项</h3><p>一个项目对应一个案件、专题或长期研究任务。</p></div>
+            <div class="project-form">
+              <label>项目名称<input id="project-title" class="library-filter" placeholder="例如：南海仲裁研究"/></label>
+              <label>标签<input id="project-tags" class="library-filter" placeholder="海洋法，仲裁"/></label>
+              <label>项目说明<textarea id="project-description" rows="4" placeholder="记录研究范围、目标或交付要求"></textarea></label>
+              <button id="create-project-button" class="primary">创建并切换到项目</button>
+            </div>
+          </aside>
+          <section class="project-note-panel">
+            <div class="project-current-header"><div><div class="section-kicker">当前项目</div><h3 id="project-active-title">未选择项目</h3><p id="project-active-description">请从左侧研究空间选择项目，或新建一个项目。</p><div id="project-active-tags" class="project-tags"></div></div><span id="project-status" class="save-state">等待选择项目</span></div>
+            <label class="question-label" for="project-note">研究笔记 · 输入后自动保存</label>
+            <textarea id="project-note" rows="14" placeholder="记录争点、事实时间线、待核验问题和结论草稿……"></textarea>
+            <div class="project-export-bar"><div><strong>导出研究成果</strong><span>Markdown 适合继续编辑；自包含 HTML 适合归档与分享。</span></div><div class="query-actions"><button id="export-md" class="secondary">导出 Markdown</button><button id="export-html" class="secondary">导出 HTML</button></div></div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div id="guide-modal" class="library-modal hidden" role="dialog" aria-modal="true" aria-labelledby="guide-title">
+      <div class="guide-dialog">
+        <div class="library-header"><div><div class="section-kicker">ILIA Tips</div><h2 id="guide-title">国际法研究工作流指南</h2><p>按工作顺序认识每个区域，不需要一次记住所有功能。</p></div><button id="guide-close" class="library-close" aria-label="关闭使用指南">×</button></div>
+        <div class="guide-layout"><nav id="guide-steps" class="guide-steps" aria-label="教程步骤"></nav><section class="guide-content" aria-live="polite"><div id="guide-step-count" class="guide-step-count"></div><div id="guide-illustration" class="guide-illustration"></div><h3 id="guide-step-title"></h3><p id="guide-step-copy"></p><div id="guide-step-tips" class="guide-step-tips"></div></section></div>
+        <div class="guide-footer"><span>这个入口会一直保留在左下角。</span><div><button id="guide-back" class="secondary" type="button">上一步</button><button id="guide-next" class="primary" type="button">下一步</button></div></div>
       </div>
     </div>
     <div id="settings-modal" class="library-modal hidden" role="dialog" aria-modal="true">
@@ -398,6 +421,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         <label class="question-label" for="performance-preset">性能档位</label><select id="performance-preset"><option value="energy_saver">节能</option><option value="balanced" selected>平衡</option><option value="high_performance">高性能</option></select>
         <button id="prewarm-button" class="secondary settings-action">后台预热模型</button><div id="resource-report" class="settings-report">模型尚未加载；纯检索不会启动 Qwen。</div>
         <label class="question-label" for="idle-timeout">空闲释放显存</label><select id="idle-timeout"><option value="300">5 分钟</option><option value="900" selected>15 分钟</option><option value="1800">30 分钟</option><option value="0">不自动释放</option></select>
+        <div class="update-resilience"><strong>网络不稳定保护</strong><span>下载中断会自动重试并从已完成位置续传；持续无法连接 GitHub 时，可配置代理或使用本地签名更新包。</span></div>
         <label class="question-label" for="proxy-url">更新代理（HTTP / HTTPS / SOCKS5）</label><input id="proxy-url" class="library-filter" type="password" autocomplete="off" placeholder="socks5://user:password@127.0.0.1:1080"/><button id="save-proxy" class="secondary settings-action">保存代理</button><div id="proxy-status" class="settings-report"></div>
         <label class="question-label" for="local-update-path">本地签名更新包</label><input id="local-update-path" class="library-filter" placeholder="粘贴 .ilia 文件路径"/><button id="local-update-button" class="secondary settings-action">验证并安装本地包</button>
         <div class="settings-section"><div class="section-kicker">研究数据保障</div><p class="modal-hint">备份个人资料库、项目、笔记、会话与证据快照。恢复前会核验文件哈希、SQLite 完整性与架构版本。</p></div>
@@ -412,7 +436,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         <p id="update-progress-message">ILIA 会先完成下载和校验，在真正替换程序前保持当前窗口打开。</p>
         <div class="update-progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="update-progress-fill"></span></div>
         <div id="update-progress-detail" class="update-progress-detail">正在连接更新服务器…</div>
-        <button id="update-progress-close" class="secondary hidden" type="button">关闭</button>
+        <div class="update-progress-actions"><button id="update-progress-retry" class="primary hidden" type="button">重新连接并续传</button><button id="update-progress-close" class="secondary hidden" type="button">关闭</button></div>
       </div>
     </div>
     <div id="reader-modal" class="library-modal hidden" role="dialog" aria-modal="true" aria-labelledby="reader-title">
@@ -446,6 +470,7 @@ const translateButton = document.querySelector<HTMLButtonElement>("#translate-bu
 const originalButton = document.querySelector<HTMLButtonElement>("#original-button")!;
 const parallelButton = document.querySelector<HTMLButtonElement>("#parallel-button")!;
 const projectsModal = document.querySelector<HTMLElement>("#projects-modal")!;
+const guideModal = document.querySelector<HTMLElement>("#guide-modal")!;
 const settingsModal = document.querySelector<HTMLElement>("#settings-modal")!;
 const projectSelect = document.querySelector<HTMLSelectElement>("#project-select")!;
 let currentHits: SearchHit[] = [];
@@ -459,6 +484,17 @@ let currentResearch: ResearchResponse | null = null;
 let noteTimer: number | null = null;
 let activeRequestId: string | null = null;
 let streamedAnswer = "";
+let lastUpdateReleaseId: string | null = null;
+let guideStepIndex = 0;
+
+const guideSteps = [
+  { title: "从研究问题开始", icon: "01", copy: "在中央输入研究问题，再按任务选择快速、标准或深度模式。快速模式只返回证据；标准模式生成有据回答；深度模式会先拆分子问题。", tips: ["“只检索”适合先找法源，不启动生成模型。", "“开始研究”会依次完成检索、组织回答和引证审计。"] },
+  { title: "用项目管理案件与专题", icon: "02", copy: "一个项目可以对应一个案件、客户事项、论文专题或长期跟踪任务。切换项目后，新回答、证据快照和研究笔记会归入该项目。", tips: ["标签用于区分法域、争点或工作阶段。", "笔记输入后自动保存，不需要手动提交。"] },
+  { title: "核验证据、原文与引证", icon: "03", copy: "右侧检查器是质量控制区：证据显示检索命中，原文用于核对页码和官方来源，审计逐句标明回答是否获得证据支持。", tips: ["点击证据卡即可跳到对应原文。", "绿色“引证已校验”不替代正式法律审查。"] },
+  { title: "扩展本地资料库", icon: "04", copy: "资料库包含随软件发布的规范化国际法文本，也可以导入自己的 PDF、TXT、Markdown、HTML 或 DOCX，建立仅存于本机的个人索引。", tips: ["导入前会先显示预览和分块数量。", "正式引用仍应通过官方来源链接复核。"] },
+  { title: "沉淀笔记并导出", icon: "05", copy: "项目工作区把研究笔记放在主位置。完成后可导出 Markdown 继续编辑，或导出自包含 HTML 进行归档和发送。", tips: ["导出前确认左侧已选中正确项目。", "备份功能可同时保存项目、笔记、会话和个人资料库。"] },
+  { title: "安全更新与本机设置", icon: "06", copy: "检查更新会先下载并验证签名和哈希，确认完整后才退出替换程序。网络中断会自动重试和续传，原版本在验证完成前始终可用。", tips: ["GitHub 长期不可达时，可在设置中配置 HTTP、HTTPS 或 SOCKS5 代理。", "也可以下载签名的 .ilia 包，通过“本地签名更新包”离线安装。"] },
+];
 
 function openInspector(name: "evidence" | "source" | "audit") {
   document.querySelectorAll<HTMLButtonElement>("[data-inspector]").forEach((button) => {
@@ -802,7 +838,23 @@ async function loadProjects() {
   projectSelect.value = projects.some((project) => project.id === selected) ? selected : "";
   const activeProject = projects.find((project) => project.id === projectSelect.value);
   document.querySelector<HTMLElement>("#workspace-context")!.textContent = activeProject?.title ?? "新研究";
+  syncProjectWorkspaceContext();
   await loadProjectNote();
+}
+
+function syncProjectWorkspaceContext() {
+  const activeProject = projects.find((project) => project.id === projectSelect.value);
+  document.querySelector<HTMLElement>("#project-active-title")!.textContent = activeProject?.title ?? "未选择项目";
+  document.querySelector<HTMLElement>("#project-active-description")!.textContent = activeProject?.description || (activeProject ? "这个项目还没有说明。" : "请从左侧研究空间选择项目，或新建一个项目。");
+  const tags = document.querySelector<HTMLElement>("#project-active-tags")!;
+  tags.replaceChildren(...(activeProject?.tags ?? []).map((value) => { const tag = document.createElement("span"); tag.textContent = value; return tag; }));
+  document.querySelector<HTMLElement>("#project-status")!.textContent = activeProject ? "笔记会自动保存" : "等待选择项目";
+}
+
+async function openProjects() {
+  projectsModal.classList.remove("hidden");
+  try { await loadProjects(); }
+  catch (error) { document.querySelector<HTMLElement>("#project-status")!.textContent = `项目读取失败：${String(error)}`; }
 }
 
 let noteLoadGeneration = 0;
@@ -820,6 +872,7 @@ async function loadProjectNote() {
   const latest = snapshot.notes.at(-1);
   projectNoteIds.set(projectId, latest?.id ?? null);
   if (!projectNoteDrafts.has(projectId)) note.value = latest?.body ?? "";
+  document.querySelector<HTMLElement>("#project-status")!.textContent = projectNoteDrafts.has(projectId) ? "有尚未写入的编辑内容" : "笔记已载入";
 }
 
 async function createProject() {
@@ -829,6 +882,46 @@ async function createProject() {
   const project = await call<Project>("create_project", { title: title.value.trim(), description: description.value, tags: tags.value.split(/[,，]/).map((v) => v.trim()).filter(Boolean) });
   localStorage.setItem("ilia.project", project.id); title.value = ""; description.value = ""; tags.value = ""; await loadProjects();
   document.querySelector<HTMLElement>("#project-status")!.textContent = `已创建并选中“${project.title}”。后续研究将自动保存。`;
+}
+
+function renderGuideStep() {
+  const step = guideSteps[guideStepIndex];
+  document.querySelector<HTMLElement>("#guide-step-count")!.textContent = `第 ${guideStepIndex + 1} 步 · 共 ${guideSteps.length} 步`;
+  document.querySelector<HTMLElement>("#guide-illustration")!.textContent = step.icon;
+  document.querySelector<HTMLElement>("#guide-step-title")!.textContent = step.title;
+  document.querySelector<HTMLElement>("#guide-step-copy")!.textContent = step.copy;
+  const tips = document.querySelector<HTMLElement>("#guide-step-tips")!;
+  tips.replaceChildren(...step.tips.map((copy) => { const item = document.createElement("div"); item.textContent = copy; return item; }));
+  document.querySelectorAll<HTMLButtonElement>(".guide-step-button").forEach((button, index) => button.classList.toggle("active", index === guideStepIndex));
+  document.querySelector<HTMLButtonElement>("#guide-back")!.disabled = guideStepIndex === 0;
+  document.querySelector<HTMLButtonElement>("#guide-next")!.textContent = guideStepIndex === guideSteps.length - 1 ? "完成" : "下一步";
+}
+
+function openGuide(step = 0) {
+  guideStepIndex = Math.max(0, Math.min(step, guideSteps.length - 1));
+  const navigation = document.querySelector<HTMLElement>("#guide-steps")!;
+  if (!navigation.childElementCount) {
+    navigation.replaceChildren(...guideSteps.map((item, index) => {
+      const button = document.createElement("button"); button.type = "button"; button.className = "guide-step-button";
+      const marker = document.createElement("span"); marker.textContent = String(index + 1).padStart(2, "0");
+      const label = document.createElement("strong"); label.textContent = item.title;
+      button.append(marker, label); button.addEventListener("click", () => { guideStepIndex = index; renderGuideStep(); }); return button;
+    }));
+  }
+  renderGuideStep();
+  guideModal.classList.remove("hidden");
+}
+
+function updateModeHelper() {
+  const descriptions: Record<ResearchMode, [string, string]> = {
+    quick: ["快速模式", "只检索并列出相关法源，不启动生成模型，速度最快。"],
+    standard: ["标准模式", "适合大多数研究：检索法源并生成带引证的回答。"],
+    deep: ["深度模式", "适合复杂争点：先拆分子问题，再综合多组证据。"],
+  };
+  const [title, copy] = descriptions[researchMode.value as ResearchMode];
+  const helper = document.querySelector<HTMLElement>("#mode-helper")!;
+  helper.querySelector("strong")!.textContent = title;
+  helper.querySelector("span")!.textContent = copy;
 }
 
 async function saveResearchToProject(silent = false) {
@@ -927,9 +1020,10 @@ async function stopResearch() {
 }
 
 async function checkForUpdates() {
-  const original = updateButton.textContent;
+  const label = document.querySelector<HTMLElement>("#update-button-label")!;
+  const original = label.textContent;
   updateButton.disabled = true;
-  updateButton.textContent = "检查中…";
+  label.textContent = "检查中…";
   try {
     const status = await call<UpdateStatus>("check_updates", {
       manifestUrl: updateManifestUrl,
@@ -944,7 +1038,8 @@ async function checkForUpdates() {
     }
     const summary = available.map((component) => `${component.kind} · ${component.version}`).join("\n");
     if (!window.confirm(`发现 ${status.manifest.release_id} 更新：\n\n${summary}\n\n现在安装更新？ILIA 将短暂退出，完成后自动重新打开。`)) return;
-    updateButton.textContent = "准备更新…";
+    label.textContent = "准备更新…";
+    lastUpdateReleaseId = status.manifest.release_id;
     showUpdateProgress({ phase: "checking", release_id: status.manifest.release_id, component_id: null, downloaded_bytes: 0, total_bytes: 0, message_zh: "正在启动安全更新进程" });
     await call<void>("install_update", {
       manifestUrl: updateManifestUrl,
@@ -957,7 +1052,21 @@ async function checkForUpdates() {
     window.alert(`更新检查失败：${String(error)}`);
   } finally {
     updateButton.disabled = false;
-    updateButton.textContent = original;
+    label.textContent = original;
+  }
+}
+
+async function retryUpdate() {
+  if (!lastUpdateReleaseId) return;
+  const retry = document.querySelector<HTMLButtonElement>("#update-progress-retry")!;
+  retry.disabled = true;
+  showUpdateProgress({ phase: "checking", release_id: lastUpdateReleaseId, component_id: null, downloaded_bytes: 0, total_bytes: 0, message_zh: "正在重新连接；已下载的有效片段会继续使用" });
+  try {
+    await call<void>("install_update", { manifestUrl: updateManifestUrl, signatureUrl: updateSignatureUrl });
+  } catch (error) {
+    showUpdateProgress({ phase: "failed", release_id: lastUpdateReleaseId, component_id: null, downloaded_bytes: 0, total_bytes: 0, message_zh: String(error) });
+  } finally {
+    retry.disabled = false;
   }
 }
 
@@ -969,21 +1078,23 @@ function showUpdateProgress(progress: UpdateProgress) {
   const fill = document.querySelector<HTMLElement>("#update-progress-fill")!;
   const track = fill.parentElement!;
   const close = document.querySelector<HTMLButtonElement>("#update-progress-close")!;
+  const retry = document.querySelector<HTMLButtonElement>("#update-progress-retry")!;
   modal.classList.remove("hidden");
   const percent = progress.total_bytes > 0 ? Math.min(100, Math.round(progress.downloaded_bytes / progress.total_bytes * 100)) : 0;
   fill.style.width = `${percent}%`;
   track.setAttribute("aria-valuenow", String(percent));
   close.classList.toggle("hidden", progress.phase !== "failed");
+  retry.classList.toggle("hidden", progress.phase !== "failed" || !lastUpdateReleaseId);
   if (progress.phase === "downloading") {
     title.textContent = `正在下载更新 · ${percent}%`;
-    message.textContent = "下载和校验完成前 ILIA 不会退出，你可以在这里查看实时进度。";
+    message.textContent = "网络波动会自动重试并从已下载位置续传；下载和校验完成前 ILIA 不会退出。";
     detail.textContent = `${progress.message_zh} · ${(progress.downloaded_bytes / 1024 / 1024).toFixed(1)} / ${(progress.total_bytes / 1024 / 1024).toFixed(1)} MiB`;
   } else if (progress.phase === "verifying") {
     title.textContent = "正在验证更新"; message.textContent = "正在核对签名、大小和 SHA-256。"; detail.textContent = progress.message_zh;
   } else if (progress.phase === "ready_to_apply") {
     title.textContent = "下载与验证完成"; message.textContent = "ILIA 即将退出以替换程序，完成后会自动重新打开。"; detail.textContent = progress.message_zh; fill.style.width = "100%"; track.setAttribute("aria-valuenow", "100");
   } else if (progress.phase === "failed") {
-    title.textContent = "更新未完成"; message.textContent = "ILIA 保持打开，现有版本没有被替换。"; detail.textContent = progress.message_zh;
+    title.textContent = "更新未完成"; message.textContent = "ILIA 保持打开，现有版本没有被替换。已下载的有效片段会保留供续传。"; detail.textContent = progress.message_zh;
   } else {
     title.textContent = "正在准备更新"; message.textContent = "ILIA 会先完成下载和校验，在真正替换程序前保持当前窗口打开。"; detail.textContent = progress.message_zh;
   }
@@ -1000,24 +1111,32 @@ askButton.addEventListener("click", runAsk); searchButton.addEventListener("clic
 stopButton.addEventListener("click", stopResearch);
 updateButton.addEventListener("click", checkForUpdates);
 libraryButton.addEventListener("click", () => { void openLibrary(); });
-document.querySelector("#projects-button")?.addEventListener("click", async () => { projectsModal.classList.remove("hidden"); try { await loadProjects(); } catch (error) { window.alert(String(error)); } });
-document.querySelector("#project-manage-shortcut")?.addEventListener("click", async () => { projectsModal.classList.remove("hidden"); try { await loadProjects(); } catch (error) { window.alert(String(error)); } });
-document.querySelector("#export-current-shortcut")?.addEventListener("click", async () => { projectsModal.classList.remove("hidden"); try { await loadProjects(); } catch (error) { window.alert(String(error)); } });
+document.querySelector("#projects-button")?.addEventListener("click", () => { void openProjects(); });
+document.querySelector("#project-manage-shortcut")?.addEventListener("click", () => { void openProjects(); });
+document.querySelector("#export-current-shortcut")?.addEventListener("click", () => { void openProjects(); });
+document.querySelector("#guide-button")?.addEventListener("click", () => openGuide());
+document.querySelector("#project-guide-button")?.addEventListener("click", () => openGuide(1));
 document.querySelector("#settings-button")?.addEventListener("click", () => { void openSettings(); });
 document.querySelectorAll<HTMLButtonElement>("[data-inspector]").forEach((button) => button.addEventListener("click", () => openInspector(button.dataset.inspector as "evidence" | "source" | "audit")));
 libraryClose.addEventListener("click", () => libraryModal.classList.add("hidden"));
 document.querySelector("#projects-close")?.addEventListener("click", () => projectsModal.classList.add("hidden"));
+document.querySelector("#guide-close")?.addEventListener("click", () => guideModal.classList.add("hidden"));
+document.querySelector("#guide-back")?.addEventListener("click", () => { if (guideStepIndex > 0) { guideStepIndex -= 1; renderGuideStep(); } });
+document.querySelector("#guide-next")?.addEventListener("click", () => { if (guideStepIndex < guideSteps.length - 1) { guideStepIndex += 1; renderGuideStep(); } else { localStorage.setItem("ilia.guide-completed", "true"); guideModal.classList.add("hidden"); document.querySelector("#first-run-tip")?.classList.add("hidden"); } });
 document.querySelector("#settings-close")?.addEventListener("click", () => settingsModal.classList.add("hidden"));
 document.querySelector("#update-notice-close")?.addEventListener("click", () => document.querySelector("#update-notice")?.classList.add("hidden"));
 document.querySelector("#update-progress-close")?.addEventListener("click", () => document.querySelector("#update-progress-modal")?.classList.add("hidden"));
+document.querySelector("#update-progress-retry")?.addEventListener("click", () => { void retryUpdate(); });
 libraryModal.addEventListener("click", (event) => { if (event.target === libraryModal) libraryModal.classList.add("hidden"); });
+projectsModal.addEventListener("click", (event) => { if (event.target === projectsModal) projectsModal.classList.add("hidden"); });
+guideModal.addEventListener("click", (event) => { if (event.target === guideModal) guideModal.classList.add("hidden"); });
 readerClose.addEventListener("click", () => readerModal.classList.add("hidden"));
 readerModal.addEventListener("click", (event) => { if (event.target === readerModal) readerModal.classList.add("hidden"); });
 libraryFilter.addEventListener("input", renderLibrary);
 document.querySelector("#import-button")?.addEventListener("click", () => { void importDocument(); });
 document.querySelector("#rebuild-button")?.addEventListener("click", async () => { await call("rebuild_user_index"); window.alert("个人资料全文索引已重建。"); });
 document.querySelector("#create-project-button")?.addEventListener("click", () => { void createProject(); });
-projectSelect.addEventListener("change", () => { localStorage.setItem("ilia.project", projectSelect.value); const activeProject = projects.find((project) => project.id === projectSelect.value); document.querySelector<HTMLElement>("#workspace-context")!.textContent = activeProject?.title ?? "新研究"; void loadProjectNote(); });
+projectSelect.addEventListener("change", () => { localStorage.setItem("ilia.project", projectSelect.value); const activeProject = projects.find((project) => project.id === projectSelect.value); document.querySelector<HTMLElement>("#workspace-context")!.textContent = activeProject?.title ?? "新研究"; syncProjectWorkspaceContext(); void loadProjectNote(); });
 document.querySelector("#save-answer-button")?.addEventListener("click", () => { void saveResearchToProject(); });
 document.querySelector("#export-md")?.addEventListener("click", () => { void exportCurrent("markdown"); });
 document.querySelector("#export-html")?.addEventListener("click", () => { void exportCurrent("html"); });
@@ -1045,7 +1164,10 @@ document.querySelector<HTMLTextAreaElement>("#project-note")?.addEventListener("
   }, 600);
 });
 question.addEventListener("keydown", (event) => { if ((event.ctrlKey || event.metaKey) && event.key === "Enter") runAsk(); });
-document.querySelectorAll<HTMLButtonElement>(".example").forEach((button) => button.addEventListener("click", () => { question.value = button.querySelector("strong")?.textContent ?? button.textContent ?? ""; document.querySelectorAll(".history-item").forEach((item) => item.classList.toggle("active", item === button)); question.focus(); }));
+researchMode.addEventListener("change", updateModeHelper);
+document.querySelectorAll<HTMLButtonElement>(".example").forEach((button) => button.addEventListener("click", () => { question.value = button.dataset.question ?? button.querySelector("strong")?.textContent ?? button.textContent ?? ""; document.querySelectorAll(".history-item").forEach((item) => item.classList.toggle("active", item === button)); question.focus(); }));
+document.querySelector("#first-run-guide")?.addEventListener("click", () => openGuide());
+document.querySelector("#first-run-dismiss")?.addEventListener("click", () => { localStorage.setItem("ilia.guide-dismissed", "true"); document.querySelector("#first-run-tip")?.classList.add("hidden"); });
 backendSelect.addEventListener("change", async () => { try { updateRuntime(await call<RuntimeProbeReport>("set_runtime_preference", { preference: backendSelect.value })); } catch (error) { showError(error); } });
 sourceLink.addEventListener("click", async (event) => {
   if (!isTauri()) return;
@@ -1098,6 +1220,8 @@ document.addEventListener("keydown", (event) => {
 });
 
 call<RuntimeProbeReport>("get_runtime_status").then(updateRuntime).catch(showError);
+updateModeHelper();
+if (!localStorage.getItem("ilia.guide-completed") && !localStorage.getItem("ilia.guide-dismissed")) document.querySelector("#first-run-tip")?.classList.remove("hidden");
 void loadProjects().catch(() => { document.querySelector<HTMLElement>("#workspace-context")!.textContent = "新研究"; });
 void refreshUpdateSummary(true).catch(() => { /* 更新状态不影响离线研究工作流。 */ });
 const idleTimeout = document.querySelector<HTMLSelectElement>("#idle-timeout")!;

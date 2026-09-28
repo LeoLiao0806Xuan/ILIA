@@ -16,6 +16,7 @@ use zip::{ZipArchive, ZipWriter, write::SimpleFileOptions};
 pub const UPDATE_SCHEMA_VERSION: u32 = 1;
 pub const LOCAL_PACKAGE_VERSION: u32 = 1;
 pub const MAX_LOCAL_PACKAGE_BYTES: u64 = 16 * 1024 * 1024 * 1024;
+const DOWNLOAD_ATTEMPTS: usize = 5;
 
 #[derive(Debug, Error)]
 pub enum UpdateError {
@@ -619,16 +620,25 @@ impl UpdateEngine {
         let mut completed_bytes = 0_u64;
         for component in pending {
             let destination = stage_root.join(format!("{}.payload", safe_segment(&component.id)?));
-            download_payload(component, &destination, proxy, |component_bytes| {
-                report(&UpdateProgress {
-                    phase: "downloading".into(),
-                    release_id: release.manifest.release_id.clone(),
-                    component_id: Some(component.id.clone()),
-                    downloaded_bytes: completed_bytes.saturating_add(component_bytes),
-                    total_bytes,
-                    message_zh: format!("正在下载更新组件 {}", component.id),
-                });
-            })?;
+            download_payload(
+                component,
+                &destination,
+                proxy,
+                |component_bytes, attempt| {
+                    report(&UpdateProgress {
+                        phase: "downloading".into(),
+                        release_id: release.manifest.release_id.clone(),
+                        component_id: Some(component.id.clone()),
+                        downloaded_bytes: completed_bytes.saturating_add(component_bytes),
+                        total_bytes,
+                        message_zh: if attempt == 1 {
+                            format!("正在下载更新组件 {}", component.id)
+                        } else {
+                            format!("网络波动，正在第 {attempt} 次续传组件 {}", component.id)
+                        },
+                    });
+                },
+            )?;
             completed_bytes = completed_bytes.saturating_add(component.payload_size);
         }
         report(&UpdateProgress {
@@ -953,6 +963,19 @@ fn read_url_with_proxy(url: &str, proxy: Option<&ProxyConfig>) -> Result<Vec<u8>
         let path = file_url_path(url)?;
         return Ok(fs::read(path)?);
     }
+    for attempt in 1..=3 {
+        match read_network_url_once(url, proxy) {
+            Ok(bytes) => return Ok(bytes),
+            Err(error) if attempt < 3 && is_retryable_download_error(&error) => {
+                std::thread::sleep(std::time::Duration::from_secs(attempt as u64));
+            }
+            Err(error) => return Err(error),
+        }
+    }
+    unreachable!("manifest retry loop always returns")
+}
+
+fn read_network_url_once(url: &str, proxy: Option<&ProxyConfig>) -> Result<Vec<u8>, UpdateError> {
     let mut builder =
         ureq::Agent::config_builder().timeout_global(Some(std::time::Duration::from_secs(30)));
     if let Some(proxy) = proxy {
@@ -963,6 +986,42 @@ fn read_url_with_proxy(url: &str, proxy: Option<&ProxyConfig>) -> Result<Vec<u8>
 }
 
 fn download_payload(
+    component: &UpdateComponent,
+    destination: &Path,
+    proxy: Option<&ProxyConfig>,
+    mut report: impl FnMut(u64, usize),
+) -> Result<(), UpdateError> {
+    for attempt in 1..=DOWNLOAD_ATTEMPTS {
+        let result = download_payload_once(component, destination, proxy, |bytes| {
+            report(bytes, attempt)
+        });
+        match result {
+            Ok(()) => return Ok(()),
+            Err(error)
+                if attempt < DOWNLOAD_ATTEMPTS
+                    && !component.payload_url.starts_with("file://")
+                    && is_retryable_download_error(&error) =>
+            {
+                report(
+                    resumable_offset(
+                        component,
+                        &destination.with_extension("part"),
+                        &destination.with_extension("part.json"),
+                    )
+                    .unwrap_or(0),
+                    attempt + 1,
+                );
+                std::thread::sleep(std::time::Duration::from_secs(
+                    1_u64 << (attempt - 1).min(3),
+                ));
+            }
+            Err(error) => return Err(error),
+        }
+    }
+    unreachable!("download retry loop always returns")
+}
+
+fn download_payload_once(
     component: &UpdateComponent,
     destination: &Path,
     proxy: Option<&ProxyConfig>,
@@ -1060,6 +1119,23 @@ fn download_payload(
         let _ = write_atomic(&state_path, &serde_json::to_vec(&state).unwrap_or_default());
     }
     result
+}
+
+fn is_retryable_download_error(error: &UpdateError) -> bool {
+    match error {
+        UpdateError::Http(_) => true,
+        UpdateError::Io(error) => matches!(
+            error.kind(),
+            io::ErrorKind::UnexpectedEof
+                | io::ErrorKind::ConnectionReset
+                | io::ErrorKind::ConnectionAborted
+                | io::ErrorKind::BrokenPipe
+                | io::ErrorKind::TimedOut
+                | io::ErrorKind::WouldBlock
+                | io::ErrorKind::Interrupted
+        ),
+        _ => false,
+    }
 }
 
 fn pending_components<'a>(

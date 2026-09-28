@@ -1,0 +1,43 @@
+﻿{
+    "report_version":  2,
+    "release_version":  "1.1.5",
+    "generated_at_utc":  "2026-09-28T09:11:59.4681978Z",
+    "host":  {
+                 "os":  "Microsoft Windows NT 10.0.26200.0",
+                 "machine":  "XUANGARDEN"
+             },
+    "installer_sha256":  "a063cc49938712cd5bcc6b2ed71764e980767b66f8864460a2e91a72d95b4966",
+    "previous_installer_sha256":  "297aaae27511d2d8dc0fcd971a86f6c4c4bc76dddc49b8c9ea816f652045f5a4",
+    "previous_product_version":  "1.1.4",
+    "upgraded_product_version":  "1.1.5",
+    "writable_databases":  [
+                               "user.sqlite",
+                               "workspace.sqlite"
+                           ],
+    "cases":  [
+                  {
+                      "name":  "fresh_install_uninstall",
+                      "status":  "passed",
+                      "detail":  "Candidate smoke report confirms install, startup, retrieval, local answer, and uninstall."
+                  },
+                  {
+                      "name":  "upgrade_1.1.4_to_1.1.5",
+                      "status":  "passed",
+                      "detail":  "Installed and started 1.1.4, upgraded in place to 1.1.5, started the new desktop, preserved isolated user data, and verified both writable databases."
+                  },
+                  {
+                      "name":  "interrupted_update_rollback",
+                      "status":  "passed",
+                      "detail":  "ilia-updater rollback and resumable partial-download tests passed."
+                  },
+                  {
+                      "name":  "invalid_signature",
+                      "status":  "passed",
+                      "detail":  "Ed25519 tamper and local-package rejection tests passed."
+                  }
+              ],
+    "errors":  [
+
+               ],
+    "passed":  true
+}

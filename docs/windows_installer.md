@@ -16,7 +16,7 @@ ILIA 的 Windows x64 安装包包含桌面程序、正式 SQLite 数据库、BGE
 powershell -NoProfile -ExecutionPolicy Bypass -File installer/build-installer.ps1
 ```
 
-默认构建版本为 `1.1.4`。安装器和桌面 EXE 当前没有 Authenticode 签名；发行包通过项目 GitHub Release 分发，并附带构建生成的 `SHA256SUMS.txt`。用户可运行 `Get-FileHash -Algorithm SHA256 <文件>` 与清单逐项比对。
+默认构建版本为 `1.1.5`。安装器和桌面 EXE 当前没有 Authenticode 签名；发行包通过项目 GitHub Release 分发，并附带构建生成的 `SHA256SUMS.txt`。用户可运行 `Get-FileHash -Algorithm SHA256 <文件>` 与清单逐项比对。
 
 产物位于 `dist/installer/`。由于完整离线负载超过单个安装数据文件的安全上限，交付物由一个 `setup.exe` 和若干 `.bin` 数据片组成；它们必须放在同一目录。用户只需运行 `setup.exe`。
 
