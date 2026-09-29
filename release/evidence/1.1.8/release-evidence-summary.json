@@ -1,0 +1,37 @@
+{
+  "version": "1.1.8",
+  "status": "passed",
+  "release_profile": "application_update_only",
+  "base_offline_installer_version": "1.1.7",
+  "scope": [
+    "tutorial_marker_visuals",
+    "application",
+    "updater"
+  ],
+  "verification": {
+    "frontend_build": "passed",
+    "rust_format": "passed",
+    "rust_clippy": "passed",
+    "rust_tests": {
+      "status": "passed",
+      "passed": 63,
+      "failed": 0
+    },
+    "signed_local_package_apply": "passed",
+    "legacy_red_tutorial_marker_removed": true
+  },
+  "artifacts": {
+    "application": {
+      "bytes": 41209585,
+      "sha256": "2e072b8b9a83902697c238455f96451bb5f8171dcf99ee771385c14007155af2"
+    },
+    "updater": {
+      "bytes": 10243258,
+      "sha256": "543a9e79834587d593a8af5a76c1e670e225fe3b7ae648ff17780b1e6b672092"
+    },
+    "offline_update": {
+      "bytes": 16233741,
+      "sha256": "5700ae869c92d38e2535673db37ce78fc9af95135a10ee7e50a9a8fee75c6d4e"
+    }
+  }
+}

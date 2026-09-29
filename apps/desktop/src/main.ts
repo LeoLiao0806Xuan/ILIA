@@ -240,7 +240,7 @@ async function call<T>(command: string, args: Record<string, unknown> = {}): Pro
   if (command === "list_user_documents") return [] as T;
   if (command === "get_proxy_settings") return { enabled: false, redacted_url: null, source: null } as T;
   if (command === "create_backup" || command === "restore_backup") return { path: String(args.outputPath ?? args.packagePath ?? "ILIA-backup.ilia-workspace"), user_bytes: 32768, workspace_bytes: 65536, user_sha256: "demo", workspace_sha256: "demo" } as T;
-  if (command === "get_update_summary") return { current_version: "1.1.7", last_release_id: "v1.1.6", last_status: "applied", applied_components: ["application", "updater"] } as T;
+  if (command === "get_update_summary") return { current_version: "1.1.8", last_release_id: "v1.1.7", last_status: "applied", applied_components: ["application", "updater"] } as T;
   if (command === "check_updates") return { manifest: { release_id: "demo", components: [] }, installed_versions: { components: {} } } as T;
   if (command === "install_update") return undefined as T;
   if (command === "cancel_research") return true as T;
@@ -346,7 +346,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
           <div class="loading-state hidden" id="loading-state"><div class="loader"></div><h3 id="loading-title">正在检索本地资料</h3><p id="loading-copy">正在运行 FTS5 与 BGE-M3 混合检索。</p></div>
           <article class="answer-card hidden" id="answer-card"><div class="answer-warning hidden" id="answer-warning" role="status"></div><div class="answer-copy" id="answer-copy"></div><div id="quick-results" class="quick-results hidden"></div><div class="answer-footer"><div class="answer-meta" id="answer-meta"></div><button class="secondary answer-save" id="save-answer-button">保存到当前项目</button></div></article>
         </section>
-        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.7</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
+        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.8</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
       </section>
     </main>
 
@@ -1112,7 +1112,7 @@ function renderGuideStep() {
   const step = guideSteps[guideStepIndex];
   document.querySelector<HTMLElement>("#guide-step-count")!.textContent = `第 ${guideStepIndex + 1} 步 · 共 ${guideSteps.length} 步`;
   const preview = document.querySelector<HTMLElement>("#guide-illustration")!;
-  preview.innerHTML = `<div class="guide-ui"><div class="guide-ui-rail"><b>ILIA</b><span></span><span></span><span></span></div><div class="guide-ui-project"><b>研究空间</b><span></span><span></span><span></span></div><div class="guide-ui-main"><div class="guide-ui-query"></div><div class="guide-ui-answer"></div></div><div class="guide-ui-inspector"><b>证据　原文　审计</b><span></span><span></span></div><i class="guide-hotspot" data-focus="${step.focus}">${guideStepIndex + 1}</i></div>`;
+  preview.innerHTML = `<div class="guide-ui"><div class="guide-ui-rail"><b>ILIA</b><span></span><span></span><span></span></div><div class="guide-ui-project"><b>研究空间</b><span></span><span></span><span></span></div><div class="guide-ui-main"><div class="guide-ui-query"></div><div class="guide-ui-answer"></div></div><div class="guide-ui-inspector"><b>证据　原文　审计</b><span></span><span></span></div><span class="guide-marker" data-focus="${step.focus}" aria-hidden="true">${String(guideStepIndex + 1).padStart(2, "0")}</span></div>`;
   document.querySelector<HTMLElement>("#guide-step-title")!.textContent = step.title;
   document.querySelector<HTMLElement>("#guide-step-copy")!.textContent = step.copy;
   const tips = document.querySelector<HTMLElement>("#guide-step-tips")!;
