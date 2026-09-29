@@ -97,6 +97,8 @@ impl LlamaServerConfig {
 pub struct ManagedLlamaServer {
     child: Child,
     base_url: String,
+    #[cfg(windows)]
+    job_handle: Option<isize>,
 }
 
 impl ManagedLlamaServer {
@@ -157,7 +159,13 @@ impl ManagedLlamaServer {
         let mut server = Self {
             child,
             base_url: config.base_url(),
+            #[cfg(windows)]
+            job_handle: None,
         };
+        #[cfg(windows)]
+        {
+            server.job_handle = create_kill_on_close_job(&server.child);
+        }
         server.wait_until_ready(config.startup_timeout, &config.log_path, cancellation)?;
         Ok(server)
     }
@@ -194,6 +202,44 @@ impl Drop for ManagedLlamaServer {
     fn drop(&mut self) {
         let _ = self.child.kill();
         let _ = self.child.wait();
+        #[cfg(windows)]
+        if let Some(job_handle) = self.job_handle.take() {
+            unsafe {
+                windows_sys::Win32::Foundation::CloseHandle(job_handle as _);
+            }
+        }
+    }
+}
+
+#[cfg(windows)]
+fn create_kill_on_close_job(child: &Child) -> Option<isize> {
+    use std::{mem::size_of, os::windows::io::AsRawHandle, ptr};
+    use windows_sys::Win32::Foundation::CloseHandle;
+    use windows_sys::Win32::System::JobObjects::{
+        AssignProcessToJobObject, CreateJobObjectW, JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE,
+        JOBOBJECT_EXTENDED_LIMIT_INFORMATION, JobObjectExtendedLimitInformation,
+        SetInformationJobObject,
+    };
+
+    unsafe {
+        let job = CreateJobObjectW(ptr::null(), ptr::null());
+        if job.is_null() {
+            return None;
+        }
+        let mut limits = JOBOBJECT_EXTENDED_LIMIT_INFORMATION::default();
+        limits.BasicLimitInformation.LimitFlags = JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE;
+        let configured = SetInformationJobObject(
+            job,
+            JobObjectExtendedLimitInformation,
+            (&limits as *const JOBOBJECT_EXTENDED_LIMIT_INFORMATION).cast(),
+            size_of::<JOBOBJECT_EXTENDED_LIMIT_INFORMATION>() as u32,
+        ) != 0;
+        let assigned = configured && AssignProcessToJobObject(job, child.as_raw_handle() as _) != 0;
+        if !assigned {
+            CloseHandle(job);
+            return None;
+        }
+        Some(job as isize)
     }
 }
 

@@ -184,6 +184,7 @@ struct DesktopUpdateStatus {
 struct ProxySettingsView {
     enabled: bool,
     redacted_url: Option<String>,
+    source: Option<&'static str>,
 }
 
 #[derive(Serialize)]
@@ -287,6 +288,16 @@ impl DesktopServices {
             .lock()
             .map_err(|_| "active research lock is poisoned".to_owned())?;
         Ok(cancel_active_research(&active, request_id))
+    }
+
+    fn shutdown(&self) {
+        let _ = self.cancel_research(None);
+        if let Ok(mut runtime) = self.runtime.lock() {
+            runtime.take();
+        }
+        if let Ok(mut embedder) = self.embedder.lock() {
+            embedder.take();
+        }
     }
 
     fn runtime_status(&self) -> Result<RuntimeProbeReport, String> {
@@ -1252,23 +1263,135 @@ fn format_citation(
     ))
 }
 
-fn load_proxy(path: &std::path::Path) -> Result<Option<ProxyConfig>, String> {
+fn validate_proxy_url(value: &str) -> Option<ProxyConfig> {
+    let value = value.trim();
+    let parsed = url::Url::parse(value).ok()?;
+    if !matches!(parsed.scheme(), "http" | "https" | "socks5") || parsed.host_str().is_none() {
+        return None;
+    }
+    Some(ProxyConfig { url: value.into() })
+}
+
+fn load_manual_proxy(path: &std::path::Path) -> Result<Option<ProxyConfig>, String> {
     if !path.is_file() {
         return Ok(None);
     }
-    serde_json::from_slice(&std::fs::read(path).map_err(|error| error.to_string())?)
+    let proxy: ProxyConfig =
+        serde_json::from_slice(&std::fs::read(path).map_err(|error| error.to_string())?)
+            .map_err(|error| error.to_string())?;
+    validate_proxy_url(&proxy.url)
         .map(Some)
-        .map_err(|error| error.to_string())
+        .ok_or_else(|| "已保存的代理 URL 无效".into())
+}
+
+fn environment_proxy() -> Option<ProxyConfig> {
+    [
+        "HTTPS_PROXY",
+        "https_proxy",
+        "ALL_PROXY",
+        "all_proxy",
+        "HTTP_PROXY",
+        "http_proxy",
+    ]
+    .into_iter()
+    .find_map(|name| {
+        std::env::var(name)
+            .ok()
+            .and_then(|value| validate_proxy_url(&value))
+    })
+}
+
+#[cfg(windows)]
+fn windows_system_proxy() -> Option<ProxyConfig> {
+    use winreg::{RegKey, enums::HKEY_CURRENT_USER};
+
+    let settings = RegKey::predef(HKEY_CURRENT_USER)
+        .open_subkey("Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings")
+        .ok()?;
+    let enabled: u32 = settings.get_value("ProxyEnable").ok()?;
+    if enabled == 0 {
+        return None;
+    }
+    let raw: String = settings.get_value("ProxyServer").ok()?;
+    let selected = if raw.contains('=') {
+        raw.split(';')
+            .filter_map(|entry| entry.split_once('='))
+            .find(|(scheme, _)| scheme.eq_ignore_ascii_case("https"))
+            .or_else(|| {
+                raw.split(';')
+                    .filter_map(|entry| entry.split_once('='))
+                    .find(|(scheme, _)| scheme.eq_ignore_ascii_case("http"))
+            })
+            .or_else(|| {
+                raw.split(';')
+                    .filter_map(|entry| entry.split_once('='))
+                    .find(|(scheme, _)| scheme.to_ascii_lowercase().starts_with("socks"))
+            })
+            .map(|(scheme, address)| {
+                let protocol = if scheme.to_ascii_lowercase().starts_with("socks") {
+                    "socks5"
+                } else {
+                    "http"
+                };
+                format!("{protocol}://{address}")
+            })?
+    } else if raw.contains("://") {
+        raw
+    } else {
+        format!("http://{raw}")
+    };
+    validate_proxy_url(&selected)
+}
+
+#[cfg(not(windows))]
+fn windows_system_proxy() -> Option<ProxyConfig> {
+    None
+}
+
+fn detected_proxy() -> Option<ProxyConfig> {
+    environment_proxy().or_else(windows_system_proxy)
+}
+
+fn load_proxy(path: &std::path::Path) -> Result<Option<ProxyConfig>, String> {
+    Ok(load_manual_proxy(path)?.or_else(detected_proxy))
+}
+
+fn updater_proxy_path(paths: &AppPaths) -> Result<Option<PathBuf>, String> {
+    if paths.proxy_config.is_file() {
+        load_manual_proxy(&paths.proxy_config)?;
+        return Ok(Some(paths.proxy_config.clone()));
+    }
+    let Some(proxy) = detected_proxy() else {
+        return Ok(None);
+    };
+    let automatic = paths.app_data_dir.join("update-proxy-automatic.json");
+    std::fs::create_dir_all(&paths.app_data_dir).map_err(|error| error.to_string())?;
+    std::fs::write(
+        &automatic,
+        serde_json::to_vec_pretty(&proxy).map_err(|error| error.to_string())?,
+    )
+    .map_err(|error| error.to_string())?;
+    Ok(Some(automatic))
 }
 
 #[tauri::command]
 async fn get_proxy_settings(
     state: State<'_, Arc<DesktopServices>>,
 ) -> Result<ProxySettingsView, String> {
-    let proxy = load_proxy(&state.paths.proxy_config)?;
+    let manual = load_manual_proxy(&state.paths.proxy_config)?;
+    let (proxy, source) = if let Some(proxy) = manual {
+        (Some(proxy), Some("manual"))
+    } else if let Some(proxy) = environment_proxy() {
+        (Some(proxy), Some("environment"))
+    } else if let Some(proxy) = windows_system_proxy() {
+        (Some(proxy), Some("system"))
+    } else {
+        (None, None)
+    };
     Ok(ProxySettingsView {
         enabled: proxy.is_some(),
         redacted_url: proxy.map(|value| redact_url(&value.url)),
+        source,
     })
 }
 
@@ -1423,8 +1546,8 @@ async fn install_update(
         "--progress-file",
         &progress_path.to_string_lossy(),
     ]);
-    if paths.proxy_config.is_file() {
-        command.args(["--proxy-config", &paths.proxy_config.to_string_lossy()]);
+    if let Some(proxy_path) = updater_proxy_path(&paths)? {
+        command.args(["--proxy-config", &proxy_path.to_string_lossy()]);
     }
     spawn_update_and_monitor(command, progress_path, app)
 }
@@ -1533,6 +1656,19 @@ fn spawn_update_and_monitor(
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
+    #[cfg(windows)]
+    {
+        use std::os::windows::ffi::OsStrExt;
+        let app_id = std::ffi::OsStr::new("com.ilia.desktop")
+            .encode_wide()
+            .chain(std::iter::once(0))
+            .collect::<Vec<_>>();
+        unsafe {
+            let _ = windows_sys::Win32::UI::Shell::SetCurrentProcessExplicitAppUserModelID(
+                app_id.as_ptr(),
+            );
+        }
+    }
     tauri::Builder::default()
         .plugin(tauri_plugin_opener::init())
         .setup(|app| {
@@ -1543,9 +1679,12 @@ pub fn run() {
             Ok(())
         })
         .on_window_event(|window, event| {
-            if matches!(event, tauri::WindowEvent::Destroyed) {
+            if matches!(
+                event,
+                tauri::WindowEvent::CloseRequested { .. } | tauri::WindowEvent::Destroyed
+            ) {
                 let services = window.state::<Arc<DesktopServices>>();
-                let _ = services.cancel_research(None);
+                services.shutdown();
             }
         })
         .invoke_handler(tauri::generate_handler![

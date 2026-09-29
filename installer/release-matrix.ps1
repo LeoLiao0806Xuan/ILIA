@@ -3,7 +3,8 @@ param(
     [Parameter(Mandatory = $true)][string]$Installer,
     [Parameter(Mandatory = $true)][string]$PreviousInstaller,
     [Parameter(Mandatory = $true)][string]$Output,
-    [string]$SmokeReport = ""
+    [string]$SmokeReport = "",
+    [switch]$AllowInstallerTestingOnThisMachine
 )
 
 $ErrorActionPreference = "Stop"
@@ -33,9 +34,25 @@ function Assert-SafePath([string]$Path) {
     }
 }
 
+function Assert-NoProductionInstall {
+    if (-not $AllowInstallerTestingOnThisMachine) {
+        throw "Installer tests are destructive to the product registration. Run only in Windows Sandbox/a clean VM, or pass -AllowInstallerTestingOnThisMachine after verifying no registered production installation is present."
+    }
+    $defaultInstall = Join-Path $oldLocalAppData "Programs\ILIA\ilia-desktop.exe"
+    $productKey = "{A1A60D67-CA13-4A51-93E7-445D2A7CF031}_is1"
+    $registryKeys = @(
+        "Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\$productKey",
+        "Registry::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\$productKey",
+        "Registry::HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\$productKey"
+    )
+    if ((Test-Path -LiteralPath $defaultInstall) -or ($registryKeys | Where-Object { Test-Path -LiteralPath $_ })) {
+        throw "Refusing to run installer upgrade tests while a production ILIA installation is present. Use a clean VM or Windows Sandbox."
+    }
+}
+
 function Invoke-Installer([string]$Path) {
     $process = Start-Process -FilePath $Path -ArgumentList @(
-        "/VERYSILENT", "/SUPPRESSMSGBOXES", "/NORESTART", "/SP-", "/DIR=$installRoot"
+        "/VERYSILENT", "/SUPPRESSMSGBOXES", "/NORESTART", "/SP-", "/NOICONS", "/DIR=$installRoot"
     ) -WindowStyle Hidden -Wait -PassThru
     if ($process.ExitCode -ne 0) { throw "Installer failed with exit code $($process.ExitCode): $Path" }
 }
@@ -53,6 +70,7 @@ function Start-And-VerifyDesktop([string]$Label) {
 
 Assert-SafePath $installRoot
 Assert-SafePath $profileRoot
+Assert-NoProductionInstall
 if (-not (Test-Path -LiteralPath $Installer -PathType Leaf)) { throw "Candidate installer is missing: $Installer" }
 if (-not (Test-Path -LiteralPath $PreviousInstaller -PathType Leaf)) { throw "Previous installer is missing: $PreviousInstaller" }
 

@@ -259,14 +259,17 @@ button:disabled { cursor: wait; opacity: .55; }
 .project-export-bar strong, .project-export-bar span { display: block; }
 .project-export-bar strong { color: var(--text); font-size: 10px; }
 .project-export-bar span { margin-top: 4px; color: var(--faint); font-size: 9px; }
-.guide-dialog { width: min(900px, 100%); max-height: min(720px, 90vh); overflow: hidden; padding: 24px; border: 1px solid var(--line); border-radius: 12px; background: var(--shell); box-shadow: 0 24px 70px rgba(0,0,0,.28); }
-.guide-layout { min-height: 410px; display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 22px; margin-top: 22px; }
-.guide-steps { display: grid; align-content: start; gap: 5px; padding: 7px; border-radius: 10px; background: var(--sidebar); }
+#guide-modal { padding: clamp(18px, 3vw, 40px); }
+.guide-dialog { width: min(1040px, calc(100vw - 48px)); height: min(760px, calc(100vh - 48px)); max-height: none; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; overflow: hidden; padding: 0; border: 1px solid var(--line); border-radius: 14px; background: var(--shell); box-shadow: 0 28px 80px rgba(0,0,0,.3); }
+.guide-dialog > .library-header { padding: 26px 30px 21px; }
+.guide-dialog > .library-header > div { max-width: 720px; }
+.guide-layout { min-height: 0; display: grid; grid-template-columns: 210px minmax(0, 720px); justify-content: center; gap: 0; margin: 0; overflow: hidden; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--paper); }
+.guide-steps { min-height: 0; display: grid; align-content: start; gap: 6px; overflow: auto; padding: 22px 14px; border-right: 1px solid var(--line); background: var(--sidebar); }
 .guide-step-button { display: grid; grid-template-columns: 27px 1fr; gap: 9px; align-items: center; padding: 10px; border: 0; border-radius: 7px; background: transparent; color: var(--muted); text-align: left; }
 .guide-step-button > span { width: 25px; height: 25px; display: grid; place-items: center; border-radius: 50%; background: rgba(47,113,89,.09); color: var(--accent); font-size: 9px; }
 .guide-step-button strong { font-size: 11px; font-weight: 500; }
 .guide-step-button:hover, .guide-step-button.active { background: var(--paper); color: var(--text); box-shadow: 0 2px 9px rgba(23,36,31,.06); }
-.guide-content { padding: 16px 18px; }
+.guide-content { width: 100%; min-width: 0; min-height: 0; justify-self: center; overflow: auto; padding: 25px 32px 30px; scrollbar-gutter: stable; }
 .guide-step-count { color: var(--gold); font-size: 9px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
 .guide-illustration { height: 190px; margin: 12px 0 18px; overflow: hidden; border: 1px solid #ced8d1; border-radius: 10px; background: #e8e8e3; }
 .guide-ui { position: relative; height: 100%; display: grid; grid-template-columns: 42px 72px 1fr 92px; color: #53615b; font-size: 7px; }
@@ -289,7 +292,7 @@ button:disabled { cursor: wait; opacity: .55; }
 .guide-content > p { max-width: 620px; color: var(--muted); font-size: 12px; line-height: 1.75; }
 .guide-step-tips { display: grid; gap: 7px; margin-top: 18px; }
 .guide-step-tips div { padding: 10px 12px; border-left: 3px solid #9db8aa; background: #eef3ef; color: #45564f; font-size: 10px; line-height: 1.6; }
-.guide-footer { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding-top: 17px; border-top: 1px solid var(--line); color: var(--faint); font-size: 10px; }
+.guide-footer { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 16px 30px 18px; color: var(--faint); font-size: 10px; }
 .guide-footer > div { display: flex; gap: 8px; }
 .update-resilience { display: grid; gap: 5px; margin: 8px 0 18px; padding: 12px 13px; border: 1px solid #c7d8ce; border-radius: 8px; background: var(--accent-soft); }
 .update-resilience strong { color: var(--accent-dark); font-size: 11px; }
@@ -354,5 +357,9 @@ button:disabled { cursor: wait; opacity: .55; }
   .source-placeholder { min-height: 250px; }
   .project-workspace { grid-template-columns: 250px minmax(0, 1fr); }
   .project-create-panel, .project-note-panel { padding: 19px; }
-  .guide-layout { grid-template-columns: 190px minmax(0, 1fr); }
+  .guide-dialog { width: calc(100vw - 32px); height: calc(100vh - 32px); }
+  .guide-dialog > .library-header { padding: 22px 24px 18px; }
+  .guide-layout { grid-template-columns: 180px minmax(0, 1fr); }
+  .guide-content { padding: 22px 24px 26px; }
+  .guide-footer { padding: 14px 24px 16px; }
 }

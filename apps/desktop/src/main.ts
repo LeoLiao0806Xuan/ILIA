@@ -162,7 +162,7 @@ interface UpdateStatus {
 interface Project { id: string; title: string; description: string; tags: string[] }
 interface ImportPreview { preview_id: string; source_filename: string; source_sha256: string; byte_length: number; inferred_title: string; inferred_language: string; inferred_document_type: string; text_preview: string; chunk_count: number }
 interface ImportedDocument { id: string; title: string; source_filename: string; source_sha256: string; byte_length: number; chunk_count: number }
-interface ProxySettings { enabled: boolean; redacted_url: string | null }
+interface ProxySettings { enabled: boolean; redacted_url: string | null; source: "manual" | "environment" | "system" | null }
 interface BackupSummary { path: string; user_bytes: number; workspace_bytes: number; user_sha256: string; workspace_sha256: string }
 interface UpdateSummary {
   current_version: string;
@@ -238,9 +238,9 @@ async function call<T>(command: string, args: Record<string, unknown> = {}): Pro
   if (command === "prewarm_model") return { detection: demoRuntime, selected_backend: "cuda", selected_profile: { context_size: 16384, gpu_layers: 99, estimated_memory_mib: 5200, device: "CUDA0" }, attempts: [] } as T;
   if (command === "list_projects") return [] as T;
   if (command === "list_user_documents") return [] as T;
-  if (command === "get_proxy_settings") return { enabled: false, redacted_url: null } as T;
+  if (command === "get_proxy_settings") return { enabled: false, redacted_url: null, source: null } as T;
   if (command === "create_backup" || command === "restore_backup") return { path: String(args.outputPath ?? args.packagePath ?? "ILIA-backup.ilia-workspace"), user_bytes: 32768, workspace_bytes: 65536, user_sha256: "demo", workspace_sha256: "demo" } as T;
-  if (command === "get_update_summary") return { current_version: "1.1.6", last_release_id: "v1.1.5", last_status: "applied", applied_components: ["application", "updater"] } as T;
+  if (command === "get_update_summary") return { current_version: "1.1.7", last_release_id: "v1.1.6", last_status: "applied", applied_components: ["application", "updater"] } as T;
   if (command === "check_updates") return { manifest: { release_id: "demo", components: [] }, installed_versions: { components: {} } } as T;
   if (command === "install_update") return undefined as T;
   if (command === "cancel_research") return true as T;
@@ -346,7 +346,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
           <div class="loading-state hidden" id="loading-state"><div class="loader"></div><h3 id="loading-title">正在检索本地资料</h3><p id="loading-copy">正在运行 FTS5 与 BGE-M3 混合检索。</p></div>
           <article class="answer-card hidden" id="answer-card"><div class="answer-warning hidden" id="answer-warning" role="status"></div><div class="answer-copy" id="answer-copy"></div><div id="quick-results" class="quick-results hidden"></div><div class="answer-footer"><div class="answer-meta" id="answer-meta"></div><button class="secondary answer-save" id="save-answer-button">保存到当前项目</button></div></article>
         </section>
-        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.6</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
+        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.7</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
       </section>
     </main>
 
@@ -1168,7 +1168,9 @@ async function openSettings() {
   const mirror = localStorage.getItem("ilia.update-mirror") ?? "";
   document.querySelector<HTMLInputElement>("#mirror-url")!.value = mirror;
   document.querySelector<HTMLElement>("#mirror-status")!.textContent = mirror ? `优先使用：${mirror}；失败时回退 GitHub。签名与 SHA-256 校验不会跳过。` : "未配置正式镜像；将使用 GitHub 官方发布地址。";
-  const settings = await call<ProxySettings>("get_proxy_settings"); document.querySelector<HTMLElement>("#proxy-status")!.textContent = settings.enabled ? `已启用：${settings.redacted_url}` : "未启用代理；仅在线更新命令会读取此设置。";
+  const settings = await call<ProxySettings>("get_proxy_settings");
+  const proxySource = { manual: "手动设置", environment: "系统环境", system: "Windows 系统代理" }[settings.source ?? "manual"];
+  document.querySelector<HTMLElement>("#proxy-status")!.textContent = settings.enabled ? `已启用（${proxySource}）：${settings.redacted_url}` : "未检测到代理；在线更新将直接连接，仍可使用本地签名更新包。";
   await refreshUpdateSummary(false);
 }
 
@@ -1486,7 +1488,15 @@ document.querySelector("#save-mirror")?.addEventListener("click", () => {
   document.querySelector<HTMLElement>("#mirror-status")!.textContent = value ? `优先使用：${value}；失败时回退 GitHub。签名与 SHA-256 校验不会跳过。` : "未配置正式镜像；将使用 GitHub 官方发布地址。";
   showToast(value ? "镜像配置已保存。" : "镜像配置已清除。", "success");
 });
-document.querySelector("#save-proxy")?.addEventListener("click", async () => { const input = document.querySelector<HTMLInputElement>("#proxy-url")!; try { const settings = await call<ProxySettings>("set_proxy_settings", { url: input.value.trim() || null }); input.value = ""; document.querySelector<HTMLElement>("#proxy-status")!.textContent = settings.enabled ? `已安全保存到本机：${settings.redacted_url}` : "代理已关闭"; } catch (error) { showToast(`代理设置无效：${errorMessage(error)}`, "error"); } });
+document.querySelector("#save-proxy")?.addEventListener("click", async () => {
+  const input = document.querySelector<HTMLInputElement>("#proxy-url")!;
+  try {
+    const settings = await call<ProxySettings>("set_proxy_settings", { url: input.value.trim() || null });
+    input.value = "";
+    const source = { manual: "手动设置", environment: "系统环境", system: "Windows 系统代理" }[settings.source ?? "manual"];
+    document.querySelector<HTMLElement>("#proxy-status")!.textContent = settings.enabled ? `已启用（${source}）：${settings.redacted_url}` : "未检测到代理；在线更新将直接连接。";
+  } catch (error) { showToast(`代理设置无效：${errorMessage(error)}`, "error"); }
+});
 document.querySelector("#local-update-button")?.addEventListener("click", async () => {
   const path = document.querySelector<HTMLInputElement>("#local-update-path")!.value.trim();
   if (!path) return;

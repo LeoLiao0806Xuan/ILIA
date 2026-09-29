@@ -27,3 +27,7 @@ tauri = { version = "2.11.6", features = [] }
 tauri-plugin-opener = "2.5.4"
 uuid.workspace = true
 url.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+winreg = "0.55"
+windows-sys = { version = "0.61.2", features = ["Win32_UI_Shell"] }

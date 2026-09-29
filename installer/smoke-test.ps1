@@ -1,7 +1,8 @@
 param(
-    [string]$Version = "1.1.6",
+    [string]$Version = "1.1.7",
     [ValidateSet("auto", "cuda", "vulkan", "cpu")][string]$Backend = "cpu",
-    [switch]$SkipCliBuild
+    [switch]$SkipCliBuild,
+    [switch]$AllowInstallerTestingOnThisMachine
 )
 
 $ErrorActionPreference = "Stop"
@@ -44,8 +45,25 @@ function Assert-SafeSmokePath([string]$Path) {
     }
 }
 
+function Assert-NoProductionInstall {
+    if (-not $AllowInstallerTestingOnThisMachine) {
+        throw "Installer tests are destructive to the product registration. Run only in Windows Sandbox/a clean VM, or pass -AllowInstallerTestingOnThisMachine after verifying no registered production installation is present."
+    }
+    $defaultInstall = Join-Path $env:LOCALAPPDATA "Programs\ILIA\ilia-desktop.exe"
+    $productKey = "{A1A60D67-CA13-4A51-93E7-445D2A7CF031}_is1"
+    $registryKeys = @(
+        "Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\$productKey",
+        "Registry::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\$productKey",
+        "Registry::HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\$productKey"
+    )
+    if ((Test-Path -LiteralPath $defaultInstall) -or ($registryKeys | Where-Object { Test-Path -LiteralPath $_ })) {
+        throw "Refusing to run installer smoke tests while a production ILIA installation is present. Use a clean VM or Windows Sandbox."
+    }
+}
+
 Assert-SafeSmokePath $installRoot
 Assert-SafeSmokePath $logRoot
+Assert-NoProductionInstall
 Assert-File $setupPath "Installer launcher"
 
 $installerFiles = @(Get-ChildItem -LiteralPath $installerRoot -Filter "$baseName*" -File | Sort-Object Name)
@@ -77,7 +95,7 @@ try {
 
     $installStartedAt = (Get-Date).ToUniversalTime()
     $installer = Start-Process -FilePath $setupPath -ArgumentList @(
-        "/VERYSILENT", "/SUPPRESSMSGBOXES", "/NORESTART", "/SP-", "/DIR=$installRoot"
+        "/VERYSILENT", "/SUPPRESSMSGBOXES", "/NORESTART", "/SP-", "/NOICONS", "/DIR=$installRoot"
     ) -WindowStyle Hidden -Wait -PassThru
     $installExit = $installer.ExitCode
     if ($installExit -ne 0) { throw "Silent installation failed with exit code $installExit" }

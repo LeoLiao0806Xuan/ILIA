@@ -1,9 +1,9 @@
 #define AppName "ILIA"
 #ifndef AppVersion
-  #define AppVersion "1.1.6"
+  #define AppVersion "1.1.7"
 #endif
 #ifndef AppFileVersion
-  #define AppFileVersion "1.1.6.0"
+  #define AppFileVersion "1.1.7.0"
 #endif
 #ifndef SourceDir
   #error SourceDir must point to the staged ILIA application directory
@@ -60,10 +60,7 @@ Source: "{#WebView2Installer}"; DestDir: "{tmp}"; Flags: deleteafterinstall
 
 [Icons]
 Name: "{autoprograms}\ILIA"; Filename: "{app}\ilia-desktop.exe"
-Name: "{autodesktop}\ILIA"; Filename: "{app}\ilia-desktop.exe"; Tasks: desktopicon
-
-[Tasks]
-Name: "desktopicon"; Description: "创建桌面快捷方式"; GroupDescription: "快捷方式："
+Name: "{autodesktop}\ILIA"; Filename: "{app}\ilia-desktop.exe"; Comment: "ILIA 国际法智能助手"
 
 [Run]
 Filename: "{tmp}\VC_redist.x64.exe"; Parameters: "/install /quiet /norestart"; StatusMsg: "正在安装 Microsoft Visual C++ Runtime..."; Flags: waituntilterminated runhidden; Check: not IsRequiredVCRuntimeInstalled

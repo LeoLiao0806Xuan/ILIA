@@ -1,0 +1,65 @@
+{
+  "report_version": 1,
+  "release_version": "1.1.7",
+  "generated_at_utc": "2026-09-29T09:25:21.724405+00:00",
+  "status": "passed",
+  "assets": [
+    {
+      "name": "validation_report_1.1.7.json",
+      "bytes": 51927,
+      "sha256": "168e690deeaeae870b5b1fcf046e7076d95809b3743e6d22ee48d690dec007f6"
+    },
+    {
+      "name": "retrieval_eval_report_1.1.7.json",
+      "bytes": 147543,
+      "sha256": "afb308dea268d10f1521cf8cc7891d244f077f35b4af408f1f339a78267a6710"
+    },
+    {
+      "name": "citation_eval_report_1.1.7.json",
+      "bytes": 2642,
+      "sha256": "3f9b548a9d724cf684c184bb08a8188a8b996939cfee682632b7844c4ed43057"
+    },
+    {
+      "name": "privacy_offline_report.json",
+      "bytes": 1279,
+      "sha256": "7057436ed44618a7a0f30c377c23a7557ac511d3aeb79c6845262598d5d1e8a6"
+    },
+    {
+      "name": "runtime-offline-network.json",
+      "bytes": 2096,
+      "sha256": "d3042fb33843fddd49a2db1fc70876b3d75ae1570f5d06f64c47985ca2f07e7e"
+    },
+    {
+      "name": "installer-verification.json",
+      "bytes": 2608,
+      "sha256": "15bd609c23ac4e083a396f7fea851a330e79b688194d2acce8255f42444ba422"
+    },
+    {
+      "name": "windows-installer-smoke.json",
+      "bytes": 4005,
+      "sha256": "9d60919b5ffff36afb82dd5d54fad8cd9f313311125ae9aa63026407ba31e9c0"
+    },
+    {
+      "name": "release-matrix.json",
+      "bytes": 1891,
+      "sha256": "65480b29dd5e207b04329e63b8bc5499bc7cf702de8ca094dd7c841cb2e9293a"
+    },
+    {
+      "name": "update-rollback-report.json",
+      "bytes": 2473,
+      "sha256": "156f9171f3f8f5784df7214060568aa36ac391fdd3d1ee5af3399e906ed0f3c9"
+    },
+    {
+      "name": "update-progress-e2e.json",
+      "bytes": 296,
+      "sha256": "bbb1182749d7d869a7893349d05ca758022b13efd93a97c2a3a7e29ea8ec436c"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 441,
+      "sha256": "13aa6a837097c1728bce29aed5e889ccab8f4aa4adfd2ea743c8cfab2f5286d6"
+    }
+  ],
+  "missing": [],
+  "invalid": []
+}
