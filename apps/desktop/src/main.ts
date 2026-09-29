@@ -178,7 +178,6 @@ interface UpdateProgress {
   total_bytes: number;
   message_zh: string;
 }
-
 const updateManifestUrl = "https://github.com/LeoLiao0806Xuan/ILIA/releases/latest/download/update-manifest.json";
 const updateSignatureUrl = "https://github.com/LeoLiao0806Xuan/ILIA/releases/latest/download/update-manifest.sig";
 
@@ -241,7 +240,7 @@ async function call<T>(command: string, args: Record<string, unknown> = {}): Pro
   if (command === "list_user_documents") return [] as T;
   if (command === "get_proxy_settings") return { enabled: false, redacted_url: null } as T;
   if (command === "create_backup" || command === "restore_backup") return { path: String(args.outputPath ?? args.packagePath ?? "ILIA-backup.ilia-workspace"), user_bytes: 32768, workspace_bytes: 65536, user_sha256: "demo", workspace_sha256: "demo" } as T;
-  if (command === "get_update_summary") return { current_version: "1.1.5", last_release_id: "v1.1.5", last_status: "applied", applied_components: ["application", "updater"] } as T;
+  if (command === "get_update_summary") return { current_version: "1.1.6", last_release_id: "v1.1.5", last_status: "applied", applied_components: ["application", "updater"] } as T;
   if (command === "check_updates") return { manifest: { release_id: "demo", components: [] }, installed_versions: { components: {} } } as T;
   if (command === "install_update") return undefined as T;
   if (command === "cancel_research") return true as T;
@@ -345,9 +344,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
           <div class="answer-header"><div><div class="section-kicker">研究结论</div><h2 id="result-title">准备就绪</h2></div><div class="grounded-badge hidden" id="grounded-badge">✓ 引证已校验</div></div>
           <div class="empty-state" id="empty-state"><div class="empty-glyph">§</div><h3>提出第一个研究问题</h3><p>你也可以从左侧选择一个研究起点。</p></div>
           <div class="loading-state hidden" id="loading-state"><div class="loader"></div><h3 id="loading-title">正在检索本地资料</h3><p id="loading-copy">正在运行 FTS5 与 BGE-M3 混合检索。</p></div>
-          <article class="answer-card hidden" id="answer-card"><div class="answer-warning hidden" id="answer-warning" role="status"></div><div class="answer-copy" id="answer-copy"></div><div class="answer-footer"><div class="answer-meta" id="answer-meta"></div><button class="secondary answer-save" id="save-answer-button">保存到当前项目</button></div></article>
+          <article class="answer-card hidden" id="answer-card"><div class="answer-warning hidden" id="answer-warning" role="status"></div><div class="answer-copy" id="answer-copy"></div><div id="quick-results" class="quick-results hidden"></div><div class="answer-footer"><div class="answer-meta" id="answer-meta"></div><button class="secondary answer-save" id="save-answer-button">保存到当前项目</button></div></article>
         </section>
-        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.5</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
+        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.6</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
       </section>
     </main>
 
@@ -365,10 +364,11 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         <div class="source-detail hidden" id="source-detail">
           <div class="section-kicker">原文证据</div><div class="source-index" id="source-index">证据 1</div>
           <h2 id="source-title"></h2><div class="source-chips" id="source-chips"></div>
-          <div class="citation-box"><div>规范引用</div><strong id="source-citation"></strong></div>
-          <div class="citation-tools"><select id="citation-style"><option value="chinese">普通中文</option><option value="oscola">OSCOLA</option><option value="bluebook">Bluebook</option><option value="icj">ICJ</option><option value="markdown">Markdown</option><option value="plain_text">纯文本</option></select><button id="copy-citation" class="secondary">复制引文</button></div>
+          <div class="citation-box"><div>引注预览</div><strong id="source-citation"></strong></div>
+          <div class="citation-tools"><select id="citation-style" aria-label="引注格式"><option value="oscola" selected>OSCOLA · 英文论文与脚注</option><option value="chinese">普通中文 · 中文论文与案卷</option><option value="bluebook">Bluebook · 美式法律写作</option><option value="icj">ICJ · 国际法院文件</option><option value="plain_text">纯文本 · Word 与邮件</option><option value="markdown">Markdown · Obsidian 与 GitHub</option></select><button id="copy-citation" class="secondary">复制引注</button></div>
+          <div id="citation-help" class="citation-help">OSCOLA 适合英文法律论文和脚注；正式提交前请按文书元数据核对。</div>
           <div class="original-heading"><span>文献内容</span><div id="language-switch" class="language-switch hidden" aria-label="文献语言切换"><button id="original-button" class="active">原文</button><button id="translate-button">译文</button><button id="parallel-button">对照</button></div><span id="source-language"></span></div>
-          <div id="translation-note" class="translation-note hidden">本地机器翻译 · 以英文原文为准</div><pre id="source-text"></pre><a id="source-link" class="source-link" target="_blank" rel="noreferrer">查看官方来源 ↗</a>
+          <div id="translation-note" class="translation-note hidden">本地机器翻译 · 以英文原文为准</div><article id="source-text" class="legal-document" aria-label="法律文书正文"></article><a id="source-link" class="source-link" target="_blank" rel="noreferrer">查看官方来源 ↗</a>
         </div>
       </section>
       <section class="inspector-panel hidden" data-inspector-panel="audit">
@@ -394,7 +394,8 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
             <div><div class="section-kicker">新建项目</div><h3>建立研究事项</h3><p>一个项目对应一个案件、专题或长期研究任务。</p></div>
             <div class="project-form">
               <label>项目名称<input id="project-title" class="library-filter" placeholder="例如：南海仲裁研究"/></label>
-              <label>标签<input id="project-tags" class="library-filter" placeholder="海洋法，仲裁"/></label>
+              <label>受控法律标签<select id="project-tags" class="controlled-tags" multiple aria-describedby="project-tags-help"><option value="文书类型：条约">文书类型 · 条约</option><option value="文书类型：判决">文书类型 · 判决</option><option value="文书类型：咨询意见">文书类型 · 咨询意见</option><option value="法律状态：已生效">法律状态 · 已生效</option><option value="机构：联合国">机构 · 联合国</option><option value="机构：国际法院">机构 · 国际法院</option><option value="机构：国际刑事法院">机构 · 国际刑事法院</option><option value="主题：海洋法">主题 · 海洋法</option><option value="主题：国家责任">主题 · 国家责任</option><option value="主题：条约法">主题 · 条约法</option><option value="主题：人权法">主题 · 人权法</option><option value="程序：管辖权">程序 · 管辖权</option><option value="程序：可受理性">程序 · 可受理性</option><option value="程序：实体">程序 · 实体</option><option value="程序：赔偿">程序 · 赔偿</option></select><small id="project-tags-help">按 Ctrl 可多选；机器代码不会显示给用户。</small></label>
+              <label>自定义标签（可选）<input id="project-custom-tags" class="library-filter" placeholder="客户事项，内部阶段"/></label>
               <label>项目说明<textarea id="project-description" rows="4" placeholder="记录研究范围、目标或交付要求"></textarea></label>
               <button id="create-project-button" class="primary">创建并切换到项目</button>
             </div>
@@ -422,11 +423,21 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         <button id="prewarm-button" class="secondary settings-action">后台预热模型</button><div id="resource-report" class="settings-report">模型尚未加载；纯检索不会启动 Qwen。</div>
         <label class="question-label" for="idle-timeout">空闲释放显存</label><select id="idle-timeout"><option value="300">5 分钟</option><option value="900" selected>15 分钟</option><option value="1800">30 分钟</option><option value="0">不自动释放</option></select>
         <div class="update-resilience"><strong>网络不稳定保护</strong><span>下载中断会自动重试并从已完成位置续传；持续无法连接 GitHub 时，可配置代理或使用本地签名更新包。</span></div>
+        <label class="question-label" for="mirror-url">中国大陆镜像基础地址（可选）</label><input id="mirror-url" class="library-filter" placeholder="https://updates.example.cn/ilia/latest"/><button id="save-mirror" class="secondary settings-action">保存镜像配置</button><div id="mirror-status" class="settings-report">未配置正式镜像；将使用 GitHub 官方发布地址。</div>
         <label class="question-label" for="proxy-url">更新代理（HTTP / HTTPS / SOCKS5）</label><input id="proxy-url" class="library-filter" type="password" autocomplete="off" placeholder="socks5://user:password@127.0.0.1:1080"/><button id="save-proxy" class="secondary settings-action">保存代理</button><div id="proxy-status" class="settings-report"></div>
         <label class="question-label" for="local-update-path">本地签名更新包</label><input id="local-update-path" class="library-filter" placeholder="粘贴 .ilia 文件路径"/><button id="local-update-button" class="secondary settings-action">验证并安装本地包</button>
         <div class="settings-section"><div class="section-kicker">研究数据保障</div><p class="modal-hint">备份个人资料库、项目、笔记、会话与证据快照。恢复前会核验文件哈希、SQLite 完整性与架构版本。</p></div>
         <label class="question-label" for="backup-path">备份文件路径</label><input id="backup-path" class="library-filter" placeholder="例如 D:\\ILIA-backup.ilia-workspace"/><button id="backup-button" class="secondary settings-action">创建加校验备份</button>
         <label class="question-label" for="restore-path">恢复备份路径</label><input id="restore-path" class="library-filter" placeholder="粘贴 .ilia-workspace 文件路径"/><button id="restore-button" class="secondary settings-action">校验并恢复</button><div id="backup-status" class="settings-report" role="status" aria-live="polite"></div>
+      </div>
+    </div>
+    <div id="app-toast" class="app-toast hidden" role="status" aria-live="polite"></div>
+    <div id="action-modal" class="library-modal hidden" role="dialog" aria-modal="true" aria-labelledby="action-modal-title" aria-describedby="action-modal-message">
+      <div class="action-dialog">
+        <div id="action-modal-kicker" class="section-kicker">请确认</div>
+        <h2 id="action-modal-title">确认操作</h2>
+        <p id="action-modal-message"></p>
+        <div class="action-dialog-actions"><button id="action-modal-cancel" class="secondary" type="button">取消</button><button id="action-modal-confirm" class="primary" type="button">确认</button></div>
       </div>
     </div>
     <div id="update-notice" class="update-notice hidden" role="status" aria-live="polite"><span id="update-notice-copy"></span><button id="update-notice-close" type="button" aria-label="关闭更新提示">×</button></div>
@@ -443,7 +454,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
       <div class="reader-dialog">
         <div class="library-header"><div><div class="section-kicker">ILIA 规范化文本</div><h2 id="reader-title">文献</h2></div><button id="reader-close" class="library-close" aria-label="关闭阅读器">×</button></div>
         <p id="reader-note">非官方排版版本 · 请通过官方来源核验正式引文</p>
-        <pre id="reader-text" class="reader-text"></pre>
+        <article id="reader-text" class="reader-text legal-document"></article>
       </div>
     </div>
   </div>`;
@@ -486,33 +497,146 @@ let activeRequestId: string | null = null;
 let streamedAnswer = "";
 let lastUpdateReleaseId: string | null = null;
 let guideStepIndex = 0;
+let updateCheckGeneration = 0;
+let updateCheckActive = false;
+let activeUpdateUrls = { manifestUrl: updateManifestUrl, signatureUrl: updateSignatureUrl, label: "GitHub" };
+let toastTimer: number | null = null;
+let confirmationResolver: ((confirmed: boolean) => void) | null = null;
+let confirmationReturnFocus: HTMLElement | null = null;
+const inspectorScroll = new Map<string, number>();
+
+const documentTypeLabels: Record<string, string> = {
+  treaty: "条约", judgment: "判决", advisory_opinion: "咨询意见", order: "命令",
+  resolution: "决议", draft_articles: "条款草案", customary_rule: "习惯国际法规则",
+  commentary: "评注", declaration: "宣言", statute: "规约", user_document: "个人资料",
+};
+const legalStatusLabels: Record<string, string> = {
+  in_force_treaty: "已生效", signed_treaty: "已签署", not_in_force: "未生效",
+  judgment: "判决", advisory_opinion: "咨询意见", resolution: "决议", historical: "历史文本",
+};
+const citationHelp: Record<string, string> = {
+  oscola: "OSCOLA 适合英文法律论文和脚注；正式提交前请按文书元数据核对。",
+  chinese: "普通中文适合中文论文、研究报告和案卷。",
+  bluebook: "Bluebook 适合美式法律写作。",
+  icj: "ICJ 格式接近国际法院文件中的引注习惯。",
+  plain_text: "纯文本适合粘贴到 Word、邮件及不支持富文本的系统。",
+  markdown: "Markdown 仅适合 Obsidian、GitHub 等 Markdown 环境，不等同于完整法律引注。",
+};
 
 const guideSteps = [
-  { title: "从研究问题开始", icon: "01", copy: "在中央输入研究问题，再按任务选择快速、标准或深度模式。快速模式只返回证据；标准模式生成有据回答；深度模式会先拆分子问题。", tips: ["“只检索”适合先找法源，不启动生成模型。", "“开始研究”会依次完成检索、组织回答和引证审计。"] },
-  { title: "用项目管理案件与专题", icon: "02", copy: "一个项目可以对应一个案件、客户事项、论文专题或长期跟踪任务。切换项目后，新回答、证据快照和研究笔记会归入该项目。", tips: ["标签用于区分法域、争点或工作阶段。", "笔记输入后自动保存，不需要手动提交。"] },
-  { title: "核验证据、原文与引证", icon: "03", copy: "右侧检查器是质量控制区：证据显示检索命中，原文用于核对页码和官方来源，审计逐句标明回答是否获得证据支持。", tips: ["点击证据卡即可跳到对应原文。", "绿色“引证已校验”不替代正式法律审查。"] },
-  { title: "扩展本地资料库", icon: "04", copy: "资料库包含随软件发布的规范化国际法文本，也可以导入自己的 PDF、TXT、Markdown、HTML 或 DOCX，建立仅存于本机的个人索引。", tips: ["导入前会先显示预览和分块数量。", "正式引用仍应通过官方来源链接复核。"] },
-  { title: "沉淀笔记并导出", icon: "05", copy: "项目工作区把研究笔记放在主位置。完成后可导出 Markdown 继续编辑，或导出自包含 HTML 进行归档和发送。", tips: ["导出前确认左侧已选中正确项目。", "备份功能可同时保存项目、笔记、会话和个人资料库。"] },
-  { title: "安全更新与本机设置", icon: "06", copy: "检查更新会先下载并验证签名和哈希，确认完整后才退出替换程序。网络中断会自动重试和续传，原版本在验证完成前始终可用。", tips: ["GitHub 长期不可达时，可在设置中配置 HTTP、HTTPS 或 SOCKS5 代理。", "也可以下载签名的 .ilia 包，通过“本地签名更新包”离线安装。"] },
+  { title: "从研究问题开始", focus: "query", copy: "在中央输入研究问题，再按任务选择快速、标准或深度模式。快速模式只返回证据；标准模式生成有据回答；深度模式会先拆分子问题。", tips: ["“只检索”适合先找法源，不启动生成模型。", "“开始研究”会依次完成检索、组织回答和引证审计。"] },
+  { title: "用项目管理案件与专题", focus: "project", copy: "一个项目可以对应一个案件、客户事项、论文专题或长期跟踪任务。切换项目后，新回答、证据快照和研究笔记会归入该项目。", tips: ["受控标签按文书、机构、主题和程序维度组织。", "笔记输入后自动保存，不需要手动提交。"] },
+  { title: "核验证据、原文与引证", focus: "inspector", copy: "右侧检查器是质量控制区：证据显示检索命中，原文用于核对页码和官方来源，审计逐句标明回答是否获得证据支持。", tips: ["点击证据卡即可跳到对应原文。", "支持状态不替代正式法律审查。"] },
+  { title: "扩展本地资料库", focus: "library", copy: "资料库包含随软件发布的规范化国际法文本，也可以导入自己的 PDF、TXT、Markdown、HTML 或 DOCX，建立仅存于本机的个人索引。", tips: ["导入前会先显示预览和分块数量。", "正式引用仍应通过官方来源链接复核。"] },
+  { title: "沉淀笔记并导出", focus: "export", copy: "项目工作区保存研究笔记和研究记录。完成后可导出 Markdown 继续编辑，或导出自包含 HTML 进行归档和发送。", tips: ["导出前确认左侧已选中正确项目。", "备份功能可同时保存项目、笔记、会话和个人资料库。"] },
+  { title: "安全更新与本机设置", focus: "update", copy: "更新检查在后台运行；下载中断会重试和续传，签名与哈希核验通过后才替换程序。", tips: ["检查结果会缓存并显示上次检查时间。", "GitHub 不可达时可配置代理或使用本地签名更新包。"] },
 ];
 
+function showToast(message: string, tone: "success" | "error" | "info" = "info") {
+  const toast = document.querySelector<HTMLElement>("#app-toast")!;
+  toast.textContent = message;
+  toast.dataset.tone = tone;
+  toast.classList.remove("hidden");
+  if (toastTimer !== null) window.clearTimeout(toastTimer);
+  toastTimer = window.setTimeout(() => toast.classList.add("hidden"), 3200);
+}
+
+function errorMessage(error: unknown, fallback = "操作未完成") {
+  if (typeof error === "string" && error.trim()) return error.trim();
+  if (error instanceof Error && error.message.trim()) return error.message.trim();
+  if (error && typeof error === "object") {
+    const value = error as Record<string, unknown>;
+    const message = [value.message_zh, value.safe_message, value.message, value.error]
+      .find((item): item is string => typeof item === "string" && item.trim().length > 0);
+    const code = typeof value.code === "string" ? value.code : null;
+    if (message) return code ? `${message}（${code}）` : message;
+    try {
+      const serialized = JSON.stringify(error);
+      if (serialized && serialized !== "{}") return serialized;
+    } catch { /* 使用安全的兜底文案。 */ }
+  }
+  return fallback;
+}
+
+function closeConfirmation(confirmed: boolean) {
+  const modal = document.querySelector<HTMLElement>("#action-modal")!;
+  modal.classList.add("hidden");
+  const resolve = confirmationResolver;
+  confirmationResolver = null;
+  resolve?.(confirmed);
+  confirmationReturnFocus?.focus();
+  confirmationReturnFocus = null;
+}
+
+function confirmAction(options: { title: string; message: string; confirmLabel?: string; kicker?: string; danger?: boolean }) {
+  if (confirmationResolver) closeConfirmation(false);
+  confirmationReturnFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+  const modal = document.querySelector<HTMLElement>("#action-modal")!;
+  const confirm = document.querySelector<HTMLButtonElement>("#action-modal-confirm")!;
+  document.querySelector<HTMLElement>("#action-modal-kicker")!.textContent = options.kicker ?? "请确认";
+  document.querySelector<HTMLElement>("#action-modal-title")!.textContent = options.title;
+  document.querySelector<HTMLElement>("#action-modal-message")!.textContent = options.message;
+  confirm.textContent = options.confirmLabel ?? "确认";
+  confirm.classList.toggle("danger", Boolean(options.danger));
+  modal.classList.remove("hidden");
+  requestAnimationFrame(() => confirm.focus());
+  return new Promise<boolean>((resolve) => { confirmationResolver = resolve; });
+}
+
+function legalLineKind(line: string): "title" | "part" | "article" | "paragraph" | "body" {
+  const value = line.trim();
+  if (/^(part|chapter|section|book|编|章|节)\s+[\divxlcdm一二三四五六七八九十百]+/i.test(value)) return "part";
+  if (/^(article\s+\d+[a-z-]*|第[一二三四五六七八九十百千\d]+条)/i.test(value)) return "article";
+  if (/^(\(?\d+[.)]|\([a-z]\)|[（(][一二三四五六七八九十]+[）)])\s*/i.test(value)) return "paragraph";
+  if (value.length < 100 && /^(convention|agreement|statute|charter|公约|协定|规约|宪章)/i.test(value)) return "title";
+  return "body";
+}
+
+function renderLegalDocument(target: HTMLElement, text: string, translation?: string) {
+  const makeColumn = (value: string, language: string) => {
+    const column = document.createElement("section");
+    column.className = "legal-column";
+    column.lang = language;
+    const lines = value.replace(/\r/g, "").split(/\n+/).map((line) => line.trim()).filter(Boolean);
+    lines.forEach((line) => {
+      const kind = legalLineKind(line);
+      const node = document.createElement(kind === "title" ? "h2" : kind === "part" ? "h3" : kind === "article" ? "h4" : "p");
+      node.className = `legal-${kind}`;
+      node.textContent = line;
+      column.append(node);
+    });
+    return column;
+  };
+  target.replaceChildren();
+  target.classList.toggle("parallel", Boolean(translation));
+  target.append(makeColumn(text, "en"));
+  if (translation) target.append(makeColumn(translation, "zh-CN"));
+}
+
 function openInspector(name: "evidence" | "source" | "audit") {
+  const visible = document.querySelector<HTMLElement>("[data-inspector-panel]:not(.hidden)");
+  if (visible?.dataset.inspectorPanel) inspectorScroll.set(visible.dataset.inspectorPanel, visible.scrollTop);
   document.querySelectorAll<HTMLButtonElement>("[data-inspector]").forEach((button) => {
     button.classList.toggle("active", button.dataset.inspector === name);
   });
   document.querySelectorAll<HTMLElement>("[data-inspector-panel]").forEach((panel) => {
     panel.classList.toggle("hidden", panel.dataset.inspectorPanel !== name);
   });
+  const next = document.querySelector<HTMLElement>(`[data-inspector-panel="${name}"]`);
+  if (next) requestAnimationFrame(() => { next.scrollTop = inspectorScroll.get(name) ?? 0; });
 }
 
 function setProcess(step: "idle" | "retrieve" | "compose" | "audit" | "done") {
+  const quick = researchMode.value === "quick";
+  const strip = document.querySelector<HTMLElement>("#process-strip")!;
+  strip.classList.toggle("quick-process", quick);
   const order = ["retrieve", "compose", "audit"];
   const current = order.indexOf(step);
   document.querySelectorAll<HTMLElement>(".process-step").forEach((item, index) => {
     item.classList.toggle("done", step === "done" || (current >= 0 && index < current));
     item.classList.toggle("active", current === index);
     const marker = item.querySelector<HTMLElement>(":scope > span");
-    if (marker) marker.textContent = item.classList.contains("done") ? "✓" : String(index + 1);
+    if (marker) marker.textContent = quick && index === 0 && (step === "done" || step === "compose") ? "完成" : String(index + 1);
   });
 }
 
@@ -529,7 +653,7 @@ function renderAudit(findings: CitationFinding[]) {
     const item = document.createElement("div");
     const safe = finding.support === "direct" || finding.support === "summary";
     item.className = `audit-item${safe ? "" : " warn"}`;
-    const status = document.createElement("span"); status.className = "audit-status"; status.textContent = safe ? "✓" : "!";
+    const status = document.createElement("span"); status.className = "audit-status"; status.setAttribute("aria-hidden", "true");
     const body = document.createElement("div");
     const label = document.createElement("strong"); label.textContent = finding.support === "direct" ? "直接支持" : finding.support === "summary" ? "概括支持" : finding.support === "conflict" ? "证据冲突" : "缺少支持";
     const statement = document.createElement("span"); statement.textContent = finding.statement;
@@ -624,8 +748,10 @@ function renderSearch(response: SearchResponse, answer?: AnswerResponse, runtime
   const answerCard = document.querySelector<HTMLElement>("#answer-card")!;
   const evidenceSection = document.querySelector<HTMLElement>("#evidence-section")!;
   const answerCopy = document.querySelector<HTMLElement>("#answer-copy")!;
+  const quickResults = document.querySelector<HTMLElement>("#quick-results")!;
   const title = document.querySelector<HTMLElement>("#result-title")!;
   if (answer) {
+    quickResults.classList.add("hidden");
     title.textContent = answer.citation_rewritten ? "引证复核后的回答" : "有据回答"; answerCopy.replaceChildren(citationFragment(answer.answer, answer.citations)); answerCard.classList.remove("hidden");
     const meta = document.querySelector<HTMLElement>("#answer-meta")!;
     const direct = answer.citation_findings.filter((finding) => finding.support === "direct").length;
@@ -639,9 +765,30 @@ function renderSearch(response: SearchResponse, answer?: AnswerResponse, runtime
     renderAudit(answer.citation_findings);
     setProcess("done");
   } else {
-    title.textContent = "检索结果"; answerCard.classList.add("hidden");
+    title.textContent = response.evidence.length ? "检索完成" : "暂无相关资料";
+    answerCopy.replaceChildren();
+    quickResults.replaceChildren();
+    response.evidence.forEach((evidence, index) => {
+      const hit = response.hits.find((item) => item.stable_key === evidence.stable_key);
+      const card = document.createElement("article"); card.className = "quick-result-card";
+      const heading = document.createElement("div"); heading.className = "quick-result-heading";
+      const rank = document.createElement("span"); rank.textContent = `证据 ${String(index + 1).padStart(2, "0")}`;
+      const relevance = document.createElement("span"); relevance.textContent = hit ? `相关度 ${Math.max(0, Math.min(100, Math.round((1 / (1 + Math.max(hit.score, 0))) * 100)))}%` : "相关证据";
+      const cite = document.createElement("strong"); cite.textContent = evidence.citation_label;
+      const doc = document.createElement("p"); doc.className = "quick-result-document"; doc.textContent = hit?.title_zh ?? hit?.canonical_title ?? evidence.chunk_id;
+      const excerpt = document.createElement("p"); excerpt.textContent = evidence.text.replace(/\s+/g, " ");
+      const actions = document.createElement("div"); actions.className = "quick-result-actions";
+      const open = document.createElement("button"); open.className = "secondary"; open.textContent = "打开原文"; open.addEventListener("click", () => showSource(index));
+      const copy = document.createElement("button"); copy.className = "secondary"; copy.textContent = "复制引注"; copy.addEventListener("click", () => { showSource(index, false); void copyCurrentCitation(); });
+      actions.append(open, copy); heading.append(rank, relevance); card.append(heading, cite, doc, excerpt, actions); quickResults.append(card);
+    });
+    if (!response.evidence.length) {
+      const empty = document.createElement("div"); empty.className = "inline-empty"; empty.textContent = "当前资料库没有找到能够直接支持该问题的内容。可调整措辞、移除过滤条件或导入相关资料。"; quickResults.append(empty);
+    }
+    quickResults.classList.remove("hidden"); answerCard.classList.remove("hidden");
+    document.querySelector<HTMLElement>("#answer-meta")!.textContent = response.evidence.length ? `${response.evidence.length} 条入选证据 · 未启动生成模型` : "检索完成 · 未启动生成模型";
     renderAudit([]);
-    setProcess("compose");
+    setProcess("done");
   }
   const list = document.querySelector<HTMLElement>("#evidence-list")!; list.replaceChildren();
   response.evidence.forEach((evidence, index) => {
@@ -672,8 +819,7 @@ function showSource(index: number, reveal = true) {
   document.querySelector<HTMLElement>("#source-index")!.textContent = `证据 ${index + 1}`;
   document.querySelector<HTMLElement>("#source-title")!.textContent = hit.title_zh ?? hit.canonical_title;
   const chips = document.querySelector<HTMLElement>("#source-chips")!; chips.replaceChildren();
-  [hit.document_type, hit.legal_status, `第 ${hit.page_start} 页`].forEach((value) => { const chip = document.createElement("span"); chip.textContent = value; chips.append(chip); });
-  document.querySelector<HTMLElement>("#source-citation")!.textContent = hit.citation_label;
+  [documentTypeLabels[hit.document_type] ?? hit.document_type, legalStatusLabels[hit.legal_status] ?? hit.legal_status, `第 ${hit.page_start} 页`].forEach((value) => { const chip = document.createElement("span"); chip.textContent = value; chips.append(chip); });
   document.querySelector<HTMLElement>("#source-language")!.textContent = hit.language.toUpperCase();
   const isEnglish = hit.language.toLowerCase().startsWith("en");
   document.querySelector("#language-switch")?.classList.toggle("hidden", !isEnglish);
@@ -683,6 +829,7 @@ function showSource(index: number, reveal = true) {
     showOriginalSource(hit);
   }
   const link = document.querySelector<HTMLAnchorElement>("#source-link")!; link.href = hit.official_source_url;
+  void updateCitationPreview();
 }
 
 function showSourceByStableKey(stableKey: string) {
@@ -690,8 +837,61 @@ function showSourceByStableKey(stableKey: string) {
   if (index >= 0) showSource(index);
 }
 
+async function currentCitation(): Promise<string | null> {
+  const evidence = currentEvidence[currentSourceIndex];
+  const hit = evidence ? currentHits.find((item) => item.stable_key === evidence.stable_key) : undefined;
+  if (!hit) return null;
+  return call<string>("format_citation", {
+    title: hit.canonical_title,
+    locator: hit.citation_label,
+    url: hit.official_source_url || null,
+    style: document.querySelector<HTMLSelectElement>("#citation-style")!.value,
+  });
+}
+
+async function updateCitationPreview() {
+  const select = document.querySelector<HTMLSelectElement>("#citation-style")!;
+  document.querySelector<HTMLElement>("#citation-help")!.textContent = citationHelp[select.value] ?? "";
+  try {
+    const citation = await currentCitation();
+    if (citation) document.querySelector<HTMLElement>("#source-citation")!.textContent = citation;
+  } catch (error) {
+    document.querySelector<HTMLElement>("#source-citation")!.textContent = "暂时无法生成引注预览";
+  }
+}
+
+async function writeClipboard(text: string) {
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch {
+    const fallback = document.createElement("textarea");
+    fallback.value = text;
+    fallback.setAttribute("readonly", "");
+    fallback.style.position = "fixed";
+    fallback.style.opacity = "0";
+    document.body.append(fallback);
+    fallback.select();
+    const copied = document.execCommand("copy");
+    fallback.remove();
+    if (!copied) throw new Error("系统剪贴板不可用");
+  }
+}
+
+async function copyCurrentCitation() {
+  const select = document.querySelector<HTMLSelectElement>("#citation-style")!;
+  const label = select.selectedOptions[0]?.textContent?.split("·")[0].trim() ?? "所选格式";
+  try {
+    const citation = await currentCitation();
+    if (!citation) return showToast("请先选择一条证据。", "info");
+    await writeClipboard(citation);
+    showToast(`已复制 ${label} 引注`, "success");
+  } catch (error) {
+    showToast(`复制失败：${errorMessage(error, "系统剪贴板不可用")}`, "error");
+  }
+}
+
 function showOriginalSource(hit: SearchHit) {
-  document.querySelector<HTMLElement>("#source-text")!.textContent = hit.text;
+  renderLegalDocument(document.querySelector<HTMLElement>("#source-text")!, hit.text);
   document.querySelector("#translation-note")?.classList.add("hidden");
   originalButton.classList.add("active");
   translateButton.classList.remove("active");
@@ -701,7 +901,7 @@ function showOriginalSource(hit: SearchHit) {
 }
 
 function showChineseTranslation(translation: TranslationResponse["translation"]) {
-  document.querySelector<HTMLElement>("#source-text")!.textContent = translation.translated_text;
+  renderLegalDocument(document.querySelector<HTMLElement>("#source-text")!, translation.translated_text);
   const note = document.querySelector<HTMLElement>("#translation-note")!;
   note.textContent = `本地机器翻译 · 以英文原文为准 · ${(translation.generation_ms / 1000).toFixed(1)} 秒`;
   note.classList.remove("hidden");
@@ -726,7 +926,7 @@ async function translateCurrentSource(rememberPreference = true) {
   }
   translateButton.disabled = true;
   translateButton.textContent = "翻译中…";
-  document.querySelector<HTMLElement>("#source-text")!.textContent = "正在生成本地中文译文…";
+  document.querySelector<HTMLElement>("#source-text")!.replaceChildren(document.createTextNode("正在生成本地中文译文…"));
   document.querySelector<HTMLElement>("#translation-note")!.textContent = "本地机器翻译 · 以英文原文为准";
   document.querySelector("#translation-note")?.classList.remove("hidden");
   try {
@@ -744,16 +944,18 @@ async function translateCurrentSource(rememberPreference = true) {
   } catch (error) {
     translateButton.disabled = false;
     translateButton.textContent = "重试翻译";
-    window.alert(`本地翻译失败：${String(error)}`);
+    showToast(`本地翻译失败：${errorMessage(error)}`, "error");
   }
 }
 
 function showParallelSource(hit: SearchHit, translation: TranslationResponse["translation"]) {
-  document.querySelector<HTMLElement>("#source-text")!.textContent = `原文\n\n${hit.text}\n\n──────────\n\nILIA 机器翻译，非官方译文\n\n${translation.translated_text}`;
+  renderLegalDocument(document.querySelector<HTMLElement>("#source-text")!, hit.text, translation.translated_text);
   const note = document.querySelector<HTMLElement>("#translation-note")!;
   note.textContent = "对照阅读 · ILIA 机器翻译，非官方译文 · 复制引文请使用上方原文";
   note.classList.remove("hidden");
   originalButton.classList.remove("active"); translateButton.classList.remove("active"); parallelButton.classList.add("active");
+  translateButton.disabled = false;
+  translateButton.textContent = "中文译文";
   document.querySelector<HTMLElement>("#source-language")!.textContent = "EN / ZH-CN";
 }
 
@@ -782,20 +984,39 @@ function renderLibrary() {
       open.disabled = true;
       try {
         readerTitle.textContent = document.title_zh ?? document.canonical_title;
-        readerText.textContent = await call<string>("read_document_text", { documentId: document.document_id });
+        renderLegalDocument(readerText, await call<string>("read_document_text", { documentId: document.document_id }));
         readerModal.classList.remove("hidden");
       }
-      catch (error) { window.alert(`无法读取规范化文本：${String(error)}`); }
+      catch (error) { showToast(`无法读取规范化文本：${errorMessage(error)}`, "error"); }
       finally { open.disabled = false; }
     });
     const actions = window.document.createElement("div"); actions.className = "library-actions"; actions.append(open);
     if (document.library_kind === "core") {
       const related = window.document.createElement("button"); related.textContent = "相关资料";
-      related.addEventListener("click", async () => { const items = await call<DocumentSummary[]>("related_documents", { documentId: document.document_id }); window.alert(items.length ? items.map((item) => item.title_zh ?? item.canonical_title).join("\n") : "暂无人工维护的相关资料。" ); }); actions.append(related);
+      related.addEventListener("click", async () => {
+        const items = await call<DocumentSummary[]>("related_documents", { documentId: document.document_id });
+        if (!items.length) {
+          related.disabled = true;
+          related.textContent = "暂无关联资料";
+          showToast("该文献暂无人工维护的关联资料。", "info");
+          return;
+        }
+        const names = items.map((item) => item.title_zh ?? item.canonical_title).join("、");
+        showToast(`关联资料：${names}`, "info");
+      }); actions.append(related);
     }
     if (document.library_kind === "user") {
       const remove = window.document.createElement("button"); remove.textContent = "删除";
-      remove.addEventListener("click", async () => { if (!window.confirm(`删除个人资料“${document.canonical_title}”及其全部索引？`)) return; await call<boolean>("delete_user_document", { documentId: document.document_id }); libraryDocuments = []; await openLibrary(true); });
+      remove.addEventListener("click", async () => {
+        const confirmed = await confirmAction({ title: "删除个人资料", message: `将删除“${document.canonical_title}”及其全部本地索引。此操作不会影响核心资料库。`, confirmLabel: "删除资料", kicker: "个人资料库", danger: true });
+        if (!confirmed) return;
+        try {
+          await call<boolean>("delete_user_document", { documentId: document.document_id });
+          libraryDocuments = [];
+          await openLibrary(true);
+          showToast("个人资料及索引已删除。", "success");
+        } catch (error) { showToast(`删除失败：${errorMessage(error)}`, "error"); }
+      });
       actions.append(remove);
     }
     item.append(title, english, meta, actions);
@@ -812,7 +1033,7 @@ async function openLibrary(force = false) {
     libraryDocuments = await call<DocumentSummary[]>("list_documents");
     renderLibrary();
   } catch (error) {
-    libraryList.textContent = `资料库载入失败：${String(error)}`;
+    libraryList.textContent = `资料库载入失败：${errorMessage(error)}`;
   }
 }
 
@@ -822,12 +1043,12 @@ async function importDocument() {
   const button = document.querySelector<HTMLButtonElement>("#import-button")!; button.disabled = true; button.textContent = "正在提取…";
   try {
     const preview = await call<ImportPreview>("prepare_import", { path: input.value.trim() });
-    const confirmed = window.confirm(`${preview.source_filename}\n${preview.chunk_count} 个文本块 · ${(preview.byte_length / 1024).toFixed(1)} KiB\nSHA-256 ${preview.source_sha256.slice(0, 16)}…\n\n${preview.text_preview.slice(0, 700)}\n\n确认在本机切分并生成向量？`);
+    const confirmed = await confirmAction({ title: "导入并建立本地索引", message: `${preview.source_filename}\n${preview.chunk_count} 个文本块 · ${(preview.byte_length / 1024).toFixed(1)} KiB\nSHA-256 ${preview.source_sha256.slice(0, 16)}…\n\n${preview.text_preview.slice(0, 700)}`, confirmLabel: "导入并生成向量", kicker: "导入预览" });
     if (!confirmed) { await call("cancel_import", { previewId: preview.preview_id }); return; }
     button.textContent = "正在本地嵌入…";
     const saved = await call<ImportedDocument>("commit_import", { previewId: preview.preview_id, title: preview.inferred_title, language: preview.inferred_language, documentType: preview.inferred_document_type });
-    window.alert(`已导入“${saved.title}”，共 ${saved.chunk_count} 个文本块。`); input.value = ""; libraryDocuments = []; await openLibrary(true);
-  } catch (error) { window.alert(`导入失败：${String(error)}`); }
+    showToast(`已导入“${saved.title}”，共 ${saved.chunk_count} 个文本块。`, "success"); input.value = ""; libraryDocuments = []; await openLibrary(true);
+  } catch (error) { showToast(`导入失败：${errorMessage(error)}`, "error"); }
   finally { button.disabled = false; button.textContent = "预览并导入"; }
 }
 
@@ -854,7 +1075,7 @@ function syncProjectWorkspaceContext() {
 async function openProjects() {
   projectsModal.classList.remove("hidden");
   try { await loadProjects(); }
-  catch (error) { document.querySelector<HTMLElement>("#project-status")!.textContent = `项目读取失败：${String(error)}`; }
+  catch (error) { document.querySelector<HTMLElement>("#project-status")!.textContent = `项目读取失败：${errorMessage(error)}`; }
 }
 
 let noteLoadGeneration = 0;
@@ -878,16 +1099,20 @@ async function loadProjectNote() {
 async function createProject() {
   const title = document.querySelector<HTMLInputElement>("#project-title")!; if (!title.value.trim()) return title.focus();
   const description = document.querySelector<HTMLTextAreaElement>("#project-description")!;
-  const tags = document.querySelector<HTMLInputElement>("#project-tags")!;
-  const project = await call<Project>("create_project", { title: title.value.trim(), description: description.value, tags: tags.value.split(/[,，]/).map((v) => v.trim()).filter(Boolean) });
-  localStorage.setItem("ilia.project", project.id); title.value = ""; description.value = ""; tags.value = ""; await loadProjects();
+  const tags = document.querySelector<HTMLSelectElement>("#project-tags")!;
+  const custom = document.querySelector<HTMLInputElement>("#project-custom-tags")!;
+  const controlled = Array.from(tags.selectedOptions, (option) => option.value);
+  const customTags = custom.value.split(/[,，]/).map((value) => `自定义：${value.trim()}`).filter((value) => value !== "自定义：");
+  const project = await call<Project>("create_project", { title: title.value.trim(), description: description.value, tags: [...controlled, ...customTags] });
+  localStorage.setItem("ilia.project", project.id); title.value = ""; description.value = ""; Array.from(tags.options).forEach((option) => { option.selected = false; }); custom.value = ""; await loadProjects();
   document.querySelector<HTMLElement>("#project-status")!.textContent = `已创建并选中“${project.title}”。后续研究将自动保存。`;
 }
 
 function renderGuideStep() {
   const step = guideSteps[guideStepIndex];
   document.querySelector<HTMLElement>("#guide-step-count")!.textContent = `第 ${guideStepIndex + 1} 步 · 共 ${guideSteps.length} 步`;
-  document.querySelector<HTMLElement>("#guide-illustration")!.textContent = step.icon;
+  const preview = document.querySelector<HTMLElement>("#guide-illustration")!;
+  preview.innerHTML = `<div class="guide-ui"><div class="guide-ui-rail"><b>ILIA</b><span></span><span></span><span></span></div><div class="guide-ui-project"><b>研究空间</b><span></span><span></span><span></span></div><div class="guide-ui-main"><div class="guide-ui-query"></div><div class="guide-ui-answer"></div></div><div class="guide-ui-inspector"><b>证据　原文　审计</b><span></span><span></span></div><i class="guide-hotspot" data-focus="${step.focus}">${guideStepIndex + 1}</i></div>`;
   document.querySelector<HTMLElement>("#guide-step-title")!.textContent = step.title;
   document.querySelector<HTMLElement>("#guide-step-copy")!.textContent = step.copy;
   const tips = document.querySelector<HTMLElement>("#guide-step-tips")!;
@@ -925,10 +1150,10 @@ function updateModeHelper() {
 }
 
 async function saveResearchToProject(silent = false) {
-  if (!projectSelect.value || !currentResearch?.answer) { if (!silent) window.alert("请先选择项目并生成回答。"); return; }
+  if (!projectSelect.value || !currentResearch?.answer) { if (!silent) showToast("请先选择项目并生成回答。", "info"); return; }
   const evidence = currentResearch.search.evidence.map((item) => { const hit = currentResearch!.search.hits.find((value) => value.stable_key === item.stable_key); return { stable_evidence_key: item.stable_key, title: hit?.title_zh ?? hit?.canonical_title ?? item.chunk_id, citation_label: item.citation_label, text_snapshot: item.text }; });
-  try { await call("save_research", { request: { project_id: projectSelect.value, conversation_title: question.value.trim().slice(0, 80), question: question.value.trim(), answer: currentResearch.answer.answer, evidence } }); if (!silent) window.alert("回答、会话与证据快照已保存。"); }
-  catch (error) { window.alert(`自动保存失败，当前回答仍保留在页面：${String(error)}`); }
+  try { await call("save_research", { request: { project_id: projectSelect.value, conversation_title: question.value.trim().slice(0, 80), question: question.value.trim(), answer: currentResearch.answer.answer, evidence } }); if (!silent) showToast("回答、会话与证据快照已保存。", "success"); }
+  catch (error) { showToast(`自动保存失败，当前回答仍保留在页面：${errorMessage(error)}`, "error"); }
 }
 
 function downloadExport(content: string, extension: "md" | "html") {
@@ -936,10 +1161,13 @@ function downloadExport(content: string, extension: "md" | "html") {
   const url = URL.createObjectURL(blob); const link = document.createElement("a"); link.href = url; link.download = `${project?.title ?? "ILIA-project"}.${extension}`; link.click(); URL.revokeObjectURL(url);
 }
 
-async function exportCurrent(format: "markdown" | "html") { if (!projectSelect.value) return window.alert("请先选择项目。"); const content = await call<string>("export_project", { projectId: projectSelect.value, format }); downloadExport(content, format === "html" ? "html" : "md"); }
+async function exportCurrent(format: "markdown" | "html") { if (!projectSelect.value) return showToast("请先选择项目。", "info"); const content = await call<string>("export_project", { projectId: projectSelect.value, format }); downloadExport(content, format === "html" ? "html" : "md"); }
 
 async function openSettings() {
   settingsModal.classList.remove("hidden");
+  const mirror = localStorage.getItem("ilia.update-mirror") ?? "";
+  document.querySelector<HTMLInputElement>("#mirror-url")!.value = mirror;
+  document.querySelector<HTMLElement>("#mirror-status")!.textContent = mirror ? `优先使用：${mirror}；失败时回退 GitHub。签名与 SHA-256 校验不会跳过。` : "未配置正式镜像；将使用 GitHub 官方发布地址。";
   const settings = await call<ProxySettings>("get_proxy_settings"); document.querySelector<HTMLElement>("#proxy-status")!.textContent = settings.enabled ? `已启用：${settings.redacted_url}` : "未启用代理；仅在线更新命令会读取此设置。";
   await refreshUpdateSummary(false);
 }
@@ -948,7 +1176,9 @@ async function refreshUpdateSummary(showNotice: boolean) {
   const summary = await call<UpdateSummary>("get_update_summary");
   const release = summary.last_release_id ?? "尚无更新记录";
   const statusLabels: Record<string, string> = { staged: "已下载", applying: "安装中", applied: "安装成功", rolling_back: "正在回滚", rolled_back: "已回滚", failed: "安装失败" };
-  document.querySelector<HTMLElement>("#update-report")!.textContent = `当前版本 ${summary.current_version} · 最近更新 ${release}${summary.last_status ? ` · ${statusLabels[summary.last_status]}` : ""}`;
+  const checked = localStorage.getItem("ilia.update-last-checked");
+  const checkedLabel = checked ? ` · 上次检查 ${new Date(checked).toLocaleString()}` : " · 尚未检查更新";
+  document.querySelector<HTMLElement>("#update-report")!.textContent = `当前版本 ${summary.current_version} · 最近更新 ${release}${summary.last_status ? ` · ${statusLabels[summary.last_status]}` : ""}${checkedLabel}`;
   if (!showNotice || !summary.last_release_id || !summary.last_status) return;
   const noticeKey = `${summary.last_release_id}:${summary.last_status}`;
   if (localStorage.getItem("ilia.update-notice") === noticeKey) return;
@@ -1003,7 +1233,7 @@ async function runAsk() {
   } catch (error) {
     if (activeRequestId !== requestId) return;
     activeRequestId = null;
-    if (String(error).toLowerCase().includes("cancel")) {
+    if (errorMessage(error).toLowerCase().includes("cancel")) {
       setBusy(false);
       document.querySelector<HTMLElement>("#result-title")!.textContent = "已停止";
       return;
@@ -1019,40 +1249,88 @@ async function stopResearch() {
   finally { stopButton.disabled = false; }
 }
 
-async function checkForUpdates() {
+function configuredUpdateSources() {
+  const mirror = localStorage.getItem("ilia.update-mirror")?.replace(/\/+$/, "");
+  const sources = [] as Array<{ manifestUrl: string; signatureUrl: string; label: string }>;
+  if (mirror) sources.push({ manifestUrl: `${mirror}/update-manifest.json`, signatureUrl: `${mirror}/update-manifest.sig`, label: "中国大陆镜像" });
+  sources.push({ manifestUrl: updateManifestUrl, signatureUrl: updateSignatureUrl, label: "GitHub" });
+  return sources;
+}
+
+async function fetchUpdateStatus(generation: number) {
+  let lastError: unknown = new Error("没有可用的更新源");
+  for (const source of configuredUpdateSources()) {
+    if (generation !== updateCheckGeneration) throw new Error("更新检查已取消");
+    try {
+      const status = await Promise.race([
+        call<UpdateStatus>("check_updates", { manifestUrl: source.manifestUrl, signatureUrl: source.signatureUrl }),
+        new Promise<never>((_, reject) => window.setTimeout(() => reject(new Error(`${source.label} 连接超时`)), 12_000)),
+      ]);
+      activeUpdateUrls = source;
+      return status;
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  throw lastError;
+}
+
+async function checkForUpdates(background = false) {
   const label = document.querySelector<HTMLElement>("#update-button-label")!;
   const original = label.textContent;
-  updateButton.disabled = true;
-  label.textContent = "检查中…";
+  if (updateCheckActive) {
+    updateCheckGeneration += 1;
+    updateCheckActive = false;
+    label.textContent = original;
+    showToast("已取消等待更新检查；后台请求不会影响研究。", "info");
+    return;
+  }
+  const generation = ++updateCheckGeneration;
+  updateCheckActive = true;
+  label.textContent = "取消检查";
   try {
-    const status = await call<UpdateStatus>("check_updates", {
-      manifestUrl: updateManifestUrl,
-      signatureUrl: updateSignatureUrl,
-    });
+    const status = await fetchUpdateStatus(generation);
+    if (generation !== updateCheckGeneration) return;
+    localStorage.setItem("ilia.update-last-checked", new Date().toISOString());
     const available = status.manifest.components.filter(
       (component) => status.installed_versions.components[component.id] !== component.version,
     );
     if (!available.length) {
-      window.alert("当前已经是最新版本。");
+      if (!background) showToast("当前已经是最新版本。", "success");
       return;
     }
     const summary = available.map((component) => `${component.kind} · ${component.version}`).join("\n");
-    if (!window.confirm(`发现 ${status.manifest.release_id} 更新：\n\n${summary}\n\n现在安装更新？ILIA 将短暂退出，完成后自动重新打开。`)) return;
+    if (background) {
+      const notice = document.querySelector<HTMLElement>("#update-notice")!;
+      document.querySelector<HTMLElement>("#update-notice-copy")!.textContent = `发现 ${status.manifest.release_id} 更新。点击“检查更新”查看并安装。`;
+      notice.classList.remove("hidden");
+      return;
+    }
+    const confirmed = await confirmAction({
+      title: `安装 ${status.manifest.release_id}`,
+      message: `更新来源：${activeUpdateUrls.label}\n${summary}\n\nILIA 会先下载并验证签名、大小和 SHA-256。校验完成后应用将短暂退出并自动重新打开。`,
+      confirmLabel: "下载并安装",
+      kicker: "安全更新",
+    });
+    if (!confirmed) return;
     label.textContent = "准备更新…";
     lastUpdateReleaseId = status.manifest.release_id;
     showUpdateProgress({ phase: "checking", release_id: status.manifest.release_id, component_id: null, downloaded_bytes: 0, total_bytes: 0, message_zh: "正在启动安全更新进程" });
     await call<void>("install_update", {
-      manifestUrl: updateManifestUrl,
-      signatureUrl: updateSignatureUrl,
+      manifestUrl: activeUpdateUrls.manifestUrl,
+      signatureUrl: activeUpdateUrls.signatureUrl,
     });
   } catch (error) {
+    if (generation !== updateCheckGeneration) return;
     if (!document.querySelector("#update-progress-modal")?.classList.contains("hidden")) {
-      showUpdateProgress({ phase: "failed", release_id: "", component_id: null, downloaded_bytes: 0, total_bytes: 0, message_zh: String(error) });
+      showUpdateProgress({ phase: "failed", release_id: "", component_id: null, downloaded_bytes: 0, total_bytes: 0, message_zh: errorMessage(error, "无法连接更新服务器") });
     }
-    window.alert(`更新检查失败：${String(error)}`);
+    if (!background) showToast(`更新检查失败：${errorMessage(error, "无法连接更新服务器")}`, "error");
   } finally {
-    updateButton.disabled = false;
-    label.textContent = original;
+    if (generation === updateCheckGeneration) {
+      updateCheckActive = false;
+      label.textContent = original;
+    }
   }
 }
 
@@ -1062,9 +1340,9 @@ async function retryUpdate() {
   retry.disabled = true;
   showUpdateProgress({ phase: "checking", release_id: lastUpdateReleaseId, component_id: null, downloaded_bytes: 0, total_bytes: 0, message_zh: "正在重新连接；已下载的有效片段会继续使用" });
   try {
-    await call<void>("install_update", { manifestUrl: updateManifestUrl, signatureUrl: updateSignatureUrl });
+    await call<void>("install_update", { manifestUrl: activeUpdateUrls.manifestUrl, signatureUrl: activeUpdateUrls.signatureUrl });
   } catch (error) {
-    showUpdateProgress({ phase: "failed", release_id: lastUpdateReleaseId, component_id: null, downloaded_bytes: 0, total_bytes: 0, message_zh: String(error) });
+    showUpdateProgress({ phase: "failed", release_id: lastUpdateReleaseId, component_id: null, downloaded_bytes: 0, total_bytes: 0, message_zh: errorMessage(error, "更新下载未完成") });
   } finally {
     retry.disabled = false;
   }
@@ -1103,13 +1381,13 @@ function showUpdateProgress(progress: UpdateProgress) {
 function showError(error: unknown) {
   setBusy(false); document.querySelector<HTMLElement>("#result-title")!.textContent = "暂时无法完成";
   const empty = document.querySelector<HTMLElement>("#empty-state")!; empty.classList.remove("hidden");
-  empty.querySelector("h3")!.textContent = "本地服务发生错误"; empty.querySelector("p")!.textContent = String(error);
+  empty.querySelector("h3")!.textContent = "本地服务发生错误"; empty.querySelector("p")!.textContent = errorMessage(error);
   askButton.disabled = false; searchButton.disabled = false;
 }
 
 askButton.addEventListener("click", runAsk); searchButton.addEventListener("click", runSearch);
 stopButton.addEventListener("click", stopResearch);
-updateButton.addEventListener("click", checkForUpdates);
+updateButton.addEventListener("click", () => { void checkForUpdates(false); });
 libraryButton.addEventListener("click", () => { void openLibrary(); });
 document.querySelector("#projects-button")?.addEventListener("click", () => { void openProjects(); });
 document.querySelector("#project-manage-shortcut")?.addEventListener("click", () => { void openProjects(); });
@@ -1127,6 +1405,9 @@ document.querySelector("#settings-close")?.addEventListener("click", () => setti
 document.querySelector("#update-notice-close")?.addEventListener("click", () => document.querySelector("#update-notice")?.classList.add("hidden"));
 document.querySelector("#update-progress-close")?.addEventListener("click", () => document.querySelector("#update-progress-modal")?.classList.add("hidden"));
 document.querySelector("#update-progress-retry")?.addEventListener("click", () => { void retryUpdate(); });
+document.querySelector("#action-modal-cancel")?.addEventListener("click", () => closeConfirmation(false));
+document.querySelector("#action-modal-confirm")?.addEventListener("click", () => closeConfirmation(true));
+document.querySelector("#action-modal")?.addEventListener("click", (event) => { if (event.target === event.currentTarget) closeConfirmation(false); });
 libraryModal.addEventListener("click", (event) => { if (event.target === libraryModal) libraryModal.classList.add("hidden"); });
 projectsModal.addEventListener("click", (event) => { if (event.target === projectsModal) projectsModal.classList.add("hidden"); });
 guideModal.addEventListener("click", (event) => { if (event.target === guideModal) guideModal.classList.add("hidden"); });
@@ -1134,7 +1415,7 @@ readerClose.addEventListener("click", () => readerModal.classList.add("hidden"))
 readerModal.addEventListener("click", (event) => { if (event.target === readerModal) readerModal.classList.add("hidden"); });
 libraryFilter.addEventListener("input", renderLibrary);
 document.querySelector("#import-button")?.addEventListener("click", () => { void importDocument(); });
-document.querySelector("#rebuild-button")?.addEventListener("click", async () => { await call("rebuild_user_index"); window.alert("个人资料全文索引已重建。"); });
+document.querySelector("#rebuild-button")?.addEventListener("click", async () => { await call("rebuild_user_index"); showToast("个人资料全文索引已重建。", "success"); });
 document.querySelector("#create-project-button")?.addEventListener("click", () => { void createProject(); });
 projectSelect.addEventListener("change", () => { localStorage.setItem("ilia.project", projectSelect.value); const activeProject = projects.find((project) => project.id === projectSelect.value); document.querySelector<HTMLElement>("#workspace-context")!.textContent = activeProject?.title ?? "新研究"; syncProjectWorkspaceContext(); void loadProjectNote(); });
 document.querySelector("#save-answer-button")?.addEventListener("click", () => { void saveResearchToProject(); });
@@ -1158,7 +1439,7 @@ document.querySelector<HTMLTextAreaElement>("#project-note")?.addEventListener("
           document.querySelector<HTMLElement>("#project-status")!.textContent = "笔记已自动保存";
         }
       } catch (error) {
-        if (projectSelect.value === projectId) document.querySelector<HTMLElement>("#project-status")!.textContent = `保存失败：${String(error)}；编辑内容仍保留。`;
+        if (projectSelect.value === projectId) document.querySelector<HTMLElement>("#project-status")!.textContent = `保存失败：${errorMessage(error)}；编辑内容仍保留。`;
       }
     });
   }, 600);
@@ -1186,24 +1467,51 @@ originalButton.addEventListener("click", () => {
   }
 });
 document.querySelector<HTMLSelectElement>("#performance-preset")?.addEventListener("change", async (event) => { const preset = (event.target as HTMLSelectElement).value as PerformancePreset; await call("set_performance_preset", { preset }); document.querySelector<HTMLElement>("#resource-report")!.textContent = "性能档位已更新；现有模型会话已释放，下次预热或问答时生效。"; });
-document.querySelector("#prewarm-button")?.addEventListener("click", async (event) => { const button = event.currentTarget as HTMLButtonElement; button.disabled = true; button.textContent = "预热中…"; try { const report = await call<RuntimeStartupReport>("prewarm_model"); updateRuntime(report.detection, report); document.querySelector<HTMLElement>("#resource-report")!.textContent = `${report.selected_backend.toUpperCase()} · 上下文 ${report.selected_profile.context_size.toLocaleString()} · GPU 层 ${report.selected_profile.gpu_layers} · 估算内存 ${report.selected_profile.estimated_memory_mib.toLocaleString()} MiB`; } catch (error) { document.querySelector<HTMLElement>("#resource-report")!.textContent = `预热失败（不影响纯检索）：${String(error)}`; } finally { button.disabled = false; button.textContent = "后台预热模型"; } });
-document.querySelector("#save-proxy")?.addEventListener("click", async () => { const input = document.querySelector<HTMLInputElement>("#proxy-url")!; try { const settings = await call<ProxySettings>("set_proxy_settings", { url: input.value.trim() || null }); input.value = ""; document.querySelector<HTMLElement>("#proxy-status")!.textContent = settings.enabled ? `已安全保存到本机：${settings.redacted_url}` : "代理已关闭"; } catch (error) { window.alert(`代理设置无效：${String(error)}`); } });
-document.querySelector("#local-update-button")?.addEventListener("click", async () => { const path = document.querySelector<HTMLInputElement>("#local-update-path")!.value.trim(); if (!path) return; if (window.confirm("ILIA 将验证签名、哈希、路径和数据库完整性；失败会自动回滚。继续？")) await call("install_local_update", { packagePath: path }); });
+document.querySelector("#prewarm-button")?.addEventListener("click", async (event) => { const button = event.currentTarget as HTMLButtonElement; button.disabled = true; button.textContent = "预热中…"; try { const report = await call<RuntimeStartupReport>("prewarm_model"); updateRuntime(report.detection, report); document.querySelector<HTMLElement>("#resource-report")!.textContent = `${report.selected_backend.toUpperCase()} · 上下文 ${report.selected_profile.context_size.toLocaleString()} · GPU 层 ${report.selected_profile.gpu_layers} · 估算内存 ${report.selected_profile.estimated_memory_mib.toLocaleString()} MiB`; } catch (error) { document.querySelector<HTMLElement>("#resource-report")!.textContent = `预热失败（不影响纯检索）：${errorMessage(error)}`; } finally { button.disabled = false; button.textContent = "后台预热模型"; } });
+document.querySelector("#save-mirror")?.addEventListener("click", () => {
+  const input = document.querySelector<HTMLInputElement>("#mirror-url")!;
+  const value = input.value.trim().replace(/\/+$/, "");
+  if (value) {
+    try {
+      const parsed = new URL(value);
+      if (parsed.protocol !== "https:") throw new Error("镜像必须使用 HTTPS");
+    } catch (error) {
+      showToast(`镜像地址无效：${errorMessage(error)}`, "error");
+      return;
+    }
+    localStorage.setItem("ilia.update-mirror", value);
+  } else {
+    localStorage.removeItem("ilia.update-mirror");
+  }
+  document.querySelector<HTMLElement>("#mirror-status")!.textContent = value ? `优先使用：${value}；失败时回退 GitHub。签名与 SHA-256 校验不会跳过。` : "未配置正式镜像；将使用 GitHub 官方发布地址。";
+  showToast(value ? "镜像配置已保存。" : "镜像配置已清除。", "success");
+});
+document.querySelector("#save-proxy")?.addEventListener("click", async () => { const input = document.querySelector<HTMLInputElement>("#proxy-url")!; try { const settings = await call<ProxySettings>("set_proxy_settings", { url: input.value.trim() || null }); input.value = ""; document.querySelector<HTMLElement>("#proxy-status")!.textContent = settings.enabled ? `已安全保存到本机：${settings.redacted_url}` : "代理已关闭"; } catch (error) { showToast(`代理设置无效：${errorMessage(error)}`, "error"); } });
+document.querySelector("#local-update-button")?.addEventListener("click", async () => {
+  const path = document.querySelector<HTMLInputElement>("#local-update-path")!.value.trim();
+  if (!path) return;
+  const confirmed = await confirmAction({ title: "安装本地更新包", message: `${path}\n\nILIA 将验证签名、哈希、目标路径和数据库完整性；验证失败不会替换当前版本。`, confirmLabel: "验证并安装", kicker: "本地安全更新" });
+  if (!confirmed) return;
+  try { await call("install_local_update", { packagePath: path }); }
+  catch (error) { showToast(`本地更新未启动：${errorMessage(error)}`, "error"); }
+});
 document.querySelector("#backup-button")?.addEventListener("click", async () => {
   const input = document.querySelector<HTMLInputElement>("#backup-path")!; const status = document.querySelector<HTMLElement>("#backup-status")!; const outputPath = input.value.trim();
   if (!outputPath) return input.focus(); status.textContent = "正在检查数据库并创建备份…";
   try { const result = await call<BackupSummary>("create_backup", { outputPath }); status.textContent = `备份完成：${result.path}（${((result.user_bytes + result.workspace_bytes) / 1024).toFixed(1)} KiB）`; }
-  catch (error) { status.textContent = `备份失败，原数据未改变：${String(error)}`; }
+  catch (error) { status.textContent = `备份失败，原数据未改变：${errorMessage(error)}`; }
 });
 document.querySelector("#restore-button")?.addEventListener("click", async () => {
   const input = document.querySelector<HTMLInputElement>("#restore-path")!; const status = document.querySelector<HTMLElement>("#backup-status")!; const packagePath = input.value.trim();
   if (!packagePath) return input.focus();
-  if (!window.confirm("恢复会替换当前个人资料与研究工作区。请先创建当前备份。确认继续？")) return;
+  const confirmed = await confirmAction({ title: "恢复研究工作区", message: `将使用以下备份替换当前个人资料库与研究工作区：\n${packagePath}\n\n恢复前请确认已经为当前数据创建备份。`, confirmLabel: "校验并恢复", kicker: "研究数据保障", danger: true });
+  if (!confirmed) return;
   status.textContent = "正在校验备份并安全恢复…";
   try { const result = await call<BackupSummary>("restore_backup", { packagePath }); await loadProjects(); status.textContent = `恢复完成：${result.path}。项目与个人资料已重新载入。`; }
-  catch (error) { status.textContent = `恢复失败，当前数据未被替换：${String(error)}`; }
+  catch (error) { status.textContent = `恢复失败，当前数据未被替换：${errorMessage(error)}`; }
 });
-document.querySelector("#copy-citation")?.addEventListener("click", async () => { const evidence = currentEvidence[currentSourceIndex]; const hit = evidence ? currentHits.find((item) => item.stable_key === evidence.stable_key) : undefined; if (!hit) return; const citation = await call<string>("format_citation", { title: hit.canonical_title, locator: hit.citation_label, url: hit.official_source_url || null, style: document.querySelector<HTMLSelectElement>("#citation-style")!.value }); await navigator.clipboard.writeText(citation); });
+document.querySelector("#copy-citation")?.addEventListener("click", () => { void copyCurrentCitation(); });
+document.querySelector<HTMLSelectElement>("#citation-style")?.addEventListener("change", () => { void updateCitationPreview(); });
 
 if (isTauri()) {
   void listen<ResearchEventEnvelope>("research-event", (event) => handleResearchEvent(event.payload));
@@ -1214,6 +1522,10 @@ window.addEventListener("beforeunload", () => {
 });
 document.addEventListener("keydown", (event) => {
   if (event.key !== "Escape") return;
+  if (!document.querySelector("#action-modal")?.classList.contains("hidden")) {
+    closeConfirmation(false);
+    return;
+  }
   const visible = Array.from(document.querySelectorAll<HTMLElement>(".library-modal:not(.hidden)"));
   const top = visible.at(-1);
   if (top && top.id !== "update-progress-modal") top.classList.add("hidden");
@@ -1224,6 +1536,7 @@ updateModeHelper();
 if (!localStorage.getItem("ilia.guide-completed") && !localStorage.getItem("ilia.guide-dismissed")) document.querySelector("#first-run-tip")?.classList.remove("hidden");
 void loadProjects().catch(() => { document.querySelector<HTMLElement>("#workspace-context")!.textContent = "新研究"; });
 void refreshUpdateSummary(true).catch(() => { /* 更新状态不影响离线研究工作流。 */ });
+window.setTimeout(() => { void checkForUpdates(true); }, 2500);
 const idleTimeout = document.querySelector<HTMLSelectElement>("#idle-timeout")!;
 idleTimeout.value = localStorage.getItem("ilia.idle-timeout") ?? "900";
 idleTimeout.addEventListener("change", () => localStorage.setItem("ilia.idle-timeout", idleTimeout.value));

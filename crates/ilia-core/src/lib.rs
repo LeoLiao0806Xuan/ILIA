@@ -297,15 +297,14 @@ pub fn format_legal_citation(value: &CitationMetadata, style: CitationStyle) -> 
         .as_ref()
         .map(|report| format!(", {report}"))
         .unwrap_or_default();
+    let locator = value.locator.trim();
     let base = match style {
-        CitationStyle::Chinese => format!("《{}》{}{}{}", value.title, year, value.locator, court),
-        CitationStyle::Oscola => format!("{}{} {},{}", value.title, year, value.locator, report)
-            .trim_end_matches(',')
-            .to_owned(),
-        CitationStyle::Bluebook => format!("{}, {}{}{}", value.title, value.locator, report, year),
-        CitationStyle::Icj => format!("{}{}{}，{}", value.title, year, report, value.locator),
-        CitationStyle::Markdown => format!("*{}*{}，{}", value.title, year, value.locator),
-        CitationStyle::PlainText => format!("{}{} — {}", value.title, year, value.locator),
+        CitationStyle::Chinese => format!("《{}》{}，{}{}", value.title, year, locator, court),
+        CitationStyle::Oscola => format!("{}{}{} {}", value.title, year, report, locator),
+        CitationStyle::Bluebook => format!("{}, {}{}{}", value.title, locator, report, year),
+        CitationStyle::Icj => format!("{}{}{}，{}", value.title, year, report, locator),
+        CitationStyle::Markdown => format!("*{}*{}，{}", value.title, year, locator),
+        CitationStyle::PlainText => format!("{}{} — {}", value.title, year, locator),
     };
     match (&value.url, style) {
         (Some(url), CitationStyle::Markdown) => format!("[{base}]({url})"),
@@ -483,5 +482,10 @@ mod contract_tests {
         assert!(outputs.iter().all(|output| output.contains("art 3")));
         assert!(outputs.iter().all(|output| !output.contains("1982")));
         assert!(outputs[4].contains("https://example.invalid/unclos"));
+        assert_eq!(
+            outputs[1],
+            "United Nations Convention on the Law of the Sea art 3"
+        );
+        assert!(!outputs[0].contains("》art"));
     }
 }

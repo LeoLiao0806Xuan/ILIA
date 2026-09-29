@@ -1,0 +1,46 @@
+﻿{
+    "status":  "passed",
+    "version":  "1.1.6",
+    "verified_at":  "2026-09-29T03:40:11.1856372Z",
+    "package_generated_at":  "2026-09-29T03:38:58.8816757Z",
+    "staged_files":  177,
+    "staged_bytes":  4089577110,
+    "installer_launcher":  "ILIA-1.1.6-windows-x64-offline-setup.exe",
+    "installer_slices":  [
+                             "ILIA-1.1.6-windows-x64-offline-setup-1.bin",
+                             "ILIA-1.1.6-windows-x64-offline-setup-2.bin",
+                             "ILIA-1.1.6-windows-x64-offline-setup-3.bin"
+                         ],
+    "installer_bytes":  4323435556,
+    "installer_files":  [
+                            {
+                                "name":  "ILIA-1.1.6-windows-x64-offline-setup.exe",
+                                "size":  2072178,
+                                "generated_at":  "2026-09-29T03:39:55.5112951Z",
+                                "sha256":  "316fca2c3d47cb5f00bff3125cc9274471afe7c211427992953d0eaa592315b2",
+                                "authenticode_status":  "NotSigned"
+                            },
+                            {
+                                "name":  "ILIA-1.1.6-windows-x64-offline-setup-1.bin",
+                                "size":  1897927424,
+                                "generated_at":  "2026-09-29T03:39:21.3921735Z",
+                                "sha256":  "9d7074a5ecbf65fbf1e7b6607081f6911e416089f0885163a574bf0ae3c11ad3",
+                                "authenticode_status":  "UnknownError"
+                            },
+                            {
+                                "name":  "ILIA-1.1.6-windows-x64-offline-setup-2.bin",
+                                "size":  1900000000,
+                                "generated_at":  "2026-09-29T03:39:41.6356861Z",
+                                "sha256":  "f5791ca71c14fbe42be37bed4d9ecb02a0676bfb7c3d4760b1338fe80969c452",
+                                "authenticode_status":  "UnknownError"
+                            },
+                            {
+                                "name":  "ILIA-1.1.6-windows-x64-offline-setup-3.bin",
+                                "size":  523435954,
+                                "generated_at":  "2026-09-29T03:39:55.4918498Z",
+                                "sha256":  "bfab04f24f13e4ff5e5b5d4b6bf77a562e4b8fe246f7a8773b115e3dc18f60a8",
+                                "authenticode_status":  "UnknownError"
+                            }
+                        ],
+    "desktop_authenticode_status":  "NotSigned"
+}

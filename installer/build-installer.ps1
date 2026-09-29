@@ -1,5 +1,5 @@
 param(
-    [string]$Version = "1.1.5",
+    [string]$Version = "1.1.6",
     [string]$InnoSetupCompiler = "",
     [switch]$SkipBuild,
     [switch]$SkipWebView2,

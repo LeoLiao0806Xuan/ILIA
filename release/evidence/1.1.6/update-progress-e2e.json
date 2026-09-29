@@ -1,0 +1,16 @@
+{
+  "report_version": 1,
+  "release_version": "1.1.6",
+  "generated_at_utc": "2026-09-29T03:46:37.645274+00:00",
+  "status": "passed",
+  "phase": "applied",
+  "phases": [
+    "checking",
+    "checking",
+    "ready_to_apply",
+    "applying",
+    "applied"
+  ],
+  "event_count": 5,
+  "errors": []
+}

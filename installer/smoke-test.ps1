@@ -1,5 +1,5 @@
 param(
-    [string]$Version = "1.1.5",
+    [string]$Version = "1.1.6",
     [ValidateSet("auto", "cuda", "vulkan", "cpu")][string]$Backend = "cpu",
     [switch]$SkipCliBuild
 )

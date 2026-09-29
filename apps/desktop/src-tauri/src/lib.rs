@@ -745,7 +745,7 @@ fn deep_research_subquestions(question: &str) -> Vec<String> {
 
 fn deep_generation_question(question: &str, subquestions: &[String]) -> String {
     format!(
-        "请就下列国际法研究问题形成有证据支持的研究答复：\n{question}\n\n研究子问题：\n{}\n\n请严格使用六段结构：一、问题与范围；二、适用法律；三、主要裁判与解释；四、分析；五、限制与不确定性；六、结论。每个实质句均须引用证据。",
+        "请就下列国际法研究问题形成有证据支持的研究答复：\n{question}\n\n研究子问题：\n{}\n\n先用一段直接回答原问题，再按原问题涉及的事项组织分析。仅保留对原问题有实质帮助的子问题和证据；不要为了凑齐固定章节而扩展到无关条款、案件或制度。条件、例外与不确定性应与主答案分开。每个实质句均须引用证据。",
         subquestions
             .iter()
             .enumerate()
