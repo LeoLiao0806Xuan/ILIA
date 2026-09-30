@@ -244,9 +244,9 @@ async function call<T>(command: string, args: Record<string, unknown> = {}): Pro
   if (command === "list_user_documents") return [] as T;
   if (command === "get_proxy_settings") return { enabled: false, redacted_url: null, source: null } as T;
   if (command === "create_backup" || command === "restore_backup") return { path: String(args.outputPath ?? args.packagePath ?? "ILIA-backup.ilia-workspace"), user_bytes: 32768, workspace_bytes: 65536, user_sha256: "demo", workspace_sha256: "demo" } as T;
-  if (command === "get_update_summary") return { current_version: "1.1.8", last_release_id: "v1.1.7", last_status: "applied", applied_components: ["application", "updater"] } as T;
+  if (command === "get_update_summary") return { current_version: "1.1.9", last_release_id: "v1.1.8", last_status: "applied", applied_components: ["application", "updater"] } as T;
   if (command === "check_updates") return { manifest: { release_id: "demo", components: [] }, installed_versions: { components: {} } } as T;
-  if (command === "inspect_local_update") return { manifest: { release_id: "v1.1.8", components: [{ id: "application", kind: "application", version: "1.1.8", from_version: null, payload_size: 41209585 }] }, installed_versions: { components: { application: "1.1.7" } } } as T;
+  if (command === "inspect_local_update") return { manifest: { release_id: "v1.1.9", components: [{ id: "application", kind: "application", version: "1.1.9", from_version: null, payload_size: 41839307 }] }, installed_versions: { components: { application: "1.1.8" } } } as T;
   if (command === "install_update" || command === "install_local_update") return undefined as T;
   if (command === "cancel_update") return true as T;
   if (command === "cancel_research") return true as T;
@@ -352,7 +352,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
           <div class="loading-state hidden" id="loading-state"><div class="loader"></div><h3 id="loading-title">正在检索本地资料</h3><p id="loading-copy">正在运行 FTS5 与 BGE-M3 混合检索。</p></div>
           <article class="answer-card hidden" id="answer-card"><div class="answer-warning hidden" id="answer-warning" role="status"></div><div class="answer-copy" id="answer-copy"></div><div id="quick-results" class="quick-results hidden"></div><div class="answer-footer"><div class="answer-meta" id="answer-meta"></div><button class="secondary answer-save" id="save-answer-button">保存到当前项目</button></div></article>
         </section>
-        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.8</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
+        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.9</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
       </section>
     </main>
 
@@ -422,21 +422,45 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         <div class="guide-footer"><span>这个入口会一直保留在左下角。</span><div><button id="guide-back" class="secondary" type="button">上一步</button><button id="guide-next" class="primary" type="button">下一步</button></div></div>
       </div>
     </div>
-    <div id="settings-modal" class="library-modal hidden" role="dialog" aria-modal="true">
-      <div class="library-dialog"><div class="library-header"><div><div class="section-kicker">本机设置</div><h2>模型、数据与更新</h2></div><button id="settings-close" class="library-close" aria-label="关闭设置">×</button></div>
-        <div id="update-report" class="settings-report">正在读取版本与更新状态…</div>
-        <label class="question-label" for="performance-preset">性能档位</label><select id="performance-preset"><option value="energy_saver">节能</option><option value="balanced" selected>平衡</option><option value="high_performance">高性能</option></select>
-        <button id="prewarm-button" class="secondary settings-action">后台预热模型</button><div id="resource-report" class="settings-report">模型尚未加载；纯检索不会启动 Qwen。</div>
-        <label class="question-label" for="idle-timeout">空闲释放显存</label><select id="idle-timeout"><option value="300">5 分钟</option><option value="900" selected>15 分钟</option><option value="1800">30 分钟</option><option value="0">不自动释放</option></select>
-        <div class="update-resilience"><strong>网络不稳定保护</strong><span>下载中断会自动重试并从已完成位置续传；持续无法连接 GitHub 时，可配置代理或使用本地签名更新包。</span></div>
-        <label class="question-label" for="mirror-url">中国大陆镜像基础地址（可选）</label><input id="mirror-url" class="library-filter" placeholder="https://updates.example.cn/ilia/latest"/><button id="save-mirror" class="secondary settings-action">保存镜像配置</button><div id="mirror-status" class="settings-report">未配置正式镜像；将使用 GitHub 官方发布地址。</div>
-        <label class="question-label" for="proxy-url">更新代理（HTTP / HTTPS / SOCKS5）</label><input id="proxy-url" class="library-filter" type="password" autocomplete="off" placeholder="socks5://user:password@127.0.0.1:1080"/><button id="save-proxy" class="secondary settings-action">保存代理</button><div id="proxy-status" class="settings-report"></div>
-        <label class="question-label" for="local-update-path">本地签名更新包</label>
-        <div id="local-update-drop" class="local-update-drop" tabindex="0" role="button" aria-describedby="local-update-help"><strong>选择或拖入 .ilia 更新包</strong><span id="local-update-help">适合 GitHub 不可达时离线升级；安装前仍会验证签名、哈希与版本。</span></div>
-        <div class="local-update-picker"><input id="local-update-path" class="library-filter" readonly placeholder="尚未选择更新包"/><button id="local-update-choose" class="secondary" type="button">选择文件</button><button id="local-update-button" class="primary" type="button" disabled>检查并安装</button></div>
-        <div class="settings-section"><div class="section-kicker">研究数据保障</div><p class="modal-hint">备份个人资料库、项目、笔记、会话与证据快照。恢复前会核验文件哈希、SQLite 完整性与架构版本。</p></div>
-        <label class="question-label" for="backup-path">备份文件路径</label><input id="backup-path" class="library-filter" placeholder="例如 D:\\ILIA-backup.ilia-workspace"/><button id="backup-button" class="secondary settings-action">创建加校验备份</button>
-        <label class="question-label" for="restore-path">恢复备份路径</label><input id="restore-path" class="library-filter" placeholder="粘贴 .ilia-workspace 文件路径"/><button id="restore-button" class="secondary settings-action">校验并恢复</button><div id="backup-status" class="settings-report" role="status" aria-live="polite"></div>
+    <div id="settings-modal" class="library-modal hidden" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+      <div class="settings-dialog">
+        <div class="library-header settings-header"><div><div class="section-kicker">本机设置</div><h2 id="settings-title">运行环境与数据管理</h2><p>管理本地模型、可信更新来源和研究资料备份。</p></div><button id="settings-close" class="library-close" aria-label="关闭设置">×</button></div>
+        <div class="settings-scroll">
+          <div class="settings-version-card"><div class="settings-version-mark" aria-hidden="true">i</div><div><span>版本与更新状态</span><strong id="update-report">正在读取版本与更新状态…</strong></div></div>
+          <div class="settings-grid">
+            <section class="settings-card settings-card-wide" aria-labelledby="performance-title">
+              <div class="settings-card-heading"><div><div class="section-kicker">本地推理</div><h3 id="performance-title">性能与资源</h3></div><span class="settings-card-index">01</span></div>
+              <p class="settings-card-copy">仅标准与深度研究会启动生成模型；快速检索不会占用模型显存。</p>
+              <div class="settings-control-grid">
+                <label class="settings-field" for="performance-preset"><span>性能档位</span><select id="performance-preset"><option value="energy_saver">节能</option><option value="balanced" selected>平衡</option><option value="high_performance">高性能</option></select><small>控制上下文长度、GPU 层数与资源占用。</small></label>
+                <label class="settings-field" for="idle-timeout"><span>空闲释放显存</span><select id="idle-timeout"><option value="300">5 分钟</option><option value="900" selected>15 分钟</option><option value="1800">30 分钟</option><option value="0">不自动释放</option></select><small>长时间无生成任务时自动结束模型进程。</small></label>
+              </div>
+              <div class="settings-action-row"><button id="prewarm-button" class="secondary">后台预热模型</button><div id="resource-report" class="settings-inline-status">模型尚未加载；纯检索不会启动 Qwen。</div></div>
+            </section>
+
+            <section class="settings-card settings-card-wide" aria-labelledby="update-title">
+              <div class="settings-card-heading"><div><div class="section-kicker">安全更新</div><h3 id="update-title">更新来源与离线安装</h3></div><span class="settings-card-index">02</span></div>
+              <div class="update-resilience"><strong>签名验证始终启用</strong><span>断流会自动重试和续传；无论使用 GitHub、镜像还是本地包，只有签名与 SHA-256 校验通过后才会替换程序。</span></div>
+              <div class="settings-network-grid">
+                <div class="settings-field-group"><label class="settings-field" for="mirror-url"><span>中国大陆镜像地址</span><small>可选。镜像不可用时自动回退 GitHub。</small></label><div class="settings-input-action"><input id="mirror-url" class="library-filter" placeholder="https://updates.example.cn/ilia/latest"/><button id="save-mirror" class="secondary">保存</button></div><div id="mirror-status" class="settings-inline-status">未配置正式镜像；将使用 GitHub 官方发布地址。</div></div>
+                <div class="settings-field-group"><label class="settings-field" for="proxy-url"><span>更新代理</span><small>支持 HTTP、HTTPS 与 SOCKS5；凭据不会明文显示。</small></label><div class="settings-input-action"><input id="proxy-url" class="library-filter" type="password" autocomplete="off" placeholder="socks5://user:password@127.0.0.1:1080"/><button id="save-proxy" class="secondary">保存</button></div><div id="proxy-status" class="settings-inline-status"></div></div>
+              </div>
+              <div class="settings-subsection"><div><strong>本地签名更新包</strong><span>适合 GitHub 无法访问或内网部署。选择后先显示版本、组件与体积，再由你确认安装。</span></div></div>
+              <div id="local-update-drop" class="local-update-drop" tabindex="0" role="button" aria-describedby="local-update-help"><strong>将 .ilia 文件拖到这里，或点击选择</strong><span id="local-update-help">安装前会验证发布签名、文件哈希和目标版本。</span></div>
+              <div class="local-update-picker"><input id="local-update-path" class="library-filter" readonly placeholder="尚未选择更新包"/><button id="local-update-choose" class="secondary" type="button">选择文件</button><button id="local-update-button" class="primary" type="button" disabled>检查并安装</button></div>
+            </section>
+
+            <section class="settings-card settings-card-wide" aria-labelledby="backup-title">
+              <div class="settings-card-heading"><div><div class="section-kicker">研究数据</div><h3 id="backup-title">备份与恢复</h3></div><span class="settings-card-index">03</span></div>
+              <p class="settings-card-copy">备份个人资料库、项目、笔记、会话与证据快照。恢复前会核验文件哈希、SQLite 完整性与架构版本。</p>
+              <div class="settings-backup-grid">
+                <div class="settings-field-group"><label class="settings-field" for="backup-path"><span>创建备份</span><small>保存为带完整性校验的 .ilia-workspace 文件。</small></label><div class="settings-input-action"><input id="backup-path" class="library-filter" placeholder="例如 D:\\ILIA-backup.ilia-workspace"/><button id="backup-button" class="secondary">创建备份</button></div></div>
+                <div class="settings-field-group"><label class="settings-field" for="restore-path"><span>恢复备份</span><small>恢复前不会覆盖当前数据，确认后再执行。</small></label><div class="settings-input-action"><input id="restore-path" class="library-filter" placeholder="粘贴 .ilia-workspace 文件路径"/><button id="restore-button" class="secondary">校验并恢复</button></div></div>
+              </div>
+              <div id="backup-status" class="settings-inline-status settings-backup-status" role="status" aria-live="polite"></div>
+            </section>
+          </div>
+        </div>
       </div>
     </div>
     <div id="app-toast" class="app-toast hidden" role="status" aria-live="polite"></div>
@@ -509,7 +533,7 @@ let guideStepIndex = 0;
 let updateCheckGeneration = 0;
 let updateCheckActive = false;
 let activeUpdateUrls = { manifestUrl: updateManifestUrl, signatureUrl: updateSignatureUrl, label: "GitHub" };
-let currentApplicationVersion = "1.1.8";
+let currentApplicationVersion = "1.1.9";
 let updateDownloadSample: { at: number; bytes: number; speed: number } | null = null;
 let toastTimer: number | null = null;
 let confirmationResolver: ((confirmed: boolean) => void) | null = null;

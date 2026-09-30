@@ -1,0 +1,45 @@
+{
+  "version": "1.1.9",
+  "status": "passed",
+  "validated_at": "2026-09-30T11:20:00+08:00",
+  "checks": {
+    "rust_workspace_tests": {
+      "status": "passed",
+      "passed": 64,
+      "failed": 0
+    },
+    "frontend_production_build": {
+      "status": "passed",
+      "tool": "TypeScript and Vite"
+    },
+    "production_desktop_startup": {
+      "status": "passed",
+      "window_title": "ILIA · 国际法智能助手",
+      "webview_url": "http://tauri.localhost/",
+      "development_server_required": false
+    },
+    "signed_local_update": {
+      "status": "passed",
+      "from_version": "1.1.7",
+      "to_version": "1.1.9",
+      "desktop_hash_match": true,
+      "versioned_updater_installed": true
+    },
+    "recovery_path": {
+      "status": "passed",
+      "source_updater_version": "1.1.7",
+      "target_version": "1.1.9",
+      "same_volume_staging": true,
+      "shortcuts_recreated": true
+    },
+    "settings_visual_qa": {
+      "status": "passed",
+      "viewport": "1280x720",
+      "sections": [
+        "性能与资源",
+        "更新来源与离线安装",
+        "备份与恢复"
+      ]
+    }
+  }
+}

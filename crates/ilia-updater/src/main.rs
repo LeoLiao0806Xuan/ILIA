@@ -68,7 +68,7 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
         .transpose()?
         .map(|bytes| serde_json::from_slice(&bytes))
         .transpose()?;
-    let engine = UpdateEngine::new(root)?;
+    let engine = UpdateEngine::new(root.clone())?;
 
     match command.as_str() {
         "apply" => {
@@ -136,7 +136,10 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
                 &progress("checking", "", None, 0, 0, "正在读取并验证本地签名更新包"),
             )?;
             let package = package.ok_or("missing --package")?;
-            let extraction = package.with_extension("ilia-stage");
+            // Stage beside the installation rather than beside the selected
+            // package. Windows cannot atomically rename a verified payload
+            // from another drive into the installation directory.
+            let extraction = root.join(".ilia-update/local-package-stage");
             let (release, stage) = load_local_package(&package, &trusted, &extraction)?;
             write_progress(
                 progress_file.as_deref(),

@@ -493,6 +493,11 @@ pub fn load_local_package(
         remove_path(extraction_root)?;
     }
     fs::create_dir_all(extraction_root)?;
+    // `Url::from_file_path` requires an absolute Windows path. The desktop
+    // picker normally supplies one, but recovery tools and command-line use
+    // may pass a relative `.ilia` path. Canonicalize the freshly created stage
+    // once so both flows use identical, valid file URLs.
+    let extraction_root = fs::canonicalize(extraction_root)?;
     let mut expected = BTreeSet::new();
     for entry in &package.payloads {
         validate_relative_path(&entry.path)?;
@@ -537,7 +542,7 @@ pub fn load_local_package(
             "payload list incomplete".into(),
         ));
     }
-    Ok((release, extraction_root.to_path_buf()))
+    Ok((release, extraction_root))
 }
 
 fn read_zip_json<T: serde::de::DeserializeOwned>(

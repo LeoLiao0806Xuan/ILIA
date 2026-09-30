@@ -18,11 +18,37 @@ if (-not $releaseRoot.StartsWith($allowedRoot, [System.StringComparison]::Ordina
 if (Test-Path -LiteralPath $releaseRoot) {
     throw "Refusing to overwrite an existing release directory: $releaseRoot"
 }
-New-Item -ItemType Directory -Path $releaseRoot -Force | Out-Null
 
 $parsedComponents = Get-Content -Raw -LiteralPath $componentsPath | ConvertFrom-Json
 $sourceComponents = @($parsedComponents | ForEach-Object { $_ })
 if ($sourceComponents.Count -eq 0) { throw "At least one update component is required" }
+
+# Never trust a pre-existing Cargo artifact for the desktop payload. A plain
+# `cargo build --release` produces a development WebView entry that points at
+# devUrl (127.0.0.1) instead of embedding the Vite output. Rebuild through the
+# Tauri CLI immediately before packaging so the custom protocol and frontend
+# assets are always enabled.
+if (@($sourceComponents | Where-Object { $_.id -eq "application" }).Count -gt 0) {
+    $desktopRoot = Join-Path $projectRoot "apps\desktop"
+    Push-Location $desktopRoot
+    try {
+        & npm run tauri -- build --no-bundle
+        if ($LASTEXITCODE -ne 0) { throw "Production Tauri build failed with exit code $LASTEXITCODE" }
+    } finally {
+        Pop-Location
+    }
+}
+
+# The updater is shipped as a versioned component and must carry the same
+# workspace version as the desktop application.
+if (@($sourceComponents | Where-Object { $_.id -eq "updater" }).Count -gt 0) {
+    . (Join-Path $projectRoot "tools\windows-toolchain.ps1")
+    Set-IliaGnuEnvironment
+    & cargo +stable-x86_64-pc-windows-gnu build --offline --release -p ilia-updater
+    if ($LASTEXITCODE -ne 0) { throw "Update helper build failed with exit code $LASTEXITCODE" }
+}
+
+New-Item -ItemType Directory -Path $releaseRoot -Force | Out-Null
 $manifestComponents = @(foreach ($component in $sourceComponents) {
     $payload = (Resolve-Path $component.payload_path).Path
     $safeId = [string]$component.id

@@ -2133,7 +2133,7 @@ dependencies = [
 
 [[package]]
 name = "ilia-core"
-version = "1.1.8"
+version = "1.1.9"
 dependencies = [
  "serde",
  "serde_json",
@@ -2142,7 +2142,7 @@ dependencies = [
 
 [[package]]
 name = "ilia-corpus-embedder"
-version = "1.1.8"
+version = "1.1.9"
 dependencies = [
  "ilia-database",
  "ilia-embedding",
@@ -2150,7 +2150,7 @@ dependencies = [
 
 [[package]]
 name = "ilia-database"
-version = "1.1.8"
+version = "1.1.9"
 dependencies = [
  "ilia-core",
  "regex",
@@ -2165,7 +2165,7 @@ dependencies = [
 
 [[package]]
 name = "ilia-desktop"
-version = "1.1.8"
+version = "1.1.9"
 dependencies = [
  "ilia-core",
  "ilia-database",
@@ -2187,7 +2187,7 @@ dependencies = [
 
 [[package]]
 name = "ilia-embedding"
-version = "1.1.8"
+version = "1.1.9"
 dependencies = [
  "fastembed",
  "ort",
@@ -2196,7 +2196,7 @@ dependencies = [
 
 [[package]]
 name = "ilia-eval-runner"
-version = "1.1.8"
+version = "1.1.9"
 dependencies = [
  "ilia-core",
  "ilia-database",
@@ -2208,7 +2208,7 @@ dependencies = [
 
 [[package]]
 name = "ilia-inference"
-version = "1.1.8"
+version = "1.1.9"
 dependencies = [
  "ilia-core",
  "ilia-database",
@@ -2225,7 +2225,7 @@ dependencies = [
 
 [[package]]
 name = "ilia-retrieval"
-version = "1.1.8"
+version = "1.1.9"
 dependencies = [
  "ilia-core",
  "ilia-database",
@@ -2239,7 +2239,7 @@ dependencies = [
 
 [[package]]
 name = "ilia-updater"
-version = "1.1.8"
+version = "1.1.9"
 dependencies = [
  "base64 0.22.1",
  "ring",
