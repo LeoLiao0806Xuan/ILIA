@@ -244,9 +244,9 @@ async function call<T>(command: string, args: Record<string, unknown> = {}): Pro
   if (command === "list_user_documents") return [] as T;
   if (command === "get_proxy_settings") return { enabled: false, redacted_url: null, source: null } as T;
   if (command === "create_backup" || command === "restore_backup") return { path: String(args.outputPath ?? args.packagePath ?? "ILIA-backup.ilia-workspace"), user_bytes: 32768, workspace_bytes: 65536, user_sha256: "demo", workspace_sha256: "demo" } as T;
-  if (command === "get_update_summary") return { current_version: "1.1.9", last_release_id: "v1.1.8", last_status: "applied", applied_components: ["application", "updater"] } as T;
+  if (command === "get_update_summary") return { current_version: "1.1.10", last_release_id: "v1.1.9", last_status: "applied", applied_components: ["application", "updater"] } as T;
   if (command === "check_updates") return { manifest: { release_id: "demo", components: [] }, installed_versions: { components: {} } } as T;
-  if (command === "inspect_local_update") return { manifest: { release_id: "v1.1.9", components: [{ id: "application", kind: "application", version: "1.1.9", from_version: null, payload_size: 41839307 }] }, installed_versions: { components: { application: "1.1.8" } } } as T;
+  if (command === "inspect_local_update") return { manifest: { release_id: "v1.1.10", components: [{ id: "application", kind: "application", version: "1.1.10", from_version: null, payload_size: 41840986 }] }, installed_versions: { components: { application: "1.1.9" } } } as T;
   if (command === "install_update" || command === "install_local_update") return undefined as T;
   if (command === "cancel_update") return true as T;
   if (command === "cancel_research") return true as T;
@@ -352,7 +352,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
           <div class="loading-state hidden" id="loading-state"><div class="loader"></div><h3 id="loading-title">正在检索本地资料</h3><p id="loading-copy">正在运行 FTS5 与 BGE-M3 混合检索。</p></div>
           <article class="answer-card hidden" id="answer-card"><div class="answer-warning hidden" id="answer-warning" role="status"></div><div class="answer-copy" id="answer-copy"></div><div id="quick-results" class="quick-results hidden"></div><div class="answer-footer"><div class="answer-meta" id="answer-meta"></div><button class="secondary answer-save" id="save-answer-button">保存到当前项目</button></div></article>
         </section>
-        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.9</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
+        <div class="legal-notice" role="note"><strong>法律免责声明 · 1.1.10</strong><span>ILIA 提供国际法资料检索与辅助解释，不构成法律意见。正式引用及最新法律发展应以官方来源为准。</span></div>
       </section>
     </main>
 
@@ -533,7 +533,7 @@ let guideStepIndex = 0;
 let updateCheckGeneration = 0;
 let updateCheckActive = false;
 let activeUpdateUrls = { manifestUrl: updateManifestUrl, signatureUrl: updateSignatureUrl, label: "GitHub" };
-let currentApplicationVersion = "1.1.9";
+let currentApplicationVersion = "1.1.10";
 let updateDownloadSample: { at: number; bytes: number; speed: number } | null = null;
 let toastTimer: number | null = null;
 let confirmationResolver: ((confirmed: boolean) => void) | null = null;

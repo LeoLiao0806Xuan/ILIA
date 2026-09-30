@@ -1,0 +1,48 @@
+{
+  "version": "1.1.10",
+  "status": "passed",
+  "validated_at": "2026-09-30T12:33:43+08:00",
+  "checks": {
+    "rust_workspace_tests": {
+      "status": "passed",
+      "passed": 64,
+      "failed": 0
+    },
+    "frontend_production_build": {
+      "status": "passed",
+      "tool": "Tauri production build with TypeScript and Vite",
+      "development_server_required": false
+    },
+    "production_desktop_startup": {
+      "status": "passed",
+      "window_created": true,
+      "responding": true,
+      "bundle_source": "frontendDist"
+    },
+    "signed_local_update": {
+      "status": "passed",
+      "from_version": "1.1.7",
+      "to_version": "1.1.10",
+      "desktop_hash_match": true,
+      "versioned_updater_installed": true
+    },
+    "recovery_path": {
+      "status": "passed",
+      "source_updater_version": "1.1.7",
+      "target_version": "1.1.10",
+      "same_volume_staging": true,
+      "recovery_installer_compiled": true,
+      "visible_restart_owned_by_installer": true
+    },
+    "settings_visual_qa": {
+      "status": "passed",
+      "carried_forward_from": "1.1.9",
+      "viewport": "1280x720",
+      "sections": [
+        "性能与资源",
+        "更新来源与离线安装",
+        "备份与恢复"
+      ]
+    }
+  }
+}

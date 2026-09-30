@@ -1,9 +1,9 @@
 #define AppName "ILIA"
 #ifndef AppVersion
-  #define AppVersion "1.1.9"
+  #define AppVersion "1.1.10"
 #endif
 #ifndef AppFileVersion
-  #define AppFileVersion "1.1.9.0"
+  #define AppFileVersion "1.1.10.0"
 #endif
 #ifndef UpdatePackage
   #error UpdatePackage must point to a signed .ilia update package
@@ -113,11 +113,14 @@ begin
     Parameters :=
       'apply-package --root "' + ExpandConstant('{app}') + '" ' +
       '--package "' + ExpandConstant('{app}\.ilia-update\recovery-{#AppVersion}.ilia') + '" ' +
-      '--public-key "' + ExpandConstant('{app}\update\trusted-key.json') + '" --restart';
+      '--public-key "' + ExpandConstant('{app}\update\trusted-key.json') + '"';
     if not Exec(ExpandConstant('{app}\ilia-updater.exe'), Parameters, '',
       SW_HIDE, ewWaitUntilTerminated, ResultCode) then
       RaiseException('无法启动 ILIA 更新器。');
     if ResultCode <> 0 then
       RaiseException('签名更新未能完成。现有版本已保持或回滚，错误代码：' + IntToStr(ResultCode));
+    if not ShellExec('', ExpandConstant('{app}\ilia-desktop.exe'), '',
+      ExpandConstant('{app}'), SW_SHOWNORMAL, ewNoWait, ResultCode) then
+      RaiseException('更新已经完成，但无法自动打开 ILIA。请使用桌面快捷方式启动。');
   end;
 end;
