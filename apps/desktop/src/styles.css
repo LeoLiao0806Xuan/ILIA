@@ -272,23 +272,26 @@ button:disabled { cursor: wait; opacity: .55; }
 .guide-content { width: 100%; min-width: 0; min-height: 0; justify-self: center; overflow: auto; padding: 25px 32px 30px; scrollbar-gutter: stable; }
 .guide-step-count { color: var(--gold); font-size: 9px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
 .guide-illustration { height: 190px; margin: 12px 0 18px; overflow: hidden; border: 1px solid #ced8d1; border-radius: 10px; background: #e8e8e3; }
-.guide-ui { position: relative; height: 100%; display: grid; grid-template-columns: 42px 72px 1fr 92px; color: #53615b; font-size: 7px; }
-.guide-ui > div { padding: 10px 7px; border-right: 1px solid #cdd2ce; }
-.guide-ui-rail { display: grid; align-content: start; gap: 10px; background: var(--rail); color: #fff; }
-.guide-ui-rail span, .guide-ui-project span, .guide-ui-inspector span { height: 12px; border-radius: 3px; background: rgba(255,255,255,.16); }
-.guide-ui-project, .guide-ui-inspector { display: grid; align-content: start; gap: 9px; background: var(--sidebar); }
-.guide-ui-project span, .guide-ui-inspector span { background: #d6ddd8; }
-.guide-ui-main { display: grid; align-content: start; gap: 12px; padding: 18px !important; }
-.guide-ui-query { height: 48px; border: 2px solid #82a997; border-radius: 6px; background: #fffefa; }
-.guide-ui-answer { height: 90px; border: 1px solid #d5d7d1; border-radius: 6px; background: #fffefa; }
-.guide-marker { position: absolute; min-width: 25px; height: 19px; padding: 0 6px; display: grid; place-items: center; border: 1px solid #a68a50; border-radius: 4px; background: #fffdf7; box-shadow: 0 2px 7px rgba(34,48,42,.14); color: #725d31; font-size: 8px; font-weight: 700; letter-spacing: .08em; line-height: 1; }
-.guide-marker::after { position: absolute; inset: -4px; border: 1px solid rgba(166,138,80,.2); border-radius: 7px; content: ""; pointer-events: none; }
-.guide-marker[data-focus="query"] { left: 47%; top: 24%; }
-.guide-marker[data-focus="project"] { left: 18%; top: 38%; }
-.guide-marker[data-focus="inspector"] { right: 7%; top: 18%; }
-.guide-marker[data-focus="library"] { left: 3%; top: 48%; }
-.guide-marker[data-focus="export"] { left: 60%; bottom: 14%; }
-.guide-marker[data-focus="update"] { left: 3%; top: 67%; }
+.guide-ui { height: 100%; display: grid; grid-template-columns: 62px 105px minmax(0, 1fr) 126px; color: #46564f; font-size: 7px; }
+.guide-ui > * { min-width: 0; padding: 10px 8px; border-right: 1px solid #cdd2ce; }
+.guide-ui-rail { display: flex; flex-direction: column; gap: 7px; background: var(--rail); color: #edf4ef; }
+.guide-ui-rail b { margin-bottom: 4px; color: #ead498; font: 700 9px Georgia, serif; letter-spacing: .12em; }
+.guide-ui-rail span { padding: 5px 4px; border-radius: 3px; background: rgba(255,255,255,.08); white-space: nowrap; }
+.guide-ui-rail i { flex: 1; }
+.guide-ui-project, .guide-ui-inspector { display: grid; align-content: start; gap: 7px; background: var(--sidebar); }
+.guide-ui-project small { color: #829089; }
+.guide-ui-project strong, .guide-ui-inspector strong { color: #253a31; font-size: 8px; }
+.guide-ui-project p, .guide-ui-inspector p { margin: 0; padding: 6px; border-radius: 3px; background: #dde4df; line-height: 1.35; }
+.guide-ui-main { display: grid; align-content: start; gap: 10px; padding: 14px !important; background: #eeefeb; }
+.guide-ui-query, .guide-ui-answer { display: grid; gap: 6px; padding: 10px; border: 1px solid #d1d7d2; border-radius: 6px; background: #fffefa; }
+.guide-ui-query strong, .guide-ui-answer strong { color: #263b32; font: 600 9px/1.3 Georgia, "Noto Serif SC", serif; }
+.guide-ui-query > div { display: flex; align-items: center; justify-content: space-between; }
+.guide-ui button { padding: 4px 7px; border: 0; border-radius: 3px; background: var(--accent); color: white; font: inherit; }
+.guide-ui-answer p { margin: 0; color: #68756f; line-height: 1.45; }
+.guide-ui-answer button { justify-self: end; background: #eef3ef; color: var(--accent); }
+.guide-ui-inspector span { width: max-content; padding: 4px 6px; border-radius: 3px; background: #e1eee7; color: var(--accent-dark); }
+.guide-ui [data-guide-target] { transition: outline-color .15s, box-shadow .15s, background-color .15s; }
+.guide-ui[data-focus="query"] [data-guide-target="query"], .guide-ui[data-focus="project"] [data-guide-target="project"], .guide-ui[data-focus="inspector"] [data-guide-target="inspector"], .guide-ui[data-focus="library"] [data-guide-target="library"], .guide-ui[data-focus="export"] [data-guide-target="export"], .guide-ui[data-focus="update"] [data-guide-target="update"] { position: relative; z-index: 1; outline: 2px solid #b08a3e; outline-offset: 2px; box-shadow: 0 0 0 5px rgba(176,138,62,.12); }
 .guide-content h3 { font-size: 21px; }
 .guide-content > p { max-width: 620px; color: var(--muted); font-size: 12px; line-height: 1.75; }
 .guide-step-tips { display: grid; gap: 7px; margin-top: 18px; }
@@ -298,6 +301,12 @@ button:disabled { cursor: wait; opacity: .55; }
 .update-resilience { display: grid; gap: 5px; margin: 8px 0 18px; padding: 12px 13px; border: 1px solid #c7d8ce; border-radius: 8px; background: var(--accent-soft); }
 .update-resilience strong { color: var(--accent-dark); font-size: 11px; }
 .update-resilience span { color: var(--muted); font-size: 10px; line-height: 1.6; }
+.local-update-drop { display: grid; gap: 5px; padding: 16px; border: 1px dashed #9eb3a7; border-radius: 8px; background: #f5f8f5; color: var(--accent-dark); cursor: pointer; }
+.local-update-drop:hover, .local-update-drop:focus-visible, .local-update-drop.dragging { border-color: var(--gold); outline: 0; background: #fbf8ef; box-shadow: 0 0 0 3px rgba(176,138,62,.11); }
+.local-update-drop span { color: var(--muted); font-size: 10px; line-height: 1.55; }
+.local-update-picker { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 7px; align-items: center; margin: 8px 0 18px; }
+.local-update-picker .library-filter { margin: 0; }
+.local-update-picker button { white-space: nowrap; }
 .settings-action { margin: 9px 0 17px; }
 .settings-report { margin: -9px 0 18px; padding: 10px; border-left: 3px solid #9aaa9f; background: #eef1ed; color: var(--muted); font-size: 10px; line-height: 1.6; }
 .settings-section { margin: 24px 0 12px; padding-top: 18px; border-top: 1px solid var(--line); }

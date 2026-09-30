@@ -14,24 +14,32 @@
     "rust_clippy": "passed",
     "rust_tests": {
       "status": "passed",
-      "passed": 63,
+      "passed": 64,
       "failed": 0
     },
     "signed_local_package_apply": "passed",
-    "legacy_red_tutorial_marker_removed": true
+    "upgrade_matrix": {
+      "1.1.5_to_1.1.8": "passed",
+      "1.1.6_to_1.1.8": "passed",
+      "1.1.7_to_1.1.8": "passed"
+    },
+    "legacy_red_tutorial_marker_removed": true,
+    "native_local_package_picker": "passed",
+    "update_preview": "passed",
+    "update_cancellation_signal": "passed"
   },
   "artifacts": {
     "application": {
-      "bytes": 41209585,
-      "sha256": "2e072b8b9a83902697c238455f96451bb5f8171dcf99ee771385c14007155af2"
+      "bytes": 41823469,
+      "sha256": "e7ea00941811d375d5cff5c0751ccfe9f670eff9008fa4e8ae025191ea38dd87"
     },
     "updater": {
       "bytes": 10243258,
       "sha256": "543a9e79834587d593a8af5a76c1e670e225fe3b7ae648ff17780b1e6b672092"
     },
     "offline_update": {
-      "bytes": 16233741,
-      "sha256": "5700ae869c92d38e2535673db37ce78fc9af95135a10ee7e50a9a8fee75c6d4e"
+      "bytes": 16375343,
+      "sha256": "470bc173c04033d4d0b5dea346ecbb734ddf930141d8a99ff2d137685d3f0178"
     }
   }
 }

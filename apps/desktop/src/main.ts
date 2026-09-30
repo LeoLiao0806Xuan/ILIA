@@ -1,5 +1,7 @@
 import { invoke } from "@tauri-apps/api/core";
 import { listen } from "@tauri-apps/api/event";
+import { getCurrentWebview } from "@tauri-apps/api/webview";
+import { open as openFileDialog } from "@tauri-apps/plugin-dialog";
 import { openUrl } from "@tauri-apps/plugin-opener";
 import "./styles.css";
 
@@ -152,6 +154,8 @@ interface UpdateComponent {
   id: string;
   kind: "application" | "corpus" | "model" | "runtime";
   version: string;
+  from_version: string | null;
+  payload_size: number;
 }
 
 interface UpdateStatus {
@@ -171,7 +175,7 @@ interface UpdateSummary {
   applied_components: string[];
 }
 interface UpdateProgress {
-  phase: "checking" | "downloading" | "verifying" | "ready_to_apply" | "applying" | "applied" | "failed";
+  phase: "checking" | "downloading" | "verifying" | "ready_to_apply" | "applying" | "applied" | "cancelled" | "failed";
   release_id: string;
   component_id: string | null;
   downloaded_bytes: number;
@@ -242,7 +246,9 @@ async function call<T>(command: string, args: Record<string, unknown> = {}): Pro
   if (command === "create_backup" || command === "restore_backup") return { path: String(args.outputPath ?? args.packagePath ?? "ILIA-backup.ilia-workspace"), user_bytes: 32768, workspace_bytes: 65536, user_sha256: "demo", workspace_sha256: "demo" } as T;
   if (command === "get_update_summary") return { current_version: "1.1.8", last_release_id: "v1.1.7", last_status: "applied", applied_components: ["application", "updater"] } as T;
   if (command === "check_updates") return { manifest: { release_id: "demo", components: [] }, installed_versions: { components: {} } } as T;
-  if (command === "install_update") return undefined as T;
+  if (command === "inspect_local_update") return { manifest: { release_id: "v1.1.8", components: [{ id: "application", kind: "application", version: "1.1.8", from_version: null, payload_size: 41209585 }] }, installed_versions: { components: { application: "1.1.7" } } } as T;
+  if (command === "install_update" || command === "install_local_update") return undefined as T;
+  if (command === "cancel_update") return true as T;
   if (command === "cancel_research") return true as T;
   if (command === "list_documents") return demoDocuments as T;
   if (command === "read_document_text") return `ILIA NORMALIZED LEGAL TEXT\n\n${demoHit.text}` as T;
@@ -425,7 +431,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         <div class="update-resilience"><strong>网络不稳定保护</strong><span>下载中断会自动重试并从已完成位置续传；持续无法连接 GitHub 时，可配置代理或使用本地签名更新包。</span></div>
         <label class="question-label" for="mirror-url">中国大陆镜像基础地址（可选）</label><input id="mirror-url" class="library-filter" placeholder="https://updates.example.cn/ilia/latest"/><button id="save-mirror" class="secondary settings-action">保存镜像配置</button><div id="mirror-status" class="settings-report">未配置正式镜像；将使用 GitHub 官方发布地址。</div>
         <label class="question-label" for="proxy-url">更新代理（HTTP / HTTPS / SOCKS5）</label><input id="proxy-url" class="library-filter" type="password" autocomplete="off" placeholder="socks5://user:password@127.0.0.1:1080"/><button id="save-proxy" class="secondary settings-action">保存代理</button><div id="proxy-status" class="settings-report"></div>
-        <label class="question-label" for="local-update-path">本地签名更新包</label><input id="local-update-path" class="library-filter" placeholder="粘贴 .ilia 文件路径"/><button id="local-update-button" class="secondary settings-action">验证并安装本地包</button>
+        <label class="question-label" for="local-update-path">本地签名更新包</label>
+        <div id="local-update-drop" class="local-update-drop" tabindex="0" role="button" aria-describedby="local-update-help"><strong>选择或拖入 .ilia 更新包</strong><span id="local-update-help">适合 GitHub 不可达时离线升级；安装前仍会验证签名、哈希与版本。</span></div>
+        <div class="local-update-picker"><input id="local-update-path" class="library-filter" readonly placeholder="尚未选择更新包"/><button id="local-update-choose" class="secondary" type="button">选择文件</button><button id="local-update-button" class="primary" type="button" disabled>检查并安装</button></div>
         <div class="settings-section"><div class="section-kicker">研究数据保障</div><p class="modal-hint">备份个人资料库、项目、笔记、会话与证据快照。恢复前会核验文件哈希、SQLite 完整性与架构版本。</p></div>
         <label class="question-label" for="backup-path">备份文件路径</label><input id="backup-path" class="library-filter" placeholder="例如 D:\\ILIA-backup.ilia-workspace"/><button id="backup-button" class="secondary settings-action">创建加校验备份</button>
         <label class="question-label" for="restore-path">恢复备份路径</label><input id="restore-path" class="library-filter" placeholder="粘贴 .ilia-workspace 文件路径"/><button id="restore-button" class="secondary settings-action">校验并恢复</button><div id="backup-status" class="settings-report" role="status" aria-live="polite"></div>
@@ -447,7 +455,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         <p id="update-progress-message">ILIA 会先完成下载和校验，在真正替换程序前保持当前窗口打开。</p>
         <div class="update-progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="update-progress-fill"></span></div>
         <div id="update-progress-detail" class="update-progress-detail">正在连接更新服务器…</div>
-        <div class="update-progress-actions"><button id="update-progress-retry" class="primary hidden" type="button">重新连接并续传</button><button id="update-progress-close" class="secondary hidden" type="button">关闭</button></div>
+        <div class="update-progress-actions"><button id="update-progress-retry" class="primary hidden" type="button">重新连接并续传</button><button id="update-progress-cancel" class="secondary hidden" type="button">取消下载</button><button id="update-progress-close" class="secondary hidden" type="button">关闭</button></div>
       </div>
     </div>
     <div id="reader-modal" class="library-modal hidden" role="dialog" aria-modal="true" aria-labelledby="reader-title">
@@ -496,10 +504,13 @@ let noteTimer: number | null = null;
 let activeRequestId: string | null = null;
 let streamedAnswer = "";
 let lastUpdateReleaseId: string | null = null;
+let lastLocalUpdatePath: string | null = null;
 let guideStepIndex = 0;
 let updateCheckGeneration = 0;
 let updateCheckActive = false;
 let activeUpdateUrls = { manifestUrl: updateManifestUrl, signatureUrl: updateSignatureUrl, label: "GitHub" };
+let currentApplicationVersion = "1.1.8";
+let updateDownloadSample: { at: number; bytes: number; speed: number } | null = null;
 let toastTimer: number | null = null;
 let confirmationResolver: ((confirmed: boolean) => void) | null = null;
 let confirmationReturnFocus: HTMLElement | null = null;
@@ -1112,7 +1123,12 @@ function renderGuideStep() {
   const step = guideSteps[guideStepIndex];
   document.querySelector<HTMLElement>("#guide-step-count")!.textContent = `第 ${guideStepIndex + 1} 步 · 共 ${guideSteps.length} 步`;
   const preview = document.querySelector<HTMLElement>("#guide-illustration")!;
-  preview.innerHTML = `<div class="guide-ui"><div class="guide-ui-rail"><b>ILIA</b><span></span><span></span><span></span></div><div class="guide-ui-project"><b>研究空间</b><span></span><span></span><span></span></div><div class="guide-ui-main"><div class="guide-ui-query"></div><div class="guide-ui-answer"></div></div><div class="guide-ui-inspector"><b>证据　原文　审计</b><span></span><span></span></div><span class="guide-marker" data-focus="${step.focus}" aria-hidden="true">${String(guideStepIndex + 1).padStart(2, "0")}</span></div>`;
+  preview.innerHTML = `<div class="guide-ui" data-focus="${step.focus}">
+    <aside class="guide-ui-rail"><b>ILIA</b><span>研究</span><span>项目</span><span data-guide-target="library">资料库</span><i></i><span data-guide-target="update">检查更新</span></aside>
+    <aside class="guide-ui-project" data-guide-target="project"><b>研究空间</b><small>当前项目</small><strong>南海仲裁</strong><p>领海宽度与基线</p><p>条约解释方法</p></aside>
+    <section class="guide-ui-main"><div class="guide-ui-query" data-guide-target="query"><small>研究问题</small><strong>《联合国海洋法公约》如何规定领海宽度？</strong><div><span>标准模式</span><button>开始研究</button></div></div><article class="guide-ui-answer"><small>研究结论</small><strong>领海宽度不得超过十二海里</strong><p>《联合国海洋法公约》第 3 条规定，各国有权确定其领海宽度……</p><button data-guide-target="export">保存并导出</button></article></section>
+    <aside class="guide-ui-inspector" data-guide-target="inspector"><b>证据　原文　审计</b><strong>UNCLOS · 第 3 条</strong><p>Every State has the right to establish the breadth…</p><span>直接支持</span></aside>
+  </div>`;
   document.querySelector<HTMLElement>("#guide-step-title")!.textContent = step.title;
   document.querySelector<HTMLElement>("#guide-step-copy")!.textContent = step.copy;
   const tips = document.querySelector<HTMLElement>("#guide-step-tips")!;
@@ -1176,6 +1192,7 @@ async function openSettings() {
 
 async function refreshUpdateSummary(showNotice: boolean) {
   const summary = await call<UpdateSummary>("get_update_summary");
+  currentApplicationVersion = summary.current_version;
   const release = summary.last_release_id ?? "尚无更新记录";
   const statusLabels: Record<string, string> = { staged: "已下载", applying: "安装中", applied: "安装成功", rolling_back: "正在回滚", rolled_back: "已回滚", failed: "安装失败" };
   const checked = localStorage.getItem("ilia.update-last-checked");
@@ -1251,6 +1268,39 @@ async function stopResearch() {
   finally { stopButton.disabled = false; }
 }
 
+function formatBytes(bytes: number) {
+  if (!Number.isFinite(bytes) || bytes <= 0) return "0 B";
+  const units = ["B", "KiB", "MiB", "GiB"];
+  const index = Math.min(units.length - 1, Math.floor(Math.log(bytes) / Math.log(1024)));
+  return `${(bytes / 1024 ** index).toFixed(index > 1 ? 1 : 0)} ${units[index]}`;
+}
+
+function updateComponentLabel(component: UpdateComponent) {
+  const labels: Record<UpdateComponent["kind"], string> = { application: "应用程序", corpus: "资料库", model: "模型", runtime: "运行时" };
+  return `${labels[component.kind]} ${component.version} · ${formatBytes(component.payload_size)}`;
+}
+
+function setLocalUpdatePackage(path: string) {
+  const input = document.querySelector<HTMLInputElement>("#local-update-path")!;
+  const install = document.querySelector<HTMLButtonElement>("#local-update-button")!;
+  const drop = document.querySelector<HTMLElement>("#local-update-drop")!;
+  if (!path.toLowerCase().endsWith(".ilia")) {
+    showToast("请选择扩展名为 .ilia 的签名更新包。", "error");
+    return false;
+  }
+  input.value = path;
+  install.disabled = false;
+  const filename = path.split(/[\\/]/).pop() ?? path;
+  drop.querySelector("strong")!.textContent = `已选择：${filename}`;
+  return true;
+}
+
+async function chooseLocalUpdatePackage() {
+  if (!isTauri()) return showToast("文件选择器仅在桌面应用中可用。", "info");
+  const selected = await openFileDialog({ multiple: false, directory: false, filters: [{ name: "ILIA 签名更新包", extensions: ["ilia"] }] });
+  if (typeof selected === "string") setLocalUpdatePackage(selected);
+}
+
 function configuredUpdateSources() {
   const mirror = localStorage.getItem("ilia.update-mirror")?.replace(/\/+$/, "");
   const sources = [] as Array<{ manifestUrl: string; signatureUrl: string; label: string }>;
@@ -1301,7 +1351,8 @@ async function checkForUpdates(background = false) {
       if (!background) showToast("当前已经是最新版本。", "success");
       return;
     }
-    const summary = available.map((component) => `${component.kind} · ${component.version}`).join("\n");
+    const totalBytes = available.reduce((sum, component) => sum + component.payload_size, 0);
+    const summary = available.map((component) => `• ${updateComponentLabel(component)}`).join("\n");
     if (background) {
       const notice = document.querySelector<HTMLElement>("#update-notice")!;
       document.querySelector<HTMLElement>("#update-notice-copy")!.textContent = `发现 ${status.manifest.release_id} 更新。点击“检查更新”查看并安装。`;
@@ -1310,13 +1361,15 @@ async function checkForUpdates(background = false) {
     }
     const confirmed = await confirmAction({
       title: `安装 ${status.manifest.release_id}`,
-      message: `更新来源：${activeUpdateUrls.label}\n${summary}\n\nILIA 会先下载并验证签名、大小和 SHA-256。校验完成后应用将短暂退出并自动重新打开。`,
+      message: `当前版本：${currentApplicationVersion}\n目标版本：${status.manifest.release_id.replace(/^v/, "")}\n更新来源：${activeUpdateUrls.label}\n总下载量：${formatBytes(totalBytes)}\n\n${summary}\n\nILIA 会先下载并验证签名、大小和 SHA-256。校验完成后应用将短暂退出并自动重新打开。`,
       confirmLabel: "下载并安装",
       kicker: "安全更新",
     });
     if (!confirmed) return;
     label.textContent = "准备更新…";
     lastUpdateReleaseId = status.manifest.release_id;
+    lastLocalUpdatePath = null;
+    updateDownloadSample = null;
     showUpdateProgress({ phase: "checking", release_id: status.manifest.release_id, component_id: null, downloaded_bytes: 0, total_bytes: 0, message_zh: "正在启动安全更新进程" });
     await call<void>("install_update", {
       manifestUrl: activeUpdateUrls.manifestUrl,
@@ -1342,11 +1395,27 @@ async function retryUpdate() {
   retry.disabled = true;
   showUpdateProgress({ phase: "checking", release_id: lastUpdateReleaseId, component_id: null, downloaded_bytes: 0, total_bytes: 0, message_zh: "正在重新连接；已下载的有效片段会继续使用" });
   try {
-    await call<void>("install_update", { manifestUrl: activeUpdateUrls.manifestUrl, signatureUrl: activeUpdateUrls.signatureUrl });
+    if (lastLocalUpdatePath) await call<void>("install_local_update", { packagePath: lastLocalUpdatePath });
+    else await call<void>("install_update", { manifestUrl: activeUpdateUrls.manifestUrl, signatureUrl: activeUpdateUrls.signatureUrl });
   } catch (error) {
     showUpdateProgress({ phase: "failed", release_id: lastUpdateReleaseId, component_id: null, downloaded_bytes: 0, total_bytes: 0, message_zh: errorMessage(error, "更新下载未完成") });
   } finally {
     retry.disabled = false;
+  }
+}
+
+async function cancelUpdateDownload() {
+  const button = document.querySelector<HTMLButtonElement>("#update-progress-cancel")!;
+  button.disabled = true;
+  button.textContent = "正在取消…";
+  try {
+    const cancelled = await call<boolean>("cancel_update");
+    if (!cancelled) showToast("当前没有可取消的更新下载。", "info");
+  } catch (error) {
+    showToast(`无法取消更新：${errorMessage(error)}`, "error");
+  } finally {
+    button.disabled = false;
+    button.textContent = "取消下载";
   }
 }
 
@@ -1359,22 +1428,39 @@ function showUpdateProgress(progress: UpdateProgress) {
   const track = fill.parentElement!;
   const close = document.querySelector<HTMLButtonElement>("#update-progress-close")!;
   const retry = document.querySelector<HTMLButtonElement>("#update-progress-retry")!;
+  const cancel = document.querySelector<HTMLButtonElement>("#update-progress-cancel")!;
   modal.classList.remove("hidden");
   const percent = progress.total_bytes > 0 ? Math.min(100, Math.round(progress.downloaded_bytes / progress.total_bytes * 100)) : 0;
   fill.style.width = `${percent}%`;
   track.setAttribute("aria-valuenow", String(percent));
-  close.classList.toggle("hidden", progress.phase !== "failed");
-  retry.classList.toggle("hidden", progress.phase !== "failed" || !lastUpdateReleaseId);
+  close.classList.toggle("hidden", progress.phase !== "failed" && progress.phase !== "cancelled");
+  retry.classList.toggle("hidden", (progress.phase !== "failed" && progress.phase !== "cancelled") || !lastUpdateReleaseId);
+  cancel.classList.toggle("hidden", !["checking", "downloading", "verifying"].includes(progress.phase));
   if (progress.phase === "downloading") {
+    const now = performance.now();
+    if (updateDownloadSample && progress.downloaded_bytes >= updateDownloadSample.bytes) {
+      const elapsed = Math.max(0.2, (now - updateDownloadSample.at) / 1000);
+      const instant = (progress.downloaded_bytes - updateDownloadSample.bytes) / elapsed;
+      updateDownloadSample.speed = updateDownloadSample.speed > 0 ? updateDownloadSample.speed * .72 + instant * .28 : instant;
+      updateDownloadSample.at = now;
+      updateDownloadSample.bytes = progress.downloaded_bytes;
+    } else {
+      updateDownloadSample = { at: now, bytes: progress.downloaded_bytes, speed: 0 };
+    }
+    const speed = updateDownloadSample.speed;
+    const remaining = speed > 0 ? Math.max(0, (progress.total_bytes - progress.downloaded_bytes) / speed) : 0;
+    const timing = speed > 0 ? ` · ${formatBytes(speed)}/s · 约 ${remaining < 60 ? `${Math.ceil(remaining)} 秒` : `${Math.ceil(remaining / 60)} 分钟`}` : "";
     title.textContent = `正在下载更新 · ${percent}%`;
     message.textContent = "网络波动会自动重试并从已下载位置续传；下载和校验完成前 ILIA 不会退出。";
-    detail.textContent = `${progress.message_zh} · ${(progress.downloaded_bytes / 1024 / 1024).toFixed(1)} / ${(progress.total_bytes / 1024 / 1024).toFixed(1)} MiB`;
+    detail.textContent = `${progress.message_zh} · ${formatBytes(progress.downloaded_bytes)} / ${formatBytes(progress.total_bytes)}${timing}`;
   } else if (progress.phase === "verifying") {
     title.textContent = "正在验证更新"; message.textContent = "正在核对签名、大小和 SHA-256。"; detail.textContent = progress.message_zh;
   } else if (progress.phase === "ready_to_apply") {
     title.textContent = "下载与验证完成"; message.textContent = "ILIA 即将退出以替换程序，完成后会自动重新打开。"; detail.textContent = progress.message_zh; fill.style.width = "100%"; track.setAttribute("aria-valuenow", "100");
   } else if (progress.phase === "failed") {
     title.textContent = "更新未完成"; message.textContent = "ILIA 保持打开，现有版本没有被替换。已下载的有效片段会保留供续传。"; detail.textContent = progress.message_zh;
+  } else if (progress.phase === "cancelled") {
+    title.textContent = "更新已取消"; message.textContent = "当前版本保持不变；已下载的有效片段会保留，下次可以继续。"; detail.textContent = progress.message_zh;
   } else {
     title.textContent = "正在准备更新"; message.textContent = "ILIA 会先完成下载和校验，在真正替换程序前保持当前窗口打开。"; detail.textContent = progress.message_zh;
   }
@@ -1407,6 +1493,7 @@ document.querySelector("#settings-close")?.addEventListener("click", () => setti
 document.querySelector("#update-notice-close")?.addEventListener("click", () => document.querySelector("#update-notice")?.classList.add("hidden"));
 document.querySelector("#update-progress-close")?.addEventListener("click", () => document.querySelector("#update-progress-modal")?.classList.add("hidden"));
 document.querySelector("#update-progress-retry")?.addEventListener("click", () => { void retryUpdate(); });
+document.querySelector("#update-progress-cancel")?.addEventListener("click", () => { void cancelUpdateDownload(); });
 document.querySelector("#action-modal-cancel")?.addEventListener("click", () => closeConfirmation(false));
 document.querySelector("#action-modal-confirm")?.addEventListener("click", () => closeConfirmation(true));
 document.querySelector("#action-modal")?.addEventListener("click", (event) => { if (event.target === event.currentTarget) closeConfirmation(false); });
@@ -1500,10 +1587,28 @@ document.querySelector("#save-proxy")?.addEventListener("click", async () => {
 document.querySelector("#local-update-button")?.addEventListener("click", async () => {
   const path = document.querySelector<HTMLInputElement>("#local-update-path")!.value.trim();
   if (!path) return;
-  const confirmed = await confirmAction({ title: "安装本地更新包", message: `${path}\n\nILIA 将验证签名、哈希、目标路径和数据库完整性；验证失败不会替换当前版本。`, confirmLabel: "验证并安装", kicker: "本地安全更新" });
-  if (!confirmed) return;
-  try { await call("install_local_update", { packagePath: path }); }
-  catch (error) { showToast(`本地更新未启动：${errorMessage(error)}`, "error"); }
+  const button = document.querySelector<HTMLButtonElement>("#local-update-button")!;
+  button.disabled = true;
+  button.textContent = "正在验证…";
+  try {
+    const status = await call<UpdateStatus>("inspect_local_update", { packagePath: path });
+    const available = status.manifest.components.filter((component) => status.installed_versions.components[component.id] !== component.version);
+    const totalBytes = available.reduce((sum, component) => sum + component.payload_size, 0);
+    const details = available.length ? available.map((component) => `• ${updateComponentLabel(component)}`).join("\n") : "• 所有组件已经是当前版本";
+    const confirmed = await confirmAction({ title: `安装 ${status.manifest.release_id}`, message: `当前版本：${currentApplicationVersion}\n目标版本：${status.manifest.release_id.replace(/^v/, "")}\n更新来源：本地签名包\n更新体积：${formatBytes(totalBytes)}\n\n${details}\n\n签名与 SHA-256 已通过验证；安装失败不会替换当前版本。`, confirmLabel: "安装更新", kicker: "本地安全更新" });
+    if (!confirmed || !available.length) return;
+    lastUpdateReleaseId = status.manifest.release_id;
+    lastLocalUpdatePath = path;
+    updateDownloadSample = null;
+    showUpdateProgress({ phase: "checking", release_id: status.manifest.release_id, component_id: null, downloaded_bytes: 0, total_bytes: 0, message_zh: "正在准备已验证的本地更新包" });
+    await call("install_local_update", { packagePath: path });
+  } catch (error) { showToast(`本地更新未启动：${errorMessage(error)}`, "error"); }
+  finally { button.disabled = false; button.textContent = "检查并安装"; }
+});
+document.querySelector("#local-update-choose")?.addEventListener("click", () => { void chooseLocalUpdatePackage(); });
+document.querySelector("#local-update-drop")?.addEventListener("click", () => { void chooseLocalUpdatePackage(); });
+document.querySelector("#local-update-drop")?.addEventListener("keydown", (event) => {
+  if (event instanceof KeyboardEvent && (event.key === "Enter" || event.key === " ")) { event.preventDefault(); void chooseLocalUpdatePackage(); }
 });
 document.querySelector("#backup-button")?.addEventListener("click", async () => {
   const input = document.querySelector<HTMLInputElement>("#backup-path")!; const status = document.querySelector<HTMLElement>("#backup-status")!; const outputPath = input.value.trim();
@@ -1526,6 +1631,18 @@ document.querySelector<HTMLSelectElement>("#citation-style")?.addEventListener("
 if (isTauri()) {
   void listen<ResearchEventEnvelope>("research-event", (event) => handleResearchEvent(event.payload));
   void listen<UpdateProgress>("update-progress", (event) => showUpdateProgress(event.payload));
+  void getCurrentWebview().onDragDropEvent((event) => {
+    const drop = document.querySelector<HTMLElement>("#local-update-drop")!;
+    if (settingsModal.classList.contains("hidden")) return;
+    if (event.payload.type === "enter" || event.payload.type === "over") drop.classList.add("dragging");
+    if (event.payload.type === "leave") drop.classList.remove("dragging");
+    if (event.payload.type === "drop") {
+      drop.classList.remove("dragging");
+      const packagePath = event.payload.paths.find((path) => path.toLowerCase().endsWith(".ilia"));
+      if (packagePath) setLocalUpdatePackage(packagePath);
+      else showToast("拖入的文件不是 .ilia 签名更新包。", "error");
+    }
+  });
 }
 window.addEventListener("beforeunload", () => {
   if (activeRequestId && isTauri()) void invoke("cancel_research", { requestId: activeRequestId });

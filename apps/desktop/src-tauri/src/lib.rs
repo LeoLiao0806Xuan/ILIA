@@ -2,7 +2,10 @@ use std::{
     collections::HashSet,
     net::TcpListener,
     path::PathBuf,
-    sync::{Arc, Mutex},
+    sync::{
+        Arc, Mutex,
+        atomic::{AtomicBool, Ordering},
+    },
     time::{Duration, Instant},
 };
 
@@ -26,7 +29,7 @@ use ilia_retrieval::{RelatedDocumentRegistry, RetrievalService, TopicRegistry};
 use ilia_updater::{
     InstalledVersions, ProxyConfig, TrustedPublicKey, UpdateDiagnostic, UpdateEngine,
     UpdateManifest, UpdateProgress, diagnose_update_error, fetch_verified_release_with_proxy,
-    redact_url,
+    load_local_package, redact_url,
 };
 use serde::{Deserialize, Serialize};
 use tauri::{Emitter, Manager, State};
@@ -143,6 +146,7 @@ struct DesktopServices {
     preference: Mutex<RuntimePreference>,
     performance_preset: Mutex<PerformancePreset>,
     active_research: Mutex<Option<ActiveResearch>>,
+    active_update_cancel: Mutex<Option<Arc<AtomicBool>>>,
     last_model_use: Mutex<Instant>,
 }
 
@@ -211,6 +215,7 @@ impl DesktopServices {
             preference: Mutex::new(RuntimePreference::Auto),
             performance_preset: Mutex::new(PerformancePreset::Balanced),
             active_research: Mutex::new(None),
+            active_update_cancel: Mutex::new(None),
             last_model_use: Mutex::new(Instant::now()),
         }
     }
@@ -292,6 +297,7 @@ impl DesktopServices {
 
     fn shutdown(&self) {
         let _ = self.cancel_research(None);
+        let _ = request_update_cancel(&self.active_update_cancel);
         if let Ok(mut runtime) = self.runtime.lock() {
             runtime.take();
         }
@@ -1515,6 +1521,58 @@ async fn check_updates(
 }
 
 #[tauri::command]
+async fn inspect_local_update(
+    state: State<'_, Arc<DesktopServices>>,
+    package_path: String,
+) -> Result<DesktopUpdateStatus, UpdateDiagnostic> {
+    let paths = state.paths.clone();
+    tauri::async_runtime::spawn_blocking(move || {
+        let package = PathBuf::from(package_path);
+        if !package.is_file() {
+            return Err(ilia_updater::UpdateError::InvalidPackage(
+                "本地更新包不存在".into(),
+            ));
+        }
+        if !package
+            .extension()
+            .and_then(|value| value.to_str())
+            .is_some_and(|value| value.eq_ignore_ascii_case("ilia"))
+        {
+            return Err(ilia_updater::UpdateError::InvalidPackage(
+                "请选择 .ilia 更新包".into(),
+            ));
+        }
+        let trusted: TrustedPublicKey = serde_json::from_slice(
+            &std::fs::read(&paths.trusted_update_key).map_err(ilia_updater::UpdateError::from)?,
+        )
+        .map_err(ilia_updater::UpdateError::from)?;
+        let preview_root = paths
+            .app_data_dir
+            .join(format!("update-preview-{}", uuid::Uuid::new_v4()));
+        let loaded = load_local_package(&package, &trusted, &preview_root);
+        let _ = std::fs::remove_dir_all(&preview_root);
+        let (release, _) = loaded?;
+        let engine = UpdateEngine::new(paths.install_root)?;
+        let installed_versions = engine.installed_versions()?;
+        engine.validate_applicable(&release.manifest)?;
+        Ok::<_, ilia_updater::UpdateError>(DesktopUpdateStatus {
+            manifest: release.manifest,
+            installed_versions,
+            diagnostic: UpdateDiagnostic {
+                code: "local_update_verified".into(),
+                message_zh: "本地更新包的签名与哈希已通过验证。".into(),
+            },
+        })
+    })
+    .await
+    .map_err(|_| UpdateDiagnostic {
+        code: "invalid_local_package".into(),
+        message_zh: "本地更新包检查任务异常终止。".into(),
+    })?
+    .map_err(|error| diagnose_update_error(&error))
+}
+
+#[tauri::command]
 async fn install_update(
     app: tauri::AppHandle,
     state: State<'_, Arc<DesktopServices>>,
@@ -1549,7 +1607,7 @@ async fn install_update(
     if let Some(proxy_path) = updater_proxy_path(&paths)? {
         command.args(["--proxy-config", &proxy_path.to_string_lossy()]);
     }
-    spawn_update_and_monitor(command, progress_path, app)
+    spawn_update_and_monitor(command, progress_path, app, state.inner().clone())
 }
 
 #[tauri::command]
@@ -1563,7 +1621,11 @@ async fn install_local_update(
     if !package.is_file() {
         return Err("本地更新包不存在".into());
     }
-    if package.extension().and_then(|v| v.to_str()) != Some("ilia") {
+    if !package
+        .extension()
+        .and_then(|value| value.to_str())
+        .is_some_and(|value| value.eq_ignore_ascii_case("ilia"))
+    {
         return Err("请选择 .ilia 更新包".into());
     }
     let mut command = std::process::Command::new(&paths.updater);
@@ -1582,13 +1644,33 @@ async fn install_local_update(
         "--progress-file",
         &progress_path.to_string_lossy(),
     ]);
-    spawn_update_and_monitor(command, progress_path, app)
+    spawn_update_and_monitor(command, progress_path, app, state.inner().clone())
+}
+
+#[tauri::command]
+fn cancel_update(state: State<'_, Arc<DesktopServices>>) -> Result<bool, String> {
+    request_update_cancel(&state.active_update_cancel)
+}
+
+fn request_update_cancel(
+    active_update_cancel: &Mutex<Option<Arc<AtomicBool>>>,
+) -> Result<bool, String> {
+    let active = active_update_cancel
+        .lock()
+        .map_err(|_| "无法访问更新任务状态".to_owned())?;
+    if let Some(cancel) = active.as_ref() {
+        cancel.store(true, Ordering::Release);
+        Ok(true)
+    } else {
+        Ok(false)
+    }
 }
 
 fn spawn_update_and_monitor(
     mut command: std::process::Command,
     progress_path: PathBuf,
     app: tauri::AppHandle,
+    services: Arc<DesktopServices>,
 ) -> Result<(), String> {
     #[cfg(windows)]
     {
@@ -1602,10 +1684,48 @@ fn spawn_update_and_monitor(
     if events_path.exists() {
         std::fs::remove_file(events_path).map_err(|error| error.to_string())?;
     }
-    let mut child = command.spawn().map_err(|error| error.to_string())?;
+    let cancel = Arc::new(AtomicBool::new(false));
+    {
+        let mut active = services
+            .active_update_cancel
+            .lock()
+            .map_err(|_| "无法访问更新任务状态".to_owned())?;
+        if active.is_some() {
+            return Err("已有更新任务正在运行".into());
+        }
+        *active = Some(cancel.clone());
+    }
+    let mut child = match command.spawn() {
+        Ok(child) => child,
+        Err(error) => {
+            services
+                .active_update_cancel
+                .lock()
+                .map_err(|_| "无法访问更新任务状态".to_owned())?
+                .take();
+            return Err(error.to_string());
+        }
+    };
     std::thread::spawn(move || {
         let mut last_progress = Vec::new();
         loop {
+            if cancel.load(Ordering::Acquire) {
+                let _ = child.kill();
+                let _ = child.wait();
+                clear_active_update(&services, &cancel);
+                let _ = app.emit(
+                    "update-progress",
+                    UpdateProgress {
+                        phase: "cancelled".into(),
+                        release_id: String::new(),
+                        component_id: None,
+                        downloaded_bytes: 0,
+                        total_bytes: 0,
+                        message_zh: "更新下载已取消；已验证的下载片段会保留，稍后可以继续。".into(),
+                    },
+                );
+                return;
+            }
             if let Ok(bytes) = std::fs::read(&progress_path)
                 && bytes != last_progress
                 && let Ok(progress) = serde_json::from_slice::<UpdateProgress>(&bytes)
@@ -1613,6 +1733,7 @@ fn spawn_update_and_monitor(
                 last_progress = bytes;
                 let _ = app.emit("update-progress", &progress);
                 if progress.phase == "ready_to_apply" {
+                    clear_active_update(&services, &cancel);
                     std::thread::sleep(Duration::from_millis(650));
                     app.exit(0);
                     return;
@@ -1620,6 +1741,7 @@ fn spawn_update_and_monitor(
             }
             match child.try_wait() {
                 Ok(Some(status)) => {
+                    clear_active_update(&services, &cancel);
                     let progress = UpdateProgress {
                         phase: "failed".into(),
                         release_id: String::new(),
@@ -1636,6 +1758,7 @@ fn spawn_update_and_monitor(
                 }
                 Ok(None) => {}
                 Err(error) => {
+                    clear_active_update(&services, &cancel);
                     let progress = UpdateProgress {
                         phase: "failed".into(),
                         release_id: String::new(),
@@ -1654,6 +1777,16 @@ fn spawn_update_and_monitor(
     Ok(())
 }
 
+fn clear_active_update(services: &DesktopServices, cancel: &Arc<AtomicBool>) {
+    if let Ok(mut active) = services.active_update_cancel.lock()
+        && active
+            .as_ref()
+            .is_some_and(|current| Arc::ptr_eq(current, cancel))
+    {
+        active.take();
+    }
+}
+
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     #[cfg(windows)]
@@ -1670,6 +1803,7 @@ pub fn run() {
         }
     }
     tauri::Builder::default()
+        .plugin(tauri_plugin_dialog::init())
         .plugin(tauri_plugin_opener::init())
         .setup(|app| {
             let paths = AppPaths::discover(app.handle()).map_err(std::io::Error::other)?;
@@ -1720,8 +1854,10 @@ pub fn run() {
             set_proxy_settings,
             get_update_summary,
             check_updates,
+            inspect_local_update,
             install_update,
-            install_local_update
+            install_local_update,
+            cancel_update
         ])
         .run(tauri::generate_context!())
         .expect("error while running ILIA desktop");
@@ -1797,5 +1933,15 @@ mod tests {
         assert!(!cancel_active_research(&active, Some(first_id)));
         assert!(cancel_active_research(&active, None));
         assert!(second.is_cancelled());
+    }
+
+    #[test]
+    fn update_cancellation_signals_only_an_active_task() {
+        let active = Mutex::new(None);
+        assert!(!request_update_cancel(&active).unwrap());
+        let flag = Arc::new(AtomicBool::new(false));
+        *active.lock().unwrap() = Some(flag.clone());
+        assert!(request_update_cancel(&active).unwrap());
+        assert!(flag.load(Ordering::Acquire));
     }
 }

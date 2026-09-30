@@ -24,6 +24,7 @@ ilia-updater = { path = "../../../crates/ilia-updater" }
 serde.workspace = true
 serde_json.workspace = true
 tauri = { version = "2.11.6", features = [] }
+tauri-plugin-dialog = "2"
 tauri-plugin-opener = "2.5.4"
 uuid.workspace = true
 url.workspace = true
